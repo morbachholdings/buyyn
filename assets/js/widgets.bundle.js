@@ -10326,12 +10326,12 @@ var KTTablesWidget4 = (function () {
               info: !1,
               order: [],
               lengthChange: !1,
-              pageLength: 6,
+              pageLength: 8,
               ordering: !1,
               paging: !1,
               columnDefs: [
                 { orderable: !1, targets: 0 },
-                { orderable: !1, targets: 6 },
+                { orderable: !1, targets: 8 },
               ],
             })).on("draw", function () {
               s(), o();

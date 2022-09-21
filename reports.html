@@ -3843,8 +3843,15 @@
                     <input class="form-control d-flex align-items-center" value="" id="kt_tagify_suppliers" />
                 
             </div>
+            <div class="col-md-3 ">
+              <select name="language" aria-label="Select Month" data-control="select2" data-placeholder="Select a language..." class="form-select form-select-solid form-select-lg">
+                                                                    <option value="- Report Type -">- Report Type -</option>
+                                                                    <option value="option1">Option 1</option>
+                                                                    <option value="option2">Option 2</option>
+                                                                </select>
+            </div>
             
-            <div class="col-md-2 d-flex align-items-end justify-content-between">
+            <div class="col-md-2 d-flex align-items-end justify-content-around">
               
               <button class="btn btn-primary mb-0">Apply</button> 
               <button class="btn btn-primary mb-0">Export</button>
@@ -3893,39 +3900,248 @@
         </div>
         <!--end::Actions-->
                                       
-                                      <table id="kt_datatable_dom_positioning" class="table table-striped table-row-bordered gy-5 gs-7 border rounded">
-                                        <thead>
-                                            <tr class="fw-bold fs-6 text-gray-800 px-7">
-                                                <th>Log ID</th>
-                                                <th>User Name</th>
-                                                <th>Action</th>
-                                                <th>IP Address</th>
-                                                
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Tiger Nixon</td>
-                                                <td>System Architect</td>
-                                                <td>Edinburgh</td>
-                                                <td>61</td>
-                                                
-                                            </tr>
-                                            <tr>
-                                                <td>Garrett Winters</td>
-                                                <td>Accountant</td>
-                                                <td>Tokyo</td>
-                                                <td>63</td>
-                                                
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                      
                                       
                                         
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+
+                        <div class="col-xl-12 my-3">
+                          <div class="card card-flush h-xl-100">
+                              <!--begin::Body-->
+                              <div class="card-body">
+                                <div class="col-xl-12">
+                                  <!--begin::Actions-->
+  <div class="card-toolbar w-100">
+    <!--begin::Filters-->
+    <h2>Report Details</h2>
+    <table id="kt_datatable_fixed_columns" class="table table-striped table-row-bordered gy-5 gs-7">
+      <thead>
+          <tr class="fw-semibold fs-6 text-gray-800">
+              <th class="min-w-200px">Name</th>
+              <th class="min-w-200px">July</th>
+              <th class="min-w-200px">August</th>
+              <th class="min-w-200px">September</th>
+              <th class="min-w-200px">October</th>
+              <th class="min-w-200px">November</th>
+              <th class="min-w-200px">December</th>
+              <th class="min-w-200px">January</th>
+              <th class="min-w-200px">February</th>
+              <th class="min-w-200px">March</th>
+              <th class="min-w-200px">April</th>
+              <th class="min-w-200px">May</th>
+              <th class="min-w-200px">June</th>
+              <th class="min-w-200px fw-bold">Grand Total</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td>Tiger</td>
+              <td>Nixon</td>
+              <td>System Architect</td>
+              <td>Edinburgh</td>
+              <td>61</td>
+              <td>2011/04/25</td>
+              <td>$320,800</td>
+              <td>5421</td>
+              <td>t.nixon@datatables.net</td>
+              <td>2011/04/25</td>
+              <td>$320,800</td>
+              <td>5421</td>
+              <td>t.nixon@datatables.net</td>
+              <td>t.nixon@datatables.net</td>
+          </tr>
+          <tr>
+              <td>Garrett</td>
+              <td>Winters</td>
+              <td>Accountant</td>
+              <td>Tokyo</td>
+              <td>63</td>
+              <td>2011/07/25</td>
+              <td>$170,750</td>
+              <td>8422</td>
+              <td>g.winters@datatables.net</td>
+              <td>2011/07/25</td>
+              <td>$170,750</td>
+              <td>8422</td>
+              <td>g.winters@datatables.net</td>
+              <td>g.winters@datatables.net</td>
+          </tr>
+          <tr>
+            <td>Garrett</td>
+            <td>Winters</td>
+            <td>Accountant</td>
+            <td>Tokyo</td>
+            <td>63</td>
+            <td>2011/07/25</td>
+            <td>$170,750</td>
+            <td>8422</td>
+            <td>g.winters@datatables.net</td>
+            <td>2011/07/25</td>
+            <td>$170,750</td>
+            <td>8422</td>
+            <td>g.winters@datatables.net</td>
+            <td>g.winters@datatables.net</td>
+        </tr>
+        <tr>
+          <td>Garrett</td>
+          <td>Winters</td>
+          <td>Accountant</td>
+          <td>Tokyo</td>
+          <td>63</td>
+          <td>2011/07/25</td>
+          <td>$170,750</td>
+          <td>8422</td>
+          <td>g.winters@datatables.net</td>
+          <td>2011/07/25</td>
+          <td>$170,750</td>
+          <td>8422</td>
+          <td>g.winters@datatables.net</td>
+          <td>g.winters@datatables.net</td>
+      </tr>
+      <tr>
+        <td>Garrett</td>
+        <td>Winters</td>
+        <td>Accountant</td>
+        <td>Tokyo</td>
+        <td>63</td>
+        <td>2011/07/25</td>
+        <td>$170,750</td>
+        <td>8422</td>
+        <td>g.winters@datatables.net</td>
+        <td>2011/07/25</td>
+        <td>$170,750</td>
+        <td>8422</td>
+        <td>g.winters@datatables.net</td>
+        <td>g.winters@datatables.net</td>
+    </tr>
+    <tr>
+      <td>Garrett</td>
+      <td>Winters</td>
+      <td>Accountant</td>
+      <td>Tokyo</td>
+      <td>63</td>
+      <td>2011/07/25</td>
+      <td>$170,750</td>
+      <td>8422</td>
+      <td>g.winters@datatables.net</td>
+      <td>2011/07/25</td>
+      <td>$170,750</td>
+      <td>8422</td>
+      <td>g.winters@datatables.net</td>
+      <td>g.winters@datatables.net</td>
+  </tr>
+  <tr>
+    <td>Garrett</td>
+    <td>Winters</td>
+    <td>Accountant</td>
+    <td>Tokyo</td>
+    <td>63</td>
+    <td>2011/07/25</td>
+    <td>$170,750</td>
+    <td>8422</td>
+    <td>g.winters@datatables.net</td>
+    <td>2011/07/25</td>
+    <td>$170,750</td>
+    <td>8422</td>
+    <td>g.winters@datatables.net</td>
+    <td>g.winters@datatables.net</td>
+</tr>
+<tr>
+  <td>Garrett</td>
+  <td>Winters</td>
+  <td>Accountant</td>
+  <td>Tokyo</td>
+  <td>63</td>
+  <td>2011/07/25</td>
+  <td>$170,750</td>
+  <td>8422</td>
+  <td>g.winters@datatables.net</td>
+  <td>2011/07/25</td>
+  <td>$170,750</td>
+  <td>8422</td>
+  <td>g.winters@datatables.net</td>
+  <td>g.winters@datatables.net</td>
+</tr>
+<tr>
+  <td>Garrett</td>
+  <td>Winters</td>
+  <td>Accountant</td>
+  <td>Tokyo</td>
+  <td>63</td>
+  <td>2011/07/25</td>
+  <td>$170,750</td>
+  <td>8422</td>
+  <td>g.winters@datatables.net</td>
+  <td>2011/07/25</td>
+  <td>$170,750</td>
+  <td>8422</td>
+  <td>g.winters@datatables.net</td>
+  <td>g.winters@datatables.net</td>
+</tr>
+<tr>
+  <td class="fw-bold">Grand Total</td>
+  <td>Winters</td>
+  <td>Accountant</td>
+  <td>Tokyo</td>
+  <td>63</td>
+  <td>2011/07/25</td>
+  <td>$170,750</td>
+  <td>8422</td>
+  <td>g.winters@datatables.net</td>
+  <td>2011/07/25</td>
+  <td>$170,750</td>
+  <td>8422</td>
+  <td>g.winters@datatables.net</td>
+  <td>g.winters@datatables.net</td>
+</tr>
+      </tbody>
+  </table>
+
+    <!--begin::Filters-->
+  </div>
+  <!--end::Actions-->
+                                
+                                
+                                
+                                  
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+
+                  <div class="col-xl-12 my-3">
+                    <div class="card card-flush h-xl-100">
+                        <!--begin::Body-->
+                        <div class="card-body">
+                          <div class="col-xl-12">
+                            <!--begin::Actions-->
+<div class="card-toolbar w-100">
+<h2>Report View</h2>
+<div class="card card-bordered">
+  <div class="card-body">
+    <div id="kt_apexcharts_1" style="height: 350px;"></div>
+    
+  
+  </div>
+</div>
+</div>
+<!--end::Actions-->
+                          
+                          
+                          
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
                         <div class="footer py-4 d-flex flex-lg-column" id="kt_footer">
                             <!--begin::Container-->
                             <div class="container-xxl d-flex flex-column flex-md-row align-items-center justify-content-between">
@@ -3989,6 +4205,8 @@
                         <script src="assets/js/custom/Table/submissionData.js"></script>
                         <script src="assets/js/custom/Table/tagifySupplier.js"></script>
                         <script src="assets/js/custom/Table/tagifyMember.js"></script>
+                        <script src="assets/js/custom/Table/reportTable.js"></script>
+                        <script src="assets/js/custom/Table/barChart.js"></script>
 </body>
 
 </html>

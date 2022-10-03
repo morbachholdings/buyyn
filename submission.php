@@ -4851,14 +4851,7 @@
                                                                 </select>
                                                             </div>
                                                             <div class="col-md-3 d-flex">
-                                                            <input
-                      type="text"
-                      class="search-input form-control form-control-solid ps-13 mx-2"
-                      name="search"
-                      value=""
-                      placeholder="Search..."
-                      data-kt-search-element="input"
-                    />
+                                                            
                     <button class="btn btn-primary mb-0">Apply</button>
                                                             </div>
                                                               
@@ -4876,7 +4869,7 @@
                                                                 <div class="card-body pt-0">
                                                                     <!--begin::Table-->
                                                                     
-                                                                    <table id="kt_datatable_vertical_scroll" class="table table-striped table-row-bordered gy-5 gs-7">
+                                                                    <table id="" class="table table-striped table-row-bordered gy-5 gs-7">
                                                                         <!--begin::Table head-->
                                                                         <thead>
                                                                             <!--begin::Table row-->
@@ -4950,11 +4943,163 @@
                                                 </div>
                                             </div>
                                             <!--end::Tap pane-->
-                                            
+                                            <table id="kt_datatable_vertical_scroll_1" class="table table-striped table-row-bordered gy-5 gs-7">
+    <thead>
+        <tr class="fw-semibold fs-6 text-gray-800">
+            <th>Name</th>
+            <th>Position</th>
+            <th>Office</th>
+            <th>Age</th>
+            <th>Start date</th>
+            <th>Salary</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Tiger Nixon</td>
+            <td>System Architect</td>
+            <td>Edinburgh</td>
+            <td>61</td>
+            <td>2011/04/25</td>
+            <td>$320,800</td>
+        </tr>
+        <tr>
+            <td>Garrett Winters</td>
+            <td>Accountant</td>
+            <td>Tokyo</td>
+            <td>63</td>
+            <td>2011/07/25</td>
+            <td>$170,750</td>
+        </tr>
+        <tr>
+            <td>Garrett Winters</td>
+            <td>Accountant</td>
+            <td>Tokyo</td>
+            <td>63</td>
+            <td>2011/07/25</td>
+            <td>$170,750</td>
+        </tr>
+        <tr>
+            <td>Garrett Winters</td>
+            <td>Accountant</td>
+            <td>Tokyo</td>
+            <td>63</td>
+            <td>2011/07/25</td>
+            <td>$170,750</td>
+        </tr>
+        <tr>
+            <td>Garrett Winters</td>
+            <td>Accountant</td>
+            <td>Tokyo</td>
+            <td>63</td>
+            <td>2011/07/25</td>
+            <td>$170,750</td>
+        </tr>
+        <tr>
+            <td>Garrett Winters</td>
+            <td>Accountant</td>
+            <td>Tokyo</td>
+            <td>63</td>
+            <td>2011/07/25</td>
+            <td>$170,750</td>
+        </tr>
+        <tr>
+            <td>Garrett Winters</td>
+            <td>Accountant</td>
+            <td>Tokyo</td>
+            <td>63</td>
+            <td>2011/07/25</td>
+            <td>$170,750</td>
+        </tr>
+        <tr>
+            <td>Garrett Winters</td>
+            <td>Accountant</td>
+            <td>Tokyo</td>
+            <td>63</td>
+            <td>2011/07/25</td>
+            <td>$170,750</td>
+        </tr>
+        <tr>
+            <td>Garrett Winters</td>
+            <td>Accountant</td>
+            <td>Tokyo</td>
+            <td>63</td>
+            <td>2011/07/25</td>
+            <td>$170,750</td>
+        </tr>
+        <tr>
+            <td>Garrett Winters</td>
+            <td>Accountant</td>
+            <td>Tokyo</td>
+            <td>63</td>
+            <td>2011/07/25</td>
+            <td>$170,750</td>
+        </tr>
+        <tr>
+            <td>Garrett Winters</td>
+            <td>Accountant</td>
+            <td>Tokyo</td>
+            <td>63</td>
+            <td>2011/07/25</td>
+            <td>$170,750</td>
+        </tr>
+        <tr>
+            <td>Garrett Winters</td>
+            <td>Accountant</td>
+            <td>Tokyo</td>
+            <td>63</td>
+            <td>2011/07/25</td>
+            <td>$170,750</td>
+        </tr>
+        <tr>
+            <td>Garrett Winters</td>
+            <td>Accountant</td>
+            <td>Tokyo</td>
+            <td>63</td>
+            <td>2011/07/25</td>
+            <td>$170,750</td>
+        </tr>
+
+    </tbody>
+    <tfoot>
+        <tr class="border-top fw-semibold fs-6 text-gray-800">
+            <th>Name</th>
+            <th>Position</th>
+            <th>Office</th>
+            <th>Age</th>
+            <th>Start date</th>
+            <th>Salary</th>
+        </tr>
+    </tfoot>
+</table>
                                             
                                         </div>
                                     </div>
                                 </div>
+                                <!--begin::Alert-->
+<div class="alert alert-dismissible bg-light-danger d-flex flex-column flex-sm-row p-5 mb-10 mx-3">
+    <!--begin::Icon-->
+    <span class="svg-icon svg-icon-2hx svg-icon-danger me-4 mb-5 mb-sm-0">...</span>
+    <!--end::Icon-->
+
+    <!--begin::Wrapper-->
+    <div class="d-flex flex-column pe-0 pe-sm-10">
+        <!--begin::Title-->
+        <h4 class="fw-semibold">This is an alert</h4>
+        <!--end::Title-->
+        <!--begin::Content-->
+        <span>The alert component can be used to highlight certain parts of your page for higher content visibility.</span>
+        <!--end::Content-->
+    </div>
+    <!--end::Wrapper-->
+
+    <!--begin::Close-->
+    <button type="button" class="position-absolute position-sm-relative m-2 m-sm-0 top-0 end-0 btn btn-icon ms-sm-auto" data-bs-dismiss="alert">
+        <span class="svg-icon svg-icon-1 svg-icon-danger"><img src="assets/media/icons/duotune/abstract/abs012.svg"/></span>
+    </button>
+    <!--end::Close-->
+</div>
+<!--end::Alert-->
 												</div>
 												<!--end::Tables Widget 3-->
 											</div>
@@ -4973,6 +5118,11 @@
                                 </div>
                             </div>
                         </div>
+
+
+
+
+                        
                         <div class="footer py-4 d-flex flex-lg-column" id="kt_footer">
                             <!--begin::Container-->
                             <div class="container-xxl d-flex flex-column flex-md-row align-items-center justify-content-between">

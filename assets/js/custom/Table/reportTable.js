@@ -7,8 +7,8 @@ $("#kt_datatable_fixed_columns").DataTable({
     }
    });
 
-   $("#kt_datatable_vertical_scroll").DataTable({
-    "scrollY": "100px",
+   $("#kt_datatable_vertical_scroll_1").DataTable({
+    "scrollY": "500px",
     "scrollCollapse": true,
     "paging": false,
     "dom": "<'table-responsive'tr>"

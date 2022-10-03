@@ -1,9 +1,12 @@
+<<<<<<< HEAD
 <!-- <<<<<<< Updated upstream -->
 <?php 
 echo "Hello world";
 
 ?>
 =======
+=======
+>>>>>>> 86f5eabb7f24a504ec45736db9ccfbd12addd672
 <!DOCTYPE html>
 <html lang="en">
   <!--begin::Head-->

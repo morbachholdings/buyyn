@@ -4097,9 +4097,9 @@
 																</td>
                                 <td class="text-end">
                                   <div class="d-flex align-items-center justify-content-end"> 
-                                    <div class="cursor-pointer"><img src="./assets/media/illustrations/checked.png" alt="" style="width:20px;height:20px;margin-left:5px;"></div>
-                                    <div class="cursor-pointer"><img src="./assets/media/illustrations/label.png" alt="" style="width:20px;height:20px;margin-left:5px;"></div>
-                                    <div class="cursor-pointer"><img src="./assets/media/illustrations/printer.png" alt="" style="width:20px;height:20px;margin-left:5px;"></div>
+                                    <div class="cursor-pointer"><img src="assets/media/icons/duotune/arrows/arr016.svg" alt="" style="width:20px;height:20px;margin-left:5px;"></div>
+                                    <div class="cursor-pointer"><img src="assets/media/icons/duotune/arrows/arr015.svg" alt="" style="width:20px;height:20px;margin-left:5px;"></div>
+                                    <div class="cursor-pointer"><img src="assets/media/icons/duotune/files/fil010.svg" alt="" style="width:20px;height:20px;margin-left:5px;"></div>
                                   </div>
 																	
 																</td>
@@ -4824,30 +4824,9 @@
 
                                     <!--begin::Body-->
                                     <div class="card-body pt-0 px-0">
-                                        <!--begin::Nav-->
-                                        <ul class="nav nav-pills nav-pills-custom row position-relative mx-0 mb-9">
-                                            <!--begin::Item-->
-                                            <li class="nav-item col-3 mx-0 p-0">
-                                                <!--begin::Link-->
-                                                <a class="nav-link active d-flex justify-content-center w-100 border-0 h-100 py-3" data-bs-toggle="pill" href="#kt_list_widget_10_tab_1">
-                                                    <!--begin::Subtitle-->
-                                                    <span class="nav-text text-gray-800 fw-bolder fs-6 mb-3">Submit Data</span>
-                                                    <!--end::Subtitle-->
-                                                    <!--begin::Bullet-->
-                                                    <span class="bullet-custom position-absolute z-index-2 bottom-0 w-100 h-4px bg-primary rounded"></span>
-                                                    <!--end::Bullet-->
-                                                </a>
-                                                <!--end::Link-->
-                                            </li>
-                                            <!--end::Item-->
-                                            
-                                            <!--begin::Bullet-->
-                                            <span class="position-absolute z-index-1 bottom-0 w-100 h-4px bg-light rounded"></span>
-                                            <!--end::Bullet-->
-                                        </ul>
                                         <div class="tab-content" styles="background:#eceef7;">
                                             <!--begin::Tap pane-->
-                                            <div class="tab-pane fade show active" id="kt_list_widget_10_tab_1">
+                                            <div class="tab-pane fade show active my-4" id="kt_list_widget_10_tab_1">
                                                 <!--begin::Item-->
                                                 <div class="m-0">
                                                     <div class="card-body pt-0">
@@ -4874,7 +4853,7 @@
                                                             <div class="col-md-3 d-flex">
                                                             <input
                       type="text"
-                      class="search-input form-control form-control-solid ps-13"
+                      class="search-input form-control form-control-solid ps-13 mx-2"
                       name="search"
                       value=""
                       placeholder="Search..."
@@ -4897,13 +4876,14 @@
                                                                 <div class="card-body pt-0">
                                                                     <!--begin::Table-->
                                                                     
-                                                                    <table class="table align-middle table-row-dashed fs-6 gy-3" id="kt_table_widget_5_table">
+                                                                    <table id="kt_datatable_vertical_scroll" class="table table-striped table-row-bordered gy-5 gs-7">
                                                                         <!--begin::Table head-->
                                                                         <thead>
                                                                             <!--begin::Table row-->
                                                                             <tr class="text-start text-gray-400 fw-bolder fs-7 text-uppercase gs-0">
                                                                                 <th class="min-w-100px">Member Name</th>
                                                                                 <th class="pe-3 min-w-50px">Amount</th>
+                                                                                <th class="pe-3 min-w-50px">Action</th>
                                                                                 <th class="text-start pe-3 min-w-100px">Last Submission Total</th>
                                                                                 <th class="text-start pe-3 min-w-100px">Last Submission</th>
 
@@ -4912,11 +4892,14 @@
                                                                         </thead>
                                                                         <!--end::Table head-->
                                                                         <!--begin::Table body-->
-                                                                        <tbody class="fw-bolder text-gray-600">
+                                                                        <tbody class="fw-bolder text-gray-600" style="overflow-y:scroll;max-height:300px">
                                                                             <tr>
                                                                                 <td>123</td> 
                                                                                 <td class="text-end d-flex"><span class="badge badge-light-primary p-3" style="font-size:16px ;">$</span><input type="text" class="form-control form-control-solid w-50" name="name" value="" /></td>
-                                                                                <td class="text-start">
+                                                                                <td class="text-start justify-content-between">
+                                                                                  <div><img src="assets/media/icons/duotune/abstract/abs011.svg" alt="" style="width:20px;height:20px;"><img src="assets/media/icons/duotune/general/gen055.svg" alt="" style="width:20px;height:20px;margin-left:10px;"></div>
+                                                                              </td>
+                                                                              <td class="text-start">
                                                                                   <span class="badge py-3 px-4 fs-7 badge-light-primary">$1,350.00</span>
                                                                               </td>
                                                                                 <td class="text-start">Jul 25, 2022</td>
@@ -4925,6 +4908,9 @@
                                                                             <tr>
                                                                               <td>124</td>
                                                                               <td class="text-end d-flex"><span class="badge badge-light-primary p-3" style="font-size:16px ;">$</span><input type="text" class="form-control form-control-solid w-50" name="name" value="" /></td>
+                                                                              <td class="text-start justify-content-between">
+                                                                                  <div><img src="assets/media/icons/duotune/abstract/abs011.svg" alt="" style="width:20px;height:20px;"><img src="assets/media/icons/duotune/general/gen055.svg" alt="" style="width:20px;height:20px;margin-left:10px;"></div>
+                                                                              </td>
                                                                               <td class="text-start">
                                                                                 <span class="badge py-3 px-4 fs-7 badge-light-primary">$1,350.00</span>
                                                                             </td>
@@ -4934,6 +4920,9 @@
                                                                           <tr>
                                                                             <td>125</td>
                                                                             <td class="text-end d-flex"><span class="badge badge-light-primary p-3" style="font-size:16px ;">$</span><input type="text" class="form-control form-control-solid w-50" name="name" value="" /></td>
+                                                                            <td class="text-start justify-content-between">
+                                                                                  <div><img src="assets/media/icons/duotune/abstract/abs011.svg" alt="" style="width:20px;height:20px;"><img src="assets/media/icons/duotune/general/gen055.svg" alt="" style="width:20px;height:20px;margin-left:10px;"></div>
+                                                                              </td>
                                                                             <td class="text-start">
                                                                               <span class="badge py-3 px-4 fs-7 badge-light-primary">$1,350.00</span>
                                                                           </td>
@@ -4943,17 +4932,16 @@
                                                                            
 
                                                                         </tbody>
-                                                                        <tr>
-                                                                          <td><b>Grand Total</b></td>
-                                                                          <td class="text-end d-flex"><span class="badge badge-light-danger p-3" style="font-size:16px ;">$</span><input type="text" class="form-control form-control-solid" name="name" value="" /></td>
-                                                                          
-                                                                          <td class="text-end"><a class="btn btn-sm btn-danger me-2" href="javascript:;">Cancel</a></td>
-                                                                          <td class="text-end"><a class="btn btn-sm btn-success me-2 w-75" href="javascript:;">Submit</a></td>
-                                                                      </tr>
                                                                         <!--end::Table body-->
-                                                                    </table>
                                                                     <!--end::Table-->
-                                                                </div>
+</table>
+                                                                    <div class="d-flex justify-content-between my-3" style="margin-top:40px;">
+                                                                      <div class="bg-light-primary p-3 w-300px d-flex justify-content-between"><p class="m-0 fs-7"><b>Grand Total</b></p><p><b>$ 123</b></p></div>
+                                                                          <div class="d-flex">
+                                                                          <div class="text-end"><a class="btn btn-sm btn-success me-2" href="javascript:;">Submit</a></div>
+                                                                          <div class="text-end"><a class="btn btn-sm btn-danger me-2" href="javascript:;">Cancel</a></div>
+                                                                          </div>
+                                                                      </div>
                                                                 <!--end::Card body-->
                                                             </div>
                                                             <!--end::Card body-->

@@ -2714,8 +2714,8 @@
                     href="index.php"
                   >
                     <span class="menu-title">
-                      <span class="menu-text">Dashboards</span>
-                      <span class="menu-desc">Summery & Reports</span>
+                      <span class="menu-text">Dashboard</span>
+                      <span class="menu-desc">Overview</span>
                     </span>
                   </a>
                   <!--end:Menu link-->
@@ -2731,28 +2731,33 @@
                     href="submission.php"
                   >
                     <span class="menu-title">
-                      <span class="menu-text">Submit & Submission Data</span>
-                      <span class="menu-desc">Pages & Utilities</span>
+                      <span class="menu-text">Data Submisions</span>
+                      <span class="menu-desc">Invoicing</span>
                     </span>
                   </a>
                   <!--end:Menu link-->
                 </div>
                  <!--end:Menu item-->
+
+
                  <!--begin:Menu item-->
                  <div class="menu-item">
-                  <!--begin:Menu link-->
-                  <a
-                    class="menu-link py-3"
-                    href="admins.php"
-                  >
-                    <span class="menu-title">
-                      <span class="menu-text">Suppliers Members And Admins</span>
-                      <span class="menu-desc">Administration</span>
-                    </span>
-                  </a>
-                  <!--end:Menu link-->
-                </div>
-                 <!--end:Menu item-->
+                    <!--begin:Menu link-->
+                    <a
+                      class="menu-link py-3"
+                      href="reports.php"
+                    >
+                      <span class="menu-title">
+                        <span class="menu-text">Reports</span>
+                        <span class="menu-desc">Supplier and Member Reports</span>
+                      </span>
+                    </a>
+                    <!--end:Menu link-->
+                  </div>
+                  <!--end:Menu item-->
+
+
+                
                  <!--begin:Menu item-->
                  <div class="menu-item">
                   <!--begin:Menu link-->
@@ -2762,13 +2767,31 @@
                   >
                     <span class="menu-title">
                       <span class="menu-text">Rebates</span>
-                      <span class="menu-desc">Description</span>
+                      <span class="menu-desc">Rebate Earnings</span>
                     </span>
                   </a>
                   <!--end:Menu link-->
                 </div>
-                 
                  <!--end:Menu item-->
+
+
+                 <!--begin:Menu item-->
+                 <div class="menu-item">
+                  <!--begin:Menu link-->
+                  <a
+                    class="menu-link py-3"
+                    href="admins.php"
+                  >
+                    <span class="menu-title">
+                      <span class="menu-text">Administration</span>
+                      <span class="menu-desc">Manage Users</span>
+                    </span>
+                  </a>
+                  <!--end:Menu link-->
+                </div>
+                 <!--end:Menu item-->
+
+
                  <!--begin:Menu item-->
                  <div class="menu-item">
                    <!--begin:Menu link-->
@@ -2778,28 +2801,13 @@
                    >
                      <span class="menu-title">
                        <span class="menu-text">Process Log</span>
-                       <span class="menu-desc">Description</span>
+                       <span class="menu-desc">User Activity</span>
                      </span>
                    </a>
                    <!--end:Menu link-->
                  </div>
                  <!--end:Menu item-->
 
-                  <!--begin:Menu item-->
-                  <div class="menu-item">
-                    <!--begin:Menu link-->
-                    <a
-                      class="menu-link py-3"
-                      href="reports.php"
-                    >
-                      <span class="menu-title">
-                        <span class="menu-text">Reports</span>
-                        <span class="menu-desc">Description</span>
-                      </span>
-                    </a>
-                    <!--end:Menu link-->
-                  </div>
-                  <!--end:Menu item-->
 
                </div>
                <!--end::Menu-->

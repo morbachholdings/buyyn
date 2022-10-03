@@ -3819,7 +3819,52 @@
                         <!--begin::Row-->
                         <div class="row g-5 g-xl-10 mb-xl-10">
                             <div class="col-xl-12">
-                                <div class="card card-flush h-xl-100">
+                              
+
+
+                              <!--begin::Col-->
+								<div class="col">
+									
+									<!--begin::General Widget 1-->
+									<div class="mb-10">
+										<!--begin::Tabs-->
+										<ul class="nav row mb-10">
+											<li class="nav-item col-12 col-lg mb-5 mb-lg-0">
+												<a class="nav-link btn btn-flex btn-color-muted btn-outline btn-outline-default btn-active-danger d-flex flex-grow-1 flex-column flex-center py-5 h-1250px h-lg-100px active" data-bs-toggle="tab" href="#kt_general_widget_1_1">
+													<!--begin::Svg Icon | path: icons/duotune/abstract/abs027.svg-->
+													<span class="svg-icon svg-icon-3x mb-5 mx-0">
+														<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path opacity="0.3" d="M21.25 18.525L13.05 21.825C12.35 22.125 11.65 22.125 10.95 21.825L2.75 18.525C1.75 18.125 1.75 16.725 2.75 16.325L4.04999 15.825L10.25 18.325C10.85 18.525 11.45 18.625 12.05 18.625C12.65 18.625 13.25 18.525 13.85 18.325L20.05 15.825L21.35 16.325C22.35 16.725 22.35 18.125 21.25 18.525ZM13.05 16.425L21.25 13.125C22.25 12.725 22.25 11.325 21.25 10.925L13.05 7.62502C12.35 7.32502 11.65 7.32502 10.95 7.62502L2.75 10.925C1.75 11.325 1.75 12.725 2.75 13.125L10.95 16.425C11.65 16.725 12.45 16.725 13.05 16.425Z" fill="currentColor" />
+															<path d="M11.05 11.025L2.84998 7.725C1.84998 7.325 1.84998 5.925 2.84998 5.525L11.05 2.225C11.75 1.925 12.45 1.925 13.15 2.225L21.35 5.525C22.35 5.925 22.35 7.325 21.35 7.725L13.05 11.025C12.45 11.325 11.65 11.325 11.05 11.025Z" fill="currentColor" />
+														</svg>
+													</span>
+													<!--end::Svg Icon-->
+													<span class="fs-6 fw-bold">Submissions</span>
+												</a>
+											</li>
+											<li class="nav-item col-12 col-lg mb-5 mb-lg-0">
+												<a class="nav-link btn btn-flex btn-color-muted btn-outline btn-outline-default btn-active-danger d-flex flex-grow-1 flex-column flex-center py-5 h-1250px h-lg-100px" data-bs-toggle="tab" href="#kt_general_widget_1_2">
+													<!--begin::Svg Icon | path: icons/duotune/general/gen008.svg-->
+													<span class="svg-icon svg-icon-3x mb-5 mx-0">
+														<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M3 2H10C10.6 2 11 2.4 11 3V10C11 10.6 10.6 11 10 11H3C2.4 11 2 10.6 2 10V3C2 2.4 2.4 2 3 2Z" fill="currentColor" />
+															<path opacity="0.3" d="M14 2H21C21.6 2 22 2.4 22 3V10C22 10.6 21.6 11 21 11H14C13.4 11 13 10.6 13 10V3C13 2.4 13.4 2 14 2Z" fill="currentColor" />
+															<path opacity="0.3" d="M3 13H10C10.6 13 11 13.4 11 14V21C11 21.6 10.6 22 10 22H3C2.4 22 2 21.6 2 21V14C2 13.4 2.4 13 3 13Z" fill="currentColor" />
+															<path opacity="0.3" d="M14 13H21C21.6 13 22 13.4 22 14V21C22 21.6 21.6 22 21 22H14C13.4 22 13 21.6 13 21V14C13 13.4 13.4 13 14 13Z" fill="currentColor" />
+														</svg>
+													</span>
+													<!--end::Svg Icon-->
+													<span class="fs-6 fw-bold">Submit Data</span>
+												</a>
+											</li>
+										</ul>
+										<!--begin::Tab content-->
+										<div class="tab-content">
+											<div class="tab-pane fade show active" id="kt_general_widget_1_1">
+												<!--begin::Tables Widget 2-->
+												<div class="card">
+													
+                          <div class="card card-flush h-xl-100">
 
                                     <!--begin::Body-->
                                     <div class="card-body pt-0 px-0">
@@ -4049,14 +4094,14 @@
                               <!--begin::Destination-->
                               
                               <div class=" align-items-center fw-bold">
-                                <div class="w-50 mb-3">
-                                  Date Range
-                                </div>
-                                <input class="form-control form-control-solid" placeholder="Pick date range" id="kt_daterangepicker_4"/>
+
+                                <div class="mb-0">
+                                <input class="form-control form-control-solid" placeholder="Pick date rage" id="kt_daterangepicker_1"/>
+</div>
                                 </div>
 
                                 <div class="col-md-2 ">
-                                  <label class="form-label"><b>Select Reference</b></label>
+                               
                                 <select name="language" aria-label="Select Month" data-control="select2" data-placeholder="Select a language..." class="form-select form-select-solid form-select-lg">
                                   <option value="- Select Reference -">- Select Reference -</option>
                                   <option value="option1">Option 1</option>
@@ -4065,15 +4110,11 @@
                               
                               <!--end::Destination-->
                               <div class="col-md-2 ">
-                                <label class="form-label"><b>Select Supplier</b></label>
-                                      <input class="form-control d-flex align-items-center" value="" id="kt_tagify_suppliers" />
+                                
+                                      <input class="form-control d-flex align-items-center" value="" id="kt_tagify_suppliers" placeholder="Select Supplier"/>
                                   
                               </div>
-                              <div class="col-md-2 ">
-                                <label class="form-label"><b>Select Member</b></label>
-                                      <input class="form-control d-flex align-items-center" value="" id="kt_tagify_members" />
-                                  
-                              </div>
+                              
                               <div class="col-md-2 d-flex align-items-end justify-content-end">
                                 
                                 <button class="btn btn-primary mb-0">Apply</button>
@@ -4141,11 +4182,12 @@
                                     name="toc"
                                     value="1"
                                   /></th>
-                                <th class="min-w-100px">Reference</th>
-																<th class="text-start min-w-100px">Name</th>
-																<th class="text-end min-w-125px">Date Submitted</th>
-																<th class="text-end min-w-100px">Total Sales Submited</th>
-																<th class="text-end min-w-100px">Action</th>
+                                <th class="min-w-100px">Supplier</th>
+																<th class="text-start min-w-100px">Reference Date</th>
+																<th class="text-end min-w-125px">Submitted Date</th>
+																<th class="text-end min-w-100px">Total Sales</th>
+																<th class="text-end min-w-100px">Status</th>
+                                <th class="text-end min-w-100px">Action</th>
 																<th class="text-end"></th>
                                 
 															</tr>
@@ -4195,7 +4237,7 @@
                                   />
                                 </td>
 																<td>
-																	<a href="../../demo22/dist/apps/ecommerce/catalog/edit-product.php" class="text-gray-800 text-hover-primary">#XGY-346</a>
+																	<a href="../../demo22/dist/apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary">#XGY-346</a>
 																</td>
 																
 																<td class="text-start">
@@ -4207,6 +4249,9 @@
 																	<span class="text-gray-800 fw-bolder">$86.70</span>
 																</td>
 																<td class="text-end">
+																	<span class="badge py-3 px-4 fs-7 badge-light-warning">Pending</span>
+																</td>
+                                <td class="text-end">
 																	<span class="badge py-3 px-4 fs-7 badge-light-warning">Pending</span>
 																</td>
 																<td class="text-end">
@@ -4231,7 +4276,7 @@
 															</tr>
 															<tr>
 																<td>
-																	<a href="../../demo22/dist/apps/ecommerce/catalog/edit-product.php" class="text-gray-800 text-hover-primary">#YHD-047</a>
+																	<a href="../../demo22/dist/apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary">#YHD-047</a>
 																</td>
 																<td class="text-end">52 min ago</td>
 																<td class="text-end">
@@ -4266,7 +4311,7 @@
 															</tr>
 															<tr>
 																<td>
-																	<a href="../../demo22/dist/apps/ecommerce/catalog/edit-product.php" class="text-gray-800 text-hover-primary">#SRR-678</a>
+																	<a href="../../demo22/dist/apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary">#SRR-678</a>
 																</td>
 																<td class="text-end">1 hour ago</td>
 																<td class="text-end">
@@ -4301,7 +4346,7 @@
 															</tr>
 															<tr>
 																<td>
-																	<a href="../../demo22/dist/apps/ecommerce/catalog/edit-product.php" class="text-gray-800 text-hover-primary">#PXF-534</a>
+																	<a href="../../demo22/dist/apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary">#PXF-534</a>
 																</td>
 																<td class="text-end">3 hour ago</td>
 																<td class="text-end">
@@ -4336,7 +4381,7 @@
 															</tr>
 															<tr>
 																<td>
-																	<a href="../../demo22/dist/apps/ecommerce/catalog/edit-product.php" class="text-gray-800 text-hover-primary">#XGD-249</a>
+																	<a href="../../demo22/dist/apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary">#XGD-249</a>
 																</td>
 																<td class="text-end">2 day ago</td>
 																<td class="text-end">
@@ -4371,7 +4416,7 @@
 															</tr>
 															<tr>
 																<td>
-																	<a href="../../demo22/dist/apps/ecommerce/catalog/edit-product.php" class="text-gray-800 text-hover-primary">#SKP-035</a>
+																	<a href="../../demo22/dist/apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary">#SKP-035</a>
 																</td>
 																<td class="text-end">2 day ago</td>
 																<td class="text-end">
@@ -4406,7 +4451,7 @@
 															</tr>
 															<tr>
 																<td>
-																	<a href="../../demo22/dist/apps/ecommerce/catalog/edit-product.php" class="text-gray-800 text-hover-primary">#SKP-567</a>
+																	<a href="../../demo22/dist/apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary">#SKP-567</a>
 																</td>
 																<td class="text-end">7 min ago</td>
 																<td class="text-end">
@@ -4444,6 +4489,8 @@
 													</table>
 
 
+                          
+
                           <!--end::Table-->
                         </div>
                         <!--end::Card body-->
@@ -4455,9 +4502,9 @@
                     <!--end::Menu separator-->
                     <div class="col-md-3 mt-3 mr-3 d-flex gap-4">
                       <select name="language" aria-label="Select Year" data-control="select2" data-placeholder="Select a language..." class="form-select form-select-solid form-select-lg mr-3">
-                        <option value="- Select Action -">- Select Action -</option>
-                        <option value="option1">Invoiced</option>
-                        <option value="option1">Delete</option>
+                        <option value="- Select Action -">- Bulk Action -</option>
+                        <option value="option1">Add</option>
+                        <option value="option1">Download</option>
                         <option value="option1">CSV</option>
                     </select>
                       <!--begin::Indicator label-->
@@ -4524,6 +4571,30 @@
 
 
                                           </div>
+                                        </div>
+                                    </div>
+                                </div>
+</div>
+</div>
+												<!--end::Tables Widget 2-->
+											</div>
+											<div class="tab-pane fade" id="kt_general_widget_1_2">
+												<!--begin::Tables Widget 3-->
+												<div class="card">
+													2
+												</div>
+												<!--end::Tables Widget 3-->
+											</div>
+										</div>
+										<!--end::Tab content-->
+									</div>
+									<!--end::General Widget 1-->
+									
+								</div>
+								<!--end::Col-->
+
+
+                               
                                         </div>
                                     </div>
                                 </div>

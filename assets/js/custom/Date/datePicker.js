@@ -1,3 +1,6 @@
+$("#kt_daterangepicker_1").daterangepicker();
+
+
 var start = moment().subtract(29, "days");
 var end = moment();
 
@@ -38,3 +41,7 @@ $("#kt_daterangepicker_5").daterangepicker({
 }, cb);
 
 cb(start, end);
+
+
+
+

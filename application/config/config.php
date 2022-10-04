@@ -26,6 +26,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 $config['base_url'] = 'https://buyyn-back.herokuapp.com/';
 
+
 /*
 |--------------------------------------------------------------------------
 | Index File

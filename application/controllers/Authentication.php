@@ -12,9 +12,6 @@ class Authentication extends CI_Controller
 
 	public function index()
 	{
-<<<<<<< Updated upstream
-		$this->load->view('login');
-=======
 		$data["validated"] = 0;
 		$this->load->view('login', $data);
 	}
@@ -22,7 +19,6 @@ class Authentication extends CI_Controller
 	{
 		$data["validated"] = 1;
 		$this->load->view('login', $data);
->>>>>>> Stashed changes
 	}
 	public function register()
 	{
@@ -63,11 +59,6 @@ class Authentication extends CI_Controller
 		} else {
 			print_r($this->email->print_debugger());
 		}
-<<<<<<< Updated upstream
-
-	}
-	
-=======
 	}
 
 	public function validated()
@@ -176,5 +167,4 @@ class Authentication extends CI_Controller
 		$data["updated_date"] = date("Y-m-d");
 		print_r($this->musers->change_password($data));
 	}
->>>>>>> Stashed changes
 }

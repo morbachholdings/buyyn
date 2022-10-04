@@ -2,19 +2,11 @@
 class Musers extends CI_Model
 {
 
-<<<<<<< Updated upstream
-    function __construct()
-    {
-        parent::__construct();
-    }
-    public function register($data)
-=======
 	function __construct()
 	{
 		parent::__construct();
 	}
 	public function register($data)
->>>>>>> Stashed changes
 	{
 		$response = "You have registered successfully !";
 		$this->db->where('Email', $data['Email']);
@@ -24,15 +16,6 @@ class Musers extends CI_Model
 			return json_encode(array("status" => "0", "ret_data" => "Email already in use"));
 		} else {
 			if ($this->db->insert('users', $data)) {
-<<<<<<< Updated upstream
-				
-					return json_encode(array("status" => "1", "ret_data" => $response));
-				
-			}else {
-                return json_encode(array("status" => "0", "ret_data" => "Error"));
-            }
-		}
-=======
 
 				return json_encode(array("status" => "1", "ret_data" => $response));
 			} else {
@@ -153,6 +136,5 @@ class Musers extends CI_Model
 		AND ISNULL(deleted_date)";
 
 		return $this->db->query($sql);
->>>>>>> Stashed changes
 	}
 }

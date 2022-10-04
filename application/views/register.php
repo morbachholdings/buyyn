@@ -136,11 +136,7 @@
                             <!--begin::Sign up-->
                             <div class="text-gray-500 text-center fw-semibold fs-6">
                                 Already have an Account?
-<<<<<<< Updated upstream
-                                <a href="<?php echo base_url() ?>authentication/index" class="link-primary fw-semibold">Sign in</a>
-=======
                                 <a href="<?php echo base_url() ?>" class="link-primary fw-semibold">Sign in</a>
->>>>>>> Stashed changes
                             </div>
                             <!--end::Sign up-->
                         </form>

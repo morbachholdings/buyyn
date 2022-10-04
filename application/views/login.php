@@ -35,23 +35,6 @@
 					<!--begin::Wrapper-->
 					<div class="w-lg-500px p-10">
 
-<<<<<<< Updated upstream
-
-						<!--begin::Alert-->
-						<div class="alert alert-primary d-flex align-items-center p-5">
-							<div class="d-flex flex-column">
-								<!--begin::Title-->
-								<h4 class="mb-1 text-dark">This is an alert</h4>
-								<!--end::Title-->
-								<!--begin::Content-->
-								<span>The alert component can be used to highlight certain parts of your page for higher content visibility.</span>
-								<!--end::Content-->
-							</div>
-							<!--end::Wrapper-->
-						</div>
-
-
-=======
 						<?php
 						if ($validated == 1) {
 						?>
@@ -77,7 +60,6 @@
 
 						</div>
 
->>>>>>> Stashed changes
 						<!--begin::Form-->
 						<form class="form w-100" novalidate="novalidate" id="kt_sign_in_form" data-kt-redirect-url="index.php" action="#">
 							<!--begin::Heading-->
@@ -92,21 +74,13 @@
 							<!--begin::Input group=-->
 							<div class="fv-row mb-8">
 								<!--begin::Email-->
-<<<<<<< Updated upstream
-								<input type="text" placeholder="Email" name="email" autocomplete="off" class="form-control bg-transparent" />
-=======
 								<input type="text" placeholder="Email" name="email" id="email" autocomplete="off" class="form-control bg-transparent" />
->>>>>>> Stashed changes
 								<!--end::Email-->
 							</div>
 							<!--end::Input group=-->
 							<div class="fv-row mb-3">
 								<!--begin::Password-->
-<<<<<<< Updated upstream
-								<input type="password" placeholder="Password" name="password" autocomplete="off" class="form-control bg-transparent" />
-=======
 								<input type="password" placeholder="Password" name="password" id="password" autocomplete="off" class="form-control bg-transparent" />
->>>>>>> Stashed changes
 								<!--end::Password-->
 							</div>
 							<!--end::Input group=-->
@@ -114,11 +88,7 @@
 							<div class="d-flex flex-stack flex-wrap gap-3 fs-base fw-semibold mb-8">
 								<div></div>
 								<!--begin::Link-->
-<<<<<<< Updated upstream
-								<a href="reset-password.php" class="link-primary">Forgot Password ?</a>
-=======
 								<a href="<?php echo base_url() ?>authentication/reset" class="link-primary">Forgot Password ?</a>
->>>>>>> Stashed changes
 								<!--end::Link-->
 							</div>
 							<!--end::Wrapper-->
@@ -195,9 +165,6 @@
 	<script src="<?php echo base_url() ?>assets/js/scripts.bundle.js"></script>
 	<!--end::Global Javascript Bundle-->
 	<!--begin::Custom Javascript(used by this page)-->
-<<<<<<< Updated upstream
-	<script src="<?php echo base_url() ?>assets/js/custom/authentication/sign-in/general.js"></script>
-=======
 
 	<script>
 		"use strict";
@@ -320,7 +287,6 @@
 
 
 
->>>>>>> Stashed changes
 </body>
 
 </html>

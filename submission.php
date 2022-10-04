@@ -2797,8 +2797,7 @@
                                                                     href="#kt_list_widget_10_tab_2">
                                                                     <!--begin::Subtitle-->
                                                                     <span
-                                                                        class="nav-text text-gray-800 fw-bolder fs-6 mb-3">Pending
-                                                                        Submissions</span>
+                                                                        class="nav-text text-gray-800 fw-bolder fs-6 mb-3">Pending Submissions</span>
                                                                     <!--end::Subtitle-->
                                                                     <!--begin::Bullet-->
                                                                     <span
@@ -2945,673 +2944,138 @@
                                                                                     <!--begin::Table-->
 
 
-                                                                                    <table
-                                                                                        class="table align-middle table-row-dashed fs-6 gy-3"
-                                                                                        id="kt_table_widget_4_table">
-                                                                                        <!--begin::Table head-->
-                                                                                        <thead>
-                                                                                            <!--begin::Table row-->
-                                                                                            <tr
-                                                                                                class="text-start text-gray-400 fw-bold fs-7 text-uppercase gs-0">
-                                                                                                <th class="text-start">
-                                                                                                    <label
-                                                                                                        class="form-check form-check-inline">
-                                                                                                        <input
-                                                                                                            class="form-check-input"
-                                                                                                            type="checkbox"
-                                                                                                            name="toc"
-                                                                                                            value="1" />
-                                                                                                </th>
-                                                                                                <th class="min-w-100px">
-                                                                                                    Supplier</th>
-                                                                                                <th
-                                                                                                    class="text-start min-w-100px">
-                                                                                                    Reference Date</th>
-                                                                                                <th
-                                                                                                    class="text-end min-w-125px">
-                                                                                                    Submitted Date</th>
-                                                                                                <th
-                                                                                                    class="text-end min-w-100px">
-                                                                                                    Total Sales</th>
-                                                                                                <th
-                                                                                                    class="text-end min-w-100px">
-                                                                                                    Status</th>
-                                                                                                <th
-                                                                                                    class="text-end min-w-100px">
-                                                                                                    Action</th>
-                                                                                                <th class="text-end">
-                                                                                                </th>
+                                                                                    
 
-                                                                                            </tr>
-                                                                                            <!--end::Table row-->
-                                                                                        </thead>
-                                                                                        <!--end::Table head-->
-                                                                                        <!--begin::Table body-->
-                                                                                        <tbody
-                                                                                            class="fw-bold text-gray-600">
-                                                                                            <tr data-kt-table-widget-4="subtable_template"
-                                                                                                class="d-none">
-                                                                                                <td colspan="2">
-                                                                                                    <div
-                                                                                                        class="d-flex align-items-center gap-3">
-                                                                                                        <a href="#"
-                                                                                                            class="symbol symbol-50px bg-secondary bg-opacity-25 rounded">
-                                                                                                            <img src=""
-                                                                                                                data-kt-src-path="assets/media/stock/ecommerce/"
-                                                                                                                alt=""
-                                                                                                                data-kt-table-widget-4="template_image" />
-                                                                                                        </a>
-                                                                                                        <div
-                                                                                                            class="d-flex flex-column text-muted">
-                                                                                                            <a href="#"
-                                                                                                                class="text-gray-800 text-hover-primary fw-bold"
-                                                                                                                data-kt-table-widget-4="template_name">Product
-                                                                                                                name</a>
-                                                                                                            <div class="fs-7"
-                                                                                                                data-kt-table-widget-4="template_description">
-                                                                                                                Product
-                                                                                                                description
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    <div
-                                                                                                        class="text-gray-800 fs-7">
-                                                                                                        Cost</div>
-                                                                                                    <div class="text-muted fs-7 fw-bold"
-                                                                                                        data-kt-table-widget-4="template_cost">
-                                                                                                        1</div>
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    <div
-                                                                                                        class="text-gray-800 fs-7">
-                                                                                                        Qty</div>
-                                                                                                    <div class="text-muted fs-7 fw-bold"
-                                                                                                        data-kt-table-widget-4="template_qty">
-                                                                                                        1</div>
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    <div
-                                                                                                        class="text-gray-800 fs-7">
-                                                                                                        Total</div>
-                                                                                                    <div class="text-muted fs-7 fw-bold"
-                                                                                                        data-kt-table-widget-4="template_total">
-                                                                                                        name</div>
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    <div
-                                                                                                        class="text-gray-800 fs-7 me-3">
-                                                                                                        On hand</div>
-                                                                                                    <div class="text-muted fs-7 fw-bold"
-                                                                                                        data-kt-table-widget-4="template_stock">
-                                                                                                        32</div>
-                                                                                                </td>
-                                                                                                <td></td>
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <td>
-                                                                                                    <label
-                                                                                                        class="form-check form-check-inline">
-                                                                                                        <input
-                                                                                                            class="form-check-input"
-                                                                                                            type="checkbox"
-                                                                                                            name="toc"
-                                                                                                            value="1" />
-                                                                                                </td>
-                                                                                                <td>
-                                                                                                    <a href="../../demo22/dist/apps/ecommerce/catalog/edit-product.html"
-                                                                                                        class="text-gray-800 text-hover-primary">#XGY-346</a>
-                                                                                                </td>
 
-                                                                                                <td class="text-start">
-                                                                                                    <a href="#"
-                                                                                                        class="text-gray-600 text-hover-primary">Albert
-                                                                                                        Flores Albert
-                                                                                                        Flores Albert
-                                                                                                        Flores</a>
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    $630.00</td>
+                                                                                    <div class="row gy-5 g-xl-10">
 
-                                                                                                <td class="text-end">
-                                                                                                    <span
-                                                                                                        class="text-gray-800 fw-bolder">$86.70</span>
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    <span
-                                                                                                        class="badge py-3 px-4 fs-7 badge-light-warning">Pending</span>
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    <div
-                                                                                                        class="d-flex align-items-center justify-content-end">
-                                                                                                        <div
-                                                                                                            class="cursor-pointer">
-                                                                                                            <img src="assets/media/icons/duotune/arrows/arr016.svg"
-                                                                                                                alt=""
-                                                                                                                style="width:20px;height:20px;margin-left:5px;">
-                                                                                                        </div>
-                                                                                                        <div
-                                                                                                            class="cursor-pointer">
-                                                                                                            <img src="assets/media/icons/duotune/arrows/arr015.svg"
-                                                                                                                alt=""
-                                                                                                                style="width:20px;height:20px;margin-left:5px;">
-                                                                                                        </div>
-                                                                                                        <div
-                                                                                                            class="cursor-pointer">
-                                                                                                            <img src="assets/media/icons/duotune/files/fil010.svg"
-                                                                                                                alt=""
-                                                                                                                style="width:20px;height:20px;margin-left:5px;">
-                                                                                                        </div>
-                                                                                                    </div>
+<!--end::Col-->
+<!--begin::Col-->
+<div class="col-xl-12 mb-5 mb-xl-10">
+  <!--begin::Table Widget 4-->
+  <div class="card card-flush h-xl-100">
+    
+    <!--begin::Card body-->
+    <div class="card-body pt-2">
+      <!--begin::Table-->
+      <table class="table align-middle table-row-dashed fs-6 gy-3" id="kt_table_widget_4_table">
+        <!--begin::Table head-->
+        <thead>
+          <!--begin::Table row-->
+          <tr class="text-start text-gray-400 fw-bold fs-7 text-uppercase gs-0">
+            <th></th>
+            <th>#</th>
+            <th class="min-w-100px">Supplier</th>
+            <th class="text-end min-w-100px">Reference Date</th>
+            <th class="text-end min-w-125px">Submitted Date</th>
+            <th class="text-end min-w-100px">Total Sales</th>
+            <th class="text-end min-w-100px">Status</th>
+            <th class="text-end min-w-50px">Action</th>
+          
+          </tr>
+          <!--end::Table row-->
+        </thead>
+        <!--end::Table head-->
+        <!--begin::Table body-->
+        <tbody class="fw-bold text-gray-600">
+          <tr data-kt-table-widget-4="subtable_template" class="d-none">
+            <td colspan="2">
+              <div class="d-flex align-items-center gap-3">
+                <a href="#" class="symbol symbol-50px bg-secondary bg-opacity-25 rounded">
+                  <img src="" data-kt-src-path="assets/media/stock/ecommerce/" alt=""
+                    data-kt-table-widget-4="template_image" />
+                </a>
+                <div class="d-flex flex-column text-muted">
+                  <a href="#" class="text-gray-800 text-hover-primary fw-bold"
+                    data-kt-table-widget-4="template_name">Product name</a>
+                  <div class="fs-7" data-kt-table-widget-4="template_description">Product
+                    description</div>
+                </div>
+              </div>
+            </td>
+            <td class="text-end">
+              <div class="text-gray-800 fs-7">Cost</div>
+              <div class="text-muted fs-7 fw-bold" data-kt-table-widget-4="template_cost">1</div>
+            </td>
+            <td class="text-end">
+              <div class="text-gray-800 fs-7">Qty</div>
+              <div class="text-muted fs-7 fw-bold" data-kt-table-widget-4="template_qty">1</div>
+            </td>
+            <td class="text-end">
+              <div class="text-gray-800 fs-7">Total</div>
+              <div class="text-muted fs-7 fw-bold" data-kt-table-widget-4="template_total">name
+              </div>
+            </td>
+            <td class="text-end">
+              <div class="text-gray-800 fs-7 me-3">On hand</div>
+              <div class="text-muted fs-7 fw-bold" data-kt-table-widget-4="template_stock">32
+              </div>
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="" id=""></td>
+            <td class="">
+              <button type="button"
+                class="btn btn-sm btn-icon btn-light btn-active-light-primary toggle h-25px w-25px"
+                data-kt-table-widget-4="expand_row">
+                <!--begin::Svg Icon | path: icons/duotune/arrows/arr087.svg-->
+                <span class="svg-icon svg-icon-3 m-0 toggle-off">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect opacity="0.5" x="11" y="18" width="12" height="2" rx="1"
+                      transform="rotate(-90 11 18)" fill="currentColor" />
+                    <rect x="6" y="11" width="12" height="2" rx="1" fill="currentColor" />
+                  </svg>
+                </span>
+                <!--end::Svg Icon-->
+                <!--begin::Svg Icon | path: icons/duotune/arrows/arr089.svg-->
+                <span class="svg-icon svg-icon-3 m-0 toggle-on">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="6" y="11" width="12" height="2" rx="1" fill="currentColor" />
+                  </svg>
+                </span>
+                <!--end::Svg Icon-->
+              </button>
+            </td>
+            <td>
+              <a href="../../demo22/dist/apps/ecommerce/catalog/edit-product.html"
+                class="text-gray-800 text-hover-primary">#XGY-346</a>
+            </td>
+            <td class="text-end">7 min ago</td>
+            <td class="text-end">
+              <a href="#" class="text-gray-600 text-hover-primary">Albert Flores</a>
+            </td>
+            <td class="text-end">$630.00</td>
+            <td class="text-end">
+              <span class="text-gray-800 fw-bolder">$86.70</span>
+            </td>
+            <td class="text-end">
+              <div class="d-flex justify-content-end">
+                <div class="mx-1 cursor-pointer"><img src="assets/media/icons/duotune/arrows/arr016.svg" alt=""></div>
+                <div class="mx-1 cursor-pointer"><img src="assets/media/icons/duotune/arrows/arr015.svg" alt=""></div>
+                <div class="mx-1 cursor-pointer"><img src="assets/media/icons/duotune/files/fil010.svg" alt=""></div>
+              </div>
+            </td>
 
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    <button
-                                                                                                        type="button"
-                                                                                                        class="btn btn-sm btn-icon btn-light btn-active-light-primary toggle h-25px w-25px"
-                                                                                                        data-kt-table-widget-4="expand_row">
-                                                                                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr087.svg-->
-                                                                                                        <span
-                                                                                                            class="svg-icon svg-icon-3 m-0 toggle-off">
-                                                                                                            <svg width="24"
-                                                                                                                height="24"
-                                                                                                                viewBox="0 0 24 24"
-                                                                                                                fill="none"
-                                                                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                                                                <rect
-                                                                                                                    opacity="0.5"
-                                                                                                                    x="11"
-                                                                                                                    y="18"
-                                                                                                                    width="12"
-                                                                                                                    height="2"
-                                                                                                                    rx="1"
-                                                                                                                    transform="rotate(-90 11 18)"
-                                                                                                                    fill="currentColor" />
-                                                                                                                <rect
-                                                                                                                    x="6"
-                                                                                                                    y="11"
-                                                                                                                    width="12"
-                                                                                                                    height="2"
-                                                                                                                    rx="1"
-                                                                                                                    fill="currentColor" />
-                                                                                                            </svg>
-                                                                                                        </span>
-                                                                                                        <!--end::Svg Icon-->
-                                                                                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr089.svg-->
-                                                                                                        <span
-                                                                                                            class="svg-icon svg-icon-3 m-0 toggle-on">
-                                                                                                            <svg width="24"
-                                                                                                                height="24"
-                                                                                                                viewBox="0 0 24 24"
-                                                                                                                fill="none"
-                                                                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                                                                <rect
-                                                                                                                    x="6"
-                                                                                                                    y="11"
-                                                                                                                    width="12"
-                                                                                                                    height="2"
-                                                                                                                    rx="1"
-                                                                                                                    fill="currentColor" />
-                                                                                                            </svg>
-                                                                                                        </span>
-                                                                                                        <!--end::Svg Icon-->
-                                                                                                    </button>
-                                                                                                </td>
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <td>
-                                                                                                    <a href="../../demo22/dist/apps/ecommerce/catalog/edit-product.html"
-                                                                                                        class="text-gray-800 text-hover-primary">#YHD-047</a>
-                                                                                                </td>
-                                                                                                <td class="text-end">52
-                                                                                                    min ago</td>
-                                                                                                <td class="text-end">
-                                                                                                    <a href="#"
-                                                                                                        class="text-gray-600 text-hover-primary">Jenny
-                                                                                                        Wilson</a>
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    $25.00</td>
-                                                                                                <td class="text-end">
-                                                                                                    <span
-                                                                                                        class="text-gray-800 fw-bolder">$4.20</span>
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    <span
-                                                                                                        class="badge py-3 px-4 fs-7 badge-light-primary">Confirmed</span>
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    <button
-                                                                                                        type="button"
-                                                                                                        class="btn btn-sm btn-icon btn-light btn-active-light-primary toggle h-25px w-25px"
-                                                                                                        data-kt-table-widget-4="expand_row">
-                                                                                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr087.svg-->
-                                                                                                        <span
-                                                                                                            class="svg-icon svg-icon-3 m-0 toggle-off">
-                                                                                                            <svg width="24"
-                                                                                                                height="24"
-                                                                                                                viewBox="0 0 24 24"
-                                                                                                                fill="none"
-                                                                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                                                                <rect
-                                                                                                                    opacity="0.5"
-                                                                                                                    x="11"
-                                                                                                                    y="18"
-                                                                                                                    width="12"
-                                                                                                                    height="2"
-                                                                                                                    rx="1"
-                                                                                                                    transform="rotate(-90 11 18)"
-                                                                                                                    fill="currentColor" />
-                                                                                                                <rect
-                                                                                                                    x="6"
-                                                                                                                    y="11"
-                                                                                                                    width="12"
-                                                                                                                    height="2"
-                                                                                                                    rx="1"
-                                                                                                                    fill="currentColor" />
-                                                                                                            </svg>
-                                                                                                        </span>
-                                                                                                        <!--end::Svg Icon-->
-                                                                                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr089.svg-->
-                                                                                                        <span
-                                                                                                            class="svg-icon svg-icon-3 m-0 toggle-on">
-                                                                                                            <svg width="24"
-                                                                                                                height="24"
-                                                                                                                viewBox="0 0 24 24"
-                                                                                                                fill="none"
-                                                                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                                                                <rect
-                                                                                                                    x="6"
-                                                                                                                    y="11"
-                                                                                                                    width="12"
-                                                                                                                    height="2"
-                                                                                                                    rx="1"
-                                                                                                                    fill="currentColor" />
-                                                                                                            </svg>
-                                                                                                        </span>
-                                                                                                        <!--end::Svg Icon-->
-                                                                                                    </button>
-                                                                                                </td>
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <td>
-                                                                                                    <a href="../../demo22/dist/apps/ecommerce/catalog/edit-product.html"
-                                                                                                        class="text-gray-800 text-hover-primary">#SRR-678</a>
-                                                                                                </td>
-                                                                                                <td class="text-end">1
-                                                                                                    hour ago</td>
-                                                                                                <td class="text-end">
-                                                                                                    <a href="#"
-                                                                                                        class="text-gray-600 text-hover-primary">Robert
-                                                                                                        Fox</a>
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    $1,630.00</td>
-                                                                                                <td class="text-end">
-                                                                                                    <span
-                                                                                                        class="text-gray-800 fw-bolder">$203.90</span>
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    <span
-                                                                                                        class="badge py-3 px-4 fs-7 badge-light-warning">Pending</span>
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    <button
-                                                                                                        type="button"
-                                                                                                        class="btn btn-sm btn-icon btn-light btn-active-light-primary toggle h-25px w-25px"
-                                                                                                        data-kt-table-widget-4="expand_row">
-                                                                                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr087.svg-->
-                                                                                                        <span
-                                                                                                            class="svg-icon svg-icon-3 m-0 toggle-off">
-                                                                                                            <svg width="24"
-                                                                                                                height="24"
-                                                                                                                viewBox="0 0 24 24"
-                                                                                                                fill="none"
-                                                                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                                                                <rect
-                                                                                                                    opacity="0.5"
-                                                                                                                    x="11"
-                                                                                                                    y="18"
-                                                                                                                    width="12"
-                                                                                                                    height="2"
-                                                                                                                    rx="1"
-                                                                                                                    transform="rotate(-90 11 18)"
-                                                                                                                    fill="currentColor" />
-                                                                                                                <rect
-                                                                                                                    x="6"
-                                                                                                                    y="11"
-                                                                                                                    width="12"
-                                                                                                                    height="2"
-                                                                                                                    rx="1"
-                                                                                                                    fill="currentColor" />
-                                                                                                            </svg>
-                                                                                                        </span>
-                                                                                                        <!--end::Svg Icon-->
-                                                                                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr089.svg-->
-                                                                                                        <span
-                                                                                                            class="svg-icon svg-icon-3 m-0 toggle-on">
-                                                                                                            <svg width="24"
-                                                                                                                height="24"
-                                                                                                                viewBox="0 0 24 24"
-                                                                                                                fill="none"
-                                                                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                                                                <rect
-                                                                                                                    x="6"
-                                                                                                                    y="11"
-                                                                                                                    width="12"
-                                                                                                                    height="2"
-                                                                                                                    rx="1"
-                                                                                                                    fill="currentColor" />
-                                                                                                            </svg>
-                                                                                                        </span>
-                                                                                                        <!--end::Svg Icon-->
-                                                                                                    </button>
-                                                                                                </td>
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <td>
-                                                                                                    <a href="../../demo22/dist/apps/ecommerce/catalog/edit-product.html"
-                                                                                                        class="text-gray-800 text-hover-primary">#PXF-534</a>
-                                                                                                </td>
-                                                                                                <td class="text-end">3
-                                                                                                    hour ago</td>
-                                                                                                <td class="text-end">
-                                                                                                    <a href="#"
-                                                                                                        class="text-gray-600 text-hover-primary">Cody
-                                                                                                        Fisher</a>
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    $119.00</td>
-                                                                                                <td class="text-end">
-                                                                                                    <span
-                                                                                                        class="text-gray-800 fw-bolder">$12.00</span>
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    <span
-                                                                                                        class="badge py-3 px-4 fs-7 badge-light-success">Shipped</span>
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    <button
-                                                                                                        type="button"
-                                                                                                        class="btn btn-sm btn-icon btn-light btn-active-light-primary toggle h-25px w-25px"
-                                                                                                        data-kt-table-widget-4="expand_row">
-                                                                                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr087.svg-->
-                                                                                                        <span
-                                                                                                            class="svg-icon svg-icon-3 m-0 toggle-off">
-                                                                                                            <svg width="24"
-                                                                                                                height="24"
-                                                                                                                viewBox="0 0 24 24"
-                                                                                                                fill="none"
-                                                                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                                                                <rect
-                                                                                                                    opacity="0.5"
-                                                                                                                    x="11"
-                                                                                                                    y="18"
-                                                                                                                    width="12"
-                                                                                                                    height="2"
-                                                                                                                    rx="1"
-                                                                                                                    transform="rotate(-90 11 18)"
-                                                                                                                    fill="currentColor" />
-                                                                                                                <rect
-                                                                                                                    x="6"
-                                                                                                                    y="11"
-                                                                                                                    width="12"
-                                                                                                                    height="2"
-                                                                                                                    rx="1"
-                                                                                                                    fill="currentColor" />
-                                                                                                            </svg>
-                                                                                                        </span>
-                                                                                                        <!--end::Svg Icon-->
-                                                                                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr089.svg-->
-                                                                                                        <span
-                                                                                                            class="svg-icon svg-icon-3 m-0 toggle-on">
-                                                                                                            <svg width="24"
-                                                                                                                height="24"
-                                                                                                                viewBox="0 0 24 24"
-                                                                                                                fill="none"
-                                                                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                                                                <rect
-                                                                                                                    x="6"
-                                                                                                                    y="11"
-                                                                                                                    width="12"
-                                                                                                                    height="2"
-                                                                                                                    rx="1"
-                                                                                                                    fill="currentColor" />
-                                                                                                            </svg>
-                                                                                                        </span>
-                                                                                                        <!--end::Svg Icon-->
-                                                                                                    </button>
-                                                                                                </td>
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <td>
-                                                                                                    <a href="../../demo22/dist/apps/ecommerce/catalog/edit-product.html"
-                                                                                                        class="text-gray-800 text-hover-primary">#XGD-249</a>
-                                                                                                </td>
-                                                                                                <td class="text-end">2
-                                                                                                    day ago</td>
-                                                                                                <td class="text-end">
-                                                                                                    <a href="#"
-                                                                                                        class="text-gray-600 text-hover-primary">Arlene
-                                                                                                        McCoy</a>
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    $660.00</td>
-                                                                                                <td class="text-end">
-                                                                                                    <span
-                                                                                                        class="text-gray-800 fw-bolder">$52.26</span>
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    <span
-                                                                                                        class="badge py-3 px-4 fs-7 badge-light-success">Shipped</span>
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    <button
-                                                                                                        type="button"
-                                                                                                        class="btn btn-sm btn-icon btn-light btn-active-light-primary toggle h-25px w-25px"
-                                                                                                        data-kt-table-widget-4="expand_row">
-                                                                                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr087.svg-->
-                                                                                                        <span
-                                                                                                            class="svg-icon svg-icon-3 m-0 toggle-off">
-                                                                                                            <svg width="24"
-                                                                                                                height="24"
-                                                                                                                viewBox="0 0 24 24"
-                                                                                                                fill="none"
-                                                                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                                                                <rect
-                                                                                                                    opacity="0.5"
-                                                                                                                    x="11"
-                                                                                                                    y="18"
-                                                                                                                    width="12"
-                                                                                                                    height="2"
-                                                                                                                    rx="1"
-                                                                                                                    transform="rotate(-90 11 18)"
-                                                                                                                    fill="currentColor" />
-                                                                                                                <rect
-                                                                                                                    x="6"
-                                                                                                                    y="11"
-                                                                                                                    width="12"
-                                                                                                                    height="2"
-                                                                                                                    rx="1"
-                                                                                                                    fill="currentColor" />
-                                                                                                            </svg>
-                                                                                                        </span>
-                                                                                                        <!--end::Svg Icon-->
-                                                                                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr089.svg-->
-                                                                                                        <span
-                                                                                                            class="svg-icon svg-icon-3 m-0 toggle-on">
-                                                                                                            <svg width="24"
-                                                                                                                height="24"
-                                                                                                                viewBox="0 0 24 24"
-                                                                                                                fill="none"
-                                                                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                                                                <rect
-                                                                                                                    x="6"
-                                                                                                                    y="11"
-                                                                                                                    width="12"
-                                                                                                                    height="2"
-                                                                                                                    rx="1"
-                                                                                                                    fill="currentColor" />
-                                                                                                            </svg>
-                                                                                                        </span>
-                                                                                                        <!--end::Svg Icon-->
-                                                                                                    </button>
-                                                                                                </td>
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <td>
-                                                                                                    <a href="../../demo22/dist/apps/ecommerce/catalog/edit-product.html"
-                                                                                                        class="text-gray-800 text-hover-primary">#SKP-035</a>
-                                                                                                </td>
-                                                                                                <td class="text-end">2
-                                                                                                    day ago</td>
-                                                                                                <td class="text-end">
-                                                                                                    <a href="#"
-                                                                                                        class="text-gray-600 text-hover-primary">Eleanor
-                                                                                                        Pena</a>
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    $290.00</td>
-                                                                                                <td class="text-end">
-                                                                                                    <span
-                                                                                                        class="text-gray-800 fw-bolder">$29.00</span>
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    <span
-                                                                                                        class="badge py-3 px-4 fs-7 badge-light-danger">Rejected</span>
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    <button
-                                                                                                        type="button"
-                                                                                                        class="btn btn-sm btn-icon btn-light btn-active-light-primary toggle h-25px w-25px"
-                                                                                                        data-kt-table-widget-4="expand_row">
-                                                                                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr087.svg-->
-                                                                                                        <span
-                                                                                                            class="svg-icon svg-icon-3 m-0 toggle-off">
-                                                                                                            <svg width="24"
-                                                                                                                height="24"
-                                                                                                                viewBox="0 0 24 24"
-                                                                                                                fill="none"
-                                                                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                                                                <rect
-                                                                                                                    opacity="0.5"
-                                                                                                                    x="11"
-                                                                                                                    y="18"
-                                                                                                                    width="12"
-                                                                                                                    height="2"
-                                                                                                                    rx="1"
-                                                                                                                    transform="rotate(-90 11 18)"
-                                                                                                                    fill="currentColor" />
-                                                                                                                <rect
-                                                                                                                    x="6"
-                                                                                                                    y="11"
-                                                                                                                    width="12"
-                                                                                                                    height="2"
-                                                                                                                    rx="1"
-                                                                                                                    fill="currentColor" />
-                                                                                                            </svg>
-                                                                                                        </span>
-                                                                                                        <!--end::Svg Icon-->
-                                                                                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr089.svg-->
-                                                                                                        <span
-                                                                                                            class="svg-icon svg-icon-3 m-0 toggle-on">
-                                                                                                            <svg width="24"
-                                                                                                                height="24"
-                                                                                                                viewBox="0 0 24 24"
-                                                                                                                fill="none"
-                                                                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                                                                <rect
-                                                                                                                    x="6"
-                                                                                                                    y="11"
-                                                                                                                    width="12"
-                                                                                                                    height="2"
-                                                                                                                    rx="1"
-                                                                                                                    fill="currentColor" />
-                                                                                                            </svg>
-                                                                                                        </span>
-                                                                                                        <!--end::Svg Icon-->
-                                                                                                    </button>
-                                                                                                </td>
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <td>
-                                                                                                    <a href="../../demo22/dist/apps/ecommerce/catalog/edit-product.html"
-                                                                                                        class="text-gray-800 text-hover-primary">#SKP-567</a>
-                                                                                                </td>
-                                                                                                <td class="text-end">7
-                                                                                                    min ago</td>
-                                                                                                <td class="text-end">
-                                                                                                    <a href="#"
-                                                                                                        class="text-gray-600 text-hover-primary">Dan
-                                                                                                        Wilson</a>
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    $590.00</td>
-                                                                                                <td class="text-end">
-                                                                                                    <span
-                                                                                                        class="text-gray-800 fw-bolder">$50.00</span>
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    <span
-                                                                                                        class="badge py-3 px-4 fs-7 badge-light-success">Shipped</span>
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    <button
-                                                                                                        type="button"
-                                                                                                        class="btn btn-sm btn-icon btn-light btn-active-light-primary toggle h-25px w-25px"
-                                                                                                        data-kt-table-widget-4="expand_row">
-                                                                                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr087.svg-->
-                                                                                                        <span
-                                                                                                            class="svg-icon svg-icon-3 m-0 toggle-off">
-                                                                                                            <svg width="24"
-                                                                                                                height="24"
-                                                                                                                viewBox="0 0 24 24"
-                                                                                                                fill="none"
-                                                                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                                                                <rect
-                                                                                                                    opacity="0.5"
-                                                                                                                    x="11"
-                                                                                                                    y="18"
-                                                                                                                    width="12"
-                                                                                                                    height="2"
-                                                                                                                    rx="1"
-                                                                                                                    transform="rotate(-90 11 18)"
-                                                                                                                    fill="currentColor" />
-                                                                                                                <rect
-                                                                                                                    x="6"
-                                                                                                                    y="11"
-                                                                                                                    width="12"
-                                                                                                                    height="2"
-                                                                                                                    rx="1"
-                                                                                                                    fill="currentColor" />
-                                                                                                            </svg>
-                                                                                                        </span>
-                                                                                                        <!--end::Svg Icon-->
-                                                                                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr089.svg-->
-                                                                                                        <span
-                                                                                                            class="svg-icon svg-icon-3 m-0 toggle-on">
-                                                                                                            <svg width="24"
-                                                                                                                height="24"
-                                                                                                                viewBox="0 0 24 24"
-                                                                                                                fill="none"
-                                                                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                                                                <rect
-                                                                                                                    x="6"
-                                                                                                                    y="11"
-                                                                                                                    width="12"
-                                                                                                                    height="2"
-                                                                                                                    rx="1"
-                                                                                                                    fill="currentColor" />
-                                                                                                            </svg>
-                                                                                                        </span>
-                                                                                                        <!--end::Svg Icon-->
-                                                                                                    </button>
-                                                                                                </td>
-                                                                                            </tr>
-                                                                                        </tbody>
-                                                                                        <!--end::Table body-->
-                                                                                    </table>
+            <!-- <td class="text-end">Test</td> -->
+
+          </tr>
+
+
+
+        </tbody>
+        <!--end::Table body-->
+      </table>
+      <!--end::Table-->
+    </div>
+    <!--end::Card body-->
+  </div>
+  <!--end::Table Widget 4-->
+</div>
+<!--end::Col-->
+</div>
 
 
 
@@ -3714,7 +3178,7 @@
                                                                                                 class="col-md-2 d-flex align-items-end justify-content-end">
 
                                                                                                 <button
-                                                                                                    class="btn btn-primary mb-0">Apply</button>
+                                                                                                    class="btn btn-primary mb-0 cursor-pointer">Apply</button>
 
                                                                                             </div>
                                                                                             <!--begin::Search-->
@@ -3759,657 +3223,133 @@
                                                                                 <div class="card-body pt-0">
                                                                                     <!--begin::Table-->
 
+                                                                                    <div class="row gy-5 g-xl-10">
 
-                                                                                    <table
-                                                                                        class="table align-middle table-row-dashed fs-6 gy-3"
-                                                                                        id="kt_table_widget_4_table">
-                                                                                        <!--begin::Table head-->
-                                                                                        <thead>
-                                                                                            <!--begin::Table row-->
-                                                                                            <tr
-                                                                                                class="text-start text-gray-400 fw-bold fs-7 text-uppercase gs-0">
-                                                                                                <th class="text-start">
-                                                                                                    <label
-                                                                                                        class="form-check form-check-inline">
-                                                                                                        <input
-                                                                                                            class="form-check-input"
-                                                                                                            type="checkbox"
-                                                                                                            name="toc"
-                                                                                                            value="1" />
-                                                                                                </th>
-                                                                                                <th class="min-w-100px">
-                                                                                                    Supplier</th>
-                                                                                                <th
-                                                                                                    class="text-start min-w-100px">
-                                                                                                    Reference Date</th>
-                                                                                                <th
-                                                                                                    class="text-end min-w-125px">
-                                                                                                    Submitted Date</th>
-                                                                                                <th
-                                                                                                    class="text-end min-w-100px">
-                                                                                                    Total Sales</th>
-                                                                                                <th
-                                                                                                    class="text-end min-w-100px">
-                                                                                                    Status</th>
-                                                                                                <th
-                                                                                                    class="text-end min-w-100px">
-                                                                                                    Action</th>
-                                                                                                <th class="text-end">
-                                                                                                </th>
+<!--end::Col-->
+<!--begin::Col-->
+<div class="col-xl-12 mb-5 mb-xl-10">
+  <!--begin::Table Widget 4-->
+  <div class="card card-flush h-xl-100">
+    
+    <!--begin::Card body-->
+    <div class="card-body pt-2">
+      <!--begin::Table-->
+      <table class="table align-middle table-row-dashed fs-6 gy-3" id="kt_table_widget_6_table">
+        <!--begin::Table head-->
+        <thead>
+          <!--begin::Table row-->
+          <tr class="text-start text-gray-400 fw-bold fs-7 text-uppercase gs-0">
+            <th></th>
+            <th>#</th>
+            <th class="min-w-100px">Supplier</th>
+            <th class="text-end min-w-100px">Reference Date</th>
+            <th class="text-end min-w-125px">Submitted Date</th>
+            <th class="text-end min-w-100px">Total Sales</th>
+            <th class="text-end min-w-100px">Status</th>
+            <th class="text-end min-w-50px">Action</th>
+          
+          </tr>
+          <!--end::Table row-->
+        </thead>
+        <!--end::Table head-->
+        <!--begin::Table body-->
+        <tbody class="fw-bold text-gray-600">
+          <tr data-kt-table-widget-6="subtable_template" class="d-none">
+            <td colspan="2">
+              <div class="d-flex align-items-center gap-3">
+                <a href="#" class="symbol symbol-50px bg-secondary bg-opacity-25 rounded">
+                  <img src="" data-kt-src-path="assets/media/stock/ecommerce/" alt=""
+                    data-kt-table-widget-6="template_image" />
+                </a>
+                <div class="d-flex flex-column text-muted">
+                  <a href="#" class="text-gray-800 text-hover-primary fw-bold"
+                    data-kt-table-widget-6="template_name">Product name</a>
+                  <div class="fs-7" data-kt-table-widget-6="template_description">Product
+                    description</div>
+                </div>
+              </div>
+            </td>
+            <td class="text-end">
+              <div class="text-gray-800 fs-7">Cost</div>
+              <div class="text-muted fs-7 fw-bold" data-kt-table-widget-6="template_cost">1</div>
+            </td>
+            <td class="text-end">
+              <div class="text-gray-800 fs-7">Qty</div>
+              <div class="text-muted fs-7 fw-bold" data-kt-table-widget-6="template_qty">1</div>
+            </td>
+            <td class="text-end">
+              <div class="text-gray-800 fs-7">Total</div>
+              <div class="text-muted fs-7 fw-bold" data-kt-table-widget-6="template_total">name
+              </div>
+            </td>
+            <td class="text-end">
+              <div class="text-gray-800 fs-7 me-3">On hand</div>
+              <div class="text-muted fs-7 fw-bold" data-kt-table-widget-6="template_stock">32
+              </div>
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="" id=""></td>
+            <td class="">
+              <button type="button"
+                class="btn btn-sm btn-icon btn-light btn-active-light-primary toggle h-25px w-25px"
+                data-kt-table-widget-6="expand_row6">
+                <!--begin::Svg Icon | path: icons/duotune/arrows/arr087.svg-->
+                <span class="svg-icon svg-icon-3 m-0 toggle-off">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect opacity="0.5" x="11" y="18" width="12" height="2" rx="1"
+                      transform="rotate(-90 11 18)" fill="currentColor" />
+                    <rect x="6" y="11" width="12" height="2" rx="1" fill="currentColor" />
+                  </svg>
+                </span>
+                <!--end::Svg Icon-->
+                <!--begin::Svg Icon | path: icons/duotune/arrows/arr089.svg-->
+                <span class="svg-icon svg-icon-3 m-0 toggle-on">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="6" y="11" width="12" height="2" rx="1" fill="currentColor" />
+                  </svg>
+                </span>
+                <!--end::Svg Icon-->
+              </button>
+            </td>
+            <td>
+              <a href="../../demo22/dist/apps/ecommerce/catalog/edit-product.html"
+                class="text-gray-800 text-hover-primary">#XGY-346</a>
+            </td>
+            <td class="text-end">7 min ago</td>
+            <td class="text-end">
+              <a href="#" class="text-gray-600 text-hover-primary">Albert Flores</a>
+            </td>
+            <td class="text-end">$630.00</td>
+            <td class="text-end">
+              <span class="text-gray-800 fw-bolder">$86.70</span>
+            </td>
+            <td class="text-end">
+              <div class="d-flex justify-content-end">
+                <div class="mx-1 cursor-pointer"><img src="assets/media/icons/duotune/files/fil010.svg" alt=""></div>
+              </div>
+            </td>
 
-                                                                                            </tr>
-                                                                                            <!--end::Table row-->
-                                                                                        </thead>
-                                                                                        <!--end::Table head-->
-                                                                                        <!--begin::Table body-->
-                                                                                        <tbody
-                                                                                            class="fw-bold text-gray-600">
-                                                                                            <tr data-kt-table-widget-4="subtable_template"
-                                                                                                class="d-none">
-                                                                                                <td colspan="2">
-                                                                                                    <div
-                                                                                                        class="d-flex align-items-center gap-3">
-                                                                                                        <a href="#"
-                                                                                                            class="symbol symbol-50px bg-secondary bg-opacity-25 rounded">
-                                                                                                            <img src=""
-                                                                                                                data-kt-src-path="assets/media/stock/ecommerce/"
-                                                                                                                alt=""
-                                                                                                                data-kt-table-widget-4="template_image" />
-                                                                                                        </a>
-                                                                                                        <div
-                                                                                                            class="d-flex flex-column text-muted">
-                                                                                                            <a href="#"
-                                                                                                                class="text-gray-800 text-hover-primary fw-bold"
-                                                                                                                data-kt-table-widget-4="template_name">Product
-                                                                                                                name</a>
-                                                                                                            <div class="fs-7"
-                                                                                                                data-kt-table-widget-4="template_description">
-                                                                                                                Product
-                                                                                                                description
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    <div
-                                                                                                        class="text-gray-800 fs-7">
-                                                                                                        Cost</div>
-                                                                                                    <div class="text-muted fs-7 fw-bold"
-                                                                                                        data-kt-table-widget-4="template_cost">
-                                                                                                        1</div>
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    <div
-                                                                                                        class="text-gray-800 fs-7">
-                                                                                                        Qty</div>
-                                                                                                    <div class="text-muted fs-7 fw-bold"
-                                                                                                        data-kt-table-widget-4="template_qty">
-                                                                                                        1</div>
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    <div
-                                                                                                        class="text-gray-800 fs-7">
-                                                                                                        Total</div>
-                                                                                                    <div class="text-muted fs-7 fw-bold"
-                                                                                                        data-kt-table-widget-4="template_total">
-                                                                                                        name</div>
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    <div
-                                                                                                        class="text-gray-800 fs-7 me-3">
-                                                                                                        On hand</div>
-                                                                                                    <div class="text-muted fs-7 fw-bold"
-                                                                                                        data-kt-table-widget-4="template_stock">
-                                                                                                        32</div>
-                                                                                                </td>
-                                                                                                <td></td>
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <td>
-                                                                                                    <label
-                                                                                                        class="form-check form-check-inline">
-                                                                                                        <input
-                                                                                                            class="form-check-input"
-                                                                                                            type="checkbox"
-                                                                                                            name="toc"
-                                                                                                            value="1" />
-                                                                                                </td>
-                                                                                                <td>
-                                                                                                    <a href="../../demo22/dist/apps/ecommerce/catalog/edit-product.html"
-                                                                                                        class="text-gray-800 text-hover-primary">#XGY-346</a>
-                                                                                                </td>
+            <!-- <td class="text-end">Test</td> -->
 
-                                                                                                <td class="text-start">
-                                                                                                    <a href="#"
-                                                                                                        class="text-gray-600 text-hover-primary">Albert
-                                                                                                        Flores Albert
-                                                                                                        Flores Albert
-                                                                                                        Flores</a>
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    $630.00</td>
-
-                                                                                                <td class="text-end">
-                                                                                                    <span
-                                                                                                        class="text-gray-800 fw-bolder">$86.70</span>
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    <span
-                                                                                                        class="badge py-3 px-4 fs-7 badge-light-warning">Pending</span>
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    <img src="./assets/media/illustrations/printer.png"
-                                                                                                        alt=""
-                                                                                                        style="width:20px;height:20px;margin-left:5px;">
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    <button
-                                                                                                        type="button"
-                                                                                                        class="btn btn-sm btn-icon btn-light btn-active-light-primary toggle h-25px w-25px"
-                                                                                                        data-kt-table-widget-4="expand_row">
-                                                                                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr087.svg-->
-                                                                                                        <span
-                                                                                                            class="svg-icon svg-icon-3 m-0 toggle-off">
-                                                                                                            <svg width="24"
-                                                                                                                height="24"
-                                                                                                                viewBox="0 0 24 24"
-                                                                                                                fill="none"
-                                                                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                                                                <rect
-                                                                                                                    opacity="0.5"
-                                                                                                                    x="11"
-                                                                                                                    y="18"
-                                                                                                                    width="12"
-                                                                                                                    height="2"
-                                                                                                                    rx="1"
-                                                                                                                    transform="rotate(-90 11 18)"
-                                                                                                                    fill="currentColor" />
-                                                                                                                <rect
-                                                                                                                    x="6"
-                                                                                                                    y="11"
-                                                                                                                    width="12"
-                                                                                                                    height="2"
-                                                                                                                    rx="1"
-                                                                                                                    fill="currentColor" />
-                                                                                                            </svg>
-                                                                                                        </span>
-                                                                                                        <!--end::Svg Icon-->
-                                                                                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr089.svg-->
-                                                                                                        <span
-                                                                                                            class="svg-icon svg-icon-3 m-0 toggle-on">
-                                                                                                            <svg width="24"
-                                                                                                                height="24"
-                                                                                                                viewBox="0 0 24 24"
-                                                                                                                fill="none"
-                                                                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                                                                <rect
-                                                                                                                    x="6"
-                                                                                                                    y="11"
-                                                                                                                    width="12"
-                                                                                                                    height="2"
-                                                                                                                    rx="1"
-                                                                                                                    fill="currentColor" />
-                                                                                                            </svg>
-                                                                                                        </span>
-                                                                                                        <!--end::Svg Icon-->
-                                                                                                    </button>
-                                                                                                </td>
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <td>
-                                                                                                    <a href="../../demo22/dist/apps/ecommerce/catalog/edit-product.html"
-                                                                                                        class="text-gray-800 text-hover-primary">#YHD-047</a>
-                                                                                                </td>
-                                                                                                <td class="text-end">52
-                                                                                                    min ago</td>
-                                                                                                <td class="text-end">
-                                                                                                    <a href="#"
-                                                                                                        class="text-gray-600 text-hover-primary">Jenny
-                                                                                                        Wilson</a>
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    $25.00</td>
-                                                                                                <td class="text-end">
-                                                                                                    <span
-                                                                                                        class="text-gray-800 fw-bolder">$4.20</span>
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    <span
-                                                                                                        class="badge py-3 px-4 fs-7 badge-light-primary">Confirmed</span>
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    <button
-                                                                                                        type="button"
-                                                                                                        class="btn btn-sm btn-icon btn-light btn-active-light-primary toggle h-25px w-25px"
-                                                                                                        data-kt-table-widget-4="expand_row">
-                                                                                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr087.svg-->
-                                                                                                        <span
-                                                                                                            class="svg-icon svg-icon-3 m-0 toggle-off">
-                                                                                                            <svg width="24"
-                                                                                                                height="24"
-                                                                                                                viewBox="0 0 24 24"
-                                                                                                                fill="none"
-                                                                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                                                                <rect
-                                                                                                                    opacity="0.5"
-                                                                                                                    x="11"
-                                                                                                                    y="18"
-                                                                                                                    width="12"
-                                                                                                                    height="2"
-                                                                                                                    rx="1"
-                                                                                                                    transform="rotate(-90 11 18)"
-                                                                                                                    fill="currentColor" />
-                                                                                                                <rect
-                                                                                                                    x="6"
-                                                                                                                    y="11"
-                                                                                                                    width="12"
-                                                                                                                    height="2"
-                                                                                                                    rx="1"
-                                                                                                                    fill="currentColor" />
-                                                                                                            </svg>
-                                                                                                        </span>
-                                                                                                        <!--end::Svg Icon-->
-                                                                                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr089.svg-->
-                                                                                                        <span
-                                                                                                            class="svg-icon svg-icon-3 m-0 toggle-on">
-                                                                                                            <svg width="24"
-                                                                                                                height="24"
-                                                                                                                viewBox="0 0 24 24"
-                                                                                                                fill="none"
-                                                                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                                                                <rect
-                                                                                                                    x="6"
-                                                                                                                    y="11"
-                                                                                                                    width="12"
-                                                                                                                    height="2"
-                                                                                                                    rx="1"
-                                                                                                                    fill="currentColor" />
-                                                                                                            </svg>
-                                                                                                        </span>
-                                                                                                        <!--end::Svg Icon-->
-                                                                                                    </button>
-                                                                                                </td>
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <td>
-                                                                                                    <a href="../../demo22/dist/apps/ecommerce/catalog/edit-product.html"
-                                                                                                        class="text-gray-800 text-hover-primary">#SRR-678</a>
-                                                                                                </td>
-                                                                                                <td class="text-end">1
-                                                                                                    hour ago</td>
-                                                                                                <td class="text-end">
-                                                                                                    <a href="#"
-                                                                                                        class="text-gray-600 text-hover-primary">Robert
-                                                                                                        Fox</a>
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    $1,630.00</td>
-                                                                                                <td class="text-end">
-                                                                                                    <span
-                                                                                                        class="text-gray-800 fw-bolder">$203.90</span>
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    <span
-                                                                                                        class="badge py-3 px-4 fs-7 badge-light-warning">Pending</span>
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    <button
-                                                                                                        type="button"
-                                                                                                        class="btn btn-sm btn-icon btn-light btn-active-light-primary toggle h-25px w-25px"
-                                                                                                        data-kt-table-widget-4="expand_row">
-                                                                                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr087.svg-->
-                                                                                                        <span
-                                                                                                            class="svg-icon svg-icon-3 m-0 toggle-off">
-                                                                                                            <svg width="24"
-                                                                                                                height="24"
-                                                                                                                viewBox="0 0 24 24"
-                                                                                                                fill="none"
-                                                                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                                                                <rect
-                                                                                                                    opacity="0.5"
-                                                                                                                    x="11"
-                                                                                                                    y="18"
-                                                                                                                    width="12"
-                                                                                                                    height="2"
-                                                                                                                    rx="1"
-                                                                                                                    transform="rotate(-90 11 18)"
-                                                                                                                    fill="currentColor" />
-                                                                                                                <rect
-                                                                                                                    x="6"
-                                                                                                                    y="11"
-                                                                                                                    width="12"
-                                                                                                                    height="2"
-                                                                                                                    rx="1"
-                                                                                                                    fill="currentColor" />
-                                                                                                            </svg>
-                                                                                                        </span>
-                                                                                                        <!--end::Svg Icon-->
-                                                                                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr089.svg-->
-                                                                                                        <span
-                                                                                                            class="svg-icon svg-icon-3 m-0 toggle-on">
-                                                                                                            <svg width="24"
-                                                                                                                height="24"
-                                                                                                                viewBox="0 0 24 24"
-                                                                                                                fill="none"
-                                                                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                                                                <rect
-                                                                                                                    x="6"
-                                                                                                                    y="11"
-                                                                                                                    width="12"
-                                                                                                                    height="2"
-                                                                                                                    rx="1"
-                                                                                                                    fill="currentColor" />
-                                                                                                            </svg>
-                                                                                                        </span>
-                                                                                                        <!--end::Svg Icon-->
-                                                                                                    </button>
-                                                                                                </td>
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <td>
-                                                                                                    <a href="../../demo22/dist/apps/ecommerce/catalog/edit-product.html"
-                                                                                                        class="text-gray-800 text-hover-primary">#PXF-534</a>
-                                                                                                </td>
-                                                                                                <td class="text-end">3
-                                                                                                    hour ago</td>
-                                                                                                <td class="text-end">
-                                                                                                    <a href="#"
-                                                                                                        class="text-gray-600 text-hover-primary">Cody
-                                                                                                        Fisher</a>
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    $119.00</td>
-                                                                                                <td class="text-end">
-                                                                                                    <span
-                                                                                                        class="text-gray-800 fw-bolder">$12.00</span>
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    <span
-                                                                                                        class="badge py-3 px-4 fs-7 badge-light-success">Shipped</span>
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    <button
-                                                                                                        type="button"
-                                                                                                        class="btn btn-sm btn-icon btn-light btn-active-light-primary toggle h-25px w-25px"
-                                                                                                        data-kt-table-widget-4="expand_row">
-                                                                                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr087.svg-->
-                                                                                                        <span
-                                                                                                            class="svg-icon svg-icon-3 m-0 toggle-off">
-                                                                                                            <svg width="24"
-                                                                                                                height="24"
-                                                                                                                viewBox="0 0 24 24"
-                                                                                                                fill="none"
-                                                                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                                                                <rect
-                                                                                                                    opacity="0.5"
-                                                                                                                    x="11"
-                                                                                                                    y="18"
-                                                                                                                    width="12"
-                                                                                                                    height="2"
-                                                                                                                    rx="1"
-                                                                                                                    transform="rotate(-90 11 18)"
-                                                                                                                    fill="currentColor" />
-                                                                                                                <rect
-                                                                                                                    x="6"
-                                                                                                                    y="11"
-                                                                                                                    width="12"
-                                                                                                                    height="2"
-                                                                                                                    rx="1"
-                                                                                                                    fill="currentColor" />
-                                                                                                            </svg>
-                                                                                                        </span>
-                                                                                                        <!--end::Svg Icon-->
-                                                                                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr089.svg-->
-                                                                                                        <span
-                                                                                                            class="svg-icon svg-icon-3 m-0 toggle-on">
-                                                                                                            <svg width="24"
-                                                                                                                height="24"
-                                                                                                                viewBox="0 0 24 24"
-                                                                                                                fill="none"
-                                                                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                                                                <rect
-                                                                                                                    x="6"
-                                                                                                                    y="11"
-                                                                                                                    width="12"
-                                                                                                                    height="2"
-                                                                                                                    rx="1"
-                                                                                                                    fill="currentColor" />
-                                                                                                            </svg>
-                                                                                                        </span>
-                                                                                                        <!--end::Svg Icon-->
-                                                                                                    </button>
-                                                                                                </td>
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <td>
-                                                                                                    <a href="../../demo22/dist/apps/ecommerce/catalog/edit-product.html"
-                                                                                                        class="text-gray-800 text-hover-primary">#XGD-249</a>
-                                                                                                </td>
-                                                                                                <td class="text-end">2
-                                                                                                    day ago</td>
-                                                                                                <td class="text-end">
-                                                                                                    <a href="#"
-                                                                                                        class="text-gray-600 text-hover-primary">Arlene
-                                                                                                        McCoy</a>
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    $660.00</td>
-                                                                                                <td class="text-end">
-                                                                                                    <span
-                                                                                                        class="text-gray-800 fw-bolder">$52.26</span>
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    <span
-                                                                                                        class="badge py-3 px-4 fs-7 badge-light-success">Shipped</span>
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    <button
-                                                                                                        type="button"
-                                                                                                        class="btn btn-sm btn-icon btn-light btn-active-light-primary toggle h-25px w-25px"
-                                                                                                        data-kt-table-widget-4="expand_row">
-                                                                                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr087.svg-->
-                                                                                                        <span
-                                                                                                            class="svg-icon svg-icon-3 m-0 toggle-off">
-                                                                                                            <svg width="24"
-                                                                                                                height="24"
-                                                                                                                viewBox="0 0 24 24"
-                                                                                                                fill="none"
-                                                                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                                                                <rect
-                                                                                                                    opacity="0.5"
-                                                                                                                    x="11"
-                                                                                                                    y="18"
-                                                                                                                    width="12"
-                                                                                                                    height="2"
-                                                                                                                    rx="1"
-                                                                                                                    transform="rotate(-90 11 18)"
-                                                                                                                    fill="currentColor" />
-                                                                                                                <rect
-                                                                                                                    x="6"
-                                                                                                                    y="11"
-                                                                                                                    width="12"
-                                                                                                                    height="2"
-                                                                                                                    rx="1"
-                                                                                                                    fill="currentColor" />
-                                                                                                            </svg>
-                                                                                                        </span>
-                                                                                                        <!--end::Svg Icon-->
-                                                                                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr089.svg-->
-                                                                                                        <span
-                                                                                                            class="svg-icon svg-icon-3 m-0 toggle-on">
-                                                                                                            <svg width="24"
-                                                                                                                height="24"
-                                                                                                                viewBox="0 0 24 24"
-                                                                                                                fill="none"
-                                                                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                                                                <rect
-                                                                                                                    x="6"
-                                                                                                                    y="11"
-                                                                                                                    width="12"
-                                                                                                                    height="2"
-                                                                                                                    rx="1"
-                                                                                                                    fill="currentColor" />
-                                                                                                            </svg>
-                                                                                                        </span>
-                                                                                                        <!--end::Svg Icon-->
-                                                                                                    </button>
-                                                                                                </td>
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <td>
-                                                                                                    <a href="../../demo22/dist/apps/ecommerce/catalog/edit-product.html"
-                                                                                                        class="text-gray-800 text-hover-primary">#SKP-035</a>
-                                                                                                </td>
-                                                                                                <td class="text-end">2
-                                                                                                    day ago</td>
-                                                                                                <td class="text-end">
-                                                                                                    <a href="#"
-                                                                                                        class="text-gray-600 text-hover-primary">Eleanor
-                                                                                                        Pena</a>
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    $290.00</td>
-                                                                                                <td class="text-end">
-                                                                                                    <span
-                                                                                                        class="text-gray-800 fw-bolder">$29.00</span>
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    <span
-                                                                                                        class="badge py-3 px-4 fs-7 badge-light-danger">Rejected</span>
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    <button
-                                                                                                        type="button"
-                                                                                                        class="btn btn-sm btn-icon btn-light btn-active-light-primary toggle h-25px w-25px"
-                                                                                                        data-kt-table-widget-4="expand_row">
-                                                                                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr087.svg-->
-                                                                                                        <span
-                                                                                                            class="svg-icon svg-icon-3 m-0 toggle-off">
-                                                                                                            <svg width="24"
-                                                                                                                height="24"
-                                                                                                                viewBox="0 0 24 24"
-                                                                                                                fill="none"
-                                                                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                                                                <rect
-                                                                                                                    opacity="0.5"
-                                                                                                                    x="11"
-                                                                                                                    y="18"
-                                                                                                                    width="12"
-                                                                                                                    height="2"
-                                                                                                                    rx="1"
-                                                                                                                    transform="rotate(-90 11 18)"
-                                                                                                                    fill="currentColor" />
-                                                                                                                <rect
-                                                                                                                    x="6"
-                                                                                                                    y="11"
-                                                                                                                    width="12"
-                                                                                                                    height="2"
-                                                                                                                    rx="1"
-                                                                                                                    fill="currentColor" />
-                                                                                                            </svg>
-                                                                                                        </span>
-                                                                                                        <!--end::Svg Icon-->
-                                                                                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr089.svg-->
-                                                                                                        <span
-                                                                                                            class="svg-icon svg-icon-3 m-0 toggle-on">
-                                                                                                            <svg width="24"
-                                                                                                                height="24"
-                                                                                                                viewBox="0 0 24 24"
-                                                                                                                fill="none"
-                                                                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                                                                <rect
-                                                                                                                    x="6"
-                                                                                                                    y="11"
-                                                                                                                    width="12"
-                                                                                                                    height="2"
-                                                                                                                    rx="1"
-                                                                                                                    fill="currentColor" />
-                                                                                                            </svg>
-                                                                                                        </span>
-                                                                                                        <!--end::Svg Icon-->
-                                                                                                    </button>
-                                                                                                </td>
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <td>
-                                                                                                    <a href="../../demo22/dist/apps/ecommerce/catalog/edit-product.html"
-                                                                                                        class="text-gray-800 text-hover-primary">#SKP-567</a>
-                                                                                                </td>
-                                                                                                <td class="text-end">7
-                                                                                                    min ago</td>
-                                                                                                <td class="text-end">
-                                                                                                    <a href="#"
-                                                                                                        class="text-gray-600 text-hover-primary">Dan
-                                                                                                        Wilson</a>
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    $590.00</td>
-                                                                                                <td class="text-end">
-                                                                                                    <span
-                                                                                                        class="text-gray-800 fw-bolder">$50.00</span>
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    <span
-                                                                                                        class="badge py-3 px-4 fs-7 badge-light-success">Shipped</span>
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    <button
-                                                                                                        type="button"
-                                                                                                        class="btn btn-sm btn-icon btn-light btn-active-light-primary toggle h-25px w-25px"
-                                                                                                        data-kt-table-widget-4="expand_row">
-                                                                                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr087.svg-->
-                                                                                                        <span
-                                                                                                            class="svg-icon svg-icon-3 m-0 toggle-off">
-                                                                                                            <svg width="24"
-                                                                                                                height="24"
-                                                                                                                viewBox="0 0 24 24"
-                                                                                                                fill="none"
-                                                                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                                                                <rect
-                                                                                                                    opacity="0.5"
-                                                                                                                    x="11"
-                                                                                                                    y="18"
-                                                                                                                    width="12"
-                                                                                                                    height="2"
-                                                                                                                    rx="1"
-                                                                                                                    transform="rotate(-90 11 18)"
-                                                                                                                    fill="currentColor" />
-                                                                                                                <rect
-                                                                                                                    x="6"
-                                                                                                                    y="11"
-                                                                                                                    width="12"
-                                                                                                                    height="2"
-                                                                                                                    rx="1"
-                                                                                                                    fill="currentColor" />
-                                                                                                            </svg>
-                                                                                                        </span>
-                                                                                                        <!--end::Svg Icon-->
-                                                                                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr089.svg-->
-                                                                                                        <span
-                                                                                                            class="svg-icon svg-icon-3 m-0 toggle-on">
-                                                                                                            <svg width="24"
-                                                                                                                height="24"
-                                                                                                                viewBox="0 0 24 24"
-                                                                                                                fill="none"
-                                                                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                                                                <rect
-                                                                                                                    x="6"
-                                                                                                                    y="11"
-                                                                                                                    width="12"
-                                                                                                                    height="2"
-                                                                                                                    rx="1"
-                                                                                                                    fill="currentColor" />
-                                                                                                            </svg>
-                                                                                                        </span>
-                                                                                                        <!--end::Svg Icon-->
-                                                                                                    </button>
-                                                                                                </td>
-                                                                                            </tr>
-                                                                                        </tbody>
-                                                                                        <!--end::Table body-->
-                                                                                    </table>
+          </tr>
 
 
+
+        </tbody>
+        <!--end::Table body-->
+      </table>
+      <!--end::Table-->
+    </div>
+    <!--end::Card body-->
+  </div>
+  <!--end::Table Widget 4-->
+</div>
+<!--end::Col-->
+</div>
 
 
                                                                                     <!--end::Table-->
@@ -4524,8 +3464,7 @@
                                                                             <div class="card-body pt-0">
                                                                                 <!--begin::Table-->
 
-                                                                                <table id=""
-                                                                                    class="table table-striped table-row-bordered gy-5 gs-7">
+                                                                                <table id="#" class="table table-striped table-row-bordered gy-5 gs-7">
                                                                                     <!--begin::Table head-->
                                                                                     <thead>
                                                                                         <!--begin::Table row-->
@@ -4646,6 +3585,9 @@
                                                                                     <!--end::Table body-->
                                                                                     <!--end::Table-->
                                                                                 </table>
+
+
+
                                                                                 <div class="d-flex justify-content-between my-3"
                                                                                     style="margin-top:40px;">
                                                                                     <div
@@ -4794,6 +3736,7 @@
         <script src="assets/js/custom/Table/submissionData.js"></script>
         <script src="assets/js/custom/Table/tagifySupplier.js"></script>
         <script src="assets/js/custom/Table/tagifyMember.js"></script>
+        <script src="assets/js/custom/Table/invoicedTable.js"></script>
 </body>
 
 </html>

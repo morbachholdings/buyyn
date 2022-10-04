@@ -27,7 +27,7 @@
     <!--Begin::Google Tag Manager -->
 </head>
 
-<body id="kt_body" class=" bg-white header-fixed header-tablet-and-mobile-fixed toolbar-enabled">
+<body id="kt_body" class="header-fixed header-tablet-and-mobile-fixed toolbar-enabled" style="background:#eceef7;">
     <!--begin::Root-->
     <div class="d-flex flex-column flex-root">
         <!--begin::Page-->
@@ -2779,7 +2779,7 @@
                                         <div class="tab-content">
                                             <div class="tab-pane fade show active" id="kt_general_widget_1_1">
                                                 <!--begin::Tables Widget 2-->
-                                                <div class="card card-flush"  style="background:#eceef7;">
+                                                <div class="card card-flush">
 
 
 
@@ -3401,7 +3401,7 @@
 
                                                     <!--begin::Body-->
                                                     <div class="card-body pt-0 px-0">
-                                                        <div class="tab-content p-4 rounded-2" style="background:#eceef7;">
+                                                        <div class="tab-content">
                                                             <!--begin::Tap pane-->
                                                             <div class="tab-pane fade show active my-4"
                                                                 id="kt_list_widget_10_tab_1">

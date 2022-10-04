@@ -32,19 +32,14 @@
                             <!--end:Media-->
                             <!--begin:Text-->
                             <div style="font-size: 14px; font-weight: 500; margin-bottom: 27px; font-family:Arial,Helvetica,sans-serif;">
-                                <p style="margin-bottom:9px; color:#181C32; font-size: 22px; font-weight:700">Hey
-                                    <?php echo $First_name ?>, thanks for signing up!</p>
+                                <p style="margin-bottom:9px; color:#181C32; font-size: 22px; font-weight:700">It's almost set!</p>
                                 <p style="margin-bottom:2px; color:#7E8299">Lots of people make mistakes while creating</p>
                                 <p style="margin-bottom:2px; color:#7E8299">paragraphs. Some writers just put whitespace in</p>
                                 <p style="margin-bottom:2px; color:#7E8299">their text in random places</p>
                             </div>
                             <!--end:Text-->
                             <!--begin:Action-->
-<<<<<<< Updated upstream
-                            <a href='<?php echo base_url() ?>welcome/validated?id=<?php echo base64_encode($Email) ?>' target="_blank" style="background-color:#50cd89; border-radius:6px;display:inline-block; padding:11px 19px; color: #FFFFFF; font-size: 14px; font-weight:500; text-decoration: none;">Activate Account</a>
-=======
-                            <a href='<?php echo base_url() ?>authentication/validated?id=<?php echo base64_encode($Email) ?>' target="_blank" style="background-color:#50cd89; border-radius:6px;display:inline-block; padding:11px 19px; color: #FFFFFF; font-size: 14px; font-weight:500; text-decoration: none;">Activate Account</a>
->>>>>>> Stashed changes
+                            <a href='<?php echo base_url() ?>authentication/reset_pw?id=<?php echo base64_encode($user_id) ?>' target="_blank" style="background-color:#50cd89; border-radius:6px;display:inline-block; padding:11px 19px; color: #FFFFFF; font-size: 14px; font-weight:500; text-decoration: none;">Reset Password</a>
                             <!--begin:Action-->
                         </div>
                         <!--end:Email content-->
@@ -52,7 +47,7 @@
                 </tr>
                 <tr style="display: flex; justify-content: center; margin:0 60px 35px 60px">
                     <td align="start" valign="start" style="padding-bottom: 10px;">
-                        <p style="color:#181C32; font-size: 18px; font-weight: 600; margin-bottom:13px">What’s next?</p>
+                        <p style="color:#181C32; font-size: 18px; font-weight: 600; margin-bottom:13px">What's next?</p>
                         <!--begin::Wrapper-->
                         <div style="background: #F9F9F9; border-radius: 12px; padding:35px 30px">
                             <!--begin::Item-->

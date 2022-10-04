@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--begin::Head-->
 
 <head>
-    <title>Register - Buyyn</title>
-
+    <base href="#" />
+    <title>
+        Reset Password
+    </title>
     <meta charset="utf-8" />
     <meta name="description" content="Morbach Holdings" />
     <meta name="keywords" content="Morbach Holdings" />
@@ -14,7 +17,7 @@
     <meta property="og:url" content="https://morbachholdings.com/" />
     <meta property="og:site_name" content="Morbach Holdings" />
     <link rel="canonical" href="https://morbachholdings.com/" />
-    <link rel="shortcut icon" href="<?php echo base_url() ?>assets/media/logos/favicon.png" />
+    <link rel="shortcut icon" href="./assets/media/logos/favicon.png" />
     <!--begin::Fonts-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
     <!--end::Fonts-->
@@ -23,12 +26,16 @@
     <link href="<?php echo base_url() ?>assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
     <!--end::Global Stylesheets Bundle-->
 </head>
+<!--end::Head-->
+<!--begin::Body-->
 
-<body>
+<body id="kt_body" class="app-blank">
+
+    <!--end::Theme mode setup on page load-->
     <!--begin::Main-->
     <!--begin::Root-->
     <div class="d-flex flex-column flex-root">
-        <!--begin::Authentication - Sign-up -->
+        <!--begin::Authentication - New password -->
         <div class="d-flex flex-column flex-lg-row flex-column-fluid">
             <!--begin::Body-->
             <div class="d-flex flex-column flex-lg-row-fluid w-lg-50 p-10 order-2 order-lg-1">
@@ -37,33 +44,20 @@
                     <!--begin::Wrapper-->
                     <div class="w-lg-500px p-10">
                         <!--begin::Form-->
-                        <form class="form w-100" novalidate="novalidate" id="kt_sign_up_form" data-kt-redirect-url="<?php echo base_url()?>authentication/index" action="#">
+                        <form class="form w-100" novalidate="novalidate" id="kt_new_password_form" data-kt-redirect-url="<?php echo base_url() ?>" action="#">
                             <!--begin::Heading-->
-                            <div class="text-center mb-11">
+                            <div class="text-center mb-10">
                                 <!--begin::Title-->
-                                <h1 class="text-dark fw-bolder mb-3">Sign Up</h1>
+                                <h1 class="text-dark fw-bolder mb-3">Setup New Password</h1>
                                 <!--end::Title-->
-                                <!--begin::Subtitle-->
-
-                                <!--end::Subtitle=-->
+                                <!--begin::Link-->
+                                <div class="text-gray-500 fw-semibold fs-6">
+                                    Have you already reset the password ?
+                                    <a href="<?php echo base_url() ?>" class="link-primary fw-bold">Sign in</a>
+                                </div>
+                                <!--end::Link-->
                             </div>
                             <!--begin::Heading-->
-                            <div class="row fv-row mb-8">
-                                <div class="col-md-6">
-                                    <input type="text" placeholder="First Name" name="first-name" id="first-name" autocomplete="off" class="form-control bg-transparent" />
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="text" placeholder="Last Name" name="last-name" id="last-name" autocomplete="off" class="form-control bg-transparent" />
-                                </div>
-                            </div>
-
-
-                            <!--begin::Input group=-->
-                            <div class="fv-row mb-8">
-                                <!--begin::Email-->
-                                <input type="text" placeholder="Email" name="email" id="email" autocomplete="off" class="form-control bg-transparent" />
-                                <!--end::Email-->
-                            </div>
                             <!--begin::Input group-->
                             <div class="fv-row mb-8" data-kt-password-meter="true">
                                 <!--begin::Wrapper-->
@@ -96,35 +90,35 @@
                             </div>
                             <!--end::Input group=-->
                             <!--end::Input group=-->
+                            <input type="text" id="user_id" value="<?php echo $user_id ?>" style="display: none;">
                             <div class="fv-row mb-8">
                                 <!--begin::Repeat Password-->
-                                <input placeholder="Repeat Password" name="confirm-password" type="password" autocomplete="off" class="form-control bg-transparent" />
+                                <input type="password" placeholder="Repeat Password" name="confirm-password" autocomplete="off" class="form-control bg-transparent" />
                                 <!--end::Repeat Password-->
                             </div>
                             <!--end::Input group=-->
-                            <!--begin::Accept-->
+                            <!--begin::Input group=-->
                             <div class="fv-row mb-8">
                                 <label class="form-check form-check-inline">
                                     <input class="form-check-input" type="checkbox" name="toc" value="1" />
-                                    <span class="form-check-label fw-semibold text-gray-700 fs-base ms-1">I Accept the
+                                    <span class="form-check-label fw-semibold text-gray-700 fs-6 ms-1">I Agree &
                                         <button id="kt_drawer_example_basic_button" class="btn link-primary m-0 p-0">
-                                            Terms
+                                            Terms & Conditions
                                         </button>
-                                        <!-- <a href="#" class="ms-1 link-primary">Terms</a> -->
                                     </span>
                                 </label>
                             </div>
+                            <!--end::Input group=-->
                             <!--begin::View component-->
                             <div id="kt_drawer_example_basic" class="bg-white" data-kt-drawer="true" data-kt-drawer-activate="true" data-kt-drawer-toggle="#kt_drawer_example_basic_button" data-kt-drawer-close="#kt_drawer_example_basic_close" data-kt-drawer-width="500px">
                                 Terms and Conditions
                             </div>
                             <!--end::View component-->
-                            <!--end::Accept-->
-                            <!--begin::Submit button-->
+                            <!--begin::Action-->
                             <div class="d-grid mb-10">
-                                <button type="submit" id="kt_sign_up_submit" class="btn btn-primary">
+                                <button type="button" id="kt_new_password_submit" class="btn btn-primary">
                                     <!--begin::Indicator label-->
-                                    <span class="indicator-label">Sign up</span>
+                                    <span class="indicator-label">Submit</span>
                                     <!--end::Indicator label-->
                                     <!--begin::Indicator progress-->
                                     <span class="indicator-progress">Please wait...
@@ -132,17 +126,7 @@
                                     <!--end::Indicator progress-->
                                 </button>
                             </div>
-                            <!--end::Submit button-->
-                            <!--begin::Sign up-->
-                            <div class="text-gray-500 text-center fw-semibold fs-6">
-                                Already have an Account?
-<<<<<<< Updated upstream
-                                <a href="<?php echo base_url() ?>authentication/index" class="link-primary fw-semibold">Sign in</a>
-=======
-                                <a href="<?php echo base_url() ?>" class="link-primary fw-semibold">Sign in</a>
->>>>>>> Stashed changes
-                            </div>
-                            <!--end::Sign up-->
+                            <!--end::Action-->
                         </form>
                         <!--end::Form-->
                     </div>
@@ -187,57 +171,29 @@
             </div>
             <!--end::Aside-->
         </div>
-        <!--end::Authentication - Sign-up-->
+        <!--end::Authentication - New password-->
     </div>
     <!--end::Root-->
     <!--end::Main-->
-
 
     <!--begin::Global Javascript Bundle(used by all pages)-->
     <script src="<?php echo base_url() ?>assets/plugins/global/plugins.bundle.js"></script>
     <script src="<?php echo base_url() ?>assets/js/scripts.bundle.js"></script>
     <!--end::Global Javascript Bundle-->
     <!--begin::Custom Javascript(used by this page)-->
-    <!-- <script src="<?php echo base_url() ?>assets/js/authentication/auth.js"></script> -->
+    <!-- <script src="<?php echo base_url() ?>assets/js/custom/authentication/reset-password/new-password.js"></script> -->
     <!--end::Custom Javascript-->
     <!--end::Javascript-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
     <script>
         "use strict";
-        var KTSignupGeneral = function() {
-            var e, t, a, r, s = function() {
-                return 100 === r.getScore()
+        var KTAuthNewPassword = function() {
+            var t, e, r, o, a = function() {
+                return 100 === o.getScore()
             };
             return {
                 init: function() {
-                    e = document.querySelector("#kt_sign_up_form"), t = document.querySelector("#kt_sign_up_submit"), r = KTPasswordMeter.getInstance(e.querySelector('[data-kt-password-meter="true"]')), a = FormValidation.formValidation(e, {
+                    t = document.querySelector("#kt_new_password_form"), e = document.querySelector("#kt_new_password_submit"), o = KTPasswordMeter.getInstance(t.querySelector('[data-kt-password-meter="true"]')), r = FormValidation.formValidation(t, {
                         fields: {
-                            "first-name": {
-                                validators: {
-                                    notEmpty: {
-                                        message: "First Name is required"
-                                    }
-                                }
-                            },
-                            "last-name": {
-                                validators: {
-                                    notEmpty: {
-                                        message: "Last Name is required"
-                                    }
-                                }
-                            },
-                            email: {
-                                validators: {
-                                    regexp: {
-                                        regexp: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
-                                        message: "The value is not a valid email address"
-                                    },
-                                    notEmpty: {
-                                        message: "Email address is required"
-                                    }
-                                }
-                            },
                             password: {
                                 validators: {
                                     notEmpty: {
@@ -245,8 +201,8 @@
                                     },
                                     callback: {
                                         message: "Please enter valid password",
-                                        callback: function(e) {
-                                            if (e.value.length > 0) return s()
+                                        callback: function(t) {
+                                            if (t.value.length > 0) return a()
                                         }
                                     }
                                 }
@@ -258,7 +214,7 @@
                                     },
                                     identical: {
                                         compare: function() {
-                                            return e.querySelector('[name="password"]').value
+                                            return t.querySelector('[name="password"]').value
                                         },
                                         message: "The password and its confirm are not the same"
                                     }
@@ -284,59 +240,60 @@
                                 eleValidClass: ""
                             })
                         }
-                    }), t.addEventListener("click", (function(s) {
-                        s.preventDefault(), a.revalidateField("password"), a.validate().then((function(a) {
-                            var firstname = document.getElementById('first-name').value;
-                            var lastname = document.getElementById('last-name').value;
-                            var email = document.getElementById('email').value;
+                    }), e.addEventListener("click", (function(a) {
+                        a.preventDefault(), r.revalidateField("password"), r.validate().then((function(r) {
+                            var user_id = document.getElementById('user_id').value;
                             var password = document.getElementById('password').value;
-                            "Valid" == a ? (t.setAttribute("data-kt-indicator", "on"), t.disabled = !0, setTimeout((function() {
-                                t.removeAttribute("data-kt-indicator"), t.disabled = !1,
 
+
+                            "Valid" == r ? (e.setAttribute("data-kt-indicator", "on"), e.disabled = !0, setTimeout((function() {
+                                e.removeAttribute("data-kt-indicator"), e.disabled = !1,
                                     $.ajax({
-                                        url: '<?php echo base_url() ?>Authentication/add_user',
+                                        url: '<?php echo base_url() ?>Authentication/change_password',
                                         method: 'POST',
                                         data: {
-                                            firstname: firstname,
-                                            lastname: lastname,
-                                            email: email,
+                                            user_id: user_id,
                                             password: password
                                         },
                                         success: function(data) {
                                             var ret_data = $.parseJSON(data);
                                             if (ret_data.status == 1) {
                                                 Swal.fire({
-                                                    text: "Successfully Registered. ",
+                                                    text: "You have successfully reset your password!",
                                                     icon: "success",
                                                     buttonsStyling: !1,
                                                     confirmButtonText: "Ok, got it!",
                                                     customClass: {
                                                         confirmButton: "btn btn-primary"
                                                     }
-                                                }).then((function(t) {
-                                                    if (t.isConfirmed) {
-                                                        e.reset(), r.reset();
-                                                        var a = e.getAttribute("data-kt-redirect-url");
-                                                        a && (location.href = a)
+                                                }).then((function(e) {
+                                                    if (e.isConfirmed) {
+                                                        t.querySelector('[name="password"]').value = "", t.querySelector('[name="confirm-password"]').value = "", o.reset();
+                                                        var r = t.getAttribute("data-kt-redirect-url");
+                                                        r && (location.href = r)
                                                     }
                                                 }))
                                             } else {
                                                 Swal.fire({
-                                                    text: "Email already in use",
+                                                    text: "Sorry, looks like there are some errors detected, please try again.",
                                                     icon: "error",
                                                     buttonsStyling: !1,
                                                     confirmButtonText: "Ok, got it!",
                                                     customClass: {
                                                         confirmButton: "btn btn-primary"
                                                     }
-                                                });
+                                                })
                                             }
-
-
-
 
                                         }
                                     })
+
+
+
+
+
+
+
 
 
 
@@ -348,34 +305,19 @@
                                 customClass: {
                                     confirmButton: "btn btn-primary"
                                 }
-                            });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                            })
                         }))
-                    })), e.querySelector('input[name="password"]').addEventListener("input", (function() {
-                        this.value.length > 0 && a.updateFieldStatus("password", "NotValidated")
+                    })), t.querySelector('input[name="password"]').addEventListener("input", (function() {
+                        this.value.length > 0 && r.updateFieldStatus("password", "NotValidated")
                     }))
                 }
             }
         }();
         KTUtil.onDOMContentLoaded((function() {
-            KTSignupGeneral.init()
+            KTAuthNewPassword.init()
         }));
     </script>
 </body>
+<!--end::Body-->
 
 </html>

@@ -24,7 +24,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 
+<<<<<<< Updated upstream
 $config['base_url'] = 'https://buyyn-back.herokuapp.com/';
+=======
+$config['base_url'] = 'https://buyyn-back.herokuapp.com/';
+>>>>>>> Stashed changes
 
 /*
 |--------------------------------------------------------------------------

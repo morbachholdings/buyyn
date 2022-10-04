@@ -35,6 +35,7 @@
 					<!--begin::Wrapper-->
 					<div class="w-lg-500px p-10">
 
+<<<<<<< Updated upstream
 
 						<!--begin::Alert-->
 						<div class="alert alert-primary d-flex align-items-center p-5">
@@ -50,6 +51,33 @@
 						</div>
 
 
+=======
+						<?php
+						if ($validated == 1) {
+						?>
+
+							<!--begin::Alert-->
+							<div class="alert alert-primary d-flex align-items-center p-5 verified_div">
+								<div class="d-flex flex-column">
+									<!--begin::Title-->
+									<h4 class="mb-1 text-dark">Email has been verified</h4>
+									<!--end::Title-->
+									<!--begin::Content-->
+									<span>The alert component can be used to highlight certain parts of your page for higher content visibility.</span>
+									<!--end::Content-->
+								</div>
+								<!--end::Wrapper-->
+							</div>
+
+
+						<?php } ?>
+
+						<!--begin::Alert-->
+						<div id="invalid_credentials">
+
+						</div>
+
+>>>>>>> Stashed changes
 						<!--begin::Form-->
 						<form class="form w-100" novalidate="novalidate" id="kt_sign_in_form" data-kt-redirect-url="index.php" action="#">
 							<!--begin::Heading-->
@@ -64,13 +92,21 @@
 							<!--begin::Input group=-->
 							<div class="fv-row mb-8">
 								<!--begin::Email-->
+<<<<<<< Updated upstream
 								<input type="text" placeholder="Email" name="email" autocomplete="off" class="form-control bg-transparent" />
+=======
+								<input type="text" placeholder="Email" name="email" id="email" autocomplete="off" class="form-control bg-transparent" />
+>>>>>>> Stashed changes
 								<!--end::Email-->
 							</div>
 							<!--end::Input group=-->
 							<div class="fv-row mb-3">
 								<!--begin::Password-->
+<<<<<<< Updated upstream
 								<input type="password" placeholder="Password" name="password" autocomplete="off" class="form-control bg-transparent" />
+=======
+								<input type="password" placeholder="Password" name="password" id="password" autocomplete="off" class="form-control bg-transparent" />
+>>>>>>> Stashed changes
 								<!--end::Password-->
 							</div>
 							<!--end::Input group=-->
@@ -78,7 +114,11 @@
 							<div class="d-flex flex-stack flex-wrap gap-3 fs-base fw-semibold mb-8">
 								<div></div>
 								<!--begin::Link-->
+<<<<<<< Updated upstream
 								<a href="reset-password.php" class="link-primary">Forgot Password ?</a>
+=======
+								<a href="<?php echo base_url() ?>authentication/reset" class="link-primary">Forgot Password ?</a>
+>>>>>>> Stashed changes
 								<!--end::Link-->
 							</div>
 							<!--end::Wrapper-->
@@ -155,7 +195,132 @@
 	<script src="<?php echo base_url() ?>assets/js/scripts.bundle.js"></script>
 	<!--end::Global Javascript Bundle-->
 	<!--begin::Custom Javascript(used by this page)-->
+<<<<<<< Updated upstream
 	<script src="<?php echo base_url() ?>assets/js/custom/authentication/sign-in/general.js"></script>
+=======
+
+	<script>
+		"use strict";
+		var KTSigninGeneral = function() {
+			var e, t, i;
+			return {
+				init: function() {
+					e = document.querySelector("#kt_sign_in_form"), t = document.querySelector("#kt_sign_in_submit"), i = FormValidation.formValidation(e, {
+						fields: {
+							email: {
+								validators: {
+									regexp: {
+										regexp: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+										message: "The value is not a valid email address"
+									},
+									notEmpty: {
+										message: "Email address is required"
+									}
+								}
+							},
+							password: {
+								validators: {
+									notEmpty: {
+										message: "The password is required"
+									}
+								}
+							}
+						},
+						plugins: {
+							trigger: new FormValidation.plugins.Trigger,
+							bootstrap: new FormValidation.plugins.Bootstrap5({
+								rowSelector: ".fv-row",
+								eleInvalidClass: "",
+								eleValidClass: ""
+							})
+						}
+					}), t.addEventListener("click", (function(n) {
+						n.preventDefault(), i.validate().then((function(i) {
+							var email = document.getElementById('email').value;
+							var password = document.getElementById('password').value;
+							const invalid_credentials = document.getElementById('invalid_credentials');
+							"Valid" == i ? (t.setAttribute("data-kt-indicator", "on"), t.disabled = !0, setTimeout((function() {
+								t.removeAttribute("data-kt-indicator"), t.disabled = !1,
+
+									$.ajax({
+										url: '<?php echo base_url() ?>Authentication/logged',
+										method: 'POST',
+										data: {
+											email: email,
+											password: password
+										},
+										success: function(data) {
+
+											var ret_data = $.parseJSON(data);
+											if (ret_data.status == 1) {
+												if (ret_data.user_group == 1) {
+													Swal.fire({
+														text: "You have successfully logged in!",
+														icon: "success",
+														buttonsStyling: !1,
+														confirmButtonText: "Ok, got it!",
+														customClass: {
+															confirmButton: "btn btn-primary"
+														}
+													}).then((function(t) {
+														if (t.isConfirmed) {
+															e.querySelector('[name="email"]').value = "", e.querySelector('[name="password"]').value = "";
+
+															location.href = '<?php echo base_url() ?>dashboard/dashboard';
+														}
+													}))
+												} else {
+													Swal.fire({
+														text: "You have successfully logged in!",
+														icon: "success",
+														buttonsStyling: !1,
+														confirmButtonText: "Ok, got it!",
+														customClass: {
+															confirmButton: "btn btn-primary"
+														}
+													}).then((function(t) {
+														if (t.isConfirmed) {
+															e.querySelector('[name="email"]').value = "", e.querySelector('[name="password"]').value = "";
+
+															location.href = '<?php echo base_url() ?>authentication/login';
+														}
+													}))
+												}
+											} else {
+												invalid_credentials.innerHTML = '<div class="alert alert-danger d-flex align-items-center p-5"><div class="d-flex flex-column"><h4 class="mb-1 text-dark">' + ret_data.user_group + '</h4><span>The alert component can be used to highlight certain parts of your page for higher content visibility.</span></div></div>';
+											}
+
+
+
+
+										}
+									})
+							}), 2e3)) : Swal.fire({
+								text: "Sorry, looks like there are some errors detected, please try again.",
+								icon: "error",
+								buttonsStyling: !1,
+								confirmButtonText: "Ok, got it!",
+								customClass: {
+									confirmButton: "btn btn-primary"
+								}
+							})
+						}))
+					}))
+				}
+			}
+		}();
+		KTUtil.onDOMContentLoaded((function() {
+			KTSigninGeneral.init()
+		}));
+		
+	</script>
+
+
+
+
+
+
+>>>>>>> Stashed changes
 </body>
 
 </html>

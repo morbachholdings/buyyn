@@ -148,11 +148,11 @@ var KTTablesWidget6 = (function () {
               s(), o();
             });
         })(),
-        document
-          .querySelector('[data-kt-table-widget-6="search"]')
-          .addEventListener("keyup", function (e) {
-            t.search(e.target.value).draw();
-          }),
+        // document
+        //   .querySelector('[data-kt-table-widget-6="search"]')
+        //   .addEventListener("keyup", function (e) {
+        //     t.search(e.target.value).draw();
+        //   }),
         l(),
         o());
     },

@@ -27,7 +27,7 @@
     <!--Begin::Google Tag Manager -->
 </head>
 
-<body id="kt_body" class="header-fixed header-tablet-and-mobile-fixed toolbar-enabled">
+<body id="kt_body" class=" bg-white header-fixed header-tablet-and-mobile-fixed toolbar-enabled">
     <!--begin::Root-->
     <div class="d-flex flex-column flex-root">
         <!--begin::Page-->
@@ -2779,7 +2779,7 @@
                                         <div class="tab-content">
                                             <div class="tab-pane fade show active" id="kt_general_widget_1_1">
                                                 <!--begin::Tables Widget 2-->
-                                                <div class="card">
+                                                <div class="card card-flush"  style="background:#eceef7;">
 
 
 
@@ -3140,7 +3140,7 @@
                                                                                                     <input
                                                                                                         class="form-control form-control-solid"
                                                                                                         placeholder="Pick date rage"
-                                                                                                        id="kt_daterangepicker_1" />
+                                                                                                        id="kt_daterangepicker_6" />
                                                                                                 </div>
                                                                                             </div>
 
@@ -3169,7 +3169,7 @@
                                                                                                 <input
                                                                                                     class="form-control d-flex align-items-center"
                                                                                                     value=""
-                                                                                                    id="kt_tagify_suppliers"
+                                                                                                    id="kt_tagify_suppliersInvoiced"
                                                                                                     placeholder="Select Supplier" />
 
                                                                                             </div>
@@ -3401,7 +3401,7 @@
 
                                                     <!--begin::Body-->
                                                     <div class="card-body pt-0 px-0">
-                                                        <div class="tab-content" styles="background:#eceef7;">
+                                                        <div class="tab-content p-4 rounded-2" style="background:#eceef7;">
                                                             <!--begin::Tap pane-->
                                                             <div class="tab-pane fade show active my-4"
                                                                 id="kt_list_widget_10_tab_1">
@@ -3464,127 +3464,79 @@
                                                                             <div class="card-body pt-0">
                                                                                 <!--begin::Table-->
 
-                                                                                <table id="#" class="table table-striped table-row-bordered gy-5 gs-7">
-                                                                                    <!--begin::Table head-->
-                                                                                    <thead>
-                                                                                        <!--begin::Table row-->
-                                                                                        <tr
-                                                                                            class="text-start text-gray-400 fw-bolder fs-7 text-uppercase gs-0">
-                                                                                            <th class="min-w-100px">
-                                                                                                Member Name</th>
-                                                                                            <th class="pe-3 min-w-50px">
-                                                                                                Amount</th>
-                                                                                            <th class="pe-3 min-w-50px">
-                                                                                                Action</th>
-                                                                                            <th
-                                                                                                class="text-start pe-3 min-w-100px">
-                                                                                                Last Submission Total
-                                                                                            </th>
-                                                                                            <th
-                                                                                                class="text-start pe-3 min-w-100px">
-                                                                                                Last Submission</th>
+                                                                                <table id="kt_datatable_vertical_scroll" class="table table-striped table-row-bordered gy-5 gs-7">
+    <thead>
+        <tr class="fw-semibold fs-6 text-gray-800">
+            <th>Name</th>
+            <th>Position</th>
+            <th>Office</th>
+            <th>Age</th>
+            <th>Start date</th>
+            <th>Salary</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Tiger Nixon</td>
+            <td>System Architect</td>
+            <td>Edinburgh</td>
+            <td>61</td>
+            <td>2011/04/25</td>
+            <td>$320,800</td>
+        </tr>
+        <tr>
+            <td>Garrett Winters</td>
+            <td>Accountant</td>
+            <td>Tokyo</td>
+            <td>63</td>
+            <td>2011/07/25</td>
+            <td>$170,750</td>
+        </tr>
+        <tr>
+            <td>Garrett Winters</td>
+            <td>Accountant</td>
+            <td>Tokyo</td>
+            <td>63</td>
+            <td>2011/07/25</td>
+            <td>$170,750</td>
+        </tr>
+        <tr>
+            <td>Garrett Winters</td>
+            <td>Accountant</td>
+            <td>Tokyo</td>
+            <td>63</td>
+            <td>2011/07/25</td>
+            <td>$170,750</td>
+        </tr>
+        <tr>
+            <td>Garrett Winters</td>
+            <td>Accountant</td>
+            <td>Tokyo</td>
+            <td>63</td>
+            <td>2011/07/25</td>
+            <td>$170,750</td>
+        </tr>
+        <tr>
+            <td>Garrett Winters</td>
+            <td>Accountant</td>
+            <td>Tokyo</td>
+            <td>63</td>
+            <td>2011/07/25</td>
+            <td>$170,750</td>
+        </tr>
 
-                                                                                        </tr>
-                                                                                        <!--end::Table row-->
-                                                                                    </thead>
-                                                                                    <!--end::Table head-->
-                                                                                    <!--begin::Table body-->
-                                                                                    <tbody
-                                                                                        class="fw-bolder text-gray-600"
-                                                                                        style="overflow-y:scroll;max-height:300px">
-                                                                                        <tr>
-                                                                                            <td>123</td>
-                                                                                            <td class="text-end d-flex">
-                                                                                                <span
-                                                                                                    class="badge badge-light-primary p-3"
-                                                                                                    style="font-size:16px ;">$</span><input
-                                                                                                    type="text"
-                                                                                                    class="form-control form-control-solid w-50"
-                                                                                                    name="name"
-                                                                                                    value="" /></td>
-                                                                                            <td
-                                                                                                class="text-start justify-content-between">
-                                                                                                <div><img
-                                                                                                        src="assets/media/icons/duotune/abstract/abs011.svg"
-                                                                                                        alt=""
-                                                                                                        style="width:20px;height:20px;"><img
-                                                                                                        src="assets/media/icons/duotune/general/gen055.svg"
-                                                                                                        alt=""
-                                                                                                        style="width:20px;height:20px;margin-left:10px;">
-                                                                                                </div>
-                                                                                            </td>
-                                                                                            <td class="text-start">
-                                                                                                <span
-                                                                                                    class="badge py-3 px-4 fs-7 badge-light-primary">$1,350.00</span>
-                                                                                            </td>
-                                                                                            <td class="text-start">Jul
-                                                                                                25, 2022</td>
-
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td>124</td>
-                                                                                            <td class="text-end d-flex">
-                                                                                                <span
-                                                                                                    class="badge badge-light-primary p-3"
-                                                                                                    style="font-size:16px ;">$</span><input
-                                                                                                    type="text"
-                                                                                                    class="form-control form-control-solid w-50"
-                                                                                                    name="name"
-                                                                                                    value="" /></td>
-                                                                                            <td
-                                                                                                class="text-start justify-content-between">
-                                                                                                <div><img
-                                                                                                        src="assets/media/icons/duotune/abstract/abs011.svg"
-                                                                                                        alt=""
-                                                                                                        style="width:20px;height:20px;"><img
-                                                                                                        src="assets/media/icons/duotune/general/gen055.svg"
-                                                                                                        alt=""
-                                                                                                        style="width:20px;height:20px;margin-left:10px;">
-                                                                                                </div>
-                                                                                            </td>
-                                                                                            <td class="text-start">
-                                                                                                <span
-                                                                                                    class="badge py-3 px-4 fs-7 badge-light-primary">$1,350.00</span>
-                                                                                            </td>
-                                                                                            <td class="text-start">Jul
-                                                                                                25, 2022</td>
-
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td>125</td>
-                                                                                            <td class="text-end d-flex">
-                                                                                                <span
-                                                                                                    class="badge badge-light-primary p-3"
-                                                                                                    style="font-size:16px ;">$</span><input
-                                                                                                    type="text"
-                                                                                                    class="form-control form-control-solid w-50"
-                                                                                                    name="name"
-                                                                                                    value="" /></td>
-                                                                                            <td
-                                                                                                class="text-start justify-content-between">
-                                                                                                <div><img
-                                                                                                        src="assets/media/icons/duotune/abstract/abs011.svg"
-                                                                                                        alt=""
-                                                                                                        style="width:20px;height:20px;"><img
-                                                                                                        src="assets/media/icons/duotune/general/gen055.svg"
-                                                                                                        alt=""
-                                                                                                        style="width:20px;height:20px;margin-left:10px;">
-                                                                                                </div>
-                                                                                            </td>
-                                                                                            <td class="text-start">
-                                                                                                <span
-                                                                                                    class="badge py-3 px-4 fs-7 badge-light-primary">$1,350.00</span>
-                                                                                            </td>
-                                                                                            <td class="text-start">Jul
-                                                                                                25, 2022</td>
-
-                                                                                        </tr>
-
-
-                                                                                    </tbody>
-                                                                                    <!--end::Table body-->
-                                                                                    <!--end::Table-->
-                                                                                </table>
+    </tbody>
+    <tfoot>
+        <tr class="border-top fw-semibold fs-6 text-gray-800">
+            <th>Name</th>
+            <th>Position</th>
+            <th>Office</th>
+            <th>Age</th>
+            <th>Start date</th>
+            <th>Salary</th>
+        </tr>
+    </tfoot>
+</table>
 
 
 
@@ -3735,8 +3687,10 @@
         <script src="assets/js/custom/Table/pagination.js"></script>
         <script src="assets/js/custom/Table/submissionData.js"></script>
         <script src="assets/js/custom/Table/tagifySupplier.js"></script>
+        <script src="assets/js/custom/Table/tagifySupplierInvoiced.js"></script>
         <script src="assets/js/custom/Table/tagifyMember.js"></script>
         <script src="assets/js/custom/Table/invoicedTable.js"></script>
+        <script src="assets/js/custom/Table/verticalScroll.js"></script>
 </body>
 
 </html>

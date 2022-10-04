@@ -4,6 +4,12 @@ $("#kt_daterangepicker_1").daterangepicker();
 var start = moment().subtract(29, "days");
 var end = moment();
 
+$("#kt_daterangepicker_6").daterangepicker();
+
+
+var start = moment().subtract(29, "days");
+var end = moment();
+
 function cb(start, end) {
     $("#kt_daterangepicker_4").html(start.format("MMMM D, YYYY") + " - " + end.format("MMMM D, YYYY"));
 }

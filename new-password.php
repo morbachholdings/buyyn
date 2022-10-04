@@ -43,7 +43,7 @@
   </head>
   <!--end::Head-->
   <!--begin::Body-->
-  <body id="kt_body" class="app-blank">
+  <body id="kt_body" class="app-blank" style="background:#F4F7F9;">
     <!--begin::Theme mode setup on page load-->
     <script>
       var defaultThemeMode = "light";

@@ -56,7 +56,7 @@
   </head>
   <!--end::Head-->
   <!--begin::Body-->
-  <body id="kt_body" data-kt-app-header-stacked="true" class="app-default">
+  <body id="kt_body" data-kt-app-header-stacked="true" class="app-default" style="background:#F4F7F9;">
     <!--begin::Theme mode setup on page load-->
     <script>
       var defaultThemeMode = "light";

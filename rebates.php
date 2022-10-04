@@ -27,7 +27,7 @@
     <!--Begin::Google Tag Manager -->
 </head>
 
-<body id="kt_body" class="header-fixed header-tablet-and-mobile-fixed toolbar-enabled">
+<body id="kt_body" class="header-fixed header-tablet-and-mobile-fixed toolbar-enabled" style="background:#F4F7F9;">
     <!--begin::Root-->
     <div class="d-flex flex-column flex-root">
         <!--begin::Page-->

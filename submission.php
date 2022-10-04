@@ -2797,7 +2797,8 @@
                                                                     href="#kt_list_widget_10_tab_2">
                                                                     <!--begin::Subtitle-->
                                                                     <span
-                                                                        class="nav-text text-gray-800 fw-bolder fs-6 mb-3">Pending Submissions</span>
+                                                                        class="nav-text text-gray-800 fw-bolder fs-6 mb-3">Pending
+                                                                        Submissions</span>
                                                                     <!--end::Subtitle-->
                                                                     <!--begin::Bullet-->
                                                                     <span
@@ -2944,138 +2945,268 @@
                                                                                     <!--begin::Table-->
 
 
-                                                                                    
+
 
 
                                                                                     <div class="row gy-5 g-xl-10">
 
-<!--end::Col-->
-<!--begin::Col-->
-<div class="col-xl-12 mb-5 mb-xl-10">
-  <!--begin::Table Widget 4-->
-  <div class="card card-flush h-xl-100">
-    
-    <!--begin::Card body-->
-    <div class="card-body pt-2">
-      <!--begin::Table-->
-      <table class="table align-middle table-row-dashed fs-6 gy-3" id="kt_table_widget_4_table">
-        <!--begin::Table head-->
-        <thead>
-          <!--begin::Table row-->
-          <tr class="text-start text-gray-400 fw-bold fs-7 text-uppercase gs-0">
-            <th></th>
-            <th>#</th>
-            <th class="min-w-100px">Supplier</th>
-            <th class="text-end min-w-100px">Reference Date</th>
-            <th class="text-end min-w-125px">Submitted Date</th>
-            <th class="text-end min-w-100px">Total Sales</th>
-            <th class="text-end min-w-100px">Status</th>
-            <th class="text-end min-w-50px">Action</th>
-          
-          </tr>
-          <!--end::Table row-->
-        </thead>
-        <!--end::Table head-->
-        <!--begin::Table body-->
-        <tbody class="fw-bold text-gray-600">
-          <tr data-kt-table-widget-4="subtable_template" class="d-none">
-            <td colspan="2">
-              <div class="d-flex align-items-center gap-3">
-                <a href="#" class="symbol symbol-50px bg-secondary bg-opacity-25 rounded">
-                  <img src="" data-kt-src-path="assets/media/stock/ecommerce/" alt=""
-                    data-kt-table-widget-4="template_image" />
-                </a>
-                <div class="d-flex flex-column text-muted">
-                  <a href="#" class="text-gray-800 text-hover-primary fw-bold"
-                    data-kt-table-widget-4="template_name">Product name</a>
-                  <div class="fs-7" data-kt-table-widget-4="template_description">Product
-                    description</div>
-                </div>
-              </div>
-            </td>
-            <td class="text-end">
-              <div class="text-gray-800 fs-7">Cost</div>
-              <div class="text-muted fs-7 fw-bold" data-kt-table-widget-4="template_cost">1</div>
-            </td>
-            <td class="text-end">
-              <div class="text-gray-800 fs-7">Qty</div>
-              <div class="text-muted fs-7 fw-bold" data-kt-table-widget-4="template_qty">1</div>
-            </td>
-            <td class="text-end">
-              <div class="text-gray-800 fs-7">Total</div>
-              <div class="text-muted fs-7 fw-bold" data-kt-table-widget-4="template_total">name
-              </div>
-            </td>
-            <td class="text-end">
-              <div class="text-gray-800 fs-7 me-3">On hand</div>
-              <div class="text-muted fs-7 fw-bold" data-kt-table-widget-4="template_stock">32
-              </div>
-            </td>
-            <td></td>
-          </tr>
-          <tr>
-            <td><input type="checkbox" name="" id=""></td>
-            <td class="">
-              <button type="button"
-                class="btn btn-sm btn-icon btn-light btn-active-light-primary toggle h-25px w-25px"
-                data-kt-table-widget-4="expand_row">
-                <!--begin::Svg Icon | path: icons/duotune/arrows/arr087.svg-->
-                <span class="svg-icon svg-icon-3 m-0 toggle-off">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <rect opacity="0.5" x="11" y="18" width="12" height="2" rx="1"
-                      transform="rotate(-90 11 18)" fill="currentColor" />
-                    <rect x="6" y="11" width="12" height="2" rx="1" fill="currentColor" />
-                  </svg>
-                </span>
-                <!--end::Svg Icon-->
-                <!--begin::Svg Icon | path: icons/duotune/arrows/arr089.svg-->
-                <span class="svg-icon svg-icon-3 m-0 toggle-on">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <rect x="6" y="11" width="12" height="2" rx="1" fill="currentColor" />
-                  </svg>
-                </span>
-                <!--end::Svg Icon-->
-              </button>
-            </td>
-            <td>
-              <a href="../../demo22/dist/apps/ecommerce/catalog/edit-product.html"
-                class="text-gray-800 text-hover-primary">#XGY-346</a>
-            </td>
-            <td class="text-end">7 min ago</td>
-            <td class="text-end">
-              <a href="#" class="text-gray-600 text-hover-primary">Albert Flores</a>
-            </td>
-            <td class="text-end">$630.00</td>
-            <td class="text-end">
-              <span class="text-gray-800 fw-bolder">$86.70</span>
-            </td>
-            <td class="text-end">
-              <div class="d-flex justify-content-end">
-                <div class="mx-1 cursor-pointer"><img src="assets/media/icons/duotune/arrows/arr016.svg" alt=""></div>
-                <div class="mx-1 cursor-pointer"><img src="assets/media/icons/duotune/arrows/arr015.svg" alt=""></div>
-                <div class="mx-1 cursor-pointer"><img src="assets/media/icons/duotune/files/fil010.svg" alt=""></div>
-              </div>
-            </td>
+                                                                                        <!--end::Col-->
+                                                                                        <!--begin::Col-->
+                                                                                        <div
+                                                                                            class="col-xl-12 mb-5 mb-xl-10">
+                                                                                            <!--begin::Table Widget 4-->
+                                                                                            <div
+                                                                                                class="card card-flush h-xl-100">
 
-            <!-- <td class="text-end">Test</td> -->
+                                                                                                <!--begin::Card body-->
+                                                                                                <div
+                                                                                                    class="card-body pt-2">
+                                                                                                    <!--begin::Table-->
+                                                                                                    <table
+                                                                                                        class="table align-middle table-row-dashed fs-6 gy-3"
+                                                                                                        id="kt_table_widget_4_table">
+                                                                                                        <!--begin::Table head-->
+                                                                                                        <thead>
+                                                                                                            <!--begin::Table row-->
+                                                                                                            <tr
+                                                                                                                class="text-start text-gray-400 fw-bold fs-7 text-uppercase gs-0">
+                                                                                                                <th>
+                                                                                                                </th>
+                                                                                                                <th>#
+                                                                                                                </th>
+                                                                                                                <th
+                                                                                                                    class="min-w-100px">
+                                                                                                                    Supplier
+                                                                                                                </th>
+                                                                                                                <th
+                                                                                                                    class="text-end min-w-100px">
+                                                                                                                    Reference
+                                                                                                                    Date
+                                                                                                                </th>
+                                                                                                                <th
+                                                                                                                    class="text-end min-w-125px">
+                                                                                                                    Submitted
+                                                                                                                    Date
+                                                                                                                </th>
+                                                                                                                <th
+                                                                                                                    class="text-end min-w-100px">
+                                                                                                                    Total
+                                                                                                                    Sales
+                                                                                                                </th>
+                                                                                                                <th
+                                                                                                                    class="text-end min-w-100px">
+                                                                                                                    Status
+                                                                                                                </th>
+                                                                                                                <th
+                                                                                                                    class="text-end min-w-50px">
+                                                                                                                    Action
+                                                                                                                </th>
 
-          </tr>
+                                                                                                            </tr>
+                                                                                                            <!--end::Table row-->
+                                                                                                        </thead>
+                                                                                                        <!--end::Table head-->
+                                                                                                        <!--begin::Table body-->
+                                                                                                        <tbody
+                                                                                                            class="fw-bold text-gray-600">
+                                                                                                            <tr data-kt-table-widget-4="subtable_template"
+                                                                                                                class="d-none">
+                                                                                                                <td
+                                                                                                                    colspan="2">
+                                                                                                                    <div
+                                                                                                                        class="d-flex align-items-center gap-3">
+                                                                                                                        <a href="#"
+                                                                                                                            class="symbol symbol-50px bg-secondary bg-opacity-25 rounded">
+                                                                                                                            <img src=""
+                                                                                                                                data-kt-src-path="assets/media/stock/ecommerce/"
+                                                                                                                                alt=""
+                                                                                                                                data-kt-table-widget-4="template_image" />
+                                                                                                                        </a>
+                                                                                                                        <div
+                                                                                                                            class="d-flex flex-column text-muted">
+                                                                                                                            <a href="#"
+                                                                                                                                class="text-gray-800 text-hover-primary fw-bold"
+                                                                                                                                data-kt-table-widget-4="template_name">Product
+                                                                                                                                name</a>
+                                                                                                                            <div class="fs-7"
+                                                                                                                                data-kt-table-widget-4="template_description">
+                                                                                                                                Product
+                                                                                                                                description
+                                                                                                                            </div>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </td>
+                                                                                                                <td
+                                                                                                                    class="text-end">
+                                                                                                                    <div
+                                                                                                                        class="text-gray-800 fs-7">
+                                                                                                                        Cost
+                                                                                                                    </div>
+                                                                                                                    <div class="text-muted fs-7 fw-bold"
+                                                                                                                        data-kt-table-widget-4="template_cost">
+                                                                                                                        1
+                                                                                                                    </div>
+                                                                                                                </td>
+                                                                                                                <td
+                                                                                                                    class="text-end">
+                                                                                                                    <div
+                                                                                                                        class="text-gray-800 fs-7">
+                                                                                                                        Qty
+                                                                                                                    </div>
+                                                                                                                    <div class="text-muted fs-7 fw-bold"
+                                                                                                                        data-kt-table-widget-4="template_qty">
+                                                                                                                        1
+                                                                                                                    </div>
+                                                                                                                </td>
+                                                                                                                <td
+                                                                                                                    class="text-end">
+                                                                                                                    <div
+                                                                                                                        class="text-gray-800 fs-7">
+                                                                                                                        Total
+                                                                                                                    </div>
+                                                                                                                    <div class="text-muted fs-7 fw-bold"
+                                                                                                                        data-kt-table-widget-4="template_total">
+                                                                                                                        name
+                                                                                                                    </div>
+                                                                                                                </td>
+                                                                                                                <td
+                                                                                                                    class="text-end">
+                                                                                                                    <div
+                                                                                                                        class="text-gray-800 fs-7 me-3">
+                                                                                                                        On
+                                                                                                                        hand
+                                                                                                                    </div>
+                                                                                                                    <div class="text-muted fs-7 fw-bold"
+                                                                                                                        data-kt-table-widget-4="template_stock">
+                                                                                                                        32
+                                                                                                                    </div>
+                                                                                                                </td>
+                                                                                                                <td>
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                            <tr>
+                                                                                                                <td><input
+                                                                                                                        type="checkbox"
+                                                                                                                        name=""
+                                                                                                                        id="">
+                                                                                                                </td>
+                                                                                                                <td
+                                                                                                                    class="">
+                                                                                                                    <button
+                                                                                                                        type="button"
+                                                                                                                        class="btn btn-sm btn-icon btn-light btn-active-light-primary toggle h-25px w-25px"
+                                                                                                                        data-kt-table-widget-4="expand_row">
+                                                                                                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr087.svg-->
+                                                                                                                        <span
+                                                                                                                            class="svg-icon svg-icon-3 m-0 toggle-off">
+                                                                                                                            <svg width="24"
+                                                                                                                                height="24"
+                                                                                                                                viewBox="0 0 24 24"
+                                                                                                                                fill="none"
+                                                                                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                                                                                <rect
+                                                                                                                                    opacity="0.5"
+                                                                                                                                    x="11"
+                                                                                                                                    y="18"
+                                                                                                                                    width="12"
+                                                                                                                                    height="2"
+                                                                                                                                    rx="1"
+                                                                                                                                    transform="rotate(-90 11 18)"
+                                                                                                                                    fill="currentColor" />
+                                                                                                                                <rect
+                                                                                                                                    x="6"
+                                                                                                                                    y="11"
+                                                                                                                                    width="12"
+                                                                                                                                    height="2"
+                                                                                                                                    rx="1"
+                                                                                                                                    fill="currentColor" />
+                                                                                                                            </svg>
+                                                                                                                        </span>
+                                                                                                                        <!--end::Svg Icon-->
+                                                                                                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr089.svg-->
+                                                                                                                        <span
+                                                                                                                            class="svg-icon svg-icon-3 m-0 toggle-on">
+                                                                                                                            <svg width="24"
+                                                                                                                                height="24"
+                                                                                                                                viewBox="0 0 24 24"
+                                                                                                                                fill="none"
+                                                                                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                                                                                <rect
+                                                                                                                                    x="6"
+                                                                                                                                    y="11"
+                                                                                                                                    width="12"
+                                                                                                                                    height="2"
+                                                                                                                                    rx="1"
+                                                                                                                                    fill="currentColor" />
+                                                                                                                            </svg>
+                                                                                                                        </span>
+                                                                                                                        <!--end::Svg Icon-->
+                                                                                                                    </button>
+                                                                                                                </td>
+                                                                                                                <td>
+                                                                                                                    <a href="../../demo22/dist/apps/ecommerce/catalog/edit-product.html"
+                                                                                                                        class="text-gray-800 text-hover-primary">#XGY-346</a>
+                                                                                                                </td>
+                                                                                                                <td
+                                                                                                                    class="text-end">
+                                                                                                                    7
+                                                                                                                    min
+                                                                                                                    ago
+                                                                                                                </td>
+                                                                                                                <td
+                                                                                                                    class="text-end">
+                                                                                                                    <a href="#"
+                                                                                                                        class="text-gray-600 text-hover-primary">Albert
+                                                                                                                        Flores</a>
+                                                                                                                </td>
+                                                                                                                <td
+                                                                                                                    class="text-end">
+                                                                                                                    $630.00
+                                                                                                                </td>
+                                                                                                                <td
+                                                                                                                    class="text-end">
+                                                                                                                    <span
+                                                                                                                        class="text-gray-800 fw-bolder">$86.70</span>
+                                                                                                                </td>
+                                                                                                                <td
+                                                                                                                    class="text-end">
+                                                                                                                    <div
+                                                                                                                        class="d-flex justify-content-end">
+                                                                                                                        <div
+                                                                                                                            class="mx-1 cursor-pointer">
+                                                                                                                            <img src="assets/media/icons/duotune/arrows/arr016.svg"
+                                                                                                                                alt="">
+                                                                                                                        </div>
+                                                                                                                        <div
+                                                                                                                            class="mx-1 cursor-pointer">
+                                                                                                                            <img src="assets/media/icons/duotune/arrows/arr015.svg"
+                                                                                                                                alt="">
+                                                                                                                        </div>
+                                                                                                                        <div
+                                                                                                                            class="mx-1 cursor-pointer">
+                                                                                                                            <img src="assets/media/icons/duotune/files/fil010.svg"
+                                                                                                                                alt="">
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </td>
+
+                                                                                                                <!-- <td class="text-end">Test</td> -->
+
+                                                                                                            </tr>
 
 
 
-        </tbody>
-        <!--end::Table body-->
-      </table>
-      <!--end::Table-->
-    </div>
-    <!--end::Card body-->
-  </div>
-  <!--end::Table Widget 4-->
-</div>
-<!--end::Col-->
-</div>
+                                                                                                        </tbody>
+                                                                                                        <!--end::Table body-->
+                                                                                                    </table>
+                                                                                                    <!--end::Table-->
+                                                                                                </div>
+                                                                                                <!--end::Card body-->
+                                                                                            </div>
+                                                                                            <!--end::Table Widget 4-->
+                                                                                        </div>
+                                                                                        <!--end::Col-->
+                                                                                    </div>
 
 
 
@@ -3225,131 +3356,253 @@
 
                                                                                     <div class="row gy-5 g-xl-10">
 
-<!--end::Col-->
-<!--begin::Col-->
-<div class="col-xl-12 mb-5 mb-xl-10">
-  <!--begin::Table Widget 4-->
-  <div class="card card-flush h-xl-100">
-    
-    <!--begin::Card body-->
-    <div class="card-body pt-2">
-      <!--begin::Table-->
-      <table class="table align-middle table-row-dashed fs-6 gy-3" id="kt_table_widget_6_table">
-        <!--begin::Table head-->
-        <thead>
-          <!--begin::Table row-->
-          <tr class="text-start text-gray-400 fw-bold fs-7 text-uppercase gs-0">
-            <th></th>
-            <th>#</th>
-            <th class="min-w-100px">Supplier</th>
-            <th class="text-end min-w-100px">Reference Date</th>
-            <th class="text-end min-w-125px">Submitted Date</th>
-            <th class="text-end min-w-100px">Total Sales</th>
-            <th class="text-end min-w-100px">Status</th>
-            <th class="text-end min-w-50px">Action</th>
-          
-          </tr>
-          <!--end::Table row-->
-        </thead>
-        <!--end::Table head-->
-        <!--begin::Table body-->
-        <tbody class="fw-bold text-gray-600">
-          <tr data-kt-table-widget-6="subtable_template" class="d-none">
-            <td colspan="2">
-              <div class="d-flex align-items-center gap-3">
-                <a href="#" class="symbol symbol-50px bg-secondary bg-opacity-25 rounded">
-                  <img src="" data-kt-src-path="assets/media/stock/ecommerce/" alt=""
-                    data-kt-table-widget-6="template_image" />
-                </a>
-                <div class="d-flex flex-column text-muted">
-                  <a href="#" class="text-gray-800 text-hover-primary fw-bold"
-                    data-kt-table-widget-6="template_name">Product name</a>
-                  <div class="fs-7" data-kt-table-widget-6="template_description">Product
-                    description</div>
-                </div>
-              </div>
-            </td>
-            <td class="text-end">
-              <div class="text-gray-800 fs-7">Cost</div>
-              <div class="text-muted fs-7 fw-bold" data-kt-table-widget-6="template_cost">1</div>
-            </td>
-            <td class="text-end">
-              <div class="text-gray-800 fs-7">Qty</div>
-              <div class="text-muted fs-7 fw-bold" data-kt-table-widget-6="template_qty">1</div>
-            </td>
-            <td class="text-end">
-              <div class="text-gray-800 fs-7">Total</div>
-              <div class="text-muted fs-7 fw-bold" data-kt-table-widget-6="template_total">name
-              </div>
-            </td>
-            <td class="text-end">
-              <div class="text-gray-800 fs-7 me-3">On hand</div>
-              <div class="text-muted fs-7 fw-bold" data-kt-table-widget-6="template_stock">32
-              </div>
-            </td>
-            <td></td>
-          </tr>
-          <tr>
-            <td><input type="checkbox" name="" id=""></td>
-            <td class="">
-              <button type="button"
-                class="btn btn-sm btn-icon btn-light btn-active-light-primary toggle h-25px w-25px"
-                data-kt-table-widget-6="expand_row6">
-                <!--begin::Svg Icon | path: icons/duotune/arrows/arr087.svg-->
-                <span class="svg-icon svg-icon-3 m-0 toggle-off">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <rect opacity="0.5" x="11" y="18" width="12" height="2" rx="1"
-                      transform="rotate(-90 11 18)" fill="currentColor" />
-                    <rect x="6" y="11" width="12" height="2" rx="1" fill="currentColor" />
-                  </svg>
-                </span>
-                <!--end::Svg Icon-->
-                <!--begin::Svg Icon | path: icons/duotune/arrows/arr089.svg-->
-                <span class="svg-icon svg-icon-3 m-0 toggle-on">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <rect x="6" y="11" width="12" height="2" rx="1" fill="currentColor" />
-                  </svg>
-                </span>
-                <!--end::Svg Icon-->
-              </button>
-            </td>
-            <td>
-              <a href="../../demo22/dist/apps/ecommerce/catalog/edit-product.html"
-                class="text-gray-800 text-hover-primary">#XGY-346</a>
-            </td>
-            <td class="text-end">7 min ago</td>
-            <td class="text-end">
-              <a href="#" class="text-gray-600 text-hover-primary">Albert Flores</a>
-            </td>
-            <td class="text-end">$630.00</td>
-            <td class="text-end">
-              <span class="text-gray-800 fw-bolder">$86.70</span>
-            </td>
-            <td class="text-end">
-              <div class="d-flex justify-content-end">
-                <div class="mx-1 cursor-pointer"><img src="assets/media/icons/duotune/files/fil010.svg" alt=""></div>
-              </div>
-            </td>
+                                                                                        <!--end::Col-->
+                                                                                        <!--begin::Col-->
+                                                                                        <div
+                                                                                            class="col-xl-12 mb-5 mb-xl-10">
+                                                                                            <!--begin::Table Widget 4-->
+                                                                                            <div
+                                                                                                class="card card-flush h-xl-100">
 
-            <!-- <td class="text-end">Test</td> -->
+                                                                                                <!--begin::Card body-->
+                                                                                                <div
+                                                                                                    class="card-body pt-2">
+                                                                                                    <!--begin::Table-->
+                                                                                                    <table
+                                                                                                        class="table align-middle table-row-dashed fs-6 gy-3"
+                                                                                                        id="kt_table_widget_6_table">
+                                                                                                        <!--begin::Table head-->
+                                                                                                        <thead>
+                                                                                                            <!--begin::Table row-->
+                                                                                                            <tr
+                                                                                                                class="text-start text-gray-400 fw-bold fs-7 text-uppercase gs-0">
+                                                                                                                <th>
+                                                                                                                </th>
+                                                                                                                <th>#
+                                                                                                                </th>
+                                                                                                                <th
+                                                                                                                    class="min-w-100px">
+                                                                                                                    Supplier
+                                                                                                                </th>
+                                                                                                                <th
+                                                                                                                    class="text-end min-w-100px">
+                                                                                                                    Reference
+                                                                                                                    Date
+                                                                                                                </th>
+                                                                                                                <th
+                                                                                                                    class="text-end min-w-125px">
+                                                                                                                    Submitted
+                                                                                                                    Date
+                                                                                                                </th>
+                                                                                                                <th
+                                                                                                                    class="text-end min-w-100px">
+                                                                                                                    Total
+                                                                                                                    Sales
+                                                                                                                </th>
+                                                                                                                <th
+                                                                                                                    class="text-end min-w-100px">
+                                                                                                                    Status
+                                                                                                                </th>
+                                                                                                                <th
+                                                                                                                    class="text-end min-w-50px">
+                                                                                                                    Action
+                                                                                                                </th>
 
-          </tr>
+                                                                                                            </tr>
+                                                                                                            <!--end::Table row-->
+                                                                                                        </thead>
+                                                                                                        <!--end::Table head-->
+                                                                                                        <!--begin::Table body-->
+                                                                                                        <tbody
+                                                                                                            class="fw-bold text-gray-600">
+                                                                                                            <tr data-kt-table-widget-6="subtable_template"
+                                                                                                                class="d-none">
+                                                                                                                <td
+                                                                                                                    colspan="2">
+                                                                                                                    <div
+                                                                                                                        class="d-flex align-items-center gap-3">
+                                                                                                                        <a href="#"
+                                                                                                                            class="symbol symbol-50px bg-secondary bg-opacity-25 rounded">
+                                                                                                                            <img src=""
+                                                                                                                                data-kt-src-path="assets/media/stock/ecommerce/"
+                                                                                                                                alt=""
+                                                                                                                                data-kt-table-widget-6="template_image" />
+                                                                                                                        </a>
+                                                                                                                        <div
+                                                                                                                            class="d-flex flex-column text-muted">
+                                                                                                                            <a href="#"
+                                                                                                                                class="text-gray-800 text-hover-primary fw-bold"
+                                                                                                                                data-kt-table-widget-6="template_name">Product
+                                                                                                                                name</a>
+                                                                                                                            <div class="fs-7"
+                                                                                                                                data-kt-table-widget-6="template_description">
+                                                                                                                                Product
+                                                                                                                                description
+                                                                                                                            </div>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </td>
+                                                                                                                <td
+                                                                                                                    class="text-end">
+                                                                                                                    <div
+                                                                                                                        class="text-gray-800 fs-7">
+                                                                                                                        Cost
+                                                                                                                    </div>
+                                                                                                                    <div class="text-muted fs-7 fw-bold"
+                                                                                                                        data-kt-table-widget-6="template_cost">
+                                                                                                                        1
+                                                                                                                    </div>
+                                                                                                                </td>
+                                                                                                                <td
+                                                                                                                    class="text-end">
+                                                                                                                    <div
+                                                                                                                        class="text-gray-800 fs-7">
+                                                                                                                        Qty
+                                                                                                                    </div>
+                                                                                                                    <div class="text-muted fs-7 fw-bold"
+                                                                                                                        data-kt-table-widget-6="template_qty">
+                                                                                                                        1
+                                                                                                                    </div>
+                                                                                                                </td>
+                                                                                                                <td
+                                                                                                                    class="text-end">
+                                                                                                                    <div
+                                                                                                                        class="text-gray-800 fs-7">
+                                                                                                                        Total
+                                                                                                                    </div>
+                                                                                                                    <div class="text-muted fs-7 fw-bold"
+                                                                                                                        data-kt-table-widget-6="template_total">
+                                                                                                                        name
+                                                                                                                    </div>
+                                                                                                                </td>
+                                                                                                                <td
+                                                                                                                    class="text-end">
+                                                                                                                    <div
+                                                                                                                        class="text-gray-800 fs-7 me-3">
+                                                                                                                        On
+                                                                                                                        hand
+                                                                                                                    </div>
+                                                                                                                    <div class="text-muted fs-7 fw-bold"
+                                                                                                                        data-kt-table-widget-6="template_stock">
+                                                                                                                        32
+                                                                                                                    </div>
+                                                                                                                </td>
+                                                                                                                <td>
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                            <tr>
+                                                                                                                <td><input
+                                                                                                                        type="checkbox"
+                                                                                                                        name=""
+                                                                                                                        id="">
+                                                                                                                </td>
+                                                                                                                <td
+                                                                                                                    class="">
+                                                                                                                    <button
+                                                                                                                        type="button"
+                                                                                                                        class="btn btn-sm btn-icon btn-light btn-active-light-primary toggle h-25px w-25px"
+                                                                                                                        data-kt-table-widget-6="expand_row6">
+                                                                                                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr087.svg-->
+                                                                                                                        <span
+                                                                                                                            class="svg-icon svg-icon-3 m-0 toggle-off">
+                                                                                                                            <svg width="24"
+                                                                                                                                height="24"
+                                                                                                                                viewBox="0 0 24 24"
+                                                                                                                                fill="none"
+                                                                                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                                                                                <rect
+                                                                                                                                    opacity="0.5"
+                                                                                                                                    x="11"
+                                                                                                                                    y="18"
+                                                                                                                                    width="12"
+                                                                                                                                    height="2"
+                                                                                                                                    rx="1"
+                                                                                                                                    transform="rotate(-90 11 18)"
+                                                                                                                                    fill="currentColor" />
+                                                                                                                                <rect
+                                                                                                                                    x="6"
+                                                                                                                                    y="11"
+                                                                                                                                    width="12"
+                                                                                                                                    height="2"
+                                                                                                                                    rx="1"
+                                                                                                                                    fill="currentColor" />
+                                                                                                                            </svg>
+                                                                                                                        </span>
+                                                                                                                        <!--end::Svg Icon-->
+                                                                                                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr089.svg-->
+                                                                                                                        <span
+                                                                                                                            class="svg-icon svg-icon-3 m-0 toggle-on">
+                                                                                                                            <svg width="24"
+                                                                                                                                height="24"
+                                                                                                                                viewBox="0 0 24 24"
+                                                                                                                                fill="none"
+                                                                                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                                                                                <rect
+                                                                                                                                    x="6"
+                                                                                                                                    y="11"
+                                                                                                                                    width="12"
+                                                                                                                                    height="2"
+                                                                                                                                    rx="1"
+                                                                                                                                    fill="currentColor" />
+                                                                                                                            </svg>
+                                                                                                                        </span>
+                                                                                                                        <!--end::Svg Icon-->
+                                                                                                                    </button>
+                                                                                                                </td>
+                                                                                                                <td>
+                                                                                                                    <a href="../../demo22/dist/apps/ecommerce/catalog/edit-product.html"
+                                                                                                                        class="text-gray-800 text-hover-primary">#XGY-346</a>
+                                                                                                                </td>
+                                                                                                                <td
+                                                                                                                    class="text-end">
+                                                                                                                    7
+                                                                                                                    min
+                                                                                                                    ago
+                                                                                                                </td>
+                                                                                                                <td
+                                                                                                                    class="text-end">
+                                                                                                                    <a href="#"
+                                                                                                                        class="text-gray-600 text-hover-primary">Albert
+                                                                                                                        Flores</a>
+                                                                                                                </td>
+                                                                                                                <td
+                                                                                                                    class="text-end">
+                                                                                                                    $630.00
+                                                                                                                </td>
+                                                                                                                <td
+                                                                                                                    class="text-end">
+                                                                                                                    <span
+                                                                                                                        class="text-gray-800 fw-bolder">$86.70</span>
+                                                                                                                </td>
+                                                                                                                <td
+                                                                                                                    class="text-end">
+                                                                                                                    <div
+                                                                                                                        class="d-flex justify-content-end">
+                                                                                                                        <div
+                                                                                                                            class="mx-1 cursor-pointer">
+                                                                                                                            <img src="assets/media/icons/duotune/files/fil010.svg"
+                                                                                                                                alt="">
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </td>
+
+                                                                                                                <!-- <td class="text-end">Test</td> -->
+
+                                                                                                            </tr>
 
 
 
-        </tbody>
-        <!--end::Table body-->
-      </table>
-      <!--end::Table-->
-    </div>
-    <!--end::Card body-->
-  </div>
-  <!--end::Table Widget 4-->
-</div>
-<!--end::Col-->
-</div>
+                                                                                                        </tbody>
+                                                                                                        <!--end::Table body-->
+                                                                                                    </table>
+                                                                                                    <!--end::Table-->
+                                                                                                </div>
+                                                                                                <!--end::Card body-->
+                                                                                            </div>
+                                                                                            <!--end::Table Widget 4-->
+                                                                                        </div>
+                                                                                        <!--end::Col-->
+                                                                                    </div>
 
 
                                                                                     <!--end::Table-->
@@ -3394,233 +3647,509 @@
                                                 </div>
                                             </div>
                                             <!--end::Tables Widget 2-->
-                                        <div class="tab-pane fade" id="kt_general_widget_1_2">
-                                            <!--begin::Tables Widget 3-->
-                                            <div class="card">
-                                                <div class="card card-flush h-xl-100">
+                                            <div class="tab-pane fade" id="kt_general_widget_1_2">
+                                                <!--begin::Tables Widget 3-->
+                                                <div class="card">
+                                                    <div class="card card-flush h-xl-100">
 
-                                                    <!--begin::Body-->
-                                                    <div class="card-body pt-0 px-0">
-                                                        <div class="tab-content">
-                                                            <!--begin::Tap pane-->
-                                                            <div class="tab-pane fade show active my-4"
-                                                                id="kt_list_widget_10_tab_1">
-                                                                <!--begin::Item-->
-                                                                <div class="m-0">
-                                                                    <div class="card-body pt-0">
-                                                                        <div class="row">
-                                                                            <div class="col-md-3">
-                                                                                <select name="language"
-                                                                                    aria-label="Select Year"
-                                                                                    data-control="select2"
-                                                                                    data-placeholder="Select a language..."
-                                                                                    class="form-select form-select-solid form-select-lg">
-                                                                                    <option value="- Select Supplier -">
-                                                                                        - Select Supplier -</option>
-                                                                                    <option value="option1">Option 1
-                                                                                    </option>
-                                                                                </select>
-                                                                            </div>
+                                                        <!--begin::Body-->
+                                                        <div class="card-body pt-0 px-0">
+                                                            <div class="tab-content">
+                                                                <!--begin::Tap pane-->
+                                                                <div class="tab-pane fade show active my-4"
+                                                                    id="kt_list_widget_10_tab_1">
+                                                                    <!--begin::Item-->
+                                                                    <div class="m-0">
+                                                                        <div class="card-body pt-0">
+                                                                            <div class="row">
+                                                                                <div class="col-md-3">
+                                                                                    <select name="language"
+                                                                                        aria-label="Select Year"
+                                                                                        data-control="select2"
+                                                                                        data-placeholder="Select a language..."
+                                                                                        class="form-select form-select-solid form-select-lg">
+                                                                                        <option
+                                                                                            value="- Select Supplier -">
+                                                                                            - Select Supplier -</option>
+                                                                                        <option value="option1">Option 1
+                                                                                        </option>
+                                                                                    </select>
+                                                                                </div>
 
-                                                                            <div class="col-md-3">
-                                                                                <select name="language"
-                                                                                    aria-label="Select Year"
-                                                                                    data-control="select2"
-                                                                                    data-placeholder="Select a language..."
-                                                                                    class="form-select form-select-solid form-select-lg">
-                                                                                    <option value="- Select Year -">-
-                                                                                        Select Financial Year -</option>
-                                                                                    <option value="2022">2022</option>
-                                                                                </select>
-                                                                            </div>
-                                                                            <div class="col-md-3">
-                                                                                <select name="language"
-                                                                                    aria-label="Select Month"
-                                                                                    data-control="select2"
-                                                                                    data-placeholder="Select a language..."
-                                                                                    class="form-select form-select-solid form-select-lg">
-                                                                                    <option value="- Select Month -">-
-                                                                                        Select Month -</option>
-                                                                                    <option value="July">July</option>
-                                                                                </select>
-                                                                            </div>
-                                                                            <div class="col-md-3 d-flex">
+                                                                                <div class="col-md-3">
+                                                                                    <select name="language"
+                                                                                        aria-label="Select Year"
+                                                                                        data-control="select2"
+                                                                                        data-placeholder="Select a language..."
+                                                                                        class="form-select form-select-solid form-select-lg">
+                                                                                        <option value="- Select Year -">
+                                                                                            -
+                                                                                            Select Financial Year -
+                                                                                        </option>
+                                                                                        <option value="2022">2022
+                                                                                        </option>
+                                                                                    </select>
+                                                                                </div>
+                                                                                <div class="col-md-3">
+                                                                                    <select name="language"
+                                                                                        aria-label="Select Month"
+                                                                                        data-control="select2"
+                                                                                        data-placeholder="Select a language..."
+                                                                                        class="form-select form-select-solid form-select-lg">
+                                                                                        <option
+                                                                                            value="- Select Month -">-
+                                                                                            Select Month -</option>
+                                                                                        <option value="July">July
+                                                                                        </option>
+                                                                                    </select>
+                                                                                </div>
+                                                                                <div class="col-md-3 d-flex">
 
-                                                                                <button
-                                                                                    class="btn btn-primary mb-0">Apply</button>
-                                                                            </div>
+                                                                                    <button
+                                                                                        class="btn btn-primary mb-0">Apply</button>
+                                                                                </div>
 
+                                                                            </div>
                                                                         </div>
-                                                                    </div>
-                                                                    <div class="row">&nbsp;</div>
+                                                                        <div class="row">&nbsp;</div>
 
-                                                                    <div class="col-xl-12">
-                                                                        <!--end::Card header-->
-                                                                        <!--begin::Card body-->
-                                                                        <div class="card card-flush h-xl-100">
-
+                                                                        <div class="col-xl-12">
                                                                             <!--end::Card header-->
                                                                             <!--begin::Card body-->
-                                                                            <div class="card-body pt-0">
-                                                                                <!--begin::Table-->
+                                                                            <div class="card card-flush h-xl-100">
 
-                                                                                <table id="kt_datatable_vertical_scroll" class="table table-striped table-row-bordered gy-5 gs-7">
-    <thead>
-        <tr class="fw-semibold fs-6 text-gray-800">
-            <th>Name</th>
-            <th>Position</th>
-            <th>Office</th>
-            <th>Age</th>
-            <th>Start date</th>
-            <th>Salary</th>
-        </tr>
-    </thead>
-    <tbody style="overflowY:scroll">
-        <tr>
-            <td>Tiger Nixon</td>
-            <td>System Architect</td>
-            <td>Edinburgh</td>
-            <td>61</td>
-            <td>2011/04/25</td>
-            <td>$320,800</td>
-        </tr>
-        <tr>
-            <td>Garrett Winters</td>
-            <td>Accountant</td>
-            <td>Tokyo</td>
-            <td>63</td>
-            <td>2011/07/25</td>
-            <td>$170,750</td>
-        </tr>
-        <tr>
-            <td>Garrett Winters</td>
-            <td>Accountant</td>
-            <td>Tokyo</td>
-            <td>63</td>
-            <td>2011/07/25</td>
-            <td>$170,750</td>
-        </tr>
-        <tr>
-            <td>Garrett Winters</td>
-            <td>Accountant</td>
-            <td>Tokyo</td>
-            <td>63</td>
-            <td>2011/07/25</td>
-            <td>$170,750</td>
-        </tr>
-        <tr>
-            <td>Garrett Winters</td>
-            <td>Accountant</td>
-            <td>Tokyo</td>
-            <td>63</td>
-            <td>2011/07/25</td>
-            <td>$170,750</td>
-        </tr>
-        <tr>
-            <td>Garrett Winters</td>
-            <td>Accountant</td>
-            <td>Tokyo</td>
-            <td>63</td>
-            <td>2011/07/25</td>
-            <td>$170,750</td>
-        </tr>
-
-    </tbody>
-    <tfoot>
-        <tr class="border-top fw-semibold fs-6 text-gray-800">
-            <th>Name</th>
-            <th>Position</th>
-            <th>Office</th>
-            <th>Age</th>
-            <th>Start date</th>
-            <th>Salary</th>
-        </tr>
-    </tfoot>
-</table>
+                                                                                <!--end::Card header-->
+                                                                                <!--begin::Card body-->
+                                                                                <div class="card-body pt-0">
+                                                                                    <!--begin::Table-->
 
 
+                                                                                   
 
-                                                                                <div class="d-flex justify-content-between my-3"
-                                                                                    style="margin-top:40px;">
-                                                                                    <div
-                                                                                        class="bg-light-primary p-3 w-300px d-flex justify-content-between">
-                                                                                        <p class="m-0 fs-7"><b>Grand
-                                                                                                Total</b></p>
-                                                                                        <p><b>$ 123</b></p>
+
+                                                                                    <div class="row w-100">
+                                                                                        <table
+                                                                                            class="table table-fixed table-row-bordered">
+                                                                                            <thead>
+                                                                                                <tr>
+                                                                                                    <th
+                                                                                                        class="col-3 text-start px-4 text-gray-400 fw-bold fs-7 text-uppercase">
+                                                                                                        Member Name</th>
+                                                                                                    <th
+                                                                                                        class="col-2 text-start px-2 text-gray-400 fw-bold fs-7 text-uppercase">
+                                                                                                        Amount</th>
+                                                                                                    <th
+                                                                                                        class="col-1 text-start px-2 text-gray-400 fw-bold fs-7 text-uppercase">
+                                                                                                        Action</th>
+                                                                                                    <th
+                                                                                                        class="col-3 text-start px-2 text-gray-400 fw-bold fs-7 text-uppercase">
+                                                                                                        Last Submission
+                                                                                                        Total</th>
+                                                                                                    <th
+                                                                                                        class="col-3 text-start px-0 text-gray-400 fw-bold fs-7 text-uppercase">
+                                                                                                        Last Submission
+                                                                                                    </th>
+                                                                                                </tr>
+                                                                                            </thead>
+                                                                                            <tbody>
+                                                                                                
+                                                                                                <tr class="h-60px fw-bold">
+                                                                                                    <td
+                                                                                                        class="col-3 text-start px-4 fs-6">
+                                                                                                        123</td>
+                                                                                                    <td
+                                                                                                        class="col-2 text-start px-2 d-flex fs-6">
+                                                                                                        <input
+                                                                                                            type="text"
+                                                                                                            class="form-control form-control-solid w-75 h-40px"
+                                                                                                            name="name"
+                                                                                                            value="$" />
+                                                                                                    </td>
+                                                                                                    <td
+                                                                                                        class="col-1 text-start px-2 fs-6">
+                                                                                                        <img class="mx-2"
+                                                                                                            src="assets/media/icons/duotune/abstract/abs011.svg"
+                                                                                                            alt="" style="height:16px;width:16px;"><img
+                                                                                                            src="assets/media/icons/duotune/art/art005.svg"
+                                                                                                            alt="" style="height:16px;width:16px;">
+                                                                                                    </td>
+                                                                                                    <td
+                                                                                                        class="col-3 text-start fs-6">
+                                                                                                        <span
+                                                                                                            class="text-start badge badge-light-primary py-3">$1,350.00</span>
+                                                                                                    </td>
+                                                                                                    <td
+                                                                                                        class="px-3 col-3 text-start fs-6">
+                                                                                                        Jul 25, 2022
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr class="h-60px fw-bold">
+                                                                                                    <td
+                                                                                                        class="col-3 text-start px-4 fs-6">
+                                                                                                        123</td>
+                                                                                                    <td
+                                                                                                        class="col-2 text-start px-2 d-flex fs-6">
+                                                                                                        <input
+                                                                                                            type="text"
+                                                                                                            class="form-control form-control-solid w-75 h-40px"
+                                                                                                            name="name"
+                                                                                                            value="$" />
+                                                                                                    </td>
+                                                                                                    <td
+                                                                                                        class="col-1 text-start px-2 fs-6">
+                                                                                                        <img class="mx-2"
+                                                                                                            src="assets/media/icons/duotune/abstract/abs011.svg"
+                                                                                                            alt="" style="height:16px;width:16px;"><img
+                                                                                                            src="assets/media/icons/duotune/art/art005.svg"
+                                                                                                            alt="" style="height:16px;width:16px;">
+                                                                                                    </td>
+                                                                                                    <td
+                                                                                                        class="col-3 text-start fs-6">
+                                                                                                        <span
+                                                                                                            class="text-start badge badge-light-primary py-3">$1,350.00</span>
+                                                                                                    </td>
+                                                                                                    <td
+                                                                                                        class="px-2 col-3 text-start fs-6">
+                                                                                                        Jul 25, 2022
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr class="h-60px fw-bold">
+                                                                                                    <td
+                                                                                                        class="col-3 text-start px-4 fs-6">
+                                                                                                        123</td>
+                                                                                                    <td
+                                                                                                        class="col-2 text-start px-2 d-flex fs-6">
+                                                                                                        <input
+                                                                                                            type="text"
+                                                                                                            class="form-control form-control-solid w-75 h-40px"
+                                                                                                            name="name"
+                                                                                                            value="$" />
+                                                                                                    </td>
+                                                                                                    <td
+                                                                                                        class="col-1 text-start px-2 fs-6">
+                                                                                                        <img class="mx-2"
+                                                                                                            src="assets/media/icons/duotune/abstract/abs011.svg"
+                                                                                                            alt="" style="height:16px;width:16px;"><img
+                                                                                                            src="assets/media/icons/duotune/art/art005.svg"
+                                                                                                            alt="" style="height:16px;width:16px;">
+                                                                                                    </td>
+                                                                                                    <td
+                                                                                                        class="col-3 text-start fs-6">
+                                                                                                        <span
+                                                                                                            class="text-start badge badge-light-primary py-3">$1,350.00</span>
+                                                                                                    </td>
+                                                                                                    <td
+                                                                                                        class="px-2 col-3 text-start fs-6">
+                                                                                                        Jul 25, 2022
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr class="h-60px fw-bold">
+                                                                                                    <td
+                                                                                                        class="col-3 text-start px-4 fs-6">
+                                                                                                        123</td>
+                                                                                                    <td
+                                                                                                        class="col-2 text-start px-2 d-flex fs-6">
+                                                                                                        <input
+                                                                                                            type="text"
+                                                                                                            class="form-control form-control-solid w-75 h-40px"
+                                                                                                            name="name"
+                                                                                                            value="$" />
+                                                                                                    </td>
+                                                                                                    <td
+                                                                                                        class="col-1 text-start px-2 fs-6">
+                                                                                                        <img class="mx-2"
+                                                                                                            src="assets/media/icons/duotune/abstract/abs011.svg"
+                                                                                                            alt="" style="height:16px;width:16px;"><img
+                                                                                                            src="assets/media/icons/duotune/art/art005.svg"
+                                                                                                            alt="" style="height:16px;width:16px;">
+                                                                                                    </td>
+                                                                                                    <td
+                                                                                                        class="col-3 text-start fs-6">
+                                                                                                        <span
+                                                                                                            class="text-start badge badge-light-primary py-3">$1,350.00</span>
+                                                                                                    </td>
+                                                                                                    <td
+                                                                                                        class="px-2 col-3 text-start fs-6">
+                                                                                                        Jul 25, 2022
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr class="h-60px fw-bold">
+                                                                                                    <td
+                                                                                                        class="col-3 text-start px-4 fs-6">
+                                                                                                        123</td>
+                                                                                                    <td
+                                                                                                        class="col-2 text-start px-2 d-flex fs-6">
+                                                                                                        <input
+                                                                                                            type="text"
+                                                                                                            class="form-control form-control-solid w-75 h-40px"
+                                                                                                            name="name"
+                                                                                                            value="$" />
+                                                                                                    </td>
+                                                                                                    <td
+                                                                                                        class="col-1 text-start px-2 fs-6">
+                                                                                                        <img class="mx-2"
+                                                                                                            src="assets/media/icons/duotune/abstract/abs011.svg"
+                                                                                                            alt="" style="height:16px;width:16px;"><img
+                                                                                                            src="assets/media/icons/duotune/art/art005.svg"
+                                                                                                            alt="" style="height:16px;width:16px;">
+                                                                                                    </td>
+                                                                                                    <td
+                                                                                                        class="col-3 text-start fs-6">
+                                                                                                        <span
+                                                                                                            class="text-start badge badge-light-primary py-3">$1,350.00</span>
+                                                                                                    </td>
+                                                                                                    <td
+                                                                                                        class="px-2 col-3 text-start fs-6">
+                                                                                                        Jul 25, 2022
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr class="h-60px fw-bold">
+                                                                                                    <td
+                                                                                                        class="col-3 text-start px-4 fs-6">
+                                                                                                        123</td>
+                                                                                                    <td
+                                                                                                        class="col-2 text-start px-2 d-flex fs-6">
+                                                                                                        <input
+                                                                                                            type="text"
+                                                                                                            class="form-control form-control-solid w-75 h-40px"
+                                                                                                            name="name"
+                                                                                                            value="$" />
+                                                                                                    </td>
+                                                                                                    <td
+                                                                                                        class="col-1 text-start px-2 fs-6">
+                                                                                                        <img class="mx-2"
+                                                                                                            src="assets/media/icons/duotune/abstract/abs011.svg"
+                                                                                                            alt="" style="height:16px;width:16px;"><img
+                                                                                                            src="assets/media/icons/duotune/art/art005.svg"
+                                                                                                            alt="" style="height:16px;width:16px;">
+                                                                                                    </td>
+                                                                                                    <td
+                                                                                                        class="col-3 text-start fs-6">
+                                                                                                        <span
+                                                                                                            class="text-start badge badge-light-primary py-3">$1,350.00</span>
+                                                                                                    </td>
+                                                                                                    <td
+                                                                                                        class="px-2 col-3 text-start fs-6">
+                                                                                                        Jul 25, 2022
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr class="h-60px fw-bold">
+                                                                                                    <td
+                                                                                                        class="col-3 text-start px-4 fs-6">
+                                                                                                        123</td>
+                                                                                                    <td
+                                                                                                        class="col-2 text-start px-2 d-flex fs-6">
+                                                                                                        <input
+                                                                                                            type="text"
+                                                                                                            class="form-control form-control-solid w-75 h-40px"
+                                                                                                            name="name"
+                                                                                                            value="$" />
+                                                                                                    </td>
+                                                                                                    <td
+                                                                                                        class="col-1 text-start px-2 fs-6">
+                                                                                                        <img class="mx-2"
+                                                                                                            src="assets/media/icons/duotune/abstract/abs011.svg"
+                                                                                                            alt="" style="height:16px;width:16px;"><img
+                                                                                                            src="assets/media/icons/duotune/art/art005.svg"
+                                                                                                            alt="" style="height:16px;width:16px;">
+                                                                                                    </td>
+                                                                                                    <td
+                                                                                                        class="col-3 text-start fs-6">
+                                                                                                        <span
+                                                                                                            class="text-start badge badge-light-primary py-3">$1,350.00</span>
+                                                                                                    </td>
+                                                                                                    <td
+                                                                                                        class="px-2 col-3 text-start fs-6">
+                                                                                                        Jul 25, 2022
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr class="h-60px fw-bold">
+                                                                                                    <td
+                                                                                                        class="col-3 text-start px-4 fs-6">
+                                                                                                        123</td>
+                                                                                                    <td
+                                                                                                        class="col-2 text-start px-2 d-flex fs-6">
+                                                                                                        <input
+                                                                                                            type="text"
+                                                                                                            class="form-control form-control-solid w-75 h-40px"
+                                                                                                            name="name"
+                                                                                                            value="$" />
+                                                                                                    </td>
+                                                                                                    <td
+                                                                                                        class="col-1 text-start px-2 fs-6">
+                                                                                                        <img class="mx-2"
+                                                                                                            src="assets/media/icons/duotune/abstract/abs011.svg"
+                                                                                                            alt="" style="height:16px;width:16px;"><img
+                                                                                                            src="assets/media/icons/duotune/art/art005.svg"
+                                                                                                            alt="" style="height:16px;width:16px;">
+                                                                                                    </td>
+                                                                                                    <td
+                                                                                                        class="col-3 text-start fs-6">
+                                                                                                        <span
+                                                                                                            class="text-start badge badge-light-primary py-3">$1,350.00</span>
+                                                                                                    </td>
+                                                                                                    <td
+                                                                                                        class="px-2 col-3 text-start fs-6">
+                                                                                                        Jul 25, 2022
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr class="h-60px fw-bold">
+                                                                                                    <td
+                                                                                                        class="col-3 text-start px-4 fs-6">
+                                                                                                        123</td>
+                                                                                                    <td
+                                                                                                        class="col-2 text-start px-2 d-flex fs-6">
+                                                                                                        <input
+                                                                                                            type="text"
+                                                                                                            class="form-control form-control-solid w-75 h-40px"
+                                                                                                            name="name"
+                                                                                                            value="$" />
+                                                                                                    </td>
+                                                                                                    <td
+                                                                                                        class="col-1 text-start px-2 fs-6">
+                                                                                                        <img class="mx-2"
+                                                                                                            src="assets/media/icons/duotune/abstract/abs011.svg"
+                                                                                                            alt="" style="height:16px;width:16px;"><img
+                                                                                                            src="assets/media/icons/duotune/art/art005.svg"
+                                                                                                            alt="" style="height:16px;width:16px;">
+                                                                                                    </td>
+                                                                                                    <td
+                                                                                                        class="col-3 text-start fs-6">
+                                                                                                        <span
+                                                                                                            class="text-start badge badge-light-primary py-3">$1,350.00</span>
+                                                                                                    </td>
+                                                                                                    <td
+                                                                                                        class="px-2 col-3 text-start fs-6">
+                                                                                                        Jul 25, 2022
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr class="h-60px fw-bold">
+                                                                                                    <td
+                                                                                                        class="col-3 text-start px-4 fs-6">
+                                                                                                        123</td>
+                                                                                                    <td
+                                                                                                        class="col-2 text-start px-2 d-flex fs-6">
+                                                                                                        <input
+                                                                                                            type="text"
+                                                                                                            class="form-control form-control-solid w-75 h-40px"
+                                                                                                            name="name"
+                                                                                                            value="$" />
+                                                                                                    </td>
+                                                                                                    <td
+                                                                                                        class="col-1 text-start px-2 fs-6">
+                                                                                                        <img class="mx-2"
+                                                                                                            src="assets/media/icons/duotune/abstract/abs011.svg"
+                                                                                                            alt="" style="height:16px;width:16px;"><img
+                                                                                                            src="assets/media/icons/duotune/art/art005.svg"
+                                                                                                            alt="" style="height:16px;width:16px;">
+                                                                                                    </td>
+                                                                                                    <td
+                                                                                                        class="col-3 text-start fs-6">
+                                                                                                        <span
+                                                                                                            class="text-start badge badge-light-primary py-3">$1,350.00</span>
+                                                                                                    </td>
+                                                                                                    <td
+                                                                                                        class="px-2 col-3 text-start fs-6">
+                                                                                                        Jul 25, 2022
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                
+                                                                                                
+                                                                                               
+                                                                                              
+                                                                                                
+
+                                                                                            </tbody>
+                                                                                        </table>
                                                                                     </div>
-                                                                                    <div class="d-flex">
-                                                                                        <div class="text-end"><a
-                                                                                                class="btn btn-sm btn-success me-2"
-                                                                                                href="javascript:;">Submit</a>
+
+
+                                                                                    <style>
+                                                                                    .table-fixed {
+                                                                                        width: 100%;
+                                                                                    }
+
+                                                                                    .table-fixed tbody {
+                                                                                        height: 350px;
+                                                                                        overflow-y: auto;
+                                                                                        width: 100%;
+                                                                                    }
+
+                                                                                    .table-fixed thead,
+                                                                                    .table-fixed tbody,
+                                                                                    .table-fixed tr,
+                                                                                    .table-fixed td,
+                                                                                    .table-fixed th {
+                                                                                        display: block;
+                                                                                    }
+
+                                                                                    .table-fixed tbody td {
+                                                                                        float: left;
+                                                                                    }
+
+                                                                                    .table-fixed thead tr th {
+                                                                                        border-color: #0881b1;
+                                                                                        float: left;
+                                                                                    }
+
+                                                                                    .read_article {
+                                                                                        text-align: center;
+                                                                                    }
+                                                                                    </style>
+
+
+                                                                                    <div class="d-flex justify-content-between my-3 align-items-center"
+                                                                                        style="margin-top:40px;">
+                                                                                        <div
+                                                                                            class="rounded-2 bg-light-primary p-3 w-450px d-flex justify-content-between" style="font-size:20px;">
+                                                                                            <p class="m-0 fw-bolder" ><b>Grand
+                                                                                                    Total</b></p>
+                                                                                            <p class="m-0"><b>$ 123</b></p>
                                                                                         </div>
-                                                                                        <div class="text-end"><a
-                                                                                                class="btn btn-sm btn-danger me-2"
-                                                                                                href="javascript:;">Cancel</a>
+                                                                                        <div class="d-flex">
+                                                                                            <div class="text-end"><a
+                                                                                                    class="btn btn-sm btn-success me-2"
+                                                                                                    href="javascript:;">Submit</a>
+                                                                                            </div>
+                                                                                            <div class="text-end"><a
+                                                                                                    class="btn btn-sm btn-danger me-2"
+                                                                                                    href="javascript:;">Cancel</a>
+                                                                                            </div>
                                                                                         </div>
                                                                                     </div>
+                                                                                    <!--end::Card body-->
                                                                                 </div>
                                                                                 <!--end::Card body-->
                                                                             </div>
-                                                                            <!--end::Card body-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
+                                                                <!--end::Tap pane-->
+
+
                                                             </div>
-                                                            <!--end::Tap pane-->
-
-
                                                         </div>
                                                     </div>
+                                                   
                                                 </div>
-                                                <!--begin::Alert-->
-                                                <div
-                                                    class="alert alert-dismissible bg-light-danger d-flex flex-column flex-sm-row p-5 mb-10 mx-3">
-                                                    <!--begin::Icon-->
-                                                    <span
-                                                        class="svg-icon svg-icon-2hx svg-icon-danger me-4 mb-5 mb-sm-0">...</span>
-                                                    <!--end::Icon-->
-
-                                                    <!--begin::Wrapper-->
-                                                    <div class="d-flex flex-column pe-0 pe-sm-10">
-                                                        <!--begin::Title-->
-                                                        <h4 class="fw-semibold">This is an alert</h4>
-                                                        <!--end::Title-->
-                                                        <!--begin::Content-->
-                                                        <span>The alert component can be used to highlight certain parts
-                                                            of your page for higher content visibility.</span>
-                                                        <!--end::Content-->
-                                                    </div>
-                                                    <!--end::Wrapper-->
-
-                                                    <!--begin::Close-->
-                                                    <button type="button"
-                                                        class="position-absolute position-sm-relative m-2 m-sm-0 top-0 end-0 btn btn-icon ms-sm-auto"
-                                                        data-bs-dismiss="alert">
-                                                        <span class="svg-icon svg-icon-1 svg-icon-danger"><img
-                                                                src="assets/media/icons/duotune/abstract/abs012.svg" /></span>
-                                                    </button>
-                                                    <!--end::Close-->
-                                                </div>
-                                                <!--end::Alert-->
+                                                <!--end::Tables Widget 3-->
                                             </div>
-                                            <!--end::Tables Widget 3-->
                                         </div>
+                                        <!--end::Tab content-->
                                     </div>
-                                    <!--end::Tab content-->
+                                    <!--end::General Widget 1-->
+
                                 </div>
-                                <!--end::General Widget 1-->
+                                <!--end::Col-->
+
+
 
                             </div>
-                            <!--end::Col-->
-
-
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-</div>
 
 
 
@@ -3691,6 +4220,8 @@
         <script src="assets/js/custom/Table/tagifyMember.js"></script>
         <script src="assets/js/custom/Table/invoicedTable.js"></script>
         <script src="assets/js/custom/Table/verticalScroll.js"></script>
+
+
 </body>
 
 </html>

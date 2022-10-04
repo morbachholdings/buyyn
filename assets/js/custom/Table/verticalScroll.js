@@ -1,6 +1,6 @@
-$("#kt_datatable_vertical_scroll").DataTable({
-    "scrollY": "500px",
-    "scrollCollapse": true,
-    "paging": false,
-    "dom": "<'table-responsive'tr>"
-});
+$("#kt_datatable_fixed_columns").DataTable({
+    scrollY:        "400px",
+    scrollX:        false,
+    scrollCollapse: true,
+    paging:         false,
+   });

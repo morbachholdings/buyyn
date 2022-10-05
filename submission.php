@@ -2792,12 +2792,12 @@
                                                             <!--begin::Item-->
                                                             <li class="nav-item col-6 mx-0 px-0">
                                                                 <!--begin::Link-->
-                                                                <a class="nav-link d-flex justify-content-center w-100 border-0 h-100 py-3 active"
+                                                                <a class="nav-link d-flex justify-content-center align-items-center w-100 border-0 h-100 py-3 active"
                                                                     data-bs-toggle="pill"
                                                                     href="#kt_list_widget_10_tab_2">
                                                                     <!--begin::Subtitle-->
                                                                     <span
-                                                                        class="nav-text text-gray-800 fw-bolder fs-6 mb-3">Pending
+                                                                        class="nav-text text-gray-800 fw-bolder fs-6 my-2">Pending
                                                                         Submissions</span>
                                                                     <!--end::Subtitle-->
                                                                     <!--begin::Bullet-->
@@ -2815,7 +2815,7 @@
                                                                     href="#kt_list_widget_10_tab_3">
                                                                     <!--begin::Subtitle-->
                                                                     <span
-                                                                        class="nav-text text-gray-800 fw-bolder fs-6 mb-3">Invoiced</span>
+                                                                        class="nav-text text-gray-800 fw-bolder fs-6 my-2">Invoiced</span>
                                                                     <!--end::Subtitle-->
                                                                     <!--begin::Bullet-->
                                                                     <span
@@ -2844,102 +2844,79 @@
                                                                             <!--begin::Table Widget 4-->
                                                                             <div class="card card-flush h-xl-100">
                                                                                 <!--begin::Card header-->
-                                                                                <div class="card-header pt-7">
-
-                                                                                    <!--begin::Actions-->
-                                                                                    <div class="card-toolbar w-100">
-                                                                                        <!--begin::Filters-->
-                                                                                        <div
-                                                                                            class="d-flex flex-stack flex-wrap gap-4 w-100 align-items-end justify-content-between">
-
-                                                                                            <!--begin::Destination-->
-
-                                                                                            <div
-                                                                                                class=" align-items-center fw-bold">
-
-                                                                                                <div class="mb-0">
-                                                                                                    <input
-                                                                                                        class="form-control form-control-solid"
-                                                                                                        placeholder="Pick date rage"
-                                                                                                        id="kt_daterangepicker_1" />
-                                                                                                </div>
-                                                                                            </div>
-
-                                                                                            <div class="col-md-2 ">
-
-                                                                                                <select name="language"
-                                                                                                    aria-label="Select Month"
-                                                                                                    data-control="select2"
-                                                                                                    data-placeholder="Select a language..."
-                                                                                                    class="form-select form-select-solid form-select-lg">
-                                                                                                    <option
-                                                                                                        value="- Select Reference -">
-                                                                                                        - Select
-                                                                                                        Reference -
-                                                                                                    </option>
-                                                                                                    <option
-                                                                                                        value="option1">
-                                                                                                        Option 1
-                                                                                                    </option>
-                                                                                                </select>
-                                                                                            </div>
-
-                                                                                            <!--end::Destination-->
-                                                                                            <div class="col-md-2 ">
-
-                                                                                                <input
-                                                                                                    class="form-control d-flex align-items-center"
-                                                                                                    value=""
-                                                                                                    id="kt_tagify_suppliers"
-                                                                                                    placeholder="Select Supplier" />
-
-                                                                                            </div>
-
-                                                                                            <div
-                                                                                                class="col-md-2 d-flex align-items-end justify-content-end">
-
-                                                                                                <button
-                                                                                                    class="btn btn-primary mb-0">Apply</button>
-
-                                                                                            </div>
-                                                                                            <!--begin::Search-->
-                                                                                            <div
-                                                                                                class="d-none position-relative my-1">
-                                                                                                <!--begin::Svg Icon | path: icons/duotune/general/gen021.svg-->
-                                                                                                <span
-                                                                                                    class="svg-icon svg-icon-2 position-absolute top-50 translate-middle-y ms-4">
-                                                                                                    <svg width="24"
-                                                                                                        height="24"
-                                                                                                        viewBox="0 0 24 24"
-                                                                                                        fill="none"
-                                                                                                        xmlns="http://www.w3.org/2000/svg">
-                                                                                                        <rect
-                                                                                                            opacity="0.5"
-                                                                                                            x="17.0365"
-                                                                                                            y="15.1223"
-                                                                                                            width="8.15546"
-                                                                                                            height="2"
-                                                                                                            rx="1"
-                                                                                                            transform="rotate(45 17.0365 15.1223)"
-                                                                                                            fill="currentColor" />
-                                                                                                        <path
-                                                                                                            d="M11 19C6.55556 19 3 15.4444 3 11C3 6.55556 6.55556 3 11 3C15.4444 3 19 6.55556 19 11C19 15.4444 15.4444 19 11 19ZM11 5C7.53333 5 5 7.53333 5 11C5 14.4667 7.53333 17 11 17C14.4667 17 17 14.4667 17 11C17 7.53333 14.4667 5 11 5Z"
-                                                                                                            fill="currentColor" />
-                                                                                                    </svg>
-                                                                                                </span>
-                                                                                                <!--end::Svg Icon-->
-                                                                                                <input type="text"
-                                                                                                    data-kt-table-widget-4="search"
-                                                                                                    class="form-control w-150px fs-7 ps-12"
-                                                                                                    placeholder="Search" />
-                                                                                            </div>
-                                                                                            <!--end::Search-->
-                                                                                        </div>
-                                                                                        <!--begin::Filters-->
-                                                                                    </div>
-                                                                                    <!--end::Actions-->
-                                                                                </div>
-                                                                                <!--end::Card header-->
+								<div class="card-header border-0 pt-6">
+									<!--begin::Card title-->
+									<div class="card-title">
+										<!--begin::Search-->
+										<div class="d-flex align-items-center position-relative my-1">
+											<!--begin::Svg Icon | path: icons/duotune/general/gen021.svg-->
+											<span class="svg-icon svg-icon-1 position-absolute ms-6">
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<rect opacity="0.5" x="17.0365" y="15.1223" width="8.15546" height="2" rx="1" transform="rotate(45 17.0365 15.1223)" fill="currentColor" />
+													<path d="M11 19C6.55556 19 3 15.4444 3 11C3 6.55556 6.55556 3 11 3C15.4444 3 19 6.55556 19 11C19 15.4444 15.4444 19 11 19ZM11 5C7.53333 5 5 7.53333 5 11C5 14.4667 7.53333 17 11 17C14.4667 17 17 14.4667 17 11C17 7.53333 14.4667 5 11 5Z" fill="currentColor" />
+												</svg>
+											</span>
+											<!--end::Svg Icon-->
+											<input type="text" data-kt-customer-table-filter="search" class="form-control form-control-solid w-250px ps-15" placeholder="Search Customers" />
+										</div>
+										<!--end::Search-->
+									</div>
+									<!--begin::Card title-->
+									<!--begin::Card toolbar-->
+									<div class="card-toolbar">
+										<!--begin::Toolbar-->
+										<div class="d-flex justify-content-end" data-kt-customer-table-toolbar="base">
+											<!--begin::Filter-->
+											<div class="w-150px me-3">
+												<!--begin::Select2-->
+												<select class="form-select form-select-solid" data-control="select2" data-hide-search="true" data-placeholder="Status" data-hide-search="true" data-dropdown-css-class="w-150px" data-placeholder="Select an option" data-kt-table-widget-4="filter_status">
+													<option></option>
+													<option value="all">All</option>
+													<option value="active">Active</option>
+													<option value="locked">Locked</option>
+												</select>
+												<!--end::Select2-->
+											</div>
+											<!--end::Filter-->
+                                            <div class="input-group w-250px me-3">
+											<input class="form-control form-control-solid rounded rounded-end-0" placeholder="Pick date range" id="kt_ecommerce_sales_flatpickr" />
+											<button class="btn btn-icon btn-light" id="kt_ecommerce_sales_flatpickr_clear">
+												<!--begin::Svg Icon | path: icons/duotune/arrows/arr088.svg-->
+												<span class="svg-icon svg-icon-2">
+													<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<rect opacity="0.5" x="7.05025" y="15.5356" width="12" height="2" rx="1" transform="rotate(-45 7.05025 15.5356)" fill="currentColor" />
+														<rect x="8.46447" y="7.05029" width="12" height="2" rx="1" transform="rotate(45 8.46447 7.05029)" fill="currentColor" />
+													</svg>
+												</span>
+												<!--end::Svg Icon-->
+											</button>
+										</div>
+											<!--begin::Export-->
+											<button type="button" class="btn btn-light-primary me-3" data-bs-toggle="modal" data-bs-target="#kt_customers_export_modal">
+											<!--begin::Svg Icon | path: icons/duotune/arrows/arr078.svg-->
+											<span class="svg-icon svg-icon-2">
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<rect opacity="0.3" x="12.75" y="4.25" width="12" height="2" rx="1" transform="rotate(90 12.75 4.25)" fill="currentColor" />
+													<path d="M12.0573 6.11875L13.5203 7.87435C13.9121 8.34457 14.6232 8.37683 15.056 7.94401C15.4457 7.5543 15.4641 6.92836 15.0979 6.51643L12.4974 3.59084C12.0996 3.14332 11.4004 3.14332 11.0026 3.59084L8.40206 6.51643C8.0359 6.92836 8.0543 7.5543 8.44401 7.94401C8.87683 8.37683 9.58785 8.34458 9.9797 7.87435L11.4427 6.11875C11.6026 5.92684 11.8974 5.92684 12.0573 6.11875Z" fill="currentColor" />
+													<path opacity="0.3" d="M18.75 8.25H17.75C17.1977 8.25 16.75 8.69772 16.75 9.25C16.75 9.80228 17.1977 10.25 17.75 10.25C18.3023 10.25 18.75 10.6977 18.75 11.25V18.25C18.75 18.8023 18.3023 19.25 17.75 19.25H5.75C5.19772 19.25 4.75 18.8023 4.75 18.25V11.25C4.75 10.6977 5.19771 10.25 5.75 10.25C6.30229 10.25 6.75 9.80228 6.75 9.25C6.75 8.69772 6.30229 8.25 5.75 8.25H4.75C3.64543 8.25 2.75 9.14543 2.75 10.25V19.25C2.75 20.3546 3.64543 21.25 4.75 21.25H18.75C19.8546 21.25 20.75 20.3546 20.75 19.25V10.25C20.75 9.14543 19.8546 8.25 18.75 8.25Z" fill="currentColor" />
+												</svg>
+											</span>
+											<!--end::Svg Icon-->Export</button>
+											<!--end::Export-->
+											
+										</div>
+										<!--end::Toolbar-->
+										<!--begin::Group actions-->
+										<div class="d-flex justify-content-end align-items-center deleteDiv" style="display:none !important;" kt_table_widget_4_table-toolbar="selected">
+											<div class="fw-bold me-5">
+											<span class="me-2" kt_table_widget_4_table-select="selected_count"></span>Selected</div>
+											<button type="button" class="btn btn-danger" data-kt-customer-table-select="delete_selected" id="deleteBtn">Delete Selected</button>
+										</div>
+										<!--end::Group actions-->
+									</div>
+									<!--end::Card toolbar-->
+								</div>
+								<!--end::Card header-->
                                                                                 <!--begin::Card body-->
                                                                                 <div class="card-body pt-0">
                                                                                     <!--begin::Table-->
@@ -2970,8 +2947,11 @@
                                                                                                             <!--begin::Table row-->
                                                                                                             <tr
                                                                                                                 class="text-start text-gray-400 fw-bold fs-7 text-uppercase gs-0">
-                                                                                                                <th>
-                                                                                                                </th>
+                                                                                                                <th class="w-10px pe-2">
+													<div class="form-check form-check-sm form-check-custom form-check-solid me-3">
+														<input class="form-check-input" type="checkbox" data-kt-check="true" data-kt-check-target="#kt_table_widget_4_table .form-check-input" value="1" />
+													</div>
+												</th>
                                                                                                                 <th>#
                                                                                                                 </th>
                                                                                                                 <th
@@ -3085,11 +3065,13 @@
                                                                                                                 </td>
                                                                                                             </tr>
                                                                                                             <tr>
-                                                                                                                <td><input
-                                                                                                                        type="checkbox"
-                                                                                                                        name=""
-                                                                                                                        id="">
-                                                                                                                </td>
+                                                                                                                <!--begin::Checkbox-->
+												<td>
+													<div class="form-check form-check-sm form-check-custom form-check-solid">
+														<input class="form-check-input selectCheckBox" type="checkbox" value="1" />
+													</div>
+												</td>
+												<!--end::Checkbox-->
                                                                                                                 <td
                                                                                                                     class="">
                                                                                                                     <button
@@ -3163,32 +3145,44 @@
                                                                                                                     class="text-end">
                                                                                                                     $630.00
                                                                                                                 </td>
-                                                                                                                <td
-                                                                                                                    class="text-end">
-                                                                                                                    <span
-                                                                                                                        class="text-gray-800 fw-bolder">$86.70</span>
-                                                                                                                </td>
-                                                                                                                <td
-                                                                                                                    class="text-end">
-                                                                                                                    <div
-                                                                                                                        class="d-flex justify-content-end">
-                                                                                                                        <div
-                                                                                                                            class="mx-1 cursor-pointer">
-                                                                                                                            <img src="assets/media/icons/duotune/arrows/arr016.svg"
-                                                                                                                                alt="">
-                                                                                                                        </div>
-                                                                                                                        <div
-                                                                                                                            class="mx-1 cursor-pointer">
-                                                                                                                            <img src="assets/media/icons/duotune/arrows/arr015.svg"
-                                                                                                                                alt="">
-                                                                                                                        </div>
-                                                                                                                        <div
-                                                                                                                            class="mx-1 cursor-pointer">
-                                                                                                                            <img src="assets/media/icons/duotune/files/fil010.svg"
-                                                                                                                                alt="">
-                                                                                                                        </div>
-                                                                                                                    </div>
-                                                                                                                </td>
+                                                                                                                <!--begin::Status=-->
+												<td  class="text-end">
+													<!--begin::Badges-->
+													<div class="badge badge-light-danger">Locked</div>
+													<!--end::Badges-->
+												</td>
+												<!--end::Status=-->
+                                                                                                               <!--begin::Action=-->
+												<td class="text-end">
+													<a href="#" class="btn btn-sm btn-light btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions
+													<!--begin::Svg Icon | path: icons/duotune/arrows/arr072.svg-->
+													<span class="svg-icon svg-icon-5 m-0">
+														<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M11.4343 12.7344L7.25 8.55005C6.83579 8.13583 6.16421 8.13584 5.75 8.55005C5.33579 8.96426 5.33579 9.63583 5.75 10.05L11.2929 15.5929C11.6834 15.9835 12.3166 15.9835 12.7071 15.5929L18.25 10.05C18.6642 9.63584 18.6642 8.96426 18.25 8.55005C17.8358 8.13584 17.1642 8.13584 16.75 8.55005L12.5657 12.7344C12.2533 13.0468 11.7467 13.0468 11.4343 12.7344Z" fill="currentColor" />
+														</svg>
+													</span>
+													<!--end::Svg Icon--></a>
+													<!--begin::Menu-->
+													<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+														<!--begin::Menu item-->
+														<div class="menu-item px-3">
+															<a href="#" class="menu-link px-3">Approve</a>
+														</div>
+														<!--end::Menu item-->
+														<!--begin::Menu item-->
+														<div class="menu-item px-3">
+															<a href="#" class="menu-link px-3" data-kt-customer-table-filter="delete_row">Reject</a>
+														</div>
+														<!--end::Menu item-->
+                                                        <!--begin::Menu item-->
+														<div class="menu-item px-3">
+															<a href="#" class="menu-link px-3" data-kt-customer-table-filter="delete_row">Print</a>
+														</div>
+														<!--end::Menu item-->
+													</div>
+													<!--end::Menu-->
+												</td>
+												<!--end::Action=-->
 
                                                                                                                 <!-- <td class="text-end">Test</td> -->
 
@@ -3217,28 +3211,123 @@
                                                                             </div>
                                                                             <!--end::Table Widget 4-->
 
-                                                                            <!--begin::Menu separator-->
-                                                                            <div class="separator"></div>
-                                                                            <!--end::Menu separator-->
-                                                                            <div
-                                                                                class="col-md-3 mt-3 mr-3 d-flex gap-4">
-                                                                                <select name="language"
-                                                                                    aria-label="Select Year"
-                                                                                    data-control="select2"
-                                                                                    data-placeholder="Select a language..."
-                                                                                    class="form-select form-select-solid form-select-lg mr-3">
-                                                                                    <option value="- Select Action -">-
-                                                                                        Bulk Action -</option>
-                                                                                    <option value="option1">Add</option>
-                                                                                    <option value="option1">Download
-                                                                                    </option>
-                                                                                    <option value="option1">CSV</option>
-                                                                                </select>
-                                                                                <!--begin::Indicator label-->
-                                                                                <button
-                                                                                    class="btn btn-primary ml-4 d-flex justify-content-end">Apply</button>
-                                                                                <!--end::Indicator label-->
-                                                                            </div>
+
+                                                                            <div class="card">
+								
+								
+							</div>
+
+<!--begin::Modal - Adjust Balance-->
+<div class="modal fade" id="kt_customers_export_modal" tabindex="-1" aria-hidden="true">
+								<!--begin::Modal dialog-->
+								<div class="modal-dialog modal-dialog-centered mw-650px">
+									<!--begin::Modal content-->
+									<div class="modal-content">
+										<!--begin::Modal header-->
+										<div class="modal-header">
+											<!--begin::Modal title-->
+											<h2 class="fw-bold">Export Customers</h2>
+											<!--end::Modal title-->
+											<!--begin::Close-->
+											<div id="kt_customers_export_close" class="btn btn-icon btn-sm btn-active-icon-primary">
+												<!--begin::Svg Icon | path: icons/duotune/arrows/arr061.svg-->
+												<span class="svg-icon svg-icon-1">
+													<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<rect opacity="0.5" x="6" y="17.3137" width="16" height="2" rx="1" transform="rotate(-45 6 17.3137)" fill="currentColor" />
+														<rect x="7.41422" y="6" width="16" height="2" rx="1" transform="rotate(45 7.41422 6)" fill="currentColor" />
+													</svg>
+												</span>
+												<!--end::Svg Icon-->
+											</div>
+											<!--end::Close-->
+										</div>
+										<!--end::Modal header-->
+										<!--begin::Modal body-->
+										<div class="modal-body scroll-y mx-5 mx-xl-15 my-7">
+											<!--begin::Form-->
+											<form id="kt_customers_export_form" class="form" action="#">
+												<!--begin::Input group-->
+												<div class="fv-row mb-10">
+													<!--begin::Label-->
+													<label class="fs-5 fw-semibold form-label mb-5">Select Export Format:</label>
+													<!--end::Label-->
+													<!--begin::Input-->
+													<select data-control="select2" data-placeholder="Select a format" data-hide-search="true" name="format" class="form-select form-select-solid">
+														<option value="excell">Excel</option>
+														<option value="pdf">PDF</option>
+														<option value="cvs">CVS</option>
+														<option value="zip">ZIP</option>
+													</select>
+													<!--end::Input-->
+												</div>
+												<!--end::Input group-->
+												<!--begin::Input group-->
+												<div class="fv-row mb-10">
+													<!--begin::Label-->
+													<label class="fs-5 fw-semibold form-label mb-5">Select Date Range:</label>
+													<!--end::Label-->
+													<!--begin::Input-->
+													<input class="form-control form-control-solid" placeholder="Pick a date" name="date" />
+													<!--end::Input-->
+												</div>
+												<!--end::Input group-->
+												<!--begin::Row-->
+												<div class="row fv-row mb-15">
+													<!--begin::Label-->
+													<label class="fs-5 fw-semibold form-label mb-5">Payment Type:</label>
+													<!--end::Label-->
+													<!--begin::Radio group-->
+													<div class="d-flex flex-column">
+														<!--begin::Radio button-->
+														<label class="form-check form-check-custom form-check-sm form-check-solid mb-3">
+															<input class="form-check-input" type="checkbox" value="1" checked="checked" name="payment_type" />
+															<span class="form-check-label text-gray-600 fw-semibold">All</span>
+														</label>
+														<!--end::Radio button-->
+														<!--begin::Radio button-->
+														<label class="form-check form-check-custom form-check-sm form-check-solid mb-3">
+															<input class="form-check-input" type="checkbox" value="2" checked="checked" name="payment_type" />
+															<span class="form-check-label text-gray-600 fw-semibold">Visa</span>
+														</label>
+														<!--end::Radio button-->
+														<!--begin::Radio button-->
+														<label class="form-check form-check-custom form-check-sm form-check-solid mb-3">
+															<input class="form-check-input" type="checkbox" value="3" name="payment_type" />
+															<span class="form-check-label text-gray-600 fw-semibold">Mastercard</span>
+														</label>
+														<!--end::Radio button-->
+														<!--begin::Radio button-->
+														<label class="form-check form-check-custom form-check-sm form-check-solid">
+															<input class="form-check-input" type="checkbox" value="4" name="payment_type" />
+															<span class="form-check-label text-gray-600 fw-semibold">American Express</span>
+														</label>
+														<!--end::Radio button-->
+													</div>
+													<!--end::Input group-->
+												</div>
+												<!--end::Row-->
+												<!--begin::Actions-->
+												<div class="text-center">
+													<button type="reset" id="kt_customers_export_cancel" class="btn btn-light me-3">Discard</button>
+													<button type="submit" id="kt_customers_export_submit" class="btn btn-primary">
+														<span class="indicator-label">Submit</span>
+														<span class="indicator-progress">Please wait...
+														<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
+													</button>
+												</div>
+												<!--end::Actions-->
+											</form>
+											<!--end::Form-->
+										</div>
+										<!--end::Modal body-->
+									</div>
+									<!--end::Modal content-->
+								</div>
+								<!--end::Modal dialog-->
+							</div>
+							<!--end::Modal - New Card-->
+							<!--end::Modals-->
+                                                                            
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -3254,7 +3343,7 @@
                                                                             <!--begin::Table Widget 4-->
                                                                             <div class="card card-flush h-xl-100">
                                                                                 <!--begin::Card header-->
-                                                                                <div class="card-header pt-7">
+                                                                                <div class="card-header pb-5">
 
                                                                                     <!--begin::Actions-->
                                                                                     <div class="card-toolbar w-100">
@@ -3377,6 +3466,10 @@
                                                                                                             <tr
                                                                                                                 class="text-start text-gray-400 fw-bold fs-7 text-uppercase gs-0">
                                                                                                                 <th>
+                                                                                                                <input
+                                                                                                                        type="checkbox"
+                                                                                                                        name=""
+                                                                                                                        id="">
                                                                                                                 </th>
                                                                                                                 <th>#
                                                                                                                 </th>
@@ -3660,7 +3753,7 @@
                                                                     id="kt_list_widget_10_tab_1">
                                                                     <!--begin::Item-->
                                                                     <div class="m-0">
-                                                                        <div class="card-body pt-0">
+                                                                        <div class="card-body pt-5">
                                                                             <div class="row">
                                                                                 <div class="col-md-3">
                                                                                     <select name="language"
@@ -3724,9 +3817,6 @@
                                                                                     <!--begin::Table-->
 
 
-                                                                                   
-
-
                                                                                     <div class="row w-100">
                                                                                         <table
                                                                                             class="table table-fixed table-row-bordered">
@@ -3736,37 +3826,38 @@
                                                                                                         class="col-3 text-start px-4 text-gray-400 fw-bold fs-7 text-uppercase">
                                                                                                         Member Name</th>
                                                                                                     <th
-                                                                                                        class="col-2 text-start px-2 text-gray-400 fw-bold fs-7 text-uppercase">
+                                                                                                        class="col-3 text-start px-2 text-gray-400 fw-bold fs-7 text-uppercase">
                                                                                                         Amount</th>
                                                                                                     <th
-                                                                                                        class="col-1 text-start px-2 text-gray-400 fw-bold fs-7 text-uppercase">
+                                                                                                        class="col-2 text-start px-2 text-gray-400 fw-bold fs-7 text-uppercase">
                                                                                                         Action</th>
                                                                                                     <th
-                                                                                                        class="col-3 text-start px-2 text-gray-400 fw-bold fs-7 text-uppercase">
+                                                                                                        class="col-2 text-start px-2 text-gray-400 fw-bold fs-7 text-uppercase">
                                                                                                         Last Submission
                                                                                                         Total</th>
                                                                                                     <th
-                                                                                                        class="col-3 text-start px-0 text-gray-400 fw-bold fs-7 text-uppercase">
+                                                                                                        class="col-2 text-start px-0 text-gray-400 fw-bold fs-7 text-uppercase">
                                                                                                         Last Submission
                                                                                                     </th>
                                                                                                 </tr>
                                                                                             </thead>
-                                                                                            <tbody>
+                                                                                            <tbody class="scroll-y">
                                                                                                 
                                                                                                 <tr class="h-60px fw-bold">
                                                                                                     <td
                                                                                                         class="col-3 text-start px-4 fs-6">
                                                                                                         123</td>
                                                                                                     <td
-                                                                                                        class="col-2 text-start px-2 d-flex fs-6">
+                                                                                                        class="col-3 text-start px-2 d-flex fs-6 my-auto">
+                                                                                                        <span class="my-auto fs-6 fw-bold mr-1">$</span>
                                                                                                         <input
                                                                                                             type="text"
                                                                                                             class="form-control form-control-solid w-75 h-40px"
                                                                                                             name="name"
-                                                                                                            value="$" />
+                                                                                                            value=""></input>
                                                                                                     </td>
                                                                                                     <td
-                                                                                                        class="col-1 text-start px-2 fs-6">
+                                                                                                        class="col-2 text-start px-2 fs-6">
                                                                                                         <img class="mx-2"
                                                                                                             src="assets/media/icons/duotune/abstract/abs011.svg"
                                                                                                             alt="" style="height:16px;width:16px;"><img
@@ -3774,286 +3865,16 @@
                                                                                                             alt="" style="height:16px;width:16px;">
                                                                                                     </td>
                                                                                                     <td
-                                                                                                        class="col-3 text-start fs-6">
+                                                                                                        class="col-2 text-start fs-6">
                                                                                                         <span
                                                                                                             class="text-start badge badge-light-primary py-3">$1,350.00</span>
                                                                                                     </td>
                                                                                                     <td
-                                                                                                        class="px-3 col-3 text-start fs-6">
+                                                                                                        class="px-3 col-2 text-start fs-6">
                                                                                                         Jul 25, 2022
                                                                                                     </td>
                                                                                                 </tr>
-                                                                                                <tr class="h-60px fw-bold">
-                                                                                                    <td
-                                                                                                        class="col-3 text-start px-4 fs-6">
-                                                                                                        123</td>
-                                                                                                    <td
-                                                                                                        class="col-2 text-start px-2 d-flex fs-6">
-                                                                                                        <input
-                                                                                                            type="text"
-                                                                                                            class="form-control form-control-solid w-75 h-40px"
-                                                                                                            name="name"
-                                                                                                            value="$" />
-                                                                                                    </td>
-                                                                                                    <td
-                                                                                                        class="col-1 text-start px-2 fs-6">
-                                                                                                        <img class="mx-2"
-                                                                                                            src="assets/media/icons/duotune/abstract/abs011.svg"
-                                                                                                            alt="" style="height:16px;width:16px;"><img
-                                                                                                            src="assets/media/icons/duotune/art/art005.svg"
-                                                                                                            alt="" style="height:16px;width:16px;">
-                                                                                                    </td>
-                                                                                                    <td
-                                                                                                        class="col-3 text-start fs-6">
-                                                                                                        <span
-                                                                                                            class="text-start badge badge-light-primary py-3">$1,350.00</span>
-                                                                                                    </td>
-                                                                                                    <td
-                                                                                                        class="px-2 col-3 text-start fs-6">
-                                                                                                        Jul 25, 2022
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                                <tr class="h-60px fw-bold">
-                                                                                                    <td
-                                                                                                        class="col-3 text-start px-4 fs-6">
-                                                                                                        123</td>
-                                                                                                    <td
-                                                                                                        class="col-2 text-start px-2 d-flex fs-6">
-                                                                                                        <input
-                                                                                                            type="text"
-                                                                                                            class="form-control form-control-solid w-75 h-40px"
-                                                                                                            name="name"
-                                                                                                            value="$" />
-                                                                                                    </td>
-                                                                                                    <td
-                                                                                                        class="col-1 text-start px-2 fs-6">
-                                                                                                        <img class="mx-2"
-                                                                                                            src="assets/media/icons/duotune/abstract/abs011.svg"
-                                                                                                            alt="" style="height:16px;width:16px;"><img
-                                                                                                            src="assets/media/icons/duotune/art/art005.svg"
-                                                                                                            alt="" style="height:16px;width:16px;">
-                                                                                                    </td>
-                                                                                                    <td
-                                                                                                        class="col-3 text-start fs-6">
-                                                                                                        <span
-                                                                                                            class="text-start badge badge-light-primary py-3">$1,350.00</span>
-                                                                                                    </td>
-                                                                                                    <td
-                                                                                                        class="px-2 col-3 text-start fs-6">
-                                                                                                        Jul 25, 2022
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                                <tr class="h-60px fw-bold">
-                                                                                                    <td
-                                                                                                        class="col-3 text-start px-4 fs-6">
-                                                                                                        123</td>
-                                                                                                    <td
-                                                                                                        class="col-2 text-start px-2 d-flex fs-6">
-                                                                                                        <input
-                                                                                                            type="text"
-                                                                                                            class="form-control form-control-solid w-75 h-40px"
-                                                                                                            name="name"
-                                                                                                            value="$" />
-                                                                                                    </td>
-                                                                                                    <td
-                                                                                                        class="col-1 text-start px-2 fs-6">
-                                                                                                        <img class="mx-2"
-                                                                                                            src="assets/media/icons/duotune/abstract/abs011.svg"
-                                                                                                            alt="" style="height:16px;width:16px;"><img
-                                                                                                            src="assets/media/icons/duotune/art/art005.svg"
-                                                                                                            alt="" style="height:16px;width:16px;">
-                                                                                                    </td>
-                                                                                                    <td
-                                                                                                        class="col-3 text-start fs-6">
-                                                                                                        <span
-                                                                                                            class="text-start badge badge-light-primary py-3">$1,350.00</span>
-                                                                                                    </td>
-                                                                                                    <td
-                                                                                                        class="px-2 col-3 text-start fs-6">
-                                                                                                        Jul 25, 2022
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                                <tr class="h-60px fw-bold">
-                                                                                                    <td
-                                                                                                        class="col-3 text-start px-4 fs-6">
-                                                                                                        123</td>
-                                                                                                    <td
-                                                                                                        class="col-2 text-start px-2 d-flex fs-6">
-                                                                                                        <input
-                                                                                                            type="text"
-                                                                                                            class="form-control form-control-solid w-75 h-40px"
-                                                                                                            name="name"
-                                                                                                            value="$" />
-                                                                                                    </td>
-                                                                                                    <td
-                                                                                                        class="col-1 text-start px-2 fs-6">
-                                                                                                        <img class="mx-2"
-                                                                                                            src="assets/media/icons/duotune/abstract/abs011.svg"
-                                                                                                            alt="" style="height:16px;width:16px;"><img
-                                                                                                            src="assets/media/icons/duotune/art/art005.svg"
-                                                                                                            alt="" style="height:16px;width:16px;">
-                                                                                                    </td>
-                                                                                                    <td
-                                                                                                        class="col-3 text-start fs-6">
-                                                                                                        <span
-                                                                                                            class="text-start badge badge-light-primary py-3">$1,350.00</span>
-                                                                                                    </td>
-                                                                                                    <td
-                                                                                                        class="px-2 col-3 text-start fs-6">
-                                                                                                        Jul 25, 2022
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                                <tr class="h-60px fw-bold">
-                                                                                                    <td
-                                                                                                        class="col-3 text-start px-4 fs-6">
-                                                                                                        123</td>
-                                                                                                    <td
-                                                                                                        class="col-2 text-start px-2 d-flex fs-6">
-                                                                                                        <input
-                                                                                                            type="text"
-                                                                                                            class="form-control form-control-solid w-75 h-40px"
-                                                                                                            name="name"
-                                                                                                            value="$" />
-                                                                                                    </td>
-                                                                                                    <td
-                                                                                                        class="col-1 text-start px-2 fs-6">
-                                                                                                        <img class="mx-2"
-                                                                                                            src="assets/media/icons/duotune/abstract/abs011.svg"
-                                                                                                            alt="" style="height:16px;width:16px;"><img
-                                                                                                            src="assets/media/icons/duotune/art/art005.svg"
-                                                                                                            alt="" style="height:16px;width:16px;">
-                                                                                                    </td>
-                                                                                                    <td
-                                                                                                        class="col-3 text-start fs-6">
-                                                                                                        <span
-                                                                                                            class="text-start badge badge-light-primary py-3">$1,350.00</span>
-                                                                                                    </td>
-                                                                                                    <td
-                                                                                                        class="px-2 col-3 text-start fs-6">
-                                                                                                        Jul 25, 2022
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                                <tr class="h-60px fw-bold">
-                                                                                                    <td
-                                                                                                        class="col-3 text-start px-4 fs-6">
-                                                                                                        123</td>
-                                                                                                    <td
-                                                                                                        class="col-2 text-start px-2 d-flex fs-6">
-                                                                                                        <input
-                                                                                                            type="text"
-                                                                                                            class="form-control form-control-solid w-75 h-40px"
-                                                                                                            name="name"
-                                                                                                            value="$" />
-                                                                                                    </td>
-                                                                                                    <td
-                                                                                                        class="col-1 text-start px-2 fs-6">
-                                                                                                        <img class="mx-2"
-                                                                                                            src="assets/media/icons/duotune/abstract/abs011.svg"
-                                                                                                            alt="" style="height:16px;width:16px;"><img
-                                                                                                            src="assets/media/icons/duotune/art/art005.svg"
-                                                                                                            alt="" style="height:16px;width:16px;">
-                                                                                                    </td>
-                                                                                                    <td
-                                                                                                        class="col-3 text-start fs-6">
-                                                                                                        <span
-                                                                                                            class="text-start badge badge-light-primary py-3">$1,350.00</span>
-                                                                                                    </td>
-                                                                                                    <td
-                                                                                                        class="px-2 col-3 text-start fs-6">
-                                                                                                        Jul 25, 2022
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                                <tr class="h-60px fw-bold">
-                                                                                                    <td
-                                                                                                        class="col-3 text-start px-4 fs-6">
-                                                                                                        123</td>
-                                                                                                    <td
-                                                                                                        class="col-2 text-start px-2 d-flex fs-6">
-                                                                                                        <input
-                                                                                                            type="text"
-                                                                                                            class="form-control form-control-solid w-75 h-40px"
-                                                                                                            name="name"
-                                                                                                            value="$" />
-                                                                                                    </td>
-                                                                                                    <td
-                                                                                                        class="col-1 text-start px-2 fs-6">
-                                                                                                        <img class="mx-2"
-                                                                                                            src="assets/media/icons/duotune/abstract/abs011.svg"
-                                                                                                            alt="" style="height:16px;width:16px;"><img
-                                                                                                            src="assets/media/icons/duotune/art/art005.svg"
-                                                                                                            alt="" style="height:16px;width:16px;">
-                                                                                                    </td>
-                                                                                                    <td
-                                                                                                        class="col-3 text-start fs-6">
-                                                                                                        <span
-                                                                                                            class="text-start badge badge-light-primary py-3">$1,350.00</span>
-                                                                                                    </td>
-                                                                                                    <td
-                                                                                                        class="px-2 col-3 text-start fs-6">
-                                                                                                        Jul 25, 2022
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                                <tr class="h-60px fw-bold">
-                                                                                                    <td
-                                                                                                        class="col-3 text-start px-4 fs-6">
-                                                                                                        123</td>
-                                                                                                    <td
-                                                                                                        class="col-2 text-start px-2 d-flex fs-6">
-                                                                                                        <input
-                                                                                                            type="text"
-                                                                                                            class="form-control form-control-solid w-75 h-40px"
-                                                                                                            name="name"
-                                                                                                            value="$" />
-                                                                                                    </td>
-                                                                                                    <td
-                                                                                                        class="col-1 text-start px-2 fs-6">
-                                                                                                        <img class="mx-2"
-                                                                                                            src="assets/media/icons/duotune/abstract/abs011.svg"
-                                                                                                            alt="" style="height:16px;width:16px;"><img
-                                                                                                            src="assets/media/icons/duotune/art/art005.svg"
-                                                                                                            alt="" style="height:16px;width:16px;">
-                                                                                                    </td>
-                                                                                                    <td
-                                                                                                        class="col-3 text-start fs-6">
-                                                                                                        <span
-                                                                                                            class="text-start badge badge-light-primary py-3">$1,350.00</span>
-                                                                                                    </td>
-                                                                                                    <td
-                                                                                                        class="px-2 col-3 text-start fs-6">
-                                                                                                        Jul 25, 2022
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                                <tr class="h-60px fw-bold">
-                                                                                                    <td
-                                                                                                        class="col-3 text-start px-4 fs-6">
-                                                                                                        123</td>
-                                                                                                    <td
-                                                                                                        class="col-2 text-start px-2 d-flex fs-6">
-                                                                                                        <input
-                                                                                                            type="text"
-                                                                                                            class="form-control form-control-solid w-75 h-40px"
-                                                                                                            name="name"
-                                                                                                            value="$" />
-                                                                                                    </td>
-                                                                                                    <td
-                                                                                                        class="col-1 text-start px-2 fs-6">
-                                                                                                        <img class="mx-2"
-                                                                                                            src="assets/media/icons/duotune/abstract/abs011.svg"
-                                                                                                            alt="" style="height:16px;width:16px;"><img
-                                                                                                            src="assets/media/icons/duotune/art/art005.svg"
-                                                                                                            alt="" style="height:16px;width:16px;">
-                                                                                                    </td>
-                                                                                                    <td
-                                                                                                        class="col-3 text-start fs-6">
-                                                                                                        <span
-                                                                                                            class="text-start badge badge-light-primary py-3">$1,350.00</span>
-                                                                                                    </td>
-                                                                                                    <td
-                                                                                                        class="px-2 col-3 text-start fs-6">
-                                                                                                        Jul 25, 2022
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                                
+                                                                                               
                                                                                                 
                                                                                                
                                                                                               
@@ -4065,6 +3886,16 @@
 
 
                                                                                     <style>
+                                                                                    ::-webkit-scrollbar {
+                                                                                        width: 3px;
+                                                                                    }
+                                                                                    ::-webkit-scrollbar-track {
+                                                                                        background: #f1f1f1;
+                                                                                    }
+                                                                                    ::-webkit-scrollbar-thumb {
+  background: #d6d6d6;
+  border-radius: 10px;
+}
                                                                                     .table-fixed {
                                                                                         width: 100%;
                                                                                     }
@@ -4101,7 +3932,7 @@
                                                                                     <div class="d-flex justify-content-between my-3 align-items-center"
                                                                                         style="margin-top:40px;">
                                                                                         <div
-                                                                                            class="rounded-2 bg-light-primary p-3 w-450px d-flex justify-content-between" style="font-size:20px;">
+                                                                                            class="rounded-2 bg-light-primary p-3 w-450px d-flex justify-content-between">
                                                                                             <p class="m-0 fw-bolder" ><b>Grand
                                                                                                     Total</b></p>
                                                                                             <p class="m-0"><b>$ 123</b></p>
@@ -4214,12 +4045,30 @@
         <script src="assets/js/custom/utilities/modals/users-search.js"></script>
         <script src="assets/js/custom/Date/datePicker.js"></script>
         <script src="assets/js/custom/Table/pagination.js"></script>
-        <script src="assets/js/custom/Table/submissionData.js"></script>
         <script src="assets/js/custom/Table/tagifySupplier.js"></script>
         <script src="assets/js/custom/Table/tagifySupplierInvoiced.js"></script>
         <script src="assets/js/custom/Table/tagifyMember.js"></script>
         <script src="assets/js/custom/Table/invoicedTable.js"></script>
         <script src="assets/js/custom/Table/verticalScroll.js"></script>
+        <!-- Pending Submission Table -->
+        
+        <script src="assets/js/custom/Table/PendingSubmission/export.js"></script>
+        <script src="assets/js/custom/Table/PendingSubmission/listing.js"></script>
+        <script src="assets/js/custom/Table/PendingSubmission/plusDetails.js"></script>
+
+
+    <!-- onclick deletebutton -->
+    <script>
+       $('.selectCheckBox').click(function(){
+        // var button=document.getElementsByClassName('deleteDiv');
+        // button.style.display="block";
+        var elems = document.getElementsByClassName('deleteDiv');
+for (var i=0;i<elems.length;i+=1){
+  elems[i].style.display = 'block';
+}
+       })
+    </script>
+    
 
 
 </body>

@@ -10556,3 +10556,5 @@ var KTTablesWidget5 = (function () {
   KTUtil.onDOMContentLoaded(function () {
     KTTablesWidget5.init();
   });
+
+

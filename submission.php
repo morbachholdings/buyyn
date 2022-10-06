@@ -25,7 +25,19 @@
     <link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css">
     <!--end::Global Stylesheets Bundle-->
     <!--Begin::Google Tag Manager -->
+	<style>
+	.fs-7 {
+    font-size: 12.4px!important;
+}
+		.table tbody tr:last-child td, .table tbody tr:last-child th, .table tfoot tr:last-child td, .table tfoot tr:last-child th {
+    border-bottom: 0!important;
+    font-size: 15px!important;
+}
+	</style>
+	
+	
 </head>
+	
 
 <body id="kt_body" class="header-fixed header-tablet-and-mobile-fixed toolbar-enabled" style="background:#F4F7F9;">
     <!--begin::Root-->

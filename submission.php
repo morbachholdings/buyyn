@@ -31,7 +31,7 @@
 }
 		.table tbody tr:last-child td, .table tbody tr:last-child th, .table tfoot tr:last-child td, .table tfoot tr:last-child th {
     border-bottom: 0!important;
-    font-size: 15.2px!important;
+    font-size: 15px!important;
 }
 	</style>
 	

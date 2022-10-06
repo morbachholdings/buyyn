@@ -3825,8 +3825,8 @@
                     <div class="content flex-row-fluid" id="kt_content">
                         <!--begin::Row-->
                         <div class="row g-5 g-xl-10 mb-xl-10">
-                            <div class="col-xl-12">
-                                <div class="card card-flush h-xl-100">
+                            <div class="col-xl-12 rounded-4">
+                                <div class="card card-flush h-xl-100 rounded-4 shadow-md">
                                     <!--begin::Body-->
                                     <div class="card-body">
                                       <div class="col-xl-12">
@@ -3836,12 +3836,14 @@
           <div class="d-flex flex-stack flex-wrap gap-4 w-100 align-items-end justify-content-start">
             
             <!--begin::Destination-->
-            <div>
-            <div class=" align-items-center fw-bold">
-              <div class="w-50 mb-3">
-                Date Range
-              </div>
-              <input class="form-control form-control-solid" placeholder="Pick date range" id="kt_daterangepicker_4"/>
+            <div class="col-md-3">
+            <div class=" align-items-center fw-bold rounded-4">
+            
+              <select name="language" aria-label="Select Month" data-control="select2" data-placeholder="Select a language..." class="form-select form-select-solid form-select-lg rounded-4">
+                                                                    <option value="- Report Type -">- Date Range -</option>
+                                                                    <option value="option1">2020 - 2021</option>
+                                                                    <option value="option2">2021 - 2022</option>
+                                                                </select>
               </div>
 
               </div>
@@ -3859,11 +3861,11 @@
                                                                     <option value="option2">Option 2</option>
                                                                 </select>
             </div>
-            
+
             <div class="col-md-2 d-flex align-items-end justify-content-around">
               
-              <button class="btn btn-primary mb-0">Apply</button> 
-              <button class="btn btn-primary mb-0">Export</button>
+              <button class="btn btn-primary mb-0 rounded-4 shadow-md">Apply</button> 
+              <button class="btn btn-primary mb-0 rounded-4 shadow-md">Export</button>
                 
             </div>
             <!--begin::Search-->
@@ -3918,16 +3920,16 @@
                         </div>
 
 
-                        <div class="col-xl-12 my-3">
-                          <div class="card card-flush h-xl-100">
+                        <div class="col-xl-12 my-3 rounded-4 shadow-md">
+                          <div class="card card-flush h-xl-100 rounded-4 shadow-md">
                               <!--begin::Body-->
-                              <div class="card-body">
-                                <div class="col-xl-12">
+                              <div class="card-body rounded-4 shadow-md">
+                                <div class="col-xl-12 rounded-4 shadow-md">
                                   <!--begin::Actions-->
-  <div class="card-toolbar w-100">
+  <div class="card-toolbar w-100 rounded-4 shadow-md">
     <!--begin::Filters-->
     <h2>Report Details</h2>
-    <table id="kt_datatable_fixed_columns" class="table table-striped table-row-bordered gy-5 gs-7">
+    <table id="kt_datatable_fixed_columns" class="table table-striped table-row-bordered gy-5 gs-7 rounded-4 shadow-md">
       <thead>
           <tr class="fw-semibold fs-6 text-gray-800">
               <th class="min-w-200px">Name</th>
@@ -4123,13 +4125,13 @@
                   </div>
 
 
-                  <div class="col-xl-12 my-3">
-                    <div class="card card-flush h-xl-100">
+                  <div class="col-xl-12 my-3 rounded-4 shadow-md">
+                    <div class="card card-flush h-xl-100 rounded-4 shadow-md">
                         <!--begin::Body-->
-                        <div class="card-body">
-                          <div class="col-xl-12">
+                        <div class="card-body rounded-4 shadow-md">
+                          <div class="col-xl-12 rounded-4 shadow-md">
                             <!--begin::Actions-->
-<div class="card-toolbar w-100">
+<div class="card-toolbar w-100 rounded-4 shadow-md">
 <h2>Report View</h2>
 <div class="card card-bordered">
   <div class="card-body">

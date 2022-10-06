@@ -1,8 +1,8 @@
 "use strict";
-var KTCustomersList = (function () {
+var KTCustomersList1 = (function () {
   var t,
     e,
-    o = () => {
+    // o = () => {
       // e.querySelectorAll('[data-kt-customer-table-filter="delete_row"]').forEach((e => {
       //     e.addEventListener("click", (function(e) {
       //         e.preventDefault();
@@ -42,6 +42,28 @@ var KTCustomersList = (function () {
       //         }))
       //     }))
       // }))
+    // },
+    x,
+    y,
+    z,
+    w,
+    v,
+    a = (x, z, a) => {
+      (w = x[0] ? new Date(x[0]) : null),
+        (v = x[1] ? new Date(x[1]) : null),
+        $.fn.dataTable.ext.search.push(function (x, t, z) {
+          var a = w,
+            c = v,
+            l = new Date(moment($(y[5]).text(), "DD/MM/YYYY")),
+            u = new Date(moment($(y[6]).text(), "DD/MM/YYYY"));
+          return (
+            (null === a && null === c) ||
+            (null === a && c >= u) ||
+            (a <= l && null === c) ||
+            (a <= l && c >= u)
+          );
+        }),
+        y.draw();
     },
     n = () => {
       const o = e.querySelectorAll('[type="checkbox"]'),
@@ -123,8 +145,8 @@ var KTCustomersList = (function () {
       (e = document.querySelector("#kt_table_widget_4_table")) &&
         (e.querySelectorAll("tbody tr").forEach((t) => {
           const e = t.querySelectorAll("td"),
-            o = moment(e[5].innerHTML, "DD MMM YYYY, LT").format();
-          e[5].setAttribute("data-order", o);
+            o = moment(e[3].innerHTML, "DD MM YYYY, LT").format();
+          e[4].setAttribute("data-order", o);
         }),
         (t = $(e).DataTable({
           info: !1,
@@ -136,7 +158,7 @@ var KTCustomersList = (function () {
             },
             {
               orderable: !1,
-              targets: 6,
+              targets: 7,
             },
           ],
         })).on("draw", function () {
@@ -147,20 +169,7 @@ var KTCustomersList = (function () {
           .querySelector('[data-kt-customer-table-filter="search"]')
           .addEventListener("keyup", function (e) {
             t.search(e.target.value).draw();
-          }),
-        (() => {
-          const e = document.querySelector("#kt_ecommerce_sales_flatpickr");
-          n = $(e).flatpickr({
-            altInput: !0,
-            altFormat: "d/m/Y",
-            dateFormat: "Y-m-d",
-            mode: "range",
-            onChange: function (e, t, n) {
-              a(e, t, n);
-            },
-          });
-        })(),
-        
+          }),        
         o(),
         (() => {
           const e = document.querySelector(
@@ -170,10 +179,15 @@ var KTCustomersList = (function () {
             let o = e.target.value;
             "all" === o && (o = ""), t.column(6).search(o).draw();
           });
-        })());
+        })(),
+        document
+          .querySelector("#kt_pickr_clea")
+          .addEventListener("click", (e) => {
+            n.clear();
+          }));
     },
   };
 })();
 KTUtil.onDOMContentLoaded(function () {
-  KTCustomersList.init();
+  KTCustomersList1.init();
 });

@@ -27,7 +27,7 @@
     <!--Begin::Google Tag Manager -->
 	<style>
 	.fs-7 {
-    font-size: 12.6px!important;
+    font-size: 12.4px!important;
 }
 		.table tbody tr:last-child td, .table tbody tr:last-child th, .table tfoot tr:last-child td, .table tfoot tr:last-child th {
     border-bottom: 0!important;

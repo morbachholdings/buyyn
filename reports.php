@@ -3850,22 +3850,42 @@
             
             <!--end::Destination-->
             <div class="col-md-3 ">
-              <label class="form-label"><b>Select Supplier</b></label>
-                    <input class="form-control d-flex align-items-center" value="" id="kt_tagify_suppliers" />
-                
-            </div>
-            <div class="col-md-3 ">
               <select name="language" aria-label="Select Month" data-control="select2" data-placeholder="Select a language..." class="form-select form-select-solid form-select-lg">
                                                                     <option value="- Report Type -">- Report Type -</option>
                                                                     <option value="option1">Option 1</option>
                                                                     <option value="option2">Option 2</option>
                                                                 </select>
             </div>
+            <div class="col-md-3 ">
+             
+                    <input class="form-control d-flex align-items-center" value="" id="kt_tagify_suppliers" />
+                
+            </div>
+            
 
             <div class="col-md-2 d-flex align-items-end justify-content-around">
               
               <button class="btn btn-primary mb-0 rounded-4 shadow-md">Apply</button> 
-              <button class="btn btn-primary mb-0 rounded-4 shadow-md">Export</button>
+              <!--begin::Export dropdown-->
+   <button type="button" class="btn btn-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+    <span class="svg-icon svg-icon-1 position-absolute ms-4">...</span>
+    Export Report
+   </button>
+   <!--begin::Menu-->
+   <div id="kt_datatable_example_menu" class="menu menu-sub menu-sub-dropdown menu-column menu-rounded-4 menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-200px py-4" data-kt-menu="true">
+    <!--begin::Menu item-->
+    <div class="menu-item px-3">
+     <a href="#" class="menu-link px-3" data-kt-export="csv">
+     Export as CSV
+     </a>
+    </div>
+    <!--end::Menu item-->
+    </div>
+   <!--end::Menu-->
+   <!--end::Export dropdown-->
+   <!--begin::Hide default export buttons-->
+   <div id="kt_datatable_example_buttons" class="d-none"></div>
+   <!--end::Hide default export buttons-->
                 
             </div>
             <!--begin::Search-->
@@ -3930,9 +3950,9 @@
     <!--begin::Filters-->
     <h2>Report Details</h2>
     <table id="kt_datatable_fixed_columns" class="table table-striped table-row-bordered gy-5 gs-7 rounded-4 shadow-md">
-      <thead>
-          <tr class="fw-semibold fs-6 text-gray-800">
-              <th class="min-w-200px">Name</th>
+      <thead class="fs-7">
+          <tr class="fw-semibold fs-7 text-gray-800">
+              <th class="min-w-200px fw-bold">Name</th>
               <th class="min-w-200px">July</th>
               <th class="min-w-200px">August</th>
               <th class="min-w-200px">September</th>
@@ -3948,9 +3968,9 @@
               <th class="min-w-200px fw-bold">Grand Total</th>
           </tr>
       </thead>
-      <tbody>
+      <tbody class="fs-5">
           <tr>
-              <td>Tiger</td>
+              <td class="fw-bold">Tiger</td>
               <td>Nixon</td>
               <td>System Architect</td>
               <td>Edinburgh</td>
@@ -3966,7 +3986,7 @@
               <td>t.nixon@datatables.net</td>
           </tr>
           <tr>
-              <td>Garrett</td>
+              <td class="fw-bold">Garrett</td>
               <td>Winters</td>
               <td>Accountant</td>
               <td>Tokyo</td>
@@ -3982,7 +4002,7 @@
               <td>g.winters@datatables.net</td>
           </tr>
           <tr>
-            <td>Garrett</td>
+            <td class="fw-bold">Garrett</td>
             <td>Winters</td>
             <td>Accountant</td>
             <td>Tokyo</td>
@@ -3998,7 +4018,7 @@
             <td>g.winters@datatables.net</td>
         </tr>
         <tr>
-          <td>Garrett</td>
+          <td class="fw-bold">Garrett</td>
           <td>Winters</td>
           <td>Accountant</td>
           <td>Tokyo</td>
@@ -4014,7 +4034,7 @@
           <td>g.winters@datatables.net</td>
       </tr>
       <tr>
-        <td>Garrett</td>
+        <td class="fw-bold">Garrett</td>
         <td>Winters</td>
         <td>Accountant</td>
         <td>Tokyo</td>
@@ -4030,7 +4050,7 @@
         <td>g.winters@datatables.net</td>
     </tr>
     <tr>
-      <td>Garrett</td>
+      <td class="fw-bold">Garrett</td>
       <td>Winters</td>
       <td>Accountant</td>
       <td>Tokyo</td>
@@ -4046,7 +4066,7 @@
       <td>g.winters@datatables.net</td>
   </tr>
   <tr>
-    <td>Garrett</td>
+    <td class="fw-bold">Garrett</td>
     <td>Winters</td>
     <td>Accountant</td>
     <td>Tokyo</td>
@@ -4062,7 +4082,7 @@
     <td>g.winters@datatables.net</td>
 </tr>
 <tr>
-  <td>Garrett</td>
+  <td class="fw-bold">Garrett</td>
   <td>Winters</td>
   <td>Accountant</td>
   <td>Tokyo</td>
@@ -4078,7 +4098,7 @@
   <td>g.winters@datatables.net</td>
 </tr>
 <tr>
-  <td>Garrett</td>
+  <td class="fw-bold">Garrett</td>
   <td>Winters</td>
   <td>Accountant</td>
   <td>Tokyo</td>
@@ -4218,6 +4238,8 @@
                         <script src="assets/js/custom/Table/tagifyMember.js"></script>
                         <script src="assets/js/custom/Table/reportTable.js"></script>
                         <script src="assets/js/custom/Table/barChart.js"></script>
+
+                        <script src="assets/js/custom/Table/rebates/exportReport.js"></script>
 </body>
 
 </html>

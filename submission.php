@@ -2919,14 +2919,18 @@
                                                                                             <!--end::Filter-->
                                                                                             <div
                                                                                                 class="input-group w-250px me-3">
+                                                                                                <!-- <div class="mb-0">
+    <input class="form-control form-control-solid" placeholder="Pick a date" id="kt_datepicker_2"/>
+</div> -->
                                                                                                 <input
                                                                                                     class="form-control form-control-solid rounded rounded-end-0"
                                                                                                     placeholder="Pick date range"
-                                                                                                    id="kt_ecommerce_sales_flatpickr" />
+                                                                                                    id="kt_ecommerce_sales_flatpickr" 
+                                                                                                    /> 
                                                                                                 <button
                                                                                                     class="btn btn-icon btn-light"
                                                                                                     id="kt_ecommerce_sales_flatpickr_clear">
-                                                                                                    <!--begin::Svg Icon | path: icons/duotune/arrows/arr088.svg-->
+                                                                                                    
                                                                                                     <span
                                                                                                         class="svg-icon svg-icon-2">
                                                                                                         <svg width="24"
@@ -2953,7 +2957,7 @@
                                                                                                                 fill="currentColor" />
                                                                                                         </svg>
                                                                                                     </span>
-                                                                                                    <!--end::Svg Icon-->
+                                                                                                    
                                                                                                 </button>
                                                                                             </div>
                                                                                             <!--begin::Export-->
@@ -3237,7 +3241,7 @@
                                                                                                                 </td>
                                                                                                                 <td
                                                                                                                     class="text-end">
-                                                                                                                    10/09/2022
+                                                                                                                    July/2022
                                                                                                                 </td>
                                                                                                                 <td
                                                                                                                     class="text-end">
@@ -3976,19 +3980,7 @@
                                                                     <div class="m-0">
                                                                         <div class="card-body pt-5">
                                                                             <div class="row">
-                                                                                <div class="col-md-3">
-                                                                                    <select name="language"
-                                                                                        aria-label="Select Year"
-                                                                                        data-control="select2"
-                                                                                        data-placeholder="Select a language..."
-                                                                                        class="form-select form-select-solid form-select-lg">
-                                                                                        <option
-                                                                                            value="- Select Supplier -">
-                                                                                            - Select Supplier -</option>
-                                                                                        <option value="option1">Option 1
-                                                                                        </option>
-                                                                                    </select>
-                                                                                </div>
+                                                                               
 
                                                                                 <div class="col-md-3">
                                                                                     <select name="language"
@@ -4017,6 +4009,20 @@
                                                                                         </option>
                                                                                     </select>
                                                                                 </div>
+                                                                                <div class="col-md-3">
+                                                                                    <select name="language"
+                                                                                        aria-label="Select Year"
+                                                                                        data-control="select2"
+                                                                                        data-placeholder="Select a language..."
+                                                                                        class="form-select form-select-solid form-select-lg">
+                                                                                        <option
+                                                                                            value="- Select Supplier -">
+                                                                                            - Select Supplier -</option>
+                                                                                        <option value="option1">Option 1
+                                                                                        </option>
+                                                                                    </select>
+                                                                                </div>
+
                                                                                 <div class="col-md-3 d-flex">
 
                                                                                     <button

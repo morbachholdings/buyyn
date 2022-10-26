@@ -3858,7 +3858,8 @@
             </div>
             <div class="col-md-3 ">
              
-                    <input class="form-control d-flex align-items-center" value="" id="kt_tagify_suppliers" />
+                    <!-- <input class="form-control d-flex align-items-center" value="" id="kt_tagify_suppliers" /> -->
+                    <input class="form-control d-flex align-items-center" type="text" id="myInput" onkeyup="searchFunction()" placeholder="Search Names..">
                 
             </div>
             
@@ -3969,22 +3970,6 @@
           </tr>
       </thead>
       <tbody class="fs-5">
-          <tr>
-              <td class="fw-bold">Tiger</td>
-              <td>Nixon</td>
-              <td>System Architect</td>
-              <td>Edinburgh</td>
-              <td>61</td>
-              <td>2011/04/25</td>
-              <td>$320,800</td>
-              <td>5421</td>
-              <td>t.nixon@datatables.net</td>
-              <td>2011/04/25</td>
-              <td>$320,800</td>
-              <td>5421</td>
-              <td>t.nixon@datatables.net</td>
-              <td>t.nixon@datatables.net</td>
-          </tr>
           <tr>
               <td class="fw-bold">Garrett</td>
               <td>Winters</td>
@@ -4233,11 +4218,11 @@
                         <script src="assets/js/custom/utilities/modals/users-search.js"></script>
                         <script src="assets/js/custom/Date/datePicker.js"></script>
                         <script src="assets/js/custom/Table/pagination.js"></script>
-                        <script src="assets/js/custom/Table/submissionData.js"></script>
                         <script src="assets/js/custom/Table/tagifySupplier.js"></script>
                         <script src="assets/js/custom/Table/tagifyMember.js"></script>
                         <script src="assets/js/custom/Table/reportTable.js"></script>
                         <script src="assets/js/custom/Table/barChart.js"></script>
+                        <script src="assets/js/custom/Table/tableSearch.js"></script>
 
                         <script src="assets/js/custom/Table/rebates/exportReport.js"></script>
 </body>

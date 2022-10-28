@@ -3864,13 +3864,13 @@
             </div>
             
 
-            <div class="col-md-2 d-flex align-items-end justify-content-around">
+            <div class="col-md-2 d-flex align-items-end justify-content-between">
               
               <button class="btn btn-primary mb-0 rounded-4 shadow-md">Apply</button> 
               <!--begin::Export dropdown-->
-   <button type="button" class="btn btn-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
-    <span class="svg-icon svg-icon-1 position-absolute ms-4">...</span>
-    Export Report
+   <button type="button" class="btn btn-light-primary mx-2 w-100" style="width:150px;" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+    <span class="svg-icon svg-icon-1 position-absolute ml-4">...</span>
+    Export
    </button>
    <!--begin::Menu-->
    <div id="kt_datatable_example_menu" class="menu menu-sub menu-sub-dropdown menu-column menu-rounded-4 menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-200px py-4" data-kt-menu="true">
@@ -3950,7 +3950,7 @@
   <div class="card-toolbar w-100 rounded-4 shadow-md">
     <!--begin::Filters-->
     <h2>Report Details</h2>
-    <table id="kt_datatable_fixed_columns" class="table table-striped table-row-bordered gy-5 gs-7 rounded-4 shadow-md">
+    <table id="kt_datatable_fixed_columns_1" class="table table-striped table-row-bordered gy-5 gs-7 rounded-4 shadow-md">
       <thead class="fs-7">
           <tr class="fw-semibold fs-7 text-gray-800">
               <th class="min-w-200px fw-bold">Name</th>

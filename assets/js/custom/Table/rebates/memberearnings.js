@@ -48,7 +48,7 @@ var KTAppEcommerceEarnings = (function () {
     };
   return {
     init: function () {
-      (t = document.querySelector("#kt_ecommerce_earning_table")) &&
+      (t = document.querySelector("#kt_ecommerce_earning_table_1")) &&
         ((e = $(t).DataTable({
           info: !1,
           order: [],

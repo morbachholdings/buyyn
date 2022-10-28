@@ -3899,7 +3899,12 @@
 														</svg>
 													</span>
 													<!--end::Svg Icon-->
-													<input type="text" data-kt-ecommerce-product-filter="search" class="form-control form-control-solid w-250px ps-14" placeholder="Search Supplier" />
+													<input type="text" 
+                          data-kt-ecommerce-product-filter="search"
+                          id="shqEarningSearch"
+                          onkeyup="searchFunctionShq()"
+                          class="form-control form-control-solid w-250px ps-14" 
+                          placeholder="Search Supplier" />
 												</div>
 												<!--end::Search-->
 											</div>
@@ -3945,7 +3950,7 @@
 										<!--begin::Card body-->
 										<div class="card-body pt-0">
 											<!--begin::Table-->
-											<table class="table align-middle table-row-dashed fs-6 gy-5" id="kt_ecommerce_products_table">
+											<table class="table align-middle table-row-dashed fs-6 gy-5" id="kt_ecommerce_products_table_1">
 												<!--begin::Table head-->
 												<thead>
 													<!--begin::Table row-->
@@ -4236,7 +4241,12 @@
 														</svg>
 													</span>
 													<!--end::Svg Icon-->
-													<input type="text" data-kt-ecommerce-earning-filter="search" class="form-control form-control-solid w-250px ps-14" placeholder="Search Supplier" />
+													<input type="text" 
+                          data-kt-ecommerce-earning-filter="search"
+                          id="memberEarningSearch"
+                          onkeyup="searchFunctionMember()" 
+                          class="form-control form-control-solid w-250px ps-14" 
+                          placeholder="Search Supplier" />
 												</div>
 												<!--end::Search-->
 											</div>
@@ -4257,7 +4267,7 @@
 												<!--begin::Export dropdown-->
    <button type="button" class="btn btn-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
     <span class="svg-icon svg-icon-1 position-absolute ms-4">...</span>
-    Export Report
+    Export
    </button>
    <!--begin::Menu-->
    <div id="kt_datatable_example_export_member_menu" class="menu menu-sub menu-sub-dropdown menu-column menu-rounded-4 menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-200px py-4" data-kt-menu="true">
@@ -4283,7 +4293,7 @@
 										<!--begin::Card body-->
 										<div class="card-body pt-0">
 											<!--begin::Table-->
-											<table class="table align-middle table-row-dashed fs-6 gy-5" id="kt_ecommerce_earning_table">
+											<table class="table align-middle table-row-dashed fs-6 gy-5" id="kt_ecommerce_earning_table_1">
 												<!--begin::Table head-->
 												<thead>
 													<!--begin::Table row-->
@@ -4612,6 +4622,7 @@
                         <script src="assets/js/custom/utilities/modals/users-search.js"></script>
                         <script src="assets/js/custom/Date/datePicker.js"></script>
                         <script src="assets/js/custom/Table/pagination.js"></script>
+                        <script src="assets/js/custom/Table/tableSearch.js"></script>
                         
                         <script src="assets/js/custom/Table/tagifySupplier.js"></script>
                         <script src="assets/js/custom/Table/tagifyMember.js"></script>

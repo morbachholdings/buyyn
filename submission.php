@@ -2881,6 +2881,8 @@
                                                                                             <!--end::Svg Icon-->
                                                                                             <input type="text"
                                                                                                 data-kt-customer-table-filter="search"
+                                                                                                id="pendingSubmissionTableSearch"
+                                                                                                onkeyup="searchFunctionPendingSubmission()"
                                                                                                 class="form-control form-control-solid w-250px ps-15"
                                                                                                 placeholder="Search Customers" />
                                                                                         </div>
@@ -2919,10 +2921,10 @@
                                                                                             <!--end::Filter-->
                                                                                             <div
                                                                                                 class="input-group w-250px me-3">
-                                                                                                <!-- <div class="mb-0">
+                                                                                                <div class="mb-0">
     <input class="form-control form-control-solid" placeholder="Pick a date" id="kt_datepicker_2"/>
-</div> -->
-                                                                                                <input
+</div> 
+                                                                                                <!-- <input
                                                                                                     class="form-control form-control-solid rounded rounded-end-0"
                                                                                                     placeholder="Pick date range"
                                                                                                     id="kt_ecommerce_sales_flatpickr" 
@@ -2958,7 +2960,7 @@
                                                                                                         </svg>
                                                                                                     </span>
                                                                                                     
-                                                                                                </button>
+                                                                                                </button> -->
                                                                                             </div>
                                                                                             <!--begin::Export-->
                                                                                             <button type="button"
@@ -3245,7 +3247,7 @@
                                                                                                                 </td>
                                                                                                                 <td
                                                                                                                     class="text-end">
-                                                                                                                    10/10/2022
+                                                                                                                    2022-10-10
                                                                                                                 </td>
                                                                                                                 <td
                                                                                                                     class="text-end">
@@ -4292,6 +4294,8 @@
         <script src="assets/js/custom/Table/PendingSubmission/listing.js"></script>
         <script src="assets/js/custom/Table/PendingSubmission/plusDetails.js"></script>
         <script src="assets/js/custom/Table/PendingSubmission/dateFilter.js"></script>
+        <script src="assets/js/custom/Table/dateSearch/dateFilter.js"></script>
+        <!-- <script src="assets/js/custom/Table/tableSearch.js"></script> -->
 
 
         <!-- onclick deletebutton -->

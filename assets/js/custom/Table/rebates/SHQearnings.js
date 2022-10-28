@@ -48,7 +48,7 @@ var KTAppEcommerceProducts = (function () {
     };
   return {
     init: function () {
-      (t = document.querySelector("#kt_ecommerce_products_table")) &&
+      (t = document.querySelector("#kt_ecommerce_products_table_1")) &&
         ((e = $(t).DataTable({
           info: !1,
           order: [],

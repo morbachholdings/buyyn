@@ -48,6 +48,6 @@ $("#kt_daterangepicker_5").daterangepicker({
 
 cb(start, end);
 
-// $("#kt_datepicker_2").flatpickr();
+$("#kt_datepicker_2").flatpickr();
 
 

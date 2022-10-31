@@ -3290,7 +3290,7 @@
                         </div>
                         <!--end::Card header-->
                         <!--begin::Card body-->
-                        <div class="card-body pt-2">
+                        <div class="card-body pt-2" style="overflow-x:scroll;">
                           <!--begin::Table-->
                           <table
                             class="table align-middle table-row-dashed fs-6 gy-3"
@@ -8052,4 +8052,3 @@
   </body>
   <!--end::Body-->
 </html>
->>>>>>> Stashed changes

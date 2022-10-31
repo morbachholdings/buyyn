@@ -23,6 +23,7 @@
     <!--begin::Global Stylesheets Bundle(used by all pages)-->
     <link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css">
     <link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/styles.css" rel="stylesheet" type="text/css">
     <!--end::Global Stylesheets Bundle-->
     <!--Begin::Google Tag Manager -->
 	<style>
@@ -2884,7 +2885,7 @@
                                                                                                 id="pendingSubmissionTableSearch"
                                                                                                 onkeyup="searchFunctionPendingSubmission()"
                                                                                                 class="form-control form-control-solid w-250px ps-15"
-                                                                                                placeholder="Search Customers" />
+                                                                                                placeholder="Search Suppliers" />
                                                                                         </div>
                                                                                         <!--end::Search-->
                                                                                     </div>
@@ -2892,7 +2893,7 @@
                                                                                     <!--begin::Card toolbar-->
                                                                                     <div class="card-toolbar">
                                                                                         <!--begin::Toolbar-->
-                                                                                        <div class="d-flex justify-content-end"
+                                                                                        <div class="d-flex justify-content-end selection"
                                                                                             data-kt-customer-table-toolbar="base">
                                                                                             <!--begin::Filter-->
                                                                                             <div class="w-150px me-3">
@@ -2922,7 +2923,7 @@
                                                                                             <div
                                                                                                 class="input-group w-250px me-3">
                                                                                                 <div class="mb-0">
-    <input class="form-control form-control-solid" placeholder="Pick a date" id="kt_datepicker_2"/>
+    <input class="form-control form-control-solid" placeholder="Pick a date" id="kt_daterangepicker_3"/>
 </div> 
                                                                                                 <!-- <input
                                                                                                     class="form-control form-control-solid rounded rounded-end-0"
@@ -3042,7 +3043,7 @@
                                                                                                     <!--begin::Table-->
                                                                                                     <table
                                                                                                         class="table align-middle table-row-dashed fs-6 gy-3"
-                                                                                                        id="kt_table_widget_4_table">
+                                                                                                        id="kt_table_widget_4_table1">
                                                                                                         <!--begin::Table head-->
                                                                                                         <thead>
                                                                                                             <!--begin::Table row-->
@@ -3056,7 +3057,7 @@
                                                                                                                             class="form-check-input"
                                                                                                                             type="checkbox"
                                                                                                                             data-kt-check="true"
-                                                                                                                            data-kt-check-target="#kt_table_widget_4_table .form-check-input"
+                                                                                                                            data-kt-check-target="#kt_table_widget_4_table1 .form-check-input"
                                                                                                                             value="1" />
                                                                                                                     </div>
                                                                                                                 </th>
@@ -4300,8 +4301,8 @@
 
         <!-- onclick deletebutton -->
         <script>
-            $("#kt_table_widget_4_table input[type=checkbox]").click(function(){
-            var countchecked = $("#kt_table_widget_4_table input[type=checkbox]:checked").length;
+            $("#kt_table_widget_4_table1 input[type=checkbox]").click(function(){
+            var countchecked = $("#kt_table_widget_4_table1 input[type=checkbox]:checked").length;
             document.getElementById("checkCount").innerHTML=countchecked;
         });
 

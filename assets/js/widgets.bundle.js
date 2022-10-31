@@ -10316,7 +10316,7 @@ var KTTablesWidget4 = (function () {
     };
   return {
     init: function () {
-      (e = document.querySelector("#kt_table_widget_4_table")) &&
+      (e = document.querySelector("#kt_table_widget_4_table1")) &&
         ((() => {
           const l = document.querySelector(
             '[data-kt-table-widget-4="subtable_template"]'

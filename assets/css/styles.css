@@ -1,0 +1,9 @@
+@media(min-width:425px){
+.card .card-body{
+    padding: 5px;
+}
+.selection{
+    display: flex;
+    flex-direction: column !important;
+    }
+}

@@ -42,7 +42,7 @@ var KTAppEcommerceSalesListing = (function () {
             altInput: !0,
             altFormat: "d/m/Y",
             dateFormat: "Y-m-d",
-            mode: "range",
+            mode: "single date selection",
             onChange: function (e, t, n) {
               a(e, t, n);
             },

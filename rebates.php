@@ -3910,7 +3910,7 @@
 											</div>
 											<!--end::Card title-->
 											<!--begin::Card toolbar-->
-											<div class="card-toolbar flex-row-fluid justify-content-end gap-5">
+											<div class="card-toolbar flex-row-fluid justify-content-between gap-5">
 												<div class="w-100 mw-150px">
 													<!--begin::Select2-->
 													<select class="form-select form-select-solid" data-control="select2" data-hide-search="true" data-placeholder="Rebate Period" data-kt-ecommerce-product-filter="status">
@@ -3925,7 +3925,7 @@
 												<!--begin::Export dropdown-->
    <button type="button" class="btn btn-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
     <span class="svg-icon svg-icon-1 position-absolute ms-4">...</span>
-    Export Report
+    Export
    </button>
    <!--begin::Menu-->
    <div id="kt_datatable_example_export_menu" class="menu menu-sub menu-sub-dropdown menu-column menu-rounded-4 menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-200px py-4" data-kt-menu="true">
@@ -3970,10 +3970,7 @@
 													<tr>
 														<!--begin::Category=-->
 														<td>
-															
-															
-																	<p class="text-gray-800 text-hover-primary fs-5 fw-bold" data-kt-ecommerce-product-filter="product_name">Andrew</p>
-																	
+																	<p class="text-gray-800 text-hover-primary fs-5 fw-bold" data-kt-ecommerce-product-filter="product_name">Andrew</p>			
 														</td>
 														<!--end::Category=-->
 														<!--begin::SKU=-->
@@ -4252,10 +4249,10 @@
 											</div>
 											<!--end::Card title-->
 											<!--begin::Card toolbar-->
-											<div class="card-toolbar flex-row-fluid justify-content-end gap-5">
+											<div class="card-toolbar flex-row-fluid justify-content-between gap-5">
 												<div class="w-100 mw-150px">
 													<!--begin::Select2-->
-													<select class="form-select form-select-solid" data-control="select2" data-hide-search="true" data-placeholder="Rebate Period" data-kt-ecommerce-earning-filter="status">
+													<select class="form-select form-select-solid w-100" data-control="select2" data-hide-search="true" data-placeholder="Rebate Period" data-kt-ecommerce-earning-filter="status">
 														<option></option>
 														<option value="all">All</option>
 														<option value="Annually">Annually</option>

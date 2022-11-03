@@ -3611,8 +3611,14 @@
                           <!--end::Table-->
                         </div>
                         <!--end::Card body-->
+
+
+
+
+                        
                       </div>
                       <!--end::Table Widget 4-->
+                      
                     </div>
                     <!--end::Col-->
 
@@ -8047,6 +8053,7 @@
     <script src="assets/js/custom/utilities/modals/users-search.js"></script>
     <script src="assets/js/custom/graph/supplierPerformance-bar.js"></script>
     <script src="assets/js/custom/graph/supplierPerformance-line.js"></script>
+    <script src="assets/js/custom/Table/tableSearch.js"></script>
     <!--end::Custom Javascript-->
     <!--end::Javascript-->
   </body>

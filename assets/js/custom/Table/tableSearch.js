@@ -85,7 +85,7 @@ function searchFunction() {
   function searchFunctionProcessLog() {
     // Declare variables
     var input, filter, table, tr, td, i, txtValue;
-    input = document.getElementById("processLogSearch");
+    input = document.getElementById("processLogTableSearch");
     filter = input.value.toUpperCase();
     table = document.getElementById("kt_table_widget_4_table");
     tr = table.getElementsByTagName("tr");

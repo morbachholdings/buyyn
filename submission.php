@@ -2899,7 +2899,7 @@
 											<!--begin::Card toolbar-->
 											<div class="card-toolbar flex-row-fluid justify-content-end gap-5">
 												<!--begin::Filter-->
-                                                <div class="w-150px me-3">
+                                                <div class="w-150px me-3 mobile">
                                                                                                 <!--begin::Select2-->
                                                                                                 <select
                                                                                                     class="form-select form-select-solid"
@@ -3521,7 +3521,7 @@
                                                                                             <!--begin::Destination-->
 
                                                                                             <div
-                                                                                                class=" align-items-center fw-bold">
+                                                                                                class=" align-items-center fw-bold mobile">
 
                                                                                                 <div class="mb-0">
                                                                                                     <input
@@ -3531,7 +3531,7 @@
                                                                                                 </div>
                                                                                             </div>
 
-                                                                                            <div class="col-md-2 ">
+                                                                                            <div class="col-md-2 col-sm-12 mobile">
 
                                                                                                 <select name="language"
                                                                                                     aria-label="Select Month"
@@ -3551,7 +3551,7 @@
                                                                                             </div>
 
                                                                                             <!--end::Destination-->
-                                                                                            <div class="col-md-2 ">
+                                                                                            <div class="col-md-2 mobile">
 
                                                                                                 <input
                                                                                                     class="form-control d-flex align-items-center"
@@ -3562,7 +3562,7 @@
                                                                                             </div>
 
                                                                                             <div
-                                                                                                class="col-md-2 d-flex align-items-end justify-content-end">
+                                                                                                class="col-md-2 d-flex align-items-end justify-content-end mobile">
 
                                                                                                 <button
                                                                                                     class="btn btn-primary mb-0 cursor-pointer">Apply</button>
@@ -3924,7 +3924,7 @@
                                                                             <div class="row">
                                                                                
 
-                                                                                <div class="col-md-3">
+                                                                                <div class="col-md-3 mt-2">
                                                                                     <select name="language"
                                                                                         aria-label="Select Year"
                                                                                         data-control="select2"
@@ -3938,7 +3938,7 @@
                                                                                         </option>
                                                                                     </select>
                                                                                 </div>
-                                                                                <div class="col-md-3">
+                                                                                <div class="col-md-3 mt-2">
                                                                                     <select name="language"
                                                                                         aria-label="Select Month"
                                                                                         data-control="select2"
@@ -3951,7 +3951,7 @@
                                                                                         </option>
                                                                                     </select>
                                                                                 </div>
-                                                                                <div class="col-md-3">
+                                                                                <div class="col-md-3 my-2">
                                                                                     <select name="language"
                                                                                         aria-label="Select Year"
                                                                                         data-control="select2"
@@ -3988,7 +3988,7 @@
 
                                                                                     <div class="row w-100">
                                                                                         <table
-                                                                                            class="table table-fixed table-row-bordered">
+                                                                                            class="table table-fixed table-row-bordered overflowX-scroll">
                                                                                             <thead>
                                                                                                 <tr>
                                                                                                     <th
@@ -4010,7 +4010,7 @@
                                                                                                     </th>
                                                                                                 </tr>
                                                                                             </thead>
-                                                                                            <tbody class="scroll-y">
+                                                                                            <tbody class="scroll-y scroll-x">
 
                                                                                                 <tr
                                                                                                     class="h-60px fw-bold">

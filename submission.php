@@ -2899,7 +2899,7 @@
 											<!--begin::Card toolbar-->
 											<div class="card-toolbar flex-row-fluid justify-content-end gap-5">
 												<!--begin::Filter-->
-                                                <div class="w-150px me-3 mobile">
+                                                <div class="me-3 mobile">
                                                                                                 <!--begin::Select2-->
                                                                                                 <select
                                                                                                     class="form-select form-select-solid"
@@ -2924,14 +2924,14 @@
                                                                                             </div>
                                                                                             <!--end::Filter-->
 
-                                                                                            <div class="mb-0">
+                                                                                            <div class="mb-0 mobile">
     <input class="form-control form-control-solid" placeholder="Pick a date" id="kt_daterangepicker_3"/>
 </div> 
 
 
 
 												<!--begin::Export dropdown-->
-   <button type="button" class="btn btn-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+   <button type="button" class="btn btn-light-primary mobile" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
     <span class="svg-icon svg-icon-1 position-absolute ms-4">...</span>
     Export Report
    </button>

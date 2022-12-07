@@ -3035,8 +3035,8 @@
                     <!--begin::Col-->
                     <div class="col mb-xl-10">
                       <div class="card h-100">
-                        <div class="d-flex align-items-end justify-content-end mt-3 mb-3 p-2">
-                          <div class="col-md-2 mt-3 m-2">
+                        <div class="d-flex mobileAlign align-items-end justify-content-end mt-3 mb-3 p-2">
+                          <div class="col-sm-12 col-md-2 mt-3 m-2">
                           <select name="language" aria-label="Select Year" data-control="select2" data-placeholder="Select a language..." class="form-select form-select-solid form-select-lg">
                             <option value="- Select Action -">- Select Year -</option>
                             <option value="option1">Option 1</option>
@@ -3045,7 +3045,7 @@
                         </select>
                           
                       </div>
-                      <div class="col-md-2 mt-3 m-2">
+                      <div class="col-sm-12 col-md-2 mt-3 m-2">
                         <select name="language" aria-label="Select Year" data-control="select2" data-placeholder="Select a language..." class="form-select form-select-solid form-select-lg">
                           <option value="- Select Action -">- Select Supplier -</option>
                           <option value="option1">Option 1</option>

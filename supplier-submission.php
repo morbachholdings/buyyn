@@ -2768,7 +2768,7 @@
 
 
                                                     <!--begin::Body-->
-                                                    <div class="card-body pt-0 px-0">
+                                                    <div class="noPadding card-body pt-0 px-0">
                                                         <!--begin::Nav-->
                                                         <ul
                                                             class="nav nav-pills nav-pills-custom row position-relative mx-0 mb-9">
@@ -2822,7 +2822,7 @@
                                                             <div class="tab-pane fade show active"
                                                                 id="kt_list_widget_10_tab_2">
                                                                 <div class="m-0">
-                                                                    <div class="card-body pt-0">
+                                                                    <div class="noPadding card-body pt-0">
                                                                         <div class="col-xl-12">
                                                                             <!--end::Card header-->
                                                                             <!--begin::Table Widget 4-->
@@ -2849,7 +2849,7 @@
 											<!--begin::Card toolbar-->
 											<div class="card-toolbar flex-row-fluid justify-content-end gap-5">
 												<!--begin::Filter-->
-                                                <div class="w-150px me-3">
+                                                <div class="mobile me-3">
                                                                                                 <!--begin::Select2-->
                                                                                                 <select
                                                                                                     class="form-select form-select-solid"
@@ -2874,14 +2874,14 @@
                                                                                             </div>
                                                                                             <!--end::Filter-->
 
-                                                                                            <div class="mb-0">
+                                                                                            <div class="mobile mb-0">
     <input class="form-control form-control-solid" placeholder="Pick a date" id="kt_daterangepicker_3"/>
 </div> 
 
 
 
 												<!--begin::Export dropdown-->
-   <button type="button" class="btn btn-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+   <button type="button" class="btn btn-light-primary mobile" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
     <span class="svg-icon svg-icon-1 position-absolute ms-4">...</span>
     Export Report
    </button>
@@ -3454,7 +3454,7 @@
                                                             </div>
                                                             <div class="tab-pane fade" id="kt_list_widget_10_tab_3">
                                                                 <div class="m-0">
-                                                                    <div class="card-body pt-0">
+                                                                    <div class="noPadding card-body pt-0">
                                                                         <div class="col-xl-12">
                                                                             <!--end::Card header-->
                                                                             <!--begin::Table Widget 4-->
@@ -3471,7 +3471,7 @@
                                                                                             <!--begin::Destination-->
 
                                                                                             <div
-                                                                                                class=" align-items-center fw-bold">
+                                                                                                class="mobile align-items-center fw-bold">
 
                                                                                                 <div class="mb-0">
                                                                                                     <input
@@ -3481,7 +3481,7 @@
                                                                                                 </div>
                                                                                             </div>
 
-                                                                                            <div class="col-md-2 ">
+                                                                                            <div class="col-md-2 mobile">
 
                                                                                                 <select name="language"
                                                                                                     aria-label="Select Month"
@@ -3870,7 +3870,7 @@
                                                                             <div class="row">
                                                                                
 
-                                                                                <div class="col-md-3">
+                                                                                <div class="col-md-3 mb-2">
                                                                                     <select name="language"
                                                                                         aria-label="Select Year"
                                                                                         data-control="select2"
@@ -3884,7 +3884,7 @@
                                                                                         </option>
                                                                                     </select>
                                                                                 </div>
-                                                                                <div class="col-md-3">
+                                                                                <div class="col-md-3 mt-2">
                                                                                     <select name="language"
                                                                                         aria-label="Select Month"
                                                                                         data-control="select2"
@@ -3897,7 +3897,7 @@
                                                                                         </option>
                                                                                     </select>
                                                                                 </div>
-                                                                                <div class="col-md-3">
+                                                                                <div class="col-md-3 mt-2">
                                                                                     <select name="language"
                                                                                         aria-label="Select Year"
                                                                                         data-control="select2"
@@ -3911,7 +3911,7 @@
                                                                                     </select>
                                                                                 </div>
 
-                                                                                <div class="col-md-3 d-flex">
+                                                                                <div class="col-md-3 d-flex mt-2">
 
                                                                                     <button
                                                                                         class="btn btn-primary mb-0">Apply</button>

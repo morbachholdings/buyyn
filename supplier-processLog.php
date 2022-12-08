@@ -1881,7 +1881,7 @@
                                 <!--begin:Menu item-->
                                 <div class="menu-item">
                                     <!--begin:Menu link-->
-                                    <a class="menu-link py-3" href="processLog.php">
+                                    <a class="menu-link py-3" href="supllier-processLog.php">
                                         <span class="menu-title">
                                             <span class="menu-text">Process Log</span>
                                             <span class="menu-desc">User Activity</span>
@@ -2686,11 +2686,366 @@
                     <div class="content flex-row-fluid" id="kt_content">
                         <!--begin::Row-->
                         <div class="row g-5 g-xl-10 mb-xl-10 rounded-4 shadow-md">
+
+
+
+
+
+
+
+                        <div class="col-xl-12">
+
+<!--begin::Products-->
+<div class="card card-flush">
+										<!--begin::Card header-->
+										<div class="card-header align-items-center py-1 gap-2 gap-md-5">
+											<!--begin::Card title-->
+											<div class="card-title">
+												<!--begin::Search-->
+												<div class="d-flex align-items-center position-relative my-1">
+													<!--begin::Svg Icon | path: icons/duotune/general/gen021.svg-->
+													<span class="svg-icon svg-icon-1 position-absolute ms-4">
+														<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<rect opacity="0.5" x="17.0365" y="15.1223" width="8.15546" height="2" rx="1" transform="rotate(45 17.0365 15.1223)" fill="currentColor" />
+															<path d="M11 19C6.55556 19 3 15.4444 3 11C3 6.55556 6.55556 3 11 3C15.4444 3 19 6.55556 19 11C19 15.4444 15.4444 19 11 19ZM11 5C7.53333 5 5 7.53333 5 11C5 14.4667 7.53333 17 11 17C14.4667 17 17 14.4667 17 11C17 7.53333 14.4667 5 11 5Z" fill="currentColor" />
+														</svg>
+													</span>
+													<!--end::Svg Icon-->
+													<input type="text" 
+                          data-kt-ecommerce-product-filter="search"
+                          id="shqEarningSearch"
+                          onkeyup="searchFunctionShq()"
+                          class="form-control form-control-solid w-250px ps-14" 
+                          placeholder="Search Supplier" />
+												</div>
+												<!--end::Search-->
+											</div>
+											<!--end::Card title-->
+											<!--begin::Card toolbar-->
+											<div class="card-toolbar flex-row-fluid justify-content-between gap-5">
+												<div class="w-100 mw-150px">
+													<!--begin::Select2-->
+													<select class="form-select form-select-solid" data-control="select2" data-hide-search="true" data-placeholder="Rebate Period" data-kt-ecommerce-product-filter="status">
+														<option></option>
+														<option value="all">All</option>
+														<option value="Annually">Annually</option>
+														<option value="Quaterly">Quaterly</option>
+														<option value="Monthly">Monthly</option>
+													</select>
+													<!--end::Select2-->
+												</div>
+												<!--begin::Export dropdown-->
+   <button type="button" class="btn btn-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+    <span class="svg-icon svg-icon-1 position-absolute ms-4">...</span>
+    Export
+   </button>
+   <!--begin::Menu-->
+   <div id="kt_datatable_example_export_menu" class="menu menu-sub menu-sub-dropdown menu-column menu-rounded-4 menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-200px py-4" data-kt-menu="true">
+    <!--begin::Menu item-->
+    <div class="menu-item px-3">
+     <a href="#" class="menu-link px-3" data-kt-export="csv">
+     Export as CSV
+     </a>
+    </div>
+    <!--end::Menu item-->
+    
+   </div>
+   <!--end::Menu-->
+   <!--end::Export dropdown-->
+   <!--begin::Hide default export buttons-->
+   <div id="kt_datatable_example_buttons" class="d-none"></div>
+   <!--end::Hide default export buttons-->
+											</div>
+											<!--end::Card toolbar-->
+										</div>
+										<!--end::Card header-->
+										<!--begin::Card body-->
+										<div class="card-body pt-0">
+											<!--begin::Table-->
+											<table class="table align-middle table-row-dashed fs-6 gy-5" id="kt_ecommerce_products_table_1">
+												<!--begin::Table head-->
+												<thead>
+													<!--begin::Table row-->
+													<tr class="text-start text-gray-400 fw-bold fs-7 text-uppercase gs-0">
+														<th class="min-w-200px">Supplier Name</th>
+														<th class="text-end min-w-100px">SHQ Rebates %</th>
+														<th class="text-end min-w-100px">Amount</th>
+														<th class="text-end min-w-75px">Rebates Period</th>
+														<th class="text-end min-w-25px">Actions</th>
+													</tr>
+													<!--end::Table row-->
+												</thead>
+												<!--end::Table head-->
+												<!--begin::Table body-->
+												<tbody class="fw-semibold text-gray-600">
+													<!--begin::Table row-->
+													<tr>
+														<!--begin::Category=-->
+														<td>
+																	<p class="text-gray-800 text-hover-primary fs-5 fw-bold" data-kt-ecommerce-product-filter="product_name">Andrew</p>			
+														</td>
+														<!--end::Category=-->
+														<!--begin::SKU=-->
+														<td class="text-end pe-0">
+															<span class="">02285009</span>
+														</td>
+														<!--end::SKU=-->
+														
+														<!--begin::Price=-->
+														<td class="text-end pe-0">
+															<span class="">$122.00</span>
+														</td>
+														<!--end::Price=-->
+														
+														<!--begin::Status=-->
+														<td class="text-end pe-0" data-order="Monthly">
+															<!--begin::Badges-->
+															Monthly
+															<!--end::Badges-->
+														</td>
+														<!--end::Status=-->
+														<!--begin::Action=-->
+														<td class="text-end">
+															<a href="#" class="btn btn-sm btn-light btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions
+															<!--begin::Svg Icon | path: icons/duotune/arrows/arr072.svg-->
+															<span class="svg-icon svg-icon-5 m-0">
+																<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path d="M11.4343 12.7344L7.25 8.55005C6.83579 8.13583 6.16421 8.13584 5.75 8.55005C5.33579 8.96426 5.33579 9.63583 5.75 10.05L11.2929 15.5929C11.6834 15.9835 12.3166 15.9835 12.7071 15.5929L18.25 10.05C18.6642 9.63584 18.6642 8.96426 18.25 8.55005C17.8358 8.13584 17.1642 8.13584 16.75 8.55005L12.5657 12.7344C12.2533 13.0468 11.7467 13.0468 11.4343 12.7344Z" fill="currentColor" />
+																</svg>
+															</span>
+															<!--end::Svg Icon--></a>
+															<!--begin::Menu-->
+															<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="../../demo22/dist/apps/ecommerce/catalog/edit-product.html" class="menu-link px-3">Edit</a>
+																</div>
+																<!--end::Menu item-->
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="#" class="menu-link px-3" data-kt-ecommerce-product-filter="delete_row">Delete</a>
+																</div>
+																<!--end::Menu item-->
+															</div>
+															<!--end::Menu-->
+														</td>
+														<!--end::Action=-->
+													</tr>
+													<!--end::Table row-->
+													<!--begin::Table row-->
+													<tr>
+														<!--begin::Category=-->
+														<td>
+															
+																	<p class="text-gray-800 text-hover-primary fs-5 fw-bold" data-kt-ecommerce-product-filter="product_name">Peter</p>
+																	
+														</td>
+														<!--end::Category=-->
+														<!--begin::SKU=-->
+														<td class="text-end pe-0">
+															<span class="">01914008</span>
+														</td>
+														<!--end::SKU=-->
+														
+														<!--begin::Price=-->
+														<td class="text-end pe-0">
+															<span class="">$65.00</span>
+														</td>
+														<!--end::Price=-->
+														
+														<!--begin::Status=-->
+														<td class="text-end pe-0" data-order="Quaterly">
+															<!--begin::Badges-->
+															Quaterly
+															<!--end::Badges-->
+														</td>
+														<!--end::Status=-->
+														<!--begin::Action=-->
+														<td class="text-end">
+															<a href="#" class="btn btn-sm btn-light btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions
+															<!--begin::Svg Icon | path: icons/duotune/arrows/arr072.svg-->
+															<span class="svg-icon svg-icon-5 m-0">
+																<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path d="M11.4343 12.7344L7.25 8.55005C6.83579 8.13583 6.16421 8.13584 5.75 8.55005C5.33579 8.96426 5.33579 9.63583 5.75 10.05L11.2929 15.5929C11.6834 15.9835 12.3166 15.9835 12.7071 15.5929L18.25 10.05C18.6642 9.63584 18.6642 8.96426 18.25 8.55005C17.8358 8.13584 17.1642 8.13584 16.75 8.55005L12.5657 12.7344C12.2533 13.0468 11.7467 13.0468 11.4343 12.7344Z" fill="currentColor" />
+																</svg>
+															</span>
+															<!--end::Svg Icon--></a>
+															<!--begin::Menu-->
+															<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="../../demo22/dist/apps/ecommerce/catalog/edit-product.html" class="menu-link px-3">Edit</a>
+																</div>
+																<!--end::Menu item-->
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="#" class="menu-link px-3" data-kt-ecommerce-product-filter="delete_row">Delete</a>
+																</div>
+																<!--end::Menu item-->
+															</div>
+															<!--end::Menu-->
+														</td>
+														<!--end::Action=-->
+													</tr>
+													<!--end::Table row-->
+													<!--begin::Table row-->
+													<tr>
+														
+														<!--begin::Category=-->
+														<td>
+														
+																	<p  class="text-gray-800 text-hover-primary fs-5 fw-bold" data-kt-ecommerce-earning-filter="product_name">Mathew</p>
+																	
+																
+															</div>
+														</td>
+														<!--end::Category=-->
+														<!--begin::SKU=-->
+														<td class="text-end pe-0">
+															<span class="">01783003</span>
+														</td>
+														<!--end::SKU=-->
+														
+														<!--begin::Price=-->
+														<td class="text-end pe-0">
+															<span class="">$45.00</span>
+														</td>
+														<!--end::Price=-->
+														
+														<!--begin::Status=-->
+														<td class="text-end pe-0" data-order="Annually">
+															<!--begin::Badges-->
+															Annually
+															<!--end::Badges-->
+														</td>
+														<!--end::Status=-->
+														<!--begin::Action=-->
+														<td class="text-end">
+															<a href="#" class="btn btn-sm btn-light btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions
+															<!--begin::Svg Icon | path: icons/duotune/arrows/arr072.svg-->
+															<span class="svg-icon svg-icon-5 m-0">
+																<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path d="M11.4343 12.7344L7.25 8.55005C6.83579 8.13583 6.16421 8.13584 5.75 8.55005C5.33579 8.96426 5.33579 9.63583 5.75 10.05L11.2929 15.5929C11.6834 15.9835 12.3166 15.9835 12.7071 15.5929L18.25 10.05C18.6642 9.63584 18.6642 8.96426 18.25 8.55005C17.8358 8.13584 17.1642 8.13584 16.75 8.55005L12.5657 12.7344C12.2533 13.0468 11.7467 13.0468 11.4343 12.7344Z" fill="currentColor" />
+																</svg>
+															</span>
+															<!--end::Svg Icon--></a>
+															<!--begin::Menu-->
+															<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="../../demo22/dist/apps/ecommerce/catalog/edit-product.html" class="menu-link px-3">Edit</a>
+																</div>
+																<!--end::Menu item-->
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="#" class="menu-link px-3" data-kt-ecommerce-earning-filter="delete_row">Delete</a>
+																</div>
+																<!--end::Menu item-->
+															</div>
+															<!--end::Menu-->
+														</td>
+														<!--end::Action=-->
+													</tr>
+													<!--end::Table row-->
+													<!--begin::Table row-->
+													<tr>
+														<!--begin::Category=-->
+														<td>
+															
+																	
+																	<p class="text-gray-800 text-hover-primary fs-5 fw-bold" data-kt-ecommerce-earning-filter="product_name">anna</p>
+																	
+																
+														</td>
+														<!--end::Category=-->
+														<!--begin::SKU=-->
+														<td class="text-end pe-0">
+															<span class="">03326003</span>
+														</td>
+														<!--end::SKU=-->
+														
+														<!--begin::Price=-->
+														<td class="text-end pe-0">
+															<span class="">$191.00</span>
+														</td>
+														<!--end::Price=-->
+														
+														<!--begin::Status=-->
+														<td class="text-end pe-0" data-order="Monthly">
+															<!--begin::Badges-->
+															Monthly
+															<!--end::Badges-->
+														</td>
+														<!--end::Status=-->
+														<!--begin::Action=-->
+														<td class="text-end">
+															<a href="#" class="btn btn-sm btn-light btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions
+															<!--begin::Svg Icon | path: icons/duotune/arrows/arr072.svg-->
+															<span class="svg-icon svg-icon-5 m-0">
+																<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path d="M11.4343 12.7344L7.25 8.55005C6.83579 8.13583 6.16421 8.13584 5.75 8.55005C5.33579 8.96426 5.33579 9.63583 5.75 10.05L11.2929 15.5929C11.6834 15.9835 12.3166 15.9835 12.7071 15.5929L18.25 10.05C18.6642 9.63584 18.6642 8.96426 18.25 8.55005C17.8358 8.13584 17.1642 8.13584 16.75 8.55005L12.5657 12.7344C12.2533 13.0468 11.7467 13.0468 11.4343 12.7344Z" fill="currentColor" />
+																</svg>
+															</span>
+															<!--end::Svg Icon--></a>
+															<!--begin::Menu-->
+															<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="../../demo22/dist/apps/ecommerce/catalog/edit-product.html" class="menu-link px-3">Edit</a>
+																</div>
+																<!--end::Menu item-->
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="#" class="menu-link px-3" data-kt-ecommerce-earning-filter="delete_row">Delete</a>
+																</div>
+																<!--end::Menu item-->
+															</div>
+															<!--end::Menu-->
+														</td>
+														<!--end::Action=-->
+													</tr>
+													<!--end::Table row-->
+													
+												</tbody>
+												<!--end::Table body-->
+											</table>
+											<!--end::Table-->
+										</div>
+										<!--end::Card body-->
+									</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                             <div class="col-xl-12 rounded-4 shadow-md">
                                 <!--begin::Card-->
-                                <div class="card rounded-4 shadow-md">
+                                <div class="card card-flush rounded-4 shadow-md">
                                     <!--begin::Card header-->
-                                    <div class="card-header border-0 pt-6">
+                                    <div class="card-header align-items-center py-5 gap-2 gap-md-5">
                                         <!--begin::Card title-->
                                         <div class="card-title">
                                             <!--begin::Search-->
@@ -2727,9 +3082,9 @@
                                                         data-hide-search="true" data-placeholder="Log ID"
                                                         data-kt-ecommerce-order-filter="status">
                                                         <option></option>
-                                                        <option value="all">404</option>
-                                                        <option value="active">503</option>
-                                                        <option value="locked">504</option>
+                                                        <option value="404">404</option>
+                                                        <option value="503">503</option>
+                                                        <option value="504">504</option>
                                                     </select>
                                                     <!--end::Select2-->
                                                 </div>
@@ -2754,7 +3109,7 @@
                                     </div>
                                     <!--end::Card header-->
                                     <!--begin::Card body-->
-                                    <div class="card-body pt-0">
+                                    <div class="card-body card-flush pt-0">
                                         <!--begin::Table-->
                                         <table class="table align-middle table-row-dashed fs-6 gy-5 overflow-scroll w-100"
                                             id="kt_customers_table">

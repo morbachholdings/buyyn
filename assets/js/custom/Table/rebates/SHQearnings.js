@@ -74,6 +74,15 @@ var KTAppEcommerceProducts = (function () {
             "all" === o && (o = ""), e.column(3).search(o).draw();
           });
         })(),
+        (() => {
+          const t = document.querySelector(
+            '[data-kt-ecommerce-product-filter="logid"]'
+          );
+          $(t).on("change", (t) => {
+            let o = t.target.value;
+            "all" === o && (o = ""), e.column(0).search(o).draw();
+          });
+        })(),
         o()),
         e => {
           e.preventDefault();
@@ -87,6 +96,7 @@ var KTAppEcommerceProducts = (function () {
         };
     },
   };
+  
 })();
 KTUtil.onDOMContentLoaded(function () {
   KTAppEcommerceProducts.init();

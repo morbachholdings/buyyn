@@ -3870,7 +3870,7 @@
                                                                             <div class="row">
                                                                                
 
-                                                                                <div class="col-md-3 mb-2">
+                                                                                <div class="col-md-3 mb-3">
                                                                                     <select name="language"
                                                                                         aria-label="Select Year"
                                                                                         data-control="select2"
@@ -3884,7 +3884,7 @@
                                                                                         </option>
                                                                                     </select>
                                                                                 </div>
-                                                                                <div class="col-md-3 mt-2">
+                                                                                <div class="col-md-3 mb-3">
                                                                                     <select name="language"
                                                                                         aria-label="Select Month"
                                                                                         data-control="select2"
@@ -3897,7 +3897,7 @@
                                                                                         </option>
                                                                                     </select>
                                                                                 </div>
-                                                                                <div class="col-md-3 mt-2">
+                                                                                <div class="col-md-3 mb-3">
                                                                                     <select name="language"
                                                                                         aria-label="Select Year"
                                                                                         data-control="select2"
@@ -3934,24 +3934,24 @@
 
                                                                                     <div class="row w-100">
                                                                                         <table
-                                                                                            class="table table-fixed table-row-bordered">
+                                                                                            class="table table-row-bordered overflow-scroll">
                                                                                             <thead>
                                                                                                 <tr>
                                                                                                     <th
-                                                                                                        class="col-3 text-start px-4 text-gray-400 fw-bold fs-7 text-uppercase">
+                                                                                                        class="min-w-100px col-3 text-start px-4 text-gray-400 fw-bold fs-7 text-uppercase">
                                                                                                         Member Name</th>
                                                                                                     <th
-                                                                                                        class="col-3 text-start px-2 text-gray-400 fw-bold fs-7 text-uppercase">
+                                                                                                        class="min-w-100px col-3 text-start px-2 text-gray-400 fw-bold fs-7 text-uppercase">
                                                                                                         Amount</th>
                                                                                                     <th
-                                                                                                        class="col-2 text-start px-2 text-gray-400 fw-bold fs-7 text-uppercase">
+                                                                                                        class="min-w-100px col-2 text-start px-2 text-gray-400 fw-bold fs-7 text-uppercase">
                                                                                                         Action</th>
                                                                                                     <th
-                                                                                                        class="col-2 text-start px-2 text-gray-400 fw-bold fs-7 text-uppercase">
+                                                                                                        class="min-w-100px col-2 text-start px-2 text-gray-400 fw-bold fs-7 text-uppercase">
                                                                                                         Last Submission
                                                                                                         Total</th>
                                                                                                     <th
-                                                                                                        class="col-2 text-start px-0 text-gray-400 fw-bold fs-7 text-uppercase">
+                                                                                                        class="min-w-100px col-2 text-start px-0 text-gray-400 fw-bold fs-7 text-uppercase">
                                                                                                         Last Submission
                                                                                                     </th>
                                                                                                 </tr>

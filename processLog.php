@@ -2749,7 +2749,7 @@
                                             <div class="d-flex justify-content-end"
                                                 data-kt-customer-table-toolbar="base">
                                                 <!--begin::Filter-->
-                                                <div class="w-150px me-3">
+                                                <div class="w-250px mobile">
                                                     <!--begin::Select2-->
                                                     <select class="form-select form-select-solid" data-control="select2"
                                                         data-hide-search="true" data-placeholder="Log ID"

@@ -4331,20 +4331,20 @@
                                                                                             <thead>
                                                                                                 <tr>
                                                                                                     <th
-                                                                                                        class="min-w-100px col-3 text-start px-4 text-gray-400 fw-bold fs-7 text-uppercase">
+                                                                                                        class="min-w-100px col-3 text-start px-4 text-gray-400 fw-bold mobileFont text-uppercase">
                                                                                                         Member Name</th>
                                                                                                     <th
-                                                                                                        class="min-w-100px col-3 text-start px-2 text-gray-400 fw-bold fs-7 text-uppercase">
+                                                                                                        class="min-w-100px col-3 text-start px-2 text-gray-400 fw-bold mobileFont text-uppercase">
                                                                                                         Amount</th>
                                                                                                     <th
-                                                                                                        class="min-w-100px col-2 text-start px-2 text-gray-400 fw-bold fs-7 text-uppercase">
+                                                                                                        class="min-w-100px col-2 text-start px-2 text-gray-400 fw-bold mobileFont text-uppercase">
                                                                                                         Action</th>
                                                                                                     <th
-                                                                                                        class="min-w-100px col-2 text-start px-2 text-gray-400 fw-bold fs-7 text-uppercase">
+                                                                                                        class="min-w-100px col-2 text-start px-2 text-gray-400 fw-bold mobileFont text-uppercase">
                                                                                                         Last Submission
                                                                                                         Total</th>
                                                                                                     <th
-                                                                                                        class="min-w-100px col-2 text-start px-0 text-gray-400 fw-bold fs-7 text-uppercase">
+                                                                                                        class="min-w-100px col-2 text-start px-0 text-gray-400 fw-bold mobileFont text-uppercase">
                                                                                                         Last Submission
                                                                                                     </th>
                                                                                                 </tr>
@@ -4443,10 +4443,9 @@
                                                                                     </style>
 
 
-                                                                                    <div class="d-flex justify-content-between my-3 align-items-center"
+                                                                                    <div class="row d-flex justify-content-between my-3 align-items-center"
                                                                                         style="margin-top:40px;">
-                                                                                        <div
-                                                                                            class="rounded-2 bg-light-primary p-3 w-550px d-flex justify-content-between">
+                                                                                        <div class="rounded-2 bg-light-primary p-3 col-6 d-flex justify-content-between w-100 w-md-50 my-1">
                                                                                             <p class="m-0 fw-bolder">
                                                                                                 <b>Grand
                                                                                                     Total</b>
@@ -4454,13 +4453,13 @@
                                                                                             <p class="m-0"><b>$ 123</b>
                                                                                             </p>
                                                                                         </div>
-                                                                                        <div class="d-flex">
+                                                                                        <div class="col-6 d-flex align-items-end justify-content-end my-1">
                                                                                             <div class="text-end"><a
-                                                                                                    class="btn btn-sm btn-success me-2 rounded-4"
+                                                                                                    class="btn btn-sm btn-success me-2 rounded-4 p-2 w-100px"
                                                                                                     href="javascript:;">Submit</a>
                                                                                             </div>
                                                                                             <div class="text-end"><a
-                                                                                                    class="btn btn-sm btn-danger me-2 rounded-4"
+                                                                                                    class="btn btn-sm btn-danger me-2 rounded-4 p-2 w-100px"
                                                                                                     href="javascript:;">Cancel</a>
                                                                                             </div>
                                                                                         </div>

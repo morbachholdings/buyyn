@@ -4354,20 +4354,20 @@
                                                                                                 <tr
                                                                                                     class="h-60px fw-bold">
                                                                                                     <td
-                                                                                                        class="col-3 text-start px-4 fs-6">
+                                                                                                        class="col-3 text-start px-4  w-200px mobileFont">
                                                                                                         123</td>
                                                                                                     <td
-                                                                                                        class="col-3 text-start px-2 d-flex fs-6 my-auto">
+                                                                                                        class="col-3 text-start px-2 d-flex  my-auto mobileFont">
                                                                                                         <span
-                                                                                                            class="my-auto fs-6 fw-bold mr-1">$</span>
+                                                                                                            class="my-auto  fw-bold mr-1">$</span>
                                                                                                         <input
                                                                                                             type="text"
-                                                                                                            class="form-control form-control-solid w-75 h-40px"
+                                                                                                            class="form-control form-control-solid w-150px h-40px mobileFont"
                                                                                                             name="name"
                                                                                                             value=""></input>
                                                                                                     </td>
                                                                                                     <td
-                                                                                                        class="col-2 text-start px-2 fs-6">
+                                                                                                        class="col-2 text-start px-2  mobileFont">
                                                                                                         <img class="mx-2"
                                                                                                             src="assets/media/icons/duotune/abstract/abs011.svg"
                                                                                                             alt=""
@@ -4377,12 +4377,12 @@
                                                                                                             style="height:16px;width:16px;">
                                                                                                     </td>
                                                                                                     <td
-                                                                                                        class="col-2 text-start fs-6">
+                                                                                                        class="col-2 text-start  mobileFont">
                                                                                                         <span
                                                                                                             class="text-start badge badge-light-primary py-3">$1,350.00</span>
                                                                                                     </td>
                                                                                                     <td
-                                                                                                        class="px-3 col-2 text-start fs-6">
+                                                                                                        class="px-3 col-2 text-start  mobileFont">
                                                                                                         Jul 25, 2022
                                                                                                     </td>
                                                                                                 </tr>
@@ -4443,7 +4443,7 @@
                                                                                     </style>
 
 
-                                                                                    <div class="row d-flex justify-content-between my-3 align-items-center"
+                                                                                    <div class="row justify-content-between my-3 align-items-center"
                                                                                         style="margin-top:40px;">
                                                                                         <div class="rounded-2 bg-light-primary p-3 col-6 d-flex justify-content-between w-100 w-md-50 my-1">
                                                                                             <p class="m-0 fw-bolder">
@@ -4453,13 +4453,13 @@
                                                                                             <p class="m-0"><b>$ 123</b>
                                                                                             </p>
                                                                                         </div>
-                                                                                        <div class="col-6 d-flex align-items-end justify-content-end my-1">
+                                                                                        <div class="col-6 d-flex align-items-end my-1">
                                                                                             <div class="text-end"><a
-                                                                                                    class="btn btn-sm btn-success me-2 rounded-4 p-2 w-100px"
+                                                                                                    class="btn btn-sm btn-success me-2 rounded-3 p-2"
                                                                                                     href="javascript:;">Submit</a>
                                                                                             </div>
                                                                                             <div class="text-end"><a
-                                                                                                    class="btn btn-sm btn-danger me-2 rounded-4 p-2 w-100px"
+                                                                                                    class="btn btn-sm btn-danger me-2 rounded-3 p-2"
                                                                                                     href="javascript:;">Cancel</a>
                                                                                             </div>
                                                                                         </div>

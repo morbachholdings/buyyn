@@ -4261,7 +4261,7 @@
                                                                             <div class="row">
 
 
-                                                                                <div class="col-md-3 mb-3">
+                                                                                <div class="col-md-3 mb-1 mt-2">
                                                                                     <select name="language"
                                                                                         aria-label="Select Year"
                                                                                         data-control="select2"
@@ -4275,7 +4275,7 @@
                                                                                         </option>
                                                                                     </select>
                                                                                 </div>
-                                                                                <div class="col-md-3 mb-3">
+                                                                                <div class="col-md-3 mb-1 mt-2">
                                                                                     <select name="language"
                                                                                         aria-label="Select Month"
                                                                                         data-control="select2"
@@ -4288,7 +4288,7 @@
                                                                                         </option>
                                                                                     </select>
                                                                                 </div>
-                                                                                <div class="col-md-3 mb-3">
+                                                                                <div class="col-md-3 mb-1 mt-2">
                                                                                     <select name="language"
                                                                                         aria-label="Select Year"
                                                                                         data-control="select2"
@@ -4305,7 +4305,7 @@
                                                                                 <div class="col-md-3 d-flex mt-2">
 
                                                                                     <button
-                                                                                        class="btn btn-primary mb-0">Apply</button>
+                                                                                        class="btn btn-primary my-0 w-150px h-45px">Apply</button>
                                                                                 </div>
 
 

@@ -26,19 +26,23 @@
     <link href="assets/css/styles.css" rel="stylesheet" type="text/css">
     <!--end::Global Stylesheets Bundle-->
     <!--Begin::Google Tag Manager -->
-	<style>
-	.fs-7 {
-    font-size: 12.4px!important;
-}
-		.table tbody tr:last-child td, .table tbody tr:last-child th, .table tfoot tr:last-child td, .table tfoot tr:last-child th {
-    border-bottom: 0!important;
-    font-size: 15px!important;
-}
-	</style>
-	
-	
+    <style>
+    .fs-7 {
+        font-size: 12.4px !important;
+    }
+
+    .table tbody tr:last-child td,
+    .table tbody tr:last-child th,
+    .table tfoot tr:last-child td,
+    .table tfoot tr:last-child th {
+        border-bottom: 0 !important;
+        font-size: 15px !important;
+    }
+    </style>
+
+
 </head>
-	
+
 
 <body id="kt_body" class="header-fixed header-tablet-and-mobile-fixed toolbar-enabled" style="background:#F4F7F9;">
     <!--begin::Root-->
@@ -2827,83 +2831,95 @@
                                                                             <!--end::Card header-->
                                                                             <!--begin::Table Widget 4-->
                                                                             <div class="card card-flush h-xl-100">
-                                                                                
 
 
 
-                                                                                <div class="card-header align-items-center py-1 gap-2 gap-md-5">
-											
-											 <!--begin::Card title-->
-                                             <div class="card-title">
+
+                                                                                <div
+                                                                                    class="card-header align-items-center py-1 gap-2 gap-md-5">
+
+                                                                                    <!--begin::Card title-->
+                                                                                    <div class="card-title">
                                                                                         <!--begin::Search-->
                                                                                         <div
                                                                                             class="d-flex align-items-center position-relative my-1">
                                                                                             <!--begin::Svg Icon | path: icons/duotune/general/gen021.svg-->
-                                                                                         
+
                                                                                         </div>
                                                                                         <!--end::Search-->
                                                                                     </div>
                                                                                     <!--begin::Card title-->
 
 
-											<!--begin::Card toolbar-->
-											<div class="card-toolbar flex-row-fluid justify-content-end gap-5">
-												<!--begin::Filter-->
-                                                <div class="mobile me-3">
-                                                                                                <!--begin::Select2-->
-                                                                                                <select
-                                                                                                    class="form-select form-select-solid"
-                                                                                                    data-control="select2"
-                                                                                                    data-hide-search="true"
-                                                                                                    data-placeholder="Status"
-                                                                                                    data-hide-search="true"
-                                                                                                    data-dropdown-css-class="w-150px"
-                                                                                                    data-placeholder="Select an option"
-                                                                                                    data-kt-table-widget-4="filter_status">
-                                                                                                    <option></option>
-                                                                                                    <option value="all">
-                                                                                                        All</option>
-                                                                                                    <option
-                                                                                                        value="active">
-                                                                                                        Active</option>
-                                                                                                    <option
-                                                                                                        value="locked">
-                                                                                                        Locked</option>
-                                                                                                </select>
-                                                                                                <!--end::Select2-->
+                                                                                    <!--begin::Card toolbar-->
+                                                                                    <div
+                                                                                        class="card-toolbar flex-row-fluid justify-content-end gap-5">
+                                                                                        <!--begin::Filter-->
+                                                                                        <div class="mobile me-3">
+                                                                                            <!--begin::Select2-->
+                                                                                            <select
+                                                                                                class="form-select form-select-solid"
+                                                                                                data-control="select2"
+                                                                                                data-hide-search="true"
+                                                                                                data-placeholder="Status"
+                                                                                                data-hide-search="true"
+                                                                                                data-dropdown-css-class="w-150px"
+                                                                                                data-placeholder="Select an option"
+                                                                                                data-kt-table-widget-4="filter_status">
+                                                                                                <option></option>
+                                                                                                <option value="all">
+                                                                                                    All</option>
+                                                                                                <option value="active">
+                                                                                                    Active</option>
+                                                                                                <option value="locked">
+                                                                                                    Locked</option>
+                                                                                            </select>
+                                                                                            <!--end::Select2-->
+                                                                                        </div>
+                                                                                        <!--end::Filter-->
+
+                                                                                        <div class="mobile mb-0">
+                                                                                            <input
+                                                                                                class="form-control form-control-solid"
+                                                                                                placeholder="Pick a date"
+                                                                                                id="kt_daterangepicker_3" />
+                                                                                        </div>
+
+
+
+                                                                                        <!--begin::Export dropdown-->
+                                                                                        <button type="button"
+                                                                                            class="btn btn-light-primary mobile"
+                                                                                            data-kt-menu-trigger="click"
+                                                                                            data-kt-menu-placement="bottom-end">
+                                                                                            <span
+                                                                                                class="svg-icon svg-icon-1 position-absolute ms-4">...</span>
+                                                                                            Export Report
+                                                                                        </button>
+                                                                                        <!--begin::Menu-->
+                                                                                        <div id="kt_datatable_example_export_menu"
+                                                                                            class="menu menu-sub menu-sub-dropdown menu-column menu-rounded-4 menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-200px py-4"
+                                                                                            data-kt-menu="true">
+                                                                                            <!--begin::Menu item-->
+                                                                                            <div class="menu-item px-3">
+                                                                                                <a href="#"
+                                                                                                    class="menu-link px-3"
+                                                                                                    data-kt-export="csv">
+                                                                                                    Export as CSV
+                                                                                                </a>
                                                                                             </div>
-                                                                                            <!--end::Filter-->
+                                                                                            <!--end::Menu item-->
 
-                                                                                            <div class="mobile mb-0">
-    <input class="form-control form-control-solid" placeholder="Pick a date" id="kt_daterangepicker_3"/>
-</div> 
-
-
-
-												<!--begin::Export dropdown-->
-   <button type="button" class="btn btn-light-primary mobile" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
-    <span class="svg-icon svg-icon-1 position-absolute ms-4">...</span>
-    Export Report
-   </button>
-   <!--begin::Menu-->
-   <div id="kt_datatable_example_export_menu" class="menu menu-sub menu-sub-dropdown menu-column menu-rounded-4 menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-200px py-4" data-kt-menu="true">
-    <!--begin::Menu item-->
-    <div class="menu-item px-3">
-     <a href="#" class="menu-link px-3" data-kt-export="csv">
-     Export as CSV
-     </a>
-    </div>
-    <!--end::Menu item-->
-    
-   </div>
-   <!--end::Menu-->
-   <!--end::Export dropdown-->
-   <!--begin::Hide default export buttons-->
-   <div id="kt_datatable_example_buttons" class="d-none"></div>
-   <!--end::Hide default export buttons-->
-											</div>
-											<!--end::Card toolbar-->
-										</div>
+                                                                                        </div>
+                                                                                        <!--end::Menu-->
+                                                                                        <!--end::Export dropdown-->
+                                                                                        <!--begin::Hide default export buttons-->
+                                                                                        <div id="kt_datatable_example_buttons"
+                                                                                            class="d-none"></div>
+                                                                                        <!--end::Hide default export buttons-->
+                                                                                    </div>
+                                                                                    <!--end::Card toolbar-->
+                                                                                </div>
 
 
 
@@ -2913,7 +2929,8 @@
 
 
                                                                                 <!--begin::Card body-->
-                                                                                <div class="card-body pt-0" style="padding:0px !important;">
+                                                                                <div class="card-body pt-0"
+                                                                                    style="padding:0px !important;">
                                                                                     <!--begin::Table-->
 
                                                                                     <div class="row gy-5 g-xl-10">
@@ -3481,7 +3498,8 @@
                                                                                                 </div>
                                                                                             </div>
 
-                                                                                            <div class="col-md-2 mobile">
+                                                                                            <div
+                                                                                                class="col-md-2 mobile">
 
                                                                                                 <select name="language"
                                                                                                     aria-label="Select Month"
@@ -3503,7 +3521,7 @@
                                                                                             <!--end::Destination-->
                                                                                             <div class="col-md-2 ">
 
-                                                                                               
+
 
                                                                                             </div>
 
@@ -3853,6 +3871,379 @@
                                                 </div>
                                             </div>
                                             <!--end::Tables Widget 2-->
+                                            <div class="tab-pane fade" id="kt_list_widget_10_tab_5">
+                                                <div class="m-0">
+                                                    <div class="noPadding card-body pt-0">
+                                                        <div class="col-xl-12">
+                                                            <!--end::Card header-->
+                                                            <!--begin::Table Widget 4-->
+                                                            <div class="card card-flush h-xl-100">
+                                                                <!--begin::Card header-->
+                                                                <div class="card-header pb-5">
+
+                                                                    <!--begin::Actions-->
+                                                                    <div class="card-toolbar w-100">
+                                                                        <!--begin::Filters-->
+                                                                        <div
+                                                                            class="d-flex flex-stack flex-wrap gap-4 w-100 align-items-end justify-content-between">
+
+                                                                            <!--begin::Destination-->
+
+                                                                            <div
+                                                                                class="mobile align-items-center fw-bold">
+
+                                                                                <div class="mb-0">
+                                                                                    <input
+                                                                                        class="form-control form-control-solid"
+                                                                                        placeholder="Pick date rage"
+                                                                                        id="kt_daterangepicker_6" />
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="col-md-2 mobile">
+
+                                                                                <select name="language"
+                                                                                    aria-label="Select Month"
+                                                                                    data-control="select2"
+                                                                                    data-placeholder="Select a language..."
+                                                                                    class="form-select form-select-solid form-select-lg">
+                                                                                    <option
+                                                                                        value="- Select Reference -">
+                                                                                        - Select
+                                                                                        Reference -
+                                                                                    </option>
+                                                                                    <option value="option1">
+                                                                                        Option 1
+                                                                                    </option>
+                                                                                </select>
+                                                                            </div>
+
+                                                                            <!--end::Destination-->
+                                                                            <div class="col-md-2 ">
+
+
+
+                                                                            </div>
+
+                                                                            <div
+                                                                                class="col-md-2 d-flex align-items-end justify-content-end">
+
+                                                                                <button
+                                                                                    class="btn btn-primary mb-0 cursor-pointer">Apply</button>
+
+                                                                            </div>
+                                                                            <!--begin::Search-->
+                                                                            <div class="d-none position-relative my-1">
+                                                                                <!--begin::Svg Icon | path: icons/duotune/general/gen021.svg-->
+                                                                                <span
+                                                                                    class="svg-icon svg-icon-2 position-absolute top-50 translate-middle-y ms-4">
+                                                                                    <svg width="24" height="24"
+                                                                                        viewBox="0 0 24 24" fill="none"
+                                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                                        <rect opacity="0.5" x="17.0365"
+                                                                                            y="15.1223" width="8.15546"
+                                                                                            height="2" rx="1"
+                                                                                            transform="rotate(45 17.0365 15.1223)"
+                                                                                            fill="currentColor" />
+                                                                                        <path
+                                                                                            d="M11 19C6.55556 19 3 15.4444 3 11C3 6.55556 6.55556 3 11 3C15.4444 3 19 6.55556 19 11C19 15.4444 15.4444 19 11 19ZM11 5C7.53333 5 5 7.53333 5 11C5 14.4667 7.53333 17 11 17C14.4667 17 17 14.4667 17 11C17 7.53333 14.4667 5 11 5Z"
+                                                                                            fill="currentColor" />
+                                                                                    </svg>
+                                                                                </span>
+                                                                                <!--end::Svg Icon-->
+                                                                                <input type="text"
+                                                                                    data-kt-table-widget-4="search"
+                                                                                    class="form-control w-150px fs-7 ps-12"
+                                                                                    placeholder="Search" />
+                                                                            </div>
+                                                                            <!--end::Search-->
+                                                                        </div>
+                                                                        <!--begin::Filters-->
+                                                                    </div>
+                                                                    <!--end::Actions-->
+                                                                </div>
+                                                                <!--end::Card header-->
+                                                                <!--begin::Card body-->
+                                                                <div class="card-body p-1">
+                                                                    <!--begin::Table-->
+
+                                                                    <div class="row gy-5 g-xl-10">
+
+                                                                        <!--end::Col-->
+                                                                        <!--begin::Col-->
+                                                                        <div class="col-xl-12 mb-5 mb-xl-10">
+                                                                            <!--begin::Table Widget 4-->
+                                                                            <div class="card card-flush h-xl-100 p-0">
+
+                                                                                <!--begin::Card body-->
+                                                                                <div class="card-body p-1">
+                                                                                    <!--begin::Table-->
+                                                                                    <table
+                                                                                        class="table align-middle table-row-dashed fs-6 gy-3"
+                                                                                        id="kt_table_widget_6_table">
+                                                                                        <!--begin::Table head-->
+                                                                                        <thead>
+                                                                                            <!--begin::Table row-->
+                                                                                            <tr
+                                                                                                class="text-start text-gray-400 fw-bold fs-7 text-uppercase gs-0">
+                                                                                                <th>
+                                                                                                    <input
+                                                                                                        type="checkbox"
+                                                                                                        name="" id="">
+                                                                                                </th>
+                                                                                                <th>#
+                                                                                                </th>
+                                                                                                <th class="min-w-100px">
+                                                                                                    Supplier
+                                                                                                </th>
+                                                                                                <th
+                                                                                                    class="text-end min-w-100px">
+                                                                                                    Reference
+                                                                                                    Date
+                                                                                                </th>
+                                                                                                <th
+                                                                                                    class="text-end min-w-125px">
+                                                                                                    Submitted
+                                                                                                    Date
+                                                                                                </th>
+                                                                                                <th
+                                                                                                    class="text-end min-w-100px">
+                                                                                                    Total
+                                                                                                    Sales
+                                                                                                </th>
+                                                                                                <th
+                                                                                                    class="text-end min-w-100px">
+                                                                                                    Status
+                                                                                                </th>
+                                                                                                <th
+                                                                                                    class="text-end min-w-50px">
+                                                                                                    Action
+                                                                                                </th>
+
+                                                                                            </tr>
+                                                                                            <!--end::Table row-->
+                                                                                        </thead>
+                                                                                        <!--end::Table head-->
+                                                                                        <!--begin::Table body-->
+                                                                                        <tbody
+                                                                                            class="fw-bold text-gray-600">
+                                                                                            <tr data-kt-table-widget-6="subtable_template"
+                                                                                                class="d-none">
+                                                                                                <td colspan="2">
+                                                                                                    <div
+                                                                                                        class="d-flex align-items-center gap-3">
+                                                                                                        <a href="#"
+                                                                                                            class="symbol symbol-50px bg-secondary bg-opacity-25 rounded">
+                                                                                                            <img src=""
+                                                                                                                data-kt-src-path="assets/media/stock/ecommerce/"
+                                                                                                                alt=""
+                                                                                                                data-kt-table-widget-6="template_image" />
+                                                                                                        </a>
+                                                                                                        <div
+                                                                                                            class="d-flex flex-column text-muted">
+                                                                                                            <a href="#"
+                                                                                                                class="text-gray-800 text-hover-primary fw-bold"
+                                                                                                                data-kt-table-widget-6="template_name">Product
+                                                                                                                name</a>
+                                                                                                            <div class="fs-7"
+                                                                                                                data-kt-table-widget-6="template_description">
+                                                                                                                Product
+                                                                                                                description
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </td>
+                                                                                                <td class="text-end">
+                                                                                                    <div
+                                                                                                        class="text-gray-800 fs-7">
+                                                                                                        Cost
+                                                                                                    </div>
+                                                                                                    <div class="text-muted fs-7 fw-bold"
+                                                                                                        data-kt-table-widget-6="template_cost">
+                                                                                                        1
+                                                                                                    </div>
+                                                                                                </td>
+                                                                                                <td class="text-end">
+                                                                                                    <div
+                                                                                                        class="text-gray-800 fs-7">
+                                                                                                        Qty
+                                                                                                    </div>
+                                                                                                    <div class="text-muted fs-7 fw-bold"
+                                                                                                        data-kt-table-widget-6="template_qty">
+                                                                                                        1
+                                                                                                    </div>
+                                                                                                </td>
+                                                                                                <td class="text-end">
+                                                                                                    <div
+                                                                                                        class="text-gray-800 fs-7">
+                                                                                                        Total
+                                                                                                    </div>
+                                                                                                    <div class="text-muted fs-7 fw-bold"
+                                                                                                        data-kt-table-widget-6="template_total">
+                                                                                                        name
+                                                                                                    </div>
+                                                                                                </td>
+                                                                                                <td class="text-end">
+                                                                                                    <div
+                                                                                                        class="text-gray-800 fs-7 me-3">
+                                                                                                        On
+                                                                                                        hand
+                                                                                                    </div>
+                                                                                                    <div class="text-muted fs-7 fw-bold"
+                                                                                                        data-kt-table-widget-6="template_stock">
+                                                                                                        32
+                                                                                                    </div>
+                                                                                                </td>
+                                                                                                <td>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td><input
+                                                                                                        type="checkbox"
+                                                                                                        name="" id="">
+                                                                                                </td>
+                                                                                                <td class="">
+                                                                                                    <button
+                                                                                                        type="button"
+                                                                                                        class="btn btn-sm btn-icon btn-light btn-active-light-primary toggle h-25px w-25px"
+                                                                                                        data-kt-table-widget-6="expand_row6">
+                                                                                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr087.svg-->
+                                                                                                        <span
+                                                                                                            class="svg-icon svg-icon-3 m-0 toggle-off">
+                                                                                                            <svg width="24"
+                                                                                                                height="24"
+                                                                                                                viewBox="0 0 24 24"
+                                                                                                                fill="none"
+                                                                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                                                                <rect
+                                                                                                                    opacity="0.5"
+                                                                                                                    x="11"
+                                                                                                                    y="18"
+                                                                                                                    width="12"
+                                                                                                                    height="2"
+                                                                                                                    rx="1"
+                                                                                                                    transform="rotate(-90 11 18)"
+                                                                                                                    fill="currentColor" />
+                                                                                                                <rect
+                                                                                                                    x="6"
+                                                                                                                    y="11"
+                                                                                                                    width="12"
+                                                                                                                    height="2"
+                                                                                                                    rx="1"
+                                                                                                                    fill="currentColor" />
+                                                                                                            </svg>
+                                                                                                        </span>
+                                                                                                        <!--end::Svg Icon-->
+                                                                                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr089.svg-->
+                                                                                                        <span
+                                                                                                            class="svg-icon svg-icon-3 m-0 toggle-on">
+                                                                                                            <svg width="24"
+                                                                                                                height="24"
+                                                                                                                viewBox="0 0 24 24"
+                                                                                                                fill="none"
+                                                                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                                                                <rect
+                                                                                                                    x="6"
+                                                                                                                    y="11"
+                                                                                                                    width="12"
+                                                                                                                    height="2"
+                                                                                                                    rx="1"
+                                                                                                                    fill="currentColor" />
+                                                                                                            </svg>
+                                                                                                        </span>
+                                                                                                        <!--end::Svg Icon-->
+                                                                                                    </button>
+                                                                                                </td>
+                                                                                                <td>
+                                                                                                    <a href="../../demo22/dist/apps/ecommerce/catalog/edit-product.html"
+                                                                                                        class="text-gray-800 text-hover-primary">#XGY-346</a>
+                                                                                                </td>
+                                                                                                <td class="text-end">
+                                                                                                    7
+                                                                                                    min
+                                                                                                    ago
+                                                                                                </td>
+                                                                                                <td class="text-end">
+                                                                                                    <a href="#"
+                                                                                                        class="text-gray-600 text-hover-primary">Albert
+                                                                                                        Flores</a>
+                                                                                                </td>
+                                                                                                <td class="text-end">
+                                                                                                    $630.00
+                                                                                                </td>
+                                                                                                <td class="text-end">
+                                                                                                    <span
+                                                                                                        class="text-gray-800 fw-bolder">$86.70</span>
+                                                                                                </td>
+                                                                                                <td class="text-end">
+                                                                                                    <div
+                                                                                                        class="d-flex justify-content-end">
+                                                                                                        <div
+                                                                                                            class="mx-1 cursor-pointer">
+                                                                                                            <img src="assets/media/icons/duotune/files/fil010.svg"
+                                                                                                                alt="">
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </td>
+
+                                                                                                <!-- <td class="text-end">Test</td> -->
+
+                                                                                            </tr>
+
+
+
+                                                                                        </tbody>
+                                                                                        <!--end::Table body-->
+                                                                                    </table>
+                                                                                    <!--end::Table-->
+                                                                                </div>
+                                                                                <!--end::Card body-->
+                                                                            </div>
+                                                                            <!--end::Table Widget 4-->
+                                                                        </div>
+                                                                        <!--end::Col-->
+                                                                    </div>
+
+
+                                                                    <!--end::Table-->
+                                                                </div>
+                                                                <!--end::Card body-->
+                                                            </div>
+                                                            <!--end::Table Widget 4-->
+
+                                                            <!--begin::Menu separator-->
+                                                            <div class="separator"></div>
+                                                            <!--end::Menu separator-->
+                                                            <div class="col-md-3 mt-3 mr-3 d-flex gap-4">
+                                                                <select name="language" aria-label="Select Year"
+                                                                    data-control="select2"
+                                                                    data-placeholder="Select a language..."
+                                                                    class="form-select form-select-solid form-select-lg mr-3">
+                                                                    <option value="- Select Action -">-
+                                                                        Bulk Action -</option>
+                                                                    <option value="option1">Add</option>
+                                                                    <option value="option1">Download
+                                                                    </option>
+                                                                    <option value="option1">CSV</option>
+                                                                </select>
+                                                                <!--begin::Indicator label-->
+                                                                <button
+                                                                    class="btn btn-primary ml-4 d-flex justify-content-end">Apply</button>
+                                                                <!--end::Indicator label-->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+
+                                            </div>
+
+
+
+
+
+
                                             <div class="tab-pane fade" id="kt_general_widget_1_2">
                                                 <!--begin::Tables Widget 3-->
                                                 <div class="card">
@@ -3868,7 +4259,7 @@
                                                                     <div class="m-0">
                                                                         <div class="card-body pt-5">
                                                                             <div class="row">
-                                                                               
+
 
                                                                                 <div class="col-md-3 mb-3">
                                                                                     <select name="language"
@@ -3917,11 +4308,13 @@
                                                                                         class="btn btn-primary mb-0">Apply</button>
                                                                                 </div>
 
+
+
                                                                             </div>
                                                                         </div>
                                                                         <div class="row">&nbsp;</div>
-
-                                                                        <div class="col-xl-12">
+<div class="row">
+<div class="col-xl-12">
                                                                             <!--end::Card header-->
                                                                             <!--begin::Card body-->
                                                                             <div class="card card-flush h-xl-100">
@@ -3932,9 +4325,9 @@
                                                                                     <!--begin::Table-->
 
 
-                                                                                    <div class="row w-100">
+                                                                                    <div class="table-responsive">
                                                                                         <table
-                                                                                            class="table table-row-bordered overflow-scroll">
+                                                                                            class="table table-row-bordered w-100">
                                                                                             <thead>
                                                                                                 <tr>
                                                                                                     <th
@@ -4003,7 +4396,6 @@
                                                                                         </table>
                                                                                     </div>
 
-
                                                                                     <style>
                                                                                     ::-webkit-scrollbar {
                                                                                         width: 3px;
@@ -4057,7 +4449,88 @@
                                                                                             class="rounded-2 bg-light-primary p-3 w-550px d-flex justify-content-between">
                                                                                             <p class="m-0 fw-bolder">
                                                                                                 <b>Grand
-                                                                                                    Total</b></p>
+                                                                                                    Total</b>
+                                                                                            </p>
+                                                                                            <p class="m-0"><b>$ 123</b>
+                                                                                            </p>
+                                                                                        </div>
+                                                                                        <div class="d-flex">
+                                                                                            <div class="text-end"><a
+                                                                                                    class="btn btn-sm btn-success me-2 rounded-4"
+                                                                                                    href="javascript:;">Submit</a>
+                                                                                            </div>
+                                                                                            <div class="text-end"><a
+                                                                                                    class="btn btn-sm btn-danger me-2 rounded-4"
+                                                                                                    href="javascript:;">Cancel</a>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <!--end::Card body-->
+                                                                                </div>
+                                                                                <!--end::Card body-->
+                                                                            </div>
+                                                                        </div>
+
+</div>
+                                                                    
+
+
+                                                                                    <style>
+                                                                                    ::-webkit-scrollbar {
+                                                                                        width: 3px;
+                                                                                    }
+
+                                                                                    ::-webkit-scrollbar-track {
+                                                                                        background: #f1f1f1;
+                                                                                    }
+
+                                                                                    ::-webkit-scrollbar-thumb {
+                                                                                        background: #d6d6d6;
+                                                                                        border-radius: 10px;
+                                                                                    }
+
+                                                                                    .table-fixed {
+                                                                                        width: 100%;
+                                                                                    }
+
+                                                                                    .table-fixed tbody {
+                                                                                        height: 350px;
+                                                                                        overflow-y: auto;
+                                                                                        width: 100%;
+                                                                                        overflow-x:scroll;
+                                                                                    }
+
+                                                                                    .table-fixed thead,
+                                                                                    .table-fixed tbody,
+                                                                                    .table-fixed tr,
+                                                                                    .table-fixed td,
+                                                                                    .table-fixed th {
+                                                                                        display: block;
+                                                                                    }
+
+                                                                                    .table-fixed tbody td {
+                                                                                        float: left;
+                                                                                    }
+
+                                                                                    .table-fixed thead tr th {
+                                                                                        border-color: #0881b1;
+                                                                                        float: left;
+                                                                                    }
+
+                                                                                    .read_article {
+                                                                                        text-align: center;
+                                                                                    }
+                                                                                    </style>
+
+
+                                                                                    <div class="d-flex justify-content-between my-3 align-items-center"
+                                                                                        style="margin-top:40px;">
+                                                                                        <div
+                                                                                            class="rounded-2 bg-light-primary p-3 w-550px d-flex justify-content-between">
+                                                                                            <p class="m-0 fw-bolder">
+                                                                                                <b>Grand
+                                                                                                    Total</b>
+                                                                                            </p>
                                                                                             <p class="m-0"><b>$ 123</b>
                                                                                             </p>
                                                                                         </div>
@@ -4186,26 +4659,24 @@
 
         <!-- onclick deletebutton -->
         <script>
-            $("#kt_table_widget_4_table1 input[type=checkbox]").click(function(){
+        $("#kt_table_widget_4_table1 input[type=checkbox]").click(function() {
             var countchecked = $("#kt_table_widget_4_table1 input[type=checkbox]:checked").length;
-            document.getElementById("checkCount").innerHTML=countchecked;
+            document.getElementById("checkCount").innerHTML = countchecked;
         });
 
 
-            // var rowCount = $('#kt_table_widget_4_table tr').length;
-            // console.log(rowCount-1);
+        // var rowCount = $('#kt_table_widget_4_table tr').length;
+        // console.log(rowCount-1);
         // $('.selectCheckBox').click(function() {
         //     var elems = document.getElementsByClassName('deleteDiv');
         //     for (var i = 0; i < elems.length; i += 1) {
         //         elems[i].style.display = 'block';
         //     }
-            
-            $('.selectCheckBox').click(function() {
-      $('.deleteDiv').toggleClass("d-block d-none"); 
-      e.preventDefault();
-    });
 
-    
+        $('.selectCheckBox').click(function() {
+            $('.deleteDiv').toggleClass("d-block d-none");
+            e.preventDefault();
+        });
         </script>
 
 

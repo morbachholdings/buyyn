@@ -3839,7 +3839,7 @@
                                                                             <div class="separator"></div>
                                                                             <!--end::Menu separator-->
                                                                             <div
-                                                                                class="col-md-3 mt-3 mr-3 d-flex gap-4">
+                                                                                class="col-md-3 m-3 d-flex gap-4">
                                                                                 <select name="language"
                                                                                     aria-label="Select Year"
                                                                                     data-control="select2"
@@ -4523,28 +4523,7 @@
                                                                                     </style>
 
 
-                                                                                    <div class="d-flex justify-content-between my-3 align-items-center"
-                                                                                        style="margin-top:40px;">
-                                                                                        <div
-                                                                                            class="rounded-2 bg-light-primary p-3 w-550px d-flex justify-content-between">
-                                                                                            <p class="m-0 fw-bolder">
-                                                                                                <b>Grand
-                                                                                                    Total</b>
-                                                                                            </p>
-                                                                                            <p class="m-0"><b>$ 123</b>
-                                                                                            </p>
-                                                                                        </div>
-                                                                                        <div class="d-flex">
-                                                                                            <div class="text-end"><a
-                                                                                                    class="btn btn-sm btn-success me-2 rounded-4"
-                                                                                                    href="javascript:;">Submit</a>
-                                                                                            </div>
-                                                                                            <div class="text-end"><a
-                                                                                                    class="btn btn-sm btn-danger me-2 rounded-4"
-                                                                                                    href="javascript:;">Cancel</a>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
+                                                                                    
                                                                                     <!--end::Card body-->
                                                                                 </div>
                                                                                 <!--end::Card body-->

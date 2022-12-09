@@ -4250,7 +4250,7 @@
                                                     <div class="card card-flush h-xl-100">
 
                                                         <!--begin::Body-->
-                                                        <div class="card-body pt-0 px-0">
+                                                        <div class="card-body p-0">
                                                             <div class="tab-content">
                                                                 <!--begin::Tap pane-->
                                                                 <div class="tab-pane fade show active my-4"
@@ -4321,7 +4321,7 @@
 
                                                                                 <!--end::Card header-->
                                                                                 <!--begin::Card body-->
-                                                                                <div class="card-body pt-0">
+                                                                                <div class="card-body py-0">
                                                                                     <!--begin::Table-->
 
 
@@ -4354,7 +4354,7 @@
                                                                                                 <tr
                                                                                                     class="h-60px fw-bold">
                                                                                                     <td
-                                                                                                        class="col-3 text-start px-4  w-200px mobileFont">
+                                                                                                        class="col-3 text-start px-4  w-250px mobileFont" style="font-size:12px!important;">
                                                                                                         123</td>
                                                                                                     <td
                                                                                                         class="col-3 text-start px-2 d-flex  my-auto mobileFont">
@@ -4377,12 +4377,12 @@
                                                                                                             style="height:16px;width:16px;">
                                                                                                     </td>
                                                                                                     <td
-                                                                                                        class="col-2 text-start  mobileFont">
+                                                                                                        class="col-2 text-start mobileFont">
                                                                                                         <span
                                                                                                             class="text-start badge badge-light-primary py-3">$1,350.00</span>
                                                                                                     </td>
                                                                                                     <td
-                                                                                                        class="px-3 col-2 text-start  mobileFont">
+                                                                                                        class="px-3 col-2 text-start mobileFont" style="font-size:12px!important;">
                                                                                                         Jul 25, 2022
                                                                                                     </td>
                                                                                                 </tr>
@@ -4455,11 +4455,11 @@
                                                                                         </div>
                                                                                         <div class="col-6 d-flex align-items-end my-1">
                                                                                             <div class="text-end"><a
-                                                                                                    class="btn btn-sm btn-success me-2 rounded-3 p-2"
+                                                                                                    class="btn btn-sm btn-success me-2 rounded-3 p-2 w-80px"
                                                                                                     href="javascript:;">Submit</a>
                                                                                             </div>
                                                                                             <div class="text-end"><a
-                                                                                                    class="btn btn-sm btn-danger me-2 rounded-3 p-2"
+                                                                                                    class="btn btn-sm btn-danger me-2 rounded-3 p-2 w-80px"
                                                                                                     href="javascript:;">Cancel</a>
                                                                                             </div>
                                                                                         </div>

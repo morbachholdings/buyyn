@@ -2784,7 +2784,7 @@
                                     <!--begin::Card body-->
                                     <div class="card-body pt-0">
                                         <!--begin::Table-->
-                                        <table class="table align-middle table-row-dashed fs-6 gy-5"
+                                        <div class="table-responsive"><table class="table align-middle table-row-dashed fs-6 gy-5"
                                             id="kt_customers_table">
                                             <!--begin::Table head-->
                                             <thead>
@@ -3200,7 +3200,8 @@
 
                                             </tbody>
                                             <!--end::Table body-->
-                                        </table>
+                                        </table></div>
+                                        
                                         <!--end::Table-->
                                     </div>
                                     <!--end::Card body-->

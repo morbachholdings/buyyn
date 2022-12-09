@@ -3907,13 +3907,14 @@
                                                 </div>
                                             </div>
                                             <!--end::Tables Widget 2-->
+                                            
                                             <div class="tab-pane fade" id="kt_general_widget_1_2">
                                                 <!--begin::Tables Widget 3-->
                                                 <div class="card">
                                                     <div class="card card-flush h-xl-100">
 
                                                         <!--begin::Body-->
-                                                        <div class="card-body pt-0 px-0">
+                                                        <div class="card-body p-0">
                                                             <div class="tab-content">
                                                                 <!--begin::Tap pane-->
                                                                 <div class="tab-pane fade show active my-4"
@@ -3922,9 +3923,9 @@
                                                                     <div class="m-0">
                                                                         <div class="card-body pt-5">
                                                                             <div class="row">
-                                                                               
 
-                                                                                <div class="col-md-3 mt-2">
+
+                                                                                <div class="col-md-3 mb-1 mt-2">
                                                                                     <select name="language"
                                                                                         aria-label="Select Year"
                                                                                         data-control="select2"
@@ -3938,7 +3939,7 @@
                                                                                         </option>
                                                                                     </select>
                                                                                 </div>
-                                                                                <div class="col-md-3 mt-2">
+                                                                                <div class="col-md-3 mb-1 mt-2">
                                                                                     <select name="language"
                                                                                         aria-label="Select Month"
                                                                                         data-control="select2"
@@ -3951,7 +3952,7 @@
                                                                                         </option>
                                                                                     </select>
                                                                                 </div>
-                                                                                <div class="col-md-3 my-2">
+                                                                                <div class="col-md-3 mb-1 mt-2">
                                                                                     <select name="language"
                                                                                         aria-label="Select Year"
                                                                                         data-control="select2"
@@ -3965,70 +3966,72 @@
                                                                                     </select>
                                                                                 </div>
 
-                                                                                <div class="col-md-3 d-flex">
+                                                                                <div class="col-md-3 d-flex mt-2">
 
                                                                                     <button
-                                                                                        class="btn btn-primary mb-0">Apply</button>
+                                                                                        class="btn btn-primary my-0 w-150px h-45px">Apply</button>
                                                                                 </div>
+
+
 
                                                                             </div>
                                                                         </div>
                                                                         <div class="row">&nbsp;</div>
-
-                                                                        <div class="col-xl-12">
+<div class="row">
+<div class="col-xl-12">
                                                                             <!--end::Card header-->
                                                                             <!--begin::Card body-->
                                                                             <div class="card card-flush h-xl-100">
 
                                                                                 <!--end::Card header-->
                                                                                 <!--begin::Card body-->
-                                                                                <div class="card-body pt-0">
+                                                                                <div class="card-body py-0">
                                                                                     <!--begin::Table-->
 
 
-                                                                                    <div class="row w-100">
+                                                                                    <div class="table-responsive">
                                                                                         <table
-                                                                                            class="table table-fixed table-row-bordered overflowX-scroll">
+                                                                                            class="table table-row-bordered w-100">
                                                                                             <thead>
                                                                                                 <tr>
                                                                                                     <th
-                                                                                                        class="col-3 text-start px-4 text-gray-400 fw-bold fs-7 text-uppercase">
+                                                                                                        class="min-w-100px col-3 text-start px-4 text-gray-400 fw-bold mobileFont text-uppercase">
                                                                                                         Member Name</th>
                                                                                                     <th
-                                                                                                        class="col-3 text-start px-2 text-gray-400 fw-bold fs-7 text-uppercase">
+                                                                                                        class="min-w-100px col-3 text-start px-2 text-gray-400 fw-bold mobileFont text-uppercase">
                                                                                                         Amount</th>
                                                                                                     <th
-                                                                                                        class="col-2 text-start px-2 text-gray-400 fw-bold fs-7 text-uppercase">
+                                                                                                        class="min-w-100px col-2 text-start px-2 text-gray-400 fw-bold mobileFont text-uppercase">
                                                                                                         Action</th>
                                                                                                     <th
-                                                                                                        class="col-2 text-start px-2 text-gray-400 fw-bold fs-7 text-uppercase">
+                                                                                                        class="min-w-100px col-2 text-start px-2 text-gray-400 fw-bold mobileFont text-uppercase">
                                                                                                         Last Submission
                                                                                                         Total</th>
                                                                                                     <th
-                                                                                                        class="col-2 text-start px-0 text-gray-400 fw-bold fs-7 text-uppercase">
+                                                                                                        class="min-w-100px col-2 text-start px-0 text-gray-400 fw-bold mobileFont text-uppercase">
                                                                                                         Last Submission
                                                                                                     </th>
                                                                                                 </tr>
                                                                                             </thead>
-                                                                                            <tbody class="scroll-y scroll-x">
+                                                                                            <tbody class="scroll-y">
 
                                                                                                 <tr
                                                                                                     class="h-60px fw-bold">
                                                                                                     <td
-                                                                                                        class="col-3 text-start px-4 fs-6">
+                                                                                                        class="col-3 text-start px-4  w-250px mobileFont" style="font-size:12px!important;">
                                                                                                         123</td>
                                                                                                     <td
-                                                                                                        class="col-3 text-start px-2 d-flex fs-6 my-auto">
+                                                                                                        class="col-3 text-start px-2 d-flex  my-auto mobileFont">
                                                                                                         <span
-                                                                                                            class="my-auto fs-6 fw-bold mr-1">$</span>
+                                                                                                            class="my-auto  fw-bold mr-1">$</span>
                                                                                                         <input
                                                                                                             type="text"
-                                                                                                            class="form-control form-control-solid w-75 h-40px"
+                                                                                                            class="form-control form-control-solid w-150px h-40px mobileFont"
                                                                                                             name="name"
                                                                                                             value=""></input>
                                                                                                     </td>
                                                                                                     <td
-                                                                                                        class="col-2 text-start px-2 fs-6">
+                                                                                                        class="col-2 text-start px-2  mobileFont">
                                                                                                         <img class="mx-2"
                                                                                                             src="assets/media/icons/duotune/abstract/abs011.svg"
                                                                                                             alt=""
@@ -4038,12 +4041,12 @@
                                                                                                             style="height:16px;width:16px;">
                                                                                                     </td>
                                                                                                     <td
-                                                                                                        class="col-2 text-start fs-6">
+                                                                                                        class="col-2 text-start mobileFont">
                                                                                                         <span
                                                                                                             class="text-start badge badge-light-primary py-3">$1,350.00</span>
                                                                                                     </td>
                                                                                                     <td
-                                                                                                        class="px-3 col-2 text-start fs-6">
+                                                                                                        class="px-3 col-2 text-start mobileFont" style="font-size:12px!important;">
                                                                                                         Jul 25, 2022
                                                                                                     </td>
                                                                                                 </tr>
@@ -4056,7 +4059,6 @@
                                                                                             </tbody>
                                                                                         </table>
                                                                                     </div>
-
 
                                                                                     <style>
                                                                                     ::-webkit-scrollbar {
@@ -4105,27 +4107,86 @@
                                                                                     </style>
 
 
-                                                                                    <div class="d-flex justify-content-between my-3 align-items-center"
+                                                                                    <div class="row justify-content-between my-3 align-items-center"
                                                                                         style="margin-top:40px;">
-                                                                                        <div
-                                                                                            class="rounded-2 bg-light-primary p-3 w-550px d-flex justify-content-between">
+                                                                                        <div class="rounded-2 bg-light-primary p-3 col-6 d-flex justify-content-between w-100 w-md-50 my-1">
                                                                                             <p class="m-0 fw-bolder">
                                                                                                 <b>Grand
-                                                                                                    Total</b></p>
+                                                                                                    Total</b>
+                                                                                            </p>
                                                                                             <p class="m-0"><b>$ 123</b>
                                                                                             </p>
                                                                                         </div>
-                                                                                        <div class="d-flex">
+                                                                                        <div class="col-6 d-flex align-items-end my-1">
                                                                                             <div class="text-end"><a
-                                                                                                    class="btn btn-sm btn-success me-2 rounded-4"
+                                                                                                    class="btn btn-sm btn-success me-2 rounded-3 p-2 w-80px"
                                                                                                     href="javascript:;">Submit</a>
                                                                                             </div>
                                                                                             <div class="text-end"><a
-                                                                                                    class="btn btn-sm btn-danger me-2 rounded-4"
+                                                                                                    class="btn btn-sm btn-danger me-2 rounded-3 p-2 w-80px"
                                                                                                     href="javascript:;">Cancel</a>
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
+                                                                                    <!--end::Card body-->
+                                                                                </div>
+                                                                                <!--end::Card body-->
+                                                                            </div>
+                                                                        </div>
+
+</div>
+                                                                    
+
+
+                                                                                    <style>
+                                                                                    ::-webkit-scrollbar {
+                                                                                        width: 3px;
+                                                                                    }
+
+                                                                                    ::-webkit-scrollbar-track {
+                                                                                        background: #f1f1f1;
+                                                                                    }
+
+                                                                                    ::-webkit-scrollbar-thumb {
+                                                                                        background: #d6d6d6;
+                                                                                        border-radius: 10px;
+                                                                                    }
+
+                                                                                    .table-fixed {
+                                                                                        width: 100%;
+                                                                                    }
+
+                                                                                    .table-fixed tbody {
+                                                                                        height: 350px;
+                                                                                        overflow-y: auto;
+                                                                                        width: 100%;
+                                                                                        overflow-x:scroll;
+                                                                                    }
+
+                                                                                    .table-fixed thead,
+                                                                                    .table-fixed tbody,
+                                                                                    .table-fixed tr,
+                                                                                    .table-fixed td,
+                                                                                    .table-fixed th {
+                                                                                        display: block;
+                                                                                    }
+
+                                                                                    .table-fixed tbody td {
+                                                                                        float: left;
+                                                                                    }
+
+                                                                                    .table-fixed thead tr th {
+                                                                                        border-color: #0881b1;
+                                                                                        float: left;
+                                                                                    }
+
+                                                                                    .read_article {
+                                                                                        text-align: center;
+                                                                                    }
+                                                                                    </style>
+
+
+                                                                                    
                                                                                     <!--end::Card body-->
                                                                                 </div>
                                                                                 <!--end::Card body-->
@@ -4138,11 +4199,6 @@
 
                                                             </div>
                                                         </div>
-                                                    </div>
-
-                                                </div>
-                                                <!--end::Tables Widget 3-->
-                                            </div>
                                         </div>
                                         <!--end::Tab content-->
                                     </div>

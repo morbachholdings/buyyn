@@ -3836,7 +3836,7 @@
           <div class="d-flex flex-stack flex-wrap gap-4 w-100 align-items-end justify-content-start">
             
             <!--begin::Destination-->
-            <div class="col-md-3">
+            <div class="col-md-3 mobile w-100 mw-300px">
             <div class=" align-items-center fw-bold rounded-4">
             
               <select name="language" aria-label="Select Month" data-control="select2" data-placeholder="Select a language..." class="form-select form-select-solid form-select-lg rounded-4">
@@ -3849,14 +3849,14 @@
               </div>
             
             <!--end::Destination-->
-            <div class="col-md-3 ">
+            <div class="col-md-3 mobile w-100 mw-300px">
               <select name="language" aria-label="Select Month" data-control="select2" data-placeholder="Select a language..." class="form-select form-select-solid form-select-lg">
                                                                     <option value="- Report Type -">- Report Type -</option>
                                                                     <option value="option1">Option 1</option>
                                                                     <option value="option2">Option 2</option>
                                                                 </select>
             </div>
-            <div class="col-md-3 ">
+            <div class="col-md-3 mobile w-100 mw-300px">
              
                     <!-- <input class="form-control d-flex align-items-center" value="" id="kt_tagify_suppliers" /> -->
                     <input class="form-control d-flex align-items-center" type="text" id="myInput" onkeyup="searchFunction()" placeholder="Search Names..">

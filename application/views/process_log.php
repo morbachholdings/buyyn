@@ -46,10 +46,8 @@
                                                     </svg>
                                                 </span>
                                                 <!--end::Svg Icon-->
-                                                <input type="text" data-kt-customer-table-filter="search"
-                                                    class="form-control form-control-solid w-250px ps-15"
-                                                    placeholder="Search Customers" />
-                                            </div>
+                                                <input type="text" data-kt-ecommerce-product-filter="search" id="memberProcessLogSearch" onkeyup="searchFunctionProcessLog()" class="form-control form-control-solid w-250px ps-14" placeholder="Search Member" />
+                                                    
                                             <!--end::Search-->
                                         </div>
                                         <!--begin::Card title-->
@@ -96,7 +94,7 @@
                                         <!--begin::Table-->
                                         <div class="table-responsive">
                                             <table class="table align-middle table-row-dashed fs-6 gy-5"
-                                            id="kt_ecommerce_products_table_1">
+                                            id="kt_customers_table">
                                             <!--begin::Table head-->
                                             <thead>
                                                 <!--begin::Table row-->

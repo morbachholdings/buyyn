@@ -1419,19 +1419,19 @@
                                 <div class="btn btn-flex align-items-center bg-hover-white bg-hover-opacity-10 py-2 px-2 px-md-3" data-kt-menu-trigger="click" data-kt-menu-attach="parent" data-kt-menu-placement="bottom-end">
                                     <!--begin::Name-->
                                     <div class="d-none d-md-flex flex-column align-items-end justify-content-center me-2 me-md-4">
-                                        <?php foreach ($user_name->result() as $row) { ?>
-                                            <span class="text-white fs-8 fw-bold lh-1 mb-1"><?php echo $row->First_name ?></span>
-                                            <span class="text-white fs-8 opacity-75 fw-semibold lh-1"><?php echo $row->Company_name ?></span>
-                                        <?php } ?>
+                                        <?php //foreach ($user_name->result() as $row) { ?>
+                                            <span class="text-white fs-8 fw-bold lh-1 mb-1"><?php //echo $row->First_name ?></span>
+                                            <span class="text-white fs-8 opacity-75 fw-semibold lh-1"><?php //echo $row->Company_name ?></span>
+                                        <?php //} ?>
                                     </div>
                                     <!--end::Name-->
                                     <!--begin::Symbol-->
                                     <div class="symbol symbol-30px symbol-md-40px">
-                                        <?php if ($row->Profile_image != null) { ?>
-                                            <img src="<?php echo base_url() ?>assets/media/profile/<?php echo $row->Profile_image ?>" alt="image" />
-                                        <?php } else { ?>
+                                        <?php// if ($row->Profile_image != null) { ?>
+                                            <!-- <img src="<?php echo base_url() ?>assets/media/profile/<?php //echo $row->Profile_image ?>" alt="image" /> -->
+                                        <?php //} else { ?>
                                             <img src="<?php echo base_url() ?>assets/media/svg/avatars/blank.svg" alt="image" />
-                                        <?php } ?>
+                                        <?php //} ?>
                                     </div>
                                     <!--end::Symbol-->
                                 </div>
@@ -1443,22 +1443,22 @@
                                         <div class="menu-content d-flex align-items-center px-3">
                                             <!--begin::Avatar-->
                                             <div class="symbol symbol-50px me-5">
-                                                <?php if ($row->Profile_image != null) { ?>
-                                                    <img src="<?php echo base_url() ?>assets/media/profile/<?php echo $row->Profile_image ?>" alt="image" />
-                                                <?php } else { ?>
+                                                <?php //if ($row->Profile_image != null) { ?>
+                                                    <!-- <img src="<?php echo base_url() ?>assets/media/profile/<?php //echo $row->Profile_image ?>" alt="image" /> -->
+                                                <?php //} else { ?>
                                                     <img src="<?php echo base_url() ?>assets/media/svg/avatars/blank.svg" alt="image" />
-                                                <?php } ?>
+                                                <?php //} ?>
                                             </div>
                                             <!--end::Avatar-->
                                             <!--begin::Username-->
                                             <div class="d-flex flex-column">
-                                                <?php foreach ($user_name->result() as $row) { ?>
+                                                <?php //foreach ($user_name->result() as $row) { ?>
                                                     <div class="fw-bold d-flex align-items-center fs-5">
-                                                        <?php echo $row->First_name ?>&nbsp;<?php echo $row->Last_name ?>
+                                                        <?php //echo $row->First_name ?>&nbsp;<?php //echo $row->Last_name ?>
                                                         <!-- <span class="badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2">Pro</span> -->
                                                     </div>
-                                                    <a href="mailto:<?php echo $row->Email ?>" class="fw-semibold text-muted text-hover-primary fs-7"><?php echo $row->Email ?></a>
-                                                <?php } ?>
+                                                    <a href="mailto:<?php //echo $row->Email ?>" class="fw-semibold text-muted text-hover-primary fs-7"><?php //echo $row->Email ?></a>
+                                                <?php //} ?>
                                             </div>
                                             <!--end::Username-->
                                         </div>
@@ -1539,36 +1539,12 @@
                                     <!--end:Menu link-->
                                 </div>
                                 <!--end:Menu item-->
-                                <!--begin:Menu item-->
-                                <div class="menu-item">
-                                    <!--begin:Menu link-->
-                                    <a class="menu-link py-3" href="<?php echo base_url() ?>rebates/rebates">
-                                        <span class="menu-title">
-                                            <span class="menu-text">Rebates</span>
-                                            <span class="menu-desc">Rebate Earnings</span>
-                                        </span>
-                                    </a>
-                                    <!--end:Menu link-->
-                                </div>
-
-                                <!--end:Menu item-->
-                                <!--begin:Menu item-->
-                                <div class="menu-item">
-                                    <!--begin:Menu link-->
-                                    <a class="menu-link py-3" href="<?php echo base_url() ?>users/administration">
-                                        <span class="menu-title">
-                                            <span class="menu-text">Administration</span>
-                                            <span class="menu-desc">Manage Users</span>
-                                        </span>
-                                    </a>
-                                    <!--end:Menu link-->
-                                </div>
-                                <!--end:Menu item-->
+                               
 
                                 <!--begin:Menu item-->
                                 <div class="menu-item">
                                     <!--begin:Menu link-->
-                                    <a class="menu-link py-3" href="<?php echo base_url() ?>processlog/processors">
+                                    <a class="menu-link py-3" href="<?php echo base_url() ?>supplier_processlog/processors">
                                         <span class="menu-title">
                                             <span class="menu-text">Process Log</span>
                                             <span class="menu-desc">User Activity</span>
@@ -2281,21 +2257,6 @@
 
             <script src="<?php echo base_url() ?>assets/js/custom/account/settings/profile-details.js"></script>
             <script src="<?php echo base_url() ?>assets/js/custom/pages/user-profile/general.js"></script>
-
-            <script src="<?php echo base_url() ?>assets/js/custom/utilities/modals/upgrade-plan.js"></script>
-            <script src="<?php echo base_url() ?>assets/js/custom/utilities/modals/create-app.js"></script>
-            <script src="<?php echo base_url() ?>assets/js/custom/utilities/modals/new-target.js"></script>
-            <script src="<?php echo base_url() ?>assets/js/custom/utilities/modals/users-search.js"></script>
-            <script src="<?php echo base_url() ?>assets/js/custom/Date/datePicker.js"></script>
-            <script src="<?php echo base_url() ?>assets/js/custom/Table/pagination.js"></script>
-            <script src="<?php echo base_url() ?>assets/js/custom/Table/tagifySupplier.js"></script>
-            <script src="<?php echo base_url() ?>assets/js/custom/Table/tagifyMember.js"></script>
-            <script src="<?php echo base_url() ?>assets/js/custom/Table/reportTable.js"></script>
-            <script src="<?php echo base_url() ?>assets/js/custom/Table/barChart.js"></script>
-            <script src="<?php echo base_url() ?>assets/js/custom/Table/tableSearch.js"></script>
-            <script src="<?php echo base_url() ?>assets/js/custom/Table/rebates/exportReport.js"></script>
-
-
             <!--end::Custom Javascript-->
 </body>
 

@@ -116,42 +116,42 @@ var KTCustomersList = (function () {
           o.classList.remove("d-none"))
         : (t.classList.remove("d-none"), o.classList.add("d-none"));
   };
-  return {
-    init: function () {
-      (e = document.querySelector("#kt_customers_table")) &&
-        (e.querySelectorAll("tbody tr").forEach((t) => {
-          const e = t.querySelectorAll("td");
-            // o = moment(e[5].innerHTML, "DD MMM YYYY, LT").format();
-        //   e[5].setAttribute("data-order", o);
-        }),
-        (t = $(e).DataTable({
-          info: !1,
-          order: [],
-          columnDefs: [
-            { orderable: !1, targets: 0 },
-            { orderable: !1, targets: 7 },
-          ],
-        })).on("draw", function () {
-          n(), o(), c();
-        }),
-        n(),
-        document
-          .querySelector('[data-kt-customer-table-filter="search"]')
-          .addEventListener("keyup", function (e) {
-            t.search(e.target.value).draw();
-          }),
-        o(),
-        (() => {
-          const e = document.querySelector(
-            '[data-kt-ecommerce-order-filter="status"]'
-          );
-          $(e).on("change", (e) => {
-            let o = e.target.value;
-            "all" === o && (o = ""), t.column(0).search(o).draw();
-          });
-        })());
-    },
-  };
+  // return {
+  //   init: function () {
+  //     (e = document.querySelector("#kt_customers_table")) &&
+  //       (e.querySelectorAll("tbody tr").forEach((t) => {
+  //         const e = t.querySelectorAll("td");
+  //           // o = moment(e[5].innerHTML, "DD MMM YYYY, LT").format();
+  //       //   e[5].setAttribute("data-order", o);
+  //       }),
+  //       (t = $(e).DataTable({
+  //         info: !1,
+  //         order: [],
+  //         columnDefs: [
+  //           { orderable: !1, targets: 0 },
+  //           { orderable: !1, targets: 7 },
+  //         ],
+  //       })).on("draw", function () {
+  //         n(), o(), c();
+  //       }),
+  //       n(),
+  //       document
+  //         .querySelector('[data-kt-customer-table-filter="search"]')
+  //         .addEventListener("keyup", function (e) {
+  //           t.search(e.target.value).draw();
+  //         }),
+  //       o(),
+  //       (() => {
+  //         const e = document.querySelector(
+  //           '[data-kt-ecommerce-order-filter="status"]'
+  //         );
+  //         $(e).on("change", (e) => {
+  //           let o = e.target.value;
+  //           "all" === o && (o = ""), t.column(0).search(o).draw();
+  //         });
+  //       })());
+  //   },
+  // };
 })();
 KTUtil.onDOMContentLoaded(function () {
   KTCustomersList.init();

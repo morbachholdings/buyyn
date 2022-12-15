@@ -236,6 +236,22 @@
 															location.href = '<?php echo base_url() ?>dashboard/dashboard';
 														}
 													}))
+												} else if (ret_data.user_group == 2) {
+													Swal.fire({
+														text: "You have successfully logged in!",
+														icon: "success",
+														buttonsStyling: !1,
+														confirmButtonText: "Ok, got it!",
+														customClass: {
+															confirmButton: "btn btn-primary"
+														}
+													}).then((function(t) {
+														if (t.isConfirmed) {
+															e.querySelector('[name="email"]').value = "", e.querySelector('[name="password"]').value = "";
+
+															location.href = '<?php echo base_url() ?>SupplierDashboard/supplier_dashboard';
+														}
+													}))
 												} else {
 													Swal.fire({
 														text: "You have successfully logged in!",

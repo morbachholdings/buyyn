@@ -1419,19 +1419,19 @@
                                 <div class="btn btn-flex align-items-center bg-hover-white bg-hover-opacity-10 py-2 px-2 px-md-3" data-kt-menu-trigger="click" data-kt-menu-attach="parent" data-kt-menu-placement="bottom-end">
                                     <!--begin::Name-->
                                     <div class="d-none d-md-flex flex-column align-items-end justify-content-center me-2 me-md-4">
-                                        <?php //foreach ($user_name->result() as $row) { ?>
-                                            <span class="text-white fs-8 fw-bold lh-1 mb-1"><?php //echo $row->First_name ?></span>
-                                            <span class="text-white fs-8 opacity-75 fw-semibold lh-1"><?php //echo $row->Company_name ?></span>
-                                        <?php //} ?>
+                                        <?php foreach ($user_name->result() as $row) { ?>
+                                            <span class="text-white fs-8 fw-bold lh-1 mb-1"><?php echo $row->First_name ?></span>
+                                            <span class="text-white fs-8 opacity-75 fw-semibold lh-1"><?php echo $row->Company_name ?></span>
+                                        <?php } ?>
                                     </div>
                                     <!--end::Name-->
                                     <!--begin::Symbol-->
                                     <div class="symbol symbol-30px symbol-md-40px">
-                                        <?php// if ($row->Profile_image != null) { ?>
-                                            <!-- <img src="<?php echo base_url() ?>assets/media/profile/<?php //echo $row->Profile_image ?>" alt="image" /> -->
-                                        <?php //} else { ?>
+                                        <?php if ($row->Profile_image != null) { ?>
+                                            <img src="<?php echo base_url() ?>assets/media/profile/<?php echo $row->Profile_image ?>" alt="image" />
+                                        <?php } else { ?>
                                             <img src="<?php echo base_url() ?>assets/media/svg/avatars/blank.svg" alt="image" />
-                                        <?php //} ?>
+                                        <?php } ?>
                                     </div>
                                     <!--end::Symbol-->
                                 </div>
@@ -1443,22 +1443,22 @@
                                         <div class="menu-content d-flex align-items-center px-3">
                                             <!--begin::Avatar-->
                                             <div class="symbol symbol-50px me-5">
-                                                <?php //if ($row->Profile_image != null) { ?>
-                                                    <!-- <img src="<?php echo base_url() ?>assets/media/profile/<?php //echo $row->Profile_image ?>" alt="image" /> -->
-                                                <?php //} else { ?>
+                                                <?php if ($row->Profile_image != null) { ?>
+                                                    <img src="<?php echo base_url() ?>assets/media/profile/<?php echo $row->Profile_image ?>" alt="image" />
+                                                <?php } else { ?>
                                                     <img src="<?php echo base_url() ?>assets/media/svg/avatars/blank.svg" alt="image" />
-                                                <?php //} ?>
+                                                <?php } ?>
                                             </div>
                                             <!--end::Avatar-->
                                             <!--begin::Username-->
                                             <div class="d-flex flex-column">
-                                                <?php //foreach ($user_name->result() as $row) { ?>
+                                                <?php foreach ($user_name->result() as $row) { ?>
                                                     <div class="fw-bold d-flex align-items-center fs-5">
-                                                        <?php //echo $row->First_name ?>&nbsp;<?php //echo $row->Last_name ?>
-                                                        <!-- <span class="badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2">Pro</span> -->
+                                                        <?php echo $row->First_name ?>&nbsp;<?php echo $row->Last_name ?>
+                                                        <span class="badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2">Pro</span>
                                                     </div>
-                                                    <a href="mailto:<?php //echo $row->Email ?>" class="fw-semibold text-muted text-hover-primary fs-7"><?php //echo $row->Email ?></a>
-                                                <?php //} ?>
+                                                    <a href="mailto:<?php echo $row->Email ?>" class="fw-semibold text-muted text-hover-primary fs-7"><?php echo $row->Email ?></a>
+                                                <?php } ?>
                                             </div>
                                             <!--end::Username-->
                                         </div>

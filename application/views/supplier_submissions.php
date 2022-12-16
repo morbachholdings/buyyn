@@ -1579,17 +1579,29 @@
 
 
                                                                                 <div class="col-md-3 mb-1 mt-2">
-                                                                                    <select name="language"
-                                                                                        aria-label="Select Year"
-                                                                                        data-control="select2"
-                                                                                        data-placeholder="Select a language..."
-                                                                                        class="form-select form-select-solid form-select-lg">
-                                                                                        <option value="- Select Year -">
-                                                                                            -
-                                                                                            Select Financial Year -
+                                                                                <select id="financialYear" name="language" aria-label="Select Year" data-control="select2" data-placeholder="Select a language..." class="form-select form-select-solid form-select-lg">
+                                                                                        <option value="- Select Year -">- Select Financial Year -
                                                                                         </option>
-                                                                                        <option value="2022">2022
-                                                                                        </option>
+                                                                                        <?php
+                                                                                        $endYear = date("Y") - 2014;
+
+                                                                                        if (date("m-d") > '06-30') {
+                                                                                            for ($i = date("Y") - $endYear; $i <= date("Y") + 1; $i++) {
+                                                                                        ?>
+                                                                                                <option value="<?php echo $i ?>"><?php echo $i ?></option>
+                                                                                            <?php
+                                                                                            }
+                                                                                        } else {
+                                                                                            for ($i = date("Y") - $endYear; $i <= date("Y"); $i++) {
+                                                                                            ?>
+                                                                                                <option value="<?php echo $i ?>"><?php echo $i ?></option>
+                                                                                        <?php
+
+                                                                                            }
+                                                                                        }
+                                                                                        ?>
+
+
                                                                                     </select>
                                                                                 </div>
                                                                                 <div class="col-md-3 mb-1 mt-2">
@@ -1598,14 +1610,23 @@
                                                                                         data-control="select2"
                                                                                         data-placeholder="Select a language..."
                                                                                         class="form-select form-select-solid form-select-lg">
-                                                                                        <option
-                                                                                            value="- Select Month -">-
-                                                                                            Select Month -</option>
-                                                                                        <option value="July">July
+                                                                                        <option value="- Select Month -">- Select Month -</option>
+                                                                                        <option value="January">January</option>
+                                                                                        <option value="February">February</option>
+                                                                                        <option value="March">March</option>
+                                                                                        <option value="April">April</option>
+                                                                                        <option value="May">May</option>
+                                                                                        <option value="June">June</option>
+                                                                                        <option value="July">July</option>
+                                                                                        <option value="August">August</option>
+                                                                                        <option value="September">September</option>
+                                                                                        <option value="October">October</option>
+                                                                                        <option value="November">November</option>
+                                                                                        <option value="December">December</option>
                                                                                         </option>
                                                                                     </select>
                                                                                 </div>
-                                                                                <div class="col-md-3 mb-1 mt-2">
+                                                                                <!-- <div class="col-md-3 mb-1 mt-2">
                                                                                     <select name="language"
                                                                                         aria-label="Select Year"
                                                                                         data-control="select2"
@@ -1617,12 +1638,14 @@
                                                                                         <option value="option1">Option 1
                                                                                         </option>
                                                                                     </select>
-                                                                                </div>
+                                                                                </div> -->
 
                                                                                 <div class="col-md-3 d-flex mt-2">
 
-                                                                                    <button
-                                                                                        class="btn btn-primary my-0 w-150px h-45px">Apply</button>
+                                                                                <?php foreach ($user_details->result() as $row) { ?>
+                                                            <button type="submit" class="btn btn-success w-150px h-45px" user_id="<?php echo $row->user_id ?>" id="btnAddParent">Apply</button>
+                                                            <?php } ?>
+                                                                                    
                                                                                 </div>
 
 
@@ -1644,7 +1667,7 @@
 
                                                                                     <div class="table-responsive">
                                                                                         <table
-                                                                                            class="table table-row-bordered w-100">
+                                                                                            class="table table-row-bordered w-100"  style="display: none;" id="submitTable">
                                                                                             <thead>
                                                                                                 <tr>
                                                                                                     <th
@@ -1668,41 +1691,30 @@
                                                                                             </thead>
                                                                                             <tbody class="scroll-y">
 
-                                                                                                <tr
-                                                                                                    class="h-60px fw-bold">
-                                                                                                    <td
-                                                                                                        class="col-3 text-start px-4  w-250px mobileFont" style="font-size:12px!important;">
-                                                                                                        123</td>
-                                                                                                    <td
-                                                                                                        class="col-3 text-start px-2 d-flex  my-auto mobileFont">
-                                                                                                        <span
-                                                                                                            class="my-auto  fw-bold mr-1">$</span>
-                                                                                                        <input
-                                                                                                            type="text"
-                                                                                                            class="form-control form-control-solid w-150px h-40px mobileFont"
-                                                                                                            name="name"
-                                                                                                            value=""></input>
-                                                                                                    </td>
-                                                                                                    <td
-                                                                                                        class="col-2 text-start px-2  mobileFont">
-                                                                                                        <img class="mx-2"
-                                                                                                            src="assets/media/icons/duotune/abstract/abs011.svg"
-                                                                                                            alt=""
-                                                                                                            style="height:16px;width:16px;"><img
-                                                                                                            src="assets/media/icons/duotune/art/art005.svg"
-                                                                                                            alt=""
-                                                                                                            style="height:16px;width:16px;">
-                                                                                                    </td>
-                                                                                                    <td
-                                                                                                        class="col-2 text-start mobileFont">
-                                                                                                        <span
-                                                                                                            class="text-start badge badge-light-primary py-3">$1,350.00</span>
-                                                                                                    </td>
-                                                                                                    <td
-                                                                                                        class="px-3 col-2 text-start mobileFont" style="font-size:12px!important;">
-                                                                                                        Jul 25, 2022
-                                                                                                    </td>
-                                                                                                </tr>
+                                                                                            <?php foreach ($member_submissions->result() as $row) { ?>
+                                                                                                    <tr class="h-60px fw-bold">
+                                                                                                        <td class="col-3 text-start px-4 fs-6"><?php echo $row->Company_name ?></td>
+                                                                                                        <td class="col-3 text-start px-2 d-flex fs-6 my-auto">
+                                                                                                            <span class="my-auto fs-6 fw-bold mr-1">$</span>
+                                                                                                            <input type="text" class="form-control form-control-solid w-75 h-40px" name="name" value=""></input>
+                                                                                                        </td>
+                                                                                                        
+                                                                                                        <td class="col-2 text-start fs-6">
+                                                                                                            <span class="text-start badge badge-light-primary py-3">$ <?php echo number_format($row->amount) ?></span>
+                                                                                                        </td>
+                                                                                                        <?php if ($row->financial_month == "") { ?>
+                                                                                                            <td class="px-3 col-2 text-start fs-6">
+                                                                                                                NA
+                                                                                                            </td>
+                                                                                                        <?php } else { ?>
+                                                                                                            <td class="px-3 col-2 text-start fs-6">
+                                                                                                                <?php echo $row->financial_month ?>&nbsp;<?php echo $row->financial_year ?>
+                                                                                                            </td>
+
+                                                                                                        <?php } ?>
+                                                                                                    </tr>
+
+                                                                                                <?php } ?>
 
 
 
@@ -1902,10 +1914,276 @@
         <!--begin::Toolbar-->
 
 
+<script>
+        // Add new child submissions
+        $('#btnSubmit').click(function() {
+            var member_name = [];
+            var amount = [];
+            var referernce_number = $('#reference_number').val();
+            var supplier_name = $('#supplier').val();
+            var status = 1;
+            var is_child = 1;
+            var month = $('#financialMonth').val();
+            var year = $('#financialYear').val();
+
+            $('.member_name').each(function() {
+                member_name.push($(this).text());
+            });
+            $('.amount_val').each(function() {
+                amount.push($(this).val());
+            });
+
+            var today = new Date();
+            var dd = String(today.getDate()).padStart(2, '0');
+            var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+            var yyyy = today.getFullYear();
+            today = mm + '/' + dd + '/' + yyyy;
+
+            function allBlanks(arr) {
+                for (var i = 0; i < arr.length; i++) {
+                    if (arr[i] !== "") return false;
+                }
+
+                return true;
+            }
+            if (allBlanks(amount) == true) {
+                swal.fire({
+                    text: "Price field is empty",
+                    icon: "error",
+                    buttonsStyling: false,
+                    confirmButtonText: "Ok, got it!",
+                    customClass: {
+                        confirmButton: "btn font-weight-bold btn-light-primary"
+                    }
+                });
+            } else {
+                $('#btnSubmit').prop('disabled', true);
+                $.ajax({
+                    url: "<?php echo base_url(); ?>Submissions/insert_child_invoices",
+                    method: "POST",
+                    data: {
+                        referernce_number: referernce_number,
+                        supplier_name: supplier_name,
+                        status: status,
+                        date_placed: today,
+                        member_name: member_name,
+                        amount: amount,
+                        is_child: is_child,
+                        financial_month: month,
+                        financial_year: year
+                    },
+                    success: function(data) {
+                        alert(data);
+
+                        // swal.fire({
+                        //     text: "Submitted ! " + month + " " + year + " ",
+                        //     icon: "error",
+                        //     buttonsStyling: false,
+                        //     confirmButtonText: "Ok, got it!",
+                        //     customClass: {
+                        //         confirmButton: "btn font-weight-bold btn-light-primary"
+                        //     }
+                        // }).then(function() {
+                        //     location.reload();
+                        // });
+                        
+                    },
 
 
+                });
+
+            }
+        });
+
+        // Jquery Dependency
+
+        $("input[data-type='currency']").on({
+            keyup: function() {
+                formatCurrency($(this));
+            },
+            blur: function() {
+                formatCurrency($(this), "blur");
+            }
+        });
 
 
+        function formatNumber(n) {
+            // format number 1000000 to 1,234,567
+            return n.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+        }
+
+
+        function formatCurrency(input, blur) {
+            // appends $ to value, validates decimal side
+            // and puts cursor back in right position.
+
+            // get input value
+            var input_val = input.val();
+
+            // don't validate empty input
+            if (input_val === "") {
+                return;
+            }
+
+            // original length
+            var original_len = input_val.length;
+
+            // initial caret position 
+            var caret_pos = input.prop("selectionStart");
+
+            // check for decimal
+            if (input_val.indexOf(".") >= 0) {
+
+                // get position of first decimal
+                // this prevents multiple decimals from
+                // being entered
+                var decimal_pos = input_val.indexOf(".");
+
+                // split number by decimal point
+                var left_side = input_val.substring(0, decimal_pos);
+                var right_side = input_val.substring(decimal_pos);
+
+                // add commas to left side of number
+                left_side = formatNumber(left_side);
+
+                // validate right side
+                right_side = formatNumber(right_side);
+
+                // On blur make sure 2 numbers after decimal
+                if (blur === "blur") {
+                    right_side += "00";
+                }
+
+                // Limit decimal to only 2 digits
+                right_side = right_side.substring(0, 2);
+
+                // join number by .
+                input_val = "$" + left_side + "." + right_side;
+
+            } else {
+                // no decimal entered
+                // add commas to number
+                // remove all non-digits
+                input_val = formatNumber(input_val);
+                input_val = "$" + input_val;
+
+                // final formatting
+                if (blur === "blur") {
+                    input_val += ".00";
+                }
+            }
+
+            // send updated string to input
+            input.val(input_val);
+
+            // put caret back in the right position
+            var updated_len = input_val.length;
+            caret_pos = updated_len - original_len + caret_pos;
+            input[0].setSelectionRange(caret_pos, caret_pos);
+        }
+
+        // generate a ready function for a reference number
+        $(document).ready(function() {
+            $('#reference_number').val("SHQ" + Math.floor(100000 + Math.random() * 900000));
+        });
+
+        // Create a parent submission
+        $('#btnAddParent').click(function() {
+            var month = $('#financialMonth').val();
+            var year = $('#financialYear').val();
+            //  var date_placed = month + " " + year;
+            var reference_number = $('#reference_number').val();
+            var supplier_name = $('#supplier').val();
+            var status = 1;
+            var is_child = 0;
+            var member = "";
+            var price = "";
+            //var date_placed = month + " " + year;
+            var today = new Date();
+            var dd = String(today.getDate()).padStart(2, '0');
+            var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+            var yyyy = today.getFullYear();
+            today = mm + '/' + dd + '/' + yyyy;
+            if (year == "- Select Year -") {
+                swal.fire({
+                    text: "Please select your financial year",
+                    icon: "error",
+                    buttonsStyling: false,
+                    confirmButtonText: "Ok, got it!",
+                    customClass: {
+                        confirmButton: "btn font-weight-bold btn-light-primary"
+                    }
+                });
+
+            } else if (month == "- Select Month -") {
+                swal.fire({
+                    text: "Please select your financial month",
+                    icon: "error",
+                    buttonsStyling: false,
+                    confirmButtonText: "Ok, got it!",
+                    customClass: {
+                        confirmButton: "btn font-weight-bold btn-light-primary"
+                    }
+                });
+
+            } else if (supplier_name == '- Select Supplier -') {
+                swal.fire({
+                    text: "Please select a supplier",
+                    icon: "error",
+                    buttonsStyling: false,
+                    confirmButtonText: "Ok, got it!",
+                    customClass: {
+                        confirmButton: "btn font-weight-bold btn-light-primary"
+                    }
+                });
+
+            } else {
+                $.ajax({
+                    url: "<?php echo base_url(); ?>supplier_submissions/insert_parent",
+                    method: "POST",
+                    data: {
+                        reference_number: reference_number,
+                        supplier_name: supplier_name,
+                        member: member,
+                        price: price,
+                        date_placed: today,
+                        status: status,
+                        is_child: is_child,
+                        financial_month: month,
+                        financial_year: year
+                    },
+                    success: function(data) {
+                        var ret_data = $.parseJSON(data);
+                        if (ret_data.status == 0) {
+                            Swal.fire({
+                                text: ret_data.ret_data,
+                                icon: "error",
+                                buttonsStyling: !1,
+                                confirmButtonText: "Ok, got it!",
+                                customClass: {
+                                    confirmButton: "btn btn-primary"
+                                }
+                            });
+
+
+                        } else {
+                            $("#financialMonth").prop("disabled", true);
+                            $("#financialYear").prop("disabled", true);
+                            $("#supplier").prop("disabled", true);
+                            $("#btnAddParent").prop("disabled", true);
+                            var table = document.getElementById("submitTable");
+                            table.style.display = "block";
+                            $("#grandSection").prop("hidden", false);
+
+
+                        }
+
+                    }
+                });
+            }
+        });
+
+</script>
         
 
 </body>

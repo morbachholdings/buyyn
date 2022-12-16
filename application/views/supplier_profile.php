@@ -1012,22 +1012,35 @@
                                                             <!--end::Card toolbar-->
                                                         </div>
                                                         <!--end::Card header-->
+
+
+
+                                                        <!-- begin::Card body -->
+                                                        
+                                                   
+                                                    <!--end::Card body-->
+
+
                                                         <!--begin::Card body-->
                                                         <div class="card-body py-0">
                                                             <!--begin::Table wrapper-->
+                                                            <?php if (is_array($rebates) || is_object($rebates)) { ?>
+                                                            <?php foreach ($rebates as $row) {
+
+                                                            ?>
                                                             <div class="d-flex">
                                                                 <div class="col-lg-4 d-flex flex-column">
                                                                 <label class="col-form-label fw-semibold fs-6">Supplier Rebate</label>
-                                                                <input type="text" class="form-control form-control-lg form-control-solid w-75" id="supplierRebates" placeholder=" " name="supplierRebates" value="" />
+                                                                <input type="text" class="form-control form-control-lg form-control-solid w-75" id="supplierRebates" placeholder=" " name="supplierRebates" value="<?php echo $row->supplier_rebate ?>" />
                                                                 </div>
                                                                 <div class="col-lg-4 d-flex flex-column">
                                                                 <label class="col-form-label fw-semibold fs-6">Member Rebate</label>
-                                                                <input type="text" class="form-control form-control-lg form-control-solid w-75" id="memberRebates" placeholder=" " name="memberRebates" value="" />
+                                                                <input type="text" class="form-control form-control-lg form-control-solid w-75" id="memberRebates" placeholder=" " name="memberRebates" value="<?php echo $row->member_rebate ?>"/>
                                                                 </div>
                                                                 <div class="col-lg-4 d-flex flex-column">
                                                                 <label class="col-form-label fw-semibold fs-6">Member Period</label>
                                                                 <!--begin::Select2-->
-                                                                <select class="form-select form-select-solid form-control-solid w-75 h-45px" data-control="select2" data-hide-search="true" data-placeholder="" data-hide-search="true" data-dropdown-css-class="w-200px" data-placeholder="Select an option">
+                                                                <select class="form-select form-select-solid form-control-solid w-75 h-45px" data-control="select2" data-hide-search="true" data-placeholder="" data-hide-search="true" data-dropdown-css-class="w-200px" data-placeholder="Select an option" value="<?php echo $row->rebate_period ?>">
                                                                                                 <option></option>
                                                                                                 <option value="Monthly">
                                                                                                     Monthly</option>
@@ -1040,8 +1053,41 @@
                                                                 </div>
                                                                 
                                                             </div>
+                                                            <button type="submit" class="btn btn-success mt-4" user_id="<?php echo $row->user_id ?>" id="rebateUpdate" rebate_id="<?php echo $row->rebate_id ?>">Update</button>
+                                                            <?php }} else{ ?>
+                                                                <div class="d-flex">
+                                                                <div class="col-lg-4 d-flex flex-column">
+                                                                <label class="col-form-label fw-semibold fs-6">Supplier Rebate</label>
+                                                                <input type="text" class="form-control form-control-lg form-control-solid w-75" id="supplierR" placeholder=" " name="supplierRebates" value="" />
+                                                                </div>
+                                                                <div class="col-lg-4 d-flex flex-column">
+                                                                <label class="col-form-label fw-semibold fs-6">Member Rebate</label>
+                                                                <input type="text" class="form-control form-control-lg form-control-solid w-75" id="memberR" placeholder=" " name="memberRebates" value="" />
+                                                                </div>
+                                                                <div class="col-lg-4 d-flex flex-column">
+                                                                <label class="col-form-label fw-semibold fs-6">Member Period</label>
+                                                                <!--begin::Select2-->
+                                                                <select class="form-select form-select-solid form-control-solid w-75 h-45px" data-control="select2" data-hide-search="true" data-placeholder="" data-hide-search="true" data-dropdown-css-class="w-200px" data-placeholder="Select an option" id="rebateP">
+                                                                                                <option></option>
+                                                                                                <option value="Monthly">
+                                                                                                    Monthly</option>
+                                                                                                <option value="Quarterly">
+                                                                                                Quarterly</option>
+                                                                                                <option value="Annually">
+                                                                                                    Annually</option>
+                                                                                            </select>
+                                                                                            <!--end::Select2-->
+                                                                </div>
+                                                                
+                                                            </div>
+                                                            <?php foreach ($user_details->result() as $row) { ?>
+                                                            <button type="submit" class="btn btn-success mt-4" user_id="<?php echo $row->user_id ?>" id="rebateAdd">Add</button>
+                                                            <?php } ?>
+                                                            <?php }?>
+
+                                                            
                                                             <!--end::Table wrapper-->
-                                                            <button type="submit" class="btn btn-success mt-4" user_id="<?php echo $row->user_id ?>" id="rebateUpdate">Update</button>
+                                                            
                                                         </div>
                                                         <!--end::Card body-->
                                                     </div>
@@ -1159,6 +1205,84 @@
 
 
     <script>
+        $('#rebateAdd').click(function() {
+            var user_id = $(this).attr('user_id');
+            var supplierRebate = $('#supplierR').val();
+            var memberRebate = $('#memberR').val();
+            var period = $('#rebateP').val();
+
+            if (supplierRebate == "") {
+                swal.fire({
+                    text: "Supplier Rebate Empty",
+                    icon: "error",
+                    buttonsStyling: false,
+                    confirmButtonText: "Ok, got it!",
+                    customClass: {
+                        confirmButton: "btn font-weight-bold btn-light-primary"
+                    }
+                });
+            } else if (memberRebate == "") {
+                swal.fire({
+                    text: "Member Rebate is Empty",
+                    icon: "error",
+                    buttonsStyling: false,
+                    confirmButtonText: "Ok, got it!",
+                    customClass: {
+                        confirmButton: "btn font-weight-bold btn-light-primary"
+                    }
+                });
+            } else if (period == "") {
+                swal.fire({
+                    text: "Member Rebate is Empty",
+                    icon: "error",
+                    buttonsStyling: false,
+                    confirmButtonText: "Ok, got it!",
+                    customClass: {
+                        confirmButton: "btn font-weight-bold btn-light-primary"
+                    }
+                });
+            } else {
+                $.ajax({
+                    url: "<?php echo base_url(); ?>Users/add_rebate",
+                    method: "POST",
+                    data: {
+                        user_id: user_id,
+                        supplierRebate: supplierRebate,
+                        memberRebate: memberRebate,
+                        period: period,
+
+                    },
+                    success: function(data) {
+                        var ret_data = $.parseJSON(data);
+                        if (ret_data.status == 1) {
+                            swal.fire({
+                                text: ret_data.ret_data,
+                                icon: "success",
+                                buttonsStyling: false,
+                                confirmButtonText: "Ok, got it!",
+                                customClass: {
+                                    confirmButton: "btn font-weight-bold btn-light-primary"
+                                }
+                            }).then(function() {
+                                location.reload();
+                            });
+                        } else {
+                            swal.fire({
+                                text: ret_data.ret_data,
+                                icon: "error",
+                                buttonsStyling: false,
+                                confirmButtonText: "Ok, got it!",
+                                customClass: {
+                                    confirmButton: "btn font-weight-bold btn-light-primary"
+                                }
+                            });
+
+                        }
+
+                    }
+                });
+            }
+        });
         $('#btnUpdate').click(function() {
             
             var user_id = $(this).attr('user_id');

@@ -1469,7 +1469,7 @@
                                     <!--end::Menu separator-->
                                     <!--begin::Menu item-->
                                     <div class="menu-item px-5">
-                                        <a href="<?php echo base_url() ?>edit_profile/edit" class="menu-link px-5">My Profile</a>
+                                        <a href="<?php echo base_url() ?>EditSupplierProfile/edit" class="menu-link px-5">My Profile</a>
                                     </div>
                                     <!--end::Menu item-->
                                     <!--begin::Menu separator-->
@@ -1504,7 +1504,7 @@
 
                                 <div class="menu-item">
                                     <!--begin:Menu link-->
-                                    <a class="menu-link py-3" href="<?php echo base_url() ?>dashboard/dashboard">
+                                    <a class="menu-link py-3" href="<?php echo base_url() ?>SupplierDashboard/supplier_dashboard">
                                         <span class="menu-title">
                                             <span class="menu-text">Dashboard</span>
                                             <span class="menu-desc">Overview</span>
@@ -1518,7 +1518,7 @@
 
                                 <div class="menu-item">
                                     <!--begin:Menu link-->
-                                    <a class="menu-link py-3" href="<?php echo base_url() ?>submissions/submissions">
+                                    <a class="menu-link py-3" href="<?php echo base_url() ?>SupplierSubmissions/supplier_submisions">
                                         <span class="menu-title">
                                             <span class="menu-text">Data Submissions</span>
                                             <span class="menu-desc">Invoicing</span>
@@ -1530,7 +1530,7 @@
                                 <!--begin:Menu item-->
                                 <div class="menu-item">
                                     <!--begin:Menu link-->
-                                    <a class="menu-link py-3" href="<?php echo base_url() ?>reports/reports">
+                                    <a class="menu-link py-3" href="<?php echo base_url() ?>SupplierReports/supplier_reports">
                                         <span class="menu-title">
                                             <span class="menu-text">Reports</span>
                                             <span class="menu-desc">Supplier and Member Reports</span>
@@ -1544,7 +1544,7 @@
                                 <!--begin:Menu item-->
                                 <div class="menu-item">
                                     <!--begin:Menu link-->
-                                    <a class="menu-link py-3" href="<?php echo base_url() ?>supplier_processlog/processors">
+                                    <a class="menu-link py-3" href="<?php echo base_url() ?>SupplierProcessLog/supplier_process_log">
                                         <span class="menu-title">
                                             <span class="menu-text">Process Log</span>
                                             <span class="menu-desc">User Activity</span>

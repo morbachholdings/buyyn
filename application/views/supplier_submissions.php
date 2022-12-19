@@ -1609,7 +1609,7 @@
                                                                                         aria-label="Select Month"
                                                                                         data-control="select2"
                                                                                         data-placeholder="Select a language..."
-                                                                                        class="form-select form-select-solid form-select-lg">
+                                                                                        class="form-select form-select-solid form-select-lg" id="financialMonth">
                                                                                         <option value="- Select Month -">- Select Month -</option>
                                                                                         <option value="January">January</option>
                                                                                         <option value="February">February</option>
@@ -1773,7 +1773,7 @@
 
 
                                                                                     <div class="row justify-content-between my-3 align-items-center"
-                                                                                        style="margin-top:40px;">
+                                                                                        style="margin-top:40px;" id="grandSection" hidden>
                                                                                         <div class="rounded-2 bg-light-primary p-3 col-6 d-flex justify-content-between w-100 w-md-50 my-1">
                                                                                             <p class="m-0 fw-bolder">
                                                                                                 <b>Grand
@@ -2081,14 +2081,14 @@
             caret_pos = updated_len - original_len + caret_pos;
             input[0].setSelectionRange(caret_pos, caret_pos);
         }
-
         // generate a ready function for a reference number
         $(document).ready(function() {
             $('#reference_number').val("SHQ" + Math.floor(100000 + Math.random() * 900000));
         });
 
         // Create a parent submission
-        $('#btnAddParent').click(function() {
+         // Create a parent submission
+         $('#btnAddParent').click(function() {
             var month = $('#financialMonth').val();
             var year = $('#financialYear').val();
             //  var date_placed = month + " " + year;
@@ -2139,7 +2139,7 @@
 
             } else {
                 $.ajax({
-                    url: "<?php echo base_url(); ?>supplier_submissions/insert_parent",
+                    url: "<?php echo base_url(); ?>Submissions/insert_parent",
                     method: "POST",
                     data: {
                         reference_number: reference_number,
@@ -2182,8 +2182,16 @@
                 });
             }
         });
-
+        
 </script>
+
+
+
+
+
+
+
+
         
 
 </body>

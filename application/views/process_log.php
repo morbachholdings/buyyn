@@ -89,8 +89,9 @@
                                 </div>
                                 <!--end::Card header-->
                                 <!--begin::Card body-->
-                                <div class="card-body">
+                                <div class="card-body pt-0 noPadding">
                                     <!--begin::Table-->
+                                    <div class="table-responsive">
                                     <table class="table align-middle rounded table-row-dashed fs-6 g-5" id="kt_datatable_example">
                                         <thead>
                                             <tr class="text-start text-gray-400 fw-bold fs-7 text-uppercase">
@@ -135,6 +136,7 @@
                                         </tbody>
                                     </table>
                                     <!--end::Card body-->
+                                                        </div>
                                 </div>
 
                             </div>

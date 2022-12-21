@@ -104,4 +104,27 @@ class Submissions extends CI_Controller
 
 	}
 	}
+
+	public function cancel_submission()
+	{
+		$data["reference_number"] = $this->input->post('referernce_number');
+		print_r($this->msubmissions->cancel_submission($data));
+	}
+
+	public function view_submission()
+	{
+		if ($this->session->userdata('full_name') != '') 
+        {
+            $data["Email"] = $this->session->userdata('full_name');
+            $value["user_name"] = $this->musers->user_details($data);
+			$reference = $this->input->get("id");
+			$push["supplier_data"] = $this->msubmissions->view_single_submission_supplier($reference);
+			$push["member_data"] = $this->msubmissions->view_submission_member($reference);
+			$push["get_user"] = $this->msubmissions->get_user($reference);
+            $this->load->view('header',$value);
+            $this->load->view('single_submission',$push);
+
+        }
+
+	}
 }

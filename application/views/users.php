@@ -6,6 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Administration - Buyyn</title>
+    <style>
+         @media only screen and (max-width: 576px) {
+        .mobile {
+            width: 100% !important;
+        }
+
+        .noPadding {
+            padding: 0 !important;
+        }
+
+        .mobileAlign {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .mobileFont {
+            font-size: 10px !important;
+        }
+    }
+    </style>
 </head>
 
 <body style="background: rgb(244, 247, 249);">
@@ -94,7 +114,7 @@
                                                         </svg>
                                                     </span>
                                                     <!--end::Svg Icon-->
-                                                    <input type="text" data-kt-user-table-filter="search" class="form-control form-control-solid w-250px ps-14" placeholder="Search user" />
+                                                    <input type="text" data-kt-user-table-filter="search" class="form-control form-control-solid w-250px ps-14 mobile" placeholder="Search user" />
                                                 </div>
                                                 <!--end::Search-->
                                             </div>
@@ -104,7 +124,7 @@
                                                 <!--begin::Toolbar-->
                                                 <div class="d-flex justify-content-end" data-kt-user-table-toolbar="base">
                                                     <!--begin::Filter-->
-                                                    <button type="button" class="btn btn-light-primary me-3" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                    <button type="button" class="btn btn-sm btn-light-primary me-3" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
                                                         <!--begin::Svg Icon | path: icons/duotune/general/gen031.svg-->
                                                         <span class="svg-icon svg-icon-2">
                                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -148,7 +168,7 @@
                                                     <!--end::Menu 1-->
                                                     <!--end::Filter-->
                                                     <!--begin::Export-->
-                                                    <a href="<?php echo base_url() ?>users/exportSupplier" type="button" class="btn btn-light-primary me-3">
+                                                    <a href="<?php echo base_url() ?>users/exportSupplier" type="button" class="btn bt-sm btn-light-primary me-3">
                                                         <!--begin::Svg Icon | path: icons/duotune/arrows/arr078.svg-->
                                                         <span class="svg-icon svg-icon-2">
                                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -161,7 +181,7 @@
                                                     </a>
                                                     <!--end::Export-->
                                                     <!--begin::Add user-->
-                                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#kt_modal_add_user">
+                                                    <button type="button" class="btn btn-sm btn-primary p-2" data-bs-toggle="modal" data-bs-target="#kt_modal_add_user">
                                                         <!--begin::Svg Icon | path: icons/duotune/arrows/arr075.svg-->
                                                         <span class="svg-icon svg-icon-2">
                                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -476,7 +496,7 @@
                                                         </svg>
                                                     </span>
                                                     <!--end::Svg Icon-->
-                                                    <input type="text" data-kt-member-table-filter="search" class="form-control form-control-solid w-250px ps-14" placeholder="Search user" />
+                                                    <input type="text" data-kt-member-table-filter="search" class="form-control form-control-solid w-100 ps-14 moblie" placeholder="Search user" />
                                                 </div>
                                                 <!--end::Search-->
                                             </div>
@@ -486,7 +506,7 @@
                                                 <!--begin::Toolbar-->
                                                 <div class="d-flex justify-content-end" data-kt-member-table-toolbar="base">
                                                     <!--begin::Filter-->
-                                                    <button type="button" class="btn btn-light-primary me-3" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                    <button type="button" class="btn btn-sm btn-light-primary me-3" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
                                                         <!--begin::Svg Icon | path: icons/duotune/general/gen031.svg-->
                                                         <span class="svg-icon svg-icon-2">
                                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -530,7 +550,7 @@
                                                     <!--end::Menu 1-->
                                                     <!--end::Filter-->
                                                     <!--begin::Export-->
-                                                    <button type="button" class="btn btn-light-primary me-3" data-bs-toggle="modal" data-bs-target="#kt_modal_export_members">
+                                                    <button type="button" class="btn btn-sm btn-light-primary me-3" data-bs-toggle="modal" data-bs-target="#kt_modal_export_members">
                                                         <!--begin::Svg Icon | path: icons/duotune/arrows/arr078.svg-->
                                                         <span class="svg-icon svg-icon-2">
                                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -543,7 +563,7 @@
                                                     </button>
                                                     <!--end::Export-->
                                                     <!--begin::Add user-->
-                                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#kt_modal_add_member">
+                                                    <button type="button" class="btn btn-sm btn-primary p-2" data-bs-toggle="modal" data-bs-target="#kt_modal_add_member">
                                                         <!--begin::Svg Icon | path: icons/duotune/arrows/arr075.svg-->
                                                         <span class="svg-icon svg-icon-2">
                                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -928,7 +948,7 @@
                                                         </svg>
                                                     </span>
                                                     <!--end::Svg Icon-->
-                                                    <input type="text" data-kt-admin-table-filter="search" class="form-control form-control-solid w-250px ps-14" placeholder="Search user" />
+                                                    <input type="text" data-kt-admin-table-filter="search" class="form-control form-control-solid w-250px ps-14 mobile" placeholder="Search user" />
                                                 </div>
                                                 <!--end::Search-->
                                             </div>
@@ -938,7 +958,7 @@
                                                 <!--begin::Toolbar-->
                                                 <div class="d-flex justify-content-end" data-kt-admin-table-toolbar="base">
                                                     <!--begin::Filter-->
-                                                    <button type="button" class="btn btn-light-primary me-3" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                    <button type="button" class="btn btn-sm btn-light-primary me-3" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
                                                         <!--begin::Svg Icon | path: icons/duotune/general/gen031.svg-->
                                                         <span class="svg-icon svg-icon-2">
                                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -982,7 +1002,7 @@
                                                     <!--end::Menu 1-->
                                                     <!--end::Filter-->
                                                     <!--begin::Export-->
-                                                    <a href="<?php echo base_url() ?>users/exportAdmin" type="button" class="btn btn-light-primary me-3">
+                                                    <a href="<?php echo base_url() ?>users/exportAdmin" type="button" class="btn btn-sm btn-light-primary me-3">
                                                         <!--begin::Svg Icon | path: icons/duotune/arrows/arr078.svg-->
                                                         <span class="svg-icon svg-icon-2">
                                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -995,7 +1015,7 @@
                                                     </a>
                                                     <!--end::Export-->
                                                     <!--begin::Add user-->
-                                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#kt_modal_add_admin">
+                                                    <button type="button" class="btn btn-sm btn-primary p-2" data-bs-toggle="modal" data-bs-target="#kt_modal_add_admin">
                                                         <!--begin::Svg Icon | path: icons/duotune/arrows/arr075.svg-->
                                                         <span class="svg-icon svg-icon-2">
                                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

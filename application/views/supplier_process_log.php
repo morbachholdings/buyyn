@@ -88,6 +88,7 @@
 										<!--begin::Card body-->
 										<div class="card-body pt-0 noPadding">
 											<!--begin::Table-->
+                                            <div class="table-responsive">
 											<table class="table align-middle table-row-dashed fs-6 gy-5" id="kt_ecommerce_products_table_1">
 												<!--begin::Table head-->
 												<thead>
@@ -142,6 +143,7 @@
 												</tbody>
 												<!--end::Table body-->
 											</table>
+                                                        </div>
 											<!--end::Table-->
 										</div>
 										<!--end::Card body-->

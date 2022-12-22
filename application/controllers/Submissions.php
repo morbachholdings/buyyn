@@ -8,6 +8,7 @@ class Submissions extends CI_Controller
 		parent::__construct();
 		$this->load->model('musers');
         $this->load->model('msubmissions');
+		$this->load->model('mnotifications');
 		$this->load->library('session');
 	}
 
@@ -49,6 +50,22 @@ class Submissions extends CI_Controller
 
 
 		);
+
+		// $params=array(
+			
+		// 	'title'=>"New Submission Added - ",
+		// 	'description'=>"asd",
+		// 	'user_id'=>176,
+		// 	'is_read'=>0,
+		// );
+
+		$para["title"]="test";
+$para["description"]="testeest";
+$para["user_id"]=176;
+$para["is_read"]=0;
+
+		$this->mnotifications->add_notification($params);
+
 		// $params = array(
 		// 	'user_id'=> $this->session->userdata('user_id'),
 		// 	'action' => "Submitted Data",

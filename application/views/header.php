@@ -889,7 +889,7 @@
                                         <!--begin::Tab content-->
                                         <div class="tab-content">
                                             <!--begin::Tab panel-->
-                                            <div class="tab-pane fade show active" id="kt_topbar_notifications_1" role="tabpanel">
+                                            <div class="tab-pane fade" id="kt_topbar_notifications_1" role="tabpanel">
                                                 <!--begin::Items-->
                                                 <div class="scroll-y mh-325px my-5 px-8">
                                                     <!--begin::Item-->
@@ -1145,10 +1145,14 @@
                                             </div>
                                             <!--end::Tab panel-->
                                             <!--begin::Tab panel-->
-                                            <div class="tab-pane fade" id="kt_topbar_notifications_2" role="tabpanel">
+                                            <div class="tab-pane fade show active" id="kt_topbar_notifications_2" role="tabpanel">
                                                 <!--begin::Wrapper-->
-                                                <div class="scroll-y mh-325px my-5 px-8">
+                                                <div class="d-flex align-items-end justify-content-end">
+                                                    <a href=""><p class="align-end mt-3 mx-4">Mark all as read</p></a>
+                                                </div>
+                                                <div class="scroll-y mh-325px my-2 px-8">
                                                     <!--begin::Section-->
+
 
 
                                                     <?php foreach ($notifications->result() as $row) { ?>
@@ -1172,17 +1176,17 @@
                                                             <!--end::Symbol-->
                                                             <!--begin::Title-->
                                                             <div class="mb-0 me-2">
-                                                                <a href="#" class="fs-6 text-gray-800 text-hover-primary fw-bold"><?php //echo $row->title ?>Project Alice</a>
+                                                                <a href="#" class="fs-6 text-gray-800 text-hover-primary fw-bold"><?php echo $row->title ?></a>
                                                               
                                                                 <div class="text-gray-400 fs-7">
-                                                                    Phase 1 development
+                                                                <?php echo $row->description ?>
                                                                 </div>
                                                             </div>
                                                             <!--end::Title-->
                                                         </div>
                                                         <!--end::Section-->
                                                         <!--begin::Label-->
-                                                        <span class="badge badge-light fs-8">1 hr</span>
+                                                        <button class="btn"><span class="badge badge-light fs-8"> x </span></button>
                                                         <!--end::Label-->
                                                     </div>
 

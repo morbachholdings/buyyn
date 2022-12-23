@@ -35,8 +35,18 @@
                             <div class="d-flex align-items-center">
                               <!--begin::Amount-->
                               <span
+                                class="fs-4 fw-semibold text-gray-400 me-1 align-self-start"
+                                >$</span
+                              >
+                              <span
                                 class="fs-2hx fw-bold text-dark me-2 lh-1 ls-n2"
-                                >1,836</span
+                                ><?php foreach ($view_total_sales->result() as $row) 
+                                if($row->total_sales==NULL){
+                                  echo "0";
+                                }else{
+                                  echo number_format($row->total_sales);
+                                }
+                                 ?></span
                               >
                               <!--end::Amount-->
                               <!--begin::Badge-->
@@ -74,8 +84,9 @@
                             </div>
                             <!--end::Info-->
                             <!--begin::Subtitle-->
+                            
                             <span class="text-gray-400 pt-1 fw-semibold fs-6"
-                              >Total Purchases</span
+                              >Total Sales: <?php echo date("Y"); ?></span
                             >
                             <!--end::Subtitle-->
                           </div>
@@ -139,7 +150,13 @@
                               <!--begin::Amount-->
                               <span
                                 class="fs-2hx fw-bold text-dark me-2 lh-1 ls-n2"
-                                >2,420</span
+                                ><?php foreach ($view_top_sales->result() as $row) 
+                                if($row->top_sales==NULL){
+                                  echo "0";
+                                }else{
+                                  echo number_format($row->top_sales);
+                                }
+                                 ?></span
                               >
                               <!--end::Amount-->
                               <!--begin::Badge-->
@@ -178,7 +195,11 @@
                             <!--end::Info-->
                             <!--begin::Subtitle-->
                             <span class="text-gray-400 pt-1 fw-semibold fs-6"
-                              >Rebate Earnings</span
+                              >Top Performing Member : <?php foreach ($view_top_sales->result() as $row) 
+                                
+                                  echo $row->name;
+                                
+                                 ?></span
                             >
                             <!--end::Subtitle-->
                           </div>
@@ -252,9 +273,9 @@
                             <span class="card-label fw-bold text-gray-800"
                               >Process Log</span
                             >
-                            <span class="text-gray-400 mt-1 fw-semibold fs-6"
-                              >Avg. 57 orders per day</span
-                            >
+                            <!-- <span class="text-gray-400 mt-1 fw-semibold fs-6"
+                              >Avg. 57 orders per day</span >-->
+                            
                           </h3>
                           <!--end::Title-->
                           <!--begin::Actions-->
@@ -349,12 +370,12 @@
                               <tr
                                 class="text-start text-gray-400 fw-bold fs-7 text-uppercase gs-0"
                               >
-                                <th class="min-w-100px">Order ID</th>
-                                <th class="text-end min-w-100px">Created</th>
-                                <th class="text-end min-w-125px">Customer</th>
-                                <th class="text-end min-w-100px">Total</th>
-                                <th class="text-end min-w-100px">Profit</th>
-                                <th class="text-end min-w-50px">Status</th>
+                              <th class="min-w-125px">Log ID</th>
+                            <th class="min-w-125px">Username</th>
+                            <th class="min-w-125px">Action</th>
+                            <th class="min-w-125px">Device Name</th>
+                            <th class="min-w-125px">IP Address</th>
+                            <th class="min-w-125px">Date and Time</th>
                                 <th class="text-end"></th>
                               </tr>
                               <!--end::Table row-->
@@ -362,296 +383,44 @@
                             <!--end::Table head-->
                             <!--begin::Table body-->
                             <tbody class="fw-bold text-gray-600">
-                              <tr
-                                data-kt-table-widget-4="subtable_template"
-                                class="d-none"
-                              >
-                                <td colspan="2">
-                                  <div class="d-flex align-items-center gap-3">
-                                    <a
-                                      href="#"
-                                      class="symbol symbol-50px bg-secondary bg-opacity-25 rounded"
-                                    >
-                                      <img
-                                        src=""
-                                        data-kt-src-path="assets/media/stock/ecommerce/"
-                                        alt=""
-                                        data-kt-table-widget-4="template_image"
-                                      />
-                                    </a>
-                                    <div class="d-flex flex-column text-muted">
-                                      <a
-                                        href="#"
-                                        class="text-gray-800 text-hover-primary fw-bold"
-                                        data-kt-table-widget-4="template_name"
-                                        >Product name</a
-                                      >
-                                      <div
-                                        class="fs-7"
-                                        data-kt-table-widget-4="template_description"
-                                      >
-                                        Product description
-                                      </div>
-                                    </div>
-                                  </div>
-                                </td>
-                                <td class="text-end">
-                                  <div class="text-gray-800 fs-7">Cost</div>
-                                  <div
-                                    class="text-muted fs-7 fw-bold"
-                                    data-kt-table-widget-4="template_cost"
-                                  >
-                                    1
-                                  </div>
-                                </td>
-                                <td class="text-end">
-                                  <div class="text-gray-800 fs-7">Qty</div>
-                                  <div
-                                    class="text-muted fs-7 fw-bold"
-                                    data-kt-table-widget-4="template_qty"
-                                  >
-                                    1
-                                  </div>
-                                </td>
-                                <td class="text-end">
-                                  <div class="text-gray-800 fs-7">Total</div>
-                                  <div
-                                    class="text-muted fs-7 fw-bold"
-                                    data-kt-table-widget-4="template_total"
-                                  >
-                                    name
-                                  </div>
-                                </td>
-                                <td class="text-end">
-                                  <div class="text-gray-800 fs-7 me-3">
-                                    On hand
-                                  </div>
-                                  <div
-                                    class="text-muted fs-7 fw-bold"
-                                    data-kt-table-widget-4="template_stock"
-                                  >
-                                    32
-                                  </div>
-                                </td>
-                                <td></td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <a
-                                    href="../../demo22/dist/apps/ecommerce/catalog/edit-product.php"
-                                    class="text-gray-800 text-hover-primary"
-                                    >#XGY-346</a
-                                  >
-                                </td>
-                                <td class="text-end">7 min ago</td>
-                                <td class="text-end">
-                                  <a
-                                    href="#"
-                                    class="text-gray-600 text-hover-primary"
-                                    >Albert Flores</a
-                                  >
-                                </td>
-                                <td class="text-end">$630.00</td>
-                                <td class="text-end">
-                                  <span class="text-gray-800 fw-bolder"
-                                    >$86.70</span
-                                  >
-                                </td>
-                                <td class="text-end">
-                                  <span
-                                    class="badge py-3 px-4 fs-7 badge-light-warning"
-                                    >Pending</span
-                                  >
-                                </td>
-                                
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <a
-                                    href="../../demo22/dist/apps/ecommerce/catalog/edit-product.php"
-                                    class="text-gray-800 text-hover-primary"
-                                    >#YHD-047</a
-                                  >
-                                </td>
-                                <td class="text-end">52 min ago</td>
-                                <td class="text-end">
-                                  <a
-                                    href="#"
-                                    class="text-gray-600 text-hover-primary"
-                                    >Jenny Wilson</a
-                                  >
-                                </td>
-                                <td class="text-end">$25.00</td>
-                                <td class="text-end">
-                                  <span class="text-gray-800 fw-bolder"
-                                    >$4.20</span
-                                  >
-                                </td>
-                                <td class="text-end">
-                                  <span
-                                    class="badge py-3 px-4 fs-7 badge-light-primary"
-                                    >Confirmed</span
-                                  >
-                                </td>
-                                
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <a
-                                    href="../../demo22/dist/apps/ecommerce/catalog/edit-product.php"
-                                    class="text-gray-800 text-hover-primary"
-                                    >#SRR-678</a
-                                  >
-                                </td>
-                                <td class="text-end">1 hour ago</td>
-                                <td class="text-end">
-                                  <a
-                                    href="#"
-                                    class="text-gray-600 text-hover-primary"
-                                    >Robert Fox</a
-                                  >
-                                </td>
-                                <td class="text-end">$1,630.00</td>
-                                <td class="text-end">
-                                  <span class="text-gray-800 fw-bolder"
-                                    >$203.90</span
-                                  >
-                                </td>
-                                <td class="text-end">
-                                  <span
-                                    class="badge py-3 px-4 fs-7 badge-light-warning"
-                                    >Pending</span
-                                  >
-                                </td>
-                                
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <a
-                                    href="../../demo22/dist/apps/ecommerce/catalog/edit-product.php"
-                                    class="text-gray-800 text-hover-primary"
-                                    >#PXF-534</a
-                                  >
-                                </td>
-                                <td class="text-end">3 hour ago</td>
-                                <td class="text-end">
-                                  <a
-                                    href="#"
-                                    class="text-gray-600 text-hover-primary"
-                                    >Cody Fisher</a
-                                  >
-                                </td>
-                                <td class="text-end">$119.00</td>
-                                <td class="text-end">
-                                  <span class="text-gray-800 fw-bolder"
-                                    >$12.00</span
-                                  >
-                                </td>
-                                <td class="text-end">
-                                  <span
-                                    class="badge py-3 px-4 fs-7 badge-light-success"
-                                    >Shipped</span
-                                  >
-                                </td>
-                                
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <a
-                                    href="../../demo22/dist/apps/ecommerce/catalog/edit-product.php"
-                                    class="text-gray-800 text-hover-primary"
-                                    >#XGD-249</a
-                                  >
-                                </td>
-                                <td class="text-end">2 day ago</td>
-                                <td class="text-end">
-                                  <a
-                                    href="#"
-                                    class="text-gray-600 text-hover-primary"
-                                    >Arlene McCoy</a
-                                  >
-                                </td>
-                                <td class="text-end">$660.00</td>
-                                <td class="text-end">
-                                  <span class="text-gray-800 fw-bolder"
-                                    >$52.26</span
-                                  >
-                                </td>
-                                <td class="text-end">
-                                  <span
-                                    class="badge py-3 px-4 fs-7 badge-light-success"
-                                    >Shipped</span
-                                  >
-                                </td>
-                                
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <a
-                                    href="../../demo22/dist/apps/ecommerce/catalog/edit-product.php"
-                                    class="text-gray-800 text-hover-primary"
-                                    >#SKP-035</a
-                                  >
-                                </td>
-                                <td class="text-end">2 day ago</td>
-                                <td class="text-end">
-                                  <a
-                                    href="#"
-                                    class="text-gray-600 text-hover-primary"
-                                    >Eleanor Pena</a
-                                  >
-                                </td>
-                                <td class="text-end">$290.00</td>
-                                <td class="text-end">
-                                  <span class="text-gray-800 fw-bolder"
-                                    >$29.00</span
-                                  >
-                                </td>
-                                <td class="text-end">
-                                  <span
-                                    class="badge py-3 px-4 fs-7 badge-light-danger"
-                                    >Rejected</span
-                                  >
-                                </td>
-                                
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <a
-                                    href="../../demo22/dist/apps/ecommerce/catalog/edit-product.php"
-                                    class="text-gray-800 text-hover-primary"
-                                    >#SKP-567</a
-                                  >
-                                </td>
-                                <td class="text-end">7 min ago</td>
-                                <td class="text-end">
-                                  <a
-                                    href="#"
-                                    class="text-gray-600 text-hover-primary"
-                                    >Dan Wilson</a
-                                  >
-                                </td>
-                                <td class="text-end">$590.00</td>
-                                <td class="text-end">
-                                  <span class="text-gray-800 fw-bolder"
-                                    >$50.00</span
-                                  >
-                                </td>
-                                <td class="text-end">
-                                  <span
-                                    class="badge py-3 px-4 fs-7 badge-light-success"
-                                    >Shipped</span
-                                  >
-                                </td>
-                                
-                                </td>
-                              </tr>
+                             
+                              
+                            
+
+                              <?php foreach ($all_processors->result() as $row) { ?>
+                                                <tr>
+                                                
+                                                <td class="text-start pe-0">
+                                                        <?php if ($row->process_type_id == 200) { ?>
+                                                            <span class="badge py-3 px-4 fs-7 badge-light-success">200 OK</span>
+                                                        <?php }else if($row->process_type_id == 522){ ?>
+                                                            <span class="badge py-3 px-4 fs-7 badge-light-warning">522 Warning</span>
+                                                        <?php }else{ ?>
+                                                        <span class="badge py-3 px-4 fs-7 badge-light-danger">404 Error</span>
+                                                        <?php } ?>
+
+                                                    </td>
+                                                    <td>
+                                                        <?php echo $row->First_name ?>
+                                                    </td>
+                                                    <td>
+                                                        <?php echo $row->title ?>
+                                                    </td>
+                                                    
+                                                    <td>
+                                                        <?php echo $row->device ?>
+                                                    </td>
+                                                    <td><?php echo $row->ip_address ?></td>
+                                                    <td class="text-start pe-0"><?php echo $row->process_time ?></td>
+                                                    
+
+                                                </tr>
+                                            <?php } ?>
+
+
+
+
+                              
                             </tbody>
                             <!--end::Table body-->
                           </table>

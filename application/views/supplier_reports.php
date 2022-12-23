@@ -51,8 +51,7 @@
             <div class="col-md-3 mobile mobile w-100 mw-300px">
               <select name="language" aria-label="Select Month" data-control="select2" data-placeholder="Select a language..." class="form-select form-select-solid form-select-lg">
                                                                     <option value="- Report Type -">- Report Type -</option>
-                                                                    <option value="option1">Option 1</option>
-                                                                    <option value="option2">Option 2</option>
+                                                                    <option value="option1">Member Performance</option>
                                                                 </select>
             </div>
             <div class="col-md-3 mobile mobile w-100 mw-300px">

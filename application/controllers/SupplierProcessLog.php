@@ -10,6 +10,7 @@ class SupplierProcessLog extends CI_Controller
         $this->load->model('mprocess');
         $this->load->model('msubmissions');
 		$this->load->library('session');
+        $this->load->model('mnotifications');
 	}
 
     public function supplier_process_log()
@@ -20,6 +21,7 @@ class SupplierProcessLog extends CI_Controller
             $value["user_name"] = $this->musers->user_details($data);
             $user_id = $this->musers->user_id($data["Email"]);
             $log["all_processors"] = $this->mprocess->view_process($user_id);
+            $value["notifications"]=$this->mnotifications->view_supplier_notifications($user_id);
             $this->load->view('supplier_header',$value);
             $this->load->view('supplier_process_log',$log);
          }

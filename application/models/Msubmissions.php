@@ -172,5 +172,11 @@ class Msubmissions extends CI_Model
         AND reference_number ='" . $reference . "'";
         return $this->db->query($sql);
     }
+
+    public function delete_zero()
+    {
+        $sql="DELETE FROM submissions WHERE amount=0 AND is_child=0";
+        return $this->db->query($sql);
+    }
 }
 

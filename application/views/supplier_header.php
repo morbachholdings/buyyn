@@ -1212,26 +1212,31 @@
                                                     
                                                     <?php foreach ($all_processors->result() as $row) { ?>
                                                 
-                                                        <?php //if ($row->process_type_id == 200) { ?>
-                                                            <!-- <span class="badge py-3 px-4 fs-7 badge-light-success">200 OK</span> -->
-                                                        <?php //}else if($row->process_type_id == 522){ ?>
-                                                            <!-- <span class="badge py-3 px-4 fs-7 badge-light-warning">522 Warning</span> -->
-                                                        <?php //}else{ ?>
-                                                        <!-- <span class="badge py-3 px-4 fs-7 badge-light-danger">404 Error</span> -->
-                                                        <?php //} ?>
+                                                        <?php if ($row->process_type_id == 200) { ?>
+                                                            <span class="badge py-3 px-4 fs-7 badge-light-success">200 OK</span>
+                                                        <?php }else if($row->process_type_id == 522){ ?>
+                                                            <span class="badge py-3 px-4 fs-7 badge-light-warning">522 Warning</span>
+                                                        <?php }else{ ?>
+                                                        <span class="badge py-3 px-4 fs-7 badge-light-danger">404 Error</span>
+                                                        <?php } ?>
 
                                                 
                                                         <?php echo $row->First_name ?>
                                                    
-                                                        <?php //echo $row->title ?>
+                                                        <?php echo $row->title ?>
                                                    
-                                                        <?php //echo $row->device ?>
-                                                  <?php //echo $row->ip_address ?></td>
-                                                   <?php// echo $row->process_time ?>
+                                                        <?php echo $row->device ?>
+                                                  <?php echo $row->ip_address ?></td>
+                                                   <?php echo $row->process_time ?>
                                                     
 
                                             
-                                            <?php } ?>
+                                            <?php //} ?>
+                                            <script>
+                                                	$(document).on("laod",  function(){
+
+                                                    }
+                                            </script>
                                                     <div class="d-flex flex-stack py-4">
                                                         <!--begin::Section-->
                                                         <div class="d-flex align-items-center me-2">
@@ -2087,41 +2092,6 @@
                     <!--end::Footer-->
                 </div>
             </div>
-            <!--end::Activities drawer-->
-
-
-
-
-            <!--begin::Global Javascript Bundle(used by all pages)-->
-            <script src="<?php echo base_url() ?>assets/plugins/global/plugins.bundle.js"></script>
-            <script src="<?php echo base_url() ?>assets/js/scripts.bundle.js"></script>
-            <!--end::Global Javascript Bundle-->
-            <!--begin::Vendors Javascript(used by this page)-->
-            <script src="<?php echo base_url() ?>assets/plugins/custom/fullcalendar/fullcalendar.bundle.js"></script>
-            <script src="<?php echo base_url() ?>assets/js/charts/index.js"></script>
-            <script src="<?php echo base_url() ?>assets/js/charts/xy.js"></script>
-            <!-- <script src="<?php echo base_url() ?>assets/js/charts/percent.js"></script>
-            <script src="<?php echo base_url() ?>assets/js/charts/radar.js"></script> -->
-            <script src="<?php echo base_url() ?>assets/js/charts/Animated.js"></script>
-            <!-- <script src="<?php echo base_url() ?>assets/js/charts/map.js"></script>
-            <script src="<?php echo base_url() ?>assets/js/charts/worldLow.js"></script>
-            <script src="<?php echo base_url() ?>assets/js/charts/continentsLow.js"></script>
-            <script src="<?php echo base_url() ?>assets/js/charts/usaLow.js"></script>
-            <script src="<?php echo base_url() ?>assets/js/charts/worldTimeZonesLow.js"></script>
-            <script src="<?php echo base_url() ?>assets/js/charts/worldTimeZoneAreasLow.js"></script> -->
-            <script src="<?php echo base_url() ?>assets/plugins/custom/datatables/datatables.bundle.js"></script>
-            <!--end::Vendors Javascript-->
-            <!--begin::Custom Javascript(used by this page)-->
-            <script src="<?php echo base_url() ?>assets/js/widgets.bundle.js"></script>
-            <script src="<?php echo base_url() ?>assets/js/custom/widgets.js"></script>
-            <script src="<?php echo base_url() ?>assets/js/custom/apps/chat/chat.js"></script>
-            <script src="<?php echo base_url() ?>assets/js/custom/utilities/modals/users-search.js"></script>
-            <!-- <script src="<?php echo base_url() ?>assets/js/custom/graph/supplierPerformance-bar.js"></script> -->
-            <!-- <script src="<?php echo base_url() ?>assets/js/custom/graph/supplierPerformance-line.js"></script> -->
-
-            <script src="<?php echo base_url() ?>assets/js/custom/account/settings/profile-details.js"></script>
-            <script src="<?php echo base_url() ?>assets/js/custom/pages/user-profile/general.js"></script>
-            <!--end::Custom Javascript-->
-</body>
+            <!--end::Activities drawer--></body>
 
 </html>

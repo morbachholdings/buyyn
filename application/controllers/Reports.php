@@ -7,7 +7,9 @@ class Reports extends CI_Controller
     {
         parent::__construct();
         $this->load->model('musers');
+        $this->load->model('mreports');
         $this->load->library('session');
+        $this->load->model('mnotifications');
     }
 
     public function reports()
@@ -15,11 +17,26 @@ class Reports extends CI_Controller
         if ($this->session->userdata('full_name') != '') {
             $data["Email"] = $this->session->userdata('full_name');
             $value["user_name"] = $this->musers->user_details($data);
-          
-            $this->load->view('header',$value);
+            $value["notifications"] = $this->mnotifications->view_notifications();
+            $this->load->view('header', $value);
             $this->load->view('reports');
         } else {
             redirect(base_url() . 'Authentication/index');
         }
+    }
+
+    public function view_member_report()
+    {
+        $data["date_from"] = $this->input->post('date_from');
+        $data["date_to"] = $this->input->post('date_to');
+        $data["user_group"] = $this->input->post('user_group');
+        print_r($this->mreports->view_member_report($data));
+    }
+    public function view_supplier_report()
+    {
+        $data["date_from"] = $this->input->post('date_from');
+        $data["date_to"] = $this->input->post('date_to');
+        $data["user_group"] = $this->input->post('user_group');
+        print_r($this->mreports->view_supplier_report($data));
     }
 }

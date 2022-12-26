@@ -52,10 +52,13 @@
                                                     <div class="col-md-3 mobile w-100 mw-300px">
                                                         <div class=" align-items-center fw-bold rounded-4">
 
-                                                            <select name="language" aria-label="Select Month" data-control="select2" data-placeholder="Select a language..." class="form-select form-select-solid form-select-lg rounded-4">
-                                                                <option value="- Report Type -">- Date Range -</option>
-                                                                <option value="option1">2020 - 2021</option>
-                                                                <option value="option2">2021 - 2022</option>
+                                                            <select name="language" id="date_from" aria-label="Select Financial Year" data-control="select2" data-placeholder="Select Financial Year..." class="form-select form-select-solid form-select-lg rounded-4">
+                                                                <option value="">- Select Financial Year -</option>
+                                                                <option value="2018-2019">2018-2019</option>
+                                                                <option value="2019-2020">2019-2020</option>
+                                                                <option value="2020-2021">2020-2021</option>
+                                                                <option value="2021-2022">2021-2022</option>
+                                                                <option value="2022-2023">2022-2023</option>
                                                             </select>
                                                         </div>
 
@@ -63,23 +66,23 @@
 
                                                     <!--end::Destination-->
                                                     <div class="col-md-3 mobile w-100 mw-300px">
-                                                        <select name="language" aria-label="Select Month" data-control="select2" data-placeholder="Select a language..." class="form-select form-select-solid form-select-lg">
-                                                            <option value="- Report Type -">- Report Type -</option>
-                                                            <option value="option1">Option 1</option>
-                                                            <option value="option2">Option 2</option>
+                                                        <select name="language" id="report_type" aria-label="Select Report Type" data-control="select2" data-placeholder="Select Report Type..." class="form-select form-select-solid form-select-lg">
+                                                            <option value="- Select Type -">- Select Type -</option>
+                                                            <option value="Member Performance">Member Performance</option>
+                                                            <option value="Supplier Performance">Supplier Performance</option>
                                                         </select>
                                                     </div>
                                                     <div class="col-md-3 mobile w-100 mw-300px">
 
                                                         <!-- <input class="form-control d-flex align-items-center" value="" id="kt_tagify_suppliers" /> -->
-                                                        <input class="form-control d-flex align-items-center" type="text" id="myInput" onkeyup="searchFunction()" placeholder="Search Names..">
+                                                        <input class="form-control d-flex align-items-center" type="text" id="myInput" onkeyup="searchFunction()" placeholder="Search Names.." style="display: none !important;">
 
                                                     </div>
 
 
                                                     <div class="col-md-2 d-flex align-items-end justify-content-between">
 
-                                                        <button class="btn btn-primary mb-0 rounded-4 shadow-md">Apply</button>
+                                                        <button class="btn btn-primary mb-0 rounded-4 shadow-md" id="btn_search">Apply</button>
                                                         <!--begin::Export dropdown-->
                                                         <button type="button" class="btn btn-light-primary mx-2 w-100" style="width:150px;" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
 
@@ -157,151 +160,8 @@
                                                             <th class="min-w-200px fw-bold">Grand Total</th>
                                                         </tr>
                                                     </thead>
-                                                    <tbody class="fs-5">
-                                                        <tr>
-                                                            <td class="fw-bold">Garrett</td>
-                                                            <td>Winters</td>
-                                                            <td>Accountant</td>
-                                                            <td>Tokyo</td>
-                                                            <td>63</td>
-                                                            <td>2011/07/25</td>
-                                                            <td>$170,750</td>
-                                                            <td>8422</td>
-                                                            <td>g.winters@datatables.net</td>
-                                                            <td>2011/07/25</td>
-                                                            <td>$170,750</td>
-                                                            <td>8422</td>
-                                                            <td>g.winters@datatables.net</td>
-                                                            <td>g.winters@datatables.net</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="fw-bold">Garrett</td>
-                                                            <td>Winters</td>
-                                                            <td>Accountant</td>
-                                                            <td>Tokyo</td>
-                                                            <td>63</td>
-                                                            <td>2011/07/25</td>
-                                                            <td>$170,750</td>
-                                                            <td>8422</td>
-                                                            <td>g.winters@datatables.net</td>
-                                                            <td>2011/07/25</td>
-                                                            <td>$170,750</td>
-                                                            <td>8422</td>
-                                                            <td>g.winters@datatables.net</td>
-                                                            <td>g.winters@datatables.net</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="fw-bold">Garrett</td>
-                                                            <td>Winters</td>
-                                                            <td>Accountant</td>
-                                                            <td>Tokyo</td>
-                                                            <td>63</td>
-                                                            <td>2011/07/25</td>
-                                                            <td>$170,750</td>
-                                                            <td>8422</td>
-                                                            <td>g.winters@datatables.net</td>
-                                                            <td>2011/07/25</td>
-                                                            <td>$170,750</td>
-                                                            <td>8422</td>
-                                                            <td>g.winters@datatables.net</td>
-                                                            <td>g.winters@datatables.net</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="fw-bold">Garrett</td>
-                                                            <td>Winters</td>
-                                                            <td>Accountant</td>
-                                                            <td>Tokyo</td>
-                                                            <td>63</td>
-                                                            <td>2011/07/25</td>
-                                                            <td>$170,750</td>
-                                                            <td>8422</td>
-                                                            <td>g.winters@datatables.net</td>
-                                                            <td>2011/07/25</td>
-                                                            <td>$170,750</td>
-                                                            <td>8422</td>
-                                                            <td>g.winters@datatables.net</td>
-                                                            <td>g.winters@datatables.net</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="fw-bold">Garrett</td>
-                                                            <td>Winters</td>
-                                                            <td>Accountant</td>
-                                                            <td>Tokyo</td>
-                                                            <td>63</td>
-                                                            <td>2011/07/25</td>
-                                                            <td>$170,750</td>
-                                                            <td>8422</td>
-                                                            <td>g.winters@datatables.net</td>
-                                                            <td>2011/07/25</td>
-                                                            <td>$170,750</td>
-                                                            <td>8422</td>
-                                                            <td>g.winters@datatables.net</td>
-                                                            <td>g.winters@datatables.net</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="fw-bold">Garrett</td>
-                                                            <td>Winters</td>
-                                                            <td>Accountant</td>
-                                                            <td>Tokyo</td>
-                                                            <td>63</td>
-                                                            <td>2011/07/25</td>
-                                                            <td>$170,750</td>
-                                                            <td>8422</td>
-                                                            <td>g.winters@datatables.net</td>
-                                                            <td>2011/07/25</td>
-                                                            <td>$170,750</td>
-                                                            <td>8422</td>
-                                                            <td>g.winters@datatables.net</td>
-                                                            <td>g.winters@datatables.net</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="fw-bold">Garrett</td>
-                                                            <td>Winters</td>
-                                                            <td>Accountant</td>
-                                                            <td>Tokyo</td>
-                                                            <td>63</td>
-                                                            <td>2011/07/25</td>
-                                                            <td>$170,750</td>
-                                                            <td>8422</td>
-                                                            <td>g.winters@datatables.net</td>
-                                                            <td>2011/07/25</td>
-                                                            <td>$170,750</td>
-                                                            <td>8422</td>
-                                                            <td>g.winters@datatables.net</td>
-                                                            <td>g.winters@datatables.net</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="fw-bold">Garrett</td>
-                                                            <td>Winters</td>
-                                                            <td>Accountant</td>
-                                                            <td>Tokyo</td>
-                                                            <td>63</td>
-                                                            <td>2011/07/25</td>
-                                                            <td>$170,750</td>
-                                                            <td>8422</td>
-                                                            <td>g.winters@datatables.net</td>
-                                                            <td>2011/07/25</td>
-                                                            <td>$170,750</td>
-                                                            <td>8422</td>
-                                                            <td>g.winters@datatables.net</td>
-                                                            <td>g.winters@datatables.net</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="fw-bold">Grand Total</td>
-                                                            <td>Winters</td>
-                                                            <td>Accountant</td>
-                                                            <td>Tokyo</td>
-                                                            <td>63</td>
-                                                            <td>2011/07/25</td>
-                                                            <td>$170,750</td>
-                                                            <td>8422</td>
-                                                            <td>g.winters@datatables.net</td>
-                                                            <td>2011/07/25</td>
-                                                            <td>$170,750</td>
-                                                            <td>8422</td>
-                                                            <td>g.winters@datatables.net</td>
-                                                            <td>g.winters@datatables.net</td>
-                                                        </tr>
+                                                    <tbody class="fs-5 ret_data">
+
                                                     </tbody>
                                                 </table>
 
@@ -372,31 +232,30 @@
                         </div>
                     </div>
                 </div>
-                <script>
-                    (function(w, d, s, l, i) {
-                        w[l] = w[l] || [];
-                        w[l].push({
-                            'gtm.start': new Date().getTime(),
-                            event: 'gtm.js'
-                        });
-                        var f = d.getElementsByTagName(s)[0],
-                            j = d.createElement(s),
-                            dl = l != 'dataLayer' ? '&amp;l=' + l : '';
-                        j.async = true;
-                        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-                        f.parentNode.insertBefore(j, f);
-                    })(window, document, 'script', 'dataLayer', 'GTM-5FS8GGP');
-                </script>
-                <script src="<?php echo base_url() ?>assets/plugins/global/plugins.bundle.js"></script>
-                <script src="<?php echo base_url() ?>assets/js/scripts.bundle.js"></script>
-                <!--end::Global Javascript Bundle-->
-                <!--begin::Page Vendors Javascript(used by this page)-->
+
+
+                <!-- <script src="<?php echo base_url() ?>assets/js/charts/percent.js"></script>
+            <script src="<?php echo base_url() ?>assets/js/charts/radar.js"></script> -->
+                <script src="<?php echo base_url() ?>assets/js/charts/Animated.js"></script>
+                <!-- <script src="<?php echo base_url() ?>assets/js/charts/map.js"></script>
+            <script src="<?php echo base_url() ?>assets/js/charts/worldLow.js"></script>
+            <script src="<?php echo base_url() ?>assets/js/charts/continentsLow.js"></script>
+            <script src="<?php echo base_url() ?>assets/js/charts/usaLow.js"></script>
+            <script src="<?php echo base_url() ?>assets/js/charts/worldTimeZonesLow.js"></script>
+            <script src="<?php echo base_url() ?>assets/js/charts/worldTimeZoneAreasLow.js"></script> -->
                 <script src="<?php echo base_url() ?>assets/plugins/custom/datatables/datatables.bundle.js"></script>
-                <!--end::Page Vendors Javascript-->
-                <!--begin::Page Custom Javascript(used by this page)-->
+                <!--end::Vendors Javascript-->
+                <!--begin::Custom Javascript(used by this page)-->
                 <script src="<?php echo base_url() ?>assets/js/widgets.bundle.js"></script>
                 <script src="<?php echo base_url() ?>assets/js/custom/widgets.js"></script>
                 <script src="<?php echo base_url() ?>assets/js/custom/apps/chat/chat.js"></script>
+                <script src="<?php echo base_url() ?>assets/js/custom/utilities/modals/users-search.js"></script>
+                <!-- <script src="<?php echo base_url() ?>assets/js/custom/graph/supplierPerformance-bar.js"></script> -->
+                <!-- <script src="<?php echo base_url() ?>assets/js/custom/graph/supplierPerformance-line.js"></script> -->
+
+                <script src="<?php echo base_url() ?>assets/js/custom/account/settings/profile-details.js"></script>
+                <script src="<?php echo base_url() ?>assets/js/custom/pages/user-profile/general.js"></script>
+
                 <script src="<?php echo base_url() ?>assets/js/custom/utilities/modals/upgrade-plan.js"></script>
                 <script src="<?php echo base_url() ?>assets/js/custom/utilities/modals/create-app.js"></script>
                 <script src="<?php echo base_url() ?>assets/js/custom/utilities/modals/new-target.js"></script>
@@ -408,8 +267,635 @@
                 <script src="<?php echo base_url() ?>assets/js/custom/Table/reportTable.js"></script>
                 <script src="<?php echo base_url() ?>assets/js/custom/Table/barChart.js"></script>
                 <script src="<?php echo base_url() ?>assets/js/custom/Table/tableSearch.js"></script>
-
                 <script src="<?php echo base_url() ?>assets/js/custom/Table/rebates/exportReport.js"></script>
+
+
+                <script>
+                    $(document).ready(function() {
+
+                        var element = document.getElementById('kt_apexcharts_1');
+
+                        function load_memberwise_data(date_from, date_to) {
+                            $.ajax({
+                                url: "<?php echo base_url(); ?>Charts/all_member_data",
+                                method: "POST",
+                                data: {
+                                    date_from:date_from,
+                                    date_to:date_to
+                                },
+                                dataType: "JSON",
+                                success: function(data) {
+
+                                    drawMonthwiseChart(data);
+                                }
+                            })
+                        }
+
+                        function load_suplierwise_data(date_from, date_to) {
+                            $.ajax({
+                                url: "<?php echo base_url(); ?>Charts/all_supplier_data",
+                                method: "POST",
+                                data: {
+                                    date_from:date_from,
+                                    date_to:date_to
+                                },
+                                dataType: "JSON",
+                                success: function(data) {
+
+                                    drawMonthwiseChart(data);
+                                }
+                            })
+                        }
+
+
+
+                        function drawMonthwiseChart(chart_data) {
+                            var jsonData = (chart_data);
+
+
+                            var options = {
+                                series: [{
+                                    name: 'Net Profit',
+
+                                    data: jsonData
+                                }],
+                                chart: {
+                                    fontFamily: 'inherit',
+                                    type: 'bar',
+                                    height: height,
+                                    toolbar: {
+                                        show: false
+                                    }
+                                },
+                                plotOptions: {
+                                    bar: {
+                                        horizontal: false,
+                                        columnWidth: ['20%'],
+                                        endingShape: 'rounded'
+                                    },
+                                },
+                                legend: {
+                                    show: false
+                                },
+                                dataLabels: {
+                                    enabled: false
+                                },
+                                stroke: {
+                                    show: true,
+                                    width: 2,
+                                    colors: ['transparent']
+                                },
+                                xaxis: {
+                                    categories: ['Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+                                    axisBorder: {
+                                        show: false,
+                                    },
+                                    axisTicks: {
+                                        show: false
+                                    },
+                                    labels: {
+                                        style: {
+                                            colors: labelColor,
+                                            fontSize: '12px'
+                                        }
+                                    }
+                                },
+                                yaxis: {
+                                    labels: {
+                                        style: {
+                                            colors: labelColor,
+                                            fontSize: '12px'
+                                        }
+                                    }
+                                },
+                                fill: {
+                                    opacity: 1
+                                },
+                                states: {
+                                    normal: {
+                                        filter: {
+                                            type: 'none',
+                                            value: 0
+                                        }
+                                    },
+                                    hover: {
+                                        filter: {
+                                            type: 'none',
+                                            value: 0
+                                        }
+                                    },
+                                    active: {
+                                        allowMultipleDataPointsSelection: false,
+                                        filter: {
+                                            type: 'none',
+                                            value: 0
+                                        }
+                                    }
+                                },
+                                tooltip: {
+                                    style: {
+                                        fontSize: '12px'
+                                    },
+                                    y: {
+                                        formatter: function(val) {
+                                            return '$' + val + ' thousands'
+                                        }
+                                    }
+                                },
+                                colors: [baseColor, secondaryColor],
+                                grid: {
+                                    borderColor: borderColor,
+                                    strokeDashArray: 4,
+                                    yaxis: {
+                                        lines: {
+                                            show: true
+                                        }
+                                    }
+                                }
+                            };
+
+                            var chart = new ApexCharts(element, options);
+                            chart.render();
+                        }
+
+
+
+
+
+
+
+
+                        $('#btn_search').click(function() {
+                            var date_from = "";
+                            var date_to = "";
+                            var date = $('#date_from').val();
+
+                            if (date == "2018-2019") {
+                                date_from = "2018";
+                                date_to = "2019";
+                            } else if (date == "2019-2020") {
+                                date_from = "2019";
+                                date_to = "2020";
+                            } else if (date == "2020-2021") {
+                                date_from = "2020";
+                                date_to = "2021";
+                            } else if (date == "2021-2022") {
+                                date_from = "2021";
+                                date_to = "2022";
+                            } else if (date == "2022-2023") {
+                                date_from = "2022";
+                                date_to = "2023";
+                            } else {
+                                swal.fire({
+                                    text: "Select a date range",
+                                    icon: "error",
+                                    buttonsStyling: false,
+                                    confirmButtonText: "Ok, got it!",
+                                    customClass: {
+                                        confirmButton: "btn font-weight-bold btn-light-primary"
+                                    }
+                                });
+                            }
+                            var type = $('#report_type').val();
+                            if (type == "- Select Type -") {
+                                swal.fire({
+                                    text: "Select a report type",
+                                    icon: "error",
+                                    buttonsStyling: false,
+                                    confirmButtonText: "Ok, got it!",
+                                    customClass: {
+                                        confirmButton: "btn font-weight-bold btn-light-primary"
+                                    }
+                                });
+                            } else if (type == "Member Performance") {
+                                document.getElementById('myInput').style.display = 'block';
+                                $('#kt_datatable_fixed_columns_1').find("tr:gt(0)").remove();
+                                user_group = 3;
+
+                                const formatter = new Intl.NumberFormat('en-US', {
+                                    style: 'currency',
+                                    currency: 'AUD',
+                                });
+
+                                $.ajax({
+                                    url: "<?php echo base_url(); ?>Reports/view_member_report",
+                                    method: "POST",
+                                    data: {
+                                        date_from: date_from,
+                                        date_to: date_to,
+                                        user_group: user_group
+
+                                    },
+                                    success: function(data) {
+                                        var added = $.parseJSON(data);
+                                        if (added.status == 1) {
+                                            var values = added.ret_data;
+
+                                            var html = "";
+                                            var july = 0;
+                                            var august = 0;
+                                            var september = 0;
+                                            var october = 0;
+                                            var november = 0;
+                                            var december = 0;
+                                            var january = 0;
+                                            var february = 0;
+                                            var march = 0;
+                                            var april = 0;
+                                            var may = 0;
+                                            var june = 0;
+                                            var total = 0;
+                                            var gj = 0;
+                                            var ga = 0;
+                                            var gs = 0;
+                                            var go = 0;
+                                            var gn = 0;
+                                            var gd = 0;
+                                            var gjan = 0;
+                                            var gfeb = 0;
+                                            var gmar = 0;
+                                            var gapr = 0;
+                                            var gmay = 0;
+                                            var gjune = 0;
+
+                                            html += '<tr style="display:none">';
+                                            html += '<td></td>';
+                                            html += '<td></td>';
+                                            html += '<td></td>';
+                                            html += '<td></td>';
+                                            html += '<td></td>';
+                                            html += '<td></td>';
+                                            html += '<td></td>';
+                                            html += '<td></td>';
+                                            html += '<td></td>';
+                                            html += '<td></td>';
+                                            html += '<td></td>';
+                                            html += '<td></td>';
+                                            html += '<td></td>';
+
+
+                                            html += '</tr>';
+
+                                            $.each(values, function(index) {
+                                                html += '<tr>';
+
+                                                html += '<td>' + values[index].name + '</td>';
+                                                if (values[index].July == null) {
+                                                    html += '<td>$ 0</td>';
+                                                    july = 0;
+                                                } else {
+                                                    html += '<td>$ ' + values[index].July + '</td>';
+                                                    var a = parseFloat(values[index].July)
+                                                    july += a;
+                                                }
+
+                                                if (values[index].August == null) {
+                                                    html += '<td>$ 0</td>';
+                                                    december = 0;
+                                                } else {
+                                                    html += '<td>$ ' + values[index].August + '</td>';
+                                                    var b = parseFloat(values[index].August);
+                                                    august += b;
+                                                }
+                                                if (values[index].September == null) {
+                                                    html += '<td>$ 0</td>';
+                                                    november = 0;
+                                                } else {
+                                                    html += '<td>$ ' + values[index].September + '</td>';
+                                                    var c = parseFloat(values[index].September);
+                                                    september += c;
+                                                }
+                                                if (values[index].October == null) {
+                                                    html += '<td>$ 0</td>';
+                                                    october = 0;
+                                                } else {
+                                                    html += '<td>$ ' + values[index].October + '</td>';
+                                                    var d = parseFloat(values[index].October);
+                                                    october += d;
+                                                }
+                                                if (values[index].November == null) {
+                                                    html += '<td>$ 0</td>';
+                                                    november = 0;
+                                                } else {
+                                                    html += '<td>$ ' + values[index].November + '</td>';
+                                                    var e = parseFloat(values[index].November);
+                                                    november += e;
+                                                }
+                                                if (values[index].December == null) {
+                                                    html += '<td>$ 0</td>';
+                                                    december = 0;
+                                                } else {
+                                                    html += '<td>$ ' + values[index].December + '</td>';
+                                                    var f = parseFloat(values[index].December);
+                                                    december += f;
+                                                }
+                                                if (values[index].January == null) {
+                                                    html += '<td>$ 0</td>';
+                                                    january = 0;
+                                                } else {
+                                                    html += '<td>$ ' + values[index].January + '</td>';
+                                                    var g = parseFloat(values[index].January);
+                                                    january += g;
+                                                }
+                                                if (values[index].February == null) {
+                                                    html += '<td>$ 0</td>';
+                                                    february = 0;
+                                                } else {
+                                                    html += '<td>$ ' + values[index].February + '</td>';
+                                                    var h = parseFloat(values[index].February);
+                                                    february += h
+                                                }
+                                                if (values[index].March == null) {
+                                                    html += '<td>$ 0</td>';
+                                                    march = 0;
+                                                } else {
+                                                    html += '<td>$ ' + values[index].March + '</td>';
+                                                    var i = parseFloat(values[index].March);
+                                                    march += i;
+                                                }
+                                                if (values[index].April == null) {
+                                                    html += '<td>$ 0</td>';
+                                                    april = 0;
+                                                } else {
+                                                    html += '<td>$ ' + values[index].April + '</td>';
+                                                    var j = parseFloat(values[index].April);
+                                                    april += j;
+                                                }
+                                                if (values[index].May == null) {
+                                                    html += '<td>$ 0</td>';
+                                                    may = 0;
+                                                } else {
+                                                    html += '<td>$ ' + values[index].May + '</td>';
+                                                    var k = parseFloat(values[index].May);
+                                                    may += k;
+                                                }
+                                                if (values[index].June == null) {
+                                                    html += '<td>$ 0</td>';
+                                                    june = 0;
+                                                } else {
+                                                    html += '<td>$ ' + values[index].June + '</td>';
+
+                                                    var l = parseFloat(values[index].June);
+                                                    june += l
+                                                }
+                                                if (values[index].row_total == null) {
+                                                    html += '<td>$ 0</td>';
+                                                    total = 0;
+                                                } else {
+                                                    html += '<td>$ ' + values[index].row_total + '</td>';
+
+                                                    var m = parseFloat(values[index].row_total);
+                                                    total += m
+                                                }
+                                                gj += parseFloat(values[index].July);
+                                                ga += parseFloat(values[index].August);
+                                                gs += parseFloat(values[index].September);
+                                                go += parseFloat(values[index].October);
+                                                gn += parseFloat(values[index].November);
+                                                gd += parseFloat(values[index].December);
+                                                gjan += parseFloat(values[index].January);
+                                                gfeb += parseFloat(values[index].February);
+                                                gmar += parseFloat(values[index].March);
+                                                gapr += parseFloat(values[index].April);
+                                                gmay += parseFloat(values[index].May);
+                                                gjune += parseFloat(values[index].June);
+
+
+
+                                            });
+
+                                            html += '<tr>';
+                                            html += '<td><b>Grand Total</b></td>';
+
+                                            html += '<td><b>$ ' + parseFloat(gj).toFixed(2) + '</b></td>';
+                                            html += '<td><b>$ ' + parseFloat(ga).toFixed(2) + '</b></td>';
+                                            html += '<td><b>$ ' + parseFloat(gs).toFixed(2) + '</b></td>';
+                                            html += '<td><b>$ ' + parseFloat(go).toFixed(2) + '</b></td>';
+                                            html += '<td><b>$ ' + parseFloat(gn).toFixed(2) + '</b></td>';
+                                            html += '<td><b>$ ' + parseFloat(gd).toFixed(2) + '</b></td>';
+                                            html += '<td><b>$ ' + parseFloat(gjan).toFixed(2) + '</b></td>';
+                                            html += '<td><b>$ ' + parseFloat(gfeb).toFixed(2) + '</b></td>';
+                                            html += '<td><b>$ ' + parseFloat(gmar).toFixed(2) + '</b></td>';
+                                            html += '<td><b>$ ' + parseFloat(gapr).toFixed(2) + '</b></td>';
+                                            html += '<td><b>$ ' + parseFloat(gmay).toFixed(2) + '</b></td>';
+                                            html += '<td><b>$ ' + parseFloat(gjune).toFixed(2) + '</b></td>';
+                                            html += '</tr>';
+                                            //var data = [july, august, september, october, november, december, january, february, march, april, may, june]
+
+                                            $('.ret_data').append(html);
+                                            load_memberwise_data(date_from,date_to);
+
+
+                                        }
+                                    },
+                                });
+
+
+                            } else {
+                                $("#kt_datatable_fixed_columns_1").find("tr:gt(0)").remove();
+                                var select_supplier = $('#select_supplier').val();
+                                user_group = 1;
+                                $.ajax({
+                                    url: "<?php echo base_url(); ?>Reports/view_supplier_report",
+                                    method: "POST",
+                                    data: {
+                                        date_from: date_from,
+                                        date_to: date_to,
+                                        user_group: user_group
+
+
+                                    },
+                                    success: function(data) {
+
+                                        var added = $.parseJSON(data);
+                                        if (added.status == 1) {
+                                            var values = added.ret_data;
+                                            // alert(values);
+                                            var html = "";
+                                            var july = 0;
+                                            var august = 0;
+                                            var september = 0;
+                                            var october = 0;
+                                            var november = 0;
+                                            var december = 0;
+                                            var january = 0;
+                                            var february = 0;
+                                            var march = 0;
+                                            var april = 0;
+                                            var may = 0;
+                                            var june = 0;
+                                            var total = 0;
+                                            var gj = 0;
+                                            var ga = 0;
+                                            var gs = 0;
+                                            var go = 0;
+                                            var gn = 0;
+                                            var gd = 0;
+                                            var gjan = 0;
+                                            var gfeb = 0;
+                                            var gmar = 0;
+                                            var gapr = 0;
+                                            var gmay = 0;
+                                            var gjune = 0;
+                                            $.each(values, function(index) {
+                                                html += '<tr>';
+
+                                                html += '<td>' + values[index].name + '</td>';
+                                                if (values[index].July == null) {
+                                                    html += '<td>$ 0</td>';
+                                                    july = 0;
+                                                } else {
+
+                                                    html += '<td>$ ' + values[index].July + '</td>';
+                                                    var a = parseFloat(values[index].July);
+                                                    july += a;
+                                                }
+
+
+                                                if (values[index].August == null) {
+                                                    html += '<td>$ 0</td>';
+                                                    august = 0;
+
+                                                } else {
+                                                    html += '<td>$ ' + values[index].August + '</td>';
+                                                    var b = parseFloat(values[index].August);
+
+                                                    august += b;
+                                                }
+                                                if (values[index].September == null) {
+                                                    html += '<td>$ 0</td>';
+                                                    september = 0;
+                                                } else {
+                                                    html += '<td>$ ' + values[index].September + '</td>';
+                                                    var c = parseFloat(values[index].September);
+                                                    september += c;
+                                                }
+                                                if (values[index].October == null) {
+                                                    html += '<td>$ 0</td>';
+                                                    october = 0;
+                                                } else {
+                                                    html += '<td>$ ' + values[index].October + '</td>';
+                                                    var d = parseFloat(values[index].October);
+                                                    october += d;
+                                                }
+                                                if (values[index].November == null) {
+                                                    html += '<td>$ 0</td>';
+                                                    november = 0;
+                                                } else {
+                                                    html += '<td>$ ' + values[index].November + '</td>';
+                                                    var e = parseFloat(values[index].November);
+                                                    november += e;
+                                                }
+                                                if (values[index].December == null) {
+                                                    html += '<td>$ 0</td>';
+                                                    december = 0;
+                                                } else {
+                                                    html += '<td>$ ' + values[index].December + '</td>';
+                                                    var f = parseFloat(values[index].December);
+                                                    december += f;
+                                                }
+                                                if (values[index].January == null || values[index].January == 0.00) {
+                                                    html += '<td>$ 0</td>';
+                                                    january = 0;
+                                                } else {
+                                                    html += '<td>$ ' + values[index].January + '</td>';
+                                                    var g = parseFloat(values[index].January);
+                                                    january += g;
+                                                }
+                                                if (values[index].February == null) {
+                                                    html += '<td>$ 0</td>';
+                                                    february = 0;
+                                                } else {
+                                                    html += '<td>$ ' + values[index].February + '</td>';
+                                                    var h = parseFloat(values[index].February);
+                                                    february += h
+                                                }
+                                                if (values[index].March == null) {
+                                                    html += '<td>$ 0</td>';
+                                                    march = 0;
+                                                } else {
+                                                    html += '<td>$ ' + values[index].March + '</td>';
+                                                    var i = parseFloat(values[index].March);
+                                                    march += i;
+                                                }
+                                                if (values[index].April == null) {
+                                                    html += '<td>$ 0</td>';
+                                                    april = 0;
+                                                } else {
+                                                    html += '<td>$ ' + values[index].April + '</td>';
+                                                    var j = parseFloat(values[index].April);
+                                                    april += j;
+                                                }
+                                                if (values[index].May == null) {
+                                                    html += '<td>$ 0</td>';
+                                                    may = 0;
+                                                } else {
+                                                    html += '<td>$ ' + values[index].May + '</td>';
+                                                    var k = parseFloat(values[index].May);
+                                                    may += k;
+                                                }
+                                                if (values[index].June == null) {
+                                                    html += '<td>$ 0</td>';
+                                                    june = 0;
+                                                } else {
+                                                    html += '<td>$ ' + values[index].June + '</td>';
+
+                                                    var l = parseFloat(values[index].June);
+                                                    june += l
+                                                }
+                                                if (values[index].total == null) {
+                                                    html += '<td>$ 0</td>';
+                                                    total = 0;
+                                                } else {
+                                                    html += '<td>$ ' + values[index].total + '</td>';
+
+                                                    var m = parseFloat(values[index].total);
+                                                    total += m
+                                                }
+                                                gj += parseFloat(values[index].July);
+                                                ga += parseFloat(values[index].August);
+                                                gs += parseFloat(values[index].September);
+                                                go += parseFloat(values[index].October);
+                                                gn += parseFloat(values[index].November);
+                                                gd += parseFloat(values[index].December);
+                                                gjan += parseFloat(values[index].January);
+                                                gfeb += parseFloat(values[index].February);
+                                                gmar += parseFloat(values[index].March);
+                                                gapr += parseFloat(values[index].April);
+                                                gmay += parseFloat(values[index].May);
+                                                gjune += parseFloat(values[index].June);
+                                            });
+                                            // console.log(gj);
+
+
+                                            html += '<tr>';
+                                            html += '<td><b>Grand Total</b></td>';
+
+                                            html += '<td><b>$ ' + parseFloat(gj).toFixed(2) + '</b></td>';
+                                            html += '<td><b>$ ' + parseFloat(ga).toFixed(2) + '</b></td>';
+                                            html += '<td><b>$ ' + parseFloat(gs).toFixed(2) + '</b></td>';
+                                            html += '<td><b>$ ' + parseFloat(go).toFixed(2) + '</b></td>';
+                                            html += '<td><b>$ ' + parseFloat(gn).toFixed(2) + '</b></td>';
+                                            html += '<td><b>$ ' + parseFloat(gd).toFixed(2) + '</b></td>';
+                                            html += '<td><b>$ ' + parseFloat(gjan).toFixed(2) + '</b></td>';
+                                            html += '<td><b>$ ' + parseFloat(gfeb).toFixed(2) + '</b></td>';
+                                            html += '<td><b>$ ' + parseFloat(gmar).toFixed(2) + '</b></td>';
+                                            html += '<td><b>$ ' + parseFloat(gapr).toFixed(2) + '</b></td>';
+                                            html += '<td><b>$ ' + parseFloat(gmay).toFixed(2) + '</b></td>';
+                                            html += '<td><b>$ ' + parseFloat(gjune).toFixed(2) + '</b></td>';
+                                            html += '</tr>';
+
+
+                                            $('.ret_data').append(html);
+                                            load_suplierwise_data(date_from, date_to)
+                                        }
+                                    },
+                                });
+                            }
+
+                        });
+                    });
+                </script>
 
 </body>
 

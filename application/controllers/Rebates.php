@@ -7,8 +7,10 @@ class Rebates extends CI_Controller
     {
         parent::__construct();
         $this->load->model('musers');
+        $this->load->model('mrebates');
         $this->load->model('mprocess');
         $this->load->library('session');
+        $this->load->model('mnotifications');
     }
 
     public function rebates()
@@ -17,8 +19,10 @@ class Rebates extends CI_Controller
         {
             $data["Email"] = $this->session->userdata('full_name');
             $value["user_name"] = $this->musers->user_details($data);
+            $value["notifications"]=$this->mnotifications->view_notifications();
+            $data["supplier_rebates_amounts"] = $this->mrebates->all_rebate_amount();
             $this->load->view('header',$value);
-            $this->load->view('rebates');
+            $this->load->view('rebates',$data);
 
         }
     }

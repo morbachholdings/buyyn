@@ -178,5 +178,11 @@ class Msubmissions extends CI_Model
         $sql="DELETE FROM submissions WHERE amount=0 AND is_child=0";
         return $this->db->query($sql);
     }
-}
 
+    public function view_pending_submission_table()
+    {
+        $sql = "SELECT * FROM submissions INNER JOIN users ON users.user_id=submissions.supplier_id WHERE submissions.status = 0 AND is_child=0";
+
+        return $this->db->query($sql);
+    }
+}

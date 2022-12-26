@@ -19,6 +19,7 @@ class Submissions extends CI_Controller
 			$value["user_name"] = $this->musers->user_details($data);
 			$data["suppliers"] = $this->msubmissions->get_suppliers();
 			$data["member_submissions"] = $this->msubmissions->member_submissions();
+			$data["view_submisions"]=$this->msubmissions->view_pending_submission_table();
 			$this->msubmissions->delete_zero();
 			$value["notifications"]=$this->mnotifications->view_notifications();
 			$this->load->view('header', $value);

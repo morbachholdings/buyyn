@@ -1210,24 +1210,24 @@
                                                 <div class="scroll-y mh-325px my-5 px-8">
                                                     <!--begin::Item-->
                                                     
-                                                    <?php foreach ($all_processors->result() as $row) { ?>
+                                                    <?php //foreach ($all_processors->result() as $row) { ?>
                                                 
-                                                        <?php if ($row->process_type_id == 200) { ?>
-                                                            <span class="badge py-3 px-4 fs-7 badge-light-success">200 OK</span>
-                                                        <?php }else if($row->process_type_id == 522){ ?>
-                                                            <span class="badge py-3 px-4 fs-7 badge-light-warning">522 Warning</span>
-                                                        <?php }else{ ?>
-                                                        <span class="badge py-3 px-4 fs-7 badge-light-danger">404 Error</span>
-                                                        <?php } ?>
+                                                        <?php //if ($row->process_type_id == 200) { ?>
+                                                            <!-- <span class="badge py-3 px-4 fs-7 badge-light-success">200 OK</span> -->
+                                                        <?php //}else if($row->process_type_id == 522){ ?>
+                                                            <!-- <span class="badge py-3 px-4 fs-7 badge-light-warning">522 Warning</span> -->
+                                                        <?php //}else{ ?>
+                                                        <!-- <span>class="badge py-3 px-4 fs-7 badge-light-danger">404 Error</span> -->
+                                                        <?php //} ?>
 
                                                 
-                                                        <?php echo $row->First_name ?>
+                                                        <?php //echo $row->First_name ?>
                                                    
-                                                        <?php echo $row->title ?>
+                                                        <?php //echo $row->title ?>
                                                    
-                                                        <?php echo $row->device ?>
-                                                  <?php echo $row->ip_address ?></td>
-                                                   <?php echo $row->process_time ?>
+                                                        <?php //echo $row->device ?>
+                                                  <?php //echo $row->ip_address ?></td>
+                                                   <?php //echo $row->process_time ?>
                                                     
 
                                             

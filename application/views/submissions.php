@@ -223,179 +223,255 @@
 
 
 
-                                                                                <div
-                                                                                    class="card-header align-items-center py-1 gap-2 gap-md-5">
-
-                                                                                    <!--begin::Card title-->
-                                                                                    <div class="card-title">
-                                                                                        <!--begin::Search-->
-                                                                                        <div
-                                                                                            class="d-flex align-items-center position-relative my-1">
-                                                                                            <!--begin::Svg Icon | path: icons/duotune/general/gen021.svg-->
-                                                                                            <span
-                                                                                                class="svg-icon svg-icon-1 position-absolute ms-6">
-                                                                                                <svg width="24"
-                                                                                                    height="24"
-                                                                                                    viewBox="0 0 24 24"
-                                                                                                    fill="none"
-                                                                                                    xmlns="http://www.w3.org/2000/svg">
-                                                                                                    <rect opacity="0.5"
-                                                                                                        x="17.0365"
-                                                                                                        y="15.1223"
-                                                                                                        width="8.15546"
-                                                                                                        height="2"
-                                                                                                        rx="1"
-                                                                                                        transform="rotate(45 17.0365 15.1223)"
-                                                                                                        fill="currentColor" />
-                                                                                                    <path
-                                                                                                        d="M11 19C6.55556 19 3 15.4444 3 11C3 6.55556 6.55556 3 11 3C15.4444 3 19 6.55556 19 11C19 15.4444 15.4444 19 11 19ZM11 5C7.53333 5 5 7.53333 5 11C5 14.4667 7.53333 17 11 17C14.4667 17 17 14.4667 17 11C17 7.53333 14.4667 5 11 5Z"
-                                                                                                        fill="currentColor" />
-                                                                                                </svg>
-                                                                                            </span>
-                                                                                            <!--end::Svg Icon-->
-                                                                                            <input type="text"
-                                                                                                data-kt-customer-table-filter="search"
-                                                                                                id="pendingSubmissionTableSearch"
-                                                                                                onkeyup="searchFunctionPendingSubmission()"
-                                                                                                class="form-control form-control-solid w-250px ps-15"
-                                                                                                placeholder="Search Suppliers" />
-                                                                                        </div>
-                                                                                        <!--end::Search-->
-                                                                                    </div>
-                                                                                    <!--begin::Card title-->
 
 
-                                                                                    <!--begin::Card toolbar-->
+
+
+                                                                                <!--begin::Wrapper-->
+                                                                                <div class="wrapper d-flex flex-column flex-row-fluid container-xxl"
+                                                                                    id="kt_wrapper">
+                                                                                    <!--begin::Toolbar-->
+
+                                                                                    <!--end::Toolbar-->
+                                                                                    <!--begin::Main-->
                                                                                     <div
-                                                                                        class="card-toolbar flex-row-fluid justify-content-end gap-5">
-                                                                                        <!--begin::Filter-->
-                                                                                        <div class="me-3 mobile">
-                                                                                            <!--begin::Select2-->
-                                                                                            <select
-                                                                                                class="form-select form-select-solid"
-                                                                                                data-control="select2"
-                                                                                                data-hide-search="true"
-                                                                                                data-placeholder="Status"
-                                                                                                data-hide-search="true"
-                                                                                                data-dropdown-css-class="w-150px"
-                                                                                                data-placeholder="Select an option"
-                                                                                                data-kt-table-widget-4="filter_status">
-                                                                                                <option></option>
-                                                                                                <option value="all">
-                                                                                                    All</option>
-                                                                                                <option value="active">
-                                                                                                    Active</option>
-                                                                                                <option value="locked">
-                                                                                                    Locked</option>
-                                                                                            </select>
-                                                                                            <!--end::Select2-->
-                                                                                        </div>
-                                                                                        <!--end::Filter-->
-
-                                                                                        <div class="mb-0 mobile">
-                                                                                            <input
-                                                                                                class="form-control form-control-solid"
-                                                                                                placeholder="Pick a date"
-                                                                                                id="kt_daterangepicker_3" />
-                                                                                        </div>
-
-
-
-                                                                                        <!--begin::Export dropdown-->
-                                                                                        <button type="button"
-                                                                                            class="btn btn-light-primary mobile"
-                                                                                            data-kt-menu-trigger="click"
-                                                                                            data-kt-menu-placement="bottom-end">
-                                                                                            <span
-                                                                                                class="svg-icon svg-icon-1 position-absolute ms-4">...</span>
-                                                                                            Export Report
-                                                                                        </button>
-                                                                                        <!--begin::Menu-->
-                                                                                        <div id="kt_datatable_example_export_menu"
-                                                                                            class="menu menu-sub menu-sub-dropdown menu-column menu-rounded-4 menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-200px py-4"
-                                                                                            data-kt-menu="true">
-                                                                                            <!--begin::Menu item-->
-                                                                                            <div class="menu-item px-3">
-                                                                                                <a href="#"
-                                                                                                    class="menu-link px-3"
-                                                                                                    data-kt-export="csv">
-                                                                                                    Export as CSV
-                                                                                                </a>
-                                                                                            </div>
-                                                                                            <!--end::Menu item-->
-
-                                                                                        </div>
-                                                                                        <!--end::Menu-->
-                                                                                        <!--end::Export dropdown-->
-                                                                                        <!--begin::Hide default export buttons-->
-                                                                                        <div id="kt_datatable_example_buttons"
-                                                                                            class="d-none"></div>
-                                                                                        <!--end::Hide default export buttons-->
-                                                                                    </div>
-                                                                                    <!--end::Card toolbar-->
-                                                                                </div>
-
-
-
-
-
-
-
-
-                                                                                <!--begin::Card body-->
-                                                                                <div class="card-body pt-0"
-                                                                                    style="padding:0px !important;">
-                                                                                    <!--begin::Table-->
-
-                                                                                    <div class="row gy-5 g-xl-10">
-
-                                                                                        <!--end::Col-->
-                                                                                        <!--begin::Col-->
-                                                                                        <div
-                                                                                            class="col-xl-12 mb-5 mb-xl-10">
-                                                                                            <!--begin::Table Widget 4-->
+                                                                                        class="d-flex flex-row flex-column-fluid align-items-stretch">
+                                                                                        <!--begin::Content-->
+                                                                                        <div class="content flex-row-fluid"
+                                                                                            id="kt_content">
+                                                                                            <!--begin::Products-->
                                                                                             <div
-                                                                                                class="card card-flush h-xl-100">
+                                                                                                class="card card-flush">
+                                                                                                <!--begin::Card header-->
+                                                                                                <div
+                                                                                                    class="card-header align-items-center py-5 gap-2 gap-md-5">
+                                                                                                    <!--begin::Card title-->
+                                                                                                    <div
+                                                                                                        class="card-title">
+                                                                                                        <!--begin::Search-->
+                                                                                                        <div
+                                                                                                            class="d-flex align-items-center position-relative my-1">
+                                                                                                            <!--begin::Svg Icon | path: icons/duotune/general/gen021.svg-->
+                                                                                                            <span
+                                                                                                                class="svg-icon svg-icon-1 position-absolute ms-4">
+                                                                                                                <svg width="24"
+                                                                                                                    height="24"
+                                                                                                                    viewBox="0 0 24 24"
+                                                                                                                    fill="none"
+                                                                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                                                                    <rect
+                                                                                                                        opacity="0.5"
+                                                                                                                        x="17.0365"
+                                                                                                                        y="15.1223"
+                                                                                                                        width="8.15546"
+                                                                                                                        height="2"
+                                                                                                                        rx="1"
+                                                                                                                        transform="rotate(45 17.0365 15.1223)"
+                                                                                                                        fill="currentColor" />
+                                                                                                                    <path
+                                                                                                                        d="M11 19C6.55556 19 3 15.4444 3 11C3 6.55556 6.55556 3 11 3C15.4444 3 19 6.55556 19 11C19 15.4444 15.4444 19 11 19ZM11 5C7.53333 5 5 7.53333 5 11C5 14.4667 7.53333 17 11 17C14.4667 17 17 14.4667 17 11C17 7.53333 14.4667 5 11 5Z"
+                                                                                                                        fill="currentColor" />
+                                                                                                                </svg>
+                                                                                                            </span>
+                                                                                                            <!--end::Svg Icon-->
+                                                                                                            <input
+                                                                                                                type="text"
+                                                                                                                data-kt-ecommerce-order-filter="search"
+                                                                                                                class="form-control form-control-solid w-250px ps-14"
+                                                                                                                placeholder="Search Order" />
+                                                                                                        </div>
+                                                                                                        <!--end::Search-->
+                                                                                                    </div>
+                                                                                                    <!--end::Card title-->
+                                                                                                    <!--begin::Card toolbar-->
+                                                                                                    <div
+                                                                                                        class="card-toolbar flex-row-fluid justify-content-end gap-5">
+                                                                                                        <!--begin::Flatpickr-->
+                                                                                                        <div
+                                                                                                            class="input-group w-250px">
+                                                                                                            <input
+                                                                                                                class="form-control form-control-solid rounded rounded-end-0"
+                                                                                                                placeholder="Pick date range"
+                                                                                                                id="kt_ecommerce_sales_flatpickr" />
+                                                                                                            <button
+                                                                                                                class="btn btn-icon btn-light"
+                                                                                                                id="kt_ecommerce_sales_flatpickr_clear">
+                                                                                                                <!--begin::Svg Icon | path: icons/duotune/arrows/arr088.svg-->
+                                                                                                                <span
+                                                                                                                    class="svg-icon svg-icon-2">
+                                                                                                                    <svg width="24"
+                                                                                                                        height="24"
+                                                                                                                        viewBox="0 0 24 24"
+                                                                                                                        fill="none"
+                                                                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                                                                        <rect
+                                                                                                                            opacity="0.5"
+                                                                                                                            x="7.05025"
+                                                                                                                            y="15.5356"
+                                                                                                                            width="12"
+                                                                                                                            height="2"
+                                                                                                                            rx="1"
+                                                                                                                            transform="rotate(-45 7.05025 15.5356)"
+                                                                                                                            fill="currentColor" />
+                                                                                                                        <rect
+                                                                                                                            x="8.46447"
+                                                                                                                            y="7.05029"
+                                                                                                                            width="12"
+                                                                                                                            height="2"
+                                                                                                                            rx="1"
+                                                                                                                            transform="rotate(45 8.46447 7.05029)"
+                                                                                                                            fill="currentColor" />
+                                                                                                                    </svg>
+                                                                                                                </span>
+                                                                                                                <!--end::Svg Icon-->
+                                                                                                            </button>
+                                                                                                        </div>
+                                                                                                        <!--end::Flatpickr-->
+                                                                                                        <div
+                                                                                                            class="w-100 mw-150px">
+                                                                                                            <!--begin::Select2-->
+                                                                                                            <select
+                                                                                                                class="form-select form-select-solid"
+                                                                                                                data-control="select2"
+                                                                                                                data-hide-search="true"
+                                                                                                                data-placeholder="Status"
+                                                                                                                data-kt-ecommerce-order-filter="status">
+                                                                                                                <option>
+                                                                                                                </option>
+                                                                                                                <option
+                                                                                                                    value="all">
+                                                                                                                    All
+                                                                                                                </option>
+                                                                                                                <option
+                                                                                                                    value="Cancelled">
+                                                                                                                    Cancelled
+                                                                                                                </option>
+                                                                                                                <option
+                                                                                                                    value="Completed">
+                                                                                                                    Completed
+                                                                                                                </option>
+                                                                                                                <option
+                                                                                                                    value="Denied">
+                                                                                                                    Denied
+                                                                                                                </option>
+                                                                                                                <option
+                                                                                                                    value="Expired">
+                                                                                                                    Expired
+                                                                                                                </option>
+                                                                                                                <option
+                                                                                                                    value="Failed">
+                                                                                                                    Failed
+                                                                                                                </option>
+                                                                                                                <option
+                                                                                                                    value="Pending">
+                                                                                                                    Pending
+                                                                                                                </option>
+                                                                                                                <option
+                                                                                                                    value="Processing">
+                                                                                                                    Processing
+                                                                                                                </option>
+                                                                                                                <option
+                                                                                                                    value="Refunded">
+                                                                                                                    Refunded
+                                                                                                                </option>
+                                                                                                                <option
+                                                                                                                    value="Delivered">
+                                                                                                                    Delivered
+                                                                                                                </option>
+                                                                                                                <option
+                                                                                                                    value="Aug 2022">
+                                                                                                                    Aug
+                                                                                                                    2022
+                                                                                                                </option>
+                                                                                                            </select>
+                                                                                                            <!--end::Select2-->
+                                                                                                        </div>
+                                                                                                        <!--begin::Export dropdown-->
+                                                                                                        <button
+                                                                                                            type="button"
+                                                                                                            class="btn btn-light-primary"
+                                                                                                            data-kt-menu-trigger="click"
+                                                                                                            data-kt-menu-placement="bottom-end">
+                                                                                                            <!-- <span class="svg-icon svg-icon-1 position-absolute ms-4">...</span> -->
+                                                                                                            Export
+                                                                                                        </button>
+                                                                                                        <!--begin::Menu-->
+                                                                                                        <div id="kt_datatable_example_export_menu_submission"
+                                                                                                            class="menu menu-sub menu-sub-dropdown menu-column menu-rounded-4 menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-200px py-4"
+                                                                                                            data-kt-menu="true">
+                                                                                                            <!--begin::Menu item-->
+                                                                                                            <div
+                                                                                                                class="menu-item px-3">
+                                                                                                                <a href="#"
+                                                                                                                    class="menu-link px-3"
+                                                                                                                    data-kt-export="csv">
+                                                                                                                    Export
+                                                                                                                    as
+                                                                                                                    CSV
+                                                                                                                </a>
+                                                                                                            </div>
+                                                                                                            <!--end::Menu item-->
 
+                                                                                                        </div>
+                                                                                                        <!--end::Menu-->
+                                                                                                        <!--end::Export dropdown-->
+                                                                                                        <!--begin::Hide default export buttons-->
+                                                                                                        <div id="kt_datatable_example_buttons"
+                                                                                                            class="d-none">
+                                                                                                        </div>
+                                                                                                        <!--end::Hide default export buttons-->
+                                                                                                    </div>
+                                                                                                    <!--end::Card toolbar-->
+                                                                                                </div>
+                                                                                                <!--end::Card header-->
                                                                                                 <!--begin::Card body-->
                                                                                                 <div
-                                                                                                    class="card-body pt-2">
+                                                                                                    class="card-body pt-0">
+                                                                                                    <!-- kt_ecommerce_sales_table -->
                                                                                                     <!--begin::Table-->
                                                                                                     <table
-                                                                                                        class="table align-middle table-row-dashed fs-6 gy-3"
-                                                                                                        id="kt_table_widget_4_table1">
+                                                                                                        class="table align-middle table-row-dashed fs-6 gy-5"
+                                                                                                        id="kt_ecommerce_sales_table">
                                                                                                         <!--begin::Table head-->
                                                                                                         <thead>
                                                                                                             <!--begin::Table row-->
+                                                                                                           
                                                                                                             <tr
                                                                                                                 class="text-start text-gray-400 fw-bold fs-7 text-uppercase gs-0">
                                                                                                                 <th
                                                                                                                     class="w-10px pe-2">
                                                                                                                     <div
-                                                                                                                        class="form-check form-check-sm form-check-custom form-check-solid me-3 checkAll">
+                                                                                                                        class="form-check form-check-sm form-check-custom form-check-solid me-3">
                                                                                                                         <input
                                                                                                                             class="form-check-input"
                                                                                                                             type="checkbox"
                                                                                                                             data-kt-check="true"
-                                                                                                                            data-kt-check-target="#kt_table_widget_4_table1 .form-check-input"
+                                                                                                                            data-kt-check-target="#kt_ecommerce_sales_table .form-check-input"
                                                                                                                             value="1" />
                                                                                                                     </div>
                                                                                                                 </th>
-                                                                                                                <th>#
-                                                                                                                </th>
                                                                                                                 <th
                                                                                                                     class="min-w-100px">
+                                                                                                                    Refferel
+                                                                                                                    Link
+                                                                                                                </th>
+                                                                                                                <th
+                                                                                                                    class="min-w-175px">
                                                                                                                     Supplier
                                                                                                                 </th>
                                                                                                                 <th
-                                                                                                                    class="text-end min-w-100px">
+                                                                                                                    class="text-end min-w-70px">
                                                                                                                     Reference
                                                                                                                     Date
                                                                                                                 </th>
                                                                                                                 <th
-                                                                                                                    class="text-end min-w-125px">
-                                                                                                                    Submitted
+                                                                                                                    class="text-end min-w-100px">
+                                                                                                                    Status
+                                                                                                                </th>
+                                                                                                                <th
+                                                                                                                    class="text-end min-w-100px">
                                                                                                                     Date
+                                                                                                                    Added
                                                                                                                 </th>
                                                                                                                 <th
                                                                                                                     class="text-end min-w-100px">
@@ -404,187 +480,85 @@
                                                                                                                 </th>
                                                                                                                 <th
                                                                                                                     class="text-end min-w-100px">
-                                                                                                                    Status
+                                                                                                                    Actions
                                                                                                                 </th>
-                                                                                                                <th
-                                                                                                                    class="text-end min-w-50px">
-                                                                                                                    Action
-                                                                                                                </th>
-
                                                                                                             </tr>
+                                                                                                           
                                                                                                             <!--end::Table row-->
                                                                                                         </thead>
                                                                                                         <!--end::Table head-->
                                                                                                         <!--begin::Table body-->
                                                                                                         <tbody
-                                                                                                            class="fw-bold text-gray-600">
-                                                                                                            <tr data-kt-table-widget-4="subtable_template"
-                                                                                                                class="d-none">
-                                                                                                                <td
-                                                                                                                    colspan="2">
-                                                                                                                    <div
-                                                                                                                        class="d-flex align-items-center gap-3">
-                                                                                                                        <a href="#"
-                                                                                                                            class="symbol symbol-50px bg-secondary bg-opacity-25 rounded">
-                                                                                                                            <img src=""
-                                                                                                                                data-kt-src-path="assets/media/stock/ecommerce/"
-                                                                                                                                alt=""
-                                                                                                                                data-kt-table-widget-4="template_image" />
-                                                                                                                        </a>
-                                                                                                                        <div
-                                                                                                                            class="d-flex flex-column text-muted">
-                                                                                                                            <a href="#"
-                                                                                                                                class="text-gray-800 text-hover-primary fw-bold"
-                                                                                                                                data-kt-table-widget-4="template_name">Product
-                                                                                                                                name</a>
-                                                                                                                            <div class="fs-7"
-                                                                                                                                data-kt-table-widget-4="template_description">
-                                                                                                                                Product
-                                                                                                                                description
-                                                                                                                            </div>
-                                                                                                                        </div>
-                                                                                                                    </div>
-                                                                                                                </td>
-                                                                                                                <td
-                                                                                                                    class="text-end">
-                                                                                                                    <div
-                                                                                                                        class="text-gray-800 fs-7">
-                                                                                                                        Cost
-                                                                                                                    </div>
-                                                                                                                    <div class="text-muted fs-7 fw-bold"
-                                                                                                                        data-kt-table-widget-4="template_cost">
-                                                                                                                        1
-                                                                                                                    </div>
-                                                                                                                </td>
-                                                                                                                <td
-                                                                                                                    class="text-end">
-                                                                                                                    <div
-                                                                                                                        class="text-gray-800 fs-7">
-                                                                                                                        Qty
-                                                                                                                    </div>
-                                                                                                                    <div class="text-muted fs-7 fw-bold"
-                                                                                                                        data-kt-table-widget-4="template_qty">
-                                                                                                                        1
-                                                                                                                    </div>
-                                                                                                                </td>
-                                                                                                                <td
-                                                                                                                    class="text-end">
-                                                                                                                    <div
-                                                                                                                        class="text-gray-800 fs-7">
-                                                                                                                        Total
-                                                                                                                    </div>
-                                                                                                                    <div class="text-muted fs-7 fw-bold"
-                                                                                                                        data-kt-table-widget-4="template_total">
-                                                                                                                        name
-                                                                                                                    </div>
-                                                                                                                </td>
-                                                                                                                <td
-                                                                                                                    class="text-end">
-                                                                                                                    <div
-                                                                                                                        class="text-gray-800 fs-7 me-3">
-                                                                                                                        On
-                                                                                                                        hand
-                                                                                                                    </div>
-                                                                                                                    <div class="text-muted fs-7 fw-bold"
-                                                                                                                        data-kt-table-widget-4="template_stock">
-                                                                                                                        32
-                                                                                                                    </div>
-                                                                                                                </td>
-                                                                                                                <td>
-                                                                                                                </td>
-                                                                                                            </tr>
+                                                                                                            class="fw-semibold text-gray-600">
+                                                                                                            <!--begin::Table row-->
                                                                                                             <tr>
+                                                                                                            <?php foreach($view_submisions->result() as $row){ ?>
                                                                                                                 <!--begin::Checkbox-->
                                                                                                                 <td>
                                                                                                                     <div
                                                                                                                         class="form-check form-check-sm form-check-custom form-check-solid">
                                                                                                                         <input
-                                                                                                                            class="form-check-input selectCheckBox"
+                                                                                                                            class="form-check-input"
                                                                                                                             type="checkbox"
                                                                                                                             value="1" />
                                                                                                                     </div>
                                                                                                                 </td>
                                                                                                                 <!--end::Checkbox-->
-                                                                                                                <td
-                                                                                                                    class="">
-                                                                                                                    <button
-                                                                                                                        type="button"
-                                                                                                                        class="btn btn-sm btn-icon btn-light btn-active-light-primary toggle h-25px w-25px"
-                                                                                                                        data-kt-table-widget-4="expand_row">
-                                                                                                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr087.svg-->
-                                                                                                                        <span
-                                                                                                                            class="svg-icon svg-icon-3 m-0 toggle-off">
-                                                                                                                            <svg width="24"
-                                                                                                                                height="24"
-                                                                                                                                viewBox="0 0 24 24"
-                                                                                                                                fill="none"
-                                                                                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                                                                                <rect
-                                                                                                                                    opacity="0.5"
-                                                                                                                                    x="11"
-                                                                                                                                    y="18"
-                                                                                                                                    width="12"
-                                                                                                                                    height="2"
-                                                                                                                                    rx="1"
-                                                                                                                                    transform="rotate(-90 11 18)"
-                                                                                                                                    fill="currentColor" />
-                                                                                                                                <rect
-                                                                                                                                    x="6"
-                                                                                                                                    y="11"
-                                                                                                                                    width="12"
-                                                                                                                                    height="2"
-                                                                                                                                    rx="1"
-                                                                                                                                    fill="currentColor" />
-                                                                                                                            </svg>
-                                                                                                                        </span>
-                                                                                                                        <!--end::Svg Icon-->
-                                                                                                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr089.svg-->
-                                                                                                                        <span
-                                                                                                                            class="svg-icon svg-icon-3 m-0 toggle-on">
-                                                                                                                            <svg width="24"
-                                                                                                                                height="24"
-                                                                                                                                viewBox="0 0 24 24"
-                                                                                                                                fill="none"
-                                                                                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                                                                                <rect
-                                                                                                                                    x="6"
-                                                                                                                                    y="11"
-                                                                                                                                    width="12"
-                                                                                                                                    height="2"
-                                                                                                                                    rx="1"
-                                                                                                                                    fill="currentColor" />
-                                                                                                                            </svg>
-                                                                                                                        </span>
-                                                                                                                        <!--end::Svg Icon-->
-                                                                                                                    </button>
-                                                                                                                </td>
+                                                                                                                <!--begin::Order ID=-->
                                                                                                                 <td>
-                                                                                                                    <a href="../../demo22/dist/apps/ecommerce/catalog/edit-product.html"
-                                                                                                                        class="text-gray-800 text-hover-primary">#XGY-346</a>
+                                                                                                                    <a href="../../demo19/dist/apps/ecommerce/sales/details.html"
+                                                                                                                        class="text-gray-800 text-hover-primary fw-bold"><?php echo $row->reference_number ?></a>
                                                                                                                 </td>
+                                                                                                                <!--end::Order ID=-->
+                                                                                                                <!--begin::Customer=-->
+                                                                                                                <td>
+                                                                                                                    <div
+                                                                                                                        class="d-flex align-items-center">
+                                                                                                                        
+                                                                                                                        <div
+                                                                                                                            class="ms-5">
+                                                                                                                            <!--begin::Title-->
+                                                                                                                            <a href="../../demo19/dist/apps/user-management/users/view.html"
+                                                                                                                                class="text-gray-800 text-hover-primary fs-5 fw-bold"><?php echo $row->Supplier_ID ?>
+                                                                                                                                </a>
+                                                                                                                            <!--end::Title-->
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </td>
+                                                                                                                <!--end::Customer=-->
+
+                                                                                                                <!--begin::Date Modified=-->
                                                                                                                 <td
                                                                                                                     class="text-end">
-                                                                                                                    July/2022
+                                                                                                                    <span
+                                                                                                                        class="fw-bold">Aug
+                                                                                                                        2022</span>
                                                                                                                 </td>
-                                                                                                                <td
-                                                                                                                    class="text-end">
-                                                                                                                    2022-10-10
-                                                                                                                </td>
-                                                                                                                <td
-                                                                                                                    class="text-end">
-                                                                                                                    $630.00
-                                                                                                                </td>
+                                                                                                                <!--end::Date Modified=-->
                                                                                                                 <!--begin::Status=-->
-                                                                                                                <td
-                                                                                                                    class="text-end">
+                                                                                                                <td class="text-end pe-0"
+                                                                                                                    data-order="Refunded">
                                                                                                                     <!--begin::Badges-->
                                                                                                                     <div
-                                                                                                                        class="badge badge-light-danger">
-                                                                                                                        Locked
+                                                                                                                        class="badge badge-light-info"><?php echo $row->status ?>  
                                                                                                                     </div>
                                                                                                                     <!--end::Badges-->
                                                                                                                 </td>
                                                                                                                 <!--end::Status=-->
+                                                                                                                <!--begin::Date Added=-->
+                                                                                                                <td class="text-end"
+                                                                                                                    data-order="2022-11-16">
+                                                                                                                    <span
+                                                                                                                        class="fw-bold"><?php echo $row->created_date ?></span>
+                                                                                                                </td>
+                                                                                                                <!--end::Date Added=-->
+                                                                                                                <!--begin::Total=-->
+                                                                                                                <td
+                                                                                                                    class="text-end pe-0">
+                                                                                                                    <span
+                                                                                                                        class="fw-bold"><?php echo $row->amount ?></span>
+                                                                                                                </td>
+                                                                                                                <!--end::Total=-->
                                                                                                                 <!--begin::Action=-->
                                                                                                                 <td
                                                                                                                     class="text-end">
@@ -613,8 +587,15 @@
                                                                                                                         <!--begin::Menu item-->
                                                                                                                         <div
                                                                                                                             class="menu-item px-3">
-                                                                                                                            <a href="#"
-                                                                                                                                class="menu-link px-3">Approve</a>
+                                                                                                                            <a href="../../demo19/dist/apps/ecommerce/sales/details.html"
+                                                                                                                                class="menu-link px-3">View</a>
+                                                                                                                        </div>
+                                                                                                                        <!--end::Menu item-->
+                                                                                                                        <!--begin::Menu item-->
+                                                                                                                        <div
+                                                                                                                            class="menu-item px-3">
+                                                                                                                            <a href="../../demo19/dist/apps/ecommerce/sales/edit-order.html"
+                                                                                                                                class="menu-link px-3">Edit</a>
                                                                                                                         </div>
                                                                                                                         <!--end::Menu item-->
                                                                                                                         <!--begin::Menu item-->
@@ -622,28 +603,416 @@
                                                                                                                             class="menu-item px-3">
                                                                                                                             <a href="#"
                                                                                                                                 class="menu-link px-3"
-                                                                                                                                data-kt-customer-table-filter="delete_row">Reject</a>
-                                                                                                                        </div>
-                                                                                                                        <!--end::Menu item-->
-                                                                                                                        <!--begin::Menu item-->
-                                                                                                                        <div
-                                                                                                                            class="menu-item px-3">
-                                                                                                                            <a href="#"
-                                                                                                                                class="menu-link px-3"
-                                                                                                                                data-kt-customer-table-filter="delete_row">Print</a>
+                                                                                                                                data-kt-ecommerce-order-filter="delete_row">Delete</a>
                                                                                                                         </div>
                                                                                                                         <!--end::Menu item-->
                                                                                                                     </div>
                                                                                                                     <!--end::Menu-->
                                                                                                                 </td>
                                                                                                                 <!--end::Action=-->
-
-                                                                                                                <!-- <td class="text-end">Test</td> -->
-
                                                                                                             </tr>
+                                                                                                            <?php } ?>
+                                                                                                            <!--end::Table row-->
+                                                                                                            <!--begin::Table row-->
+                                                                                                            <tr>
+                                                                                                                <!--begin::Checkbox-->
+                                                                                                                <td>
+                                                                                                                    <div
+                                                                                                                        class="form-check form-check-sm form-check-custom form-check-solid">
+                                                                                                                        <input
+                                                                                                                            class="form-check-input"
+                                                                                                                            type="checkbox"
+                                                                                                                            value="1" />
+                                                                                                                    </div>
+                                                                                                                </td>
+                                                                                                                <!--end::Checkbox-->
+                                                                                                                <!--begin::Order ID=-->
+                                                                                                                <td>
+                                                                                                                    <a href="../../demo19/dist/apps/ecommerce/sales/details.html"
+                                                                                                                        class="text-gray-800 text-hover-primary fw-bold">12615</a>
+                                                                                                                </td>
+                                                                                                                <!--end::Order ID=-->
+                                                                                                                <!--begin::Customer=-->
+                                                                                                                <td>
+                                                                                                                    <div
+                                                                                                                        class="d-flex align-items-center">
+                                                                                                                        <!--begin:: Avatar -->
+                                                                                                                        <div
+                                                                                                                            class="symbol symbol-circle symbol-50px overflow-hidden me-3">
+                                                                                                                            <a
+                                                                                                                                href="../../demo19/dist/apps/user-management/users/view.html">
+                                                                                                                                <div
+                                                                                                                                    class="symbol-label">
+                                                                                                                                    <img src="assets/media/avatars/300-12.jpg"
+                                                                                                                                        alt="Ana Crown"
+                                                                                                                                        class="w-100" />
+                                                                                                                                </div>
+                                                                                                                            </a>
+                                                                                                                        </div>
+                                                                                                                        <!--end::Avatar-->
+                                                                                                                        <div
+                                                                                                                            class="ms-5">
+                                                                                                                            <!--begin::Title-->
+                                                                                                                            <a href="../../demo19/dist/apps/user-management/users/view.html"
+                                                                                                                                class="text-gray-800 text-hover-primary fs-5 fw-bold">Ana
+                                                                                                                                Crown</a>
+                                                                                                                            <!--end::Title-->
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </td>
+                                                                                                                <!--end::Customer=-->
+                                                                                                                <!--begin::Status=-->
+                                                                                                                <td class="text-end pe-0"
+                                                                                                                    data-order="Expired">
+                                                                                                                    <!--begin::Badges-->
+                                                                                                                    <div
+                                                                                                                        class="badge badge-light-danger">
+                                                                                                                        Expired
+                                                                                                                    </div>
+                                                                                                                    <!--end::Badges-->
+                                                                                                                </td>
+                                                                                                                <!--end::Status=-->
+                                                                                                                <!--begin::Total=-->
+                                                                                                                <td
+                                                                                                                    class="text-end pe-0">
+                                                                                                                    <span
+                                                                                                                        class="fw-bold">$105.00</span>
+                                                                                                                </td>
+                                                                                                                <!--end::Total=-->
+                                                                                                                <!--begin::Date Added=-->
+                                                                                                                <td class="text-end"
+                                                                                                                    data-order="2022-11-18">
+                                                                                                                    <span
+                                                                                                                        class="fw-bold">02/12/2022</span>
+                                                                                                                </td>
+                                                                                                                <!--end::Date Added=-->
+                                                                                                                <!--begin::Date Modified=-->
+                                                                                                                <td
+                                                                                                                    class="text-end">
+                                                                                                                    <span
+                                                                                                                        class="fw-bold">test2</span>
+                                                                                                                </td>
+                                                                                                                <!--end::Date Modified=-->
+                                                                                                                <!--begin::Action=-->
+                                                                                                                <td
+                                                                                                                    class="text-end">
+                                                                                                                    <a href="#"
+                                                                                                                        class="btn btn-sm btn-light btn-active-light-primary"
+                                                                                                                        data-kt-menu-trigger="click"
+                                                                                                                        data-kt-menu-placement="bottom-end">Actions
+                                                                                                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr072.svg-->
+                                                                                                                        <span
+                                                                                                                            class="svg-icon svg-icon-5 m-0">
+                                                                                                                            <svg width="24"
+                                                                                                                                height="24"
+                                                                                                                                viewBox="0 0 24 24"
+                                                                                                                                fill="none"
+                                                                                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                                                                                <path
+                                                                                                                                    d="M11.4343 12.7344L7.25 8.55005C6.83579 8.13583 6.16421 8.13584 5.75 8.55005C5.33579 8.96426 5.33579 9.63583 5.75 10.05L11.2929 15.5929C11.6834 15.9835 12.3166 15.9835 12.7071 15.5929L18.25 10.05C18.6642 9.63584 18.6642 8.96426 18.25 8.55005C17.8358 8.13584 17.1642 8.13584 16.75 8.55005L12.5657 12.7344C12.2533 13.0468 11.7467 13.0468 11.4343 12.7344Z"
+                                                                                                                                    fill="currentColor" />
+                                                                                                                            </svg>
+                                                                                                                        </span>
+                                                                                                                        <!--end::Svg Icon-->
+                                                                                                                    </a>
+                                                                                                                    <!--begin::Menu-->
+                                                                                                                    <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4"
+                                                                                                                        data-kt-menu="true">
+                                                                                                                        <!--begin::Menu item-->
+                                                                                                                        <div
+                                                                                                                            class="menu-item px-3">
+                                                                                                                            <a href="../../demo19/dist/apps/ecommerce/sales/details.html"
+                                                                                                                                class="menu-link px-3">View</a>
+                                                                                                                        </div>
+                                                                                                                        <!--end::Menu item-->
+                                                                                                                        <!--begin::Menu item-->
+                                                                                                                        <div
+                                                                                                                            class="menu-item px-3">
+                                                                                                                            <a href="../../demo19/dist/apps/ecommerce/sales/edit-order.html"
+                                                                                                                                class="menu-link px-3">Edit</a>
+                                                                                                                        </div>
+                                                                                                                        <!--end::Menu item-->
+                                                                                                                        <!--begin::Menu item-->
+                                                                                                                        <div
+                                                                                                                            class="menu-item px-3">
+                                                                                                                            <a href="#"
+                                                                                                                                class="menu-link px-3"
+                                                                                                                                data-kt-ecommerce-order-filter="delete_row">Delete</a>
+                                                                                                                        </div>
+                                                                                                                        <!--end::Menu item-->
+                                                                                                                    </div>
+                                                                                                                    <!--end::Menu-->
+                                                                                                                </td>
+                                                                                                                <!--end::Action=-->
+                                                                                                            </tr>
+                                                                                                            <!--end::Table row-->
+                                                                                                            <!--begin::Table row-->
+                                                                                                            <tr>
+                                                                                                                <!--begin::Checkbox-->
+                                                                                                                <td>
+                                                                                                                    <div
+                                                                                                                        class="form-check form-check-sm form-check-custom form-check-solid">
+                                                                                                                        <input
+                                                                                                                            class="form-check-input"
+                                                                                                                            type="checkbox"
+                                                                                                                            value="1" />
+                                                                                                                    </div>
+                                                                                                                </td>
+                                                                                                                <!--end::Checkbox-->
+                                                                                                                <!--begin::Order ID=-->
+                                                                                                                <td
+                                                                                                                    data-kt-ecommerce-order-filter="order_id">
+                                                                                                                    <a href="../../demo19/dist/apps/ecommerce/sales/details.html"
+                                                                                                                        class="text-gray-800 text-hover-primary fw-bold">12616</a>
+                                                                                                                </td>
+                                                                                                                <!--end::Order ID=-->
+                                                                                                                <!--begin::Customer=-->
+                                                                                                                <td>
+                                                                                                                    <div
+                                                                                                                        class="d-flex align-items-center">
+                                                                                                                        <!--begin:: Avatar -->
+                                                                                                                        <div
+                                                                                                                            class="symbol symbol-circle symbol-50px overflow-hidden me-3">
+                                                                                                                            <a
+                                                                                                                                href="../../demo19/dist/apps/user-management/users/view.html">
+                                                                                                                                <div
+                                                                                                                                    class="symbol-label fs-3 bg-light-danger text-danger">
+                                                                                                                                    M
+                                                                                                                                </div>
+                                                                                                                            </a>
+                                                                                                                        </div>
+                                                                                                                        <!--end::Avatar-->
+                                                                                                                        <div
+                                                                                                                            class="ms-5">
+                                                                                                                            <!--begin::Title-->
+                                                                                                                            <a href="../../demo19/dist/apps/user-management/users/view.html"
+                                                                                                                                class="text-gray-800 text-hover-primary fs-5 fw-bold">Melody
+                                                                                                                                Macy</a>
+                                                                                                                            <!--end::Title-->
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </td>
+                                                                                                                <!--end::Customer=-->
+                                                                                                                <!--begin::Status=-->
+                                                                                                                <td class="text-end pe-0"
+                                                                                                                    data-order="Cancelled">
+                                                                                                                    <!--begin::Badges-->
+                                                                                                                    <div
+                                                                                                                        class="badge badge-light-danger">
+                                                                                                                        Cancelled
+                                                                                                                    </div>
+                                                                                                                    <!--end::Badges-->
+                                                                                                                </td>
+                                                                                                                <!--end::Status=-->
+                                                                                                                <!--begin::Total=-->
+                                                                                                                <td
+                                                                                                                    class="text-end pe-0">
+                                                                                                                    <span
+                                                                                                                        class="fw-bold">$322.00</span>
+                                                                                                                </td>
+                                                                                                                <!--end::Total=-->
+                                                                                                                <!--begin::Date Added=-->
+                                                                                                                <td class="text-end"
+                                                                                                                    data-order="2022-11-16">
+                                                                                                                    <span
+                                                                                                                        class="fw-bold">16/11/2022</span>
+                                                                                                                </td>
+                                                                                                                <!--end::Date Added=-->
+                                                                                                                <!--begin::Date Modified=-->
+                                                                                                                <td
+                                                                                                                    class="text-end">
+                                                                                                                    <span
+                                                                                                                        class="fw-bold">yerst</span>
+                                                                                                                </td>
+                                                                                                                <!--end::Date Modified=-->
+                                                                                                                <!--begin::Action=-->
+                                                                                                                <td
+                                                                                                                    class="text-end">
+                                                                                                                    <a href="#"
+                                                                                                                        class="btn btn-sm btn-light btn-active-light-primary"
+                                                                                                                        data-kt-menu-trigger="click"
+                                                                                                                        data-kt-menu-placement="bottom-end">Actions
+                                                                                                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr072.svg-->
+                                                                                                                        <span
+                                                                                                                            class="svg-icon svg-icon-5 m-0">
+                                                                                                                            <svg width="24"
+                                                                                                                                height="24"
+                                                                                                                                viewBox="0 0 24 24"
+                                                                                                                                fill="none"
+                                                                                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                                                                                <path
+                                                                                                                                    d="M11.4343 12.7344L7.25 8.55005C6.83579 8.13583 6.16421 8.13584 5.75 8.55005C5.33579 8.96426 5.33579 9.63583 5.75 10.05L11.2929 15.5929C11.6834 15.9835 12.3166 15.9835 12.7071 15.5929L18.25 10.05C18.6642 9.63584 18.6642 8.96426 18.25 8.55005C17.8358 8.13584 17.1642 8.13584 16.75 8.55005L12.5657 12.7344C12.2533 13.0468 11.7467 13.0468 11.4343 12.7344Z"
+                                                                                                                                    fill="currentColor" />
+                                                                                                                            </svg>
+                                                                                                                        </span>
+                                                                                                                        <!--end::Svg Icon-->
+                                                                                                                    </a>
+                                                                                                                    <!--begin::Menu-->
+                                                                                                                    <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4"
+                                                                                                                        data-kt-menu="true">
+                                                                                                                        <!--begin::Menu item-->
+                                                                                                                        <div
+                                                                                                                            class="menu-item px-3">
+                                                                                                                            <a href="../../demo19/dist/apps/ecommerce/sales/details.html"
+                                                                                                                                class="menu-link px-3">View</a>
+                                                                                                                        </div>
+                                                                                                                        <!--end::Menu item-->
+                                                                                                                        <!--begin::Menu item-->
+                                                                                                                        <div
+                                                                                                                            class="menu-item px-3">
+                                                                                                                            <a href="../../demo19/dist/apps/ecommerce/sales/edit-order.html"
+                                                                                                                                class="menu-link px-3">Edit</a>
+                                                                                                                        </div>
+                                                                                                                        <!--end::Menu item-->
+                                                                                                                        <!--begin::Menu item-->
+                                                                                                                        <div
+                                                                                                                            class="menu-item px-3">
+                                                                                                                            <a href="#"
+                                                                                                                                class="menu-link px-3"
+                                                                                                                                data-kt-ecommerce-order-filter="delete_row">Delete</a>
+                                                                                                                        </div>
+                                                                                                                        <!--end::Menu item-->
+                                                                                                                    </div>
+                                                                                                                    <!--end::Menu-->
+                                                                                                                </td>
+                                                                                                                <!--end::Action=-->
+                                                                                                            </tr>
+                                                                                                            <!--end::Table row-->
+                                                                                                            <!--begin::Table row-->
+                                                                                                            <tr>
+                                                                                                                <!--begin::Checkbox-->
+                                                                                                                <td>
+                                                                                                                    <div
+                                                                                                                        class="form-check form-check-sm form-check-custom form-check-solid">
+                                                                                                                        <input
+                                                                                                                            class="form-check-input"
+                                                                                                                            type="checkbox"
+                                                                                                                            value="1" />
+                                                                                                                    </div>
+                                                                                                                </td>
+                                                                                                                <!--end::Checkbox-->
+                                                                                                                <!--begin::Order ID=-->
+                                                                                                                <td
+                                                                                                                    data-kt-ecommerce-order-filter="order_id">
+                                                                                                                    <a href="../../demo19/dist/apps/ecommerce/sales/details.html"
+                                                                                                                        class="text-gray-800 text-hover-primary fw-bold">12617</a>
+                                                                                                                </td>
+                                                                                                                <!--end::Order ID=-->
+                                                                                                                <!--begin::Customer=-->
+                                                                                                                <td>
+                                                                                                                    <div
+                                                                                                                        class="d-flex align-items-center">
+                                                                                                                        <!--begin:: Avatar -->
+                                                                                                                        <div
+                                                                                                                            class="symbol symbol-circle symbol-50px overflow-hidden me-3">
+                                                                                                                            <a
+                                                                                                                                href="../../demo19/dist/apps/user-management/users/view.html">
+                                                                                                                                <div
+                                                                                                                                    class="symbol-label fs-3 bg-light-danger text-danger">
+                                                                                                                                    E
+                                                                                                                                </div>
+                                                                                                                            </a>
+                                                                                                                        </div>
+                                                                                                                        <!--end::Avatar-->
+                                                                                                                        <div
+                                                                                                                            class="ms-5">
+                                                                                                                            <!--begin::Title-->
+                                                                                                                            <a href="../../demo19/dist/apps/user-management/users/view.html"
+                                                                                                                                class="text-gray-800 text-hover-primary fs-5 fw-bold">Emma
+                                                                                                                                Bold</a>
+                                                                                                                            <!--end::Title-->
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </td>
+                                                                                                                <!--end::Customer=-->
+                                                                                                                <!--begin::Status=-->
+                                                                                                                <td class="text-end pe-0"
+                                                                                                                    data-order="Completed">
+                                                                                                                    <!--begin::Badges-->
+                                                                                                                    <div
+                                                                                                                        class="badge badge-light-success">
+                                                                                                                        Completed
+                                                                                                                    </div>
+                                                                                                                    <!--end::Badges-->
+                                                                                                                </td>
+                                                                                                                <!--end::Status=-->
+                                                                                                                <!--begin::Total=-->
+                                                                                                                <td
+                                                                                                                    class="text-end pe-0">
+                                                                                                                    <span
+                                                                                                                        class="fw-bold">$479.00</span>
+                                                                                                                </td>
+                                                                                                                <!--end::Total=-->
+                                                                                                                <!--begin::Date Added=-->
+                                                                                                                <td class="text-end"
+                                                                                                                    data-order="2022-11-16">
+                                                                                                                    <span
+                                                                                                                        class="fw-bold">16/11/2022</span>
+                                                                                                                </td>
+                                                                                                                <!--end::Date Added=-->
+                                                                                                                <!--begin::Date Modified=-->
+                                                                                                                <td
+                                                                                                                    class="text-end">
+                                                                                                                    <span
+                                                                                                                        class="fw-bold">tess</span>
+                                                                                                                </td>
+                                                                                                                <!--end::Date Modified=-->
+                                                                                                                <!--begin::Action=-->
+                                                                                                                <td
+                                                                                                                    class="text-end">
+                                                                                                                    <a href="#"
+                                                                                                                        class="btn btn-sm btn-light btn-active-light-primary"
+                                                                                                                        data-kt-menu-trigger="click"
+                                                                                                                        data-kt-menu-placement="bottom-end">Actions
+                                                                                                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr072.svg-->
+                                                                                                                        <span
+                                                                                                                            class="svg-icon svg-icon-5 m-0">
+                                                                                                                            <svg width="24"
+                                                                                                                                height="24"
+                                                                                                                                viewBox="0 0 24 24"
+                                                                                                                                fill="none"
+                                                                                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                                                                                <path
+                                                                                                                                    d="M11.4343 12.7344L7.25 8.55005C6.83579 8.13583 6.16421 8.13584 5.75 8.55005C5.33579 8.96426 5.33579 9.63583 5.75 10.05L11.2929 15.5929C11.6834 15.9835 12.3166 15.9835 12.7071 15.5929L18.25 10.05C18.6642 9.63584 18.6642 8.96426 18.25 8.55005C17.8358 8.13584 17.1642 8.13584 16.75 8.55005L12.5657 12.7344C12.2533 13.0468 11.7467 13.0468 11.4343 12.7344Z"
+                                                                                                                                    fill="currentColor" />
+                                                                                                                            </svg>
+                                                                                                                        </span>
+                                                                                                                        <!--end::Svg Icon-->
+                                                                                                                    </a>
+                                                                                                                    <!--begin::Menu-->
+                                                                                                                    <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4"
+                                                                                                                        data-kt-menu="true">
+                                                                                                                        <!--begin::Menu item-->
+                                                                                                                        <div
+                                                                                                                            class="menu-item px-3">
+                                                                                                                            <a href="../../demo19/dist/apps/ecommerce/sales/details.html"
+                                                                                                                                class="menu-link px-3">View</a>
+                                                                                                                        </div>
+                                                                                                                        <!--end::Menu item-->
+                                                                                                                        <!--begin::Menu item-->
+                                                                                                                        <div
+                                                                                                                            class="menu-item px-3">
+                                                                                                                            <a href="../../demo19/dist/apps/ecommerce/sales/edit-order.html"
+                                                                                                                                class="menu-link px-3">Edit</a>
+                                                                                                                        </div>
+                                                                                                                        <!--end::Menu item-->
+                                                                                                                        <!--begin::Menu item-->
+                                                                                                                        <div
+                                                                                                                            class="menu-item px-3">
+                                                                                                                            <a href="#"
+                                                                                                                                class="menu-link px-3"
+                                                                                                                                data-kt-ecommerce-order-filter="delete_row">Delete</a>
+                                                                                                                        </div>
+                                                                                                                        <!--end::Menu item-->
+                                                                                                                    </div>
+                                                                                                                    <!--end::Menu-->
+                                                                                                                </td>
+                                                                                                                <!--end::Action=-->
+                                                                                                            </tr>
+                                                                                                            <!--end::Table row-->
+                                                                                                            <!--begin::Table row-->
 
-
-
+                                                                                                            <!--end::Table row-->
                                                                                                         </tbody>
                                                                                                         <!--end::Table body-->
                                                                                                     </table>
@@ -651,16 +1020,809 @@
                                                                                                 </div>
                                                                                                 <!--end::Card body-->
                                                                                             </div>
-                                                                                            <!--end::Table Widget 4-->
+                                                                                            <!--end::Products-->
                                                                                         </div>
-                                                                                        <!--end::Col-->
+                                                                                        <!--end::Content-->
                                                                                     </div>
+                                                                                    <!--end::Main-->
+                                                                                    <!--begin::Footer-->
 
-
-
-
-                                                                                    <!--end::Table-->
+                                                                                    <!--end::Footer-->
                                                                                 </div>
+                                                                                <!--end::Wrapper-->
+
+
+
+
+
+                                                                            <script>
+                                                                                var table;
+                                                                                var datatable;
+                                                                                var template;
+
+                                                                                // Private methods
+                                                                                const initDatatable = () => {
+                                                                                    // Set date data order
+                                                                                    const tableRows = table
+                                                                                        .querySelectorAll(
+                                                                                            'tbody tr');
+
+                                                                                    tableRows.forEach(row => {
+                                                                                        const dateRow = row
+                                                                                            .querySelectorAll(
+                                                                                                'td');
+                                                                                        const realDate =
+                                                                                            moment(dateRow[
+                                                                                                    1]
+                                                                                                .innerHTML,
+                                                                                                "DD MMM YYYY, LT"
+                                                                                                )
+                                                                                        .format(); // select date from 2nd column in table
+
+                                                                                        // Skip template
+                                                                                        if (!row.closest(
+                                                                                                '[data-kt-docs-datatable-subtable="subtable_template"]'
+                                                                                                )) {
+                                                                                            dateRow[1]
+                                                                                                .setAttribute(
+                                                                                                    'data-order',
+                                                                                                    realDate
+                                                                                                    );
+                                                                                            dateRow[1]
+                                                                                                .innerText =
+                                                                                                moment(
+                                                                                                    realDate
+                                                                                                    )
+                                                                                                .fromNow();
+                                                                                        }
+                                                                                    });
+
+                                                                                    // Get subtable template
+                                                                                    const subtable = document
+                                                                                        .querySelector(
+                                                                                            '[data-kt-docs-datatable-subtable="subtable_template"]'
+                                                                                            );
+                                                                                    template = subtable.cloneNode(
+                                                                                        true);
+                                                                                    template.classList.remove(
+                                                                                        'd-none');
+
+                                                                                    // Remove subtable template
+                                                                                    subtable.parentNode.removeChild(
+                                                                                        subtable);
+
+                                                                                    // Init datatable --- more info on datatables: https://datatables.net/manual/
+                                                                                    datatable = $(table).DataTable({
+                                                                                        "info": false,
+                                                                                        'order': [],
+                                                                                        "lengthChange": false,
+                                                                                        'pageLength': 6,
+                                                                                        'ordering': false,
+                                                                                        'paging': false,
+                                                                                        'columnDefs': [{
+                                                                                                orderable: false,
+                                                                                                targets: 0
+                                                                                            }, // Disable ordering on column 0 (checkbox)
+                                                                                            {
+                                                                                                orderable: false,
+                                                                                                targets: 6
+                                                                                            }, // Disable ordering on column 6 (actions)
+                                                                                        ]
+                                                                                    });
+
+                                                                                    // Re-init functions on every table re-draw -- more info: https://datatables.net/reference/event/draw
+                                                                                    datatable.on('draw',
+                                                                                function() {
+                                                                                        resetSubtable();
+                                                                                        handleActionButton
+                                                                                    ();
+                                                                                    });
+                                                                                }
+
+                                                                                // Subtable data sample
+                                                                                const data = [{
+                                                                                        image: '76',
+                                                                                        name: 'Go Pro 8',
+                                                                                        description: 'Latest  version of Go Pro.',
+                                                                                        cost: '500.00',
+                                                                                        qty: '1',
+                                                                                        total: '500.00',
+                                                                                        stock: '12'
+                                                                                    },
+
+                                                                                ]
+
+                                                                                // Handle action button
+                                                                                const handleActionButton = () => {
+                                                                                    const buttons = document
+                                                                                        .querySelectorAll(
+                                                                                            '[data-kt-docs-datatable-subtable="expand_row"]'
+                                                                                            );
+
+                                                                                    // Sample row items counter --- for demo purpose only, remove this variable in your project
+                                                                                    const rowItems = [4, 1, 5, 1, 4,
+                                                                                        2
+                                                                                    ];
+
+                                                                                    buttons.forEach((button,
+                                                                                        index) => {
+                                                                                            button
+                                                                                                .addEventListener(
+                                                                                                    'click',
+                                                                                                    e => {
+                                                                                                        e
+                                                                                                    .stopImmediatePropagation();
+                                                                                                        e
+                                                                                                    .preventDefault();
+
+                                                                                                        const
+                                                                                                            row =
+                                                                                                            button
+                                                                                                            .closest(
+                                                                                                                'tr'
+                                                                                                                );
+                                                                                                        const
+                                                                                                            rowClasses = [
+                                                                                                                'isOpen',
+                                                                                                                'border-bottom-0'
+                                                                                                            ];
+
+                                                                                                        // Get total number of items to generate --- for demo purpose only, remove this code snippet in your project
+                                                                                                        const
+                                                                                                            demoData = [];
+                                                                                                        for (var j =
+                                                                                                                0; j <
+                                                                                                            rowItems[
+                                                                                                                index
+                                                                                                                ]; j++
+                                                                                                            ) {
+                                                                                                            demoData
+                                                                                                                .push(
+                                                                                                                    data[
+                                                                                                                        j
+                                                                                                                        ]
+                                                                                                                    );
+                                                                                                        }
+                                                                                                        // End of generating demo data
+
+                                                                                                        // Handle subtable expanded state
+                                                                                                        if (row
+                                                                                                            .classList
+                                                                                                            .contains(
+                                                                                                                'isOpen'
+                                                                                                                )
+                                                                                                            ) {
+                                                                                                            // Remove all subtables from current order row
+                                                                                                            while (
+                                                                                                                row
+                                                                                                                .nextSibling &&
+                                                                                                                row
+                                                                                                                .nextSibling
+                                                                                                                .getAttribute(
+                                                                                                                    'data-kt-docs-datatable-subtable'
+                                                                                                                    ) ===
+                                                                                                                'subtable_template'
+                                                                                                                ) {
+                                                                                                                row.nextSibling
+                                                                                                                    .parentNode
+                                                                                                                    .removeChild(
+                                                                                                                        row
+                                                                                                                        .nextSibling
+                                                                                                                        );
+                                                                                                            }
+                                                                                                            row.classList
+                                                                                                                .remove(
+                                                                                                                    ...
+                                                                                                                    rowClasses
+                                                                                                                    );
+                                                                                                            button
+                                                                                                                .classList
+                                                                                                                .remove(
+                                                                                                                    'active'
+                                                                                                                    );
+                                                                                                        } else {
+                                                                                                            populateTemplate
+                                                                                                                (demoData,
+                                                                                                                    row
+                                                                                                                    );
+                                                                                                            row.classList
+                                                                                                                .add(
+                                                                                                                    ...
+                                                                                                                    rowClasses
+                                                                                                                    );
+                                                                                                            button
+                                                                                                                .classList
+                                                                                                                .add(
+                                                                                                                    'active'
+                                                                                                                    );
+                                                                                                        }
+                                                                                                    });
+                                                                                        });
+                                                                                }
+
+                                                                                // Populate template with content/data -- content/data can be replaced with relevant data from database or API
+                                                                                const populateTemplate = (data,
+                                                                                    target) => {
+                                                                                        data.forEach((d, index) => {
+                                                                                            // Clone template node
+                                                                                            const newTemplate =
+                                                                                                template
+                                                                                                .cloneNode(
+                                                                                                true);
+
+                                                                                            // Stock badges
+                                                                                            const lowStock =
+                                                                                                `<div class="badge badge-light-warning">Low Stock</div>`;
+                                                                                            const inStock =
+                                                                                                `<div class="badge badge-light-success">In Stock</div>`;
+
+                                                                                            // Select data elements
+                                                                                            const image =
+                                                                                                newTemplate
+                                                                                                .querySelector(
+                                                                                                    '[data-kt-docs-datatable-subtable="template_image"]'
+                                                                                                    );
+                                                                                            const name =
+                                                                                                newTemplate
+                                                                                                .querySelector(
+                                                                                                    '[data-kt-docs-datatable-subtable="template_name"]'
+                                                                                                    );
+                                                                                            const description =
+                                                                                                newTemplate
+                                                                                                .querySelector(
+                                                                                                    '[data-kt-docs-datatable-subtable="template_description"]'
+                                                                                                    );
+                                                                                            const cost =
+                                                                                                newTemplate
+                                                                                                .querySelector(
+                                                                                                    '[data-kt-docs-datatable-subtable="template_cost"]'
+                                                                                                    );
+                                                                                            const qty =
+                                                                                                newTemplate
+                                                                                                .querySelector(
+                                                                                                    '[data-kt-docs-datatable-subtable="template_qty"]'
+                                                                                                    );
+                                                                                            const total =
+                                                                                                newTemplate
+                                                                                                .querySelector(
+                                                                                                    '[data-kt-docs-datatable-subtable="template_total"]'
+                                                                                                    );
+                                                                                            const stock =
+                                                                                                newTemplate
+                                                                                                .querySelector(
+                                                                                                    '[data-kt-docs-datatable-subtable="template_stock"]'
+                                                                                                    );
+
+                                                                                            // Populate elements with data
+                                                                                            const imageSrc =
+                                                                                                image
+                                                                                                .getAttribute(
+                                                                                                    'src');
+                                                                                            image.setAttribute(
+                                                                                                'src',
+                                                                                                imageSrc + d
+                                                                                                .image +
+                                                                                                '.gif');
+                                                                                            name.innerText = d
+                                                                                                .name;
+                                                                                            description
+                                                                                                .innerText = d
+                                                                                                .description;
+                                                                                            cost.innerText = d
+                                                                                                .cost;
+                                                                                            qty.innerText = d
+                                                                                                .qty;
+                                                                                            total.innerText = d
+                                                                                                .total;
+                                                                                            if (d.stock > 10) {
+                                                                                                stock
+                                                                                                    .innerHTML =
+                                                                                                    inStock;
+                                                                                            } else {
+                                                                                                stock
+                                                                                                    .innerHTML =
+                                                                                                    lowStock;
+                                                                                            }
+
+                                                                                            // New template border controller
+                                                                                            // When only 1 row is available
+                                                                                            if (data.length ===
+                                                                                                1) {
+                                                                                                let borderClasses = [
+                                                                                                    'rounded',
+                                                                                                    'rounded-end-0'
+                                                                                                ];
+                                                                                                newTemplate
+                                                                                                    .querySelectorAll(
+                                                                                                        'td')[0]
+                                                                                                    .classList
+                                                                                                    .add(...
+                                                                                                        borderClasses
+                                                                                                        );
+                                                                                                borderClasses
+                                                                                                    = ['rounded',
+                                                                                                        'rounded-start-0'
+                                                                                                    ];
+                                                                                                newTemplate
+                                                                                                    .querySelectorAll(
+                                                                                                        'td')[4]
+                                                                                                    .classList
+                                                                                                    .add(...
+                                                                                                        borderClasses
+                                                                                                        );
+
+                                                                                                // Remove bottom border
+                                                                                                newTemplate
+                                                                                                    .classList
+                                                                                                    .add(
+                                                                                                        'border-bottom-0'
+                                                                                                        );
+                                                                                            } else {
+                                                                                                // When multiple rows detected
+                                                                                                if (index === (
+                                                                                                        data
+                                                                                                        .length -
+                                                                                                        1
+                                                                                                        )) { // first row
+                                                                                                    let borderClasses = [
+                                                                                                        'rounded-start',
+                                                                                                        'rounded-bottom-0'
+                                                                                                    ];
+                                                                                                    newTemplate
+                                                                                                        .querySelectorAll(
+                                                                                                            'td'
+                                                                                                            )[0]
+                                                                                                        .classList
+                                                                                                        .add(...
+                                                                                                            borderClasses
+                                                                                                            );
+                                                                                                    borderClasses
+                                                                                                        = ['rounded-end',
+                                                                                                            'rounded-bottom-0'
+                                                                                                        ];
+                                                                                                    newTemplate
+                                                                                                        .querySelectorAll(
+                                                                                                            'td'
+                                                                                                            )[4]
+                                                                                                        .classList
+                                                                                                        .add(...
+                                                                                                            borderClasses
+                                                                                                            );
+                                                                                                }
+                                                                                                if (index ===
+                                                                                                    0) { // last row
+                                                                                                    let borderClasses = [
+                                                                                                        'rounded-start',
+                                                                                                        'rounded-top-0'
+                                                                                                    ];
+                                                                                                    newTemplate
+                                                                                                        .querySelectorAll(
+                                                                                                            'td'
+                                                                                                            )[0]
+                                                                                                        .classList
+                                                                                                        .add(...
+                                                                                                            borderClasses
+                                                                                                            );
+                                                                                                    borderClasses
+                                                                                                        = ['rounded-end',
+                                                                                                            'rounded-top-0'
+                                                                                                        ];
+                                                                                                    newTemplate
+                                                                                                        .querySelectorAll(
+                                                                                                            'td'
+                                                                                                            )[4]
+                                                                                                        .classList
+                                                                                                        .add(...
+                                                                                                            borderClasses
+                                                                                                            );
+
+                                                                                                    // Remove bottom border on last row
+                                                                                                    newTemplate
+                                                                                                        .classList
+                                                                                                        .add(
+                                                                                                            'border-bottom-0'
+                                                                                                            );
+                                                                                                }
+                                                                                            }
+
+                                                                                            // Insert new template into table
+                                                                                            const tbody = table
+                                                                                                .querySelector(
+                                                                                                    'tbody');
+                                                                                            tbody.insertBefore(
+                                                                                                newTemplate,
+                                                                                                target
+                                                                                                .nextSibling
+                                                                                                );
+                                                                                        });
+                                                                                    }
+
+                                                                                // Reset subtable
+                                                                                const resetSubtable = () => {
+                                                                                    const subtables = document
+                                                                                        .querySelectorAll(
+                                                                                            '[data-kt-docs-datatable-subtable="subtable_template"]'
+                                                                                            );
+                                                                                    subtables.forEach(st => {
+                                                                                        st.parentNode
+                                                                                            .removeChild(
+                                                                                            st);
+                                                                                    });
+
+                                                                                    const rows = table
+                                                                                        .querySelectorAll(
+                                                                                            'tbody tr');
+                                                                                    rows.forEach(r => {
+                                                                                        r.classList.remove(
+                                                                                            'isOpen');
+                                                                                        if (r.querySelector(
+                                                                                                '[data-kt-docs-datatable-subtable="expand_row"]'
+                                                                                                )) {
+                                                                                            r.querySelector(
+                                                                                                    '[data-kt-docs-datatable-subtable="expand_row"]'
+                                                                                                    )
+                                                                                                .classList
+                                                                                                .remove(
+                                                                                                    'active'
+                                                                                                    );
+                                                                                        }
+                                                                                    });
+                                                                                }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                "use strict";
+
+                                                                                // Class definition
+                                                                                var KTAppEcommerceSalesListing =
+                                                                                    function() {
+                                                                                        // Shared variables
+                                                                                        var table;
+                                                                                        var datatable;
+                                                                                        var flatpickr;
+                                                                                        var minDate, maxDate;
+
+                                                                                        // Private functions
+                                                                                        var initDatatable = function() {
+                                                                                            // Init datatable --- more info on datatables: https://datatables.net/manual/
+                                                                                            datatable = $(table)
+                                                                                                .DataTable({
+                                                                                                    "info": false,
+                                                                                                    'order': [],
+                                                                                                    'pageLength': 10,
+                                                                                                    'columnDefs': [{
+                                                                                                            orderable: false,
+                                                                                                            targets: 0
+                                                                                                        }, // Disable ordering on column 0 (checkbox)
+                                                                                                        {
+                                                                                                            orderable: false,
+                                                                                                            targets: 7
+                                                                                                        }, // Disable ordering on column 7 (actions)
+                                                                                                    ]
+                                                                                                });
+
+                                                                                            // Re-init functions on datatable re-draws
+                                                                                            datatable.on('draw',
+                                                                                                function() {
+                                                                                                    handleDeleteRows
+                                                                                                        ();
+                                                                                                });
+                                                                                        }
+
+                                                                                        // Init flatpickr --- more info :https://flatpickr.js.org/getting-started/
+                                                                                        var initFlatpickr = () => {
+                                                                                            const element = document
+                                                                                                .querySelector(
+                                                                                                    '#kt_ecommerce_sales_flatpickr'
+                                                                                                    );
+                                                                                            flatpickr = $(element)
+                                                                                                .flatpickr({
+                                                                                                    altInput: true,
+                                                                                                    altFormat: "d/m/Y",
+                                                                                                    dateFormat: "Y-m-d",
+                                                                                                    mode: "range",
+                                                                                                    onChange: function(
+                                                                                                        selectedDates,
+                                                                                                        dateStr,
+                                                                                                        instance
+                                                                                                        ) {
+                                                                                                        handleFlatpickr
+                                                                                                            (selectedDates,
+                                                                                                                dateStr,
+                                                                                                                instance
+                                                                                                                );
+                                                                                                    },
+                                                                                                });
+                                                                                        }
+                                                                                        var handleSearchDatatable =
+                                                                                        () => {
+                                                                                                const filterSearch =
+                                                                                                    document
+                                                                                                    .querySelector(
+                                                                                                        '[data-kt-ecommerce-order-filter="search"]'
+                                                                                                        );
+                                                                                                filterSearch
+                                                                                                    .addEventListener(
+                                                                                                        'keyup',
+                                                                                                        function(e) {
+                                                                                                            datatable
+                                                                                                                .search(
+                                                                                                                    e
+                                                                                                                    .target
+                                                                                                                    .value
+                                                                                                                    )
+                                                                                                                .draw();
+                                                                                                        });
+                                                                                            }
+                                                                                        var handleStatusFilter = () => {
+                                                                                            const filterStatus =
+                                                                                                document
+                                                                                                .querySelector(
+                                                                                                    '[data-kt-ecommerce-order-filter="status"]'
+                                                                                                    );
+                                                                                            $(filterStatus).on(
+                                                                                                'change', e => {
+                                                                                                    let value =
+                                                                                                        e.target
+                                                                                                        .value;
+                                                                                                    if (value ===
+                                                                                                        'all') {
+                                                                                                        value =
+                                                                                                            '';
+                                                                                                    }
+                                                                                                    datatable
+                                                                                                        .column(
+                                                                                                            3)
+                                                                                                        .search(
+                                                                                                            value
+                                                                                                            )
+                                                                                                        .draw();
+                                                                                                });
+                                                                                        }
+
+                                                                                        // Handle flatpickr --- more info: https://flatpickr.js.org/events/
+                                                                                        var handleFlatpickr = (
+                                                                                            selectedDates, dateStr,
+                                                                                            instance) => {
+                                                                                            minDate = selectedDates[
+                                                                                                0] ? new Date(
+                                                                                                selectedDates[0]
+                                                                                                ) : null;
+                                                                                            maxDate = selectedDates[
+                                                                                                1] ? new Date(
+                                                                                                selectedDates[1]
+                                                                                                ) : null;
+
+
+
+                                                                                            // Datatable date filter --- more info: https://datatables.net/extensions/datetime/examples/integration/datatables.html
+                                                                                            // Custom filtering function which will search data in column four between two values
+                                                                                            $.fn.dataTable.ext
+                                                                                                .search.push(
+                                                                                                    function(
+                                                                                                        settings,
+                                                                                                        data,
+                                                                                                        dataIndex) {
+                                                                                                        var min =
+                                                                                                            minDate;
+                                                                                                        var max =
+                                                                                                            maxDate;
+                                                                                                        var dateAdded =
+                                                                                                            new Date(
+                                                                                                                moment(
+                                                                                                                    $(data[
+                                                                                                                        5])
+                                                                                                                    .text(),
+                                                                                                                    'DD/MM/YYYY'
+                                                                                                                    )
+                                                                                                                );
+                                                                                                        // var dateModified = new Date(moment($(data[6]).text(), 'DD/MM/YYYY'));
+                                                                                                        console.log(
+                                                                                                            dateAdded
+                                                                                                            );
+                                                                                                        if (
+                                                                                                            (min ===
+                                                                                                                null &&
+                                                                                                                max ===
+                                                                                                                null
+                                                                                                                ) ||
+                                                                                                            (min ===
+                                                                                                                null &&
+                                                                                                                dateAdded <=
+                                                                                                                max
+                                                                                                                ) ||
+                                                                                                            (min <=
+                                                                                                                dateAdded &&
+                                                                                                                max ===
+                                                                                                                null
+                                                                                                                ) ||
+                                                                                                            (min <=
+                                                                                                                dateAdded &&
+                                                                                                                dateAdded <=
+                                                                                                                max)
+                                                                                                        ) {
+                                                                                                            return true;
+                                                                                                        }
+                                                                                                        return false;
+                                                                                                    }
+                                                                                                );
+                                                                                            datatable.draw();
+                                                                                        }
+                                                                                        // Handle clear flatpickr
+                                                                                        var handleClearFlatpickr =
+                                                                                    () => {
+                                                                                            const clearButton =
+                                                                                                document
+                                                                                                .querySelector(
+                                                                                                    '#kt_ecommerce_sales_flatpickr_clear'
+                                                                                                    );
+                                                                                            clearButton
+                                                                                                .addEventListener(
+                                                                                                    'click', e => {
+                                                                                                        flatpickr
+                                                                                                            .clear();
+                                                                                                    });
+                                                                                        }
+
+                                                                                        // Delete cateogry
+                                                                                        var handleDeleteRows = () => {
+                                                                                            // Select all delete buttons
+                                                                                            const deleteButtons =
+                                                                                                table
+                                                                                                .querySelectorAll(
+                                                                                                    '[data-kt-ecommerce-order-filter="delete_row"]'
+                                                                                                    );
+
+                                                                                            deleteButtons.forEach(
+                                                                                                d => {
+                                                                                                    // Delete button on click
+                                                                                                    d.addEventListener(
+                                                                                                        'click',
+                                                                                                        function(
+                                                                                                            e
+                                                                                                            ) {
+                                                                                                            e
+                                                                                                        .preventDefault();
+
+                                                                                                            // Select parent row
+                                                                                                            const
+                                                                                                                parent =
+                                                                                                                e
+                                                                                                                .target
+                                                                                                                .closest(
+                                                                                                                    'tr'
+                                                                                                                    );
+
+                                                                                                            // Get category name
+                                                                                                            const
+                                                                                                                orderID =
+                                                                                                                parent
+                                                                                                                .querySelector(
+                                                                                                                    '[data-kt-ecommerce-order-filter="order_id"]'
+                                                                                                                    )
+                                                                                                                .innerText;
+
+                                                                                                            // SweetAlert2 pop up --- official docs reference: https://sweetalert2.github.io/
+                                                                                                            Swal.fire({
+                                                                                                                    text: "Are you sure you want to delete order: " +
+                                                                                                                        orderID +
+                                                                                                                        "?",
+                                                                                                                    icon: "warning",
+                                                                                                                    showCancelButton: true,
+                                                                                                                    buttonsStyling: false,
+                                                                                                                    confirmButtonText: "Yes, delete!",
+                                                                                                                    cancelButtonText: "No, cancel",
+                                                                                                                    customClass: {
+                                                                                                                        confirmButton: "btn fw-bold btn-danger",
+                                                                                                                        cancelButton: "btn fw-bold btn-active-light-primary"
+                                                                                                                    }
+                                                                                                                })
+                                                                                                                .then(
+                                                                                                                    function(
+                                                                                                                        result
+                                                                                                                        ) {
+                                                                                                                        if (result
+                                                                                                                            .value
+                                                                                                                            ) {
+                                                                                                                            Swal.fire({
+                                                                                                                                    text: "You have deleted " +
+                                                                                                                                        orderID +
+                                                                                                                                        "!.",
+                                                                                                                                    icon: "success",
+                                                                                                                                    buttonsStyling: false,
+                                                                                                                                    confirmButtonText: "Ok, got it!",
+                                                                                                                                    customClass: {
+                                                                                                                                        confirmButton: "btn fw-bold btn-primary",
+                                                                                                                                    }
+                                                                                                                                })
+                                                                                                                                .then(
+                                                                                                                                    function() {
+                                                                                                                                        // Remove current row
+                                                                                                                                        datatable
+                                                                                                                                            .row(
+                                                                                                                                                $(
+                                                                                                                                                    parent)
+                                                                                                                                                )
+                                                                                                                                            .remove()
+                                                                                                                                            .draw();
+                                                                                                                                    }
+                                                                                                                                    );
+                                                                                                                        } else if (
+                                                                                                                            result
+                                                                                                                            .dismiss ===
+                                                                                                                            'cancel'
+                                                                                                                            ) {
+                                                                                                                            Swal.fire({
+                                                                                                                                text: orderID +
+                                                                                                                                    " was not deleted.",
+                                                                                                                                icon: "error",
+                                                                                                                                buttonsStyling: false,
+                                                                                                                                confirmButtonText: "Ok, got it!",
+                                                                                                                                customClass: {
+                                                                                                                                    confirmButton: "btn fw-bold btn-primary",
+                                                                                                                                }
+                                                                                                                            });
+                                                                                                                        }
+                                                                                                                    }
+                                                                                                                    );
+                                                                                                        })
+                                                                                                });
+                                                                                        }
+
+
+                                                                                        // Public methods
+                                                                                        return {
+                                                                                            init: function() {
+                                                                                                table = document
+                                                                                                    .querySelector(
+                                                                                                        '#kt_ecommerce_sales_table'
+                                                                                                        );
+
+                                                                                                if (!table) {
+                                                                                                    return;
+                                                                                                }
+
+                                                                                                initDatatable();
+                                                                                                initFlatpickr();
+                                                                                                handleSearchDatatable
+                                                                                                    ();
+                                                                                                handleStatusFilter
+                                                                                            ();
+                                                                                                handleDeleteRows();
+                                                                                                handleClearFlatpickr
+                                                                                                    ();
+                                                                                            }
+                                                                                        };
+                                                                                    }();
+
+                                                                                // On document ready
+                                                                                KTUtil.onDOMContentLoaded(function() {
+                                                                                    KTAppEcommerceSalesListing
+                                                                                        .init();
+                                                                                });
+                                                                                </script>
+
+
+
+
+
+
+
+                                                                                <!--begin::Card body-->
+
                                                                                 <!--end::Card body-->
                                                                             </div>
                                                                             <!--end::Table Widget 4-->
@@ -891,276 +2053,1624 @@
                                                                             <!--begin::Table Widget 4-->
                                                                             <div class="card card-flush h-xl-100">
                                                                                 <!--begin::Card header-->
-                                                                                <div class="card-header pb-5">
+                                                                            
 
-                                                                                    <!--begin::Actions-->
-                                                                                    <div class="card-toolbar w-100">
-                                                                                        <!--begin::Filters-->
-                                                                                        <div
-                                                                                            class="d-flex flex-stack flex-wrap gap-4 w-100 align-items-end justify-content-between">
-
-                                                                                            <!--begin::Destination-->
-
-                                                                                            <div
-                                                                                                class=" align-items-center fw-bold mobile">
-
-                                                                                                <div class="mb-0">
-                                                                                                    <input
-                                                                                                        class="form-control form-control-solid"
-                                                                                                        placeholder="Pick date rage"
-                                                                                                        id="kt_daterangepicker_6" />
-                                                                                                </div>
-                                                                                            </div>
-
-                                                                                            <div
-                                                                                                class="col-md-2 col-sm-12 mobile">
-
-                                                                                                <select name="language"
-                                                                                                    aria-label="Select Month"
-                                                                                                    data-control="select2"
-                                                                                                    data-placeholder="Select a language..."
-                                                                                                    class="form-select form-select-solid form-select-lg">
-                                                                                                    <option
-                                                                                                        value="- Select Reference -">
-                                                                                                        - Select
-                                                                                                        Reference -
-                                                                                                    </option>
-                                                                                                    <option
-                                                                                                        value="option1">
-                                                                                                        Option 1
-                                                                                                    </option>
-                                                                                                </select>
-                                                                                            </div>
-
-                                                                                            <!--end::Destination-->
-                                                                                            <div
-                                                                                                class="col-md-2 mobile">
-
-                                                                                                <input
-                                                                                                    class="form-control d-flex align-items-center"
-                                                                                                    value=""
-                                                                                                    id="kt_tagify_suppliersInvoiced"
-                                                                                                    placeholder="Select Supplier" />
-
-                                                                                            </div>
-
-                                                                                            <div
-                                                                                                class="col-md-2 d-flex align-items-end justify-content-end mobile">
-
-                                                                                                <button
-                                                                                                    class="btn btn-primary mb-0 cursor-pointer">Apply</button>
-
-                                                                                            </div>
-                                                                                            <!--begin::Search-->
-                                                                                            <div
-                                                                                                class="d-none position-relative my-1">
-                                                                                                <!--begin::Svg Icon | path: icons/duotune/general/gen021.svg-->
-                                                                                                <span
-                                                                                                    class="svg-icon svg-icon-2 position-absolute top-50 translate-middle-y ms-4">
-                                                                                                    <svg width="24"
-                                                                                                        height="24"
-                                                                                                        viewBox="0 0 24 24"
-                                                                                                        fill="none"
-                                                                                                        xmlns="http://www.w3.org/2000/svg">
-                                                                                                        <rect
-                                                                                                            opacity="0.5"
-                                                                                                            x="17.0365"
-                                                                                                            y="15.1223"
-                                                                                                            width="8.15546"
-                                                                                                            height="2"
-                                                                                                            rx="1"
-                                                                                                            transform="rotate(45 17.0365 15.1223)"
-                                                                                                            fill="currentColor" />
-                                                                                                        <path
-                                                                                                            d="M11 19C6.55556 19 3 15.4444 3 11C3 6.55556 6.55556 3 11 3C15.4444 3 19 6.55556 19 11C19 15.4444 15.4444 19 11 19ZM11 5C7.53333 5 5 7.53333 5 11C5 14.4667 7.53333 17 11 17C14.4667 17 17 14.4667 17 11C17 7.53333 14.4667 5 11 5Z"
-                                                                                                            fill="currentColor" />
-                                                                                                    </svg>
-                                                                                                </span>
-                                                                                                <!--end::Svg Icon-->
-                                                                                                <input type="text"
-                                                                                                    data-kt-table-widget-4="search"
-                                                                                                    class="form-control w-150px fs-7 ps-12"
-                                                                                                    placeholder="Search" />
-                                                                                            </div>
-                                                                                            <!--end::Search-->
-                                                                                        </div>
-                                                                                        <!--begin::Filters-->
-                                                                                    </div>
-                                                                                    <!--end::Actions-->
-                                                                                </div>
-                                                                                <!--end::Card header-->
-                                                                                <!--begin::Card body-->
-                                                                                
                                                                                 <div class="card-body p-1">
                                                                                     <!--begin::Table-->
 
                                                                                     <div class="row gy-5 g-xl-10">
 
                                                                                         <!--end::Col-->
-                                                                                        <!--begin::Col-->
-                                                                                        <div class="col-xl-12 mb-5 mb-xl-10">
-                                                                                            <!--begin::Table Widget 4-->
-                                                                                            <div class="card card-flush h-xl-100 p-0">
+                                                                                        
 
+
+
+
+
+
+
+                                                                                        
+                                                                                <!--begin::Wrapper-->
+                                                                                <div class="wrapper d-flex flex-column flex-row-fluid container-xxl"
+                                                                                    id="kt_wrapper">
+                                                                                    <!--begin::Toolbar-->
+
+                                                                                    <!--end::Toolbar-->
+                                                                                    <!--begin::Main-->
+                                                                                    <div
+                                                                                        class="d-flex flex-row flex-column-fluid align-items-stretch">
+                                                                                        <!--begin::Content-->
+                                                                                        <div class="content flex-row-fluid"
+                                                                                            id="kt_content">
+                                                                                            <!--begin::Products-->
+                                                                                            <div
+                                                                                                class="card card-flush">
+                                                                                                <!--begin::Card header-->
+                                                                                                <div
+                                                                                                    class="card-header align-items-center py-5 gap-2 gap-md-5">
+                                                                                                    <!--begin::Card title-->
+                                                                                                    <div
+                                                                                                        class="card-title">
+                                                                                                        <!--begin::Search-->
+                                                                                                        <div
+                                                                                                            class="d-flex align-items-center position-relative my-1">
+                                                                                                            <!--begin::Svg Icon | path: icons/duotune/general/gen021.svg-->
+                                                                                                            <span
+                                                                                                                class="svg-icon svg-icon-1 position-absolute ms-4">
+                                                                                                                <svg width="24"
+                                                                                                                    height="24"
+                                                                                                                    viewBox="0 0 24 24"
+                                                                                                                    fill="none"
+                                                                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                                                                    <rect
+                                                                                                                        opacity="0.5"
+                                                                                                                        x="17.0365"
+                                                                                                                        y="15.1223"
+                                                                                                                        width="8.15546"
+                                                                                                                        height="2"
+                                                                                                                        rx="1"
+                                                                                                                        transform="rotate(45 17.0365 15.1223)"
+                                                                                                                        fill="currentColor" />
+                                                                                                                    <path
+                                                                                                                        d="M11 19C6.55556 19 3 15.4444 3 11C3 6.55556 6.55556 3 11 3C15.4444 3 19 6.55556 19 11C19 15.4444 15.4444 19 11 19ZM11 5C7.53333 5 5 7.53333 5 11C5 14.4667 7.53333 17 11 17C14.4667 17 17 14.4667 17 11C17 7.53333 14.4667 5 11 5Z"
+                                                                                                                        fill="currentColor" />
+                                                                                                                </svg>
+                                                                                                            </span>
+                                                                                                            <!--end::Svg Icon-->
+                                                                                                            <input
+                                                                                                                type="text"
+                                                                                                                data-kt-ecommerce-order-filter="search"
+                                                                                                                class="form-control form-control-solid w-250px ps-14"
+                                                                                                                placeholder="Search Order" />
+                                                                                                        </div>
+                                                                                                        <!--end::Search-->
+                                                                                                    </div>
+                                                                                                    <!--end::Card title-->
+                                                                                                    <!--begin::Card toolbar-->
+                                                                                                    <div
+                                                                                                        class="card-toolbar flex-row-fluid justify-content-end gap-5">
+                                                                                                        <!--begin::Flatpickr-->
+                                                                                                        <div
+                                                                                                            class="input-group w-250px">
+                                                                                                            <input
+                                                                                                                class="form-control form-control-solid rounded rounded-end-0"
+                                                                                                                placeholder="Pick date range"
+                                                                                                                id="kt_ecommerce_sales_flatpickr" />
+                                                                                                            <button
+                                                                                                                class="btn btn-icon btn-light"
+                                                                                                                id="kt_ecommerce_sales_flatpickr_clear">
+                                                                                                                <!--begin::Svg Icon | path: icons/duotune/arrows/arr088.svg-->
+                                                                                                                <span
+                                                                                                                    class="svg-icon svg-icon-2">
+                                                                                                                    <svg width="24"
+                                                                                                                        height="24"
+                                                                                                                        viewBox="0 0 24 24"
+                                                                                                                        fill="none"
+                                                                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                                                                        <rect
+                                                                                                                            opacity="0.5"
+                                                                                                                            x="7.05025"
+                                                                                                                            y="15.5356"
+                                                                                                                            width="12"
+                                                                                                                            height="2"
+                                                                                                                            rx="1"
+                                                                                                                            transform="rotate(-45 7.05025 15.5356)"
+                                                                                                                            fill="currentColor" />
+                                                                                                                        <rect
+                                                                                                                            x="8.46447"
+                                                                                                                            y="7.05029"
+                                                                                                                            width="12"
+                                                                                                                            height="2"
+                                                                                                                            rx="1"
+                                                                                                                            transform="rotate(45 8.46447 7.05029)"
+                                                                                                                            fill="currentColor" />
+                                                                                                                    </svg>
+                                                                                                                </span>
+                                                                                                                <!--end::Svg Icon-->
+                                                                                                            </button>
+                                                                                                        </div>
+                                                                                                        <!--end::Flatpickr-->
+                                                                                                        <div
+                                                                                                            class="w-100 mw-150px">
+                                                                                                            <!--begin::Select2-->
+                                                                                                            <select
+                                                                                                                class="form-select form-select-solid"
+                                                                                                                data-control="select2"
+                                                                                                                data-hide-search="true"
+                                                                                                                data-placeholder="Status"
+                                                                                                                data-kt-ecommerce-order-filter="status">
+                                                                                                                <option>
+                                                                                                                </option>
+                                                                                                                <option
+                                                                                                                    value="all">
+                                                                                                                    All
+                                                                                                                </option>
+                                                                                                                <option
+                                                                                                                    value="Cancelled">
+                                                                                                                    Cancelled
+                                                                                                                </option>
+                                                                                                                <option
+                                                                                                                    value="Completed">
+                                                                                                                    Completed
+                                                                                                                </option>
+                                                                                                                <option
+                                                                                                                    value="Denied">
+                                                                                                                    Denied
+                                                                                                                </option>
+                                                                                                                <option
+                                                                                                                    value="Expired">
+                                                                                                                    Expired
+                                                                                                                </option>
+                                                                                                                <option
+                                                                                                                    value="Failed">
+                                                                                                                    Failed
+                                                                                                                </option>
+                                                                                                                <option
+                                                                                                                    value="Pending">
+                                                                                                                    Pending
+                                                                                                                </option>
+                                                                                                                <option
+                                                                                                                    value="Processing">
+                                                                                                                    Processing
+                                                                                                                </option>
+                                                                                                                <option
+                                                                                                                    value="Refunded">
+                                                                                                                    Refunded
+                                                                                                                </option>
+                                                                                                                <option
+                                                                                                                    value="Delivered">
+                                                                                                                    Delivered
+                                                                                                                </option>
+                                                                                                                <option
+                                                                                                                    value="Aug 2022">
+                                                                                                                    Aug
+                                                                                                                    2022
+                                                                                                                </option>
+                                                                                                            </select>
+                                                                                                            <!--end::Select2-->
+                                                                                                        </div>
+                                                                                                        <!--begin::Export dropdown-->
+                                                                                                        <button
+                                                                                                            type="button"
+                                                                                                            class="btn btn-light-primary"
+                                                                                                            data-kt-menu-trigger="click"
+                                                                                                            data-kt-menu-placement="bottom-end">
+                                                                                                            <!-- <span class="svg-icon svg-icon-1 position-absolute ms-4">...</span> -->
+                                                                                                            Export
+                                                                                                        </button>
+                                                                                                        <!--begin::Menu-->
+                                                                                                        <div id="kt_datatable_example_export_menu_submission"
+                                                                                                            class="menu menu-sub menu-sub-dropdown menu-column menu-rounded-4 menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-200px py-4"
+                                                                                                            data-kt-menu="true">
+                                                                                                            <!--begin::Menu item-->
+                                                                                                            <div
+                                                                                                                class="menu-item px-3">
+                                                                                                                <a href="#"
+                                                                                                                    class="menu-link px-3"
+                                                                                                                    data-kt-export="csv">
+                                                                                                                    Export
+                                                                                                                    as
+                                                                                                                    CSV
+                                                                                                                </a>
+                                                                                                            </div>
+                                                                                                            <!--end::Menu item-->
+
+                                                                                                        </div>
+                                                                                                        <!--end::Menu-->
+                                                                                                        <!--end::Export dropdown-->
+                                                                                                        <!--begin::Hide default export buttons-->
+                                                                                                        <div id="kt_datatable_example_buttons"
+                                                                                                            class="d-none">
+                                                                                                        </div>
+                                                                                                        <!--end::Hide default export buttons-->
+                                                                                                    </div>
+                                                                                                    <!--end::Card toolbar-->
+                                                                                                </div>
+                                                                                                <!--end::Card header-->
                                                                                                 <!--begin::Card body-->
-                                                                                                <div class="card-body p-1">
+                                                                                                <div
+                                                                                                    class="card-body pt-0">
+                                                                                                    <!-- kt_ecommerce_sales_table -->
                                                                                                     <!--begin::Table-->
-                                                                                                    <div class="table-resposive">
-                                                                                                    <table class="table align-middle table-row-dashed fs-6 gy-3" id="kt_table_widget_6_table">
+                                                                                                    <table
+                                                                                                        class="table align-middle table-row-dashed fs-6 gy-5"
+                                                                                                        id="kt_ecommerce_sales_table">
                                                                                                         <!--begin::Table head-->
                                                                                                         <thead>
                                                                                                             <!--begin::Table row-->
-                                                                                                            <tr class="text-start text-gray-400 fw-bold fs-7 text-uppercase gs-0">
-                                                                                                                <th>
-                                                                                                                    <input type="checkbox" name="" id="">
+                                                                                                           
+                                                                                                            <tr
+                                                                                                                class="text-start text-gray-400 fw-bold fs-7 text-uppercase gs-0">
+                                                                                                                <th
+                                                                                                                    class="w-10px pe-2">
+                                                                                                                    <div
+                                                                                                                        class="form-check form-check-sm form-check-custom form-check-solid me-3">
+                                                                                                                        <input
+                                                                                                                            class="form-check-input"
+                                                                                                                            type="checkbox"
+                                                                                                                            data-kt-check="true"
+                                                                                                                            data-kt-check-target="#kt_ecommerce_sales_table .form-check-input"
+                                                                                                                            value="1" />
+                                                                                                                    </div>
                                                                                                                 </th>
-                                                                                                                <th>#
+                                                                                                                <th
+                                                                                                                    class="min-w-100px">
+                                                                                                                    Refferel
+                                                                                                                    Link
                                                                                                                 </th>
-                                                                                                                <th class="min-w-100px">
+                                                                                                                <th
+                                                                                                                    class="min-w-175px">
                                                                                                                     Supplier
                                                                                                                 </th>
-                                                                                                                <th class="text-end min-w-100px">
+                                                                                                                <th
+                                                                                                                    class="text-end min-w-70px">
                                                                                                                     Reference
                                                                                                                     Date
                                                                                                                 </th>
-                                                                                                                <th class="text-end min-w-125px">
-                                                                                                                    Submitted
-                                                                                                                    Date
+                                                                                                                <th
+                                                                                                                    class="text-end min-w-100px">
+                                                                                                                    Status
                                                                                                                 </th>
-                                                                                                                <th class="text-end min-w-100px">
+                                                                                                                <th
+                                                                                                                    class="text-end min-w-100px">
+                                                                                                                    Date
+                                                                                                                    Added
+                                                                                                                </th>
+                                                                                                                <th
+                                                                                                                    class="text-end min-w-100px">
                                                                                                                     Total
                                                                                                                     Sales
                                                                                                                 </th>
-                                                                                                                <th class="text-end min-w-100px">
-                                                                                                                    Status
+                                                                                                                <th
+                                                                                                                    class="text-end min-w-100px">
+                                                                                                                    Actions
                                                                                                                 </th>
-                                                                                                                <th class="text-end min-w-50px">
-                                                                                                                    Action
-                                                                                                                </th>
-
                                                                                                             </tr>
+                                                                                                           
                                                                                                             <!--end::Table row-->
                                                                                                         </thead>
                                                                                                         <!--end::Table head-->
                                                                                                         <!--begin::Table body-->
-                                                                                                        <tbody class="fw-bold text-gray-600">
-                                                                                                            <tr data-kt-table-widget-6="subtable_template" class="d-none">
-                                                                                                                <td colspan="2">
-                                                                                                                    <div class="d-flex align-items-center gap-3">
-                                                                                                                        <a href="#" class="symbol symbol-50px bg-secondary bg-opacity-25 rounded">
-                                                                                                                            <img src="" data-kt-src-path="assets/media/stock/ecommerce/" alt="" data-kt-table-widget-6="template_image" />
-                                                                                                                        </a>
-                                                                                                                        <div class="d-flex flex-column text-muted">
-                                                                                                                            <a href="#" class="text-gray-800 text-hover-primary fw-bold" data-kt-table-widget-6="template_name">Product
-                                                                                                                                name</a>
-                                                                                                                            <div class="fs-7" data-kt-table-widget-6="template_description">
-                                                                                                                                Product
-                                                                                                                                description
-                                                                                                                            </div>
-                                                                                                                        </div>
-                                                                                                                    </div>
-                                                                                                                </td>
-                                                                                                                <td class="text-end">
-                                                                                                                    <div class="text-gray-800 fs-7">
-                                                                                                                        Cost
-                                                                                                                    </div>
-                                                                                                                    <div class="text-muted fs-7 fw-bold" data-kt-table-widget-6="template_cost">
-                                                                                                                        1
-                                                                                                                    </div>
-                                                                                                                </td>
-                                                                                                                <td class="text-end">
-                                                                                                                    <div class="text-gray-800 fs-7">
-                                                                                                                        Qty
-                                                                                                                    </div>
-                                                                                                                    <div class="text-muted fs-7 fw-bold" data-kt-table-widget-6="template_qty">
-                                                                                                                        1
-                                                                                                                    </div>
-                                                                                                                </td>
-                                                                                                                <td class="text-end">
-                                                                                                                    <div class="text-gray-800 fs-7">
-                                                                                                                        Total
-                                                                                                                    </div>
-                                                                                                                    <div class="text-muted fs-7 fw-bold" data-kt-table-widget-6="template_total">
-                                                                                                                        name
-                                                                                                                    </div>
-                                                                                                                </td>
-                                                                                                                <td class="text-end">
-                                                                                                                    <div class="text-gray-800 fs-7 me-3">
-                                                                                                                        On
-                                                                                                                        hand
-                                                                                                                    </div>
-                                                                                                                    <div class="text-muted fs-7 fw-bold" data-kt-table-widget-6="template_stock">
-                                                                                                                        32
-                                                                                                                    </div>
-                                                                                                                </td>
-                                                                                                                <td>
-                                                                                                                </td>
-                                                                                                            </tr>
+                                                                                                        <tbody
+                                                                                                            class="fw-semibold text-gray-600">
+                                                                                                            <!--begin::Table row-->
                                                                                                             <tr>
-                                                                                                                <td><input type="checkbox" name="" id="">
-                                                                                                                </td>
-                                                                                                                <td class="">
-                                                                                                                    <button type="button" class="btn btn-sm btn-icon btn-light btn-active-light-primary toggle h-25px w-25px" data-kt-table-widget-6="expand_row6">
-                                                                                                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr087.svg-->
-                                                                                                                        <span class="svg-icon svg-icon-3 m-0 toggle-off">
-                                                                                                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                                                                                <rect opacity="0.5" x="11" y="18" width="12" height="2" rx="1" transform="rotate(-90 11 18)" fill="currentColor" />
-                                                                                                                                <rect x="6" y="11" width="12" height="2" rx="1" fill="currentColor" />
-                                                                                                                            </svg>
-                                                                                                                        </span>
-                                                                                                                        <!--end::Svg Icon-->
-                                                                                                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr089.svg-->
-                                                                                                                        <span class="svg-icon svg-icon-3 m-0 toggle-on">
-                                                                                                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                                                                                <rect x="6" y="11" width="12" height="2" rx="1" fill="currentColor" />
-                                                                                                                            </svg>
-                                                                                                                        </span>
-                                                                                                                        <!--end::Svg Icon-->
-                                                                                                                    </button>
-                                                                                                                </td>
+                                                                                                            <?php foreach($view_submisions->result() as $row){ ?>
+                                                                                                                <!--begin::Checkbox-->
                                                                                                                 <td>
-                                                                                                                    <a href="../../demo22/dist/apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary">#XGY-346</a>
+                                                                                                                    <div
+                                                                                                                        class="form-check form-check-sm form-check-custom form-check-solid">
+                                                                                                                        <input
+                                                                                                                            class="form-check-input"
+                                                                                                                            type="checkbox"
+                                                                                                                            value="1" />
+                                                                                                                    </div>
                                                                                                                 </td>
-                                                                                                                <td class="text-end">
-                                                                                                                    7
-                                                                                                                    min
-                                                                                                                    ago
+                                                                                                                <!--end::Checkbox-->
+                                                                                                                <!--begin::Order ID=-->
+                                                                                                                <td>
+                                                                                                                    <a href="../../demo19/dist/apps/ecommerce/sales/details.html"
+                                                                                                                        class="text-gray-800 text-hover-primary fw-bold"><?php echo $row->reference_number ?></a>
                                                                                                                 </td>
-                                                                                                                <td class="text-end">
-                                                                                                                    <a href="#" class="text-gray-600 text-hover-primary">Albert
-                                                                                                                        Flores</a>
-                                                                                                                </td>
-                                                                                                                <td class="text-end">
-                                                                                                                    $630.00
-                                                                                                                </td>
-                                                                                                                <td class="text-end">
-                                                                                                                    <span class="text-gray-800 fw-bolder">$86.70</span>
-                                                                                                                </td>
-                                                                                                                <td class="text-end">
-                                                                                                                    <div class="d-flex justify-content-end">
-                                                                                                                        <div class="mx-1 cursor-pointer">
-                                                                                                                            <img src="assets/media/icons/duotune/files/fil010.svg" alt="">
+                                                                                                                <!--end::Order ID=-->
+                                                                                                                <!--begin::Customer=-->
+                                                                                                                <td>
+                                                                                                                    <div
+                                                                                                                        class="d-flex align-items-center">
+                                                                                                                        
+                                                                                                                        <div
+                                                                                                                            class="ms-5">
+                                                                                                                            <!--begin::Title-->
+                                                                                                                            <a href="../../demo19/dist/apps/user-management/users/view.html"
+                                                                                                                                class="text-gray-800 text-hover-primary fs-5 fw-bold"><?php echo $row->Supplier_ID ?>
+                                                                                                                                </a>
+                                                                                                                            <!--end::Title-->
                                                                                                                         </div>
                                                                                                                     </div>
                                                                                                                 </td>
+                                                                                                                <!--end::Customer=-->
 
-                                                                                                                <!-- <td class="text-end">Test</td> -->
-
+                                                                                                                <!--begin::Date Modified=-->
+                                                                                                                <td
+                                                                                                                    class="text-end">
+                                                                                                                    <span
+                                                                                                                        class="fw-bold">Aug
+                                                                                                                        2022</span>
+                                                                                                                </td>
+                                                                                                                <!--end::Date Modified=-->
+                                                                                                                <!--begin::Status=-->
+                                                                                                                <td class="text-end pe-0"
+                                                                                                                    data-order="Refunded">
+                                                                                                                    <!--begin::Badges-->
+                                                                                                                    <div
+                                                                                                                        class="badge badge-light-info"><?php echo $row->status ?>  
+                                                                                                                    </div>
+                                                                                                                    <!--end::Badges-->
+                                                                                                                </td>
+                                                                                                                <!--end::Status=-->
+                                                                                                                <!--begin::Date Added=-->
+                                                                                                                <td class="text-end"
+                                                                                                                    data-order="2022-11-16">
+                                                                                                                    <span
+                                                                                                                        class="fw-bold"><?php echo $row->created_date ?></span>
+                                                                                                                </td>
+                                                                                                                <!--end::Date Added=-->
+                                                                                                                <!--begin::Total=-->
+                                                                                                                <td
+                                                                                                                    class="text-end pe-0">
+                                                                                                                    <span
+                                                                                                                        class="fw-bold"><?php echo $row->amount ?></span>
+                                                                                                                </td>
+                                                                                                                <!--end::Total=-->
+                                                                                                                <!--begin::Action=-->
+                                                                                                                <td
+                                                                                                                    class="text-end">
+                                                                                                                    <a href="#"
+                                                                                                                        class="btn btn-sm btn-light btn-active-light-primary"
+                                                                                                                        data-kt-menu-trigger="click"
+                                                                                                                        data-kt-menu-placement="bottom-end">Actions
+                                                                                                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr072.svg-->
+                                                                                                                        <span
+                                                                                                                            class="svg-icon svg-icon-5 m-0">
+                                                                                                                            <svg width="24"
+                                                                                                                                height="24"
+                                                                                                                                viewBox="0 0 24 24"
+                                                                                                                                fill="none"
+                                                                                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                                                                                <path
+                                                                                                                                    d="M11.4343 12.7344L7.25 8.55005C6.83579 8.13583 6.16421 8.13584 5.75 8.55005C5.33579 8.96426 5.33579 9.63583 5.75 10.05L11.2929 15.5929C11.6834 15.9835 12.3166 15.9835 12.7071 15.5929L18.25 10.05C18.6642 9.63584 18.6642 8.96426 18.25 8.55005C17.8358 8.13584 17.1642 8.13584 16.75 8.55005L12.5657 12.7344C12.2533 13.0468 11.7467 13.0468 11.4343 12.7344Z"
+                                                                                                                                    fill="currentColor" />
+                                                                                                                            </svg>
+                                                                                                                        </span>
+                                                                                                                        <!--end::Svg Icon-->
+                                                                                                                    </a>
+                                                                                                                    <!--begin::Menu-->
+                                                                                                                    <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4"
+                                                                                                                        data-kt-menu="true">
+                                                                                                                        <!--begin::Menu item-->
+                                                                                                                        <div
+                                                                                                                            class="menu-item px-3">
+                                                                                                                            <a href="../../demo19/dist/apps/ecommerce/sales/details.html"
+                                                                                                                                class="menu-link px-3">View</a>
+                                                                                                                        </div>
+                                                                                                                        <!--end::Menu item-->
+                                                                                                                        <!--begin::Menu item-->
+                                                                                                                        <div
+                                                                                                                            class="menu-item px-3">
+                                                                                                                            <a href="../../demo19/dist/apps/ecommerce/sales/edit-order.html"
+                                                                                                                                class="menu-link px-3">Edit</a>
+                                                                                                                        </div>
+                                                                                                                        <!--end::Menu item-->
+                                                                                                                        <!--begin::Menu item-->
+                                                                                                                        <div
+                                                                                                                            class="menu-item px-3">
+                                                                                                                            <a href="#"
+                                                                                                                                class="menu-link px-3"
+                                                                                                                                data-kt-ecommerce-order-filter="delete_row">Delete</a>
+                                                                                                                        </div>
+                                                                                                                        <!--end::Menu item-->
+                                                                                                                    </div>
+                                                                                                                    <!--end::Menu-->
+                                                                                                                </td>
+                                                                                                                <!--end::Action=-->
                                                                                                             </tr>
+                                                                                                            <?php } ?>
+                                                                                                            <!--end::Table row-->
+                                                                                                            <!--begin::Table row-->
+                                                                                                            <tr>
+                                                                                                                <!--begin::Checkbox-->
+                                                                                                                <td>
+                                                                                                                    <div
+                                                                                                                        class="form-check form-check-sm form-check-custom form-check-solid">
+                                                                                                                        <input
+                                                                                                                            class="form-check-input"
+                                                                                                                            type="checkbox"
+                                                                                                                            value="1" />
+                                                                                                                    </div>
+                                                                                                                </td>
+                                                                                                                <!--end::Checkbox-->
+                                                                                                                <!--begin::Order ID=-->
+                                                                                                                <td>
+                                                                                                                    <a href="../../demo19/dist/apps/ecommerce/sales/details.html"
+                                                                                                                        class="text-gray-800 text-hover-primary fw-bold">12615</a>
+                                                                                                                </td>
+                                                                                                                <!--end::Order ID=-->
+                                                                                                                <!--begin::Customer=-->
+                                                                                                                <td>
+                                                                                                                    <div
+                                                                                                                        class="d-flex align-items-center">
+                                                                                                                        <!--begin:: Avatar -->
+                                                                                                                        <div
+                                                                                                                            class="symbol symbol-circle symbol-50px overflow-hidden me-3">
+                                                                                                                            <a
+                                                                                                                                href="../../demo19/dist/apps/user-management/users/view.html">
+                                                                                                                                <div
+                                                                                                                                    class="symbol-label">
+                                                                                                                                    <img src="assets/media/avatars/300-12.jpg"
+                                                                                                                                        alt="Ana Crown"
+                                                                                                                                        class="w-100" />
+                                                                                                                                </div>
+                                                                                                                            </a>
+                                                                                                                        </div>
+                                                                                                                        <!--end::Avatar-->
+                                                                                                                        <div
+                                                                                                                            class="ms-5">
+                                                                                                                            <!--begin::Title-->
+                                                                                                                            <a href="../../demo19/dist/apps/user-management/users/view.html"
+                                                                                                                                class="text-gray-800 text-hover-primary fs-5 fw-bold">Ana
+                                                                                                                                Crown</a>
+                                                                                                                            <!--end::Title-->
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </td>
+                                                                                                                <!--end::Customer=-->
+                                                                                                                <!--begin::Status=-->
+                                                                                                                <td class="text-end pe-0"
+                                                                                                                    data-order="Expired">
+                                                                                                                    <!--begin::Badges-->
+                                                                                                                    <div
+                                                                                                                        class="badge badge-light-danger">
+                                                                                                                        Expired
+                                                                                                                    </div>
+                                                                                                                    <!--end::Badges-->
+                                                                                                                </td>
+                                                                                                                <!--end::Status=-->
+                                                                                                                <!--begin::Total=-->
+                                                                                                                <td
+                                                                                                                    class="text-end pe-0">
+                                                                                                                    <span
+                                                                                                                        class="fw-bold">$105.00</span>
+                                                                                                                </td>
+                                                                                                                <!--end::Total=-->
+                                                                                                                <!--begin::Date Added=-->
+                                                                                                                <td class="text-end"
+                                                                                                                    data-order="2022-11-18">
+                                                                                                                    <span
+                                                                                                                        class="fw-bold">02/12/2022</span>
+                                                                                                                </td>
+                                                                                                                <!--end::Date Added=-->
+                                                                                                                <!--begin::Date Modified=-->
+                                                                                                                <td
+                                                                                                                    class="text-end">
+                                                                                                                    <span
+                                                                                                                        class="fw-bold">test2</span>
+                                                                                                                </td>
+                                                                                                                <!--end::Date Modified=-->
+                                                                                                                <!--begin::Action=-->
+                                                                                                                <td
+                                                                                                                    class="text-end">
+                                                                                                                    <a href="#"
+                                                                                                                        class="btn btn-sm btn-light btn-active-light-primary"
+                                                                                                                        data-kt-menu-trigger="click"
+                                                                                                                        data-kt-menu-placement="bottom-end">Actions
+                                                                                                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr072.svg-->
+                                                                                                                        <span
+                                                                                                                            class="svg-icon svg-icon-5 m-0">
+                                                                                                                            <svg width="24"
+                                                                                                                                height="24"
+                                                                                                                                viewBox="0 0 24 24"
+                                                                                                                                fill="none"
+                                                                                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                                                                                <path
+                                                                                                                                    d="M11.4343 12.7344L7.25 8.55005C6.83579 8.13583 6.16421 8.13584 5.75 8.55005C5.33579 8.96426 5.33579 9.63583 5.75 10.05L11.2929 15.5929C11.6834 15.9835 12.3166 15.9835 12.7071 15.5929L18.25 10.05C18.6642 9.63584 18.6642 8.96426 18.25 8.55005C17.8358 8.13584 17.1642 8.13584 16.75 8.55005L12.5657 12.7344C12.2533 13.0468 11.7467 13.0468 11.4343 12.7344Z"
+                                                                                                                                    fill="currentColor" />
+                                                                                                                            </svg>
+                                                                                                                        </span>
+                                                                                                                        <!--end::Svg Icon-->
+                                                                                                                    </a>
+                                                                                                                    <!--begin::Menu-->
+                                                                                                                    <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4"
+                                                                                                                        data-kt-menu="true">
+                                                                                                                        <!--begin::Menu item-->
+                                                                                                                        <div
+                                                                                                                            class="menu-item px-3">
+                                                                                                                            <a href="../../demo19/dist/apps/ecommerce/sales/details.html"
+                                                                                                                                class="menu-link px-3">View</a>
+                                                                                                                        </div>
+                                                                                                                        <!--end::Menu item-->
+                                                                                                                        <!--begin::Menu item-->
+                                                                                                                        <div
+                                                                                                                            class="menu-item px-3">
+                                                                                                                            <a href="../../demo19/dist/apps/ecommerce/sales/edit-order.html"
+                                                                                                                                class="menu-link px-3">Edit</a>
+                                                                                                                        </div>
+                                                                                                                        <!--end::Menu item-->
+                                                                                                                        <!--begin::Menu item-->
+                                                                                                                        <div
+                                                                                                                            class="menu-item px-3">
+                                                                                                                            <a href="#"
+                                                                                                                                class="menu-link px-3"
+                                                                                                                                data-kt-ecommerce-order-filter="delete_row">Delete</a>
+                                                                                                                        </div>
+                                                                                                                        <!--end::Menu item-->
+                                                                                                                    </div>
+                                                                                                                    <!--end::Menu-->
+                                                                                                                </td>
+                                                                                                                <!--end::Action=-->
+                                                                                                            </tr>
+                                                                                                            <!--end::Table row-->
+                                                                                                            <!--begin::Table row-->
+                                                                                                            <tr>
+                                                                                                                <!--begin::Checkbox-->
+                                                                                                                <td>
+                                                                                                                    <div
+                                                                                                                        class="form-check form-check-sm form-check-custom form-check-solid">
+                                                                                                                        <input
+                                                                                                                            class="form-check-input"
+                                                                                                                            type="checkbox"
+                                                                                                                            value="1" />
+                                                                                                                    </div>
+                                                                                                                </td>
+                                                                                                                <!--end::Checkbox-->
+                                                                                                                <!--begin::Order ID=-->
+                                                                                                                <td
+                                                                                                                    data-kt-ecommerce-order-filter="order_id">
+                                                                                                                    <a href="../../demo19/dist/apps/ecommerce/sales/details.html"
+                                                                                                                        class="text-gray-800 text-hover-primary fw-bold">12616</a>
+                                                                                                                </td>
+                                                                                                                <!--end::Order ID=-->
+                                                                                                                <!--begin::Customer=-->
+                                                                                                                <td>
+                                                                                                                    <div
+                                                                                                                        class="d-flex align-items-center">
+                                                                                                                        <!--begin:: Avatar -->
+                                                                                                                        <div
+                                                                                                                            class="symbol symbol-circle symbol-50px overflow-hidden me-3">
+                                                                                                                            <a
+                                                                                                                                href="../../demo19/dist/apps/user-management/users/view.html">
+                                                                                                                                <div
+                                                                                                                                    class="symbol-label fs-3 bg-light-danger text-danger">
+                                                                                                                                    M
+                                                                                                                                </div>
+                                                                                                                            </a>
+                                                                                                                        </div>
+                                                                                                                        <!--end::Avatar-->
+                                                                                                                        <div
+                                                                                                                            class="ms-5">
+                                                                                                                            <!--begin::Title-->
+                                                                                                                            <a href="../../demo19/dist/apps/user-management/users/view.html"
+                                                                                                                                class="text-gray-800 text-hover-primary fs-5 fw-bold">Melody
+                                                                                                                                Macy</a>
+                                                                                                                            <!--end::Title-->
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </td>
+                                                                                                                <!--end::Customer=-->
+                                                                                                                <!--begin::Status=-->
+                                                                                                                <td class="text-end pe-0"
+                                                                                                                    data-order="Cancelled">
+                                                                                                                    <!--begin::Badges-->
+                                                                                                                    <div
+                                                                                                                        class="badge badge-light-danger">
+                                                                                                                        Cancelled
+                                                                                                                    </div>
+                                                                                                                    <!--end::Badges-->
+                                                                                                                </td>
+                                                                                                                <!--end::Status=-->
+                                                                                                                <!--begin::Total=-->
+                                                                                                                <td
+                                                                                                                    class="text-end pe-0">
+                                                                                                                    <span
+                                                                                                                        class="fw-bold">$322.00</span>
+                                                                                                                </td>
+                                                                                                                <!--end::Total=-->
+                                                                                                                <!--begin::Date Added=-->
+                                                                                                                <td class="text-end"
+                                                                                                                    data-order="2022-11-16">
+                                                                                                                    <span
+                                                                                                                        class="fw-bold">16/11/2022</span>
+                                                                                                                </td>
+                                                                                                                <!--end::Date Added=-->
+                                                                                                                <!--begin::Date Modified=-->
+                                                                                                                <td
+                                                                                                                    class="text-end">
+                                                                                                                    <span
+                                                                                                                        class="fw-bold">yerst</span>
+                                                                                                                </td>
+                                                                                                                <!--end::Date Modified=-->
+                                                                                                                <!--begin::Action=-->
+                                                                                                                <td
+                                                                                                                    class="text-end">
+                                                                                                                    <a href="#"
+                                                                                                                        class="btn btn-sm btn-light btn-active-light-primary"
+                                                                                                                        data-kt-menu-trigger="click"
+                                                                                                                        data-kt-menu-placement="bottom-end">Actions
+                                                                                                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr072.svg-->
+                                                                                                                        <span
+                                                                                                                            class="svg-icon svg-icon-5 m-0">
+                                                                                                                            <svg width="24"
+                                                                                                                                height="24"
+                                                                                                                                viewBox="0 0 24 24"
+                                                                                                                                fill="none"
+                                                                                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                                                                                <path
+                                                                                                                                    d="M11.4343 12.7344L7.25 8.55005C6.83579 8.13583 6.16421 8.13584 5.75 8.55005C5.33579 8.96426 5.33579 9.63583 5.75 10.05L11.2929 15.5929C11.6834 15.9835 12.3166 15.9835 12.7071 15.5929L18.25 10.05C18.6642 9.63584 18.6642 8.96426 18.25 8.55005C17.8358 8.13584 17.1642 8.13584 16.75 8.55005L12.5657 12.7344C12.2533 13.0468 11.7467 13.0468 11.4343 12.7344Z"
+                                                                                                                                    fill="currentColor" />
+                                                                                                                            </svg>
+                                                                                                                        </span>
+                                                                                                                        <!--end::Svg Icon-->
+                                                                                                                    </a>
+                                                                                                                    <!--begin::Menu-->
+                                                                                                                    <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4"
+                                                                                                                        data-kt-menu="true">
+                                                                                                                        <!--begin::Menu item-->
+                                                                                                                        <div
+                                                                                                                            class="menu-item px-3">
+                                                                                                                            <a href="../../demo19/dist/apps/ecommerce/sales/details.html"
+                                                                                                                                class="menu-link px-3">View</a>
+                                                                                                                        </div>
+                                                                                                                        <!--end::Menu item-->
+                                                                                                                        <!--begin::Menu item-->
+                                                                                                                        <div
+                                                                                                                            class="menu-item px-3">
+                                                                                                                            <a href="../../demo19/dist/apps/ecommerce/sales/edit-order.html"
+                                                                                                                                class="menu-link px-3">Edit</a>
+                                                                                                                        </div>
+                                                                                                                        <!--end::Menu item-->
+                                                                                                                        <!--begin::Menu item-->
+                                                                                                                        <div
+                                                                                                                            class="menu-item px-3">
+                                                                                                                            <a href="#"
+                                                                                                                                class="menu-link px-3"
+                                                                                                                                data-kt-ecommerce-order-filter="delete_row">Delete</a>
+                                                                                                                        </div>
+                                                                                                                        <!--end::Menu item-->
+                                                                                                                    </div>
+                                                                                                                    <!--end::Menu-->
+                                                                                                                </td>
+                                                                                                                <!--end::Action=-->
+                                                                                                            </tr>
+                                                                                                            <!--end::Table row-->
+                                                                                                            <!--begin::Table row-->
+                                                                                                            <tr>
+                                                                                                                <!--begin::Checkbox-->
+                                                                                                                <td>
+                                                                                                                    <div
+                                                                                                                        class="form-check form-check-sm form-check-custom form-check-solid">
+                                                                                                                        <input
+                                                                                                                            class="form-check-input"
+                                                                                                                            type="checkbox"
+                                                                                                                            value="1" />
+                                                                                                                    </div>
+                                                                                                                </td>
+                                                                                                                <!--end::Checkbox-->
+                                                                                                                <!--begin::Order ID=-->
+                                                                                                                <td
+                                                                                                                    data-kt-ecommerce-order-filter="order_id">
+                                                                                                                    <a href="../../demo19/dist/apps/ecommerce/sales/details.html"
+                                                                                                                        class="text-gray-800 text-hover-primary fw-bold">12617</a>
+                                                                                                                </td>
+                                                                                                                <!--end::Order ID=-->
+                                                                                                                <!--begin::Customer=-->
+                                                                                                                <td>
+                                                                                                                    <div
+                                                                                                                        class="d-flex align-items-center">
+                                                                                                                        <!--begin:: Avatar -->
+                                                                                                                        <div
+                                                                                                                            class="symbol symbol-circle symbol-50px overflow-hidden me-3">
+                                                                                                                            <a
+                                                                                                                                href="../../demo19/dist/apps/user-management/users/view.html">
+                                                                                                                                <div
+                                                                                                                                    class="symbol-label fs-3 bg-light-danger text-danger">
+                                                                                                                                    E
+                                                                                                                                </div>
+                                                                                                                            </a>
+                                                                                                                        </div>
+                                                                                                                        <!--end::Avatar-->
+                                                                                                                        <div
+                                                                                                                            class="ms-5">
+                                                                                                                            <!--begin::Title-->
+                                                                                                                            <a href="../../demo19/dist/apps/user-management/users/view.html"
+                                                                                                                                class="text-gray-800 text-hover-primary fs-5 fw-bold">Emma
+                                                                                                                                Bold</a>
+                                                                                                                            <!--end::Title-->
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </td>
+                                                                                                                <!--end::Customer=-->
+                                                                                                                <!--begin::Status=-->
+                                                                                                                <td class="text-end pe-0"
+                                                                                                                    data-order="Completed">
+                                                                                                                    <!--begin::Badges-->
+                                                                                                                    <div
+                                                                                                                        class="badge badge-light-success">
+                                                                                                                        Completed
+                                                                                                                    </div>
+                                                                                                                    <!--end::Badges-->
+                                                                                                                </td>
+                                                                                                                <!--end::Status=-->
+                                                                                                                <!--begin::Total=-->
+                                                                                                                <td
+                                                                                                                    class="text-end pe-0">
+                                                                                                                    <span
+                                                                                                                        class="fw-bold">$479.00</span>
+                                                                                                                </td>
+                                                                                                                <!--end::Total=-->
+                                                                                                                <!--begin::Date Added=-->
+                                                                                                                <td class="text-end"
+                                                                                                                    data-order="2022-11-16">
+                                                                                                                    <span
+                                                                                                                        class="fw-bold">16/11/2022</span>
+                                                                                                                </td>
+                                                                                                                <!--end::Date Added=-->
+                                                                                                                <!--begin::Date Modified=-->
+                                                                                                                <td
+                                                                                                                    class="text-end">
+                                                                                                                    <span
+                                                                                                                        class="fw-bold">tess</span>
+                                                                                                                </td>
+                                                                                                                <!--end::Date Modified=-->
+                                                                                                                <!--begin::Action=-->
+                                                                                                                <td
+                                                                                                                    class="text-end">
+                                                                                                                    <a href="#"
+                                                                                                                        class="btn btn-sm btn-light btn-active-light-primary"
+                                                                                                                        data-kt-menu-trigger="click"
+                                                                                                                        data-kt-menu-placement="bottom-end">Actions
+                                                                                                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr072.svg-->
+                                                                                                                        <span
+                                                                                                                            class="svg-icon svg-icon-5 m-0">
+                                                                                                                            <svg width="24"
+                                                                                                                                height="24"
+                                                                                                                                viewBox="0 0 24 24"
+                                                                                                                                fill="none"
+                                                                                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                                                                                <path
+                                                                                                                                    d="M11.4343 12.7344L7.25 8.55005C6.83579 8.13583 6.16421 8.13584 5.75 8.55005C5.33579 8.96426 5.33579 9.63583 5.75 10.05L11.2929 15.5929C11.6834 15.9835 12.3166 15.9835 12.7071 15.5929L18.25 10.05C18.6642 9.63584 18.6642 8.96426 18.25 8.55005C17.8358 8.13584 17.1642 8.13584 16.75 8.55005L12.5657 12.7344C12.2533 13.0468 11.7467 13.0468 11.4343 12.7344Z"
+                                                                                                                                    fill="currentColor" />
+                                                                                                                            </svg>
+                                                                                                                        </span>
+                                                                                                                        <!--end::Svg Icon-->
+                                                                                                                    </a>
+                                                                                                                    <!--begin::Menu-->
+                                                                                                                    <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4"
+                                                                                                                        data-kt-menu="true">
+                                                                                                                        <!--begin::Menu item-->
+                                                                                                                        <div
+                                                                                                                            class="menu-item px-3">
+                                                                                                                            <a href="../../demo19/dist/apps/ecommerce/sales/details.html"
+                                                                                                                                class="menu-link px-3">View</a>
+                                                                                                                        </div>
+                                                                                                                        <!--end::Menu item-->
+                                                                                                                        <!--begin::Menu item-->
+                                                                                                                        <div
+                                                                                                                            class="menu-item px-3">
+                                                                                                                            <a href="../../demo19/dist/apps/ecommerce/sales/edit-order.html"
+                                                                                                                                class="menu-link px-3">Edit</a>
+                                                                                                                        </div>
+                                                                                                                        <!--end::Menu item-->
+                                                                                                                        <!--begin::Menu item-->
+                                                                                                                        <div
+                                                                                                                            class="menu-item px-3">
+                                                                                                                            <a href="#"
+                                                                                                                                class="menu-link px-3"
+                                                                                                                                data-kt-ecommerce-order-filter="delete_row">Delete</a>
+                                                                                                                        </div>
+                                                                                                                        <!--end::Menu item-->
+                                                                                                                    </div>
+                                                                                                                    <!--end::Menu-->
+                                                                                                                </td>
+                                                                                                                <!--end::Action=-->
+                                                                                                            </tr>
+                                                                                                            <!--end::Table row-->
+                                                                                                            <!--begin::Table row-->
 
-
-
+                                                                                                            <!--end::Table row-->
                                                                                                         </tbody>
                                                                                                         <!--end::Table body-->
                                                                                                     </table>
                                                                                                     <!--end::Table-->
-</div>
                                                                                                 </div>
                                                                                                 <!--end::Card body-->
                                                                                             </div>
-                                                                                            <!--end::Table Widget 4-->
+                                                                                            <!--end::Products-->
                                                                                         </div>
-                                                                                        <!--end::Col-->
+                                                                                        <!--end::Content-->
+                                                                                    </div>
+                                                                                    <!--end::Main-->
+                                                                                    <!--begin::Footer-->
+
+                                                                                    <!--end::Footer-->
+                                                                                </div>
+                                                                                <!--end::Wrapper-->
+
+
+
+
+
+                                                                            <script>
+                                                                                var table;
+                                                                                var datatable;
+                                                                                var template;
+
+                                                                                // Private methods
+                                                                                const initDatatable = () => {
+                                                                                    // Set date data order
+                                                                                    const tableRows = table
+                                                                                        .querySelectorAll(
+                                                                                            'tbody tr');
+
+                                                                                    tableRows.forEach(row => {
+                                                                                        const dateRow = row
+                                                                                            .querySelectorAll(
+                                                                                                'td');
+                                                                                        const realDate =
+                                                                                            moment(dateRow[
+                                                                                                    1]
+                                                                                                .innerHTML,
+                                                                                                "DD MMM YYYY, LT"
+                                                                                                )
+                                                                                        .format(); // select date from 2nd column in table
+
+                                                                                        // Skip template
+                                                                                        if (!row.closest(
+                                                                                                '[data-kt-docs-datatable-subtable="subtable_template"]'
+                                                                                                )) {
+                                                                                            dateRow[1]
+                                                                                                .setAttribute(
+                                                                                                    'data-order',
+                                                                                                    realDate
+                                                                                                    );
+                                                                                            dateRow[1]
+                                                                                                .innerText =
+                                                                                                moment(
+                                                                                                    realDate
+                                                                                                    )
+                                                                                                .fromNow();
+                                                                                        }
+                                                                                    });
+
+                                                                                    // Get subtable template
+                                                                                    const subtable = document
+                                                                                        .querySelector(
+                                                                                            '[data-kt-docs-datatable-subtable="subtable_template"]'
+                                                                                            );
+                                                                                    template = subtable.cloneNode(
+                                                                                        true);
+                                                                                    template.classList.remove(
+                                                                                        'd-none');
+
+                                                                                    // Remove subtable template
+                                                                                    subtable.parentNode.removeChild(
+                                                                                        subtable);
+
+                                                                                    // Init datatable --- more info on datatables: https://datatables.net/manual/
+                                                                                    datatable = $(table).DataTable({
+                                                                                        "info": false,
+                                                                                        'order': [],
+                                                                                        "lengthChange": false,
+                                                                                        'pageLength': 6,
+                                                                                        'ordering': false,
+                                                                                        'paging': false,
+                                                                                        'columnDefs': [{
+                                                                                                orderable: false,
+                                                                                                targets: 0
+                                                                                            }, // Disable ordering on column 0 (checkbox)
+                                                                                            {
+                                                                                                orderable: false,
+                                                                                                targets: 6
+                                                                                            }, // Disable ordering on column 6 (actions)
+                                                                                        ]
+                                                                                    });
+
+                                                                                    // Re-init functions on every table re-draw -- more info: https://datatables.net/reference/event/draw
+                                                                                    datatable.on('draw',
+                                                                                function() {
+                                                                                        resetSubtable();
+                                                                                        handleActionButton
+                                                                                    ();
+                                                                                    });
+                                                                                }
+
+                                                                                // Subtable data sample
+                                                                                const data = [{
+                                                                                        image: '76',
+                                                                                        name: 'Go Pro 8',
+                                                                                        description: 'Latest  version of Go Pro.',
+                                                                                        cost: '500.00',
+                                                                                        qty: '1',
+                                                                                        total: '500.00',
+                                                                                        stock: '12'
+                                                                                    },
+
+                                                                                ]
+
+                                                                                // Handle action button
+                                                                                const handleActionButton = () => {
+                                                                                    const buttons = document
+                                                                                        .querySelectorAll(
+                                                                                            '[data-kt-docs-datatable-subtable="expand_row"]'
+                                                                                            );
+
+                                                                                    // Sample row items counter --- for demo purpose only, remove this variable in your project
+                                                                                    const rowItems = [4, 1, 5, 1, 4,
+                                                                                        2
+                                                                                    ];
+
+                                                                                    buttons.forEach((button,
+                                                                                        index) => {
+                                                                                            button
+                                                                                                .addEventListener(
+                                                                                                    'click',
+                                                                                                    e => {
+                                                                                                        e
+                                                                                                    .stopImmediatePropagation();
+                                                                                                        e
+                                                                                                    .preventDefault();
+
+                                                                                                        const
+                                                                                                            row =
+                                                                                                            button
+                                                                                                            .closest(
+                                                                                                                'tr'
+                                                                                                                );
+                                                                                                        const
+                                                                                                            rowClasses = [
+                                                                                                                'isOpen',
+                                                                                                                'border-bottom-0'
+                                                                                                            ];
+
+                                                                                                        // Get total number of items to generate --- for demo purpose only, remove this code snippet in your project
+                                                                                                        const
+                                                                                                            demoData = [];
+                                                                                                        for (var j =
+                                                                                                                0; j <
+                                                                                                            rowItems[
+                                                                                                                index
+                                                                                                                ]; j++
+                                                                                                            ) {
+                                                                                                            demoData
+                                                                                                                .push(
+                                                                                                                    data[
+                                                                                                                        j
+                                                                                                                        ]
+                                                                                                                    );
+                                                                                                        }
+                                                                                                        // End of generating demo data
+
+                                                                                                        // Handle subtable expanded state
+                                                                                                        if (row
+                                                                                                            .classList
+                                                                                                            .contains(
+                                                                                                                'isOpen'
+                                                                                                                )
+                                                                                                            ) {
+                                                                                                            // Remove all subtables from current order row
+                                                                                                            while (
+                                                                                                                row
+                                                                                                                .nextSibling &&
+                                                                                                                row
+                                                                                                                .nextSibling
+                                                                                                                .getAttribute(
+                                                                                                                    'data-kt-docs-datatable-subtable'
+                                                                                                                    ) ===
+                                                                                                                'subtable_template'
+                                                                                                                ) {
+                                                                                                                row.nextSibling
+                                                                                                                    .parentNode
+                                                                                                                    .removeChild(
+                                                                                                                        row
+                                                                                                                        .nextSibling
+                                                                                                                        );
+                                                                                                            }
+                                                                                                            row.classList
+                                                                                                                .remove(
+                                                                                                                    ...
+                                                                                                                    rowClasses
+                                                                                                                    );
+                                                                                                            button
+                                                                                                                .classList
+                                                                                                                .remove(
+                                                                                                                    'active'
+                                                                                                                    );
+                                                                                                        } else {
+                                                                                                            populateTemplate
+                                                                                                                (demoData,
+                                                                                                                    row
+                                                                                                                    );
+                                                                                                            row.classList
+                                                                                                                .add(
+                                                                                                                    ...
+                                                                                                                    rowClasses
+                                                                                                                    );
+                                                                                                            button
+                                                                                                                .classList
+                                                                                                                .add(
+                                                                                                                    'active'
+                                                                                                                    );
+                                                                                                        }
+                                                                                                    });
+                                                                                        });
+                                                                                }
+
+                                                                                // Populate template with content/data -- content/data can be replaced with relevant data from database or API
+                                                                                const populateTemplate = (data,
+                                                                                    target) => {
+                                                                                        data.forEach((d, index) => {
+                                                                                            // Clone template node
+                                                                                            const newTemplate =
+                                                                                                template
+                                                                                                .cloneNode(
+                                                                                                true);
+
+                                                                                            // Stock badges
+                                                                                            const lowStock =
+                                                                                                `<div class="badge badge-light-warning">Low Stock</div>`;
+                                                                                            const inStock =
+                                                                                                `<div class="badge badge-light-success">In Stock</div>`;
+
+                                                                                            // Select data elements
+                                                                                            const image =
+                                                                                                newTemplate
+                                                                                                .querySelector(
+                                                                                                    '[data-kt-docs-datatable-subtable="template_image"]'
+                                                                                                    );
+                                                                                            const name =
+                                                                                                newTemplate
+                                                                                                .querySelector(
+                                                                                                    '[data-kt-docs-datatable-subtable="template_name"]'
+                                                                                                    );
+                                                                                            const description =
+                                                                                                newTemplate
+                                                                                                .querySelector(
+                                                                                                    '[data-kt-docs-datatable-subtable="template_description"]'
+                                                                                                    );
+                                                                                            const cost =
+                                                                                                newTemplate
+                                                                                                .querySelector(
+                                                                                                    '[data-kt-docs-datatable-subtable="template_cost"]'
+                                                                                                    );
+                                                                                            const qty =
+                                                                                                newTemplate
+                                                                                                .querySelector(
+                                                                                                    '[data-kt-docs-datatable-subtable="template_qty"]'
+                                                                                                    );
+                                                                                            const total =
+                                                                                                newTemplate
+                                                                                                .querySelector(
+                                                                                                    '[data-kt-docs-datatable-subtable="template_total"]'
+                                                                                                    );
+                                                                                            const stock =
+                                                                                                newTemplate
+                                                                                                .querySelector(
+                                                                                                    '[data-kt-docs-datatable-subtable="template_stock"]'
+                                                                                                    );
+
+                                                                                            // Populate elements with data
+                                                                                            const imageSrc =
+                                                                                                image
+                                                                                                .getAttribute(
+                                                                                                    'src');
+                                                                                            image.setAttribute(
+                                                                                                'src',
+                                                                                                imageSrc + d
+                                                                                                .image +
+                                                                                                '.gif');
+                                                                                            name.innerText = d
+                                                                                                .name;
+                                                                                            description
+                                                                                                .innerText = d
+                                                                                                .description;
+                                                                                            cost.innerText = d
+                                                                                                .cost;
+                                                                                            qty.innerText = d
+                                                                                                .qty;
+                                                                                            total.innerText = d
+                                                                                                .total;
+                                                                                            if (d.stock > 10) {
+                                                                                                stock
+                                                                                                    .innerHTML =
+                                                                                                    inStock;
+                                                                                            } else {
+                                                                                                stock
+                                                                                                    .innerHTML =
+                                                                                                    lowStock;
+                                                                                            }
+
+                                                                                            // New template border controller
+                                                                                            // When only 1 row is available
+                                                                                            if (data.length ===
+                                                                                                1) {
+                                                                                                let borderClasses = [
+                                                                                                    'rounded',
+                                                                                                    'rounded-end-0'
+                                                                                                ];
+                                                                                                newTemplate
+                                                                                                    .querySelectorAll(
+                                                                                                        'td')[0]
+                                                                                                    .classList
+                                                                                                    .add(...
+                                                                                                        borderClasses
+                                                                                                        );
+                                                                                                borderClasses
+                                                                                                    = ['rounded',
+                                                                                                        'rounded-start-0'
+                                                                                                    ];
+                                                                                                newTemplate
+                                                                                                    .querySelectorAll(
+                                                                                                        'td')[4]
+                                                                                                    .classList
+                                                                                                    .add(...
+                                                                                                        borderClasses
+                                                                                                        );
+
+                                                                                                // Remove bottom border
+                                                                                                newTemplate
+                                                                                                    .classList
+                                                                                                    .add(
+                                                                                                        'border-bottom-0'
+                                                                                                        );
+                                                                                            } else {
+                                                                                                // When multiple rows detected
+                                                                                                if (index === (
+                                                                                                        data
+                                                                                                        .length -
+                                                                                                        1
+                                                                                                        )) { // first row
+                                                                                                    let borderClasses = [
+                                                                                                        'rounded-start',
+                                                                                                        'rounded-bottom-0'
+                                                                                                    ];
+                                                                                                    newTemplate
+                                                                                                        .querySelectorAll(
+                                                                                                            'td'
+                                                                                                            )[0]
+                                                                                                        .classList
+                                                                                                        .add(...
+                                                                                                            borderClasses
+                                                                                                            );
+                                                                                                    borderClasses
+                                                                                                        = ['rounded-end',
+                                                                                                            'rounded-bottom-0'
+                                                                                                        ];
+                                                                                                    newTemplate
+                                                                                                        .querySelectorAll(
+                                                                                                            'td'
+                                                                                                            )[4]
+                                                                                                        .classList
+                                                                                                        .add(...
+                                                                                                            borderClasses
+                                                                                                            );
+                                                                                                }
+                                                                                                if (index ===
+                                                                                                    0) { // last row
+                                                                                                    let borderClasses = [
+                                                                                                        'rounded-start',
+                                                                                                        'rounded-top-0'
+                                                                                                    ];
+                                                                                                    newTemplate
+                                                                                                        .querySelectorAll(
+                                                                                                            'td'
+                                                                                                            )[0]
+                                                                                                        .classList
+                                                                                                        .add(...
+                                                                                                            borderClasses
+                                                                                                            );
+                                                                                                    borderClasses
+                                                                                                        = ['rounded-end',
+                                                                                                            'rounded-top-0'
+                                                                                                        ];
+                                                                                                    newTemplate
+                                                                                                        .querySelectorAll(
+                                                                                                            'td'
+                                                                                                            )[4]
+                                                                                                        .classList
+                                                                                                        .add(...
+                                                                                                            borderClasses
+                                                                                                            );
+
+                                                                                                    // Remove bottom border on last row
+                                                                                                    newTemplate
+                                                                                                        .classList
+                                                                                                        .add(
+                                                                                                            'border-bottom-0'
+                                                                                                            );
+                                                                                                }
+                                                                                            }
+
+                                                                                            // Insert new template into table
+                                                                                            const tbody = table
+                                                                                                .querySelector(
+                                                                                                    'tbody');
+                                                                                            tbody.insertBefore(
+                                                                                                newTemplate,
+                                                                                                target
+                                                                                                .nextSibling
+                                                                                                );
+                                                                                        });
+                                                                                    }
+
+                                                                                // Reset subtable
+                                                                                const resetSubtable = () => {
+                                                                                    const subtables = document
+                                                                                        .querySelectorAll(
+                                                                                            '[data-kt-docs-datatable-subtable="subtable_template"]'
+                                                                                            );
+                                                                                    subtables.forEach(st => {
+                                                                                        st.parentNode
+                                                                                            .removeChild(
+                                                                                            st);
+                                                                                    });
+
+                                                                                    const rows = table
+                                                                                        .querySelectorAll(
+                                                                                            'tbody tr');
+                                                                                    rows.forEach(r => {
+                                                                                        r.classList.remove(
+                                                                                            'isOpen');
+                                                                                        if (r.querySelector(
+                                                                                                '[data-kt-docs-datatable-subtable="expand_row"]'
+                                                                                                )) {
+                                                                                            r.querySelector(
+                                                                                                    '[data-kt-docs-datatable-subtable="expand_row"]'
+                                                                                                    )
+                                                                                                .classList
+                                                                                                .remove(
+                                                                                                    'active'
+                                                                                                    );
+                                                                                        }
+                                                                                    });
+                                                                                }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                "use strict";
+
+                                                                                // Class definition
+                                                                                var KTAppEcommerceSalesListing =
+                                                                                    function() {
+                                                                                        // Shared variables
+                                                                                        var table;
+                                                                                        var datatable;
+                                                                                        var flatpickr;
+                                                                                        var minDate, maxDate;
+
+                                                                                        // Private functions
+                                                                                        var initDatatable = function() {
+                                                                                            // Init datatable --- more info on datatables: https://datatables.net/manual/
+                                                                                            datatable = $(table)
+                                                                                                .DataTable({
+                                                                                                    "info": false,
+                                                                                                    'order': [],
+                                                                                                    'pageLength': 10,
+                                                                                                    'columnDefs': [{
+                                                                                                            orderable: false,
+                                                                                                            targets: 0
+                                                                                                        }, // Disable ordering on column 0 (checkbox)
+                                                                                                        {
+                                                                                                            orderable: false,
+                                                                                                            targets: 7
+                                                                                                        }, // Disable ordering on column 7 (actions)
+                                                                                                    ]
+                                                                                                });
+
+                                                                                            // Re-init functions on datatable re-draws
+                                                                                            datatable.on('draw',
+                                                                                                function() {
+                                                                                                    handleDeleteRows
+                                                                                                        ();
+                                                                                                });
+                                                                                        }
+
+                                                                                        // Init flatpickr --- more info :https://flatpickr.js.org/getting-started/
+                                                                                        var initFlatpickr = () => {
+                                                                                            const element = document
+                                                                                                .querySelector(
+                                                                                                    '#kt_ecommerce_sales_flatpickr'
+                                                                                                    );
+                                                                                            flatpickr = $(element)
+                                                                                                .flatpickr({
+                                                                                                    altInput: true,
+                                                                                                    altFormat: "d/m/Y",
+                                                                                                    dateFormat: "Y-m-d",
+                                                                                                    mode: "range",
+                                                                                                    onChange: function(
+                                                                                                        selectedDates,
+                                                                                                        dateStr,
+                                                                                                        instance
+                                                                                                        ) {
+                                                                                                        handleFlatpickr
+                                                                                                            (selectedDates,
+                                                                                                                dateStr,
+                                                                                                                instance
+                                                                                                                );
+                                                                                                    },
+                                                                                                });
+                                                                                        }
+                                                                                        var handleSearchDatatable =
+                                                                                        () => {
+                                                                                                const filterSearch =
+                                                                                                    document
+                                                                                                    .querySelector(
+                                                                                                        '[data-kt-ecommerce-order-filter="search"]'
+                                                                                                        );
+                                                                                                filterSearch
+                                                                                                    .addEventListener(
+                                                                                                        'keyup',
+                                                                                                        function(e) {
+                                                                                                            datatable
+                                                                                                                .search(
+                                                                                                                    e
+                                                                                                                    .target
+                                                                                                                    .value
+                                                                                                                    )
+                                                                                                                .draw();
+                                                                                                        });
+                                                                                            }
+                                                                                        var handleStatusFilter = () => {
+                                                                                            const filterStatus =
+                                                                                                document
+                                                                                                .querySelector(
+                                                                                                    '[data-kt-ecommerce-order-filter="status"]'
+                                                                                                    );
+                                                                                            $(filterStatus).on(
+                                                                                                'change', e => {
+                                                                                                    let value =
+                                                                                                        e.target
+                                                                                                        .value;
+                                                                                                    if (value ===
+                                                                                                        'all') {
+                                                                                                        value =
+                                                                                                            '';
+                                                                                                    }
+                                                                                                    datatable
+                                                                                                        .column(
+                                                                                                            3)
+                                                                                                        .search(
+                                                                                                            value
+                                                                                                            )
+                                                                                                        .draw();
+                                                                                                });
+                                                                                        }
+
+                                                                                        // Handle flatpickr --- more info: https://flatpickr.js.org/events/
+                                                                                        var handleFlatpickr = (
+                                                                                            selectedDates, dateStr,
+                                                                                            instance) => {
+                                                                                            minDate = selectedDates[
+                                                                                                0] ? new Date(
+                                                                                                selectedDates[0]
+                                                                                                ) : null;
+                                                                                            maxDate = selectedDates[
+                                                                                                1] ? new Date(
+                                                                                                selectedDates[1]
+                                                                                                ) : null;
+
+
+
+                                                                                            // Datatable date filter --- more info: https://datatables.net/extensions/datetime/examples/integration/datatables.html
+                                                                                            // Custom filtering function which will search data in column four between two values
+                                                                                            $.fn.dataTable.ext
+                                                                                                .search.push(
+                                                                                                    function(
+                                                                                                        settings,
+                                                                                                        data,
+                                                                                                        dataIndex) {
+                                                                                                        var min =
+                                                                                                            minDate;
+                                                                                                        var max =
+                                                                                                            maxDate;
+                                                                                                        var dateAdded =
+                                                                                                            new Date(
+                                                                                                                moment(
+                                                                                                                    $(data[
+                                                                                                                        5])
+                                                                                                                    .text(),
+                                                                                                                    'DD/MM/YYYY'
+                                                                                                                    )
+                                                                                                                );
+                                                                                                        // var dateModified = new Date(moment($(data[6]).text(), 'DD/MM/YYYY'));
+                                                                                                        console.log(
+                                                                                                            dateAdded
+                                                                                                            );
+                                                                                                        if (
+                                                                                                            (min ===
+                                                                                                                null &&
+                                                                                                                max ===
+                                                                                                                null
+                                                                                                                ) ||
+                                                                                                            (min ===
+                                                                                                                null &&
+                                                                                                                dateAdded <=
+                                                                                                                max
+                                                                                                                ) ||
+                                                                                                            (min <=
+                                                                                                                dateAdded &&
+                                                                                                                max ===
+                                                                                                                null
+                                                                                                                ) ||
+                                                                                                            (min <=
+                                                                                                                dateAdded &&
+                                                                                                                dateAdded <=
+                                                                                                                max)
+                                                                                                        ) {
+                                                                                                            return true;
+                                                                                                        }
+                                                                                                        return false;
+                                                                                                    }
+                                                                                                );
+                                                                                            datatable.draw();
+                                                                                        }
+                                                                                        // Handle clear flatpickr
+                                                                                        var handleClearFlatpickr =
+                                                                                    () => {
+                                                                                            const clearButton =
+                                                                                                document
+                                                                                                .querySelector(
+                                                                                                    '#kt_ecommerce_sales_flatpickr_clear'
+                                                                                                    );
+                                                                                            clearButton
+                                                                                                .addEventListener(
+                                                                                                    'click', e => {
+                                                                                                        flatpickr
+                                                                                                            .clear();
+                                                                                                    });
+                                                                                        }
+
+                                                                                        // Delete cateogry
+                                                                                        var handleDeleteRows = () => {
+                                                                                            // Select all delete buttons
+                                                                                            const deleteButtons =
+                                                                                                table
+                                                                                                .querySelectorAll(
+                                                                                                    '[data-kt-ecommerce-order-filter="delete_row"]'
+                                                                                                    );
+
+                                                                                            deleteButtons.forEach(
+                                                                                                d => {
+                                                                                                    // Delete button on click
+                                                                                                    d.addEventListener(
+                                                                                                        'click',
+                                                                                                        function(
+                                                                                                            e
+                                                                                                            ) {
+                                                                                                            e
+                                                                                                        .preventDefault();
+
+                                                                                                            // Select parent row
+                                                                                                            const
+                                                                                                                parent =
+                                                                                                                e
+                                                                                                                .target
+                                                                                                                .closest(
+                                                                                                                    'tr'
+                                                                                                                    );
+
+                                                                                                            // Get category name
+                                                                                                            const
+                                                                                                                orderID =
+                                                                                                                parent
+                                                                                                                .querySelector(
+                                                                                                                    '[data-kt-ecommerce-order-filter="order_id"]'
+                                                                                                                    )
+                                                                                                                .innerText;
+
+                                                                                                            // SweetAlert2 pop up --- official docs reference: https://sweetalert2.github.io/
+                                                                                                            Swal.fire({
+                                                                                                                    text: "Are you sure you want to delete order: " +
+                                                                                                                        orderID +
+                                                                                                                        "?",
+                                                                                                                    icon: "warning",
+                                                                                                                    showCancelButton: true,
+                                                                                                                    buttonsStyling: false,
+                                                                                                                    confirmButtonText: "Yes, delete!",
+                                                                                                                    cancelButtonText: "No, cancel",
+                                                                                                                    customClass: {
+                                                                                                                        confirmButton: "btn fw-bold btn-danger",
+                                                                                                                        cancelButton: "btn fw-bold btn-active-light-primary"
+                                                                                                                    }
+                                                                                                                })
+                                                                                                                .then(
+                                                                                                                    function(
+                                                                                                                        result
+                                                                                                                        ) {
+                                                                                                                        if (result
+                                                                                                                            .value
+                                                                                                                            ) {
+                                                                                                                            Swal.fire({
+                                                                                                                                    text: "You have deleted " +
+                                                                                                                                        orderID +
+                                                                                                                                        "!.",
+                                                                                                                                    icon: "success",
+                                                                                                                                    buttonsStyling: false,
+                                                                                                                                    confirmButtonText: "Ok, got it!",
+                                                                                                                                    customClass: {
+                                                                                                                                        confirmButton: "btn fw-bold btn-primary",
+                                                                                                                                    }
+                                                                                                                                })
+                                                                                                                                .then(
+                                                                                                                                    function() {
+                                                                                                                                        // Remove current row
+                                                                                                                                        datatable
+                                                                                                                                            .row(
+                                                                                                                                                $(
+                                                                                                                                                    parent)
+                                                                                                                                                )
+                                                                                                                                            .remove()
+                                                                                                                                            .draw();
+                                                                                                                                    }
+                                                                                                                                    );
+                                                                                                                        } else if (
+                                                                                                                            result
+                                                                                                                            .dismiss ===
+                                                                                                                            'cancel'
+                                                                                                                            ) {
+                                                                                                                            Swal.fire({
+                                                                                                                                text: orderID +
+                                                                                                                                    " was not deleted.",
+                                                                                                                                icon: "error",
+                                                                                                                                buttonsStyling: false,
+                                                                                                                                confirmButtonText: "Ok, got it!",
+                                                                                                                                customClass: {
+                                                                                                                                    confirmButton: "btn fw-bold btn-primary",
+                                                                                                                                }
+                                                                                                                            });
+                                                                                                                        }
+                                                                                                                    }
+                                                                                                                    );
+                                                                                                        })
+                                                                                                });
+                                                                                        }
+
+
+                                                                                        // Public methods
+                                                                                        return {
+                                                                                            init: function() {
+                                                                                                table = document
+                                                                                                    .querySelector(
+                                                                                                        '#kt_ecommerce_sales_table'
+                                                                                                        );
+
+                                                                                                if (!table) {
+                                                                                                    return;
+                                                                                                }
+
+                                                                                                initDatatable();
+                                                                                                initFlatpickr();
+                                                                                                handleSearchDatatable
+                                                                                                    ();
+                                                                                                handleStatusFilter
+                                                                                            ();
+                                                                                                handleDeleteRows();
+                                                                                                handleClearFlatpickr
+                                                                                                    ();
+                                                                                            }
+                                                                                        };
+                                                                                    }();
+
+                                                                                // On document ready
+                                                                                KTUtil.onDOMContentLoaded(function() {
+                                                                                    KTAppEcommerceSalesListing
+                                                                                        .init();
+                                                                                });
+                                                                                </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                                                                                     </div>
 
 
@@ -1551,7 +4061,7 @@
         var amount = [];
         var referernce_number = $('#reference_number').val();
         var supplier_name = $('#supplier').val();
-        var status = 1;
+        var status = 0;
         var is_child = 1;
         var month = $('#financialMonth').val();
         var year = $('#financialYear').val();
@@ -1603,6 +4113,7 @@
                     financial_year: year
                 },
                 success: function(data) {
+                    alert(data);
                     swal.fire({
                         text: "Submitted ! " + month + " " + year + " ",
                         icon: "success",
@@ -1757,7 +4268,7 @@
         //  var date_placed = month + " " + year;
         var reference_number = $('#reference_number').val();
         var supplier_name = $('#supplier').val();
-        var status = 1;
+        var status = 0;
         var is_child = 0;
         var member = "";
         var price = "";

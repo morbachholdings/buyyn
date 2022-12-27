@@ -19,8 +19,9 @@ class Rebates extends CI_Controller
         {
             $data["Email"] = $this->session->userdata('full_name');
             $value["user_name"] = $this->musers->user_details($data);
-            $value["notifications"]=$this->mnotifications->view_notifications();
+           
             $data["supplier_rebates_amounts"] = $this->mrebates->all_rebate_amount();
+            $value["notification_count"]=$this->mnotifications->notification_count_all();
             $this->load->view('header',$value);
             $this->load->view('rebates',$data);
 

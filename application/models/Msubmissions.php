@@ -32,6 +32,26 @@ class Msubmissions extends CI_Model
         return $this->db->query($sql);
     }
 
+    public function view_member_submissions($data)
+    {
+        $sql = "SELECT
+        MAX( submissions.invoice_ID ),
+        submissions.financial_month,
+        users.Company_name,
+        submissions.financial_year,
+        submissions.amount 
+    FROM
+        users
+        LEFT JOIN submissions ON users.Company_name = submissions.member_ID 
+    WHERE
+        user_group_id = 3 AND submissions.Supplier_ID=" . $data . "
+    GROUP BY
+        users.Company_name";
+        return $this->db->query($sql);
+    }
+
+
+
     function insert_parent($data)
     {
         $sql = "SELECT
@@ -63,6 +83,7 @@ class Msubmissions extends CI_Model
 
     public function add_child_invoice($data)
     {
+
         if ($this->db->insert('submissions', $data)) {
 
             $sql = "SELECT * FROM submissions WHERE Supplier_ID='" . $data['Supplier_ID'] . "' AND is_child=0 AND date_placed='" . $data['date_placed'] . "'";
@@ -85,12 +106,12 @@ class Msubmissions extends CI_Model
             if ($this->db->query($update)) {
                 $sql3 = "DELETE FROM submissions WHERE amount=0 AND is_child=1";
                 if ($this->db->query($sql3)) {
-                    $sql4 = "DELETE FROM submissions WHERE status=0 AND Supplier_ID='" . $data["Supplier_ID"] . "' AND financial_month='" . $data["financial_month"] . "' AND financial_year='" . $data["financial_year"] . "'";
-                    if ($this->db->query($sql4)) {
+                    // $sql4 = "DELETE FROM submissions WHERE status=0 AND Supplier_ID='" . $data["Supplier_ID"] . "' AND financial_month='" . $data["financial_month"] . "' AND financial_year='" . $data["financial_year"] . "'";
+                    // if ($this->db->query($sql4)) {
                         echo "added";
-                    } else {
+                    // } else {
                         echo "failed";
-                    }
+                    // }
                 } else {
                     echo "failed";
                 }
@@ -175,14 +196,108 @@ class Msubmissions extends CI_Model
 
     public function delete_zero()
     {
-        $sql="DELETE FROM submissions WHERE amount=0 AND is_child=0";
+        $sql = "DELETE FROM submissions WHERE amount=0 AND is_child=0";
+        return $this->db->query($sql);
+    }
+    public function view_pending_submission_table()
+    {
+        $sql = "SELECT
+        submissions.reference_number,
+        submissions.Invoice_ID,
+        submissions.financial_year,
+        submissions.financial_month,
+        submissions.`status` AS sub_status,
+        users.Company_name,
+        submissions.amount,
+        submissions.is_child,
+        submissions.Supplier_ID,
+        submissions.date_placed
+    FROM
+        submissions
+        INNER JOIN users ON users.user_id = submissions.Supplier_ID 
+    WHERE
+        submissions.`status` = 0 
+        AND submissions.is_child = 0 AND ISNULL( submissions.deleted_date )  
+    ORDER BY
+        submissions.financial_year DESC";
+
         return $this->db->query($sql);
     }
 
-    public function view_pending_submission_table()
+    public function view_supplier_pending_submission_table($data)
     {
-        $sql = "SELECT * FROM submissions INNER JOIN users ON users.user_id=submissions.supplier_id WHERE submissions.status = 0 AND is_child=0";
+        $sql = "SELECT
+        submissions.reference_number,
+        submissions.Invoice_ID,
+        submissions.financial_year,
+        submissions.financial_month,
+        submissions.`status` AS sub_status,
+        users.Company_name,
+        submissions.amount,
+        submissions.is_child,
+        submissions.Supplier_ID,
+        submissions.date_placed
+    FROM
+        submissions
+        INNER JOIN users ON users.user_id = submissions.Supplier_ID 
+    WHERE
+    submissions.Supplier_ID=".$data."
+        AND submissions.`status` = 0 
+        AND submissions.is_child = 0 AND ISNULL( submissions.deleted_date )  
+    ORDER BY
+        submissions.financial_year DESC";
 
         return $this->db->query($sql);
+        
+    }
+
+    public function view_invoiced_submission_table()
+    {
+        $sql = "SELECT
+        submissions.reference_number,
+        submissions.Invoice_ID,
+        submissions.financial_year,
+        submissions.financial_month,
+        submissions.`status` AS sub_status,
+        users.Company_name,
+        submissions.amount,
+        submissions.is_child,
+        submissions.Supplier_ID,
+        submissions.date_placed
+    FROM
+        submissions
+        INNER JOIN users ON users.user_id = submissions.Supplier_ID 
+    WHERE
+        submissions.`status` = 1 
+        AND submissions.is_child = 0 AND ISNULL( submissions.deleted_date )  
+    ORDER BY
+        submissions.financial_year DESC";
+
+        return $this->db->query($sql);
+    }
+
+    public function mark_invoiced($data)
+    {
+        $this->db->set('status', $data["status"]);
+        $this->db->set('updated_date', $data["updated_date"]);
+        $this->db->set('updated_by', $data["updated_by"]);
+        $this->db->where('reference_number', $data["reference_number"]);
+        if ($this->db->update('submissions')) {
+            return json_encode(array("status" => "1", "ret_data" => " Updated !"));
+        } else {
+            return json_encode(array("status" => "0", "ret_data" => "Failed to update"));
+        }
+    }
+    public function mark_deleted($data)
+    {
+      
+        $this->db->set('deleted_date', $data["deleted_date"]);
+        $this->db->set('updated_by', $data["updated_by"]);
+        $this->db->where('reference_number', $data["reference_number"]);
+        if ($this->db->update('submissions')) {
+            return json_encode(array("status" => "1", "ret_data" => " Deleted !"));
+        } else {
+            return json_encode(array("status" => "0", "ret_data" => "Failed to delete"));
+        }
     }
 }

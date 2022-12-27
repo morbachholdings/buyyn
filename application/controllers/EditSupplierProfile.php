@@ -21,6 +21,7 @@ class EditSupplierProfile extends CI_Controller
             $pro["user_details"] = $this->musers->single_user($user_id);
             $pro["all_logins"] = $this->musers->all_logins($user_id);
             $pro["rebates"] = $this->musers->rebates($user_id);
+            $value["notification_count"]=$this->mnotifications->notification_count_all();
             $this->load->view('supplier_header', $value);
             $this->load->view('supplier_profile', $pro);
         } else {

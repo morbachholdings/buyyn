@@ -1,2793 +1,1396 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Supplier Data Submission - Buyyn</title>
+    <style>
+        ::-webkit-scrollbar {
+            width: 3px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #d6d6d6;
+            border-radius: 10px;
+        }
+
+        .table-fixed {
+            width: 100%;
+        }
+
+        .table-fixed tbody {
+            height: 350px;
+            overflow-y: auto;
+            width: 100%;
+            overflow-x: scroll;
+        }
+
+        .table-fixed thead,
+        .table-fixed tbody,
+        .table-fixed tr,
+        .table-fixed td,
+        .table-fixed th {
+            display: block;
+        }
+
+        .table-fixed tbody td {
+            float: left;
+        }
+
+        .table-fixed thead tr th {
+            border-color: #0881b1;
+            float: left;
+        }
+
+        .read_article {
+            text-align: center;
+        }
+    </style>
 </head>
+
 <body>
-<div class="toolbar py-5 py-lg-15" id="kt_toolbar">
-                    <!--begin::Container-->
-                    <div id="kt_toolbar_container" class="container-xxl d-flex flex-stack flex-wrap">
-                        <!--begin::Page title-->
-                        <div class="page-title d-flex flex-column me-3">
-                            <!--begin::Title-->
-                            <h1 class="d-flex text-dark fw-bolder my-1">Data & Submisions</h1>
-                            <!--end::Title-->
-                        </div>
-                    </div>
-                    <!--end::Container-->
-                </div>
-                <div id="kt_content_container" class="d-flex flex-column-fluid align-items-start container-xxl">
-                    <!--begin::Post-->
-                    <div class="content flex-row-fluid" id="kt_content">
-                        <!--begin::Row-->
-                        <div class="row g-5 g-xl-10 mb-xl-10">
-                            <div class="col-xl-12">
+    <div class="toolbar py-5 py-lg-15" id="kt_toolbar">
+        <!--begin::Container-->
+        <div id="kt_toolbar_container" class="container-xxl d-flex flex-stack flex-wrap">
+            <!--begin::Page title-->
+            <div class="page-title d-flex flex-column me-3">
+                <!--begin::Title-->
+                <h1 class="d-flex text-dark fw-bolder my-1">Data & Submisions</h1>
+                <!--end::Title-->
+            </div>
+        </div>
+        <!--end::Container-->
+    </div>
+    <div id="kt_content_container" class="d-flex flex-column-fluid align-items-start container-xxl">
+        <!--begin::Post-->
+        <div class="content flex-row-fluid" id="kt_content">
+            <!--begin::Row-->
+            <div class="row g-5 g-xl-10 mb-xl-10">
+                <div class="col-xl-12">
+
+
+
+                    <!--begin::Col-->
+                    <div class="col">
+
+                        <!--begin::General Widget 1-->
+                        <div class="mb-10">
+                            <!--begin::Tabs-->
+                            <ul class="nav row mb-10">
+                                <li class="nav-item col-12 col-lg mb-5 mb-lg-0">
+                                    <a class="nav-link btn btn-flex btn-color-muted btn-outline btn-outline-default btn-active-danger d-flex flex-grow-1 flex-column flex-center py-5 h-1250px h-lg-100px active" data-bs-toggle="tab" href="#kt_general_widget_1_1">
+                                        <!--begin::Svg Icon | path: icons/duotune/abstract/abs027.svg-->
+                                        <span class="svg-icon svg-icon-3x mb-5 mx-0">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path opacity="0.3" d="M21.25 18.525L13.05 21.825C12.35 22.125 11.65 22.125 10.95 21.825L2.75 18.525C1.75 18.125 1.75 16.725 2.75 16.325L4.04999 15.825L10.25 18.325C10.85 18.525 11.45 18.625 12.05 18.625C12.65 18.625 13.25 18.525 13.85 18.325L20.05 15.825L21.35 16.325C22.35 16.725 22.35 18.125 21.25 18.525ZM13.05 16.425L21.25 13.125C22.25 12.725 22.25 11.325 21.25 10.925L13.05 7.62502C12.35 7.32502 11.65 7.32502 10.95 7.62502L2.75 10.925C1.75 11.325 1.75 12.725 2.75 13.125L10.95 16.425C11.65 16.725 12.45 16.725 13.05 16.425Z" fill="currentColor" />
+                                                <path d="M11.05 11.025L2.84998 7.725C1.84998 7.325 1.84998 5.925 2.84998 5.525L11.05 2.225C11.75 1.925 12.45 1.925 13.15 2.225L21.35 5.525C22.35 5.925 22.35 7.325 21.35 7.725L13.05 11.025C12.45 11.325 11.65 11.325 11.05 11.025Z" fill="currentColor" />
+                                            </svg>
+                                        </span>
+                                        <!--end::Svg Icon-->
+                                        <span class="fs-6 fw-bold">Submissions</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item col-12 col-lg mb-5 mb-lg-0">
+                                    <a class="nav-link btn btn-flex btn-color-muted btn-outline btn-outline-default btn-active-danger d-flex flex-grow-1 flex-column flex-center py-5 h-1250px h-lg-100px" data-bs-toggle="tab" href="#kt_general_widget_1_2">
+                                        <!--begin::Svg Icon | path: icons/duotune/general/gen008.svg-->
+                                        <span class="svg-icon svg-icon-3x mb-5 mx-0">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M3 2H10C10.6 2 11 2.4 11 3V10C11 10.6 10.6 11 10 11H3C2.4 11 2 10.6 2 10V3C2 2.4 2.4 2 3 2Z" fill="currentColor" />
+                                                <path opacity="0.3" d="M14 2H21C21.6 2 22 2.4 22 3V10C22 10.6 21.6 11 21 11H14C13.4 11 13 10.6 13 10V3C13 2.4 13.4 2 14 2Z" fill="currentColor" />
+                                                <path opacity="0.3" d="M3 13H10C10.6 13 11 13.4 11 14V21C11 21.6 10.6 22 10 22H3C2.4 22 2 21.6 2 21V14C2 13.4 2.4 13 3 13Z" fill="currentColor" />
+                                                <path opacity="0.3" d="M14 13H21C21.6 13 22 13.4 22 14V21C22 21.6 21.6 22 21 22H14C13.4 22 13 21.6 13 21V14C13 13.4 13.4 13 14 13Z" fill="currentColor" />
+                                            </svg>
+                                        </span>
+                                        <!--end::Svg Icon-->
+                                        <span class="fs-6 fw-bold">Submit Data</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <!--begin::Tab content-->
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="kt_general_widget_1_1">
+                                    <!--begin::Tables Widget 2-->
+                                    <div class="card card-flush">
+
+
+
+                                        <!--begin::Body-->
+                                        <div class="noPadding card-body pt-0 px-0">
+                                            <!--begin::Nav-->
+                                            <ul class="nav nav-pills nav-pills-custom row position-relative mx-0 mb-9">
+
+                                                <!--begin::Item-->
+                                                <li class="nav-item col-6 mx-0 px-0">
+                                                    <!--begin::Link-->
+                                                    <a class="nav-link d-flex justify-content-center align-items-center w-100 border-0 h-100 py-3 active" data-bs-toggle="pill" href="#kt_list_widget_10_tab_2">
+                                                        <!--begin::Subtitle-->
+                                                        <span class="nav-text text-gray-800 fw-bolder fs-6 my-2">Pending
+                                                            Submissions</span>
+                                                        <!--end::Subtitle-->
+                                                        <!--begin::Bullet-->
+                                                        <span class="bullet-custom position-absolute z-index-2 bottom-0 w-100 h-4px bg-primary rounded"></span>
+                                                        <!--end::Bullet-->
+                                                    </a>
+                                                    <!--end::Link-->
+                                                </li>
+                                                <!--end::Item-->
+                                                <li class="nav-item col-6 mx-0 px-0">
+                                                    <!--begin::Link-->
+                                                    <a class="nav-link d-flex justify-content-center w-100 border-0 h-100 py-3" data-bs-toggle="pill" href="#kt_list_widget_10_tab_3">
+                                                        <!--begin::Subtitle-->
+                                                        <span class="nav-text text-gray-800 fw-bolder fs-6 my-2">Invoiced</span>
+                                                        <!--end::Subtitle-->
+                                                        <!--begin::Bullet-->
+                                                        <span class="bullet-custom position-absolute z-index-2 bottom-0 w-100 h-4px bg-primary rounded"></span>
+                                                        <!--end::Bullet-->
+                                                    </a>
+                                                    <!--end::Link-->
+                                                </li>
+                                                <!--end::Item-->
+
+                                                <!--end::Item-->
+                                                <!--begin::Bullet-->
+                                                <span class="position-absolute z-index-1 bottom-0 w-100 h-4px bg-light rounded"></span>
+                                                <!--end::Bullet-->
+                                            </ul>
+                                            <div class="tab-content" styles="background:#eceef7;">
 
+                                                <!--begin::Tap pane-->
+                                                <div class="tab-pane fade show active" id="kt_list_widget_10_tab_2">
+                                                    <div class="m-0">
+                                                        <div class="noPadding card-body pt-0">
+                                                            <div class="col-xl-12">
+                                                                <!--end::Card header-->
+                                                                <!--begin::Table Widget 4-->
+                                                                <div class="card card-flush h-xl-100">
 
 
-                                <!--begin::Col-->
-                                <div class="col">
 
-                                    <!--begin::General Widget 1-->
-                                    <div class="mb-10">
-                                        <!--begin::Tabs-->
-                                        <ul class="nav row mb-10">
-                                            <li class="nav-item col-12 col-lg mb-5 mb-lg-0">
-                                                <a class="nav-link btn btn-flex btn-color-muted btn-outline btn-outline-default btn-active-danger d-flex flex-grow-1 flex-column flex-center py-5 h-1250px h-lg-100px active"
-                                                    data-bs-toggle="tab" href="#kt_general_widget_1_1">
-                                                    <!--begin::Svg Icon | path: icons/duotune/abstract/abs027.svg-->
-                                                    <span class="svg-icon svg-icon-3x mb-5 mx-0">
-                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path opacity="0.3"
-                                                                d="M21.25 18.525L13.05 21.825C12.35 22.125 11.65 22.125 10.95 21.825L2.75 18.525C1.75 18.125 1.75 16.725 2.75 16.325L4.04999 15.825L10.25 18.325C10.85 18.525 11.45 18.625 12.05 18.625C12.65 18.625 13.25 18.525 13.85 18.325L20.05 15.825L21.35 16.325C22.35 16.725 22.35 18.125 21.25 18.525ZM13.05 16.425L21.25 13.125C22.25 12.725 22.25 11.325 21.25 10.925L13.05 7.62502C12.35 7.32502 11.65 7.32502 10.95 7.62502L2.75 10.925C1.75 11.325 1.75 12.725 2.75 13.125L10.95 16.425C11.65 16.725 12.45 16.725 13.05 16.425Z"
-                                                                fill="currentColor" />
-                                                            <path
-                                                                d="M11.05 11.025L2.84998 7.725C1.84998 7.325 1.84998 5.925 2.84998 5.525L11.05 2.225C11.75 1.925 12.45 1.925 13.15 2.225L21.35 5.525C22.35 5.925 22.35 7.325 21.35 7.725L13.05 11.025C12.45 11.325 11.65 11.325 11.05 11.025Z"
-                                                                fill="currentColor" />
-                                                        </svg>
-                                                    </span>
-                                                    <!--end::Svg Icon-->
-                                                    <span class="fs-6 fw-bold">Submissions</span>
-                                                </a>
-                                            </li>
-                                            <li class="nav-item col-12 col-lg mb-5 mb-lg-0">
-                                                <a class="nav-link btn btn-flex btn-color-muted btn-outline btn-outline-default btn-active-danger d-flex flex-grow-1 flex-column flex-center py-5 h-1250px h-lg-100px"
-                                                    data-bs-toggle="tab" href="#kt_general_widget_1_2">
-                                                    <!--begin::Svg Icon | path: icons/duotune/general/gen008.svg-->
-                                                    <span class="svg-icon svg-icon-3x mb-5 mx-0">
-                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M3 2H10C10.6 2 11 2.4 11 3V10C11 10.6 10.6 11 10 11H3C2.4 11 2 10.6 2 10V3C2 2.4 2.4 2 3 2Z"
-                                                                fill="currentColor" />
-                                                            <path opacity="0.3"
-                                                                d="M14 2H21C21.6 2 22 2.4 22 3V10C22 10.6 21.6 11 21 11H14C13.4 11 13 10.6 13 10V3C13 2.4 13.4 2 14 2Z"
-                                                                fill="currentColor" />
-                                                            <path opacity="0.3"
-                                                                d="M3 13H10C10.6 13 11 13.4 11 14V21C11 21.6 10.6 22 10 22H3C2.4 22 2 21.6 2 21V14C2 13.4 2.4 13 3 13Z"
-                                                                fill="currentColor" />
-                                                            <path opacity="0.3"
-                                                                d="M14 13H21C21.6 13 22 13.4 22 14V21C22 21.6 21.6 22 21 22H14C13.4 22 13 21.6 13 21V14C13 13.4 13.4 13 14 13Z"
-                                                                fill="currentColor" />
-                                                        </svg>
-                                                    </span>
-                                                    <!--end::Svg Icon-->
-                                                    <span class="fs-6 fw-bold">Submit Data</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                        <!--begin::Tab content-->
-                                        <div class="tab-content">
-                                            <div class="tab-pane fade show active" id="kt_general_widget_1_1">
-                                                <!--begin::Tables Widget 2-->
-                                                <div class="card card-flush">
 
+                                                                    <div class="card-header align-items-center py-1 gap-2 gap-md-5">
 
-
-                                                    <!--begin::Body-->
-                                                    <div class="noPadding card-body pt-0 px-0">
-                                                        <!--begin::Nav-->
-                                                        <ul
-                                                            class="nav nav-pills nav-pills-custom row position-relative mx-0 mb-9">
-
-                                                            <!--begin::Item-->
-                                                            <li class="nav-item col-6 mx-0 px-0">
-                                                                <!--begin::Link-->
-                                                                <a class="nav-link d-flex justify-content-center align-items-center w-100 border-0 h-100 py-3 active"
-                                                                    data-bs-toggle="pill"
-                                                                    href="#kt_list_widget_10_tab_2">
-                                                                    <!--begin::Subtitle-->
-                                                                    <span
-                                                                        class="nav-text text-gray-800 fw-bolder fs-6 my-2">Pending
-                                                                        Submissions</span>
-                                                                    <!--end::Subtitle-->
-                                                                    <!--begin::Bullet-->
-                                                                    <span
-                                                                        class="bullet-custom position-absolute z-index-2 bottom-0 w-100 h-4px bg-primary rounded"></span>
-                                                                    <!--end::Bullet-->
-                                                                </a>
-                                                                <!--end::Link-->
-                                                            </li>
-                                                            <!--end::Item-->
-                                                            <li class="nav-item col-6 mx-0 px-0">
-                                                                <!--begin::Link-->
-                                                                <a class="nav-link d-flex justify-content-center w-100 border-0 h-100 py-3"
-                                                                    data-bs-toggle="pill"
-                                                                    href="#kt_list_widget_10_tab_3">
-                                                                    <!--begin::Subtitle-->
-                                                                    <span
-                                                                        class="nav-text text-gray-800 fw-bolder fs-6 my-2">Invoiced</span>
-                                                                    <!--end::Subtitle-->
-                                                                    <!--begin::Bullet-->
-                                                                    <span
-                                                                        class="bullet-custom position-absolute z-index-2 bottom-0 w-100 h-4px bg-primary rounded"></span>
-                                                                    <!--end::Bullet-->
-                                                                </a>
-                                                                <!--end::Link-->
-                                                            </li>
-                                                            <!--end::Item-->
-
-                                                            <!--end::Item-->
-                                                            <!--begin::Bullet-->
-                                                            <span
-                                                                class="position-absolute z-index-1 bottom-0 w-100 h-4px bg-light rounded"></span>
-                                                            <!--end::Bullet-->
-                                                        </ul>
-                                                        <div class="tab-content" styles="background:#eceef7;">
-
-                                                            <!--begin::Tap pane-->
-                                                            <div class="tab-pane fade show active"
-                                                                id="kt_list_widget_10_tab_2">
-                                                                <div class="m-0">
-                                                                    <div class="noPadding card-body pt-0">
-                                                                        <div class="col-xl-12">
-                                                                            <!--end::Card header-->
-                                                                            <!--begin::Table Widget 4-->
-                                                                            <div class="card card-flush h-xl-100">
-
-
-
-
-
-
-
-
-
-
-
-
-                                                                                <div
-                                                                                                        class="card-title">
-                                                                                                        <!--begin::Search-->
-                                                                                                        <div
-                                                                                                            class="d-flex align-items-center position-relative my-1">
-                                                                                                            <!--begin::Svg Icon | path: icons/duotune/general/gen021.svg-->
-                                                                                                            <span
-                                                                                                                class="svg-icon svg-icon-1 position-absolute ms-4">
-                                                                                                                <svg width="24"
-                                                                                                                    height="24"
-                                                                                                                    viewBox="0 0 24 24"
-                                                                                                                    fill="none"
-                                                                                                                    xmlns="http://www.w3.org/2000/svg">
-                                                                                                                    <rect
-                                                                                                                        opacity="0.5"
-                                                                                                                        x="17.0365"
-                                                                                                                        y="15.1223"
-                                                                                                                        width="8.15546"
-                                                                                                                        height="2"
-                                                                                                                        rx="1"
-                                                                                                                        transform="rotate(45 17.0365 15.1223)"
-                                                                                                                        fill="currentColor" />
-                                                                                                                    <path
-                                                                                                                        d="M11 19C6.55556 19 3 15.4444 3 11C3 6.55556 6.55556 3 11 3C15.4444 3 19 6.55556 19 11C19 15.4444 15.4444 19 11 19ZM11 5C7.53333 5 5 7.53333 5 11C5 14.4667 7.53333 17 11 17C14.4667 17 17 14.4667 17 11C17 7.53333 14.4667 5 11 5Z"
-                                                                                                                        fill="currentColor" />
-                                                                                                                </svg>
-                                                                                                            </span>
-                                                                                                            <!--end::Svg Icon-->
-                                                                                                            <input
-                                                                                                                type="text"
-                                                                                                                data-kt-ecommerce-order-filter="search"
-                                                                                                                class="form-control form-control-solid w-250px ps-14"
-                                                                                                                placeholder="Search Order" />
-                                                                                                        </div>
-                                                                                                        <!--end::Search-->
-                                                                                                    </div>
-                                                                                                    <!--end::Card title-->
-                                                                                                    <!--begin::Card toolbar-->
-                                                                                                    <div
-                                                                                                        class="card-toolbar flex-row-fluid justify-content-end gap-5">
-                                                                                                        <!--begin::Flatpickr-->
-                                                                                                        <div
-                                                                                                            class="input-group w-250px">
-                                                                                                            <input
-                                                                                                                class="form-control form-control-solid rounded rounded-end-0"
-                                                                                                                placeholder="Pick date range"
-                                                                                                                id="kt_ecommerce_sales_flatpickr" />
-                                                                                                            <button
-                                                                                                                class="btn btn-icon btn-light"
-                                                                                                                id="kt_ecommerce_sales_flatpickr_clear">
-                                                                                                                <!--begin::Svg Icon | path: icons/duotune/arrows/arr088.svg-->
-                                                                                                                <span
-                                                                                                                    class="svg-icon svg-icon-2">
-                                                                                                                    <svg width="24"
-                                                                                                                        height="24"
-                                                                                                                        viewBox="0 0 24 24"
-                                                                                                                        fill="none"
-                                                                                                                        xmlns="http://www.w3.org/2000/svg">
-                                                                                                                        <rect
-                                                                                                                            opacity="0.5"
-                                                                                                                            x="7.05025"
-                                                                                                                            y="15.5356"
-                                                                                                                            width="12"
-                                                                                                                            height="2"
-                                                                                                                            rx="1"
-                                                                                                                            transform="rotate(-45 7.05025 15.5356)"
-                                                                                                                            fill="currentColor" />
-                                                                                                                        <rect
-                                                                                                                            x="8.46447"
-                                                                                                                            y="7.05029"
-                                                                                                                            width="12"
-                                                                                                                            height="2"
-                                                                                                                            rx="1"
-                                                                                                                            transform="rotate(45 8.46447 7.05029)"
-                                                                                                                            fill="currentColor" />
-                                                                                                                    </svg>
-                                                                                                                </span>
-                                                                                                                <!--end::Svg Icon-->
-                                                                                                            </button>
-                                                                                                        </div>
-                                                                                                        <!--end::Flatpickr-->
-                                                                                                        <div
-                                                                                                            class="w-100 mw-150px">
-                                                                                                            <!--begin::Select2-->
-                                                                                                            <select
-                                                                                                                class="form-select form-select-solid"
-                                                                                                                data-control="select2"
-                                                                                                                data-hide-search="true"
-                                                                                                                data-placeholder="Status"
-                                                                                                                data-kt-ecommerce-order-filter="status">
-                                                                                                                <option>
-                                                                                                                </option>
-                                                                                                                <option
-                                                                                                                    value="all">
-                                                                                                                    All
-                                                                                                                </option>
-                                                                                                                <option
-                                                                                                                    value="Cancelled">
-                                                                                                                    Cancelled
-                                                                                                                </option>
-                                                                                                                <option
-                                                                                                                    value="Completed">
-                                                                                                                    Completed
-                                                                                                                </option>
-                                                                                                                <option
-                                                                                                                    value="Denied">
-                                                                                                                    Denied
-                                                                                                                </option>
-                                                                                                                <option
-                                                                                                                    value="Expired">
-                                                                                                                    Expired
-                                                                                                                </option>
-                                                                                                                <option
-                                                                                                                    value="Failed">
-                                                                                                                    Failed
-                                                                                                                </option>
-                                                                                                                <option
-                                                                                                                    value="Pending">
-                                                                                                                    Pending
-                                                                                                                </option>
-                                                                                                                <option
-                                                                                                                    value="Processing">
-                                                                                                                    Processing
-                                                                                                                </option>
-                                                                                                                <option
-                                                                                                                    value="Refunded">
-                                                                                                                    Refunded
-                                                                                                                </option>
-                                                                                                                <option
-                                                                                                                    value="Delivered">
-                                                                                                                    Delivered
-                                                                                                                </option>
-                                                                                                                <option
-                                                                                                                    value="Aug 2022">
-                                                                                                                    Aug
-                                                                                                                    2022
-                                                                                                                </option>
-                                                                                                            </select>
-                                                                                                            <!--end::Select2-->
-                                                                                                        </div>
-                                                                                                        <!--begin::Export dropdown-->
-                                                                                                        <button
-                                                                                                            type="button"
-                                                                                                            class="btn btn-light-primary"
-                                                                                                            data-kt-menu-trigger="click"
-                                                                                                            data-kt-menu-placement="bottom-end">
-                                                                                                            <!-- <span class="svg-icon svg-icon-1 position-absolute ms-4">...</span> -->
-                                                                                                            Export
-                                                                                                        </button>
-                                                                                                        <!--begin::Menu-->
-                                                                                                        <div id="kt_datatable_example_export_menu_submission"
-                                                                                                            class="menu menu-sub menu-sub-dropdown menu-column menu-rounded-4 menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-200px py-4"
-                                                                                                            data-kt-menu="true">
-                                                                                                            <!--begin::Menu item-->
-                                                                                                            <div
-                                                                                                                class="menu-item px-3">
-                                                                                                                <a href="#"
-                                                                                                                    class="menu-link px-3"
-                                                                                                                    data-kt-export="csv">
-                                                                                                                    Export
-                                                                                                                    as
-                                                                                                                    CSV
-                                                                                                                </a>
-                                                                                                            </div>
-                                                                                                            <!--end::Menu item-->
-
-                                                                                                        </div>
-                                                                                                        <!--end::Menu-->
-                                                                                                        <!--end::Export dropdown-->
-                                                                                                        <!--begin::Hide default export buttons-->
-                                                                                                        <div id="kt_datatable_example_buttons"
-                                                                                                            class="d-none">
-                                                                                                        </div>
-                                                                                                        <!--end::Hide default export buttons-->
-                                                                                                    </div>
-                                                                                                    <!--end::Card toolbar-->
-                                                                                                </div>
-                                                                                                <!--end::Card header-->
-                                                                                                <!--begin::Card body-->
-                                                                                                <div
-                                                                                                    class="card-body pt-0">
-                                                                                                    <!-- kt_ecommerce_sales_table -->
-                                                                                                    <!--begin::Table-->
-                                                                                                    <table
-                                                                                                        class="table align-middle table-row-dashed fs-6 gy-5"
-                                                                                                        id="kt_ecommerce_sales_table">
-                                                                                                        <!--begin::Table head-->
-                                                                                                        <thead>
-                                                                                                            <!--begin::Table row-->
-                                                                                                           
-                                                                                                            <tr
-                                                                                                                class="text-start text-gray-400 fw-bold fs-7 text-uppercase gs-0">
-                                                                                                                <th
-                                                                                                                    class="w-10px pe-2">
-                                                                                                                    <div
-                                                                                                                        class="form-check form-check-sm form-check-custom form-check-solid me-3">
-                                                                                                                        <input
-                                                                                                                            class="form-check-input"
-                                                                                                                            type="checkbox"
-                                                                                                                            data-kt-check="true"
-                                                                                                                            data-kt-check-target="#kt_ecommerce_sales_table .form-check-input"
-                                                                                                                            value="1" />
-                                                                                                                    </div>
-                                                                                                                </th>
-                                                                                                                <th
-                                                                                                                    class="min-w-100px">
-                                                                                                                    Refferel
-                                                                                                                    Link
-                                                                                                                </th>
-                                                                                                                <th
-                                                                                                                    class="min-w-175px">
-                                                                                                                    Supplier
-                                                                                                                </th>
-                                                                                                                <th
-                                                                                                                    class="text-end min-w-70px">
-                                                                                                                    Reference
-                                                                                                                    Date
-                                                                                                                </th>
-                                                                                                                <th
-                                                                                                                    class="text-end min-w-100px">
-                                                                                                                    Status
-                                                                                                                </th>
-                                                                                                                <th
-                                                                                                                    class="text-end min-w-100px">
-                                                                                                                    Date
-                                                                                                                    Added
-                                                                                                                </th>
-                                                                                                                <th
-                                                                                                                    class="text-end min-w-100px">
-                                                                                                                    Total
-                                                                                                                    Sales
-                                                                                                                </th>
-                                                                                                                <th
-                                                                                                                    class="text-end min-w-100px">
-                                                                                                                    Actions
-                                                                                                                </th>
-                                                                                                            </tr>
-                                                                                                           
-                                                                                                            <!--end::Table row-->
-                                                                                                        </thead>
-                                                                                                        <!--end::Table head-->
-                                                                                                        <!--begin::Table body-->
-                                                                                                        <tbody
-                                                                                                            class="fw-semibold text-gray-600">
-                                                                                                            <!--begin::Table row-->
-                                                                                                            <tr>
-                                                                                                            <?php //foreach($view_submisions->result() as $row){ ?>
-                                                                                                                <!--begin::Checkbox-->
-                                                                                                                <td>
-                                                                                                                    <div
-                                                                                                                        class="form-check form-check-sm form-check-custom form-check-solid">
-                                                                                                                        <input
-                                                                                                                            class="form-check-input"
-                                                                                                                            type="checkbox"
-                                                                                                                            value="1" />
-                                                                                                                    </div>
-                                                                                                                </td>
-                                                                                                                <!--end::Checkbox-->
-                                                                                                                <!--begin::Order ID=-->
-                                                                                                                <td>
-                                                                                                                    <a href="../../demo19/dist/apps/ecommerce/sales/details.html"
-                                                                                                                        class="text-gray-800 text-hover-primary fw-bold"><?php //echo $row->reference_number ?></a>
-                                                                                                                </td>
-                                                                                                                <!--end::Order ID=-->
-                                                                                                                <!--begin::Customer=-->
-                                                                                                                <td>
-                                                                                                                    <div
-                                                                                                                        class="d-flex align-items-center">
-                                                                                                                        
-                                                                                                                        <div
-                                                                                                                            class="ms-5">
-                                                                                                                            <!--begin::Title-->
-                                                                                                                            <a href="../../demo19/dist/apps/user-management/users/view.html"
-                                                                                                                                class="text-gray-800 text-hover-primary fs-5 fw-bold"><?php //echo $row->Supplier_ID ?>
-                                                                                                                                </a>
-                                                                                                                            <!--end::Title-->
-                                                                                                                        </div>
-                                                                                                                    </div>
-                                                                                                                </td>
-                                                                                                                <!--end::Customer=-->
-
-                                                                                                                <!--begin::Date Modified=-->
-                                                                                                                <td
-                                                                                                                    class="text-end">
-                                                                                                                    <span
-                                                                                                                        class="fw-bold">Aug
-                                                                                                                        2022</span>
-                                                                                                                </td>
-                                                                                                                <!--end::Date Modified=-->
-                                                                                                                <!--begin::Status=-->
-                                                                                                                <td class="text-end pe-0"
-                                                                                                                    data-order="Refunded">
-                                                                                                                    <!--begin::Badges-->
-                                                                                                                    <div
-                                                                                                                        class="badge badge-light-info"><?php //echo $row->status ?>  
-                                                                                                                    </div>
-                                                                                                                    <!--end::Badges-->
-                                                                                                                </td>
-                                                                                                                <!--end::Status=-->
-                                                                                                                <!--begin::Date Added=-->
-                                                                                                                <td class="text-end"
-                                                                                                                    data-order="2022-11-16">
-                                                                                                                    <span
-                                                                                                                        class="fw-bold"><?php //echo $row->created_date ?></span>
-                                                                                                                </td>
-                                                                                                                <!--end::Date Added=-->
-                                                                                                                <!--begin::Total=-->
-                                                                                                                <td
-                                                                                                                    class="text-end pe-0">
-                                                                                                                    <span
-                                                                                                                        class="fw-bold"><?php //echo $row->amount ?></span>
-                                                                                                                </td>
-                                                                                                                <!--end::Total=-->
-                                                                                                                <!--begin::Action=-->
-                                                                                                                <td
-                                                                                                                    class="text-end">
-                                                                                                                    <a href="#"
-                                                                                                                        class="btn btn-sm btn-light btn-active-light-primary"
-                                                                                                                        data-kt-menu-trigger="click"
-                                                                                                                        data-kt-menu-placement="bottom-end">Actions
-                                                                                                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr072.svg-->
-                                                                                                                        <span
-                                                                                                                            class="svg-icon svg-icon-5 m-0">
-                                                                                                                            <svg width="24"
-                                                                                                                                height="24"
-                                                                                                                                viewBox="0 0 24 24"
-                                                                                                                                fill="none"
-                                                                                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                                                                                <path
-                                                                                                                                    d="M11.4343 12.7344L7.25 8.55005C6.83579 8.13583 6.16421 8.13584 5.75 8.55005C5.33579 8.96426 5.33579 9.63583 5.75 10.05L11.2929 15.5929C11.6834 15.9835 12.3166 15.9835 12.7071 15.5929L18.25 10.05C18.6642 9.63584 18.6642 8.96426 18.25 8.55005C17.8358 8.13584 17.1642 8.13584 16.75 8.55005L12.5657 12.7344C12.2533 13.0468 11.7467 13.0468 11.4343 12.7344Z"
-                                                                                                                                    fill="currentColor" />
-                                                                                                                            </svg>
-                                                                                                                        </span>
-                                                                                                                        <!--end::Svg Icon-->
-                                                                                                                    </a>
-                                                                                                                    <!--begin::Menu-->
-                                                                                                                    <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4"
-                                                                                                                        data-kt-menu="true">
-                                                                                                                        <!--begin::Menu item-->
-                                                                                                                        <div
-                                                                                                                            class="menu-item px-3">
-                                                                                                                            <a href="../../demo19/dist/apps/ecommerce/sales/details.html"
-                                                                                                                                class="menu-link px-3">View</a>
-                                                                                                                        </div>
-                                                                                                                        <!--end::Menu item-->
-                                                                                                                        <!--begin::Menu item-->
-                                                                                                                        <div
-                                                                                                                            class="menu-item px-3">
-                                                                                                                            <a href="../../demo19/dist/apps/ecommerce/sales/edit-order.html"
-                                                                                                                                class="menu-link px-3">Edit</a>
-                                                                                                                        </div>
-                                                                                                                        <!--end::Menu item-->
-                                                                                                                        <!--begin::Menu item-->
-                                                                                                                        <div
-                                                                                                                            class="menu-item px-3">
-                                                                                                                            <a href="#"
-                                                                                                                                class="menu-link px-3"
-                                                                                                                                data-kt-ecommerce-order-filter="delete_row">Delete</a>
-                                                                                                                        </div>
-                                                                                                                        <!--end::Menu item-->
-                                                                                                                    </div>
-                                                                                                                    <!--end::Menu-->
-                                                                                                                </td>
-                                                                                                                <!--end::Action=-->
-                                                                                                            </tr>
-                                                                                                            <?php //} ?>
-                                                                                                            <!--end::Table row-->
-                                                                                                            <!--begin::Table row-->
-                                                                                                            <tr>
-                                                                                                                <!--begin::Checkbox-->
-                                                                                                                <td>
-                                                                                                                    <div
-                                                                                                                        class="form-check form-check-sm form-check-custom form-check-solid">
-                                                                                                                        <input
-                                                                                                                            class="form-check-input"
-                                                                                                                            type="checkbox"
-                                                                                                                            value="1" />
-                                                                                                                    </div>
-                                                                                                                </td>
-                                                                                                                <!--end::Checkbox-->
-                                                                                                                <!--begin::Order ID=-->
-                                                                                                                <td>
-                                                                                                                    <a href="../../demo19/dist/apps/ecommerce/sales/details.html"
-                                                                                                                        class="text-gray-800 text-hover-primary fw-bold">12615</a>
-                                                                                                                </td>
-                                                                                                                <!--end::Order ID=-->
-                                                                                                                <!--begin::Customer=-->
-                                                                                                                <td>
-                                                                                                                    <div
-                                                                                                                        class="d-flex align-items-center">
-                                                                                                                        <!--begin:: Avatar -->
-                                                                                                                        <div
-                                                                                                                            class="symbol symbol-circle symbol-50px overflow-hidden me-3">
-                                                                                                                            <a
-                                                                                                                                href="../../demo19/dist/apps/user-management/users/view.html">
-                                                                                                                                <div
-                                                                                                                                    class="symbol-label">
-                                                                                                                                    <img src="assets/media/avatars/300-12.jpg"
-                                                                                                                                        alt="Ana Crown"
-                                                                                                                                        class="w-100" />
-                                                                                                                                </div>
-                                                                                                                            </a>
-                                                                                                                        </div>
-                                                                                                                        <!--end::Avatar-->
-                                                                                                                        <div
-                                                                                                                            class="ms-5">
-                                                                                                                            <!--begin::Title-->
-                                                                                                                            <a href="../../demo19/dist/apps/user-management/users/view.html"
-                                                                                                                                class="text-gray-800 text-hover-primary fs-5 fw-bold">Ana
-                                                                                                                                Crown</a>
-                                                                                                                            <!--end::Title-->
-                                                                                                                        </div>
-                                                                                                                    </div>
-                                                                                                                </td>
-                                                                                                                <!--end::Customer=-->
-                                                                                                                <!--begin::Status=-->
-                                                                                                                <td class="text-end pe-0"
-                                                                                                                    data-order="Expired">
-                                                                                                                    <!--begin::Badges-->
-                                                                                                                    <div
-                                                                                                                        class="badge badge-light-danger">
-                                                                                                                        Expired
-                                                                                                                    </div>
-                                                                                                                    <!--end::Badges-->
-                                                                                                                </td>
-                                                                                                                <!--end::Status=-->
-                                                                                                                <!--begin::Total=-->
-                                                                                                                <td
-                                                                                                                    class="text-end pe-0">
-                                                                                                                    <span
-                                                                                                                        class="fw-bold">$105.00</span>
-                                                                                                                </td>
-                                                                                                                <!--end::Total=-->
-                                                                                                                <!--begin::Date Added=-->
-                                                                                                                <td class="text-end"
-                                                                                                                    data-order="2022-11-18">
-                                                                                                                    <span
-                                                                                                                        class="fw-bold">02/12/2022</span>
-                                                                                                                </td>
-                                                                                                                <!--end::Date Added=-->
-                                                                                                                <!--begin::Date Modified=-->
-                                                                                                                <td
-                                                                                                                    class="text-end">
-                                                                                                                    <span
-                                                                                                                        class="fw-bold">test2</span>
-                                                                                                                </td>
-                                                                                                                <!--end::Date Modified=-->
-                                                                                                                <!--begin::Action=-->
-                                                                                                                <td
-                                                                                                                    class="text-end">
-                                                                                                                    <a href="#"
-                                                                                                                        class="btn btn-sm btn-light btn-active-light-primary"
-                                                                                                                        data-kt-menu-trigger="click"
-                                                                                                                        data-kt-menu-placement="bottom-end">Actions
-                                                                                                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr072.svg-->
-                                                                                                                        <span
-                                                                                                                            class="svg-icon svg-icon-5 m-0">
-                                                                                                                            <svg width="24"
-                                                                                                                                height="24"
-                                                                                                                                viewBox="0 0 24 24"
-                                                                                                                                fill="none"
-                                                                                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                                                                                <path
-                                                                                                                                    d="M11.4343 12.7344L7.25 8.55005C6.83579 8.13583 6.16421 8.13584 5.75 8.55005C5.33579 8.96426 5.33579 9.63583 5.75 10.05L11.2929 15.5929C11.6834 15.9835 12.3166 15.9835 12.7071 15.5929L18.25 10.05C18.6642 9.63584 18.6642 8.96426 18.25 8.55005C17.8358 8.13584 17.1642 8.13584 16.75 8.55005L12.5657 12.7344C12.2533 13.0468 11.7467 13.0468 11.4343 12.7344Z"
-                                                                                                                                    fill="currentColor" />
-                                                                                                                            </svg>
-                                                                                                                        </span>
-                                                                                                                        <!--end::Svg Icon-->
-                                                                                                                    </a>
-                                                                                                                    <!--begin::Menu-->
-                                                                                                                    <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4"
-                                                                                                                        data-kt-menu="true">
-                                                                                                                        <!--begin::Menu item-->
-                                                                                                                        <div
-                                                                                                                            class="menu-item px-3">
-                                                                                                                            <a href="../../demo19/dist/apps/ecommerce/sales/details.html"
-                                                                                                                                class="menu-link px-3">View</a>
-                                                                                                                        </div>
-                                                                                                                        <!--end::Menu item-->
-                                                                                                                        <!--begin::Menu item-->
-                                                                                                                        <div
-                                                                                                                            class="menu-item px-3">
-                                                                                                                            <a href="../../demo19/dist/apps/ecommerce/sales/edit-order.html"
-                                                                                                                                class="menu-link px-3">Edit</a>
-                                                                                                                        </div>
-                                                                                                                        <!--end::Menu item-->
-                                                                                                                        <!--begin::Menu item-->
-                                                                                                                        <div
-                                                                                                                            class="menu-item px-3">
-                                                                                                                            <a href="#"
-                                                                                                                                class="menu-link px-3"
-                                                                                                                                data-kt-ecommerce-order-filter="delete_row">Delete</a>
-                                                                                                                        </div>
-                                                                                                                        <!--end::Menu item-->
-                                                                                                                    </div>
-                                                                                                                    <!--end::Menu-->
-                                                                                                                </td>
-                                                                                                                <!--end::Action=-->
-                                                                                                            </tr>
-                                                                                                            <!--end::Table row-->
-                                                                                                            <!--begin::Table row-->
-                                                                                                            <tr>
-                                                                                                                <!--begin::Checkbox-->
-                                                                                                                <td>
-                                                                                                                    <div
-                                                                                                                        class="form-check form-check-sm form-check-custom form-check-solid">
-                                                                                                                        <input
-                                                                                                                            class="form-check-input"
-                                                                                                                            type="checkbox"
-                                                                                                                            value="1" />
-                                                                                                                    </div>
-                                                                                                                </td>
-                                                                                                                <!--end::Checkbox-->
-                                                                                                                <!--begin::Order ID=-->
-                                                                                                                <td
-                                                                                                                    data-kt-ecommerce-order-filter="order_id">
-                                                                                                                    <a href="../../demo19/dist/apps/ecommerce/sales/details.html"
-                                                                                                                        class="text-gray-800 text-hover-primary fw-bold">12616</a>
-                                                                                                                </td>
-                                                                                                                <!--end::Order ID=-->
-                                                                                                                <!--begin::Customer=-->
-                                                                                                                <td>
-                                                                                                                    <div
-                                                                                                                        class="d-flex align-items-center">
-                                                                                                                        <!--begin:: Avatar -->
-                                                                                                                        <div
-                                                                                                                            class="symbol symbol-circle symbol-50px overflow-hidden me-3">
-                                                                                                                            <a
-                                                                                                                                href="../../demo19/dist/apps/user-management/users/view.html">
-                                                                                                                                <div
-                                                                                                                                    class="symbol-label fs-3 bg-light-danger text-danger">
-                                                                                                                                    M
-                                                                                                                                </div>
-                                                                                                                            </a>
-                                                                                                                        </div>
-                                                                                                                        <!--end::Avatar-->
-                                                                                                                        <div
-                                                                                                                            class="ms-5">
-                                                                                                                            <!--begin::Title-->
-                                                                                                                            <a href="../../demo19/dist/apps/user-management/users/view.html"
-                                                                                                                                class="text-gray-800 text-hover-primary fs-5 fw-bold">Melody
-                                                                                                                                Macy</a>
-                                                                                                                            <!--end::Title-->
-                                                                                                                        </div>
-                                                                                                                    </div>
-                                                                                                                </td>
-                                                                                                                <!--end::Customer=-->
-                                                                                                                <!--begin::Status=-->
-                                                                                                                <td class="text-end pe-0"
-                                                                                                                    data-order="Cancelled">
-                                                                                                                    <!--begin::Badges-->
-                                                                                                                    <div
-                                                                                                                        class="badge badge-light-danger">
-                                                                                                                        Cancelled
-                                                                                                                    </div>
-                                                                                                                    <!--end::Badges-->
-                                                                                                                </td>
-                                                                                                                <!--end::Status=-->
-                                                                                                                <!--begin::Total=-->
-                                                                                                                <td
-                                                                                                                    class="text-end pe-0">
-                                                                                                                    <span
-                                                                                                                        class="fw-bold">$322.00</span>
-                                                                                                                </td>
-                                                                                                                <!--end::Total=-->
-                                                                                                                <!--begin::Date Added=-->
-                                                                                                                <td class="text-end"
-                                                                                                                    data-order="2022-11-16">
-                                                                                                                    <span
-                                                                                                                        class="fw-bold">16/11/2022</span>
-                                                                                                                </td>
-                                                                                                                <!--end::Date Added=-->
-                                                                                                                <!--begin::Date Modified=-->
-                                                                                                                <td
-                                                                                                                    class="text-end">
-                                                                                                                    <span
-                                                                                                                        class="fw-bold">yerst</span>
-                                                                                                                </td>
-                                                                                                                <!--end::Date Modified=-->
-                                                                                                                <!--begin::Action=-->
-                                                                                                                <td
-                                                                                                                    class="text-end">
-                                                                                                                    <a href="#"
-                                                                                                                        class="btn btn-sm btn-light btn-active-light-primary"
-                                                                                                                        data-kt-menu-trigger="click"
-                                                                                                                        data-kt-menu-placement="bottom-end">Actions
-                                                                                                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr072.svg-->
-                                                                                                                        <span
-                                                                                                                            class="svg-icon svg-icon-5 m-0">
-                                                                                                                            <svg width="24"
-                                                                                                                                height="24"
-                                                                                                                                viewBox="0 0 24 24"
-                                                                                                                                fill="none"
-                                                                                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                                                                                <path
-                                                                                                                                    d="M11.4343 12.7344L7.25 8.55005C6.83579 8.13583 6.16421 8.13584 5.75 8.55005C5.33579 8.96426 5.33579 9.63583 5.75 10.05L11.2929 15.5929C11.6834 15.9835 12.3166 15.9835 12.7071 15.5929L18.25 10.05C18.6642 9.63584 18.6642 8.96426 18.25 8.55005C17.8358 8.13584 17.1642 8.13584 16.75 8.55005L12.5657 12.7344C12.2533 13.0468 11.7467 13.0468 11.4343 12.7344Z"
-                                                                                                                                    fill="currentColor" />
-                                                                                                                            </svg>
-                                                                                                                        </span>
-                                                                                                                        <!--end::Svg Icon-->
-                                                                                                                    </a>
-                                                                                                                    <!--begin::Menu-->
-                                                                                                                    <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4"
-                                                                                                                        data-kt-menu="true">
-                                                                                                                        <!--begin::Menu item-->
-                                                                                                                        <div
-                                                                                                                            class="menu-item px-3">
-                                                                                                                            <a href="../../demo19/dist/apps/ecommerce/sales/details.html"
-                                                                                                                                class="menu-link px-3">View</a>
-                                                                                                                        </div>
-                                                                                                                        <!--end::Menu item-->
-                                                                                                                        <!--begin::Menu item-->
-                                                                                                                        <div
-                                                                                                                            class="menu-item px-3">
-                                                                                                                            <a href="../../demo19/dist/apps/ecommerce/sales/edit-order.html"
-                                                                                                                                class="menu-link px-3">Edit</a>
-                                                                                                                        </div>
-                                                                                                                        <!--end::Menu item-->
-                                                                                                                        <!--begin::Menu item-->
-                                                                                                                        <div
-                                                                                                                            class="menu-item px-3">
-                                                                                                                            <a href="#"
-                                                                                                                                class="menu-link px-3"
-                                                                                                                                data-kt-ecommerce-order-filter="delete_row">Delete</a>
-                                                                                                                        </div>
-                                                                                                                        <!--end::Menu item-->
-                                                                                                                    </div>
-                                                                                                                    <!--end::Menu-->
-                                                                                                                </td>
-                                                                                                                <!--end::Action=-->
-                                                                                                            </tr>
-                                                                                                            <!--end::Table row-->
-                                                                                                            <!--begin::Table row-->
-                                                                                                            <tr>
-                                                                                                                <!--begin::Checkbox-->
-                                                                                                                <td>
-                                                                                                                    <div
-                                                                                                                        class="form-check form-check-sm form-check-custom form-check-solid">
-                                                                                                                        <input
-                                                                                                                            class="form-check-input"
-                                                                                                                            type="checkbox"
-                                                                                                                            value="1" />
-                                                                                                                    </div>
-                                                                                                                </td>
-                                                                                                                <!--end::Checkbox-->
-                                                                                                                <!--begin::Order ID=-->
-                                                                                                                <td
-                                                                                                                    data-kt-ecommerce-order-filter="order_id">
-                                                                                                                    <a href="../../demo19/dist/apps/ecommerce/sales/details.html"
-                                                                                                                        class="text-gray-800 text-hover-primary fw-bold">12617</a>
-                                                                                                                </td>
-                                                                                                                <!--end::Order ID=-->
-                                                                                                                <!--begin::Customer=-->
-                                                                                                                <td>
-                                                                                                                    <div
-                                                                                                                        class="d-flex align-items-center">
-                                                                                                                        <!--begin:: Avatar -->
-                                                                                                                        <div
-                                                                                                                            class="symbol symbol-circle symbol-50px overflow-hidden me-3">
-                                                                                                                            <a
-                                                                                                                                href="../../demo19/dist/apps/user-management/users/view.html">
-                                                                                                                                <div
-                                                                                                                                    class="symbol-label fs-3 bg-light-danger text-danger">
-                                                                                                                                    E
-                                                                                                                                </div>
-                                                                                                                            </a>
-                                                                                                                        </div>
-                                                                                                                        <!--end::Avatar-->
-                                                                                                                        <div
-                                                                                                                            class="ms-5">
-                                                                                                                            <!--begin::Title-->
-                                                                                                                            <a href="../../demo19/dist/apps/user-management/users/view.html"
-                                                                                                                                class="text-gray-800 text-hover-primary fs-5 fw-bold">Emma
-                                                                                                                                Bold</a>
-                                                                                                                            <!--end::Title-->
-                                                                                                                        </div>
-                                                                                                                    </div>
-                                                                                                                </td>
-                                                                                                                <!--end::Customer=-->
-                                                                                                                <!--begin::Status=-->
-                                                                                                                <td class="text-end pe-0"
-                                                                                                                    data-order="Completed">
-                                                                                                                    <!--begin::Badges-->
-                                                                                                                    <div
-                                                                                                                        class="badge badge-light-success">
-                                                                                                                        Completed
-                                                                                                                    </div>
-                                                                                                                    <!--end::Badges-->
-                                                                                                                </td>
-                                                                                                                <!--end::Status=-->
-                                                                                                                <!--begin::Total=-->
-                                                                                                                <td
-                                                                                                                    class="text-end pe-0">
-                                                                                                                    <span
-                                                                                                                        class="fw-bold">$479.00</span>
-                                                                                                                </td>
-                                                                                                                <!--end::Total=-->
-                                                                                                                <!--begin::Date Added=-->
-                                                                                                                <td class="text-end"
-                                                                                                                    data-order="2022-11-16">
-                                                                                                                    <span
-                                                                                                                        class="fw-bold">16/11/2022</span>
-                                                                                                                </td>
-                                                                                                                <!--end::Date Added=-->
-                                                                                                                <!--begin::Date Modified=-->
-                                                                                                                <td
-                                                                                                                    class="text-end">
-                                                                                                                    <span
-                                                                                                                        class="fw-bold">tess</span>
-                                                                                                                </td>
-                                                                                                                <!--end::Date Modified=-->
-                                                                                                                <!--begin::Action=-->
-                                                                                                                <td
-                                                                                                                    class="text-end">
-                                                                                                                    <a href="#"
-                                                                                                                        class="btn btn-sm btn-light btn-active-light-primary"
-                                                                                                                        data-kt-menu-trigger="click"
-                                                                                                                        data-kt-menu-placement="bottom-end">Actions
-                                                                                                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr072.svg-->
-                                                                                                                        <span
-                                                                                                                            class="svg-icon svg-icon-5 m-0">
-                                                                                                                            <svg width="24"
-                                                                                                                                height="24"
-                                                                                                                                viewBox="0 0 24 24"
-                                                                                                                                fill="none"
-                                                                                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                                                                                <path
-                                                                                                                                    d="M11.4343 12.7344L7.25 8.55005C6.83579 8.13583 6.16421 8.13584 5.75 8.55005C5.33579 8.96426 5.33579 9.63583 5.75 10.05L11.2929 15.5929C11.6834 15.9835 12.3166 15.9835 12.7071 15.5929L18.25 10.05C18.6642 9.63584 18.6642 8.96426 18.25 8.55005C17.8358 8.13584 17.1642 8.13584 16.75 8.55005L12.5657 12.7344C12.2533 13.0468 11.7467 13.0468 11.4343 12.7344Z"
-                                                                                                                                    fill="currentColor" />
-                                                                                                                            </svg>
-                                                                                                                        </span>
-                                                                                                                        <!--end::Svg Icon-->
-                                                                                                                    </a>
-                                                                                                                    <!--begin::Menu-->
-                                                                                                                    <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4"
-                                                                                                                        data-kt-menu="true">
-                                                                                                                        <!--begin::Menu item-->
-                                                                                                                        <div
-                                                                                                                            class="menu-item px-3">
-                                                                                                                            <a href="../../demo19/dist/apps/ecommerce/sales/details.html"
-                                                                                                                                class="menu-link px-3">View</a>
-                                                                                                                        </div>
-                                                                                                                        <!--end::Menu item-->
-                                                                                                                        <!--begin::Menu item-->
-                                                                                                                        <div
-                                                                                                                            class="menu-item px-3">
-                                                                                                                            <a href="../../demo19/dist/apps/ecommerce/sales/edit-order.html"
-                                                                                                                                class="menu-link px-3">Edit</a>
-                                                                                                                        </div>
-                                                                                                                        <!--end::Menu item-->
-                                                                                                                        <!--begin::Menu item-->
-                                                                                                                        <div
-                                                                                                                            class="menu-item px-3">
-                                                                                                                            <a href="#"
-                                                                                                                                class="menu-link px-3"
-                                                                                                                                data-kt-ecommerce-order-filter="delete_row">Delete</a>
-                                                                                                                        </div>
-                                                                                                                        <!--end::Menu item-->
-                                                                                                                    </div>
-                                                                                                                    <!--end::Menu-->
-                                                                                                                </td>
-                                                                                                                <!--end::Action=-->
-                                                                                                            </tr>
-                                                                                                            <!--end::Table row-->
-                                                                                                            <!--begin::Table row-->
-
-                                                                                                            <!--end::Table row-->
-                                                                                                        </tbody>
-                                                                                                        <!--end::Table body-->
-                                                                                                    </table>
-                                                                                                    <!--end::Table-->
-                                                                                                </div>
-
-
-                                                                                                <script>
-                                                                                var table;
-                                                                                var datatable;
-                                                                                var template;
-
-                                                                                // Private methods
-                                                                                const initDatatable = () => {
-                                                                                    // Set date data order
-                                                                                    const tableRows = table
-                                                                                        .querySelectorAll(
-                                                                                            'tbody tr');
-
-                                                                                    tableRows.forEach(row => {
-                                                                                        const dateRow = row
-                                                                                            .querySelectorAll(
-                                                                                                'td');
-                                                                                        const realDate =
-                                                                                            moment(dateRow[
-                                                                                                    1]
-                                                                                                .innerHTML,
-                                                                                                "DD MMM YYYY, LT"
-                                                                                                )
-                                                                                        .format(); // select date from 2nd column in table
-
-                                                                                        // Skip template
-                                                                                        if (!row.closest(
-                                                                                                '[data-kt-docs-datatable-subtable="subtable_template"]'
-                                                                                                )) {
-                                                                                            dateRow[1]
-                                                                                                .setAttribute(
-                                                                                                    'data-order',
-                                                                                                    realDate
-                                                                                                    );
-                                                                                            dateRow[1]
-                                                                                                .innerText =
-                                                                                                moment(
-                                                                                                    realDate
-                                                                                                    )
-                                                                                                .fromNow();
-                                                                                        }
-                                                                                    });
-
-                                                                                    // Get subtable template
-                                                                                    const subtable = document
-                                                                                        .querySelector(
-                                                                                            '[data-kt-docs-datatable-subtable="subtable_template"]'
-                                                                                            );
-                                                                                    template = subtable.cloneNode(
-                                                                                        true);
-                                                                                    template.classList.remove(
-                                                                                        'd-none');
-
-                                                                                    // Remove subtable template
-                                                                                    subtable.parentNode.removeChild(
-                                                                                        subtable);
-
-                                                                                    // Init datatable --- more info on datatables: https://datatables.net/manual/
-                                                                                    datatable = $(table).DataTable({
-                                                                                        "info": false,
-                                                                                        'order': [],
-                                                                                        "lengthChange": false,
-                                                                                        'pageLength': 6,
-                                                                                        'ordering': false,
-                                                                                        'paging': false,
-                                                                                        'columnDefs': [{
-                                                                                                orderable: false,
-                                                                                                targets: 0
-                                                                                            }, // Disable ordering on column 0 (checkbox)
-                                                                                            {
-                                                                                                orderable: false,
-                                                                                                targets: 6
-                                                                                            }, // Disable ordering on column 6 (actions)
-                                                                                        ]
-                                                                                    });
-
-                                                                                    // Re-init functions on every table re-draw -- more info: https://datatables.net/reference/event/draw
-                                                                                    datatable.on('draw',
-                                                                                function() {
-                                                                                        resetSubtable();
-                                                                                        handleActionButton
-                                                                                    ();
-                                                                                    });
-                                                                                }
-
-                                                                                // Subtable data sample
-                                                                                const data = [{
-                                                                                        image: '76',
-                                                                                        name: 'Go Pro 8',
-                                                                                        description: 'Latest  version of Go Pro.',
-                                                                                        cost: '500.00',
-                                                                                        qty: '1',
-                                                                                        total: '500.00',
-                                                                                        stock: '12'
-                                                                                    },
-
-                                                                                ]
-
-                                                                                // Handle action button
-                                                                                const handleActionButton = () => {
-                                                                                    const buttons = document
-                                                                                        .querySelectorAll(
-                                                                                            '[data-kt-docs-datatable-subtable="expand_row"]'
-                                                                                            );
-
-                                                                                    // Sample row items counter --- for demo purpose only, remove this variable in your project
-                                                                                    const rowItems = [4, 1, 5, 1, 4,
-                                                                                        2
-                                                                                    ];
-
-                                                                                    buttons.forEach((button,
-                                                                                        index) => {
-                                                                                            button
-                                                                                                .addEventListener(
-                                                                                                    'click',
-                                                                                                    e => {
-                                                                                                        e
-                                                                                                    .stopImmediatePropagation();
-                                                                                                        e
-                                                                                                    .preventDefault();
-
-                                                                                                        const
-                                                                                                            row =
-                                                                                                            button
-                                                                                                            .closest(
-                                                                                                                'tr'
-                                                                                                                );
-                                                                                                        const
-                                                                                                            rowClasses = [
-                                                                                                                'isOpen',
-                                                                                                                'border-bottom-0'
-                                                                                                            ];
-
-                                                                                                        // Get total number of items to generate --- for demo purpose only, remove this code snippet in your project
-                                                                                                        const
-                                                                                                            demoData = [];
-                                                                                                        for (var j =
-                                                                                                                0; j <
-                                                                                                            rowItems[
-                                                                                                                index
-                                                                                                                ]; j++
-                                                                                                            ) {
-                                                                                                            demoData
-                                                                                                                .push(
-                                                                                                                    data[
-                                                                                                                        j
-                                                                                                                        ]
-                                                                                                                    );
-                                                                                                        }
-                                                                                                        // End of generating demo data
-
-                                                                                                        // Handle subtable expanded state
-                                                                                                        if (row
-                                                                                                            .classList
-                                                                                                            .contains(
-                                                                                                                'isOpen'
-                                                                                                                )
-                                                                                                            ) {
-                                                                                                            // Remove all subtables from current order row
-                                                                                                            while (
-                                                                                                                row
-                                                                                                                .nextSibling &&
-                                                                                                                row
-                                                                                                                .nextSibling
-                                                                                                                .getAttribute(
-                                                                                                                    'data-kt-docs-datatable-subtable'
-                                                                                                                    ) ===
-                                                                                                                'subtable_template'
-                                                                                                                ) {
-                                                                                                                row.nextSibling
-                                                                                                                    .parentNode
-                                                                                                                    .removeChild(
-                                                                                                                        row
-                                                                                                                        .nextSibling
-                                                                                                                        );
-                                                                                                            }
-                                                                                                            row.classList
-                                                                                                                .remove(
-                                                                                                                    ...
-                                                                                                                    rowClasses
-                                                                                                                    );
-                                                                                                            button
-                                                                                                                .classList
-                                                                                                                .remove(
-                                                                                                                    'active'
-                                                                                                                    );
-                                                                                                        } else {
-                                                                                                            populateTemplate
-                                                                                                                (demoData,
-                                                                                                                    row
-                                                                                                                    );
-                                                                                                            row.classList
-                                                                                                                .add(
-                                                                                                                    ...
-                                                                                                                    rowClasses
-                                                                                                                    );
-                                                                                                            button
-                                                                                                                .classList
-                                                                                                                .add(
-                                                                                                                    'active'
-                                                                                                                    );
-                                                                                                        }
-                                                                                                    });
-                                                                                        });
-                                                                                }
-
-                                                                                // Populate template with content/data -- content/data can be replaced with relevant data from database or API
-                                                                                const populateTemplate = (data,
-                                                                                    target) => {
-                                                                                        data.forEach((d, index) => {
-                                                                                            // Clone template node
-                                                                                            const newTemplate =
-                                                                                                template
-                                                                                                .cloneNode(
-                                                                                                true);
-
-                                                                                            // Stock badges
-                                                                                            const lowStock =
-                                                                                                `<div class="badge badge-light-warning">Low Stock</div>`;
-                                                                                            const inStock =
-                                                                                                `<div class="badge badge-light-success">In Stock</div>`;
-
-                                                                                            // Select data elements
-                                                                                            const image =
-                                                                                                newTemplate
-                                                                                                .querySelector(
-                                                                                                    '[data-kt-docs-datatable-subtable="template_image"]'
-                                                                                                    );
-                                                                                            const name =
-                                                                                                newTemplate
-                                                                                                .querySelector(
-                                                                                                    '[data-kt-docs-datatable-subtable="template_name"]'
-                                                                                                    );
-                                                                                            const description =
-                                                                                                newTemplate
-                                                                                                .querySelector(
-                                                                                                    '[data-kt-docs-datatable-subtable="template_description"]'
-                                                                                                    );
-                                                                                            const cost =
-                                                                                                newTemplate
-                                                                                                .querySelector(
-                                                                                                    '[data-kt-docs-datatable-subtable="template_cost"]'
-                                                                                                    );
-                                                                                            const qty =
-                                                                                                newTemplate
-                                                                                                .querySelector(
-                                                                                                    '[data-kt-docs-datatable-subtable="template_qty"]'
-                                                                                                    );
-                                                                                            const total =
-                                                                                                newTemplate
-                                                                                                .querySelector(
-                                                                                                    '[data-kt-docs-datatable-subtable="template_total"]'
-                                                                                                    );
-                                                                                            const stock =
-                                                                                                newTemplate
-                                                                                                .querySelector(
-                                                                                                    '[data-kt-docs-datatable-subtable="template_stock"]'
-                                                                                                    );
-
-                                                                                            // Populate elements with data
-                                                                                            const imageSrc =
-                                                                                                image
-                                                                                                .getAttribute(
-                                                                                                    'src');
-                                                                                            image.setAttribute(
-                                                                                                'src',
-                                                                                                imageSrc + d
-                                                                                                .image +
-                                                                                                '.gif');
-                                                                                            name.innerText = d
-                                                                                                .name;
-                                                                                            description
-                                                                                                .innerText = d
-                                                                                                .description;
-                                                                                            cost.innerText = d
-                                                                                                .cost;
-                                                                                            qty.innerText = d
-                                                                                                .qty;
-                                                                                            total.innerText = d
-                                                                                                .total;
-                                                                                            if (d.stock > 10) {
-                                                                                                stock
-                                                                                                    .innerHTML =
-                                                                                                    inStock;
-                                                                                            } else {
-                                                                                                stock
-                                                                                                    .innerHTML =
-                                                                                                    lowStock;
-                                                                                            }
-
-                                                                                            // New template border controller
-                                                                                            // When only 1 row is available
-                                                                                            if (data.length ===
-                                                                                                1) {
-                                                                                                let borderClasses = [
-                                                                                                    'rounded',
-                                                                                                    'rounded-end-0'
-                                                                                                ];
-                                                                                                newTemplate
-                                                                                                    .querySelectorAll(
-                                                                                                        'td')[0]
-                                                                                                    .classList
-                                                                                                    .add(...
-                                                                                                        borderClasses
-                                                                                                        );
-                                                                                                borderClasses
-                                                                                                    = ['rounded',
-                                                                                                        'rounded-start-0'
-                                                                                                    ];
-                                                                                                newTemplate
-                                                                                                    .querySelectorAll(
-                                                                                                        'td')[4]
-                                                                                                    .classList
-                                                                                                    .add(...
-                                                                                                        borderClasses
-                                                                                                        );
-
-                                                                                                // Remove bottom border
-                                                                                                newTemplate
-                                                                                                    .classList
-                                                                                                    .add(
-                                                                                                        'border-bottom-0'
-                                                                                                        );
-                                                                                            } else {
-                                                                                                // When multiple rows detected
-                                                                                                if (index === (
-                                                                                                        data
-                                                                                                        .length -
-                                                                                                        1
-                                                                                                        )) { // first row
-                                                                                                    let borderClasses = [
-                                                                                                        'rounded-start',
-                                                                                                        'rounded-bottom-0'
-                                                                                                    ];
-                                                                                                    newTemplate
-                                                                                                        .querySelectorAll(
-                                                                                                            'td'
-                                                                                                            )[0]
-                                                                                                        .classList
-                                                                                                        .add(...
-                                                                                                            borderClasses
-                                                                                                            );
-                                                                                                    borderClasses
-                                                                                                        = ['rounded-end',
-                                                                                                            'rounded-bottom-0'
-                                                                                                        ];
-                                                                                                    newTemplate
-                                                                                                        .querySelectorAll(
-                                                                                                            'td'
-                                                                                                            )[4]
-                                                                                                        .classList
-                                                                                                        .add(...
-                                                                                                            borderClasses
-                                                                                                            );
-                                                                                                }
-                                                                                                if (index ===
-                                                                                                    0) { // last row
-                                                                                                    let borderClasses = [
-                                                                                                        'rounded-start',
-                                                                                                        'rounded-top-0'
-                                                                                                    ];
-                                                                                                    newTemplate
-                                                                                                        .querySelectorAll(
-                                                                                                            'td'
-                                                                                                            )[0]
-                                                                                                        .classList
-                                                                                                        .add(...
-                                                                                                            borderClasses
-                                                                                                            );
-                                                                                                    borderClasses
-                                                                                                        = ['rounded-end',
-                                                                                                            'rounded-top-0'
-                                                                                                        ];
-                                                                                                    newTemplate
-                                                                                                        .querySelectorAll(
-                                                                                                            'td'
-                                                                                                            )[4]
-                                                                                                        .classList
-                                                                                                        .add(...
-                                                                                                            borderClasses
-                                                                                                            );
-
-                                                                                                    // Remove bottom border on last row
-                                                                                                    newTemplate
-                                                                                                        .classList
-                                                                                                        .add(
-                                                                                                            'border-bottom-0'
-                                                                                                            );
-                                                                                                }
-                                                                                            }
-
-                                                                                            // Insert new template into table
-                                                                                            const tbody = table
-                                                                                                .querySelector(
-                                                                                                    'tbody');
-                                                                                            tbody.insertBefore(
-                                                                                                newTemplate,
-                                                                                                target
-                                                                                                .nextSibling
-                                                                                                );
-                                                                                        });
-                                                                                    }
-
-                                                                                // Reset subtable
-                                                                                const resetSubtable = () => {
-                                                                                    const subtables = document
-                                                                                        .querySelectorAll(
-                                                                                            '[data-kt-docs-datatable-subtable="subtable_template"]'
-                                                                                            );
-                                                                                    subtables.forEach(st => {
-                                                                                        st.parentNode
-                                                                                            .removeChild(
-                                                                                            st);
-                                                                                    });
-
-                                                                                    const rows = table
-                                                                                        .querySelectorAll(
-                                                                                            'tbody tr');
-                                                                                    rows.forEach(r => {
-                                                                                        r.classList.remove(
-                                                                                            'isOpen');
-                                                                                        if (r.querySelector(
-                                                                                                '[data-kt-docs-datatable-subtable="expand_row"]'
-                                                                                                )) {
-                                                                                            r.querySelector(
-                                                                                                    '[data-kt-docs-datatable-subtable="expand_row"]'
-                                                                                                    )
-                                                                                                .classList
-                                                                                                .remove(
-                                                                                                    'active'
-                                                                                                    );
-                                                                                        }
-                                                                                    });
-                                                                                }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                                                "use strict";
-
-                                                                                // Class definition
-                                                                                var KTAppEcommerceSalesListing =
-                                                                                    function() {
-                                                                                        // Shared variables
-                                                                                        var table;
-                                                                                        var datatable;
-                                                                                        var flatpickr;
-                                                                                        var minDate, maxDate;
-
-                                                                                        // Private functions
-                                                                                        var initDatatable = function() {
-                                                                                            // Init datatable --- more info on datatables: https://datatables.net/manual/
-                                                                                            datatable = $(table)
-                                                                                                .DataTable({
-                                                                                                    "info": false,
-                                                                                                    'order': [],
-                                                                                                    'pageLength': 10,
-                                                                                                    'columnDefs': [{
-                                                                                                            orderable: false,
-                                                                                                            targets: 0
-                                                                                                        }, // Disable ordering on column 0 (checkbox)
-                                                                                                        {
-                                                                                                            orderable: false,
-                                                                                                            targets: 7
-                                                                                                        }, // Disable ordering on column 7 (actions)
-                                                                                                    ]
-                                                                                                });
-
-                                                                                            // Re-init functions on datatable re-draws
-                                                                                            datatable.on('draw',
-                                                                                                function() {
-                                                                                                    handleDeleteRows
-                                                                                                        ();
-                                                                                                });
-                                                                                        }
-
-                                                                                        // Init flatpickr --- more info :https://flatpickr.js.org/getting-started/
-                                                                                        var initFlatpickr = () => {
-                                                                                            const element = document
-                                                                                                .querySelector(
-                                                                                                    '#kt_ecommerce_sales_flatpickr'
-                                                                                                    );
-                                                                                            flatpickr = $(element)
-                                                                                                .flatpickr({
-                                                                                                    altInput: true,
-                                                                                                    altFormat: "d/m/Y",
-                                                                                                    dateFormat: "Y-m-d",
-                                                                                                    mode: "range",
-                                                                                                    onChange: function(
-                                                                                                        selectedDates,
-                                                                                                        dateStr,
-                                                                                                        instance
-                                                                                                        ) {
-                                                                                                        handleFlatpickr
-                                                                                                            (selectedDates,
-                                                                                                                dateStr,
-                                                                                                                instance
-                                                                                                                );
-                                                                                                    },
-                                                                                                });
-                                                                                        }
-                                                                                        var handleSearchDatatable =
-                                                                                        () => {
-                                                                                                const filterSearch =
-                                                                                                    document
-                                                                                                    .querySelector(
-                                                                                                        '[data-kt-ecommerce-order-filter="search"]'
-                                                                                                        );
-                                                                                                filterSearch
-                                                                                                    .addEventListener(
-                                                                                                        'keyup',
-                                                                                                        function(e) {
-                                                                                                            datatable
-                                                                                                                .search(
-                                                                                                                    e
-                                                                                                                    .target
-                                                                                                                    .value
-                                                                                                                    )
-                                                                                                                .draw();
-                                                                                                        });
-                                                                                            }
-                                                                                        var handleStatusFilter = () => {
-                                                                                            const filterStatus =
-                                                                                                document
-                                                                                                .querySelector(
-                                                                                                    '[data-kt-ecommerce-order-filter="status"]'
-                                                                                                    );
-                                                                                            $(filterStatus).on(
-                                                                                                'change', e => {
-                                                                                                    let value =
-                                                                                                        e.target
-                                                                                                        .value;
-                                                                                                    if (value ===
-                                                                                                        'all') {
-                                                                                                        value =
-                                                                                                            '';
-                                                                                                    }
-                                                                                                    datatable
-                                                                                                        .column(
-                                                                                                            3)
-                                                                                                        .search(
-                                                                                                            value
-                                                                                                            )
-                                                                                                        .draw();
-                                                                                                });
-                                                                                        }
-
-                                                                                        // Handle flatpickr --- more info: https://flatpickr.js.org/events/
-                                                                                        var handleFlatpickr = (
-                                                                                            selectedDates, dateStr,
-                                                                                            instance) => {
-                                                                                            minDate = selectedDates[
-                                                                                                0] ? new Date(
-                                                                                                selectedDates[0]
-                                                                                                ) : null;
-                                                                                            maxDate = selectedDates[
-                                                                                                1] ? new Date(
-                                                                                                selectedDates[1]
-                                                                                                ) : null;
-
-
-
-                                                                                            // Datatable date filter --- more info: https://datatables.net/extensions/datetime/examples/integration/datatables.html
-                                                                                            // Custom filtering function which will search data in column four between two values
-                                                                                            $.fn.dataTable.ext
-                                                                                                .search.push(
-                                                                                                    function(
-                                                                                                        settings,
-                                                                                                        data,
-                                                                                                        dataIndex) {
-                                                                                                        var min =
-                                                                                                            minDate;
-                                                                                                        var max =
-                                                                                                            maxDate;
-                                                                                                        var dateAdded =
-                                                                                                            new Date(
-                                                                                                                moment(
-                                                                                                                    $(data[
-                                                                                                                        5])
-                                                                                                                    .text(),
-                                                                                                                    'DD/MM/YYYY'
-                                                                                                                    )
-                                                                                                                );
-                                                                                                        // var dateModified = new Date(moment($(data[6]).text(), 'DD/MM/YYYY'));
-                                                                                                        console.log(
-                                                                                                            dateAdded
-                                                                                                            );
-                                                                                                        if (
-                                                                                                            (min ===
-                                                                                                                null &&
-                                                                                                                max ===
-                                                                                                                null
-                                                                                                                ) ||
-                                                                                                            (min ===
-                                                                                                                null &&
-                                                                                                                dateAdded <=
-                                                                                                                max
-                                                                                                                ) ||
-                                                                                                            (min <=
-                                                                                                                dateAdded &&
-                                                                                                                max ===
-                                                                                                                null
-                                                                                                                ) ||
-                                                                                                            (min <=
-                                                                                                                dateAdded &&
-                                                                                                                dateAdded <=
-                                                                                                                max)
-                                                                                                        ) {
-                                                                                                            return true;
-                                                                                                        }
-                                                                                                        return false;
-                                                                                                    }
-                                                                                                );
-                                                                                            datatable.draw();
-                                                                                        }
-                                                                                        // Handle clear flatpickr
-                                                                                        var handleClearFlatpickr =
-                                                                                    () => {
-                                                                                            const clearButton =
-                                                                                                document
-                                                                                                .querySelector(
-                                                                                                    '#kt_ecommerce_sales_flatpickr_clear'
-                                                                                                    );
-                                                                                            clearButton
-                                                                                                .addEventListener(
-                                                                                                    'click', e => {
-                                                                                                        flatpickr
-                                                                                                            .clear();
-                                                                                                    });
-                                                                                        }
-
-                                                                                        // Delete cateogry
-                                                                                        var handleDeleteRows = () => {
-                                                                                            // Select all delete buttons
-                                                                                            const deleteButtons =
-                                                                                                table
-                                                                                                .querySelectorAll(
-                                                                                                    '[data-kt-ecommerce-order-filter="delete_row"]'
-                                                                                                    );
-
-                                                                                            deleteButtons.forEach(
-                                                                                                d => {
-                                                                                                    // Delete button on click
-                                                                                                    d.addEventListener(
-                                                                                                        'click',
-                                                                                                        function(
-                                                                                                            e
-                                                                                                            ) {
-                                                                                                            e
-                                                                                                        .preventDefault();
-
-                                                                                                            // Select parent row
-                                                                                                            const
-                                                                                                                parent =
-                                                                                                                e
-                                                                                                                .target
-                                                                                                                .closest(
-                                                                                                                    'tr'
-                                                                                                                    );
-
-                                                                                                            // Get category name
-                                                                                                            const
-                                                                                                                orderID =
-                                                                                                                parent
-                                                                                                                .querySelector(
-                                                                                                                    '[data-kt-ecommerce-order-filter="order_id"]'
-                                                                                                                    )
-                                                                                                                .innerText;
-
-                                                                                                            // SweetAlert2 pop up --- official docs reference: https://sweetalert2.github.io/
-                                                                                                            Swal.fire({
-                                                                                                                    text: "Are you sure you want to delete order: " +
-                                                                                                                        orderID +
-                                                                                                                        "?",
-                                                                                                                    icon: "warning",
-                                                                                                                    showCancelButton: true,
-                                                                                                                    buttonsStyling: false,
-                                                                                                                    confirmButtonText: "Yes, delete!",
-                                                                                                                    cancelButtonText: "No, cancel",
-                                                                                                                    customClass: {
-                                                                                                                        confirmButton: "btn fw-bold btn-danger",
-                                                                                                                        cancelButton: "btn fw-bold btn-active-light-primary"
-                                                                                                                    }
-                                                                                                                })
-                                                                                                                .then(
-                                                                                                                    function(
-                                                                                                                        result
-                                                                                                                        ) {
-                                                                                                                        if (result
-                                                                                                                            .value
-                                                                                                                            ) {
-                                                                                                                            Swal.fire({
-                                                                                                                                    text: "You have deleted " +
-                                                                                                                                        orderID +
-                                                                                                                                        "!.",
-                                                                                                                                    icon: "success",
-                                                                                                                                    buttonsStyling: false,
-                                                                                                                                    confirmButtonText: "Ok, got it!",
-                                                                                                                                    customClass: {
-                                                                                                                                        confirmButton: "btn fw-bold btn-primary",
-                                                                                                                                    }
-                                                                                                                                })
-                                                                                                                                .then(
-                                                                                                                                    function() {
-                                                                                                                                        // Remove current row
-                                                                                                                                        datatable
-                                                                                                                                            .row(
-                                                                                                                                                $(
-                                                                                                                                                    parent)
-                                                                                                                                                )
-                                                                                                                                            .remove()
-                                                                                                                                            .draw();
-                                                                                                                                    }
-                                                                                                                                    );
-                                                                                                                        } else if (
-                                                                                                                            result
-                                                                                                                            .dismiss ===
-                                                                                                                            'cancel'
-                                                                                                                            ) {
-                                                                                                                            Swal.fire({
-                                                                                                                                text: orderID +
-                                                                                                                                    " was not deleted.",
-                                                                                                                                icon: "error",
-                                                                                                                                buttonsStyling: false,
-                                                                                                                                confirmButtonText: "Ok, got it!",
-                                                                                                                                customClass: {
-                                                                                                                                    confirmButton: "btn fw-bold btn-primary",
-                                                                                                                                }
-                                                                                                                            });
-                                                                                                                        }
-                                                                                                                    }
-                                                                                                                    );
-                                                                                                        })
-                                                                                                });
-                                                                                        }
-
-
-                                                                                        // Public methods
-                                                                                        return {
-                                                                                            init: function() {
-                                                                                                table = document
-                                                                                                    .querySelector(
-                                                                                                        '#kt_ecommerce_sales_table'
-                                                                                                        );
-
-                                                                                                if (!table) {
-                                                                                                    return;
-                                                                                                }
-
-                                                                                                initDatatable();
-                                                                                                initFlatpickr();
-                                                                                                handleSearchDatatable
-                                                                                                    ();
-                                                                                                handleStatusFilter
-                                                                                            ();
-                                                                                                handleDeleteRows();
-                                                                                                handleClearFlatpickr
-                                                                                                    ();
-                                                                                            }
-                                                                                        };
-                                                                                    }();
-
-                                                                                // On document ready
-                                                                                KTUtil.onDOMContentLoaded(function() {
-                                                                                    KTAppEcommerceSalesListing
-                                                                                        .init();
-                                                                                });
-                                                                                </script>
-                                                                                                <!--end::Card body-->
-                                                                                            </div>
-                                                                                            <!--end::Table Widget 4-->
-                                                                                        </div>
-                                                                                        <!--end::Col-->
-                                                                                    </div>
-
-
-
-
-                                                                                    <!--end::Table-->
-                                                                                </div>
-                                                                                <!--end::Card body-->
-                                                                            </div>
-                                                                            <!--end::Table Widget 4-->
-
-
-                                                                            <div class="card">
-
-
-                                                                            </div>
-
-                                                                            <!--begin::Modal - Adjust Balance-->
-                                                                            <div class="modal fade"
-                                                                                id="kt_customers_export_modal"
-                                                                                tabindex="-1" aria-hidden="true">
-                                                                                <!--begin::Modal dialog-->
-                                                                                <div
-                                                                                    class="modal-dialog modal-dialog-centered mw-650px">
-                                                                                    <!--begin::Modal content-->
-                                                                                    <div class="modal-content">
-                                                                                        <!--begin::Modal header-->
-                                                                                        <div class="modal-header">
-                                                                                            <!--begin::Modal title-->
-                                                                                            <h2 class="fw-bold">Export
-                                                                                                Customers</h2>
-                                                                                            <!--end::Modal title-->
-                                                                                            <!--begin::Close-->
-                                                                                            <div id="kt_customers_export_close"
-                                                                                                class="btn btn-icon btn-sm btn-active-icon-primary">
-                                                                                                <!--begin::Svg Icon | path: icons/duotune/arrows/arr061.svg-->
-                                                                                                <span
-                                                                                                    class="svg-icon svg-icon-1">
-                                                                                                    <svg width="24"
-                                                                                                        height="24"
-                                                                                                        viewBox="0 0 24 24"
-                                                                                                        fill="none"
-                                                                                                        xmlns="http://www.w3.org/2000/svg">
-                                                                                                        <rect
-                                                                                                            opacity="0.5"
-                                                                                                            x="6"
-                                                                                                            y="17.3137"
-                                                                                                            width="16"
-                                                                                                            height="2"
-                                                                                                            rx="1"
-                                                                                                            transform="rotate(-45 6 17.3137)"
-                                                                                                            fill="currentColor" />
-                                                                                                        <rect
-                                                                                                            x="7.41422"
-                                                                                                            y="6"
-                                                                                                            width="16"
-                                                                                                            height="2"
-                                                                                                            rx="1"
-                                                                                                            transform="rotate(45 7.41422 6)"
-                                                                                                            fill="currentColor" />
-                                                                                                    </svg>
-                                                                                                </span>
-                                                                                                <!--end::Svg Icon-->
-                                                                                            </div>
-                                                                                            <!--end::Close-->
-                                                                                        </div>
-                                                                                        <!--end::Modal header-->
-                                                                                        <!--begin::Modal body-->
-                                                                                        <div
-                                                                                            class="modal-body scroll-y mx-5 mx-xl-15 my-7">
-                                                                                            <!--begin::Form-->
-                                                                                            <form
-                                                                                                id="kt_customers_export_form"
-                                                                                                class="form" action="#">
-                                                                                                <!--begin::Input group-->
-                                                                                                <div
-                                                                                                    class="fv-row mb-10">
-                                                                                                    <!--begin::Label-->
-                                                                                                    <label
-                                                                                                        class="fs-5 fw-semibold form-label mb-5">Select
-                                                                                                        Export
-                                                                                                        Format:</label>
-                                                                                                    <!--end::Label-->
-                                                                                                    <!--begin::Input-->
-                                                                                                    <select
-                                                                                                        data-control="select2"
-                                                                                                        data-placeholder="Select a format"
-                                                                                                        data-hide-search="true"
-                                                                                                        name="format"
-                                                                                                        class="form-select form-select-solid">
-                                                                                                        <option
-                                                                                                            value="excell">
-                                                                                                            Excel
-                                                                                                        </option>
-                                                                                                        <option
-                                                                                                            value="pdf">
-                                                                                                            PDF</option>
-                                                                                                        <option
-                                                                                                            value="cvs">
-                                                                                                            CVS</option>
-                                                                                                        <option
-                                                                                                            value="zip">
-                                                                                                            ZIP</option>
-                                                                                                    </select>
-                                                                                                    <!--end::Input-->
-                                                                                                </div>
-                                                                                                <!--end::Input group-->
-                                                                                                <!--begin::Input group-->
-                                                                                                <div
-                                                                                                    class="fv-row mb-10">
-                                                                                                    <!--begin::Label-->
-                                                                                                    <label
-                                                                                                        class="fs-5 fw-semibold form-label mb-5">Select
-                                                                                                        Date
-                                                                                                        Range:</label>
-                                                                                                    <!--end::Label-->
-                                                                                                    <!--begin::Input-->
-                                                                                                    <input
-                                                                                                        class="form-control form-control-solid"
-                                                                                                        placeholder="Pick a date"
-                                                                                                        name="date" />
-                                                                                                    <!--end::Input-->
-                                                                                                </div>
-                                                                                                <!--end::Input group-->
-                                                                                                <!--begin::Row-->
-                                                                                                <div
-                                                                                                    class="row fv-row mb-15">
-                                                                                                    <!--begin::Label-->
-                                                                                                    <label
-                                                                                                        class="fs-5 fw-semibold form-label mb-5">Payment
-                                                                                                        Type:</label>
-                                                                                                    <!--end::Label-->
-                                                                                                    <!--begin::Radio group-->
-                                                                                                    <div
-                                                                                                        class="d-flex flex-column">
-                                                                                                        <!--begin::Radio button-->
-                                                                                                        <label
-                                                                                                            class="form-check form-check-custom form-check-sm form-check-solid mb-3">
-                                                                                                            <input
-                                                                                                                class="form-check-input"
-                                                                                                                type="checkbox"
-                                                                                                                value="1"
-                                                                                                                checked="checked"
-                                                                                                                name="payment_type" />
-                                                                                                            <span
-                                                                                                                class="form-check-label text-gray-600 fw-semibold">All</span>
-                                                                                                        </label>
-                                                                                                        <!--end::Radio button-->
-                                                                                                        <!--begin::Radio button-->
-                                                                                                        <label
-                                                                                                            class="form-check form-check-custom form-check-sm form-check-solid mb-3">
-                                                                                                            <input
-                                                                                                                class="form-check-input"
-                                                                                                                type="checkbox"
-                                                                                                                value="2"
-                                                                                                                checked="checked"
-                                                                                                                name="payment_type" />
-                                                                                                            <span
-                                                                                                                class="form-check-label text-gray-600 fw-semibold">Visa</span>
-                                                                                                        </label>
-                                                                                                        <!--end::Radio button-->
-                                                                                                        <!--begin::Radio button-->
-                                                                                                        <label
-                                                                                                            class="form-check form-check-custom form-check-sm form-check-solid mb-3">
-                                                                                                            <input
-                                                                                                                class="form-check-input"
-                                                                                                                type="checkbox"
-                                                                                                                value="3"
-                                                                                                                name="payment_type" />
-                                                                                                            <span
-                                                                                                                class="form-check-label text-gray-600 fw-semibold">Mastercard</span>
-                                                                                                        </label>
-                                                                                                        <!--end::Radio button-->
-                                                                                                        <!--begin::Radio button-->
-                                                                                                        <label
-                                                                                                            class="form-check form-check-custom form-check-sm form-check-solid">
-                                                                                                            <input
-                                                                                                                class="form-check-input"
-                                                                                                                type="checkbox"
-                                                                                                                value="4"
-                                                                                                                name="payment_type" />
-                                                                                                            <span
-                                                                                                                class="form-check-label text-gray-600 fw-semibold">American
-                                                                                                                Express</span>
-                                                                                                        </label>
-                                                                                                        <!--end::Radio button-->
-                                                                                                    </div>
-                                                                                                    <!--end::Input group-->
-                                                                                                </div>
-                                                                                                <!--end::Row-->
-                                                                                                <!--begin::Actions-->
-                                                                                                <div
-                                                                                                    class="text-center">
-                                                                                                    <button type="reset"
-                                                                                                        id="kt_customers_export_cancel"
-                                                                                                        class="btn btn-light me-3">Discard</button>
-                                                                                                    <button
-                                                                                                        type="submit"
-                                                                                                        id="kt_customers_export_submit"
-                                                                                                        class="btn btn-primary">
-                                                                                                        <span
-                                                                                                            class="indicator-label">Submit</span>
-                                                                                                        <span
-                                                                                                            class="indicator-progress">Please
-                                                                                                            wait...
-                                                                                                            <span
-                                                                                                                class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
-                                                                                                    </button>
-                                                                                                </div>
-                                                                                                <!--end::Actions-->
-                                                                                            </form>
-                                                                                            <!--end::Form-->
-                                                                                        </div>
-                                                                                        <!--end::Modal body-->
-                                                                                    </div>
-                                                                                    <!--end::Modal content-->
-                                                                                </div>
-                                                                                <!--end::Modal dialog-->
-                                                                            </div>
-                                                                            <!--end::Modal - New Card-->
-                                                                            <!--end::Modals-->
-
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-
-
-
-                                                            </div>
-                                                            <div class="tab-pane fade" id="kt_list_widget_10_tab_3">
-                                                                <div class="m-0">
-                                                                    <div class="noPadding card-body pt-0">
-                                                                        <div class="col-xl-12">
-                                                                            <!--end::Card header-->
-                                                                            <!--begin::Table Widget 4-->
-                                                                            <div class="card card-flush h-xl-100">
-                                                                                <!--begin::Card header-->
-                                                                                <div class="card-header pb-5">
-
-                                                                                    <!--begin::Actions-->
-                                                                                    <div class="card-toolbar w-100">
-                                                                                        <!--begin::Filters-->
-                                                                                        <div
-                                                                                            class="d-flex flex-stack flex-wrap gap-4 w-100 align-items-end justify-content-between">
-
-                                                                                            <!--begin::Destination-->
-
-                                                                                            <div
-                                                                                                class="mobile align-items-center fw-bold">
-
-                                                                                                <div class="mb-0">
-                                                                                                    <input
-                                                                                                        class="form-control form-control-solid"
-                                                                                                        placeholder="Pick date rage"
-                                                                                                        id="kt_daterangepicker_6" />
-                                                                                                </div>
-                                                                                            </div>
-
-                                                                                            <div
-                                                                                                class="col-md-2 mobile">
-
-                                                                                                <select name="language"
-                                                                                                    aria-label="Select Month"
-                                                                                                    data-control="select2"
-                                                                                                    data-placeholder="Select a language..."
-                                                                                                    class="form-select form-select-solid form-select-lg">
-                                                                                                    <option
-                                                                                                        value="- Select Reference -">
-                                                                                                        - Select
-                                                                                                        Reference -
-                                                                                                    </option>
-                                                                                                    <option
-                                                                                                        value="option1">
-                                                                                                        Option 1
-                                                                                                    </option>
-                                                                                                </select>
-                                                                                            </div>
-
-                                                                                            <!--end::Destination-->
-                                                                                            <div class="col-md-2 ">
-
-
-
-                                                                                            </div>
-
-                                                                                            <div
-                                                                                                class="col-md-2 d-flex align-items-end justify-content-end">
-
-                                                                                                <button
-                                                                                                    class="btn btn-primary mb-0 cursor-pointer">Apply</button>
-
-                                                                                            </div>
-                                                                                            <!--begin::Search-->
-                                                                                            <div
-                                                                                                class="d-none position-relative my-1">
-                                                                                                <!--begin::Svg Icon | path: icons/duotune/general/gen021.svg-->
-                                                                                                <span
-                                                                                                    class="svg-icon svg-icon-2 position-absolute top-50 translate-middle-y ms-4">
-                                                                                                    <svg width="24"
-                                                                                                        height="24"
-                                                                                                        viewBox="0 0 24 24"
-                                                                                                        fill="none"
-                                                                                                        xmlns="http://www.w3.org/2000/svg">
-                                                                                                        <rect
-                                                                                                            opacity="0.5"
-                                                                                                            x="17.0365"
-                                                                                                            y="15.1223"
-                                                                                                            width="8.15546"
-                                                                                                            height="2"
-                                                                                                            rx="1"
-                                                                                                            transform="rotate(45 17.0365 15.1223)"
-                                                                                                            fill="currentColor" />
-                                                                                                        <path
-                                                                                                            d="M11 19C6.55556 19 3 15.4444 3 11C3 6.55556 6.55556 3 11 3C15.4444 3 19 6.55556 19 11C19 15.4444 15.4444 19 11 19ZM11 5C7.53333 5 5 7.53333 5 11C5 14.4667 7.53333 17 11 17C14.4667 17 17 14.4667 17 11C17 7.53333 14.4667 5 11 5Z"
-                                                                                                            fill="currentColor" />
-                                                                                                    </svg>
-                                                                                                </span>
-                                                                                                <!--end::Svg Icon-->
-                                                                                                <input type="text"
-                                                                                                    data-kt-table-widget-4="search"
-                                                                                                    class="form-control w-150px fs-7 ps-12"
-                                                                                                    placeholder="Search" />
-                                                                                            </div>
-                                                                                            <!--end::Search-->
-                                                                                        </div>
-                                                                                        <!--begin::Filters-->
-                                                                                    </div>
-                                                                                    <!--end::Actions-->
-                                                                                </div>
-                                                                                <!--end::Card header-->
-                                                                                <!--begin::Card body-->
-                                                                                <div class="card-body p-1">
-                                                                                    <!--begin::Table-->
-
-                                                                                    <div class="row gy-5 g-xl-10">
-
-                                                                                        <!--end::Col-->
-                                                                                        <!--begin::Col-->
-                                                                                        <div
-                                                                                            class="col-xl-12 mb-5 mb-xl-10">
-                                                                                            <!--begin::Table Widget 4-->
-                                                                                            <div
-                                                                                                class="card card-flush h-xl-100 p-0">
-
-                                                                                                <!--begin::Card body-->
-                                                                                                <div
-                                                                                                    class="card-body p-1">
-                                                                                                    <!--begin::Table-->
-                                                                                                    <table
-                                                                                                        class="table align-middle table-row-dashed fs-6 gy-3"
-                                                                                                        id="kt_table_widget_6_table">
-                                                                                                        <!--begin::Table head-->
-                                                                                                        <thead>
-                                                                                                            <!--begin::Table row-->
-                                                                                                            <tr
-                                                                                                                class="text-start text-gray-400 fw-bold fs-7 text-uppercase gs-0">
-                                                                                                                <th>
-                                                                                                                    <input
-                                                                                                                        type="checkbox"
-                                                                                                                        name=""
-                                                                                                                        id="">
-                                                                                                                </th>
-                                                                                                                <th>#
-                                                                                                                </th>
-                                                                                                                <th
-                                                                                                                    class="min-w-100px">
-                                                                                                                    Supplier
-                                                                                                                </th>
-                                                                                                                <th
-                                                                                                                    class="text-end min-w-100px">
-                                                                                                                    Reference
-                                                                                                                    Date
-                                                                                                                </th>
-                                                                                                                <th
-                                                                                                                    class="text-end min-w-125px">
-                                                                                                                    Submitted
-                                                                                                                    Date
-                                                                                                                </th>
-                                                                                                                <th
-                                                                                                                    class="text-end min-w-100px">
-                                                                                                                    Total
-                                                                                                                    Sales
-                                                                                                                </th>
-                                                                                                                <th
-                                                                                                                    class="text-end min-w-100px">
-                                                                                                                    Status
-                                                                                                                </th>
-                                                                                                                <th
-                                                                                                                    class="text-end min-w-50px">
-                                                                                                                    Action
-                                                                                                                </th>
-
-                                                                                                            </tr>
-                                                                                                            <!--end::Table row-->
-                                                                                                        </thead>
-                                                                                                        <!--end::Table head-->
-                                                                                                        <!--begin::Table body-->
-                                                                                                        <tbody
-                                                                                                            class="fw-bold text-gray-600">
-                                                                                                            <tr data-kt-table-widget-6="subtable_template"
-                                                                                                                class="d-none">
-                                                                                                                <td
-                                                                                                                    colspan="2">
-                                                                                                                    <div
-                                                                                                                        class="d-flex align-items-center gap-3">
-                                                                                                                        <a href="#"
-                                                                                                                            class="symbol symbol-50px bg-secondary bg-opacity-25 rounded">
-                                                                                                                            <img src=""
-                                                                                                                                data-kt-src-path="assets/media/stock/ecommerce/"
-                                                                                                                                alt=""
-                                                                                                                                data-kt-table-widget-6="template_image" />
-                                                                                                                        </a>
-                                                                                                                        <div
-                                                                                                                            class="d-flex flex-column text-muted">
-                                                                                                                            <a href="#"
-                                                                                                                                class="text-gray-800 text-hover-primary fw-bold"
-                                                                                                                                data-kt-table-widget-6="template_name">Product
-                                                                                                                                name</a>
-                                                                                                                            <div class="fs-7"
-                                                                                                                                data-kt-table-widget-6="template_description">
-                                                                                                                                Product
-                                                                                                                                description
-                                                                                                                            </div>
-                                                                                                                        </div>
-                                                                                                                    </div>
-                                                                                                                </td>
-                                                                                                                <td
-                                                                                                                    class="text-end">
-                                                                                                                    <div
-                                                                                                                        class="text-gray-800 fs-7">
-                                                                                                                        Cost
-                                                                                                                    </div>
-                                                                                                                    <div class="text-muted fs-7 fw-bold"
-                                                                                                                        data-kt-table-widget-6="template_cost">
-                                                                                                                        1
-                                                                                                                    </div>
-                                                                                                                </td>
-                                                                                                                <td
-                                                                                                                    class="text-end">
-                                                                                                                    <div
-                                                                                                                        class="text-gray-800 fs-7">
-                                                                                                                        Qty
-                                                                                                                    </div>
-                                                                                                                    <div class="text-muted fs-7 fw-bold"
-                                                                                                                        data-kt-table-widget-6="template_qty">
-                                                                                                                        1
-                                                                                                                    </div>
-                                                                                                                </td>
-                                                                                                                <td
-                                                                                                                    class="text-end">
-                                                                                                                    <div
-                                                                                                                        class="text-gray-800 fs-7">
-                                                                                                                        Total
-                                                                                                                    </div>
-                                                                                                                    <div class="text-muted fs-7 fw-bold"
-                                                                                                                        data-kt-table-widget-6="template_total">
-                                                                                                                        name
-                                                                                                                    </div>
-                                                                                                                </td>
-                                                                                                                <td
-                                                                                                                    class="text-end">
-                                                                                                                    <div
-                                                                                                                        class="text-gray-800 fs-7 me-3">
-                                                                                                                        On
-                                                                                                                        hand
-                                                                                                                    </div>
-                                                                                                                    <div class="text-muted fs-7 fw-bold"
-                                                                                                                        data-kt-table-widget-6="template_stock">
-                                                                                                                        32
-                                                                                                                    </div>
-                                                                                                                </td>
-                                                                                                                <td>
-                                                                                                                </td>
-                                                                                                            </tr>
-                                                                                                            <tr>
-                                                                                                                <td><input
-                                                                                                                        type="checkbox"
-                                                                                                                        name=""
-                                                                                                                        id="">
-                                                                                                                </td>
-                                                                                                                <td
-                                                                                                                    class="">
-                                                                                                                    <button
-                                                                                                                        type="button"
-                                                                                                                        class="btn btn-sm btn-icon btn-light btn-active-light-primary toggle h-25px w-25px"
-                                                                                                                        data-kt-table-widget-6="expand_row6">
-                                                                                                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr087.svg-->
-                                                                                                                        <span
-                                                                                                                            class="svg-icon svg-icon-3 m-0 toggle-off">
-                                                                                                                            <svg width="24"
-                                                                                                                                height="24"
-                                                                                                                                viewBox="0 0 24 24"
-                                                                                                                                fill="none"
-                                                                                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                                                                                <rect
-                                                                                                                                    opacity="0.5"
-                                                                                                                                    x="11"
-                                                                                                                                    y="18"
-                                                                                                                                    width="12"
-                                                                                                                                    height="2"
-                                                                                                                                    rx="1"
-                                                                                                                                    transform="rotate(-90 11 18)"
-                                                                                                                                    fill="currentColor" />
-                                                                                                                                <rect
-                                                                                                                                    x="6"
-                                                                                                                                    y="11"
-                                                                                                                                    width="12"
-                                                                                                                                    height="2"
-                                                                                                                                    rx="1"
-                                                                                                                                    fill="currentColor" />
-                                                                                                                            </svg>
-                                                                                                                        </span>
-                                                                                                                        <!--end::Svg Icon-->
-                                                                                                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr089.svg-->
-                                                                                                                        <span
-                                                                                                                            class="svg-icon svg-icon-3 m-0 toggle-on">
-                                                                                                                            <svg width="24"
-                                                                                                                                height="24"
-                                                                                                                                viewBox="0 0 24 24"
-                                                                                                                                fill="none"
-                                                                                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                                                                                <rect
-                                                                                                                                    x="6"
-                                                                                                                                    y="11"
-                                                                                                                                    width="12"
-                                                                                                                                    height="2"
-                                                                                                                                    rx="1"
-                                                                                                                                    fill="currentColor" />
-                                                                                                                            </svg>
-                                                                                                                        </span>
-                                                                                                                        <!--end::Svg Icon-->
-                                                                                                                    </button>
-                                                                                                                </td>
-                                                                                                                <td>
-                                                                                                                    <a href="../../demo22/dist/apps/ecommerce/catalog/edit-product.html"
-                                                                                                                        class="text-gray-800 text-hover-primary">#XGY-346</a>
-                                                                                                                </td>
-                                                                                                                <td
-                                                                                                                    class="text-end">
-                                                                                                                    7
-                                                                                                                    min
-                                                                                                                    ago
-                                                                                                                </td>
-                                                                                                                <td
-                                                                                                                    class="text-end">
-                                                                                                                    <a href="#"
-                                                                                                                        class="text-gray-600 text-hover-primary">Albert
-                                                                                                                        Flores</a>
-                                                                                                                </td>
-                                                                                                                <td
-                                                                                                                    class="text-end">
-                                                                                                                    $630.00
-                                                                                                                </td>
-                                                                                                                <td
-                                                                                                                    class="text-end">
-                                                                                                                    <span
-                                                                                                                        class="text-gray-800 fw-bolder">$86.70</span>
-                                                                                                                </td>
-                                                                                                                <td
-                                                                                                                    class="text-end">
-                                                                                                                    <div
-                                                                                                                        class="d-flex justify-content-end">
-                                                                                                                        <div
-                                                                                                                            class="mx-1 cursor-pointer">
-                                                                                                                            <img src="assets/media/icons/duotune/files/fil010.svg"
-                                                                                                                                alt="">
-                                                                                                                        </div>
-                                                                                                                    </div>
-                                                                                                                </td>
-
-                                                                                                                <!-- <td class="text-end">Test</td> -->
-
-                                                                                                            </tr>
-
-
-
-                                                                                                        </tbody>
-                                                                                                        <!--end::Table body-->
-                                                                                                    </table>
-                                                                                                    <!--end::Table-->
-                                                                                                </div>
-                                                                                                <!--end::Card body-->
-                                                                                            </div>
-                                                                                            <!--end::Table Widget 4-->
-                                                                                        </div>
-                                                                                        <!--end::Col-->
-                                                                                    </div>
-
-
-                                                                                    <!--end::Table-->
-                                                                                </div>
-                                                                                <!--end::Card body-->
-                                                                            </div>
-                                                                            <!--end::Table Widget 4-->
-
-                                                                            <!--begin::Menu separator-->
-                                                                            <div class="separator"></div>
-                                                                            <!--end::Menu separator-->
-                                                                            <div
-                                                                                class="col-md-3 m-3 d-flex gap-4">
-                                                                                <select name="language"
-                                                                                    aria-label="Select Year"
-                                                                                    data-control="select2"
-                                                                                    data-placeholder="Select a language..."
-                                                                                    class="form-select form-select-solid form-select-lg mr-3">
-                                                                                    <option value="- Select Action -">-
-                                                                                        Bulk Action -</option>
-                                                                                    <option value="option1">Add</option>
-                                                                                    <option value="option1">Download
-                                                                                    </option>
-                                                                                    <option value="option1">CSV</option>
-                                                                                </select>
-                                                                                <!--begin::Indicator label-->
-                                                                                <button
-                                                                                    class="btn btn-primary ml-4 d-flex justify-content-end">Apply</button>
-                                                                                <!--end::Indicator label-->
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-
-
-
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                            <!--end::Tables Widget 2-->
-                                            <div class="tab-pane fade" id="kt_list_widget_10_tab_5">
-                                                <div class="m-0">
-                                                    <div class="noPadding card-body pt-0">
-                                                        <div class="col-xl-12">
-                                                            <!--end::Card header-->
-                                                            <!--begin::Table Widget 4-->
-                                                            <div class="card card-flush h-xl-100">
-                                                                <!--begin::Card header-->
-                                                                <div class="card-header pb-5">
-
-                                                                    <!--begin::Actions-->
-                                                                    <div class="card-toolbar w-100">
-                                                                        <!--begin::Filters-->
-                                                                        <div
-                                                                            class="d-flex flex-stack flex-wrap gap-4 w-100 align-items-end justify-content-between">
-
-                                                                            <!--begin::Destination-->
-
-                                                                            <div
-                                                                                class="mobile align-items-center fw-bold">
-
-                                                                                <div class="mb-0">
-                                                                                    <input
-                                                                                        class="form-control form-control-solid"
-                                                                                        placeholder="Pick date rage"
-                                                                                        id="kt_daterangepicker_6" />
-                                                                                </div>
-                                                                            </div>
-
-                                                                            <div class="col-md-2 mobile">
-
-                                                                                <select name="language"
-                                                                                    aria-label="Select Month"
-                                                                                    data-control="select2"
-                                                                                    data-placeholder="Select a language..."
-                                                                                    class="form-select form-select-solid form-select-lg">
-                                                                                    <option
-                                                                                        value="- Select Reference -">
-                                                                                        - Select
-                                                                                        Reference -
-                                                                                    </option>
-                                                                                    <option value="option1">
-                                                                                        Option 1
-                                                                                    </option>
-                                                                                </select>
-                                                                            </div>
-
-                                                                            <!--end::Destination-->
-                                                                            <div class="col-md-2 ">
-
-
-
-                                                                            </div>
-
-                                                                            <div
-                                                                                class="col-md-2 d-flex align-items-end justify-content-end">
-
-                                                                                <button
-                                                                                    class="btn btn-primary mb-0 cursor-pointer">Apply</button>
-
-                                                                            </div>
+                                                                        <!--begin::Card title-->
+                                                                        <div class="card-title">
                                                                             <!--begin::Search-->
-                                                                            <div class="d-none position-relative my-1">
+                                                                            <div class="d-flex align-items-center position-relative my-1">
                                                                                 <!--begin::Svg Icon | path: icons/duotune/general/gen021.svg-->
-                                                                                <span
-                                                                                    class="svg-icon svg-icon-2 position-absolute top-50 translate-middle-y ms-4">
-                                                                                    <svg width="24" height="24"
-                                                                                        viewBox="0 0 24 24" fill="none"
-                                                                                        xmlns="http://www.w3.org/2000/svg">
-                                                                                        <rect opacity="0.5" x="17.0365"
-                                                                                            y="15.1223" width="8.15546"
-                                                                                            height="2" rx="1"
-                                                                                            transform="rotate(45 17.0365 15.1223)"
-                                                                                            fill="currentColor" />
-                                                                                        <path
-                                                                                            d="M11 19C6.55556 19 3 15.4444 3 11C3 6.55556 6.55556 3 11 3C15.4444 3 19 6.55556 19 11C19 15.4444 15.4444 19 11 19ZM11 5C7.53333 5 5 7.53333 5 11C5 14.4667 7.53333 17 11 17C14.4667 17 17 14.4667 17 11C17 7.53333 14.4667 5 11 5Z"
-                                                                                            fill="currentColor" />
-                                                                                    </svg>
-                                                                                </span>
-                                                                                <!--end::Svg Icon-->
-                                                                                <input type="text"
-                                                                                    data-kt-table-widget-4="search"
-                                                                                    class="form-control w-150px fs-7 ps-12"
-                                                                                    placeholder="Search" />
+
                                                                             </div>
                                                                             <!--end::Search-->
                                                                         </div>
-                                                                        <!--begin::Filters-->
+                                                                        <!--begin::Card title-->
+
+
+                                                                        <!--begin::Card toolbar-->
+                                                                        <div class="card-toolbar flex-row-fluid justify-content-end gap-5">
+                                                                            <!--begin::Filter-->
+                                                                            <div class="mobile me-3">
+                                                                                <!--begin::Select2-->
+                                                                                <select class="form-select form-select-solid" data-control="select2" data-hide-search="true" data-placeholder="Status" data-hide-search="true" data-dropdown-css-class="w-150px" data-placeholder="Select an option" data-kt-table-widget-4="filter_status">
+                                                                                    <option></option>
+                                                                                    <option value="all">
+                                                                                        All</option>
+                                                                                    <option value="active">
+                                                                                        Active</option>
+                                                                                    <option value="locked">
+                                                                                        Locked</option>
+                                                                                </select>
+                                                                                <!--end::Select2-->
+                                                                            </div>
+                                                                            <!--end::Filter-->
+
+                                                                            <div class="mobile mb-0">
+                                                                                <input class="form-control form-control-solid" placeholder="Pick a date" id="kt_daterangepicker_3" />
+                                                                            </div>
+
+
+
+                                                                            <!--begin::Export dropdown-->
+                                                                            <button type="button" class="btn btn-light-primary mobile" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                                                                <span class="svg-icon svg-icon-1 position-absolute ms-4">...</span>
+                                                                                Export Report
+                                                                            </button>
+                                                                            <!--begin::Menu-->
+                                                                            <div id="kt_datatable_example_export_menu" class="menu menu-sub menu-sub-dropdown menu-column menu-rounded-4 menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-200px py-4" data-kt-menu="true">
+                                                                                <!--begin::Menu item-->
+                                                                                <div class="menu-item px-3">
+                                                                                    <a href="#" class="menu-link px-3" data-kt-export="csv">
+                                                                                        Export as CSV
+                                                                                    </a>
+                                                                                </div>
+                                                                                <!--end::Menu item-->
+
+                                                                            </div>
+                                                                            <!--end::Menu-->
+                                                                            <!--end::Export dropdown-->
+                                                                            <!--begin::Hide default export buttons-->
+                                                                            <div id="kt_datatable_example_buttons" class="d-none"></div>
+                                                                            <!--end::Hide default export buttons-->
+                                                                        </div>
+                                                                        <!--end::Card toolbar-->
                                                                     </div>
-                                                                    <!--end::Actions-->
-                                                                </div>
-                                                                <!--end::Card header-->
-                                                                <!--begin::Card body-->
-                                                                <div class="card-body p-1">
-                                                                    <!--begin::Table-->
 
-                                                                    <div class="row gy-5 g-xl-10">
 
-                                                                        <!--end::Col-->
-                                                                        <!--begin::Col-->
-                                                                        <div class="col-xl-12 mb-5 mb-xl-10">
-                                                                            <!--begin::Table Widget 4-->
-                                                                            <div class="card card-flush h-xl-100 p-0">
 
-                                                                                <!--begin::Card body-->
-                                                                                <div class="card-body p-1">
-                                                                                    <!--begin::Table-->
-                                                                                    <table
-                                                                                        class="table align-middle table-row-dashed fs-6 gy-3"
-                                                                                        id="kt_table_widget_6_table">
-                                                                                        <!--begin::Table head-->
-                                                                                        <thead>
-                                                                                            <!--begin::Table row-->
-                                                                                            <tr
-                                                                                                class="text-start text-gray-400 fw-bold fs-7 text-uppercase gs-0">
-                                                                                                <th>
-                                                                                                    <input
-                                                                                                        type="checkbox"
-                                                                                                        name="" id="">
-                                                                                                </th>
-                                                                                                <th>#
-                                                                                                </th>
-                                                                                                <th class="min-w-100px">
-                                                                                                    Supplier
-                                                                                                </th>
-                                                                                                <th
-                                                                                                    class="text-end min-w-100px">
-                                                                                                    Reference
-                                                                                                    Date
-                                                                                                </th>
-                                                                                                <th
-                                                                                                    class="text-end min-w-125px">
-                                                                                                    Submitted
-                                                                                                    Date
-                                                                                                </th>
-                                                                                                <th
-                                                                                                    class="text-end min-w-100px">
-                                                                                                    Total
-                                                                                                    Sales
-                                                                                                </th>
-                                                                                                <th
-                                                                                                    class="text-end min-w-100px">
-                                                                                                    Status
-                                                                                                </th>
-                                                                                                <th
-                                                                                                    class="text-end min-w-50px">
-                                                                                                    Action
-                                                                                                </th>
 
-                                                                                            </tr>
-                                                                                            <!--end::Table row-->
-                                                                                        </thead>
-                                                                                        <!--end::Table head-->
-                                                                                        <!--begin::Table body-->
-                                                                                        <tbody
-                                                                                            class="fw-bold text-gray-600">
-                                                                                            <tr data-kt-table-widget-6="subtable_template"
-                                                                                                class="d-none">
-                                                                                                <td colspan="2">
-                                                                                                    <div
-                                                                                                        class="d-flex align-items-center gap-3">
-                                                                                                        <a href="#"
-                                                                                                            class="symbol symbol-50px bg-secondary bg-opacity-25 rounded">
-                                                                                                            <img src=""
-                                                                                                                data-kt-src-path="assets/media/stock/ecommerce/"
-                                                                                                                alt=""
-                                                                                                                data-kt-table-widget-6="template_image" />
-                                                                                                        </a>
-                                                                                                        <div
-                                                                                                            class="d-flex flex-column text-muted">
-                                                                                                            <a href="#"
-                                                                                                                class="text-gray-800 text-hover-primary fw-bold"
-                                                                                                                data-kt-table-widget-6="template_name">Product
-                                                                                                                name</a>
-                                                                                                            <div class="fs-7"
-                                                                                                                data-kt-table-widget-6="template_description">
-                                                                                                                Product
-                                                                                                                description
+
+
+
+
+                                                                    <!--begin::Card body-->
+                                                                    <div class="card-body pt-0" style="padding:0px !important;">
+                                                                        <!--begin::Table-->
+
+                                                                        <div class="row gy-5 g-xl-10">
+
+                                                                            <!--end::Col-->
+                                                                            <!--begin::Col-->
+                                                                            <div class="col-xl-12 mb-5 mb-xl-10">
+                                                                                <!--begin::Table Widget 4-->
+                                                                                <div class="card card-flush h-xl-100">
+
+                                                                                    <!--begin::Card body-->
+                                                                                    <div class="card-body pt-2">
+                                                                                        <!--begin::Table-->
+                                                                                        <table class="table align-middle table-row-dashed fs-6 gy-3" id="kt_table_widget_4_table1">
+                                                                                            <!--begin::Table head-->
+                                                                                            <thead>
+                                                                                                <!--begin::Table row-->
+                                                                                                <tr class="text-start text-gray-400 fw-bold fs-7 text-uppercase gs-0">
+                                                                                                    <th class="w-10px pe-2">
+                                                                                                        <div class="form-check form-check-sm form-check-custom form-check-solid me-3 checkAll">
+                                                                                                            <input class="form-check-input" type="checkbox" data-kt-check="true" data-kt-check-target="#kt_table_widget_4_table1 .form-check-input" value="1" />
+                                                                                                        </div>
+                                                                                                    </th>
+                                                                                                    <th>#
+                                                                                                    </th>
+                                                                                                    <th class="min-w-100px">
+                                                                                                        Supplier
+                                                                                                    </th>
+                                                                                                    <th class="text-end min-w-100px">
+                                                                                                        Reference
+                                                                                                        Date
+                                                                                                    </th>
+                                                                                                    <th class="text-end min-w-125px">
+                                                                                                        Submitted
+                                                                                                        Date
+                                                                                                    </th>
+                                                                                                    <th class="text-end min-w-100px">
+                                                                                                        Total
+                                                                                                        Sales
+                                                                                                    </th>
+                                                                                                    <th class="text-end min-w-100px">
+                                                                                                        Status
+                                                                                                    </th>
+                                                                                                    <th class="text-end min-w-50px">
+                                                                                                        Action
+                                                                                                    </th>
+
+                                                                                                </tr>
+                                                                                                <!--end::Table row-->
+                                                                                            </thead>
+                                                                                            <!--end::Table head-->
+                                                                                            <!--begin::Table body-->
+                                                                                            <tbody class="fw-bold text-gray-600">
+                                                                                                <tr data-kt-table-widget-4="subtable_template" class="d-none">
+                                                                                                    <td colspan="2">
+                                                                                                        <div class="d-flex align-items-center gap-3">
+                                                                                                            <a href="#" class="symbol symbol-50px bg-secondary bg-opacity-25 rounded">
+                                                                                                                <img src="" data-kt-src-path="assets/media/stock/ecommerce/" alt="" data-kt-table-widget-4="template_image" />
+                                                                                                            </a>
+                                                                                                            <div class="d-flex flex-column text-muted">
+                                                                                                                <a href="#" class="text-gray-800 text-hover-primary fw-bold" data-kt-table-widget-4="template_name">Product
+                                                                                                                    name</a>
+                                                                                                                <div class="fs-7" data-kt-table-widget-4="template_description">
+                                                                                                                    Product
+                                                                                                                    description
+                                                                                                                </div>
                                                                                                             </div>
                                                                                                         </div>
-                                                                                                    </div>
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    <div
-                                                                                                        class="text-gray-800 fs-7">
-                                                                                                        Cost
-                                                                                                    </div>
-                                                                                                    <div class="text-muted fs-7 fw-bold"
-                                                                                                        data-kt-table-widget-6="template_cost">
-                                                                                                        1
-                                                                                                    </div>
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    <div
-                                                                                                        class="text-gray-800 fs-7">
-                                                                                                        Qty
-                                                                                                    </div>
-                                                                                                    <div class="text-muted fs-7 fw-bold"
-                                                                                                        data-kt-table-widget-6="template_qty">
-                                                                                                        1
-                                                                                                    </div>
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    <div
-                                                                                                        class="text-gray-800 fs-7">
-                                                                                                        Total
-                                                                                                    </div>
-                                                                                                    <div class="text-muted fs-7 fw-bold"
-                                                                                                        data-kt-table-widget-6="template_total">
-                                                                                                        name
-                                                                                                    </div>
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    <div
-                                                                                                        class="text-gray-800 fs-7 me-3">
-                                                                                                        On
-                                                                                                        hand
-                                                                                                    </div>
-                                                                                                    <div class="text-muted fs-7 fw-bold"
-                                                                                                        data-kt-table-widget-6="template_stock">
-                                                                                                        32
-                                                                                                    </div>
-                                                                                                </td>
-                                                                                                <td>
-                                                                                                </td>
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <td><input
-                                                                                                        type="checkbox"
-                                                                                                        name="" id="">
-                                                                                                </td>
-                                                                                                <td class="">
-                                                                                                    <button
-                                                                                                        type="button"
-                                                                                                        class="btn btn-sm btn-icon btn-light btn-active-light-primary toggle h-25px w-25px"
-                                                                                                        data-kt-table-widget-6="expand_row6">
-                                                                                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr087.svg-->
-                                                                                                        <span
-                                                                                                            class="svg-icon svg-icon-3 m-0 toggle-off">
-                                                                                                            <svg width="24"
-                                                                                                                height="24"
-                                                                                                                viewBox="0 0 24 24"
-                                                                                                                fill="none"
-                                                                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                                                                <rect
-                                                                                                                    opacity="0.5"
-                                                                                                                    x="11"
-                                                                                                                    y="18"
-                                                                                                                    width="12"
-                                                                                                                    height="2"
-                                                                                                                    rx="1"
-                                                                                                                    transform="rotate(-90 11 18)"
-                                                                                                                    fill="currentColor" />
-                                                                                                                <rect
-                                                                                                                    x="6"
-                                                                                                                    y="11"
-                                                                                                                    width="12"
-                                                                                                                    height="2"
-                                                                                                                    rx="1"
-                                                                                                                    fill="currentColor" />
-                                                                                                            </svg>
-                                                                                                        </span>
-                                                                                                        <!--end::Svg Icon-->
-                                                                                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr089.svg-->
-                                                                                                        <span
-                                                                                                            class="svg-icon svg-icon-3 m-0 toggle-on">
-                                                                                                            <svg width="24"
-                                                                                                                height="24"
-                                                                                                                viewBox="0 0 24 24"
-                                                                                                                fill="none"
-                                                                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                                                                <rect
-                                                                                                                    x="6"
-                                                                                                                    y="11"
-                                                                                                                    width="12"
-                                                                                                                    height="2"
-                                                                                                                    rx="1"
-                                                                                                                    fill="currentColor" />
-                                                                                                            </svg>
-                                                                                                        </span>
-                                                                                                        <!--end::Svg Icon-->
-                                                                                                    </button>
-                                                                                                </td>
-                                                                                                <td>
-                                                                                                    <a href="../../demo22/dist/apps/ecommerce/catalog/edit-product.html"
-                                                                                                        class="text-gray-800 text-hover-primary">#XGY-346</a>
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    7
-                                                                                                    min
-                                                                                                    ago
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    <a href="#"
-                                                                                                        class="text-gray-600 text-hover-primary">Albert
-                                                                                                        Flores</a>
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    $630.00
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    <span
-                                                                                                        class="text-gray-800 fw-bolder">$86.70</span>
-                                                                                                </td>
-                                                                                                <td class="text-end">
-                                                                                                    <div
-                                                                                                        class="d-flex justify-content-end">
-                                                                                                        <div
-                                                                                                            class="mx-1 cursor-pointer">
-                                                                                                            <img src="assets/media/icons/duotune/files/fil010.svg"
-                                                                                                                alt="">
+                                                                                                    </td>
+                                                                                                    <td class="text-end">
+                                                                                                        <div class="text-gray-800 fs-7">
+                                                                                                            Cost
                                                                                                         </div>
+                                                                                                        <div class="text-muted fs-7 fw-bold" data-kt-table-widget-4="template_cost">
+                                                                                                            1
+                                                                                                        </div>
+                                                                                                    </td>
+                                                                                                    <td class="text-end">
+                                                                                                        <div class="text-gray-800 fs-7">
+                                                                                                            Qty
+                                                                                                        </div>
+                                                                                                        <div class="text-muted fs-7 fw-bold" data-kt-table-widget-4="template_qty">
+                                                                                                            1
+                                                                                                        </div>
+                                                                                                    </td>
+                                                                                                    <td class="text-end">
+                                                                                                        <div class="text-gray-800 fs-7">
+                                                                                                            Total
+                                                                                                        </div>
+                                                                                                        <div class="text-muted fs-7 fw-bold" data-kt-table-widget-4="template_total">
+                                                                                                            name
+                                                                                                        </div>
+                                                                                                    </td>
+                                                                                                    <td class="text-end">
+                                                                                                        <div class="text-gray-800 fs-7 me-3">
+                                                                                                            On
+                                                                                                            hand
+                                                                                                        </div>
+                                                                                                        <div class="text-muted fs-7 fw-bold" data-kt-table-widget-4="template_stock">
+                                                                                                            32
+                                                                                                        </div>
+                                                                                                    </td>
+                                                                                                    <td>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <!--begin::Checkbox-->
+                                                                                                    <td>
+                                                                                                        <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                                                                            <input class="form-check-input selectCheckBox" type="checkbox" value="1" />
+                                                                                                        </div>
+                                                                                                    </td>
+                                                                                                    <!--end::Checkbox-->
+                                                                                                    <td class="">
+                                                                                                        <button type="button" class="btn btn-sm btn-icon btn-light btn-active-light-primary toggle h-25px w-25px" data-kt-table-widget-4="expand_row">
+                                                                                                            <!--begin::Svg Icon | path: icons/duotune/arrows/arr087.svg-->
+                                                                                                            <span class="svg-icon svg-icon-3 m-0 toggle-off">
+                                                                                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                                                    <rect opacity="0.5" x="11" y="18" width="12" height="2" rx="1" transform="rotate(-90 11 18)" fill="currentColor" />
+                                                                                                                    <rect x="6" y="11" width="12" height="2" rx="1" fill="currentColor" />
+                                                                                                                </svg>
+                                                                                                            </span>
+                                                                                                            <!--end::Svg Icon-->
+                                                                                                            <!--begin::Svg Icon | path: icons/duotune/arrows/arr089.svg-->
+                                                                                                            <span class="svg-icon svg-icon-3 m-0 toggle-on">
+                                                                                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                                                    <rect x="6" y="11" width="12" height="2" rx="1" fill="currentColor" />
+                                                                                                                </svg>
+                                                                                                            </span>
+                                                                                                            <!--end::Svg Icon-->
+                                                                                                        </button>
+                                                                                                    </td>
+                                                                                                    <td>
+                                                                                                        <a href="../../demo22/dist/apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary">#XGY-346</a>
+                                                                                                    </td>
+                                                                                                    <td class="text-end">
+                                                                                                        July/2022
+                                                                                                    </td>
+                                                                                                    <td class="text-end">
+                                                                                                        2022-10-10
+                                                                                                    </td>
+                                                                                                    <td class="text-end">
+                                                                                                        $630.00
+                                                                                                    </td>
+                                                                                                    <!--begin::Status=-->
+                                                                                                    <td class="text-end">
+                                                                                                        <!--begin::Badges-->
+                                                                                                        <div class="badge badge-light-danger">
+                                                                                                            Locked
+                                                                                                        </div>
+                                                                                                        <!--end::Badges-->
+                                                                                                    </td>
+                                                                                                    <!--end::Status=-->
+                                                                                                    <!--begin::Action=-->
+                                                                                                    <td class="text-end">
+                                                                                                        <a href="#" class="btn btn-sm btn-light btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions
+                                                                                                            <!--begin::Svg Icon | path: icons/duotune/arrows/arr072.svg-->
+                                                                                                            <span class="svg-icon svg-icon-5 m-0">
+                                                                                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                                                    <path d="M11.4343 12.7344L7.25 8.55005C6.83579 8.13583 6.16421 8.13584 5.75 8.55005C5.33579 8.96426 5.33579 9.63583 5.75 10.05L11.2929 15.5929C11.6834 15.9835 12.3166 15.9835 12.7071 15.5929L18.25 10.05C18.6642 9.63584 18.6642 8.96426 18.25 8.55005C17.8358 8.13584 17.1642 8.13584 16.75 8.55005L12.5657 12.7344C12.2533 13.0468 11.7467 13.0468 11.4343 12.7344Z" fill="currentColor" />
+                                                                                                                </svg>
+                                                                                                            </span>
+                                                                                                            <!--end::Svg Icon-->
+                                                                                                        </a>
+                                                                                                        <!--begin::Menu-->
+                                                                                                        <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                                                                            <!--begin::Menu item-->
+                                                                                                            <div class="menu-item px-3">
+                                                                                                                <a href="#" class="menu-link px-3">Approve</a>
+                                                                                                            </div>
+                                                                                                            <!--end::Menu item-->
+                                                                                                            <!--begin::Menu item-->
+                                                                                                            <div class="menu-item px-3">
+                                                                                                                <a href="#" class="menu-link px-3" data-kt-customer-table-filter="delete_row">Reject</a>
+                                                                                                            </div>
+                                                                                                            <!--end::Menu item-->
+                                                                                                            <!--begin::Menu item-->
+                                                                                                            <div class="menu-item px-3">
+                                                                                                                <a href="#" class="menu-link px-3" data-kt-customer-table-filter="delete_row">Print</a>
+                                                                                                            </div>
+                                                                                                            <!--end::Menu item-->
+                                                                                                        </div>
+                                                                                                        <!--end::Menu-->
+                                                                                                    </td>
+                                                                                                    <!--end::Action=-->
+
+                                                                                                    <!-- <td class="text-end">Test</td> -->
+
+                                                                                                </tr>
+
+
+
+                                                                                            </tbody>
+                                                                                            <!--end::Table body-->
+                                                                                        </table>
+                                                                                        <!--end::Table-->
+                                                                                    </div>
+                                                                                    <!--end::Card body-->
+                                                                                </div>
+                                                                                <!--end::Table Widget 4-->
+                                                                            </div>
+                                                                            <!--end::Col-->
+                                                                        </div>
+
+
+
+
+                                                                        <!--end::Table-->
+                                                                    </div>
+                                                                    <!--end::Card body-->
+                                                                </div>
+
+                                                                <div class="card card-flush">
+                            <!--begin::Card header-->
+                            <div class="card-header align-items-center py-5 gap-2 gap-md-5">
+                                <!--begin::Card title-->
+                                <div class="card-title">
+                                    <!--begin::Search-->
+                                    <div class="d-flex align-items-center position-relative my-1">
+                                        <!--begin::Svg Icon | path: icons/duotune/general/gen021.svg-->
+                                        <span class="svg-icon svg-icon-1 position-absolute ms-4">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <rect opacity="0.5" x="17.0365" y="15.1223" width="8.15546" height="2"
+                                                    rx="1" transform="rotate(45 17.0365 15.1223)" fill="currentColor" />
+                                                <path
+                                                    d="M11 19C6.55556 19 3 15.4444 3 11C3 6.55556 6.55556 3 11 3C15.4444 3 19 6.55556 19 11C19 15.4444 15.4444 19 11 19ZM11 5C7.53333 5 5 7.53333 5 11C5 14.4667 7.53333 17 11 17C14.4667 17 17 14.4667 17 11C17 7.53333 14.4667 5 11 5Z"
+                                                    fill="currentColor" />
+                                            </svg>
+                                        </span>
+                                        <!--end::Svg Icon-->
+                                        <input type="text" data-kt-ecommerce-order-filter="search_new" class="form-control form-control-solid w-250px ps-14" placeholder="Search Order" />
+                                    </div>
+                                    <!--end::Search-->
+                                </div>
+                                <!--end::Card title-->
+                                <!--begin::Card toolbar-->
+                                <div class="card-toolbar flex-row-fluid justify-content-end gap-5">
+                                    <!--begin::Flatpickr-->
+                                    <div class="input-group w-250px">
+                                        <input class="form-control form-control-solid rounded rounded-end-0" placeholder="Pick date range" id="kt_ecommerce_sales_flatpickr2" />
+                                        <button class="btn btn-icon btn-light" id="kt_ecommerce_sales_flatpickr_clear2">
+                                            <!--begin::Svg Icon | path: icons/duotune/arrows/arr088.svg-->
+                                            <span class="svg-icon svg-icon-2">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <rect opacity="0.5" x="7.05025" y="15.5356" width="12" height="2"
+                                                        rx="1" transform="rotate(-45 7.05025 15.5356)"
+                                                        fill="currentColor" />
+                                                    <rect x="8.46447" y="7.05029" width="12" height="2" rx="1"
+                                                        transform="rotate(45 8.46447 7.05029)" fill="currentColor" />
+                                                </svg>
+                                            </span>
+                                            <!--end::Svg Icon-->
+                                        </button>
+                                    </div>
+                                    <!--end::Flatpickr-->
+                                    <div class="w-100 mw-150px">
+                                        <!--begin::Select2-->
+                                        <select class="form-select form-select-solid" data-control="select2" data-hide-search="true" data-placeholder="Status" data-kt-ecommerce-order-filter="status_new">
+                                            <option></option>
+                                            <?php foreach ($view_submisions->result() as $row) { ?>
+                                                                                                    <option value="<?php echo $row->financial_month ?>&nbsp;<?php echo $row->financial_year ?>"><?php echo $row->financial_month ?>&nbsp;<?php echo $row->financial_year ?></option>
+                                                                                                <?php } ?>
+                                        </select>
+                                        <!--end::Select2-->
+                                    </div>
+                                    <!--begin::Add product-->
+                                    <a href="../../demo19/dist/apps/ecommerce/catalog/add-product.html" class="btn btn-primary">Export</a>
+                                    <!--end::Add product-->
+                                </div>
+                                <!--end::Card toolbar-->
+                            </div>
+                            <!--end::Card header-->
+                            <!--begin::Card body-->
+                            <div class="card-body pt-0">
+                                <!-- kt_ecommerce_sales_table -->
+                                <!--begin::Table-->
+                                <table class="table align-middle table-row-dashed fs-6 gy-5" id="kt_ecommerce_sales_table2">
+                                    <!--begin::Table head-->
+                                    <thead>
+                                        <!--begin::Table row-->
+                                        <tr class="text-start text-gray-400 fw-bold fs-7 text-uppercase gs-0">
+                                        <th class="w-10px pe-2">
+                                                                                                    <div class="form-check form-check-sm form-check-custom form-check-solid me-3">
+                                                                                                        <input class="form-check-input" type="checkbox" data-kt-check="true" data-kt-check-target="#kt_ecommerce_sales_table .form-check-input" value="1" />
                                                                                                     </div>
-                                                                                                </td>
+                                                                                                </th>
+                                                                                                <th class="min-w-100px">#</th>
+                                                                                                <th class="min-w-175px">Supplier</th>
+                                                                                                <th class="text-end min-w-70px">Reference Date</th>
+                                                                                                <th class="text-end min-w-100px">Status</th>
+                                                                                                <th class="text-end min-w-100px">Date Added</th>
+                                                                                                <th class="text-end min-w-100px">Amount</th>
+                                                                                                <th class="text-end min-w-100px">Actions</th>
+                                        </tr>
+                                        <!--end::Table row-->
+                                    </thead>
+                                    <!--end::Table head-->
+                                     <!--begin::Table body-->
+                                     <tbody class="fw-semibold text-gray-600">
+                                                                                            <!--begin::Table row-->
+                                                                                            <?php //foreach ($view_supplier_submisions->result() as $row) { ?>
+                                                                                                <tr>
+                                                                                                    <!--begin::Checkbox-->
+                                                                                                    <td>
+                                                                                                        <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                                                                            <input class="form-check-input" type="checkbox" value="1" />
+                                                                                                        </div>
+                                                                                                    </td>
+                                                                                                    <!--end::Checkbox-->
+                                                                                                    <!--begin::Order ID=-->
+                                                                                                    <td>
+                                                                                                        <a href="../../demo19/dist/apps/ecommerce/sales/details.html" class="text-gray-800 text-hover-primary fw-bold"><?php echo $row->reference_number ?></a>
+                                                                                                    </td>
+                                                                                                    <!--end::Order ID=-->
+                                                                                                    <!--begin::Customer=-->
+                                                                                                    <td>
+                                                                                                        <div class="d-flex align-items-center">
 
-                                                                                                <!-- <td class="text-end">Test</td> -->
+                                                                                                            <!--begin::Title-->
+                                                                                                            <p class="text-gray-800 fs-5 fw-bold"><?php echo $row->Company_name ?></p>
 
-                                                                                            </tr>
+                                                                                                        </div>
+                                                                                                    </td>
+                                                                                                    <!--end::Customer=-->
+                                                                                                    <!--begin::Status=-->
+                                                                                                    <td class="text-end pe-0" data-order="Refunded">
+                                                                                                        <p class="text-gray-800 fs-5 fw-bold"><?php echo $row->financial_month ?>&nbsp;<?php echo $row->financial_year ?> </p>
 
 
+                                                                                                    </td>
+                                                                                                    <!--end::Status=-->
+                                                                                                    <!--begin::Total=-->
+                                                                                                    <td class="text-end pe-0">
 
+                                                                                                        <?php if ($row->sub_status == 0) { ?>
+                                                                                                            <div class="badge badge-light-warning">Not Invoiced</div>
+                                                                                                        <?php } ?>
+                                                                                                    </td>
+                                                                                                    <!--end::Total=-->
+                                                                                                    <!--begin::Date Added=-->
+                                                                                                    <td class="text-end" data-order="2022-11-16">
+                                                                                                        <?php $date = date_create($row->date_placed) ?>
+                                                                                                        <span class="fw-bold"><?php echo date_format($date, "d/m/Y"); ?></span>
+                                                                                                    </td>
+                                                                                                    <!--end::Date Added=-->
+                                                                                                    <!--begin::Date Modified=-->
+                                                                                                    <td class="text-end">
+                                                                                                        <p class="text-gray-800 fs-5 fw-bold">$ <?php echo number_format($row->amount, 2); ?></p>
+                                                                                                    </td>
+                                                                                                    <!--end::Date Modified=-->
+                                                                                                    <!--begin::Action=-->
+                                                                                                    <td class="text-end">
+                                                                                                        <a href="#" class="btn btn-sm btn-light btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions
+                                                                                                            <!--begin::Svg Icon | path: icons/duotune/arrows/arr072.svg-->
+                                                                                                            <span class="svg-icon svg-icon-5 m-0">
+                                                                                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                                                    <path d="M11.4343 12.7344L7.25 8.55005C6.83579 8.13583 6.16421 8.13584 5.75 8.55005C5.33579 8.96426 5.33579 9.63583 5.75 10.05L11.2929 15.5929C11.6834 15.9835 12.3166 15.9835 12.7071 15.5929L18.25 10.05C18.6642 9.63584 18.6642 8.96426 18.25 8.55005C17.8358 8.13584 17.1642 8.13584 16.75 8.55005L12.5657 12.7344C12.2533 13.0468 11.7467 13.0468 11.4343 12.7344Z" fill="currentColor" />
+                                                                                                                </svg>
+                                                                                                            </span>
+                                                                                                            <!--end::Svg Icon-->
+                                                                                                        </a>
+                                                                                                        <!--begin::Menu-->
+                                                                                                        <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                                                                            <!--begin::Menu item-->
+                                                                                                            <div class="menu-item px-3">
+                                                                                                                <a href="../../demo19/dist/apps/ecommerce/sales/details.html" class="menu-link px-3">View</a>
+                                                                                                            </div>
+                                                                                                            <!--end::Menu item-->
+                                                                                                            <!--begin::Menu item-->
+                                                                                                            <div class="menu-item px-3">
+                                                                                                                <a href="javascript:;" class="menu-link px-3 btnInvoice" refNum="<?php echo $row->reference_number ?>">Invoiced</a>
+                                                                                                            </div>
+                                                                                                            <!--end::Menu item-->
+                                                                                                            <!--begin::Menu item-->
+                                                                                                            <div class="menu-item px-3">
+                                                                                                                <a href="javascript:;" class="menu-link px-3 btnDelete" refNum="<?php echo $row->reference_number ?>" data-kt-ecommerce-order-filter="delete_row">Delete</a>
+                                                                                                            </div>
+                                                                                                            <!--end::Menu item-->
+                                                                                                        </div>
+                                                                                                        <!--end::Menu-->
+                                                                                                    </td>
+                                                                                                    <!--end::Action=-->
+                                                                                                </tr>
+                                                                                            <?php //} ?>
                                                                                         </tbody>
                                                                                         <!--end::Table body-->
-                                                                                    </table>
-                                                                                    <!--end::Table-->
-                                                                                </div>
-                                                                                <!--end::Card body-->
-                                                                            </div>
-                                                                            <!--end::Table Widget 4-->
-                                                                        </div>
-                                                                        <!--end::Col-->
-                                                                    </div>
+                                </table>
+                                <!--end::Table-->
+                            </div>
+                            <!--end::Card body-->
+                        </div>
+                                                                <!--end::Table Widget 4-->
 
 
-                                                                    <!--end::Table-->
+                                                                <div class="card">
+
+
                                                                 </div>
-                                                                <!--end::Card body-->
-                                                            </div>
-                                                            <!--end::Table Widget 4-->
 
-                                                            <!--begin::Menu separator-->
-                                                            <div class="separator"></div>
-                                                            <!--end::Menu separator-->
-                                                            <div class="col-md-3 mt-3 mr-3 d-flex gap-4">
-                                                                <select name="language" aria-label="Select Year"
-                                                                    data-control="select2"
-                                                                    data-placeholder="Select a language..."
-                                                                    class="form-select form-select-solid form-select-lg mr-3">
-                                                                    <option value="- Select Action -">-
-                                                                        Bulk Action -</option>
-                                                                    <option value="option1">Add</option>
-                                                                    <option value="option1">Download
-                                                                    </option>
-                                                                    <option value="option1">CSV</option>
-                                                                </select>
-                                                                <!--begin::Indicator label-->
-                                                                <button
-                                                                    class="btn btn-primary ml-4 d-flex justify-content-end">Apply</button>
-                                                                <!--end::Indicator label-->
+                                                                <!--begin::Modal - Adjust Balance-->
+                                                                <div class="modal fade" id="kt_customers_export_modal" tabindex="-1" aria-hidden="true">
+                                                                    <!--begin::Modal dialog-->
+                                                                    <div class="modal-dialog modal-dialog-centered mw-650px">
+                                                                        <!--begin::Modal content-->
+                                                                        <div class="modal-content">
+                                                                            <!--begin::Modal header-->
+                                                                            <div class="modal-header">
+                                                                                <!--begin::Modal title-->
+                                                                                <h2 class="fw-bold">Export
+                                                                                    Customers</h2>
+                                                                                <!--end::Modal title-->
+                                                                                <!--begin::Close-->
+                                                                                <div id="kt_customers_export_close" class="btn btn-icon btn-sm btn-active-icon-primary">
+                                                                                    <!--begin::Svg Icon | path: icons/duotune/arrows/arr061.svg-->
+                                                                                    <span class="svg-icon svg-icon-1">
+                                                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                            <rect opacity="0.5" x="6" y="17.3137" width="16" height="2" rx="1" transform="rotate(-45 6 17.3137)" fill="currentColor" />
+                                                                                            <rect x="7.41422" y="6" width="16" height="2" rx="1" transform="rotate(45 7.41422 6)" fill="currentColor" />
+                                                                                        </svg>
+                                                                                    </span>
+                                                                                    <!--end::Svg Icon-->
+                                                                                </div>
+                                                                                <!--end::Close-->
+                                                                            </div>
+                                                                            <!--end::Modal header-->
+                                                                            <!--begin::Modal body-->
+                                                                            <div class="modal-body scroll-y mx-5 mx-xl-15 my-7">
+                                                                                <!--begin::Form-->
+                                                                                <form id="kt_customers_export_form" class="form" action="#">
+                                                                                    <!--begin::Input group-->
+                                                                                    <div class="fv-row mb-10">
+                                                                                        <!--begin::Label-->
+                                                                                        <label class="fs-5 fw-semibold form-label mb-5">Select
+                                                                                            Export
+                                                                                            Format:</label>
+                                                                                        <!--end::Label-->
+                                                                                        <!--begin::Input-->
+                                                                                        <select data-control="select2" data-placeholder="Select a format" data-hide-search="true" name="format" class="form-select form-select-solid">
+                                                                                            <option value="excell">
+                                                                                                Excel
+                                                                                            </option>
+                                                                                            <option value="pdf">
+                                                                                                PDF</option>
+                                                                                            <option value="cvs">
+                                                                                                CVS</option>
+                                                                                            <option value="zip">
+                                                                                                ZIP</option>
+                                                                                        </select>
+                                                                                        <!--end::Input-->
+                                                                                    </div>
+                                                                                    <!--end::Input group-->
+                                                                                    <!--begin::Input group-->
+                                                                                    <div class="fv-row mb-10">
+                                                                                        <!--begin::Label-->
+                                                                                        <label class="fs-5 fw-semibold form-label mb-5">Select
+                                                                                            Date
+                                                                                            Range:</label>
+                                                                                        <!--end::Label-->
+                                                                                        <!--begin::Input-->
+                                                                                        <input class="form-control form-control-solid" placeholder="Pick a date" name="date" />
+                                                                                        <!--end::Input-->
+                                                                                    </div>
+                                                                                    <!--end::Input group-->
+                                                                                    <!--begin::Row-->
+                                                                                    <div class="row fv-row mb-15">
+                                                                                        <!--begin::Label-->
+                                                                                        <label class="fs-5 fw-semibold form-label mb-5">Payment
+                                                                                            Type:</label>
+                                                                                        <!--end::Label-->
+                                                                                        <!--begin::Radio group-->
+                                                                                        <div class="d-flex flex-column">
+                                                                                            <!--begin::Radio button-->
+                                                                                            <label class="form-check form-check-custom form-check-sm form-check-solid mb-3">
+                                                                                                <input class="form-check-input" type="checkbox" value="1" checked="checked" name="payment_type" />
+                                                                                                <span class="form-check-label text-gray-600 fw-semibold">All</span>
+                                                                                            </label>
+                                                                                            <!--end::Radio button-->
+                                                                                            <!--begin::Radio button-->
+                                                                                            <label class="form-check form-check-custom form-check-sm form-check-solid mb-3">
+                                                                                                <input class="form-check-input" type="checkbox" value="2" checked="checked" name="payment_type" />
+                                                                                                <span class="form-check-label text-gray-600 fw-semibold">Visa</span>
+                                                                                            </label>
+                                                                                            <!--end::Radio button-->
+                                                                                            <!--begin::Radio button-->
+                                                                                            <label class="form-check form-check-custom form-check-sm form-check-solid mb-3">
+                                                                                                <input class="form-check-input" type="checkbox" value="3" name="payment_type" />
+                                                                                                <span class="form-check-label text-gray-600 fw-semibold">Mastercard</span>
+                                                                                            </label>
+                                                                                            <!--end::Radio button-->
+                                                                                            <!--begin::Radio button-->
+                                                                                            <label class="form-check form-check-custom form-check-sm form-check-solid">
+                                                                                                <input class="form-check-input" type="checkbox" value="4" name="payment_type" />
+                                                                                                <span class="form-check-label text-gray-600 fw-semibold">American
+                                                                                                    Express</span>
+                                                                                            </label>
+                                                                                            <!--end::Radio button-->
+                                                                                        </div>
+                                                                                        <!--end::Input group-->
+                                                                                    </div>
+                                                                                    <!--end::Row-->
+                                                                                    <!--begin::Actions-->
+                                                                                    <div class="text-center">
+                                                                                        <button type="reset" id="kt_customers_export_cancel" class="btn btn-light me-3">Discard</button>
+                                                                                        <button type="submit" id="kt_customers_export_submit" class="btn btn-primary">
+                                                                                            <span class="indicator-label">Submit</span>
+                                                                                            <span class="indicator-progress">Please
+                                                                                                wait...
+                                                                                                <span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
+                                                                                        </button>
+                                                                                    </div>
+                                                                                    <!--end::Actions-->
+                                                                                </form>
+                                                                                <!--end::Form-->
+                                                                            </div>
+                                                                            <!--end::Modal body-->
+                                                                        </div>
+                                                                        <!--end::Modal content-->
+                                                                    </div>
+                                                                    <!--end::Modal dialog-->
+                                                                </div>
+                                                                <!--end::Modal - New Card-->
+                                                                <!--end::Modals-->
+
                                                             </div>
                                                         </div>
                                                     </div>
+
+
+
+                                                </div>
+                                                
+                                                <div class="tab-pane fade" id="kt_list_widget_10_tab_3">
+                                                    <div class="m-0">
+                                                        <div class="noPadding card-body pt-0">
+                                                            <div class="col-xl-12">
+                                                                <!--end::Card header-->
+                                                                <!--begin::Table Widget 4-->
+                                                                <div class="card card-flush h-xl-100">
+                                                                    <!--begin::Card header-->
+                                                                    <div class="card-header pb-5">
+
+                                                                        <!--begin::Actions-->
+                                                                        <div class="card-toolbar w-100">
+                                                                            <!--begin::Filters-->
+                                                                            <div class="d-flex flex-stack flex-wrap gap-4 w-100 align-items-end justify-content-between">
+
+                                                                                <!--begin::Destination-->
+
+                                                                                <div class="mobile align-items-center fw-bold">
+
+                                                                                    <div class="mb-0">
+                                                                                        <input class="form-control form-control-solid" placeholder="Pick date rage" id="kt_daterangepicker_6" />
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="col-md-2 mobile">
+
+                                                                                    <select name="language" aria-label="Select Month" data-control="select2" data-placeholder="Select a language..." class="form-select form-select-solid form-select-lg">
+                                                                                        <option value="- Select Reference -">
+                                                                                            - Select
+                                                                                            Reference -
+                                                                                        </option>
+                                                                                        <option value="option1">
+                                                                                            Option 1
+                                                                                        </option>
+                                                                                    </select>
+                                                                                </div>
+
+                                                                                <!--end::Destination-->
+                                                                                <div class="col-md-2 ">
+
+
+
+                                                                                </div>
+
+                                                                                <div class="col-md-2 d-flex align-items-end justify-content-end">
+
+                                                                                    <button class="btn btn-primary mb-0 cursor-pointer">Apply</button>
+
+                                                                                </div>
+                                                                                <!--begin::Search-->
+                                                                                <div class="d-none position-relative my-1">
+                                                                                    <!--begin::Svg Icon | path: icons/duotune/general/gen021.svg-->
+                                                                                    <span class="svg-icon svg-icon-2 position-absolute top-50 translate-middle-y ms-4">
+                                                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                            <rect opacity="0.5" x="17.0365" y="15.1223" width="8.15546" height="2" rx="1" transform="rotate(45 17.0365 15.1223)" fill="currentColor" />
+                                                                                            <path d="M11 19C6.55556 19 3 15.4444 3 11C3 6.55556 6.55556 3 11 3C15.4444 3 19 6.55556 19 11C19 15.4444 15.4444 19 11 19ZM11 5C7.53333 5 5 7.53333 5 11C5 14.4667 7.53333 17 11 17C14.4667 17 17 14.4667 17 11C17 7.53333 14.4667 5 11 5Z" fill="currentColor" />
+                                                                                        </svg>
+                                                                                    </span>
+                                                                                    <!--end::Svg Icon-->
+                                                                                    <input type="text" data-kt-table-widget-4="search" class="form-control w-150px fs-7 ps-12" placeholder="Search" />
+                                                                                </div>
+                                                                                <!--end::Search-->
+                                                                            </div>
+                                                                            <!--begin::Filters-->
+                                                                        </div>
+                                                                        <!--end::Actions-->
+                                                                    </div>
+                                                                    <!--end::Card header-->
+                                                                    <!--begin::Card body-->
+                                                                    <div class="card-body p-1">
+                                                                        <!--begin::Table-->
+
+                                                                        <div class="row gy-5 g-xl-10">
+
+                                                                            <!--end::Col-->
+                                                                            <!--begin::Col-->
+                                                                            <div class="col-xl-12 mb-5 mb-xl-10">
+                                                                                <!--begin::Table Widget 4-->
+                                                                                <div class="card card-flush h-xl-100 p-0">
+
+                                                                                    <!--begin::Card body-->
+                                                                                    <div class="card-body p-1">
+                                                                                        <!--begin::Table-->
+                                                                                        <table class="table align-middle table-row-dashed fs-6 gy-3" id="kt_table_widget_6_table">
+                                                                                            <!--begin::Table head-->
+                                                                                            <thead>
+                                                                                                <!--begin::Table row-->
+                                                                                                <tr class="text-start text-gray-400 fw-bold fs-7 text-uppercase gs-0">
+                                                                                                    <th>
+                                                                                                        <input type="checkbox" name="" id="">
+                                                                                                    </th>
+                                                                                                    <th>#
+                                                                                                    </th>
+                                                                                                    <th class="min-w-100px">
+                                                                                                        Supplier
+                                                                                                    </th>
+                                                                                                    <th class="text-end min-w-100px">
+                                                                                                        Reference
+                                                                                                        Date
+                                                                                                    </th>
+                                                                                                    <th class="text-end min-w-125px">
+                                                                                                        Submitted
+                                                                                                        Date
+                                                                                                    </th>
+                                                                                                    <th class="text-end min-w-100px">
+                                                                                                        Total
+                                                                                                        Sales
+                                                                                                    </th>
+                                                                                                    <th class="text-end min-w-100px">
+                                                                                                        Status
+                                                                                                    </th>
+                                                                                                    <th class="text-end min-w-50px">
+                                                                                                        Action
+                                                                                                    </th>
+
+                                                                                                </tr>
+                                                                                                <!--end::Table row-->
+                                                                                            </thead>
+                                                                                            <!--end::Table head-->
+                                                                                            <!--begin::Table body-->
+                                                                                            <tbody class="fw-bold text-gray-600">
+                                                                                                <tr data-kt-table-widget-6="subtable_template" class="d-none">
+                                                                                                    <td colspan="2">
+                                                                                                        <div class="d-flex align-items-center gap-3">
+                                                                                                            <a href="#" class="symbol symbol-50px bg-secondary bg-opacity-25 rounded">
+                                                                                                                <img src="" data-kt-src-path="assets/media/stock/ecommerce/" alt="" data-kt-table-widget-6="template_image" />
+                                                                                                            </a>
+                                                                                                            <div class="d-flex flex-column text-muted">
+                                                                                                                <a href="#" class="text-gray-800 text-hover-primary fw-bold" data-kt-table-widget-6="template_name">Product
+                                                                                                                    name</a>
+                                                                                                                <div class="fs-7" data-kt-table-widget-6="template_description">
+                                                                                                                    Product
+                                                                                                                    description
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </td>
+                                                                                                    <td class="text-end">
+                                                                                                        <div class="text-gray-800 fs-7">
+                                                                                                            Cost
+                                                                                                        </div>
+                                                                                                        <div class="text-muted fs-7 fw-bold" data-kt-table-widget-6="template_cost">
+                                                                                                            1
+                                                                                                        </div>
+                                                                                                    </td>
+                                                                                                    <td class="text-end">
+                                                                                                        <div class="text-gray-800 fs-7">
+                                                                                                            Qty
+                                                                                                        </div>
+                                                                                                        <div class="text-muted fs-7 fw-bold" data-kt-table-widget-6="template_qty">
+                                                                                                            1
+                                                                                                        </div>
+                                                                                                    </td>
+                                                                                                    <td class="text-end">
+                                                                                                        <div class="text-gray-800 fs-7">
+                                                                                                            Total
+                                                                                                        </div>
+                                                                                                        <div class="text-muted fs-7 fw-bold" data-kt-table-widget-6="template_total">
+                                                                                                            name
+                                                                                                        </div>
+                                                                                                    </td>
+                                                                                                    <td class="text-end">
+                                                                                                        <div class="text-gray-800 fs-7 me-3">
+                                                                                                            On
+                                                                                                            hand
+                                                                                                        </div>
+                                                                                                        <div class="text-muted fs-7 fw-bold" data-kt-table-widget-6="template_stock">
+                                                                                                            32
+                                                                                                        </div>
+                                                                                                    </td>
+                                                                                                    <td>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td><input type="checkbox" name="" id="">
+                                                                                                    </td>
+                                                                                                    <td class="">
+                                                                                                        <button type="button" class="btn btn-sm btn-icon btn-light btn-active-light-primary toggle h-25px w-25px" data-kt-table-widget-6="expand_row6">
+                                                                                                            <!--begin::Svg Icon | path: icons/duotune/arrows/arr087.svg-->
+                                                                                                            <span class="svg-icon svg-icon-3 m-0 toggle-off">
+                                                                                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                                                    <rect opacity="0.5" x="11" y="18" width="12" height="2" rx="1" transform="rotate(-90 11 18)" fill="currentColor" />
+                                                                                                                    <rect x="6" y="11" width="12" height="2" rx="1" fill="currentColor" />
+                                                                                                                </svg>
+                                                                                                            </span>
+                                                                                                            <!--end::Svg Icon-->
+                                                                                                            <!--begin::Svg Icon | path: icons/duotune/arrows/arr089.svg-->
+                                                                                                            <span class="svg-icon svg-icon-3 m-0 toggle-on">
+                                                                                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                                                    <rect x="6" y="11" width="12" height="2" rx="1" fill="currentColor" />
+                                                                                                                </svg>
+                                                                                                            </span>
+                                                                                                            <!--end::Svg Icon-->
+                                                                                                        </button>
+                                                                                                    </td>
+                                                                                                    <td>
+                                                                                                        <a href="../../demo22/dist/apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary">#XGY-346</a>
+                                                                                                    </td>
+                                                                                                    <td class="text-end">
+                                                                                                        7
+                                                                                                        min
+                                                                                                        ago
+                                                                                                    </td>
+                                                                                                    <td class="text-end">
+                                                                                                        <a href="#" class="text-gray-600 text-hover-primary">Albert
+                                                                                                            Flores</a>
+                                                                                                    </td>
+                                                                                                    <td class="text-end">
+                                                                                                        $630.00
+                                                                                                    </td>
+                                                                                                    <td class="text-end">
+                                                                                                        <span class="text-gray-800 fw-bolder">$86.70</span>
+                                                                                                    </td>
+                                                                                                    <td class="text-end">
+                                                                                                        <div class="d-flex justify-content-end">
+                                                                                                            <div class="mx-1 cursor-pointer">
+                                                                                                                <img src="assets/media/icons/duotune/files/fil010.svg" alt="">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </td>
+
+                                                                                                    <!-- <td class="text-end">Test</td> -->
+
+                                                                                                </tr>
+
+
+
+                                                                                            </tbody>
+                                                                                            <!--end::Table body-->
+                                                                                        </table>
+                                                                                        <!--end::Table-->
+                                                                                    </div>
+                                                                                    <!--end::Card body-->
+                                                                                </div>
+                                                                                <!--end::Table Widget 4-->
+                                                                            </div>
+                                                                            <!--end::Col-->
+                                                                        </div>
+
+
+                                                                        <!--end::Table-->
+                                                                    </div>
+                                                                    <!--end::Card body-->
+                                                                </div>
+                                                                <!--end::Table Widget 4-->
+
+                                                                <!--begin::Menu separator-->
+                                                                <div class="separator"></div>
+                                                                <!--end::Menu separator-->
+                                                                <div class="col-md-3 m-3 d-flex gap-4">
+                                                                    <select name="language" aria-label="Select Year" data-control="select2" data-placeholder="Select a language..." class="form-select form-select-solid form-select-lg mr-3">
+                                                                        <option value="- Select Action -">-
+                                                                            Bulk Action -</option>
+                                                                        <option value="option1">Add</option>
+                                                                        <option value="option1">Download
+                                                                        </option>
+                                                                        <option value="option1">CSV</option>
+                                                                    </select>
+                                                                    <!--begin::Indicator label-->
+                                                                    <button class="btn btn-primary ml-4 d-flex justify-content-end">Apply</button>
+                                                                    <!--end::Indicator label-->
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+
                                                 </div>
 
-
-
                                             </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!--end::Tables Widget 2-->
+                                <div class="tab-pane fade" id="kt_list_widget_10_tab_5">
+                                    <input type="text" id="supplier" value="<?php echo $user_id  ?> " hidden>
+                                    <div class="m-0">
+                                        <div class="noPadding card-body pt-0">
+                                            <div class="col-xl-12">
+                                                <!--end::Card header-->
+                                                <!--begin::Table Widget 4-->
+                                                <div class="card card-flush h-xl-100">
+                                                    <!--begin::Card header-->
+                                                    <div class="card-header pb-5">
+
+                                                        <!--begin::Actions-->
+                                                        <div class="card-toolbar w-100">
+                                                            <!--begin::Filters-->
+                                                            <div class="d-flex flex-stack flex-wrap gap-4 w-100 align-items-end justify-content-between">
+
+                                                                <!--begin::Destination-->
+
+                                                                <div class="mobile align-items-center fw-bold">
+
+                                                                    <div class="mb-0">
+                                                                        <input class="form-control form-control-solid" placeholder="Pick date rage" id="kt_daterangepicker_6" />
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-md-2 mobile">
+
+                                                                    <select name="language" aria-label="Select Month" data-control="select2" data-placeholder="Select a language..." class="form-select form-select-solid form-select-lg">
+                                                                        <option value="- Select Reference -">
+                                                                            - Select
+                                                                            Reference -
+                                                                        </option>
+                                                                        <option value="option1">
+                                                                            Option 1
+                                                                        </option>
+                                                                    </select>
+                                                                </div>
+
+                                                                <!--end::Destination-->
+                                                                <div class="col-md-2 ">
+
+
+
+                                                                </div>
+
+                                                                <div class="col-md-2 d-flex align-items-end justify-content-end">
+
+                                                                    <button class="btn btn-primary mb-0 cursor-pointer">Apply</button>
+
+                                                                </div>
+                                                                <!--begin::Search-->
+                                                                <div class="d-none position-relative my-1">
+                                                                    <!--begin::Svg Icon | path: icons/duotune/general/gen021.svg-->
+                                                                    <span class="svg-icon svg-icon-2 position-absolute top-50 translate-middle-y ms-4">
+                                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                            <rect opacity="0.5" x="17.0365" y="15.1223" width="8.15546" height="2" rx="1" transform="rotate(45 17.0365 15.1223)" fill="currentColor" />
+                                                                            <path d="M11 19C6.55556 19 3 15.4444 3 11C3 6.55556 6.55556 3 11 3C15.4444 3 19 6.55556 19 11C19 15.4444 15.4444 19 11 19ZM11 5C7.53333 5 5 7.53333 5 11C5 14.4667 7.53333 17 11 17C14.4667 17 17 14.4667 17 11C17 7.53333 14.4667 5 11 5Z" fill="currentColor" />
+                                                                        </svg>
+                                                                    </span>
+                                                                    <!--end::Svg Icon-->
+                                                                    <input type="text" data-kt-table-widget-4="search" class="form-control w-150px fs-7 ps-12" placeholder="Search" />
+                                                                </div>
+                                                                <!--end::Search-->
+                                                            </div>
+                                                            <!--begin::Filters-->
+                                                        </div>
+                                                        <!--end::Actions-->
+                                                    </div>
+                                                    <!--end::Card header-->
+                                                    <!--begin::Card body-->
+                                                    <div class="card-body p-1">
+                                                        <!--begin::Table-->
+
+                                                        <div class="row gy-5 g-xl-10">
+
+                                                            <!--end::Col-->
+                                                            <!--begin::Col-->
+                                                            <div class="col-xl-12 mb-5 mb-xl-10">
+                                                                <!--begin::Table Widget 4-->
+                                                                <div class="card card-flush h-xl-100 p-0">
+
+                                                                    <!--begin::Card body-->
+                                                                    <div class="card-body p-1">
+                                                                        <!--begin::Table-->
+                                                                        <table class="table align-middle table-row-dashed fs-6 gy-3" id="kt_table_widget_6_table">
+                                                                            <!--begin::Table head-->
+                                                                            <thead>
+                                                                                <!--begin::Table row-->
+                                                                                <tr class="text-start text-gray-400 fw-bold fs-7 text-uppercase gs-0">
+                                                                                    <th>
+                                                                                        <input type="checkbox" name="" id="">
+                                                                                    </th>
+                                                                                    <th>#
+                                                                                    </th>
+                                                                                    <th class="min-w-100px">
+                                                                                        Supplier
+                                                                                    </th>
+                                                                                    <th class="text-end min-w-100px">
+                                                                                        Reference
+                                                                                        Date
+                                                                                    </th>
+                                                                                    <th class="text-end min-w-125px">
+                                                                                        Submitted
+                                                                                        Date
+                                                                                    </th>
+                                                                                    <th class="text-end min-w-100px">
+                                                                                        Total
+                                                                                        Sales
+                                                                                    </th>
+                                                                                    <th class="text-end min-w-100px">
+                                                                                        Status
+                                                                                    </th>
+                                                                                    <th class="text-end min-w-50px">
+                                                                                        Action
+                                                                                    </th>
+
+                                                                                </tr>
+                                                                                <!--end::Table row-->
+                                                                            </thead>
+                                                                            <!--end::Table head-->
+                                                                            <!--begin::Table body-->
+                                                                            <tbody class="fw-bold text-gray-600">
+                                                                                <tr data-kt-table-widget-6="subtable_template" class="d-none">
+                                                                                    <td colspan="2">
+                                                                                        <div class="d-flex align-items-center gap-3">
+                                                                                            <a href="#" class="symbol symbol-50px bg-secondary bg-opacity-25 rounded">
+                                                                                                <img src="" data-kt-src-path="assets/media/stock/ecommerce/" alt="" data-kt-table-widget-6="template_image" />
+                                                                                            </a>
+                                                                                            <div class="d-flex flex-column text-muted">
+                                                                                                <a href="#" class="text-gray-800 text-hover-primary fw-bold" data-kt-table-widget-6="template_name">Product
+                                                                                                    name</a>
+                                                                                                <div class="fs-7" data-kt-table-widget-6="template_description">
+                                                                                                    Product
+                                                                                                    description
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td class="text-end">
+                                                                                        <div class="text-gray-800 fs-7">
+                                                                                            Cost
+                                                                                        </div>
+                                                                                        <div class="text-muted fs-7 fw-bold" data-kt-table-widget-6="template_cost">
+                                                                                            1
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td class="text-end">
+                                                                                        <div class="text-gray-800 fs-7">
+                                                                                            Qty
+                                                                                        </div>
+                                                                                        <div class="text-muted fs-7 fw-bold" data-kt-table-widget-6="template_qty">
+                                                                                            1
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td class="text-end">
+                                                                                        <div class="text-gray-800 fs-7">
+                                                                                            Total
+                                                                                        </div>
+                                                                                        <div class="text-muted fs-7 fw-bold" data-kt-table-widget-6="template_total">
+                                                                                            name
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td class="text-end">
+                                                                                        <div class="text-gray-800 fs-7 me-3">
+                                                                                            On
+                                                                                            hand
+                                                                                        </div>
+                                                                                        <div class="text-muted fs-7 fw-bold" data-kt-table-widget-6="template_stock">
+                                                                                            32
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td><input type="checkbox" name="" id="">
+                                                                                    </td>
+                                                                                    <td class="">
+                                                                                        <button type="button" class="btn btn-sm btn-icon btn-light btn-active-light-primary toggle h-25px w-25px" data-kt-table-widget-6="expand_row6">
+                                                                                            <!--begin::Svg Icon | path: icons/duotune/arrows/arr087.svg-->
+                                                                                            <span class="svg-icon svg-icon-3 m-0 toggle-off">
+                                                                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                                    <rect opacity="0.5" x="11" y="18" width="12" height="2" rx="1" transform="rotate(-90 11 18)" fill="currentColor" />
+                                                                                                    <rect x="6" y="11" width="12" height="2" rx="1" fill="currentColor" />
+                                                                                                </svg>
+                                                                                            </span>
+                                                                                            <!--end::Svg Icon-->
+                                                                                            <!--begin::Svg Icon | path: icons/duotune/arrows/arr089.svg-->
+                                                                                            <span class="svg-icon svg-icon-3 m-0 toggle-on">
+                                                                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                                    <rect x="6" y="11" width="12" height="2" rx="1" fill="currentColor" />
+                                                                                                </svg>
+                                                                                            </span>
+                                                                                            <!--end::Svg Icon-->
+                                                                                        </button>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <a href="../../demo22/dist/apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary">#XGY-346</a>
+                                                                                    </td>
+                                                                                    <td class="text-end">
+                                                                                        7
+                                                                                        min
+                                                                                        ago
+                                                                                    </td>
+                                                                                    <td class="text-end">
+                                                                                        <a href="#" class="text-gray-600 text-hover-primary">Albert
+                                                                                            Flores</a>
+                                                                                    </td>
+                                                                                    <td class="text-end">
+                                                                                        $630.00
+                                                                                    </td>
+                                                                                    <td class="text-end">
+                                                                                        <span class="text-gray-800 fw-bolder">$86.70</span>
+                                                                                    </td>
+                                                                                    <td class="text-end">
+                                                                                        <div class="d-flex justify-content-end">
+                                                                                            <div class="mx-1 cursor-pointer">
+                                                                                                <img src="assets/media/icons/duotune/files/fil010.svg" alt="">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </td>
+
+                                                                                    <!-- <td class="text-end">Test</td> -->
+
+                                                                                </tr>
+
+
+
+                                                                            </tbody>
+                                                                            <!--end::Table body-->
+                                                                        </table>
+                                                                        <!--end::Table-->
+                                                                    </div>
+                                                                    <!--end::Card body-->
+                                                                </div>
+                                                                <!--end::Table Widget 4-->
+                                                            </div>
+                                                            <!--end::Col-->
+                                                        </div>
+
+
+                                                        <!--end::Table-->
+                                                    </div>
+                                                    <!--end::Card body-->
+                                                </div>
+                                                <!--end::Table Widget 4-->
+
+                                                <!--begin::Menu separator-->
+                                                <div class="separator"></div>
+                                                <!--end::Menu separator-->
+                                                <div class="col-md-3 mt-3 mr-3 d-flex gap-4">
+                                                    <select name="language" aria-label="Select Year" data-control="select2" data-placeholder="Select a language..." class="form-select form-select-solid form-select-lg mr-3">
+                                                        <option value="- Select Action -">-
+                                                            Bulk Action -</option>
+                                                        <option value="option1">Add</option>
+                                                        <option value="option1">Download
+                                                        </option>
+                                                        <option value="option1">CSV</option>
+                                                    </select>
+                                                    <!--begin::Indicator label-->
+                                                    <button class="btn btn-primary ml-4 d-flex justify-content-end">Apply</button>
+                                                    <!--end::Indicator label-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
 
 
 
 
 
 
-                                            <div class="tab-pane fade" id="kt_general_widget_1_2">
-                                                <!--begin::Tables Widget 3-->
-                                                <div class="card">
-                                                    <div class="card card-flush h-xl-100">
+                                <div class="tab-pane fade" id="kt_general_widget_1_2">
+                                    <!--begin::Tables Widget 3-->
+                                    <div class="card">
+                                        <div class="card card-flush h-xl-100">
 
-                                                        <!--begin::Body-->
-                                                        <div class="card-body p-0">
-                                                            <div class="tab-content">
-                                                                <!--begin::Tap pane-->
-                                                                <div class="tab-pane fade show active my-4"
-                                                                    id="kt_list_widget_10_tab_1">
-                                                                    <!--begin::Item-->
-                                                                    <div class="m-0">
-                                                                        <div class="card-body pt-5">
-                                                                            <div class="row">
+                                            <!--begin::Body-->
+                                            <div class="card-body p-0">
+                                                <div class="tab-content">
+                                                    <!--begin::Tap pane-->
+                                                    <div class="tab-pane fade show active my-4" id="kt_list_widget_10_tab_1">
+                                                        <!--begin::Item-->
+                                                        <div class="m-0">
+                                                            <div class="card-body pt-5">
+                                                                <div class="row">
+                                                                    <input type="text" name="" id="reference_number" hidden>
+
+                                                                    <div class="col-md-3 mb-1 mt-2">
+                                                                        <select id="financialYear" name="language" aria-label="Select Year" data-control="select2" data-placeholder="Select a language..." class="form-select form-select-solid form-select-lg">
+                                                                            <option value="- Select Year -">- Select Financial Year -
+                                                                            </option>
+                                                                            <?php
+                                                                            $endYear = date("Y") - 2014;
+
+                                                                            if (date("m-d") > '06-30') {
+                                                                                for ($i = date("Y") - $endYear; $i <= date("Y") + 1; $i++) {
+                                                                            ?>
+                                                                                    <option value="<?php echo $i ?>"><?php echo $i ?></option>
+                                                                                <?php
+                                                                                }
+                                                                            } else {
+                                                                                for ($i = date("Y") - $endYear; $i <= date("Y"); $i++) {
+                                                                                ?>
+                                                                                    <option value="<?php echo $i ?>"><?php echo $i ?></option>
+                                                                            <?php
+
+                                                                                }
+                                                                            }
+                                                                            ?>
 
 
-                                                                                <div class="col-md-3 mb-1 mt-2">
-                                                                                <select id="financialYear" name="language" aria-label="Select Year" data-control="select2" data-placeholder="Select a language..." class="form-select form-select-solid form-select-lg">
-                                                                                        <option value="- Select Year -">- Select Financial Year -
-                                                                                        </option>
-                                                                                        <?php
-                                                                                        $endYear = date("Y") - 2014;
-
-                                                                                        if (date("m-d") > '06-30') {
-                                                                                            for ($i = date("Y") - $endYear; $i <= date("Y") + 1; $i++) {
-                                                                                        ?>
-                                                                                                <option value="<?php echo $i ?>"><?php echo $i ?></option>
-                                                                                            <?php
-                                                                                            }
-                                                                                        } else {
-                                                                                            for ($i = date("Y") - $endYear; $i <= date("Y"); $i++) {
-                                                                                            ?>
-                                                                                                <option value="<?php echo $i ?>"><?php echo $i ?></option>
-                                                                                        <?php
-
-                                                                                            }
-                                                                                        }
-                                                                                        ?>
-
-
-                                                                                    </select>
-                                                                                </div>
-                                                                                <div class="col-md-3 mb-1 mt-2">
-                                                                                    <select name="language"
-                                                                                        aria-label="Select Month"
-                                                                                        data-control="select2"
-                                                                                        data-placeholder="Select a language..."
-                                                                                        class="form-select form-select-solid form-select-lg" id="financialMonth">
-                                                                                        <option value="- Select Month -">- Select Month -</option>
-                                                                                        <option value="January">January</option>
-                                                                                        <option value="February">February</option>
-                                                                                        <option value="March">March</option>
-                                                                                        <option value="April">April</option>
-                                                                                        <option value="May">May</option>
-                                                                                        <option value="June">June</option>
-                                                                                        <option value="July">July</option>
-                                                                                        <option value="August">August</option>
-                                                                                        <option value="September">September</option>
-                                                                                        <option value="October">October</option>
-                                                                                        <option value="November">November</option>
-                                                                                        <option value="December">December</option>
-                                                                                        </option>
-                                                                                    </select>
-                                                                                </div>
-                                                                                <!-- <div class="col-md-3 mb-1 mt-2">
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="col-md-3 mb-1 mt-2">
+                                                                        <select name="language" aria-label="Select Month" data-control="select2" data-placeholder="Select a language..." class="form-select form-select-solid form-select-lg" id="financialMonth">
+                                                                            <option value="- Select Month -">- Select Month -</option>
+                                                                            <option value="January">January</option>
+                                                                            <option value="February">February</option>
+                                                                            <option value="March">March</option>
+                                                                            <option value="April">April</option>
+                                                                            <option value="May">May</option>
+                                                                            <option value="June">June</option>
+                                                                            <option value="July">July</option>
+                                                                            <option value="August">August</option>
+                                                                            <option value="September">September</option>
+                                                                            <option value="October">October</option>
+                                                                            <option value="November">November</option>
+                                                                            <option value="December">December</option>
+                                                                            </option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <!-- <div class="col-md-3 mb-1 mt-2">
                                                                                     <select name="language"
                                                                                         aria-label="Select Year"
                                                                                         data-control="select2"
@@ -2801,281 +1404,259 @@
                                                                                     </select>
                                                                                 </div> -->
 
-                                                                                <div class="col-md-3 d-flex mt-2">
+                                                                    <div class="col-md-3 d-flex mt-2">
 
-                                                                                <?php foreach ($user_details->result() as $row) { ?>
-                                                            <button type="submit" class="btn btn-success w-150px h-45px" user_id="<?php echo $row->user_id ?>" id="btnAddParent">Apply</button>
-                                                            <?php } ?>
-                                                                                    
-                                                                                </div>
+                                                                        <?php foreach ($user_details->result() as $row) { ?>
+                                                                            <button type="submit" class="btn btn-success w-150px h-45px" user_id="<?php echo $row->user_id ?>" id="btnAddParent">Apply</button>
+                                                                        <?php } ?>
 
-
-
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="row">&nbsp;</div>
-<div class="row">
-<div class="col-xl-12">
-                                                                            <!--end::Card header-->
-                                                                            <!--begin::Card body-->
-                                                                            <div class="card card-flush h-xl-100">
-
-                                                                                <!--end::Card header-->
-                                                                                <!--begin::Card body-->
-                                                                                <div class="card-body py-0">
-                                                                                    <!--begin::Table-->
+                                                                    </div>
 
 
-                                                                                    <div class="table-responsive">
-                                                                                        <table
-                                                                                            class="table table-row-bordered w-100"  style="display: none;" id="submitTable">
-                                                                                            <thead>
-                                                                                                <tr>
-                                                                                                    <th
-                                                                                                        class="min-w-100px col-3 text-start px-4 text-gray-400 fw-bold mobileFont text-uppercase">
-                                                                                                        Member Name</th>
-                                                                                                    <th
-                                                                                                        class="min-w-100px col-3 text-start px-2 text-gray-400 fw-bold mobileFont text-uppercase">
-                                                                                                        Amount</th>
-                                                                                                    <th
-                                                                                                        class="min-w-100px col-2 text-start px-2 text-gray-400 fw-bold mobileFont text-uppercase">
-                                                                                                        Action</th>
-                                                                                                    <th
-                                                                                                        class="min-w-100px col-2 text-start px-2 text-gray-400 fw-bold mobileFont text-uppercase">
-                                                                                                        Last Submission
-                                                                                                        Total</th>
-                                                                                                    <th
-                                                                                                        class="min-w-100px col-2 text-start px-0 text-gray-400 fw-bold mobileFont text-uppercase">
-                                                                                                        Last Submission
-                                                                                                    </th>
-                                                                                                </tr>
-                                                                                            </thead>
-                                                                                            <tbody class="scroll-y">
 
-                                                                                            <?php foreach ($member_submissions->result() as $row) { ?>
-                                                                                                    <tr class="h-60px fw-bold">
-                                                                                                        <td class="col-3 text-start px-4 fs-6"><?php echo $row->Company_name ?></td>
-                                                                                                        <td class="col-3 text-start px-2 d-flex fs-6 my-auto">
-                                                                                                            <span class="my-auto fs-6 fw-bold mr-1">$</span>
-                                                                                                            <input type="text" class="form-control form-control-solid w-75 h-40px" name="name" value=""></input>
-                                                                                                        </td>
-                                                                                                        
-                                                                                                        <td class="col-2 text-start fs-6">
-                                                                                                            <span class="text-start badge badge-light-primary py-3">$ <?php echo number_format($row->amount) ?></span>
-                                                                                                        </td>
-                                                                                                        <?php if ($row->financial_month == "") { ?>
-                                                                                                            <td class="px-3 col-2 text-start fs-6">
-                                                                                                                NA
-                                                                                                            </td>
-                                                                                                        <?php } else { ?>
-                                                                                                            <td class="px-3 col-2 text-start fs-6">
-                                                                                                                <?php echo $row->financial_month ?>&nbsp;<?php echo $row->financial_year ?>
-                                                                                                            </td>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">&nbsp;</div>
+                                                            <div class="row">
+                                                                <div class="col-xl-12">
+                                                                    <!--end::Card header-->
+                                                                    <!--begin::Card body-->
+                                                                    <div class="card card-flush h-xl-100">
 
-                                                                                                        <?php } ?>
-                                                                                                    </tr>
+                                                                        <!--end::Card header-->
+                                                                        <!--begin::Card body-->
+                                                                        <div class="card-body py-0">
+                                                                            <!--begin::Table-->
+
+
+                                                                            <div class="table-responsive">
+                                                                                <table class="table table-row-bordered w-100" style="display: none;" id="submitTable">
+                                                                                    <thead>
+                                                                                        <tr>
+                                                                                            <th class="min-w-100px col-3 text-start px-4 text-gray-400 fw-bold mobileFont text-uppercase">
+                                                                                                Member Name</th>
+                                                                                            <th class="min-w-100px col-3 text-start px-2 text-gray-400 fw-bold mobileFont text-uppercase">
+                                                                                                Amount</th>
+                                                                                            <th class="min-w-100px col-2 text-start px-2 text-gray-400 fw-bold mobileFont text-uppercase">
+                                                                                                Action</th>
+                                                                                            <th class="min-w-100px col-2 text-start px-2 text-gray-400 fw-bold mobileFont text-uppercase">
+                                                                                                Last Submission
+                                                                                                Total</th>
+                                                                                            <th class="min-w-100px col-2 text-start px-0 text-gray-400 fw-bold mobileFont text-uppercase">
+                                                                                                Last Submission
+                                                                                            </th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <tbody class="scroll-y">
+
+                                                                                        <?php foreach ($member_submissions->result() as $row) { ?>
+                                                                                            <tr class="h-60px fw-bold">
+                                                                                                <td class="col-3 text-start px-4 fs-6 member_name">
+                                                                                                    <?php echo $row->Company_name ?>
+                                                                                                </td>
+                                                                                                <td class="col-3 text-start px-2 d-flex fs-6 my-auto">
+                                                                                                    <input type="text" name="currency-field" id="currency-field" class="amount_val border-light bg-light rounded" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" placeholder="$1,000,000.00">
+                                                                                                    <!-- <span class="my-auto fs-6 fw-bold mr-1">$</span>
+                                                                                                                <input type="text" class="form-control form-control-solid w-75 h-40px" name="name" value=""></input> -->
+                                                                                                </td>
+                                                                                                <td class="col-2 text-start px-2 fs-6">
+                                                                                                    <img class="mx-2" src="<?php echo base_url() ?>assets/media/icons/duotune/abstract/abs011.svg" alt="" style="height:16px;width:16px;"><img src="<?php echo base_url() ?>assets/media/icons/duotune/art/art005.svg" alt="" style="height:16px;width:16px;">
+                                                                                                </td>
+                                                                                                <td class="col-2 text-start fs-6">
+                                                                                                    <span class="text-start badge badge-light-primary py-3">$
+                                                                                                        <?php echo number_format($row->amount) ?></span>
+                                                                                                </td>
+                                                                                                <?php if ($row->financial_month == "") { ?>
+                                                                                                    <td class="px-3 col-2 text-start fs-6">
+                                                                                                        NA
+                                                                                                    </td>
+                                                                                                <?php } else { ?>
+                                                                                                    <td class="px-3 col-2 text-start fs-6">
+                                                                                                        <?php echo $row->financial_month ?>&nbsp;<?php echo $row->financial_year ?>
+                                                                                                    </td>
 
                                                                                                 <?php } ?>
+                                                                                            </tr>
+                                                                                        <?php } ?>
 
 
 
 
 
 
-                                                                                            </tbody>
-                                                                                        </table>
-                                                                                    </div>
-
-                                                                                    <style>
-                                                                                    ::-webkit-scrollbar {
-                                                                                        width: 3px;
-                                                                                    }
-
-                                                                                    ::-webkit-scrollbar-track {
-                                                                                        background: #f1f1f1;
-                                                                                    }
-
-                                                                                    ::-webkit-scrollbar-thumb {
-                                                                                        background: #d6d6d6;
-                                                                                        border-radius: 10px;
-                                                                                    }
-
-                                                                                    .table-fixed {
-                                                                                        width: 100%;
-                                                                                    }
-
-                                                                                    .table-fixed tbody {
-                                                                                        height: 350px;
-                                                                                        overflow-y: auto;
-                                                                                        width: 100%;
-                                                                                    }
-
-                                                                                    .table-fixed thead,
-                                                                                    .table-fixed tbody,
-                                                                                    .table-fixed tr,
-                                                                                    .table-fixed td,
-                                                                                    .table-fixed th {
-                                                                                        display: block;
-                                                                                    }
-
-                                                                                    .table-fixed tbody td {
-                                                                                        float: left;
-                                                                                    }
-
-                                                                                    .table-fixed thead tr th {
-                                                                                        border-color: #0881b1;
-                                                                                        float: left;
-                                                                                    }
-
-                                                                                    .read_article {
-                                                                                        text-align: center;
-                                                                                    }
-                                                                                    </style>
-
-
-                                                                                    <div class="row justify-content-between my-3 align-items-center"
-                                                                                        style="margin-top:40px;" id="grandSection" hidden>
-                                                                                        <div class="rounded-2 bg-light-primary p-3 col-6 d-flex justify-content-between w-100 w-md-50 my-1">
-                                                                                            <p class="m-0 fw-bolder">
-                                                                                                <b>Grand
-                                                                                                    Total</b>
-                                                                                            </p>
-                                                                                            <p class="m-0"><b>$ 123</b>
-                                                                                            </p>
-                                                                                        </div>
-                                                                                        <div class="col-6 d-flex align-items-end my-1">
-                                                                                            <div class="text-end"><a
-                                                                                                    class="btn btn-sm btn-success me-2 rounded-3 p-2 w-80px"
-                                                                                                    href="javascript:;">Submit</a>
-                                                                                            </div>
-                                                                                            <div class="text-end"><a
-                                                                                                    class="btn btn-sm btn-danger me-2 rounded-3 p-2 w-80px"
-                                                                                                    href="javascript:;">Cancel</a>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <!--end::Card body-->
-                                                                                </div>
-                                                                                <!--end::Card body-->
+                                                                                    </tbody>
+                                                                                </table>
                                                                             </div>
-                                                                        </div>
 
-</div>
-                                                                    
+                                                                            <style>
+                                                                                ::-webkit-scrollbar {
+                                                                                    width: 3px;
+                                                                                }
 
+                                                                                ::-webkit-scrollbar-track {
+                                                                                    background: #f1f1f1;
+                                                                                }
 
-                                                                                    <style>
-                                                                                    ::-webkit-scrollbar {
-                                                                                        width: 3px;
-                                                                                    }
+                                                                                ::-webkit-scrollbar-thumb {
+                                                                                    background: #d6d6d6;
+                                                                                    border-radius: 10px;
+                                                                                }
 
-                                                                                    ::-webkit-scrollbar-track {
-                                                                                        background: #f1f1f1;
-                                                                                    }
+                                                                                .table-fixed {
+                                                                                    width: 100%;
+                                                                                }
 
-                                                                                    ::-webkit-scrollbar-thumb {
-                                                                                        background: #d6d6d6;
-                                                                                        border-radius: 10px;
-                                                                                    }
+                                                                                .table-fixed tbody {
+                                                                                    height: 350px;
+                                                                                    overflow-y: auto;
+                                                                                    width: 100%;
+                                                                                }
 
-                                                                                    .table-fixed {
-                                                                                        width: 100%;
-                                                                                    }
+                                                                                .table-fixed thead,
+                                                                                .table-fixed tbody,
+                                                                                .table-fixed tr,
+                                                                                .table-fixed td,
+                                                                                .table-fixed th {
+                                                                                    display: block;
+                                                                                }
 
-                                                                                    .table-fixed tbody {
-                                                                                        height: 350px;
-                                                                                        overflow-y: auto;
-                                                                                        width: 100%;
-                                                                                        overflow-x:scroll;
-                                                                                    }
+                                                                                .table-fixed tbody td {
+                                                                                    float: left;
+                                                                                }
 
-                                                                                    .table-fixed thead,
-                                                                                    .table-fixed tbody,
-                                                                                    .table-fixed tr,
-                                                                                    .table-fixed td,
-                                                                                    .table-fixed th {
-                                                                                        display: block;
-                                                                                    }
+                                                                                .table-fixed thead tr th {
+                                                                                    border-color: #0881b1;
+                                                                                    float: left;
+                                                                                }
 
-                                                                                    .table-fixed tbody td {
-                                                                                        float: left;
-                                                                                    }
-
-                                                                                    .table-fixed thead tr th {
-                                                                                        border-color: #0881b1;
-                                                                                        float: left;
-                                                                                    }
-
-                                                                                    .read_article {
-                                                                                        text-align: center;
-                                                                                    }
-                                                                                    </style>
+                                                                                .read_article {
+                                                                                    text-align: center;
+                                                                                }
+                                                                            </style>
 
 
-                                                                                    
-                                                                                    <!--end::Card body-->
+                                                                            <div class="row justify-content-between my-3 align-items-center" style="margin-top:40px;" id="grandSection" hidden>
+                                                                                <div class="rounded-2 bg-light-primary p-3 col-6 d-flex justify-content-between w-100 w-md-50 my-1">
+                                                                                    <p class="m-0 fw-bolder">
+                                                                                        <b>Grand
+                                                                                            Total</b>
+                                                                                    </p>
+                                                                                    <p class="m-0" id="total_sum"><b></b>
+                                                                                    </p>
                                                                                 </div>
-                                                                                <!--end::Card body-->
+                                                                                <div class="col-6 d-flex align-items-end my-1">
+                                                                                    <div class="text-end"><a class="btn btn-sm btn-success me-2 rounded-3 p-2 w-80px" href="javascript:;" id="btnSubmit" onclick="disable(this)">Submit</a>
+                                                                                    </div>
+                                                                                    <div class="text-end"><a class="btn btn-sm btn-danger me-2 rounded-3 p-2 w-80px" href="javascript:;" id="btnCancel">Cancel</a>
+                                                                                    </div>
+                                                                                </div>
                                                                             </div>
+                                                                            <!--end::Card body-->
                                                                         </div>
+                                                                        <!--end::Card body-->
                                                                     </div>
                                                                 </div>
-                                                                <!--end::Tap pane-->
-
 
                                                             </div>
-                                                        </div>
-                                                    </div>
 
+
+
+                                                            <style>
+
+                                                            </style>
+
+
+
+                                                            <!--end::Card body-->
+                                                        </div>
+                                                        <!--end::Card body-->
+                                                    </div>
                                                 </div>
-                                                <!--end::Tables Widget 3-->
                                             </div>
                                         </div>
-                                        <!--end::Tab content-->
+                                        <!--end::Tap pane-->
+
+
                                     </div>
-                                    <!--end::General Widget 1-->
-
                                 </div>
-                                <!--end::Col-->
-
-
-
                             </div>
+
                         </div>
+                        <!--end::Tables Widget 3-->
                     </div>
                 </div>
+                <!--end::Tab content-->
             </div>
+            <!--end::General Widget 1-->
+
         </div>
+        <!--end::Col-->
+
+
+
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
 
 
 
 
-        <div class="footer py-4 d-flex flex-lg-column" id="kt_footer">
-            <!--begin::Container-->
-            <div class="container-xxl d-flex flex-column flex-md-row align-items-center justify-content-between">
-                <!--begin::Copyright-->
-                <div class="text-dark order-2 order-md-1">
-                    <span class="text-muted fw-bold me-1">2022 ©</span>
-                    <a href="#" target="_blank" class="text-gray-800 text-hover-primary">SafetyHq</a>
-                </div>
-                <!--end::Copyright-->
-                <!--begin::Menu-->
-                <ul class="menu menu-gray-600 menu-hover-primary fw-bold order-1">
-                    <li class="menu-item">
-                        <span class="text-muted fw-bold me-1">Powered by:</span>
-                        <a href="#" target="_blank" class="text-gray-800 text-hover-primary">Buyyn</a>
-                    </li>
-
-                </ul>
-                <!--end::Menu-->
+    <div class="footer py-4 d-flex flex-lg-column" id="kt_footer">
+        <!--begin::Container-->
+        <div class="container-xxl d-flex flex-column flex-md-row align-items-center justify-content-between">
+            <!--begin::Copyright-->
+            <div class="text-dark order-2 order-md-1">
+                <span class="text-muted fw-bold me-1">2022 ©</span>
+                <a href="#" target="_blank" class="text-gray-800 text-hover-primary">SafetyHq</a>
             </div>
-            <!--end::Container-->
+            <!--end::Copyright-->
+            <!--begin::Menu-->
+            <ul class="menu menu-gray-600 menu-hover-primary fw-bold order-1">
+                <li class="menu-item">
+                    <span class="text-muted fw-bold me-1">Powered by:</span>
+                    <a href="#" target="_blank" class="text-gray-800 text-hover-primary">Buyyn</a>
+                </li>
+
+            </ul>
+            <!--end::Menu-->
         </div>
-        <!--end::Header-->
-        <!--begin::Toolbar-->
+        <!--end::Container-->
+    </div>
+    <!--end::Header-->
+    <!--begin::Toolbar-->
 
 
-<script>
+    <script>
+        //disable submit button after click
+        function disable(a) {
+            a.disabled = true;
+        }
+
+        // generate a ready function for a reference number
+        $(document).ready(function() {
+            $('#reference_number').val("SHQ" + Math.floor(100000 + Math.random() * 900000));
+
+            // Returns a text representation of the calculated total sum.
+            $("#submitTable").on('input', '.amount_val', function() {
+                var calculated_total_sum = 0;
+
+                $("#submitTable .amount_val").each(function() {
+                    var get_textbox_value = $(this).val();
+                    var value = parseFloat(get_textbox_value.slice(1).replace(/,/g, ''));
+
+                    if ($.isNumeric(value)) {
+                        calculated_total_sum += parseFloat(value);
+                    }
+                });
+                $('#total_sum').text("$ " + calculated_total_sum.toLocaleString('en-US'));
+            });
+
+
+
+        });
         // Add new child submissions
         $('#btnSubmit').click(function() {
             var member_name = [];
@@ -3093,6 +1674,7 @@
             $('.amount_val').each(function() {
                 amount.push($(this).val());
             });
+            
 
             var today = new Date();
             var dd = String(today.getDate()).padStart(2, '0');
@@ -3134,20 +1716,20 @@
                         financial_year: year
                     },
                     success: function(data) {
-                        alert(data);
+                        // alert(data);
 
-                        // swal.fire({
-                        //     text: "Submitted ! " + month + " " + year + " ",
-                        //     icon: "error",
-                        //     buttonsStyling: false,
-                        //     confirmButtonText: "Ok, got it!",
-                        //     customClass: {
-                        //         confirmButton: "btn font-weight-bold btn-light-primary"
-                        //     }
-                        // }).then(function() {
-                        //     location.reload();
-                        // });
-                        
+                        swal.fire({
+                            text: "Submitted ! " + month + " " + year + " ",
+                            icon: "success",
+                            buttonsStyling: false,
+                            confirmButtonText: "Ok, got it!",
+                            customClass: {
+                                confirmButton: "btn font-weight-bold btn-light-primary"
+                            }
+                        }).then(function() {
+                            location.reload();
+                        });
+
                     },
 
 
@@ -3242,14 +1824,11 @@
             caret_pos = updated_len - original_len + caret_pos;
             input[0].setSelectionRange(caret_pos, caret_pos);
         }
-        // generate a ready function for a reference number
-        $(document).ready(function() {
-            $('#reference_number').val("SHQ" + Math.floor(100000 + Math.random() * 900000));
-        });
+
 
         // Create a parent submission
-         // Create a parent submission
-         $('#btnAddParent').click(function() {
+        // Create a parent submission
+        $('#btnAddParent').click(function() {
             var month = $('#financialMonth').val();
             var year = $('#financialYear').val();
             //  var date_placed = month + " " + year;
@@ -3300,7 +1879,7 @@
 
             } else {
                 $.ajax({
-                    url: "<?php echo base_url(); ?>Submissions/insert_parent",
+                    url: "<?php echo base_url(); ?>SupplierSubmissions/insert_parent",
                     method: "POST",
                     data: {
                         reference_number: reference_number,
@@ -3317,8 +1896,10 @@
                         var ret_data = $.parseJSON(data);
                         if (ret_data.status == 0) {
                             Swal.fire({
-                                text: ret_data.ret_data,
+                                title: "You already submitted data for selected month",
                                 icon: "error",
+                                html: '<a href="<?php echo base_url() ?>SupplierSubmissions/view_submission?id=' +
+                                    ret_data.ret_data + '">You want to see the submissions</a>',
                                 buttonsStyling: !1,
                                 confirmButtonText: "Ok, got it!",
                                 customClass: {
@@ -3343,8 +1924,44 @@
                 });
             }
         });
-        
-</script>
+
+        // Cancel button
+        $('#btnCancel').click(function() {
+            var referernce_number = $('#reference_number').val();
+            Swal.fire({
+                text: "Are you sure you want to cancel ?",
+                icon: "warning",
+                showCancelButton: !0,
+                buttonsStyling: !1,
+                confirmButtonText: "Yes, Cancel!",
+                cancelButtonText: "No",
+                customClass: {
+                    confirmButton: "btn fw-bold btn-warning",
+                    cancelButton: "btn fw-bold btn-active-light-primary"
+                }
+            }).then((function(e) {
+                if (e.value) {
+                    $.ajax({
+                        url: "<?php echo base_url(); ?>submissions/cancel_submission",
+                        method: "POST",
+                        data: {
+                            referernce_number: referernce_number,
+
+                        },
+                        success: function(data) {
+                            location.reload();
+
+                        }
+                    });
+
+
+
+                } else {
+
+                }
+            }))
+        });
+    </script>
 
 
 
@@ -3353,7 +1970,8 @@
 
 
 
-        
+
 
 </body>
+
 </html>

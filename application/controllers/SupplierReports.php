@@ -22,6 +22,7 @@ class SupplierReports extends CI_Controller
             // $data["suppliers"] = $this->msubmissions->get_suppliers();
             // $data["member_submissions"] = $this->msubmissions->member_submissions();
             $value["notifications"]=$this->mnotifications->view_supplier_notifications($user_id);
+            $value["notification_count"]=$this->mnotifications->notification_count($user_id);
             $this->load->view('supplier_header',$value);
             $this->load->view('supplier_reports');
          }

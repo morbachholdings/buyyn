@@ -10,6 +10,8 @@ class Processlog extends CI_Controller
         $this->load->model('musers');
         $this->load->model('mprocess');
         $this->load->library('session');
+        $this->load->model('mnotifications');
+        
     }
 
     public function processors()
@@ -18,6 +20,7 @@ class Processlog extends CI_Controller
             $data["Email"] = $this->session->userdata('full_name');
             $value["user_name"] = $this->musers->user_details($data);
             $log["all_processors"] = $this->mprocess->all_processors();
+            $value["notification_count"]=$this->mnotifications->notification_count_all();
             $this->load->view('header',$value);
             $this->load->view('process_log',$log);
         } else {

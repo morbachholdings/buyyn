@@ -7,6 +7,7 @@ class Users extends CI_Controller
     {
         parent::__construct();
         $this->load->model('musers');
+        $this->load->model('mnotifications');
         $this->load->library('session');
     }
 
@@ -18,6 +19,7 @@ class Users extends CI_Controller
             $user_id = $this->musers->user_id($email);
             $value["user_name"] = $this->musers->user_details($data);
             $data["users_list"] = $this->musers->list_users();
+            $value["notification_count"]=$this->mnotifications->notification_count_all();
             $this->load->view('header', $value);
             $this->load->view('users', $data);
         } else {
@@ -37,6 +39,7 @@ class Users extends CI_Controller
             $user["user_details"] = $this->musers->single_user($user_id);
             $user["log_details"] = $this->musers->log_details($user_id);
             $user["rebates"] = $this->musers->rebates($user_id);
+            $value["notification_count"]=$this->mnotifications->notification_count_all();
             $this->load->view('header', $value);
             $this->load->view('edit_users', $user);
         } else {

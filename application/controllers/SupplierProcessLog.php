@@ -22,6 +22,7 @@ class SupplierProcessLog extends CI_Controller
             $user_id = $this->musers->user_id($data["Email"]);
             $log["all_processors"] = $this->mprocess->view_process($user_id);
             $value["notifications"]=$this->mnotifications->view_supplier_notifications($user_id);
+            $value["notification_count"]=$this->mnotifications->notification_count($user_id);
             $this->load->view('supplier_header',$value);
             $this->load->view('supplier_process_log',$log);
          }

@@ -196,78 +196,69 @@
                                                                         <div class="col-xl-12">
                                                                             <!--end::Card header-->
                                                                             <!--begin::Table Widget 4-->
-                                                                            <div class="card card-flush">
-                            <!--begin::Card header-->
-                            <div class="card-header align-items-center py-5 gap-2 gap-md-5">
-                                <!--begin::Card title-->
-                                <div class="card-title">
-                                    <!--begin::Search-->
-                                    <div class="d-flex align-items-center position-relative my-1">
-                                        <!--begin::Svg Icon | path: icons/duotune/general/gen021.svg-->
-                                        <span class="svg-icon svg-icon-1 position-absolute ms-4">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <rect opacity="0.5" x="17.0365" y="15.1223" width="8.15546" height="2"
-                                                    rx="1" transform="rotate(45 17.0365 15.1223)" fill="currentColor" />
-                                                <path
-                                                    d="M11 19C6.55556 19 3 15.4444 3 11C3 6.55556 6.55556 3 11 3C15.4444 3 19 6.55556 19 11C19 15.4444 15.4444 19 11 19ZM11 5C7.53333 5 5 7.53333 5 11C5 14.4667 7.53333 17 11 17C14.4667 17 17 14.4667 17 11C17 7.53333 14.4667 5 11 5Z"
-                                                    fill="currentColor" />
-                                            </svg>
-                                        </span>
-                                        <!--end::Svg Icon-->
-                                        <input type="text" data-kt-ecommerce-order-filter="search_new" class="form-control form-control-solid w-250px ps-14" placeholder="Search Order" />
-                                    </div>
-                                    <!--end::Search-->
-                                </div>
-                                <!--end::Card title-->
-                                <!--begin::Card toolbar-->
-                                <div class="card-toolbar flex-row-fluid justify-content-end gap-5">
-                                    <!--begin::Flatpickr-->
-                                    <div class="input-group w-250px">
-                                        <input class="form-control form-control-solid rounded rounded-end-0" placeholder="Pick date range" id="kt_ecommerce_sales_flatpickr2" />
-                                        <button class="btn btn-icon btn-light" id="kt_ecommerce_sales_flatpickr_clear2">
-                                            <!--begin::Svg Icon | path: icons/duotune/arrows/arr088.svg-->
-                                            <span class="svg-icon svg-icon-2">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <rect opacity="0.5" x="7.05025" y="15.5356" width="12" height="2"
-                                                        rx="1" transform="rotate(-45 7.05025 15.5356)"
-                                                        fill="currentColor" />
-                                                    <rect x="8.46447" y="7.05029" width="12" height="2" rx="1"
-                                                        transform="rotate(45 8.46447 7.05029)" fill="currentColor" />
-                                                </svg>
-                                            </span>
-                                            <!--end::Svg Icon-->
-                                        </button>
-                                    </div>
-                                    <!--end::Flatpickr-->
-                                    <div class="w-100 mw-150px">
-                                        <!--begin::Select2-->
-                                        <select class="form-select form-select-solid" data-control="select2" data-hide-search="true" data-placeholder="Status" data-kt-ecommerce-order-filter="status_new">
-                                            <option></option>
-                                            <?php foreach ($view_submisions->result() as $row) { ?>
+                                                                            <div class="card card-flush h-xl-100">
+                                                                                <div class="card-header align-items-center py-5 gap-2 gap-md-5">
+                                                                                    <!--begin::Card title-->
+                                                                                    <div class="card-title">
+                                                                                        <!--begin::Search-->
+                                                                                        <div class="d-flex align-items-center position-relative my-1">
+                                                                                            <!--begin::Svg Icon | path: icons/duotune/general/gen021.svg-->
+                                                                                            <span class="svg-icon svg-icon-1 position-absolute ms-4">
+                                                                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                                    <rect opacity="0.5" x="17.0365" y="15.1223" width="8.15546" height="2" rx="1" transform="rotate(45 17.0365 15.1223)" fill="currentColor" />
+                                                                                                    <path d="M11 19C6.55556 19 3 15.4444 3 11C3 6.55556 6.55556 3 11 3C15.4444 3 19 6.55556 19 11C19 15.4444 15.4444 19 11 19ZM11 5C7.53333 5 5 7.53333 5 11C5 14.4667 7.53333 17 11 17C14.4667 17 17 14.4667 17 11C17 7.53333 14.4667 5 11 5Z" fill="currentColor" />
+                                                                                                </svg>
+                                                                                            </span>
+                                                                                            <!--end::Svg Icon-->
+                                                                                            <input type="text" data-kt-ecommerce-order-filter="search" class="form-control form-control-solid w-250px ps-14" placeholder="Search Order" />
+                                                                                        </div>
+                                                                                        <!--end::Search-->
+                                                                                    </div>
+                                                                                    <!--end::Card title-->
+                                                                                    <!--begin::Card toolbar-->
+                                                                                    <div class="card-toolbar flex-row-fluid justify-content-end gap-5">
+                                                                                        <!--begin::Flatpickr-->
+                                                                                        <div class="input-group w-250px">
+                                                                                            <input class="form-control form-control-solid rounded rounded-end-0" placeholder="Pick date range" id="kt_ecommerce_sales_flatpickr" />
+                                                                                            <button class="btn btn-icon btn-light" id="kt_ecommerce_sales_flatpickr_clear">
+                                                                                                <!--begin::Svg Icon | path: icons/duotune/arrows/arr088.svg-->
+                                                                                                <span class="svg-icon svg-icon-2">
+                                                                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                                        <rect opacity="0.5" x="7.05025" y="15.5356" width="12" height="2" rx="1" transform="rotate(-45 7.05025 15.5356)" fill="currentColor" />
+                                                                                                        <rect x="8.46447" y="7.05029" width="12" height="2" rx="1" transform="rotate(45 8.46447 7.05029)" fill="currentColor" />
+                                                                                                    </svg>
+                                                                                                </span>
+                                                                                                <!--end::Svg Icon-->
+                                                                                            </button>
+                                                                                        </div>
+                                                                                        <!--end::Flatpickr-->
+                                                                                        <div class="w-100 mw-150px">
+                                                                                            <!--begin::Select2-->
+                                                                                            <select class="form-select form-select-solid" data-control="select2" data-hide-search="true" data-placeholder="Status" data-kt-ecommerce-order-filter="status">
+                                                                                                <option></option>
+                                                                                                <option value="all">All</option>
+                                                                                                <?php foreach ($view_submisions->result() as $row) { ?>
                                                                                                     <option value="<?php echo $row->financial_month ?>&nbsp;<?php echo $row->financial_year ?>"><?php echo $row->financial_month ?>&nbsp;<?php echo $row->financial_year ?></option>
                                                                                                 <?php } ?>
-                                        </select>
-                                        <!--end::Select2-->
-                                    </div>
-                                    <!--begin::Add product-->
-                                    <a href="../../demo19/dist/apps/ecommerce/catalog/add-product.html" class="btn btn-primary">Export</a>
-                                    <!--end::Add product-->
-                                </div>
-                                <!--end::Card toolbar-->
-                            </div>
-                            <!--end::Card header-->
-                            <!--begin::Card body-->
-                            <div class="card-body pt-0">
-                                <!-- kt_ecommerce_sales_table -->
-                                <!--begin::Table-->
-                                <table class="table align-middle table-row-dashed fs-6 gy-5" id="kt_ecommerce_sales_table2">
-                                    <!--begin::Table head-->
-                                    <thead>
-                                        <!--begin::Table row-->
-                                        <tr class="text-start text-gray-400 fw-bold fs-7 text-uppercase gs-0">
-                                        <th class="w-10px pe-2">
+                                                                                            </select>
+                                                                                            <!--end::Select2-->
+                                                                                        </div>
+                                                                                        <!--begin::Add product-->
+                                                                                        <a href="../../demo19/dist/apps/ecommerce/catalog/add-product.html" class="btn btn-primary">Add Order</a>
+                                                                                        <!--end::Add product-->
+                                                                                    </div>
+                                                                                    <!--end::Card toolbar-->
+                                                                                </div>
+
+                                                                                <div class="card-body pt-0">
+                                                                                    <!-- kt_ecommerce_sales_table -->
+                                                                                    <!--begin::Table-->
+                                                                                    <table class="table align-middle table-row-dashed fs-6 gy-5" id="kt_ecommerce_sales_table">
+                                                                                        <!--begin::Table head-->
+                                                                                        <thead>
+                                                                                            <!--begin::Table row-->
+                                                                                            <tr class="text-start text-gray-400 fw-bold fs-7 text-uppercase gs-0">
+                                                                                                <th class="w-10px pe-2">
                                                                                                     <div class="form-check form-check-sm form-check-custom form-check-solid me-3">
                                                                                                         <input class="form-check-input" type="checkbox" data-kt-check="true" data-kt-check-target="#kt_ecommerce_sales_table .form-check-input" value="1" />
                                                                                                     </div>
@@ -279,12 +270,12 @@
                                                                                                 <th class="text-end min-w-100px">Date Added</th>
                                                                                                 <th class="text-end min-w-100px">Amount</th>
                                                                                                 <th class="text-end min-w-100px">Actions</th>
-                                        </tr>
-                                        <!--end::Table row-->
-                                    </thead>
-                                    <!--end::Table head-->
-                                     <!--begin::Table body-->
-                                     <tbody class="fw-semibold text-gray-600">
+                                                                                            </tr>
+                                                                                            <!--end::Table row-->
+                                                                                        </thead>
+                                                                                        <!--end::Table head-->
+                                                                                        <!--begin::Table body-->
+                                                                                        <tbody class="fw-semibold text-gray-600">
                                                                                             <!--begin::Table row-->
                                                                                             <?php foreach ($view_submisions->result() as $row) { ?>
                                                                                                 <tr>
@@ -297,7 +288,7 @@
                                                                                                     <!--end::Checkbox-->
                                                                                                     <!--begin::Order ID=-->
                                                                                                     <td>
-                                                                                                        <a href="../../demo19/dist/apps/ecommerce/sales/details.html" class="text-gray-800 text-hover-primary fw-bold"><?php echo $row->reference_number ?></a>
+                                                                                                        <a href="<?php echo base_url() ?>submissions/view_submission?id=<?php echo $row->reference_number ?>" class="text-gray-800 text-hover-primary fw-bold"><?php echo $row->reference_number ?></a>
                                                                                                     </td>
                                                                                                     <!--end::Order ID=-->
                                                                                                     <!--begin::Customer=-->
@@ -351,7 +342,7 @@
                                                                                                         <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
                                                                                                             <!--begin::Menu item-->
                                                                                                             <div class="menu-item px-3">
-                                                                                                                <a href="../../demo19/dist/apps/ecommerce/sales/details.html" class="menu-link px-3">View</a>
+                                                                                                                <a href="<?php echo base_url() ?>invoice/invoice?id=<?php echo base64_encode($row->reference_number) ?>" target="_blank" class="menu-link px-3">View</a>
                                                                                                             </div>
                                                                                                             <!--end::Menu item-->
                                                                                                             <!--begin::Menu item-->
@@ -372,12 +363,14 @@
                                                                                             <?php } ?>
                                                                                         </tbody>
                                                                                         <!--end::Table body-->
-                                </table>
-                                <!--end::Table-->
-                            </div>
-                            <!--end::Card body-->
-                        </div>
-                                                                            
+                                                                                    </table>
+                                                                                    <!--end::Table-->
+                                                                                </div>
+
+
+
+
+                                                                            </div>
                                                                             <!--end::Table Widget 4-->
 
 
@@ -521,189 +514,170 @@
                                                                 <div class="m-0">
                                                                     <div class="card-body pt-0">
                                                                         <div class="col-xl-12">
-
-                        <div class="card card-flush">
-                            <!--begin::Card header-->
-                            <div class="card-header align-items-center py-5 gap-2 gap-md-5">
-                                <!--begin::Card title-->
-                                <div class="card-title">
-                                    <!--begin::Search-->
-                                    <div class="d-flex align-items-center position-relative my-1">
-                                        <!--begin::Svg Icon | path: icons/duotune/general/gen021.svg-->
-                                        <span class="svg-icon svg-icon-1 position-absolute ms-4">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <rect opacity="0.5" x="17.0365" y="15.1223" width="8.15546" height="2"
-                                                    rx="1" transform="rotate(45 17.0365 15.1223)" fill="currentColor" />
-                                                <path
-                                                    d="M11 19C6.55556 19 3 15.4444 3 11C3 6.55556 6.55556 3 11 3C15.4444 3 19 6.55556 19 11C19 15.4444 15.4444 19 11 19ZM11 5C7.53333 5 5 7.53333 5 11C5 14.4667 7.53333 17 11 17C14.4667 17 17 14.4667 17 11C17 7.53333 14.4667 5 11 5Z"
-                                                    fill="currentColor" />
-                                            </svg>
-                                        </span>
-                                        <!--end::Svg Icon-->
-                                        <input type="text" data-kt-ecommerce-order-filter="search_new3" class="form-control form-control-solid w-250px ps-14" placeholder="Search Order" />
-                                    </div>
-                                    <!--end::Search-->
-                                </div>
-                                <!--end::Card title-->
-                                <!--begin::Card toolbar-->
-                                <div class="card-toolbar flex-row-fluid justify-content-end gap-5">
-                                    <!--begin::Flatpickr-->
-                                    <div class="input-group w-250px">
-                                        <input class="form-control form-control-solid rounded rounded-end-0" placeholder="Pick date range" id="kt_ecommerce_sales_flatpickr3" />
-                                        <button class="btn btn-icon btn-light" id="kt_ecommerce_sales_flatpickr_clear3">
-                                            <!--begin::Svg Icon | path: icons/duotune/arrows/arr088.svg-->
-                                            <span class="svg-icon svg-icon-2">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <rect opacity="0.5" x="7.05025" y="15.5356" width="12" height="2"
-                                                        rx="1" transform="rotate(-45 7.05025 15.5356)"
-                                                        fill="currentColor" />
-                                                    <rect x="8.46447" y="7.05029" width="12" height="2" rx="1"
-                                                        transform="rotate(45 8.46447 7.05029)" fill="currentColor" />
-                                                </svg>
-                                            </span>
-                                            <!--end::Svg Icon-->
-                                        </button>
-                                    </div>
-                                    <!--end::Flatpickr-->
-                                    <div class="w-100 mw-150px">
-                                        <!--begin::Select2-->
-                                        <select class="form-select form-select-solid" data-control="select2" data-hide-search="true" data-placeholder="Status" data-kt-ecommerce-order-filter="status_new3">
-                                            <option></option>
-                                            <option value="all">All</option>
-                                                                                                <?php foreach ($view_invoiced_submisions->result() as $row) { ?>
+                                                                            <div class="card card-flush">
+                                                                                <!--begin::Card header-->
+                                                                                <div class="card-header align-items-center py-5 gap-2 gap-md-5">
+                                                                                    <!--begin::Card title-->
+                                                                                    <div class="card-title">
+                                                                                        <!--begin::Search-->
+                                                                                        <div class="d-flex align-items-center position-relative my-1">
+                                                                                            <!--begin::Svg Icon | path: icons/duotune/general/gen021.svg-->
+                                                                                            <span class="svg-icon svg-icon-1 position-absolute ms-4">
+                                                                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                                    <rect opacity="0.5" x="17.0365" y="15.1223" width="8.15546" height="2" rx="1" transform="rotate(45 17.0365 15.1223)" fill="currentColor" />
+                                                                                                    <path d="M11 19C6.55556 19 3 15.4444 3 11C3 6.55556 6.55556 3 11 3C15.4444 3 19 6.55556 19 11C19 15.4444 15.4444 19 11 19ZM11 5C7.53333 5 5 7.53333 5 11C5 14.4667 7.53333 17 11 17C14.4667 17 17 14.4667 17 11C17 7.53333 14.4667 5 11 5Z" fill="currentColor" />
+                                                                                                </svg>
+                                                                                            </span>
+                                                                                            <!--end::Svg Icon-->
+                                                                                            <input type="text" data-kt-ecommerce-order-filter="search_new" class="form-control form-control-solid w-250px ps-14" placeholder="Search Order" />
+                                                                                        </div>
+                                                                                        <!--end::Search-->
+                                                                                    </div>
+                                                                                    <!--end::Card title-->
+                                                                                    <!--begin::Card toolbar-->
+                                                                                    <div class="card-toolbar flex-row-fluid justify-content-end gap-5">
+                                                                                        <!--begin::Flatpickr-->
+                                                                                        <div class="input-group w-250px">
+                                                                                            <input class="form-control form-control-solid rounded rounded-end-0" placeholder="Pick date range" id="kt_ecommerce_sales_flatpickr2" />
+                                                                                            <button class="btn btn-icon btn-light" id="kt_ecommerce_sales_flatpickr_clear2">
+                                                                                                <!--begin::Svg Icon | path: icons/duotune/arrows/arr088.svg-->
+                                                                                                <span class="svg-icon svg-icon-2">
+                                                                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                                        <rect opacity="0.5" x="7.05025" y="15.5356" width="12" height="2" rx="1" transform="rotate(-45 7.05025 15.5356)" fill="currentColor" />
+                                                                                                        <rect x="8.46447" y="7.05029" width="12" height="2" rx="1" transform="rotate(45 8.46447 7.05029)" fill="currentColor" />
+                                                                                                    </svg>
+                                                                                                </span>
+                                                                                                <!--end::Svg Icon-->
+                                                                                            </button>
+                                                                                        </div>
+                                                                                        <!--end::Flatpickr-->
+                                                                                        <div class="w-100 mw-150px">
+                                                                                            <!--begin::Select2-->
+                                                                                            <select class="form-select form-select-solid" data-control="select2" data-hide-search="true" data-placeholder="Status" data-kt-ecommerce-order-filter="status_new">
+                                                                                                <option></option>
+                                                                                                <option value="all">All</option>
+                                                                                                <?php foreach ($view_invoiced->result() as $row) { ?>
                                                                                                     <option value="<?php echo $row->financial_month ?>&nbsp;<?php echo $row->financial_year ?>"><?php echo $row->financial_month ?>&nbsp;<?php echo $row->financial_year ?></option>
                                                                                                 <?php } ?>
-                                        </select>
-                                        <!--end::Select2-->
-                                    </div>
-                                    <!--begin::Add product-->
-                                    <a href="../../demo19/dist/apps/ecommerce/catalog/add-product.html" class="btn btn-primary">Export</a>
-                                    <!--end::Add product-->
-                                </div>
-                                <!--end::Card toolbar-->
-                            </div>
-                            <!--end::Card header-->
-                            <!--begin::Card body-->
-                            <div class="card-body pt-0">
-                                <!-- kt_ecommerce_sales_table -->
-                                <!--begin::Table-->
-                                <table class="table align-middle table-row-dashed fs-6 gy-5" id="kt_ecommerce_sales_table3">
-                                    <!--begin::Table head-->
-                                    <thead>
-                                        <!--begin::Table row-->
-                                        <tr class="text-start text-gray-400 fw-bold fs-7 text-uppercase gs-0">
-                                            <th class="w-10px pe-2">
-                                                <div class="form-check form-check-sm form-check-custom form-check-solid me-3">
-                                                    <input class="form-check-input" type="checkbox" data-kt-check="true" data-kt-check-target="#kt_ecommerce_sales_table3 .form-check-input" value="1" />
-                                                </div>
-                                            </th>
-                                            <th class="min-w-100px">#</th>
-                                            <th class="min-w-175px">Supplier</th>
-                                            <th class="text-end min-w-70px">Reference Date</th>
-                                            <th class="text-end min-w-100px">Total Sales</th>
-                                            <th class="text-end min-w-100px">Date Added</th>
-                                            <th class="text-end min-w-100px">Status</th>
-                                            <th class="text-end min-w-100px">Actions</th>
-                                        </tr>
-                                        <!--end::Table row-->
-                                    </thead>
-                                    <!--end::Table head-->
-                                    <!--begin::Table body-->
-                                    <tbody class="fw-semibold text-gray-600">
+                                                                                            </select>
+                                                                                            <!--end::Select2-->
+                                                                                        </div>
+                                                                                        <!--begin::Add product-->
+                                                                                        <a href="../../demo19/dist/apps/ecommerce/catalog/add-product.html" class="btn btn-primary">Add Order</a>
+                                                                                        <!--end::Add product-->
+                                                                                    </div>
+                                                                                    <!--end::Card toolbar-->
+                                                                                </div>
+                                                                                <!--end::Card header-->
+                                                                                <!--begin::Card body-->
+                                                                                <div class="card-body pt-0">
+                                                                                    <!-- kt_ecommerce_sales_table -->
+                                                                                    <!--begin::Table-->
+                                                                                    <table class="table align-middle table-row-dashed fs-6 gy-5" id="kt_ecommerce_sales_table2">
+                                                                                        <!--begin::Table head-->
+                                                                                        <thead>
                                                                                             <!--begin::Table row-->
-                                                                                            <?php foreach ($view_invoiced_submisions->result() as $row) { ?>
-                                                                                                <tr>
-                                                                                                    <!--begin::Checkbox-->
-                                                                                                    <td>
-                                                                                                        <div class="form-check form-check-sm form-check-custom form-check-solid">
-                                                                                                            <input class="form-check-input" type="checkbox" value="1" />
-                                                                                                        </div>
-                                                                                                    </td>
-                                                                                                    <!--end::Checkbox-->
-                                                                                                    <!--begin::Order ID=-->
-                                                                                                    <td>
-                                                                                                        <a href="../../demo19/dist/apps/ecommerce/sales/details.html" class="text-gray-800 text-hover-primary fw-bold"><?php echo $row->reference_number ?></a>
-                                                                                                    </td>
-                                                                                                    <!--end::Order ID=-->
-                                                                                                    <!--begin::Customer=-->
-                                                                                                    <td>
-                                                                                                        <div class="d-flex align-items-center">
-
-                                                                                                            <!--begin::Title-->
-                                                                                                            <p class="text-gray-800 fs-5 fw-bold"><?php echo $row->Company_name ?></p>
-
-                                                                                                        </div>
-                                                                                                    </td>
-                                                                                                    <!--end::Customer=-->
-                                                                                                    <!--begin::Status=-->
-                                                                                                    <td class="text-end pe-0" data-order="Refunded">
-                                                                                                        <p class="text-gray-800 fs-5 fw-bold"><?php echo $row->financial_month ?>&nbsp;<?php echo $row->financial_year ?> </p>
-
-
-                                                                                                    </td>
-                                                                                                    <!--end::Status=-->
-                                                                                                    <!--begin::Total=-->
-                                                                                                    <td class="text-end pe-0">
-
-                                                                                                        <?php if ($row->sub_status == 1) { ?>
-                                                                                                            <div class="badge badge-light-primary">Invoiced</div>
-                                                                                                        <?php } ?>
-                                                                                                    </td>
-                                                                                                    <!--end::Total=-->
-                                                                                                    <!--begin::Date Added=-->
-                                                                                                    <td class="text-end" data-order="2022-11-16">
-                                                                                                        <?php $date = date_create($row->date_placed) ?>
+                                                                                            <tr class="text-start text-gray-400 fw-bold fs-7 text-uppercase gs-0">
+                                                                                                <th class="w-10px pe-2">
+                                                                                                    <div class="form-check form-check-sm form-check-custom form-check-solid me-3">
+                                                                                                        <input class="form-check-input" type="checkbox" data-kt-check="true" data-kt-check-target="#kt_ecommerce_sales_table2 .form-check-input" value="1" />
+                                                                                                    </div>
+                                                                                                </th>
+                                                                                                <th class="min-w-100px">#</th>
+                                                                                                <th class="min-w-175px">Supplier</th>
+                                                                                                <th class="text-end min-w-70px">Reference Date</th>
+                                                                                                <th class="text-end min-w-70px">Status</th>
+                                                                                                <th class="text-end min-w-100px">Date Added</th>
+                                                                                                <th class="text-end min-w-100px">Amount</th>
+                                                                                                <th class="text-end min-w-100px">Actions</th>
+                                                                                            </tr>
+                                                                                            <!--end::Table row-->
+                                                                                        </thead>
+                                                                                        <!--end::Table head-->
+                                                                                        <!--begin::Table body-->
+                                                                                        <tbody class="fw-semibold text-gray-600">
+                                                                                            <?php foreach($view_invoiced->result() as $row){ ?>
+                                                                                            <!--begin::Table row-->
+                                                                                            <tr>
+                                                                                                <!--begin::Checkbox-->
+                                                                                                <td>
+                                                                                                    <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                                                                        <input class="form-check-input" type="checkbox" value="1" />
+                                                                                                    </div>
+                                                                                                </td>
+                                                                                                <!--end::Checkbox-->
+                                                                                                <!--begin::Order ID=-->
+                                                                                                <td>
+                                                                                                    <a href="<?php echo base_url() ?>submissions/view_submission?id=<?php echo $row->reference_number ?>" class="text-gray-800 text-hover-primary fw-bold"><?php echo $row->reference_number ?></a>
+                                                                                                </td>
+                                                                                                <!--end::Order ID=-->
+                                                                                                <!--begin::Customer=-->
+                                                                                                <td> <span class="fw-bold"><?php echo $row->Company_name ?></span></td>
+                                                                                                <!--end::Customer=-->
+                                                                                                <!--begin::Status=-->
+                                                                                                <td class="text-end pe-0" data-order="Refunded">
+                                                                                                    <!--begin::Badges-->
+                                                                                                    <span class="fw-bold"><?php echo $row->financial_month ?>&nbsp;<?php echo $row->financial_year ?> </span>
+                                                                                                    <!--end::Badges-->
+                                                                                                </td>
+                                                                                                <!--end::Status=-->
+                                                                                                <!--begin::Total=-->
+                                                                                                <td class="text-end pe-0">
+                                                                                                    <?php if($row->sub_status == 1){ ?>
+                                                                                                    <div class="badge badge-light-success">Invoiced</div>
+                                                                                                    <?php } ?>
+                                                                                                </td>
+                                                                                                <!--end::Total=-->
+                                                                                                <!--begin::Date Added=-->
+                                                                                                <td class="text-end" data-order="2022-11-16">
+                                                                                                <?php $date = date_create($row->date_placed) ?>
                                                                                                         <span class="fw-bold"><?php echo date_format($date, "d/m/Y"); ?></span>
-                                                                                                    </td>
-                                                                                                    <!--end::Date Added=-->
-                                                                                                    <!--begin::Date Modified=-->
-                                                                                                    <td class="text-end">
-                                                                                                        <p class="text-gray-800 fs-5 fw-bold">$ <?php echo number_format($row->amount, 2); ?></p>
-                                                                                                    </td>
-                                                                                                    <!--end::Date Modified=-->
-                                                                                                    <!--begin::Action=-->
-                                                                                                    <td class="text-end">
-                                                                                                        <a href="#" class="btn btn-sm btn-light btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions
-                                                                                                            <!--begin::Svg Icon | path: icons/duotune/arrows/arr072.svg-->
-                                                                                                            <span class="svg-icon svg-icon-5 m-0">
-                                                                                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                                                                    <path d="M11.4343 12.7344L7.25 8.55005C6.83579 8.13583 6.16421 8.13584 5.75 8.55005C5.33579 8.96426 5.33579 9.63583 5.75 10.05L11.2929 15.5929C11.6834 15.9835 12.3166 15.9835 12.7071 15.5929L18.25 10.05C18.6642 9.63584 18.6642 8.96426 18.25 8.55005C17.8358 8.13584 17.1642 8.13584 16.75 8.55005L12.5657 12.7344C12.2533 13.0468 11.7467 13.0468 11.4343 12.7344Z" fill="currentColor" />
-                                                                                                                </svg>
-                                                                                                            </span>
-                                                                                                            <!--end::Svg Icon-->
-                                                                                                        </a>
-                                                                                                        <!--begin::Menu-->
-                                                                                                        <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
-                                                                                                            <!--begin::Menu item-->
-                                                                                                            <div class="menu-item px-3">
-                                                                                                                <a href="../../demo19/dist/apps/ecommerce/sales/details.html" class="menu-link px-3">View</a>
-                                                                                                            </div>
-                                                                                                            <!--end::Menu item-->
-                                                                                                            <!--begin::Menu item-->
-                                                                                                            <div class="menu-item px-3">
-                                                                                                                <a href="javascript:;" class="menu-link px-3 btnInvoice" refNum="<?php echo $row->reference_number ?>">Invoiced</a>
-                                                                                                            </div>
-                                                                                                            <!--end::Menu item-->
-                                                                                                            <!--begin::Menu item-->
-                                                                                                            <div class="menu-item px-3">
-                                                                                                                <a href="javascript:;" class="menu-link px-3 btnDelete" refNum="<?php echo $row->reference_number ?>" data-kt-ecommerce-order-filter="delete_row">Delete</a>
-                                                                                                            </div>
-                                                                                                            <!--end::Menu item-->
+                                                                                                </td>
+                                                                                                <!--end::Date Added=-->
+                                                                                                <!--begin::Date Modified=-->
+                                                                                                <td class="text-end">
+                                                                                                    <span class="fw-bold">$ <?php echo number_format($row->amount,2) ?></span>
+                                                                                                </td>
+                                                                                                <!--end::Date Modified=-->
+                                                                                                <!--begin::Action=-->
+                                                                                                <td class="text-end">
+                                                                                                    <a href="#" class="btn btn-sm btn-light btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions
+                                                                                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr072.svg-->
+                                                                                                        <span class="svg-icon svg-icon-5 m-0">
+                                                                                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                                                <path d="M11.4343 12.7344L7.25 8.55005C6.83579 8.13583 6.16421 8.13584 5.75 8.55005C5.33579 8.96426 5.33579 9.63583 5.75 10.05L11.2929 15.5929C11.6834 15.9835 12.3166 15.9835 12.7071 15.5929L18.25 10.05C18.6642 9.63584 18.6642 8.96426 18.25 8.55005C17.8358 8.13584 17.1642 8.13584 16.75 8.55005L12.5657 12.7344C12.2533 13.0468 11.7467 13.0468 11.4343 12.7344Z" fill="currentColor" />
+                                                                                                            </svg>
+                                                                                                        </span>
+                                                                                                        <!--end::Svg Icon-->
+                                                                                                    </a>
+                                                                                                    <!--begin::Menu-->
+                                                                                                    <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+                                                                                                        <!--begin::Menu item-->
+                                                                                                        <div class="menu-item px-3">
+                                                                                                            <a href="<?php echo base_url() ?>invoice/invoice?id=<?php echo base64_encode($row->reference_number) ?>" target="_blank" class="menu-link px-3">View PDF</a>
                                                                                                         </div>
-                                                                                                        <!--end::Menu-->
-                                                                                                    </td>
-                                                                                                    <!--end::Action=-->
-                                                                                                </tr>
+                                                                                                        <!--end::Menu item-->
+                                                                                                        <!--begin::Menu item-->
+                                                                                                        <!--end::Menu item-->
+                                                                                                        <!--begin::Menu item-->
+                                                                                                        <div class="menu-item px-3">
+                                                                                                            <a href="#" class="menu-link px-3" data-kt-ecommerce-order-filter="delete_row_new">Delete</a>
+                                                                                                        </div>
+                                                                                                        <!--end::Menu item-->
+                                                                                                    </div>
+                                                                                                    <!--end::Menu-->
+                                                                                                </td>
+                                                                                                <!--end::Action=-->
+                                                                                            </tr>
                                                                                             <?php } ?>
                                                                                         </tbody>
-                                    <!--end::Table body-->
-                                </table>
-                                <!--end::Table-->
-                            </div>
-                            <!--end::Card body-->
-                        </div>
+                                                                                        <!--end::Table body-->
+                                                                                    </table>
+                                                                                    <!--end::Table-->
+                                                                                </div>
+                                                                                <!--end::Card body-->
+                                                                            </div>
+
                                                                             <div class="separator"></div>
                                                                             <!--end::Menu separator-->
                                                                             <div class="col-md-3 mt-3 mr-3 d-flex gap-4">
@@ -973,99 +947,108 @@
     <script src="<?php echo base_url() ?>assets/plugins/global/plugins.bundle.js"></script>
     <!-- <script src="<?php echo base_url() ?>assets/js/scripts.bundle.js"></script> -->
     <script src="<?php echo base_url() ?>assets/plugins/custom/datatables/datatables.bundle.js"></script>
-    <script src="<?php echo base_url() ?>assets/js/newTable.js"></script>
 
     <script src="<?php echo base_url() ?>assets/js/custom/apps/chat/chat.js"></script>
-    
+    <script src="<?php echo base_url() ?>assets/js/newTable.js"></script>
     <script src="<?php echo base_url() ?>assets/js/custom/utilities/modals/upgrade-plan.js"></script>
     <script src="<?php echo base_url() ?>assets/js/custom/utilities/modals/create-app.js"></script>
     <script src="<?php echo base_url() ?>assets/js/custom/utilities/modals/users-search.js"></script>
 
     <script>
-        <script>
-        var hostUrl = "assets/";
-    </script>
-    <script src="assets/plugins/global/plugins.bundle.js"></script>
-    <script src="assets/js/scripts.bundle.js"></script>
-    <script src="assets/plugins/custom/datatables/datatables.bundle.js"></script>
+        //disable submit button after click
+        function disable(a) {
+            a.disabled = true;
+        }
 
-    <script src="assets/js/custom/apps/chat/chat.js"></script>
-    <script src="assets/js/custom/utilities/modals/upgrade-plan.js"></script>
-    <script src="assets/js/custom/utilities/modals/create-app.js"></script>
-    <script src="assets/js/custom/utilities/modals/users-search.js"></script>
+        // generate a ready function for a reference number
+        $(document).ready(function() {
+            $('#reference_number').val("SHQ" + Math.floor(100000 + Math.random() * 900000));
 
+            // Returns a text representation of the calculated total sum.
+            $("#submitTable").on('input', '.amount_val', function() {
+                var calculated_total_sum = 0;
 
-    <script>
-        var table;
-        var datatable;
-        var template;
+                $("#submitTable .amount_val").each(function() {
+                    var get_textbox_value = $(this).val();
+                    var value = parseFloat(get_textbox_value.slice(1).replace(/,/g, ''));
 
-        "use strict";
+                    if ($.isNumeric(value)) {
+                        calculated_total_sum += parseFloat(value);
+                    }
+                });
+                $('#total_sum').text("$ " + calculated_total_sum.toLocaleString('en-US'));
+            });
 
-        // Class definition
-        var KTAppEcommerceSalesListing = function() {
-            // Shared variables
             var table;
             var datatable;
-            var flatpickr;
-            var minDate, maxDate;
+            var template;
 
-            // Private functions
-            var initDatatable = function() {
-                // Init datatable --- more info on datatables: https://datatables.net/manual/
-                datatable = $(table).DataTable({
-                    "info": false,
-                    'order': [],
-                    'pageLength': 10,
-                    'columnDefs': [{
-                            orderable: false,
-                            targets: 0
-                        }, // Disable ordering on column 0 (checkbox)
-                        {
-                            orderable: false,
-                            targets: 7
-                        }, // Disable ordering on column 7 (actions)
-                    ]
-                });
+            "use strict";
 
-                // Re-init functions on datatable re-draws
-                datatable.on('draw', function() {
-                    handleDeleteRows();
-                });
-            }
+            // Class definition
+            var KTAppEcommerceSalesListing = function() {
+                // Shared variables
+                var table;
+                var datatable;
+                var flatpickr;
+                var minDate, maxDate;
 
-            // Init flatpickr --- more info :https://flatpickr.js.org/getting-started/
-            var initFlatpickr = () => {
-                const element = document.querySelector('#kt_ecommerce_sales_flatpickr2');
-                flatpickr = $(element).flatpickr({
-                    altInput: true,
-                    altFormat: "d/m/Y",
-                    dateFormat: "Y-m-d",
-                    mode: "range",
-                    onChange: function(selectedDates, dateStr, instance) {
-                        handleFlatpickr(selectedDates, dateStr, instance);
-                    },
-                });
-            }
-            var handleSearchDatatable = () => {
-                const filterSearch = document.querySelector('[data-kt-ecommerce-order-filter="search_new"]');
-                filterSearch.addEventListener('keyup', function(e) {
-                    datatable.search(e.target.value).draw();
-                });
-            }
-            var handleStatusFilter = () => {
-                const filterStatus = document.querySelector('[data-kt-ecommerce-order-filter="status_new"]');
-                $(filterStatus).on('change', e => {
-                    let value = e.target.value;
-                    if (value === 'all') {
-                        value = '';
-                    }
-                    datatable.column(3).search(value).draw();
-                });
-            }
+                // Private functions
+                var initDatatable = function() {
+                    // Init datatable --- more info on datatables: https://datatables.net/manual/
+                    datatable = $(table).DataTable({
+                        "info": false,
+                        'order': [],
+                        'pageLength': 10,
+                        'columnDefs': [{
+                                orderable: false,
+                                targets: 0
+                            }, // Disable ordering on column 0 (checkbox)
+                            {
+                                orderable: false,
+                                targets: 7
+                            }, // Disable ordering on column 7 (actions)
+                        ]
+                    });
 
-            // Handle flatpickr --- more info: https://flatpickr.js.org/events/
-            var handleFlatpickr = (selectedDates, dateStr, instance) => {
+                    // Re-init functions on datatable re-draws
+                    datatable.on('draw', function() {
+                        handleDeleteRows();
+                    });
+                }
+
+                // Init flatpickr --- more info :https://flatpickr.js.org/getting-started/
+                var initFlatpickr = () => {
+                    const element = document.querySelector('#kt_ecommerce_sales_flatpickr2');
+                    flatpickr = $(element).flatpickr({
+                        altInput: true,
+                        altFormat: "d/m/Y",
+                        dateFormat: "Y-m-d",
+                        mode: "range",
+                        onChange: function(selectedDates, dateStr, instance) {
+                            handleFlatpickr(selectedDates, dateStr, instance);
+                        },
+                    });
+                }
+                var handleSearchDatatable = () => {
+                    const filterSearch = document.querySelector('[data-kt-ecommerce-order-filter="search_new"]');
+                    filterSearch.addEventListener('keyup', function(e) {
+                        datatable.search(e.target.value).draw();
+                    });
+                }
+                var handleStatusFilter = () => {
+                    const filterStatus = document.querySelector('[data-kt-ecommerce-order-filter="status_new"]');
+                    $(filterStatus).on('change', e => {
+                        let value = e.target.value;
+                        if (value === 'all') {
+                            value = '';
+                        }
+                        datatable.column(3).search(value).draw();
+                    });
+                }
+
+                // Handle flatpickr --- more info: https://flatpickr.js.org/events/
+                var handleFlatpickr = (selectedDates, dateStr, instance) => {
                     minDate = selectedDates[0] ? new Date(selectedDates[0]) : null;
                     maxDate = selectedDates[1] ? new Date(selectedDates[1]) : null;
 
@@ -1094,122 +1077,94 @@
                     datatable.draw();
                 }
                 // Handle clear flatpickr
-            var handleClearFlatpickr = () => {
-                const clearButton = document.querySelector('#kt_ecommerce_sales_flatpickr_clear2');
-                clearButton.addEventListener('click', e => {
-                    flatpickr.clear();
-                });
-            }
-
-            // Delete cateogry
-            var handleDeleteRows = () => {
-                // Select all delete buttons
-                const deleteButtons = table.querySelectorAll('[data-kt-ecommerce-order-filter="delete_row_new"]');
-
-                deleteButtons.forEach(d => {
-                    // Delete button on click
-                    d.addEventListener('click', function(e) {
-                        e.preventDefault();
-
-                        // Select parent row
-                        const parent = e.target.closest('tr');
-
-                        // Get category name
-                        const orderID = parent.querySelector('[data-kt-ecommerce-order-filter="order_id"]').innerText;
-
-                        // SweetAlert2 pop up --- official docs reference: https://sweetalert2.github.io/
-                        Swal.fire({
-                            text: "Are you sure you want to delete order: " + orderID + "?",
-                            icon: "warning",
-                            showCancelButton: true,
-                            buttonsStyling: false,
-                            confirmButtonText: "Yes, delete!",
-                            cancelButtonText: "No, cancel",
-                            customClass: {
-                                confirmButton: "btn fw-bold btn-danger",
-                                cancelButton: "btn fw-bold btn-active-light-primary"
-                            }
-                        }).then(function(result) {
-                            if (result.value) {
-                                Swal.fire({
-                                    text: "You have deleted " + orderID + "!.",
-                                    icon: "success",
-                                    buttonsStyling: false,
-                                    confirmButtonText: "Ok, got it!",
-                                    customClass: {
-                                        confirmButton: "btn fw-bold btn-primary",
-                                    }
-                                }).then(function() {
-                                    // Remove current row
-                                    datatable.row($(parent)).remove().draw();
-                                });
-                            } else if (result.dismiss === 'cancel') {
-                                Swal.fire({
-                                    text: orderID + " was not deleted.",
-                                    icon: "error",
-                                    buttonsStyling: false,
-                                    confirmButtonText: "Ok, got it!",
-                                    customClass: {
-                                        confirmButton: "btn fw-bold btn-primary",
-                                    }
-                                });
-                            }
-                        });
-                    })
-                });
-            }
-
-
-            // Public methods
-            return {
-                init: function() {
-                    table = document.querySelector('#kt_ecommerce_sales_table2');
-
-                    if (!table) {
-                        return;
-                    }
-
-                    initDatatable();
-                    initFlatpickr();
-                    handleSearchDatatable();
-                    handleStatusFilter();
-                    handleDeleteRows();
-                    handleClearFlatpickr();
+                var handleClearFlatpickr = () => {
+                    const clearButton = document.querySelector('#kt_ecommerce_sales_flatpickr_clear2');
+                    clearButton.addEventListener('click', e => {
+                        flatpickr.clear();
+                    });
                 }
-            };
-        }();
 
-        // On document ready
-        KTUtil.onDOMContentLoaded(function() {
-            KTAppEcommerceSalesListing.init();
-        });
+                // Delete cateogry
+                var handleDeleteRows = () => {
+                    // Select all delete buttons
+                    const deleteButtons = table.querySelectorAll('[data-kt-ecommerce-order-filter="delete_row_new"]');
+
+                    deleteButtons.forEach(d => {
+                        // Delete button on click
+                        d.addEventListener('click', function(e) {
+                            e.preventDefault();
+
+                            // Select parent row
+                            const parent = e.target.closest('tr');
+
+                            // Get category name
+                            const orderID = parent.querySelector('[data-kt-ecommerce-order-filter="order_id"]').innerText;
+
+                            // SweetAlert2 pop up --- official docs reference: https://sweetalert2.github.io/
+                            Swal.fire({
+                                text: "Are you sure you want to delete order: " + orderID + "?",
+                                icon: "warning",
+                                showCancelButton: true,
+                                buttonsStyling: false,
+                                confirmButtonText: "Yes, delete!",
+                                cancelButtonText: "No, cancel",
+                                customClass: {
+                                    confirmButton: "btn fw-bold btn-danger",
+                                    cancelButton: "btn fw-bold btn-active-light-primary"
+                                }
+                            }).then(function(result) {
+                                if (result.value) {
+                                    Swal.fire({
+                                        text: "You have deleted " + orderID + "!.",
+                                        icon: "success",
+                                        buttonsStyling: false,
+                                        confirmButtonText: "Ok, got it!",
+                                        customClass: {
+                                            confirmButton: "btn fw-bold btn-primary",
+                                        }
+                                    }).then(function() {
+                                        // Remove current row
+                                        datatable.row($(parent)).remove().draw();
+                                    });
+                                } else if (result.dismiss === 'cancel') {
+                                    Swal.fire({
+                                        text: orderID + " was not deleted.",
+                                        icon: "error",
+                                        buttonsStyling: false,
+                                        confirmButtonText: "Ok, got it!",
+                                        customClass: {
+                                            confirmButton: "btn fw-bold btn-primary",
+                                        }
+                                    });
+                                }
+                            });
+                        })
+                    });
+                }
 
 
+                // Public methods
+                return {
+                    init: function() {
+                        table = document.querySelector('#kt_ecommerce_sales_table2');
 
+                        if (!table) {
+                            return;
+                        }
 
-
-        //disable submit button after click
-        function disable(a) {
-            a.disabled = true;
-        }
-
-        // generate a ready function for a reference number
-        $(document).ready(function() {
-            $('#reference_number').val("SHQ" + Math.floor(100000 + Math.random() * 900000));
-
-            // Returns a text representation of the calculated total sum.
-            $("#submitTable").on('input', '.amount_val', function() {
-                var calculated_total_sum = 0;
-
-                $("#submitTable .amount_val").each(function() {
-                    var get_textbox_value = $(this).val();
-                    var value = parseFloat(get_textbox_value.slice(1).replace(/,/g, ''));
-
-                    if ($.isNumeric(value)) {
-                        calculated_total_sum += parseFloat(value);
+                        initDatatable();
+                        initFlatpickr();
+                        handleSearchDatatable();
+                        handleStatusFilter();
+                        handleDeleteRows();
+                        handleClearFlatpickr();
                     }
-                });
-                $('#total_sum').text("$ " + calculated_total_sum.toLocaleString('en-US'));
+                };
+            }();
+
+            // On document ready
+            KTUtil.onDOMContentLoaded(function() {
+                KTAppEcommerceSalesListing.init();
             });
 
 
@@ -1309,7 +1264,7 @@
 
         // Add new child submissions
         $('#btnSubmit').click(function() {
-            var member_name = [];
+            var members_name = [];
             var amount = [];
             var referernce_number = $('#reference_number').val();
             var supplier_name = $('#supplier').val();
@@ -1319,7 +1274,7 @@
             var year = $('#financialYear').val();
 
             $('.member_name').each(function() {
-                member_name.push($(this).text());
+                members_name.push($(this).text());
             });
             $('.amount_val').each(function() {
                 amount.push($(this).val());
@@ -1349,6 +1304,7 @@
                     }
                 });
             } else {
+
                 $('#btnSubmit').prop('disabled', true);
                 $.ajax({
                     url: "<?php echo base_url(); ?>Submissions/insert_child_invoices",
@@ -1358,13 +1314,14 @@
                         supplier_name: supplier_name,
                         status: status,
                         date_placed: today,
-                        member_name: member_name,
+                        members_name: members_name,
                         amount: amount,
                         is_child: is_child,
                         financial_month: month,
                         financial_year: year
                     },
                     success: function(data) {
+
                         swal.fire({
                             text: "Submitted ! " + month + " " + year + " ",
                             icon: "success",

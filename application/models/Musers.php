@@ -553,4 +553,10 @@ class Musers extends CI_Model
 
 		return $array;
 	}
+
+	public function all_members()
+	{
+		$sql="SELECT * FROM users WHERE user_group_id=3";
+		return $this->db->query($sql);
+	}
 }

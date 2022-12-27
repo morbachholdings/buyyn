@@ -8,6 +8,7 @@ class Edit_Profile extends CI_Controller
         parent::__construct();
         $this->load->model('musers');
         $this->load->library('session');
+        $this->load->model('mnotifications');
     }
 
     public function edit()
@@ -19,6 +20,7 @@ class Edit_Profile extends CI_Controller
             $value["user_name"] = $this->musers->user_details($data);
             $pro["all_data"] = $this->musers->user_details($data);
             $pro["all_logins"] = $this->musers->all_logins($user_id);
+            $value["notification_count"]=$this->mnotifications->notification_count_all();
             $this->load->view('header', $value);
             $this->load->view('profile', $pro);
         } else {

@@ -31,7 +31,10 @@
                                             <!--begin::Info-->
                                             <div class="d-flex align-items-center">
                                                 <!--begin::Amount-->
-                                                <span class="fs-2hx fw-bold text-dark me-2 lh-1 ls-n2">1,836</span>
+                                                <span class="fs-4 fw-semibold text-gray-400 me-1 align-self-start">$</span>
+                                                <?php foreach ($top_sales->result() as $row) { ?>
+                                                    <span class="fs-2hx fw-bold text-dark me-2 lh-1 ls-n2"><?php echo number_format($row->total_sales, 2) ?></span>
+                                                <?php } ?>
                                                 <!--end::Amount-->
                                                 <!--begin::Badge-->
                                                 <span class="badge badge-light-danger fs-base">
@@ -48,7 +51,7 @@
                                             </div>
                                             <!--end::Info-->
                                             <!--begin::Subtitle-->
-                                            <span class="text-gray-400 pt-1 fw-semibold fs-6">Total Purchases</span>
+                                            <span class="text-gray-400 pt-1 fw-semibold fs-6">Total Purchases-Current Financial Year</span>
                                             <!--end::Subtitle-->
                                         </div>
                                         <!--end::Title-->
@@ -86,8 +89,30 @@
                                                 <!--begin::Currency-->
                                                 <span class="fs-4 fw-semibold text-gray-400 me-1 align-self-start">$</span>
                                                 <!--end::Currency-->
-                                                <!--begin::Amount-->
-                                                <span class="fs-2hx fw-bold text-dark me-2 lh-1 ls-n2">2,420</span>
+
+
+                                                <?php
+
+                                                $total_rebate_amount = 0;
+                                                foreach ($top_rebate->result() as $row) {
+                                                    if ($row->supplier_rebate > 0) {
+                                                        $total_rebate = $row->supplier_rebate + $row->member_rebate;
+                                                        $amount = $row->TOTAL;
+                                                        $value = $total_rebate / 100;
+                                                        $rebate_amount = $amount * $value;
+                                                        $new_total = $amount - $rebate_amount;
+                                                        $new_rebate = $new_total / floatval($row->supplier_rebate);
+                                                        $new_shq_val = $new_total - $new_rebate;
+                                                        $total_rebate_amount += $new_shq_val;
+                                                    } else {
+                                                        $new_shq_val = $row->TOTAL;
+                                                    }
+                                                }
+
+                                                ?>
+
+
+                                                <span class="fs-2hx fw-bold text-dark me-2 lh-1 ls-n2"><?php echo number_format($total_rebate_amount, 2)?></span>
                                                 <!--end::Amount-->
                                                 <!--begin::Badge-->
                                                 <span class="badge badge-light-primary fs-base">
@@ -131,8 +156,11 @@
                                         <div class="card-title d-flex flex-column">
                                             <!--begin::Info-->
                                             <div class="d-flex align-items-center">
+                                            <span class="fs-4 fw-semibold text-gray-400 me-1 align-self-start">$</span>
                                                 <!--begin::Amount-->
-                                                <span class="fs-2hx fw-bold text-dark me-2 lh-1 ls-n2">1,836</span>
+                                                <?php foreach($top_member->result() as $row){ ?>
+                                                <span class="fs-2hx fw-bold text-dark me-2 lh-1 ls-n2"><?php echo number_format($row->top_sales, 2) ?></span>
+                                                <?php } ?>
                                                 <!--end::Amount-->
                                                 <!--begin::Badge-->
                                                 <span class="badge badge-light-danger fs-base">
@@ -149,7 +177,9 @@
                                             </div>
                                             <!--end::Info-->
                                             <!--begin::Subtitle-->
-                                            <span class="text-gray-400 pt-1 fw-semibold fs-6">Top Performing Member</span>
+                                            <?php foreach($top_member->result() as $row){ ?>
+                                            <span class="text-gray-400 pt-1 fw-semibold fs-6">Top Performing Member - <?php echo ($row->comp_name) ?></span>
+                                            <?php } ?>
                                             <!--end::Subtitle-->
                                         </div>
                                         <!--end::Title-->
@@ -181,7 +211,7 @@
                             <!--begin::Col-->
                             <div class="col mb-xl-10">
                                 <div class="card h-100">
-                                    <div class="flex-sm-column flex-md-row align-items-end justify-content-end mt-3 mb-3 p-2">
+                                    <div class="row">
                                         <div class="col-md-2 mt-3 m-2">
                                             <select name="language" aria-label="Select Year" data-control="select2" data-placeholder="Select a language..." class="form-select form-select-solid form-select-lg">
                                                 <option value="- Select Action -">- Select Year -</option>
@@ -325,7 +355,7 @@
                                                             <?php } else { ?>
                                                                 <span class="badge py-3 px-4 fs-7 badge-light-danger">Failed</span>
                                                             <?php } ?>
-                                                            
+
                                                         </td>
                                                         <td class="" data-order="58">
                                                             <span class="text-dark fw-bold"><?php echo $row->First_name ?></span>

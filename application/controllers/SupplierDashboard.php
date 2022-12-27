@@ -22,12 +22,13 @@ class SupplierDashboard extends CI_Controller
             $email=$this->session->userdata('full_name');
             $user_id = $this->musers->user_id($email);
             $value["user_name"] = $this->musers->user_details($data);
-            // $data["suppliers"] = $this->msubmissions->get_suppliers();
-            // $data["member_submissions"] = $this->msubmissions->member_submissions();
             $log["all_processors"] = $this->mprocess->view_process($user_id);
+            $value["all_processors"] = $this->mprocess->view_process($user_id);
             $log["view_total_sales"] = $this->mdashboard->view_total_sales($user_id);
             $log["view_top_sales"] = $this->mdashboard->view_top_sales($user_id);
+            $log["all_membrs"] = $this->musers->all_members();
             $value["notifications"]=$this->mnotifications->view_supplier_notifications($user_id);
+            $value["notification_count"]=$this->mnotifications->notification_count($user_id);
             $this->load->view('supplier_header',$value);
             $this->load->view('supplier_dashboard',$log);
         }

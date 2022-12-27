@@ -20,8 +20,9 @@ class Submissions extends CI_Controller
 			$data["suppliers"] = $this->msubmissions->get_suppliers();
 			$data["member_submissions"] = $this->msubmissions->member_submissions();
 			$data["view_submisions"]=$this->msubmissions->view_pending_submission_table();
-			$this->msubmissions->delete_zero();
-			$value["notifications"]=$this->mnotifications->view_notifications();
+			$data["view_invoiced_submisions"]=$this->msubmissions->view_invoiced_submission_table();
+			// $this->msubmissions->delete_zero();
+			$value["notification_count"]=$this->mnotifications->notification_count_all();
 			$this->load->view('header', $value);
 			$this->load->view('submissions', $data);
 		}
@@ -30,7 +31,8 @@ class Submissions extends CI_Controller
 	{
 		if ($this->session->userdata('full_name') != '') {
 			$data["Email"] = $this->session->userdata('full_name');
-
+			$email=$this->session->userdata('full_name');
+            $user_id = $this->musers->user_id($email);
 			$data = array(
 				'reference_number'	=>  $this->input->post('reference_number'),
 				'Supplier_ID'		=>	$this->input->post('supplier_name'),
@@ -42,28 +44,20 @@ class Submissions extends CI_Controller
 				'financial_month'	=> $this->input->post('financial_month'),
 				'financial_year'	=> $this->input->post('financial_year'),
 				'added_by'          => $this->musers->user_id($data["Email"]),
-				'updated_by'        => "",
 				'created_date'        => date("Y-M-d H:i:s"),
-				'updated_date'        => "",
-				'deleted_date'        => "",
+				
 
 
 			);
 
-			// $params=array(
+			$params=array(
 
-			// 	'title'=>"New Submission Added - ",
-			// 	'description'=>"asd",
-			// 	'user_id'=>176,
-			// 	'is_read'=>0,
-			// );
-
-			// $para["title"] = "test";
-			// $para["description"] = "testeest";
-			// $para["user_id"] = 176;
-			// $para["is_read"] = 0;
-
-			// $this->mnotifications->add_notification($params);
+				'title'=>"New Submission Added - ".$this->input->post('reference_number'),
+				'description'=>$this->input->post('financial_month'). " ".$this->input->post('financial_year'),
+				'user_id'=> $user_id,
+				'is_read'=>0,
+			);
+			$this->mnotifications->add_notification($params);
 
 			// $params = array(
 			// 	'user_id'=> $this->session->userdata('user_id'),
@@ -95,7 +89,7 @@ class Submissions extends CI_Controller
 				$data["Supplier_ID"] = $this->input->post('supplier_name');
 				$data["status"] = $this->input->post('status');
 				$data["date_placed"] = $this->input->post('date_placed');
-				$member = $member_name[$count];
+				$member = trim($member_name[$count]);
 				$data["Member_ID"] = $this->musers->member_id($member);
 				$amount_val = trim($amount[$count], "$");
 				$data["amount"] = str_replace(",", '', $amount_val);
@@ -103,12 +97,7 @@ class Submissions extends CI_Controller
 				$data["financial_month"] = $this->input->post('financial_month');
 				$data["financial_year"] = $this->input->post('financial_year');
 				$data["added_by"] = $user_id;
-				$data["updated_by"] = "";
 				$data["created_date"] = date("Y-M-d H:i:s");
-				$data["updated_date"] = "";
-				$data["deleted_date"] = "";
-
-
 
 				$this->msubmissions->add_child_invoice($data);
 			}
@@ -134,5 +123,33 @@ class Submissions extends CI_Controller
 			$this->load->view('header', $value);
 			$this->load->view('single_submission', $push);
 		}
+	}
+
+	public function mark_invoiced()
+	{
+		if ($this->session->userdata('full_name') != '') {
+			$email= $this->session->userdata('full_name');
+			$data["updated_by"] = $this->musers->user_id($email);
+			$data["updated_date"] = date("Y-M-d H:i:s");
+			$data["status"] = 1;
+			$data["reference_number"] = $this->input->post('reference');
+
+			print_r($this->msubmissions->mark_invoiced($data));
+
+		}
+
+	}
+	public function mark_deleted()
+	{
+		if ($this->session->userdata('full_name') != '') {
+			$email= $this->session->userdata('full_name');
+			$data["updated_by"] = $this->musers->user_id($email);
+			$data["deleted_date"] = date("Y-M-d H:i:s");
+			$data["reference_number"] = $this->input->post('reference');
+
+			print_r($this->msubmissions->mark_deleted($data));
+
+		}
+
 	}
 }

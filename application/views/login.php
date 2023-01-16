@@ -1,291 +1,301 @@
+<?php
+defined('BASEPATH') or exit('No direct script access allowed');
+?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-	<title>Login - Buyyn</title>
-	<meta charset="utf-8" />
-	<meta name="description" content="Morbach Holdings" />
-	<meta name="keywords" content="Morbach Holdings" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta property="og:locale" content="en_US" />
-	<meta property="og:type" content="article" />
-	<meta property="og:title" content="Morbach Holdings" />
-	<meta property="og:url" content="https://morbachholdings.com/" />
-	<meta property="og:site_name" content="Morbach Holdings" />
-	<link rel="canonical" href="https://morbachholdings.com/" />
-	<link rel="shortcut icon" href="assets/media/logos/favicon.png" />
-	<!--begin::Fonts-->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
-	<!--end::Fonts-->
-	<!--begin::Global Stylesheets Bundle(used by all pages)-->
-	<link href="<?php echo base_url() ?>assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
-	<link href="<?php echo base_url() ?>assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+	<meta charset="utf-8">
+	<title>Bino Tires - Workorder Management System</title>
+	<link rel="stylesheet" href="<?php echo base_url() ?>assets/css/login.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			background: #f6f5f7;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			font-family: 'Montserrat', sans-serif;
+			height: 100vh;
+			margin: -20px 0 50px;
+		}
+
+		h1 {
+			font-weight: bold;
+			margin: 1rem;
+		}
+
+		p {
+			font-size: 14px;
+			font-weight: 100;
+			line-height: 20px;
+			letter-spacing: 0.5px;
+			margin: 20px 0 30px;
+		}
+
+		button {
+			border-radius: 20px;
+			border: 1px solid #003087;
+			background-color: #003087;
+			color: #FFFFFF;
+			font-size: 12px;
+			font-weight: bold;
+			padding: 12px 45px;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			transition: transform 80ms ease-in;
+			cursor: pointer;
+		}
+
+		button:active {
+			transform: scale(0.95);
+		}
+
+		button:focus {
+			outline: none;
+		}
+
+		button.ghost {
+			background-color: transparent;
+			border-color: #FFFFFF;
+		}
+
+		form {
+			background-color: #FFFFFF;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+
+			height: 100%;
+			text-align: center;
+		}
+
+		.form__input-group {
+			width: 100%;
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+
+		input {
+			background-color: #eee;
+			border: none;
+			padding: 12px 15px;
+			margin: 8px 0;
+			width: 100%;
+			border-radius: 10px;
+		}
+
+		.container {
+			background-color: #fff;
+			border-radius: 10px;
+			box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+				0 10px 10px rgba(0, 0, 0, 0.22);
+			position: relative;
+			overflow: hidden;
+			width: 768px;
+			max-width: 100%;
+			min-height: 480px;
+		}
+
+		.form-container {
+			position: absolute;
+			top: 0;
+			height: 100%;
+			transition: all 0.6s ease-in-out;
+		}
+
+		.sign-in-container {
+			left: 0;
+			width: 50%;
+			z-index: 2;
+		}
+
+		.container.right-panel-active .sign-in-container {
+			transform: translateX(100%);
+		}
+
+		.sign-up-container {
+			left: 0;
+			width: 50%;
+			opacity: 0;
+			z-index: 1;
+		}
+
+		.container.right-panel-active .sign-up-container {
+			transform: translateX(100%);
+			opacity: 1;
+			z-index: 5;
+			animation: show 0.6s;
+		}
+
+
+		.overlay-container {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			width: 50%;
+			height: 100%;
+			overflow: hidden;
+			transition: transform 0.6s ease-in-out;
+			z-index: 100;
+		}
+
+		.container.right-panel-active .overlay-container {
+			transform: translateX(-100%);
+		}
+
+		.overlay {
+			background: #003087;
+			background: rgb(3, 39, 105);
+			background: -webkit-linear-gradient(135deg, rgba(3, 39, 105, 1) 35%, rgba(2, 61, 170, 1) 91%);
+			background: rgb(3, 39, 105);
+			background: linear-gradient(135deg, rgba(3, 39, 105, 1) 35%, rgba(2, 61, 170, 1) 91%);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: 0 0;
+			color: #FFFFFF;
+			position: relative;
+			left: -100%;
+			height: 100%;
+			width: 200%;
+			transform: translateX(0);
+			transition: transform 0.6s ease-in-out;
+		}
+
+		.container.right-panel-active .overlay {
+			transform: translateX(50%);
+		}
+
+		.overlay-panel {
+			position: absolute;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			padding: 0 40px;
+			text-align: center;
+			top: 0;
+			height: 100%;
+			width: 50%;
+			transform: translateX(0);
+			transition: transform 0.6s ease-in-out;
+		}
+
+		.overlay-left {
+			transform: translateX(-20%);
+		}
+
+		.container.right-panel-active .overlay-left {
+			transform: translateX(0);
+		}
+
+		.overlay-right {
+			right: 0;
+			transform: translateX(0);
+		}
+
+		.container.right-panel-active .overlay-right {
+			transform: translateX(20%);
+		}
+
+		a {
+			color: gray;
+		}
+
+		a:hover {
+			color: #003087;
+		}
+
+		label {
+			float: left;
+		}
+
+		.input-control.success input {
+			border-color: #09c372;
+		}
+
+		.input-control.error input {
+			border-color: #ff3860;
+		}
+
+		.input-control .error {
+			color: #ff3860;
+			font-size: 9px;
+			height: 13px;
+		}
+
+		img {
+			width: 100px;
+		}
+	</style>
+
+
 </head>
 
 <body>
-	<!--begin::Main-->
-	<!--begin::Root-->
-	<div class="d-flex flex-column flex-root">
-		<!--begin::Authentication - Sign-in -->
-		<div class="d-flex flex-column flex-lg-row flex-column-fluid">
-			<!--begin::Body-->
-			<div class="d-flex flex-column flex-lg-row-fluid w-lg-50 p-10 order-2 order-lg-1">
-				<!--begin::Form-->
-				<div class="d-flex flex-center flex-column flex-lg-row-fluid">
-					<!--begin::Wrapper-->
-					<div class="w-lg-500px p-10">
+	<div class="container" id="container">
+		<!-- sign in page -->
+		<div class="form-container sign-in-container">
+			<form method="POST" action="#" class="form" id="needs-validation" novalidate>
+				<img src="<?php echo base_url() ?>assets/images/logo.png">
+				<h1 class="form__title">Login</h1>
+				<div class="form__input-group">
 
-						<?php
-						if ($validated == 1) {
-						?>
+					<input type="text" id="email" maxlength="20" placeholder="Email" required>
 
-							<!--begin::Alert-->
-							<div class="alert alert-primary d-flex align-items-center p-5 verified_div">
-								<div class="d-flex flex-column">
-									<!--begin::Title-->
-									<h4 class="mb-1 text-dark">Email has been verified</h4>
-									<!--end::Title-->
-									<!--begin::Content-->
-									<span>The alert component can be used to highlight certain parts of your page for higher content visibility.</span>
-									<!--end::Content-->
-								</div>
-								<!--end::Wrapper-->
-							</div>
-
-
-						<?php } ?>
-
-						<!--begin::Alert-->
-						<div id="invalid_credentials">
-
-						</div>
-
-						<!--begin::Form-->
-						<form class="form w-100" novalidate="novalidate" id="kt_sign_in_form" data-kt-redirect-url="index.php" action="#">
-							<!--begin::Heading-->
-							<div class="text-center mb-11">
-								<!--begin::Title-->
-								<h1 class="text-dark fw-bolder mb-3">Sign In</h1>
-								<!--end::Title-->
-							</div>
-							<!--begin::Heading-->
-
-
-							<!--begin::Input group=-->
-							<div class="fv-row mb-8">
-								<!--begin::Email-->
-								<input type="text" placeholder="Email" name="email" id="email" autocomplete="off" class="form-control bg-transparent" />
-								<!--end::Email-->
-							</div>
-							<!--end::Input group=-->
-							<div class="fv-row mb-3">
-								<!--begin::Password-->
-								<input type="password" placeholder="Password" name="password" id="password" autocomplete="off" class="form-control bg-transparent" />
-								<!--end::Password-->
-							</div>
-							<!--end::Input group=-->
-							<!--begin::Wrapper-->
-							<div class="d-flex flex-stack flex-wrap gap-3 fs-base fw-semibold mb-8">
-								<div></div>
-								<!--begin::Link-->
-								<a href="<?php echo base_url() ?>authentication/reset" class="link-primary">Forgot Password ?</a>
-								<!--end::Link-->
-							</div>
-							<!--end::Wrapper-->
-							<!--begin::Submit button-->
-							<div class="d-grid mb-10">
-								<button type="submit" id="kt_sign_in_submit" class="btn btn-primary">
-									<!--begin::Indicator label-->
-									<span class="indicator-label">Sign In</span>
-									<!--end::Indicator label-->
-									<!--begin::Indicator progress-->
-									<span class="indicator-progress">Please wait...
-										<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
-									<!--end::Indicator progress-->
-								</button>
-							</div>
-							<!--end::Submit button-->
-							<!--begin::Sign up-->
-							<div class="text-gray-500 text-center fw-semibold fs-6">
-								Not a Member yet?
-								<a href="<?php echo base_url() ?>authentication/register" class="link-primary">Sign up</a>
-							</div>
-							<!--end::Sign up-->
-						</form>
-						<!--end::Form-->
-					</div>
-					<!--end::Wrapper-->
-				</div>
-				<!--end::Form-->
-				<!--begin::Footer-->
-				<div class="d-flex flex-center flex-wrap px-5">
+					<div class="error"></div>
 
 				</div>
-				<!--end::Footer-->
-			</div>
-			<!--end::Body-->
-			<!--begin::Aside-->
-			<div class="d-flex flex-lg-row-fluid w-lg-50 bgi-size-cover bgi-position-center order-1 order-lg-2" style="background-image: url(<?php echo base_url() ?>assets/media/misc/auth-bg.png)">
-				<!--begin::Content-->
-				<div class="d-flex flex-column flex-center py-7 py-lg-15 px-5 px-md-15 w-100">
-					<!--begin::Logo-->
-					<a href="../../demo20/dist/index.php" class="mb-0 mb-lg-12">
-						<img alt="Logo" src="<?php echo base_url() ?>assets/media/logos/logo.png" class="h-60px h-lg-60px" />
-					</a>
-					<!--end::Logo-->
-					<!--begin::Image-->
-					<img class="d-none d-lg-block mx-auto w-275px w-md-50 w-xl-500px mb-10 mb-lg-20" src="<?php echo base_url() ?>assets/media/misc/auth-screens.png" alt="" />
-					<!--end::Image-->
-					<!--begin::Title-->
-					<h1 class="d-none d-lg-block text-white fs-2qx fw-bolder text-center mb-7">
-						Fast, Efficient and Productive
-					</h1>
-					<!--end::Title-->
-					<!--begin::Text-->
-					<div class="d-none d-lg-block text-white fs-base text-center">
-						In this kind of post,
-						<a href="#" class="opacity-75-hover text-warning fw-bold me-1">the blogger</a>introduces a person they’ve interviewed <br />and provides some
-						background information about
-						<a href="#" class="opacity-75-hover text-warning fw-bold me-1">the interviewee</a>and their <br />work following this is a transcript of the
-						interview.
-					</div>
-					<!--end::Text-->
+				<div class="form__input-group">
+
+					<input type="password" class="form__input" name="pass" id="pass" maxlength="20" placeholder="Password" required>
 				</div>
-				<!--end::Content-->
-			</div>
-			<!--end::Aside-->
+
+				<div class="form__input-group">
+					<a href="<?php echo base_url() ?>welcome/new_workorder"><button type="button" class="submit">Login</button></a>
+				</div>
+			</form>
 		</div>
-		<!--end::Authentication - Sign-in-->
-	</div>
-	<!--end::Root-->
-	<!--end::Main-->
 
-	<!--begin::Global Javascript Bundle(used by all pages)-->
-	<script src="<?php echo base_url() ?>assets/plugins/global/plugins.bundle.js"></script>
-	<script src="<?php echo base_url() ?>assets/js/scripts.bundle.js"></script>
-	<!--end::Global Javascript Bundle-->
-	<!--begin::Custom Javascript(used by this page)-->
+
+
+		<div class="overlay-container">
+			<div class="overlay">
+				<div class="overlay-panel overlay-left">
+					<h1>Welcome Back!</h1>
+					<p>Please login with your personal info</p>
+					<button class="ghost" id="signIn">Sign In</button>
+				</div>
+				<div class="overlay-panel overlay-right">
+					<h1>Bino Tyres</h1>
+					<p>Workorder Management System</p>
+
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<script>
-		"use strict";
-		var KTSigninGeneral = function() {
-			var e, t, i;
-			return {
-				init: function() {
-					e = document.querySelector("#kt_sign_in_form"), t = document.querySelector("#kt_sign_in_submit"), i = FormValidation.formValidation(e, {
-						fields: {
-							email: {
-								validators: {
-									regexp: {
-										regexp: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
-										message: "The value is not a valid email address"
-									},
-									notEmpty: {
-										message: "Email address is required"
-									}
-								}
-							},
-							password: {
-								validators: {
-									notEmpty: {
-										message: "The password is required"
-									}
-								}
-							}
-						},
-						plugins: {
-							trigger: new FormValidation.plugins.Trigger,
-							bootstrap: new FormValidation.plugins.Bootstrap5({
-								rowSelector: ".fv-row",
-								eleInvalidClass: "",
-								eleValidClass: ""
-							})
-						}
-					}), t.addEventListener("click", (function(n) {
-						n.preventDefault(), i.validate().then((function(i) {
-							var email = document.getElementById('email').value;
-							var password = document.getElementById('password').value;
-							const invalid_credentials = document.getElementById('invalid_credentials');
-							"Valid" == i ? (t.setAttribute("data-kt-indicator", "on"), t.disabled = !0, setTimeout((function() {
-								t.removeAttribute("data-kt-indicator"), t.disabled = !1,
+		const signUpButton = document.getElementById('signUp');
+		const signInButton = document.getElementById('signIn');
+		const container = document.getElementById('container');
 
-									$.ajax({
-										url: '<?php echo base_url() ?>Authentication/logged',
-										method: 'POST',
-										data: {
-											email: email,
-											password: password
-										},
-										success: function(data) {
-											var ret_data = $.parseJSON(data);
-											if (ret_data.status == 1) {
-												
-												if (ret_data.user_group == 1) {
-													Swal.fire({
-														text: "You have successfully logged in!",
-														icon: "success",
-														buttonsStyling: !1,
-														confirmButtonText: "Ok, got it!",
-														customClass: {
-															confirmButton: "btn btn-primary"
-														}
-													}).then((function(t) {
-														if (t.isConfirmed) {
-															e.querySelector('[name="email"]').value = "", e.querySelector('[name="password"]').value = "";
+		signUpButton.addEventListener('click', () => {
+			container.classList.add("right-panel-active");
+		});
 
-															location.href = '<?php echo base_url() ?>dashboard/dashboard';
-														}
-													}))
-												} else {
-													Swal.fire({
-														text: "You have successfully logged in!",
-														icon: "success",
-														buttonsStyling: !1,
-														confirmButtonText: "Ok, got it!",
-														customClass: {
-															confirmButton: "btn btn-primary"
-														}
-													}).then((function(t) {
-														if (t.isConfirmed) {
-															e.querySelector('[name="email"]').value = "", e.querySelector('[name="password"]').value = "";
-
-															location.href = '<?php echo base_url() ?>Supplierdashboard/supplier_dashboard';
-														}
-													}))
-												}
-											} else {
-												invalid_credentials.innerHTML = '<div class="alert alert-danger d-flex align-items-center p-5"><div class="d-flex flex-column"><h4 class="mb-1 text-dark">' + ret_data.user_group + '</h4><span>The alert component can be used to highlight certain parts of your page for higher content visibility.</span></div></div>';
-											}
-
-
-
-
-										}
-									})
-							}), 2e3)) : Swal.fire({
-								text: "Sorry, looks like there are some errors detected, please try again.",
-								icon: "error",
-								buttonsStyling: !1,
-								confirmButtonText: "Ok, got it!",
-								customClass: {
-									confirmButton: "btn btn-primary"
-								}
-							})
-						}))
-					}))
-				}
-			}
-		}();
-		KTUtil.onDOMContentLoaded((function() {
-			KTSigninGeneral.init()
-		}));
-		
+		signInButton.addEventListener('click', () => {
+			container.classList.remove("right-panel-active");
+		});
 	</script>
-
-
-
-
-
 
 </body>
 
